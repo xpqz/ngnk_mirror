@@ -1,0 +1,17 @@
+name: Build and Test ubuntu
+
+on:
+  push:
+    branches: [upstream]
+
+jobs:
+  buildtestubuntu:
+    name: Build and Test ubuntu
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: make and test
+        run: |
+          make k
+          make t

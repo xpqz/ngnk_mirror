@@ -1,0 +1,19 @@
+on:
+  schedule:
+  - cron:  "0 8 * * *"
+  workflow_dispatch:
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - name: repo-sync
+      uses: repo-sync/github-sync@v2
+      with:
+        source_repo: "https://codeberg.org/ngn/k.git"
+        source_branch: "master"
+        destination_branch: "upstream"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
