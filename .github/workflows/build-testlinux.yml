@@ -3,6 +3,7 @@ name: Build and Test ubuntu
 on:
   push:
     branches: [upstream]
+  workflow_dispatch:
 
 jobs:
   buildtestubuntu:
