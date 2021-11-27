@@ -24,7 +24,7 @@ x.c serialization: `@x `?x
 e.c error handling
 
 related projects:
-https://github.com/xpqz/ngnk_mirror - continuous integration for osx
-http://copy.sh/kaoc20/              - aoc20 solutions
-https://codeberg.org/CptJimKirk/kpl - kpl, apl-like extensions for k
-
+https://github.com/xpqz/ngnk_mirror    - continuous integration for osx
+https://github.com/traws0/ngnk-windows - windows port
+http://copy.sh/kaoc20/                 - aoc20 solutions
+https://codeberg.org/CptJimKirk/kpl    - kpl, apl-like extensions for k
