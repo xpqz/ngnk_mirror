@@ -16,8 +16,8 @@ A adm(Ax,Ay,Iv)_(
  P(xti&&yti,Lm=xv,n=yv;az(v?m*n:m+n))
  P(xtz&&ytz,Lm=gl(x),n=gl(y);az(v?m*n:m+n))
  P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA),eac2f(x,y,v?mul:add))
- XcC(adm(cH(x),y,v))
- YcC(adm(x,cH(y),v))
+ XcC(adm(cB(x),y,v))
+ YcC(adm(x,cB(y),v))
  P(xtdD-ytdD,adm(Ny(cD(x)),Nx(cD(y)),v))
  Ct=max(tZx(x),tZx(y));P(t==tn,et2(x,y))
  x=Ny(cT[t](x));

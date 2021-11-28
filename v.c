@@ -30,7 +30,8 @@ A2(fil,YmMA(eac2f(x,y,exc))YF(y==au?x:x(y))Yt(fir(fil(x,enl(y))))K("{@[y;&^y;:;x
 A2(exc,Xt(fil(x,y))P(xtmM||ytmM,en2(x,y))Yt(exc(x,enl(y)))P(!xn||!yn,y(x))
  Ik=rnk(x);k>0&&k==rnk(y)?K("{x@&^y?x}",x,y):K("{x@&~(!0),x~\\:y}/",x,y))
 A wdn(Ax,Ni,Nj,Nn)_(Ct=xt;Q(xtZC);Ay=an(t+1,n);xe(T(&cBH,cHI,cIL,cLD,0,cBH)[t-tB](xV+TZ[t]*i,yV,j-i);y))
-SN A cZ(Ax,Ct)_(P(xt==t,x)x=N(cI(x));Xt(t==tC?ac(xv):x)Ay=an(t,xn);xe(T(&cIB,cIH,0,0,0,cIB)[t-tB](xV,yV,yn);y))
+SN A cZ(Ax,Ct)_(P(xt==t,x)P(Tz[xt]==Tz[t],AT(t,mut(x)))
+ x=N(cI(x));Xt(t==tC?ac(xv):x)Ay=an(t,xn);xe(T(&cIB,cIH,0,0,0,cIB)[t-tB](xV,yV,yn);y))
 A1(cC,cZ(x,tC))A1(cB,cZ(x,tB))A1(cH,cZ(x,tH))
 A1(cI,XI(x)Xzc(ai(gl(x)))XdD(cI(N(cL(x))))XZC(Ay=aI(xn);Ii=xt-tB;xe(T(&cBI,cHI,0,cLI,0,cBI)[i](xV,yV,yn);y))et1(x))
 A1(cL,XlL(x)Xzc(al(gl(x)))Xt(fir(N(cL(enl(x)))))XD(Ay=aL(xn);xe(cDL(xV,yV,yn);y))x=N(cI(x));Ay=aL(xn);xe(cIL(xV,yV,yn);y))
@@ -38,7 +39,7 @@ A1(cD,XdD(x)Xzc(ad(gl(x)))Xt(fir(N(cD(enl(x)))))x=N(cL(x));Ay=aD(xn);xe(cLD(xV,y
 A1(cS,XsS(x)XC(x=str0(x);x(syP(xV)))Xc(as(xv))pen(x,cS))
 A1(pI,Xc(pI(enl(x)))XC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tl])))Lv=pl(&s);x(*s?_R(cn[tl]):az(v)))pen(x,pI))
 A1*cT[]={[tA]=cA,cB,cH,cI,cL,cD,cC,cS};
-A1(csti,XD(sqzZ(cL(x)))Xd(az(gd(x)))XC(sqzZ(cH(x)))Xc(ai(xv))XzZ(x)et1(x))
+A1(csti,XD(sqzZ(cL(x)))Xd(az(gd(x)))XC(sqzZ(cB(x)))Xc(ai(xv))XzZ(x)et1(x))
 A2(cst,P(xtS||ytmMA,eac2f(x,y,cst))
  Xz(YC(K("{y@(!x)+(x<0)*#y}",x,y))Yc(cst(x,enl(y)))et2(x,y))
  Xs(Iv=xv;P(v-(C)v,ed1(y))T(&csti,cD,cC,cS,pI,ed1)[si("idcsI",v+'s'*!v)](y))

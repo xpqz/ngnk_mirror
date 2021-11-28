@@ -6,7 +6,7 @@
 TD size_t(*F1)(OV*,V*,N);NG(B)NG(H)NG(I)F1(neg,L,-a[i])F1(neg,D,-a[i])
 
 A pen(Ax,A1*f)_(XmMA(eac1f(x,f))et1(x))
-A1(neg,XmMA(eac1f(x,neg))Xzc(az(-gl(x)))Xd(ad(-gd(x)))XC(neg(cH(x)))
+A1(neg,XmMA(eac1f(x,neg))Xzc(az(-gl(x)))Xd(ad(-gd(x)))XC(neg(cB(x)))
  XZD(S O F1 f[]={negB,negH,negI,negL,negD};Nn=xn;Ay=xr>1?an(xt,n):x;Nm=f[xt-tB](xV,yV,n);
   I(m<n,I(x-y,x=wdn(x,m,n,n-m);y=wdn(y,0,m,n))E(x=y=wdn(y,0,n,n))N mw=m*yW;f[xt-tB](xV+(x-y?0:mw),yV+mw,n-m))x-y?x(y):y)
  et1(x))

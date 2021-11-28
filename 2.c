@@ -71,7 +71,7 @@ hf(add,B)hf(add,H)hf(add,I)hf(add,L)hfD(add) hf(mul,B)hf(mul,H)hf(mul,I)hf(mul,L
 hf(mnm,B)hf(mnm,H)hf(mnm,I)hf(mnm,L)hfD(mnm) hf(mxm,B)hf(mxm,H)hf(mxm,I)hf(mxm,L)hfD(mxm)
 S A3(___f,Nn=yn,i=!x;I(i,x=ii(y,0))W(i<n,x=z2(x,ii(y,i++));B(!x))y(x))
 S A3 dexs;S A3(dexf,las(dexs(x,y,z)))
-S A3(ammf,Q(ztv)I(ytC,y=cH(y))I(ytD||(x&&xtd),I(x,x=cD(x))y=cD(y))
+S A3(ammf,Q(ztv)I(ytC,y=cB(y))I(ytD||(x&&xtd),I(x,x=cD(x))y=cD(y))
  Ii=T((C)9,0,9,1,9,9,2,3)[zv];YD(ad(ye(T(&addfD,mulfD,mnmfD,mxmfD)[i](x?gd(x):T(0.0,1,WD,-WD)[i],yV,yn))))
  V(f,T(&addfB,addfH,addfI,addfL,mulfB,mulfH,mulfI,mulfL,mnmfB,mnmfH,mnmfI,mnmfL,mxmfB,mxmfH,mxmfI,mxmfL)[i<<2|yt-tB])
  az(ye(f(x?gl(x):T(0ll,1,WL,-WL)[i],yV,yn))))
