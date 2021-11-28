@@ -1,3 +1,4 @@
+-fsigned-char
 -ffast-math
 -fno-signed-zeros
 -fno-stack-protector
