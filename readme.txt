@@ -14,7 +14,7 @@ o.c order and equivalence               o/   build output
 s.c string formatting: $x `k@x          l/   k libraries
 f.c find, random: x?y                   g/   https://codegolf.stackexchange.com/
 1.c monadic arithmetic                  e/   https://projecteuler.net/
-2.c dyadic  arithmetic except + and *   d14/ https://problems.tryapl.org/psets/2014.html
+2.c dyadic  arithmetic except + and *   dy/  https://problems.tryapl.org/
 3.c dyadic  arithmetic + and *          a19/ https://adventofcode.com/2019
 i.c i/o and \cmds                       a20/ https://adventofcode.com/2020
 v.c the rest of the verbs               a21/ https://adventofcode.com/2021
