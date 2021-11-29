@@ -114,7 +114,7 @@ enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw
 #define _o(x) (_ts(x)?(x)>>32:_tP(x)?0u:_B(x)[-13]) //srcoffset
 #define _q(x,y) (x=apd(x,y))   //append
 #define _r(x) ((I*)_V(x))[-3]  //refcount
-#define _t(x) ({Ct=_t0(x);t?t:_t1(x);}) //type
+#define _t(x) ({A x_=(x);Ct=_t0(x_);t?t:_t1(x_);}) //type
 #define _t0(x) ((x)>>56)       //type(tag)
 #define _t1(x) _C(x)[-15]      //type(hdr)
 #define _tF(x) TF(_t(x))       // func?
