@@ -40,7 +40,7 @@ rdy(_=>{
  if(location.hash==='#r'){ //repl mode
   doc.body.classList.add`repl`;ed.value='';out=ed;let ha=[''],hi=0 //ha,hi:history array and index
   w.then(x=>{app=x.instance.exports;heap=app.__heap_base
-   let p=ms('kw\0repl.k\0'),argv=ma(16);S4(argv,[p,p+3,0,0]);app.kinit(1,argv);inp='\\l repl.k\n';app.rep()})
+   let p=ms('kw\0repl.k\0'),argv=ma(16);S4(argv,[p,p+3,0,0]);app.kinit();app.kargs(1,argv);inp='\\l repl.k\n';app.rep()})
   ed.onkeydown=x=>{const k=kc(x),skp/*skip prompt*/=i=>i+(ed.value[i]===' ')
    if(k===38||k===40){let s=ed.value,i=s.lastIndexOf`\n`+1;ha[hi]=s.slice(i);hi=max(0,min(ha.length-1,hi+k-39))
     ed.value=s.slice(0,i)+ha[hi];cur(ed,skp(i));return!1}
