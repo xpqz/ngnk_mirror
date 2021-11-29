@@ -20,7 +20,7 @@ $["kw"~`argv 0;;{repl.line@1:`}::/`];
 \h  summary
 --------------------------------------------------------------------------------
 \0
-Types: ACBHILDSMmcildsopqruvw
+Types:
 list atom
  `A        generic list   ()   ,"ab"   (0;`1;"2";{3};%)
  `I   `i   int            0N -9223372036854775807 01b
@@ -35,6 +35,7 @@ list atom
       `u   monadic verb   +:   0::
       `v   dyadic  verb   +   0:
       `w   adverb         '   /:
+      `e   external func
 --------------------------------------------------------------------------------
 \:
 I/O verbs
@@ -163,13 +164,13 @@ Adverbs:   ' / \ ': /: \:
    F/ fold      +/1 2 3 -> 6
    F\ scan      +\1 2 3 -> 1 3 6
  x F/ seeded /  10+/1 2 3 -> 16
- y F\ seeded \  10+\1 2 3 -> 11 13 16
-   f/ converge  {1+1.0%x}/1 -> 1.618033988749895
-   f\ converges (-2!)\100 -> 100 50 25 12 6 3 1 0
+ x F\ seeded \  10+\1 2 3 -> 11 13 16
  i f/ n-do      5(2*)/1 -> 32
  i f\ n-dos     5(2*)\1 -> 1 2 4 8 16 32
  f f/ while     (1<){$[2!x;1+3*x;-2!x]}/3 -> 1
  f f\ whiles    (1<){$[2!x;1+3*x;-2!x]}\3 -> 3 10 5 16 8 4 2 1
+   f/ converge  {1+1.0%x}/1 -> 1.618033988749895
+   f\ converges (-2!)\100 -> 100 50 25 12 6 3 1 0
    C/ join      "ra"/("ab";"cadab";"") -> "abracadabra"
    C\ split     "ra"\"abracadabra" -> ("ab";"cadab";"")
    I/ decode    24 60 60/1 2 3 -> 3723   2/1 1 0 1 -> 13
