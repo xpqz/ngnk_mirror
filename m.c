@@ -60,7 +60,7 @@ V kinit(){z[ZZ(z)-1]=1;Ax=AN(0,aA(32)),*c=xA;i(tS-tA+1,*c++=ce[tA+i]=an(tA+i,0))
  xn=c-xA;Q(xn<=32);cns=x;}
 V kargs(In,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=max(0,n-2);Ax=aA(n);i(n,xa=aCz(a[2+i]))gn=1;*gk='x';*gv=x;}
 
-A AT(UL t,Ax)_(Q(c3(0,t,tn));P(TP(t),x=x<<8>>8|t<<56)xC[-15]=t;x)
+A AT(UL t,Ax)_(Q(c3(0,t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)
 A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)
 A AW( C w,Ax)_(Q(w<6);xw=w;x)
 A AK( C k,Ax)_(Q(k<9);xk=k;x)
