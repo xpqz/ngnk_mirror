@@ -18,7 +18,7 @@ o/$N/bin:$(patsubst %.c,o/$N/%.o,$(wildcard *.c));$(CC) $O $L -o $@ $^;$(STRIP) 
 a:o/$N/bin;cp o/$N/bin $R
 
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
-o/asm/%.s:%.c *.h;$M;$(CC) $(O_DFLT) -c $< -o $@ -S -masm=intel
+o/asm/%.s:%.c *.h;$M;$(CC) -O3 -march=native -nostdlib -ffreestanding -c $< -o $@ -S -masm=intel
 
 #/usr/lib/llvm-10/bin/wasm-ld must be on $PATH
 O_WASM=@opts -Oz -nostdlib -ffreestanding --target=wasm32 -U __SIZEOF_INT128__ -Dwasm -I/usr/include
