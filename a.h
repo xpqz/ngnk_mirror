@@ -133,7 +133,7 @@ enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw
 #define XYmMA(a...) P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA),a)
 
 #define Lt(t) (L)t<<56
-#define ac(v) (Lt(tc)|(UC)(v))
+#define ac(v) (Lt(tc)|(UI)(C)(v))
 #define ai(v) (Lt(ti)|(UI)(v))
 #define as(v) (Lt(ts)|(UI)(v))
 #define ae(v,k) (Lt(te)|(UL)(k)<<48|(UL)(v)<<16>>16)
