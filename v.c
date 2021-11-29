@@ -30,7 +30,7 @@ A2(fil,YmMA(eac2f(x,y,exc))YF(y==au?x:x(y))Yt(fir(fil(x,enl(y))))K("{@[y;&^y;:;x
 A2(exc,Xt(fil(x,y))P(xtmM||ytmM,en2(x,y))Yt(exc(x,enl(y)))P(!xn||!yn,y(x))
  Ik=rnk(x);k>0&&k==rnk(y)?K("{x@&^y?x}",x,y):K("{x@&~(!0),x~\\:y}/",x,y))
 A wdn(Ax,Ni,Nj,Nn)_(Ct=xt;Q(xtZC);Ay=an(t+1,n);xe(T(&cBH,cHI,cIL,cLD,0,cBH)[t-tB](xV+TZ[t]*i,yV,j-i);y))
-A1(cC, XC(x)Xt(x=N(cI(x));ac(xv))x=N(cB(x));Xt(ac((C)xv))x=mut(x);AT(tC,x))
+A1(cC, XC(x)x=N(cB(x));Xt(ac((C)xv))x=mut(x);AT(tC,x))
 A1(cB, XB(x)Xt(cI(x))x=N(cI(x));Ay=an(tB,xn);xe(cIB(xV,yV,yn);y))
 A1(cH, XH(x)Xt(cI(x))x=N(cI(x));Ay=an(tH,xn);xe(cIH(xV,yV,yn);y))
 A1(cI, XI(x)Xzc(ai(gl(x)))XdD(cI(N(cL(x))))XZC(Ay=aI(xn);Ii=xt-tB;xe(T(&cBI,cHI,0,cLI,0,cBI)[i](xV,yV,yn);y))et1(x))
