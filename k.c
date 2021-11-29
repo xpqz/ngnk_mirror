@@ -5,7 +5,7 @@
 C TK(Kx)_(Tk[xt])
 N NK(Kx)_(xn)
 V*dK(Kx)_(xV)
-S V VK(Ct,V*a,Kx){x=cT[t](x);Mc(a,xV,xn*TZ[t]);}
+S V VK(Ct,V*a,Kx){I(xtZ,x=cT[t](x))Mc(a,xV,xn*TZ[t]);I(xtR,I(xr==1,AN(0,x))E(mRn(xn,xV)))x(0);}
 
 //            constructors                                                  accessors
 //    atom                     list                                 atom                 list
@@ -13,7 +13,7 @@ K Kc(Cv)_(ac(v))     K KC(C*a,Nn)_(aV(tC,n,a))                   C cK(Kx)_(xv)  
 K Ks(C*s)_(syP(s))   K KS(C**a,Nn)_(Ax=aS(n);i(n,xi=syP(a[i]))x)
 K Ki(Iv)_(az(v))     K KI(I*a,Nn)_(aV(tI,n,a))                   I iK(Kx)_(xv)  V IK(I*a,Kx){VK(tI,a,x);}
 K Kf(Dv)_(ad(v))     K KF(D*a,Nn)_(aV(tD,n,a))                   D fK(Kx)_(*xD) V FK(D*a,Kx){VK(tD,a,x);}
-                     K KL(K*a,Nn)_(aV(tA,n,a))
+                     K KL(K*a,Nn)_(aV(tA,n,a))                                  V LK(K*a,Kx){VK(tA,a,x);}
 K Kp(V*p)_(al((L)p))
 
 K K1(Cv,Kx)_(v1[si(vc,v)](x))
