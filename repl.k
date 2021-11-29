@@ -156,29 +156,29 @@ Special symbols available only in an interpreter built with "make k-libc":
 --------------------------------------------------------------------------------
 \'
 Adverbs:   ' / \ ': /: \:
-  f'x  each1     #'("abc";3 4 5 6) -> 3 4
-x F'y  each2     2 3#'"ab" -> ("aa";"bbb")
-  i'x  window    3'"abcdef" -> ("abc";"bcd";"cde";"def")
-  X'x  binsearch 1 3 5 7 9'8 9 0 -> 3 4 -1
-  F/x  fold      +/1 2 3 -> 6
-  F\x  scan      +\1 2 3 -> 1 3 6
-x F/y  seeded /  10+/1 2 3 -> 16
-y F\x  seeded \  10+\1 2 3 -> 11 13 16
-  f/x  converge  {1+1.0%x}/1 -> 1.618033988749895
-  f\x  converges (-2!)\100 -> 100 50 25 12 6 3 1 0
-i f/x  n-do      5(2*)/1 -> 32
-i f\x  n-dos     5(2*)\1 -> 1 2 4 8 16 32
-f f/x  while     (1<){$[2!x;1+3*x;-2!x]}/3 -> 1
-f f\x  whiles    (1<){$[2!x;1+3*x;-2!x]}\3 -> 3 10 5 16 8 4 2 1
-  C/X  join      "ra"/("ab";"cadab";"") -> "abracadabra"
-  C\C  split     "ra"\"abracadabra" -> ("ab";"cadab";"")
-  I/x  decode    24 60 60/1 2 3 -> 3723   2/1 1 0 1 -> 13
-  I\x  encode    24 60 60\3723 -> 1 2 3   2\13 -> 1 1 0 1
-i f':x stencil   3{x,"."}':"abcde" -> ("abc.";"bcd.";"cde.")
-  F':x eachprior -':12 13 11 17 14 -> 12 1 -2 6 -3
-x F':y seeded ': 10-':12 13 11 17 14 -> 2 1 -2 6 -3
-x F/:y eachright 1 2*/:3 4 -> (3 6;4 8)
-x F\:y eachleft  1 2*\:3 4 -> (3 4;6 8)
+   f' each1     #'("abc";3 4 5 6) -> 3 4
+ x F' each2     2 3#'"ab" -> ("aa";"bbb")
+   i' window    3'"abcdef" -> ("abc";"bcd";"cde";"def")
+   X' binsearch 1 3 5 7 9'8 9 0 -> 3 4 -1
+   F/ fold      +/1 2 3 -> 6
+   F\ scan      +\1 2 3 -> 1 3 6
+ x F/ seeded /  10+/1 2 3 -> 16
+ y F\ seeded \  10+\1 2 3 -> 11 13 16
+   f/ converge  {1+1.0%x}/1 -> 1.618033988749895
+   f\ converges (-2!)\100 -> 100 50 25 12 6 3 1 0
+ i f/ n-do      5(2*)/1 -> 32
+ i f\ n-dos     5(2*)\1 -> 1 2 4 8 16 32
+ f f/ while     (1<){$[2!x;1+3*x;-2!x]}/3 -> 1
+ f f\ whiles    (1<){$[2!x;1+3*x;-2!x]}\3 -> 3 10 5 16 8 4 2 1
+   C/ join      "ra"/("ab";"cadab";"") -> "abracadabra"
+   C\ split     "ra"\"abracadabra" -> ("ab";"cadab";"")
+   I/ decode    24 60 60/1 2 3 -> 3723   2/1 1 0 1 -> 13
+   I\ encode    24 60 60\3723 -> 1 2 3   2\13 -> 1 1 0 1
+i f': stencil   3{x,"."}':"abcde" -> ("abc.";"bcd.";"cde.")
+  F': eachprior -':12 13 11 17 14 -> 12 1 -2 6 -3
+x F': seeded ': 10-':12 13 11 17 14 -> 2 1 -2 6 -3
+x F/: eachright 1 2*/:3 4 -> (3 6;4 8)
+x F\: eachleft  1 2*\:3 4 -> (3 4;6 8)
 --------------------------------------------------------------------------------
 \h
 : SET      RETURN    '  each|slide|bin
