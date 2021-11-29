@@ -161,4 +161,4 @@ enum{au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,FLR,STR,U
 #define ov(x) ov_(#x":",(L)(x))
 #define oo os("["__FILE__":"M2(__LINE__)"]");
 #define nop {asm volatile("fnop");}
-I os(Q);L ov_(Q,N);
+I os(Q);L ov_(Q,L);

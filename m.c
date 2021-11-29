@@ -68,15 +68,15 @@ A AO(UC o,Ax)_(Xs(x&~(0xffffll<<32)|(UL)o<<32)xB[-13]=o;x)
 A AN(  Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)
 A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)
 
-I os(Qs)_(write(2,s,Sn(s)))
-L ov_(Qs,Nn)_(os(s);Cv[17];i(16,Im=n&15;v[15-i]=m+(m>9?'a'-10:'0');n>>=4)v[16]=10;write(2,v,17);n)
+I os(Qs)_(write(1,s,Sn(s)))
+V o8(Lv){Cb[16],*s=b;i(16,Cc=v>>4*(15-i)&15;*s++="0W"[9<c]+c)write(1,b,16);}
+L ov_(Qs,Lv)_(os(s);o8(v);os("\n");v)
 
 #define mms(a...) i(nm,V*p=m[i].p,*q=p+m[i].n;If=!!*(C*)p;a)
 #define obs(a...) mms(Ax=(A)p+ZA+ZP*f,y=(A)q;W(x<y,a;x+=xZ+ZA))
 #define xys(a...) obs(I(xtR&&xr,i(xn,Ay=xa;a)))
 #define rts(a...) {i(gn,Ax=gv[i];I(x,a))Ax=cns;a;}
 #define oss(x,y) {os(x);C s[32],*p=sl(s,y);*p=0;os(s);}
-V o8(Lv){Cb[32],*s=b;i(16,Cc=v>>4*(15-i)&15;*s++="0W"[9<c]+c)*s=0;os(b);}
 V od(Lv){Cb[32],*s=sl(b,v);*s=0;os(b);}
 A1(hx,o8(x);oss(" U",xU);Ct=xC[-15];os(" t");I(c3(1,t,tn),write(1,&TS[t],1))E(od(t))
  oss(" r",xr);oss("=",xm);oss(" n",xn)i(min(5,xZ/8),os(" ");o8(xl))os("\n");x)
