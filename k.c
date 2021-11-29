@@ -18,7 +18,7 @@ K Kp(V*p)_(al((L)p))
 K K1(Cv,Kx)_(v1[si(vc,v)](x))
 K K2(Cv,Kx,Ky)_(v2[si(vc,v)](x,y))
 V KA(Qs,Kx){x=dmd(A(as(syP(s)),oA,av,x),4);if(x)mr(x);}
-K KR(V*f,In,C*s)_(ae(f,n))
+V KR(Qs,V*f,In)_(KA(s,ae(f,n)))
 
 K ref(Kx)_(xR)
 V unref(Kx){mr(x);}

@@ -12,8 +12,7 @@ K add(K x,K y){
 int main(){
  setbuf(stdout,0);
  printf("kinit()\n"); kinit();
- printf("KR()\n");    K f=KR(add,2,"<add>");
- printf("KA()\n");    KA("add",f);
+ printf("KR()\n");    KR("add",add,2);
  printf("KC()\n");    K s=KC("`0:$add[2;3]",13);
  printf("K1()\n");    K1('.',s);
  printf("return\n");  return 0;
