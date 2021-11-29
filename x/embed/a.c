@@ -1,25 +1,20 @@
 #include<stdio.h>
-#include"../../k.h" //new api
-void kinit();void kf(const char*s,long long(*)(long long));long long k(const char*); //old api
+#include"../../k.h"
 
-K inc(K x){
- printf("inc()\n");
- return K2('+',Ki(1),x);}
+K add(K x,K y){
+ printf("add()\n");
+ int a=iK(x);
+ int b=iK(y);
+ int c=a+b;
+ return Ki(c);
+}
 
 int main(){
  setbuf(stdout,0);
- kinit();
-
- //1 2+3
- K x=KI((I[]){1,2},2),y=Ki(3),z=K2('+',x,y);int r[2];IK(r,z);size_t n=NK(z);
- for(int i=0;i<n;i++)printf("r[%d]:%d\n",i,r[i]);
-
- //inc 123
- x=KR(inc,1,"inc");
- KA("inc",x);
-// k(" \\. 0#`");
-
- k("`0:$inc 123");
-
- return 0;
+ printf("kinit()\n"); kinit();
+ printf("KR()\n");    K f=KR(add,2,"<add>");
+ printf("KA()\n");    KA("add",f);
+ printf("KC()\n");    K s=KC("`0:$add[2;3]",13);
+ printf("K1()\n");    K1('.',s);
+ printf("return\n");  return 0;
 }
