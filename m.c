@@ -4,10 +4,10 @@
 #ifndef MAP_NORESERVE
  #define MAP_NORESERVE 0
 #endif
-S I nm;S ST{V*p;Ln;}m[8];SN A0(oom,die("oom\n"))
+S I nm;S ST{V*p;Ln;}m[8];SN A0(oom,die("oom"))
 S V*mm(V*p,Nn,If)_(
  p=mmap(p,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|(f>0&&!p?MAP_SHARED:MAP_PRIVATE)|(p?MAP_FIXED:0)|(f<0?MAP_ANON:0),f,0);
- P((L)p<ZP,eo0();(V*)0)P(f>0,p)I(nm==ZZ(m),die("mmap lmt\n"))*(C*)p=nm;m[nm++]=(TY(*m)){p,n};p)
+ P((L)p<ZP,eo0();(V*)0)P(f>0,p)I(nm==ZZ(m),die("mmap lmt"))*(C*)p=nm;m[nm++]=(TY(*m)){p,n};p)
 S A mu(V*p,Nn)_(munmap(p,n);i(ZZ(m),B(m[i].p==p,Mc(m+i,m+i+1,(--nm-i)*SZ m[0])));0)
 S A mx(Nn)_(V*p=mm(0,n,-1);P(!p,oom())*(C*)p=0;(A)(p+ZA))
 A mf(If,Nn)_(V*p=mm(0,ZP+n,-1);P(!p,0)Ax=(A)(p+ZP);*(C*)p=1;x=AT(tC,AN(n,x));xR;P(!mm(p+ZP,n,f),x(0))x)
@@ -31,7 +31,7 @@ L gl_(Ax)_(XP((I)x)*xL)L gl(Ax)_(Lv=gl_(x);x(0);v)D gd(Ax)_(Dv=*xD;x(0);v)
 
 S C s0[1<<16],*s1=s0+1;Q syp(O L*p)_(*p<0?s0-*p:(V*)p)
 AQ(syP,In=Sn(s)+1;P(n<6&&(n<5||!(s[3]&128)),Lv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,P(!SQ(p,s),as(s0-p))p+=Sn(p)+1)
- P(s1+n>s0+SZ s0,die("syms oom\n"))Mc(s1,s,n);s1+=n;as(s0-s1+n))
+ P(s1+n>s0+SZ s0,die("syms oom"))Mc(s1,s,n);s1+=n;as(s0-s1+n))
 
 S C*skp(C*s)_(W(!MQ(s,"/\n",2),C*p=SS(s+1,"\n\\\n");s=p?p+3:s+Sn(s))s)
 S I ln(Qs)_(Ax=evs(s);P(x,x(out(x));1)epr(0))

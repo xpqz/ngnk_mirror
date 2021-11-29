@@ -11,7 +11,7 @@ A1(epr,I h=64;Cb[3*h+6+SZ m],*r=b;*r++='\'';Mc(r,m,n);r+=n;*r++=10;
  I(src,Ax=src;C*t=xV+o,*p=t,*q=t;W(p>xC&&p>t-h&&p[-1]&&p[-1]-10,p--)W(q<xC+xn&&q<=t+h&&*q&&*q-10,q++)
   Mc(r,p,q-p);I(p<=t-h,*r=r[1]='.')I(q>t+h,r[q-p-2]=r[q-p-1]='.')r+=q-p;*r++=10;Ms(r,32,t-p);r+=t-p;*r++='^';*r++=10)
  eC();write(1,b,r-b);x)
-A die(Qs)_(write(1,s,Sn(s));exit(1);0)
+A die(Qs)_(In=Sn(s);Cv[n+1];Mc(v,s,n);v[n]=10;write(1,v,n+1);exit(1);0)
 
 #define h(t,m)\
  NI A0(e##t##0,e0(    #m))\
