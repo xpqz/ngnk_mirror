@@ -46,7 +46,7 @@ S I mxs(Ii,I s)_(I r=s;W(1,UC c=b[i++];Q(s>=0)r=max(r,s);P(!c,r)P(c==bz,i++;s--;
  J(c==bi||c==bX,s-=2)J(c==bI||c==bA,s-=3)J(c==bL,s+=b[i])J(c==bl||c==ba||c==bP,s-=b[i]-1)
  I(c==bm||c==bx||c==bM||c==bi,i+=2)J(c==bX||c==bI||c==bL||c==bl||c==ba||c==bP||c==bG||c==bS,i++)J(c==bj,i+=b[i]+1))r)
 A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,4,A(x,au,au,z));Ms(lu,-1,SZ lu);y=Nu(cf(y));
- I r=cr(y,1);y(0);I o=0;h(bu);P(r-OK,eS(_R(ux),r);u(0);ec0())P(_n(fl)>8||nb>=255||bc-4+un>255,eS(_R(ux),0);u(0);ez0())
+ I r=cr(y,1);y(0);I o=0;h(bu);P(r-OK,eS(ux,r);u(0);ec0())P(_n(fl)>8||nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
  i(8,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);AK(k,AT(to,u)))
 
 #define U(x,a...) B(!(x),a)
@@ -78,4 +78,4 @@ AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>1024,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=
    E(Q(c>=bs)Ay=*s++;*v=x?x(y):y))
   J(c>=bv,Ax=*s++;U(*s=v2[c-bv](x,*s)))
   E(U(*s=v1[c](*s))))
- I(!*s,eS(_R(xx),_C(xz)[(C*)b-1-_C(xy)]))i(t+ns+nl-s-1,Ax=s[i+1];I(x,mr(x)))d--;Q(s==l-1)*s)
+ I(!*s,eS(xx,_C(xz)[(C*)b-1-_C(xy)]))i(t+ns+nl-s-1,Ax=s[i+1];I(x,mr(x)))d--;Q(s==l-1)*s)
