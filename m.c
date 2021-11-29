@@ -68,21 +68,22 @@ A AO(UC o,Ax)_(Xs(x&~(0xffffll<<32)|(UL)o<<32)xB[-13]=o;x)
 A AN(  Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)
 A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)
 
-I os(Qs)_(write(1,s,Sn(s)))
-V o8(Lv){Cb[16],*s=b;i(16,Cc=v>>4*(15-i)&15;*s++="0W"[9<c]+c)write(1,b,16);}
-L ov_(Qs,Lv)_(os(s);o8(v);os("\n");v)
+SN I ow(Qs,Nn)_(write(1,s,n))
+SN V o8(Lv){Cb[16],*s=b;i(16,Cc=v>>4*(15-i)&15;*s++="0W"[9<c]+c)ow(b,16);}
+I os(Qs)_(ow(s,Sn(s)))
+L ov_(Qs,Lv)_(os(s);o8(v);ow("\n",1);v)
 
 #define mms(a...) i(nm,V*p=m[i].p,*q=p+m[i].n;If=!!*(C*)p;a)
 #define obs(a...) mms(Ax=(A)p+ZA+ZP*f,y=(A)q;W(x<y,a;x+=xZ+ZA))
 #define xys(a...) obs(I(xtR&&xr,i(xn,Ay=xa;a)))
 #define rts(a...) {i(gn,Ax=gv[i];I(x,a))Ax=cns;a;}
-#define oss(x,y) {os(x);C s[32],*p=sl(s,y);*p=0;os(s);}
-V od(Lv){Cb[32],*s=sl(b,v);*s=0;os(b);}
-A1(hx,o8(x);oss(" U",xU);Ct=xC[-15];os(" t");I(c3(1,t,tn),write(1,&TS[t],1))E(od(t))
- oss(" r",xr);oss("=",xm);oss(" n",xn)i(min(5,xZ/8),os(" ");o8(xl))os("\n");x)
+SN V od(Lv){Cb[32];ow(b,sl(b,v)-b);}
+SN V osd(Qs,Lv){os(s);od(v);}
+SN A1(ox,o8(x);osd(" U",xU);Ct=_t1(x);os(" t");I(c3(1,t,tn),ow(&TS[t],1))E(od(t))
+ osd(" r",xr);osd("=",xm);osd(" n",xn);i(min(5,xZ/8),os(" ");o8(xl))os("\n");x)
 AQ(cmdm,obs(xm=0)xys(I(!ytP,_m(y)++))rts(I(!xtP,xm++))
-// In=0;obs(hx(x);n++);oss("nObjs:",n)
-// os("mapped regions:");mms(o8((L)p);os("-");o8((L)q);oss(" F",*(C*)p);oss(" N",q-p))
- obs(I(!c3(tA,xt,tn-1)&&xr,os("!type:");hx(x)));
- obs(I(xr-xm,os("!refc:");hx(x)));
- xys(I(!yt,os("!dngl:");hx(x);hx(y)))au)
+// In=0;obs(ox(x);n++);osd("nObjs:",n)
+// os("mapped regions:");mms(o8((L)p);os("-");o8((L)q);osd(" F",*(C*)p);osd(" N",q-p))
+ obs(I(!c3(tA,xt,tn-1)&&xr,os("!type:");ox(x)))
+ obs(I(xr-xm,os("!refc:");ox(x)))
+ xys(I(!yt,os("!dngl:");ox(x);ox(y)))au)
