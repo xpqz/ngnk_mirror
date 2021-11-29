@@ -69,11 +69,8 @@ A AN(  Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)
 A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)
 
 I os(Qs)_(write(2,s,Sn(s)))
-L ov_(Qs,Nn)_(os(s);write(2,"           ",max(1,9-Sn(s)));Cv[17];
- i(16,Im=n&15;v[15-i]=m+(m>9?'a'-10:'0');n>>=4)v[16]=10;write(2,v,17);n)
+L ov_(Qs,Nn)_(os(s);Cv[17];i(16,Im=n&15;v[15-i]=m+(m>9?'a'-10:'0');n>>=4)v[16]=10;write(2,v,17);n)
 
-#define _m(x) ((I*)_V(x))[-7]
-#define xm _m(x)
 #define mms(a...) i(nm,V*p=m[i].p,*q=p+m[i].n;If=!!*(C*)p;a)
 #define obs(a...) mms(Ax=(A)p+ZA+ZP*f,y=(A)q;W(x<y,a;x+=xZ+ZA))
 #define xys(a...) obs(I(xtR&&xr,i(xn,Ay=xa;a)))
