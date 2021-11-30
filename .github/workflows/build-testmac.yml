@@ -1,8 +1,8 @@
 name: Build and Test macos
 
 on:
-  push:
-    branches: [upstream]
+  schedule:
+  - cron:  "0 9 * * *"
   workflow_dispatch:
 
 jobs:
