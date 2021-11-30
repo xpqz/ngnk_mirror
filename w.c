@@ -80,7 +80,7 @@ AX(adv,Q(xtr)Ii=xw;x=xx;Ik=xK;
   C(0,P(n==1,Xz(win(x,*a))Xt(eac1(*a,x))bin(xR,*a))eac(x,a,n))
   C(1,P(n==1,Ay=*a;XzZ(dec(x,y))Xc(jc(xv,y))XC(jC(xV,xn,y))P(k<2,cf(x,y))fld1(y,x))P(k<2,nwf(x,a,n))P(n-k==1,nwf(x,a,n))fld(x,a,n))
   C(2,P(n==1,Ay=*a;XzZ(enc(x,y))Xc(sc(xv,y))XC(sC(xV,xn,y))P(k<2,cs(x,y))scn1(y,x))P(k<2,nws(x,a,n))P(n-k==1,nws(x,a,n))scn(x,a,n))
-  C(3,n==1?eap1(*a,x):n==2?k==1?ste(*a,a[1],x):eap2(*a,a[1],x):er8(a,n))
+  C(3,n==1?xtz?win(x,*a):eap1(*a,x):n==2?k==1?ste(*a,a[1],x):eap2(*a,a[1],x):er8(a,n))
   C(4,P(n==2,ear2(*a,a[1],x))er8(a,n))
   C(5,P(n==2,eal2(*a,a[1],x))eal(x,a,n)))
  er8(a,n))
