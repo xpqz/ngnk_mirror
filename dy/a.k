@@ -10,7 +10,7 @@ p135:=                                       / https://problems.tryapl.org/psets
 p136:{x[0]-*|x@:>x:(!0),/x}                  / https://problems.tryapl.org/psets/2013.html?goto=P6_Home_On_The_Range
 p137:{x=_x}_                                 / https://problems.tryapl.org/psets/2013.html?goto=P7_Float_Your_Boat
 p138:{x*/:x:1+!x}                            / https://problems.tryapl.org/psets/2013.html?goto=P8_Go_Forth_And_Multiply
-p139:{(+/'x'y)%x}                            / https://problems.tryapl.org/psets/2013.html?goto=P9_It_Is_a_Moving_Experience
+p139:{(+/'x':y)%x}                           / https://problems.tryapl.org/psets/2013.html?goto=P9_It_Is_a_Moving_Experience
 
 p141:{~-/*/2#,|x,y,z}                        / https://problems.tryapl.org/psets/2014.html?goto=P1_It_Is_All_Right
 p142:{(2(|1|':)/"0">x)|^"aeiou"?_x}#         / https://problems.tryapl.org/psets/2014.html?goto=P2_How_Tweet_It_Is (via @chrispsn, @coltim)
@@ -51,7 +51,7 @@ p172:{x+2!x}                                 / https://problems.tryapl.org/psets
 p173:"\"\""/{2!!#x}_"\""\                    / https://problems.tryapl.org/psets/2017.html?goto=P3_Miss_Quoted (@coltim)
 p174:{x*y*y*pi%1440}                         / https://problems.tryapl.org/psets/2017.html?goto=P4_Slices_of_Pies
 p175:{~#x^"ACGT"}                            / https://problems.tryapl.org/psets/2017.html?goto=P5_DNA
-p176:{?x'y}                                  / https://problems.tryapl.org/psets/2017.html?goto=P6_k_mers
+p176:{?x':y}                                 / https://problems.tryapl.org/psets/2017.html?goto=P6_k_mers
 p177:+/'"ACGT"=\:                            / https://problems.tryapl.org/psets/2017.html?goto=P7_Counting_DNA_Nucleotides
 p178:>':|\1=                                 / https://problems.tryapl.org/psets/2017.html?goto=P8_Be_the_First_1 (via @chrispsn)
 p179:|=':|"",                                / https://problems.tryapl.org/psets/2017.html?goto=P9_Double_Trouble (via @coltim)
