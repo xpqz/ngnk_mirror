@@ -85,7 +85,7 @@ V dir(I,void(*)(V*,Q),V*),exit(I),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V
  *memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),tilV(V*,L,I),eS(A,N),eQ(Q,N,N);
 D gd(A);N strlen(Q),_N(A);C*sl(C*,L),sup(A*,A*),tZ(L);C*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);
 I _K(A),qD(D,D),js_eval(C*,I,C*,I),memcmp(OV*,OV*,N),mtc_(A,A),repl(),si(Q,I),strcmp(Q,Q),rnk(A);
-L cfm(OA*,I),gl_(A),gl(A),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),fAI(A,I),fpI(A*,I);Q syp(O L*);
+L cfm(OA*,I),gl_(A),gl(A),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),fAI(A,I),fpI(A*,I);Q qs(O L*);
 EX I gn,gk[];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env;
 EX OC vc[],Tz[],TZ[],TT[],TX[],Tk[];
 
