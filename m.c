@@ -31,7 +31,7 @@ L gl_(Ax)_(XP((I)x)*xL)L gl(Ax)_(Lv=gl_(x);x(0);v)D gd(Ax)_(Dv=*xD;x(0);v)
 
 S C s0[1<<16],*s1=s0+1;
 Q syp(O L*p)_(*p<0?s0-*p:(V*)p)
-AQ(syP,Nn=Sn(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,P(!SQ(p,s),as(s0-p))p+=Sn(p)+1)
+AQ(sym,Nn=Sn(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,P(!SQ(p,s),as(s0-p))p+=Sn(p)+1)
  n++;P(s1+n>s0+SZ s0,die("syms oom"))Mc(s1,s,n);s1+=n;as(s0-s1+n))
 
 S C*skp(C*s)_(W(!MQ(s,"/\n",2),C*p=SS(s+1,"\n\\\n");s=p?p+3:s+Sn(s))s)
@@ -52,7 +52,7 @@ AQ(evs,P(*s-'\\',Ax=N(cplprs(s));x(run(x,0,0)))Cc=s[1],d=s[2];P(c=='c'&&d=='d'&&
 I gn,gk[256];A gv[256],cns,ce[tn],cn[tn],ci[2][5];Q*argv,*env;
 I rep()_(Cb[256];Ln=read(0,b,SZ(b)-1);P(n<0,0)b[n]=0;C*p=b;W(*p,C*q=SC0(p,10);*q=0;ln(p);p=q+1)1)I repl()_(W(rep());0)
 L k(Qs)_(Ax=N(evs(s));Xz(gl(x))x(0))
-V kf(Qs,L(*f)(L)){dmd(A(syP(s),au,av,AT(te,(A)f)),4);}
+V kf(Qs,L(*f)(L)){dmd(A(sym(s),au,av,AT(te,(A)f)),4);}
 V kinit(){z[ZZ(z)-1]=1;Ax=AN(0,aA(32)),*c=xA;i(tS-tA+1,*c++=ce[tA+i]=an(tA+i,0))*c++=ce[tm]=am(oS,oA);
  cn[tA]=ce[tC];*c++=cn[tB]=cn[tH]=cn[tI]=cn[tL]=al(NL);*c++=cn[tD]=ad(ND);cn[tC]=ac(32);cn[tS]=as(0);
  Mc(cn+ti,cn+tI,(tS-tI+1)*SZ(A));i(tn-to,cn[to+i]=au)
