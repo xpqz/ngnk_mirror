@@ -159,7 +159,6 @@ Special symbols available only in an interpreter built with "make k-libc":
 Adverbs:   ' / \ ': /: \:
    f' each1     #'("abc";3 4 5 6) -> 3 4
  x F' each2     2 3#'"ab" -> ("aa";"bbb")
-   i' window    3'"abcdef" -> ("abc";"bcd";"cde";"def")
    X' binsearch 1 3 5 7 9'8 9 0 -> 3 4 -1
    F/ fold      +/1 2 3 -> 6
    F\ scan      +\1 2 3 -> 1 3 6
@@ -175,6 +174,7 @@ Adverbs:   ' / \ ': /: \:
    C\ split     "ra"\"abracadabra" -> ("ab";"cadab";"")
    I/ decode    24 60 60/1 2 3 -> 3723   2/1 1 0 1 -> 13
    I\ encode    24 60 60\3723 -> 1 2 3   2\13 -> 1 1 0 1
+  i': window    3'"abcdef" -> ("abc";"bcd";"cde";"def")
 i f': stencil   3{x,"."}':"abcde" -> ("abc.";"bcd.";"cde.")
   F': eachprior -':12 13 11 17 14 -> 12 1 -2 6 -3
 x F': seeded ': 10-':12 13 11 17 14 -> 2 1 -2 6 -3
