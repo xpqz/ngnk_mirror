@@ -38,4 +38,3 @@ S A pe(Ax,C*v)_(pw();P(s>s0&&*s=='\\'&&s[-1]==32,s++;Ay=pe(0,v);P(!y,x?x(0):0);*
  *v&=y!=av;I(!x,y=mon(y))*v?a3(COM,x?AO(o,a3(y,x,PLH)):y,z):AO(o,x?a3(y,x,z):a2(mon(y),z)))
 S A pb(Ax,Cc)_(W(1,Cv=0;Ay=Nx(pe(0,&v));I(y==PLH&&c-']',P(c==')',ep2(x,y))y=au)xq(y);B(*s-';'&&*s-10)s++)P(*s-c,ep1(x))s++;x)
 A pk(Qp)_(s0=s=p;Ax=pb(a1(PRG),0);P(!x,eQ(s0,Sn(s0),s-s0);0)x=shy(x);xn-2?x:las(x))
-A1(prs,XC(x=str0(x);x(pk(xV)))et1(x))

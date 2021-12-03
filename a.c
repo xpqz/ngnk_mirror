@@ -41,9 +41,10 @@ S A1(ken,Ay=oS,z=oA;Q*e=env;W(*e,Qp=*e++,q=p+si(p,'=');yq(cS(aCm(p,q)));zq(aCz(q
 S A1(kex,exit(xtz?gl(x):1);0)
 S A1(krc,x(ai(xr)))
 S A1(kjs,XC(Cb[ZP];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))XA(eac1f(x,kjs))et1(x))
+S A1(kpa,XC(x=str0(x);x(pk(xV)))et1(x))
 A2(_1,/*01*/P(!xtt,i1(x,y))Xz(dex(Ny(v1c(xR,y)),x))
  Xs(S O C s[][4]={"","k","j","p","t","x","hex","err","epr","argv","env","exit","js","prng","sin","cos","exp","ln","r"};
-  Li=fI(s,ZZ(s),xv);T(&ser,kst,js1,prs,ktm,frk,hex,ker,epr,kav,ken,kex,kjs,prng,ksin,kcos,kexp,klog,krc,ed1)[i<0?ZZ(s):i](y))
+  Li=fI(s,ZZ(s),xv);T(&ser,kst,js1,kpa,ktm,frk,hex,ker,epr,kav,ken,kex,kjs,prng,ksin,kcos,kexp,klog,krc,ed1)[i<0?ZZ(s):i](y))
  Ik=xK;P(1<k,prj(x,&y,1))Xo(run(x,&y,1))Xv(en1(y))Xr(adv(x,&y,1))Xe(((A1*)(x<<16>>16))(y))
  Xp(P(xn+k>9,er1(y))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&!j?j++,y:_R(xA[i+1]))I l=max(0,1-j);Mc(b+m,&y,8*l);_8(xx,b,m+l))
  Xq(_1(xx,N(_1(xy,y))))P(1>k,er1(y))Xu(v1[xv](y))Xw(AK(0<xv&&xv<4&&yK==2?1:ytF?yK:1,AW(xv,aV(tr,1,&y))))et1(y))
