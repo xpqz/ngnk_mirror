@@ -19,6 +19,7 @@ S AAL(io,/*0*/xtt||in(i,xN)?ii(x,i):xN?mkn(ii(x,0)):xtm?io(xy,i):_R(cn[xt]))A1(f
 iC_(I)iC_(L)i_(B,I)j_(B,I)i_(B,L)j_(B,L)i_(H,I)j_(H,I)i_(H,L)j_(H,L)i_(I,I)j_(I,I)i_(I,L)j_(I,L)j_(L,I)j_(L,L)
 iD_(I)iD_(L)iS_(I)iS_(L)
 S A2(i1,/*01*/
+ Xt(y(xR))
  P(y==PLH||y==au,xR)
  P(xtm||xtM&&ytsS,i1(xy,N(fnd(_R(xx),y))))
  Yzc(io(x,gl(y)))
