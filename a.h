@@ -111,7 +111,7 @@ enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw
 #define _W(x) TZ[_t(x)]        //item size in bytes
 #define _k(x) _C(x)[-13]       //arity(for funcs)
 #define _n(x) _L(x)[-1]        //length
-#define _o(x) (_ts(x)?(x)>>32:_tP(x)?0u:_B(x)[-13]) //srcoffset
+#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13]) //srcoffset
 #define _q(x,y) (x=apd(x,y))   //append
 #define _r(x) ((I*)_V(x))[-3]  //refcount
 #define _m(x) ((I*)_V(x))[-7]  //shadow refcount

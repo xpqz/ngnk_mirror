@@ -66,7 +66,7 @@ A AT(UL t,Ax)_(Q(c3(0,t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)
 A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)
 A AW( C w,Ax)_(Q(w<6);xw=w;x)
 A AK( C k,Ax)_(Q(k<9);xk=k;x)
-A AO(UC o,Ax)_(Xs(x&~(0xffffll<<32)|(UL)o<<32)xB[-13]=o;x)
+A AO(UC o,Ax)_(Xs(x&~(0xffll<<32)|(UL)o<<32)xB[-13]=o;x)
 A AN(  Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)
 A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)
 
