@@ -1,7 +1,7 @@
 #include"a.h" // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S C b[ZP],*r=b;S I d;
 SN V eC(){r=b;d=0;}
-SN A e0(Qs)_(eC();Nn=min(Sn(s),32);r=b;*r++='\'';Mc(r,s,n);r+=n;*r++=10;0)
+NI A e0(Qs)_(eC();Nn=min(Sn(s),32);r=b;*r++='\'';Mc(r,s,n);r+=n;*r++=10;0)
 NI A e1(Ax,Qs)_(x(e0(s)))
 SN A e2(Ax,Ay,Qs)_(y(e1(x,s)))
 SN A eN(OA*a,In,Qs)_(mrn(n,a);e0(s))

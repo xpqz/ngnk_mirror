@@ -1,12 +1,12 @@
 // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include"a.h"
+#include<fcntl.h>
 #include<sys/mman.h>
 #ifndef MAP_NORESERVE
  #define MAP_NORESERVE 0
 #endif
 S I nm;S ST{V*p;Ln;}m[8];SN A0(oom,die("oom"))
-S V*mm(V*p,Nn,If)_(
- p=mmap(p,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|(f>0&&!p?MAP_SHARED:MAP_PRIVATE)|(p?MAP_FIXED:0)|(f<0?MAP_ANON:0),f,0);
+S V*mm(V*p,Nn,If)_(p=mmap(p,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|(p?MAP_FIXED:0)|(f<0?MAP_ANON:0),f,0);
  P((L)p<ZP,eo0();(V*)0)P(f>0,p)I(nm==ZZ(m),die("mmap lmt"))*(C*)p=nm;m[nm++]=(TY(*m)){p,n};p)
 S A mu(V*p,Nn)_(munmap(p,n);i(ZZ(m),B(m[i].p==p,Mc(m+i,m+i+1,(--nm-i)*SZ m[0])));0)
 S A mx(Nn)_(V*p=mm(0,n,-1);P(!p,oom())*(C*)p=0;(A)(p+ZA))
@@ -35,19 +35,19 @@ Q qs(O L*p)_(*p<0?s0-*p:(V*)p)
 AQ(sym,Nn=Sn(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,P(!SQ(p,s),as(s0-p))p+=Sn(p)+1)
  n++;P(s1+n>s0+SZ s0,die("syms oom"))Mc(s1,s,n);s1+=n;as(s0-s1+n))
 
+S AQ(cps,Ax=N(pk(s));cpl(str0(aCz(s)),x,oS))
+S AQ(bcd,s+=*s==32;P(!*s||*s==10,Cb[256];getcwd(b,SZ b);aCz(b))chdir(s);au)
+S AQ(bxt,exit(0);0)
+S AQ(bsv,K("{`0:($!h),'\":\",'`k'. h:(&x=^`o`p`q`r`u`v`w`e?@'h)#h:``repl_.:0#`}",ai(!!s)))
+S AQ(bsf,bsv(0))
+S AQ(bst,Ln=*s==':'?++s,pl(&s):1,t=now();Ax=N(cps(s));i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
 S C*skp(C*s)_(W(!MQ(s,"/\n",2),C*p=SS(s+1,"\n\\\n");s=p?p+3:s+Sn(s))s)
 S I ln(Qs)_(Ax=evs(s);P(x,x(out(x));1)epr(0))
-AQ(cplprs,Ax=N(pk(s));cpl(str0(aCz(s)),x,oS))
-AQ(cmdX,exit(0);0)
-AQ(cmdcd,s+=*s==32;P(!*s||*s==10,Cb[256];getcwd(b,SZ b);aCz(b))chdir(s);au)
-AQ(cmdt,Ln=*s==':'?++s,pl(&s):1,t=now();Ax=N(cplprs(s));i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
-AQ(cmdl,Ax=N(u1c(aCz(s)));P(!xn||xC[xn-1]-10,e1(x,"eoleof"))xC[xn-1]=0;C*p=xV;I(!MQ(p,"#!",2),p=SC0(p+2,10))
- W(p<xC+xn,C*q=p=skp(p);W(*q&&(*q-10||si(" }",q[1])<2),q++)*q=0;Nx(ln(p));p=q+1)x(au))
-SN A cmdfv(Ii)_(K("{`0:($!h),'\":\",'`k'. h:(&x=^`o`p`q`r`u`v`w`e?@'h)#h:``repl_.:0#`}",ai(i)))
-AQ(cmdf,cmdfv(0))
-AQ(cmdv,cmdfv(1))
-AQ(evs,P(*s-'\\',Ax=N(cplprs(s));x(run(x,0,0)))Cc=s[1],d=s[2];P(c=='c'&&d=='d'&&(!s[3]||s[3]==32),cmdcd(s+3))
- P(!d||d==32||d==':',T(&cmdX,cmdf,cmdl,cmdm,cmdt,cmdv,en0)[si("\\flmtv",c)](s+2+(d==32)))
+S A lns(C*p,Nn)_(Q(n)P(p[n-1]-10,e0("eoleof"))p[n-1]=0;I(!MQ(p,"#!",2),p=SC0(p+2,10))
+ C*v=p;W(p<v+n,C*q=p=skp(p);W(*q&&(*q-10||si(" }",q[1])<2),q++)*q=0;N(ln(p));p=q+1)au)
+AQ(bsl,If=open(s,O_RDONLY,0600);Nn=lseek(f,0,2);C*p=mm(0,n,f);close(f);P(!p,0)P(!n,au)Ax=lns(p,n);mu(p,n);x)
+AQ(evs,P(*s-'\\',Ax=N(cps(s));x(run(x,0,0)))Cc=s[1],d=s[2];P(c=='c'&&d=='d'&&(!s[3]||s[3]==32),bcd(s+3))
+ P(!d||d==32||d==':',T(&bxt,bsf,bsl,bsm,bst,bsv,en0)[si("\\flmtv",c)](s+2+(d==32)))
  K("0x0a\\`x(,,\"/bin/sh\"),,:",aCz(s+1)))
 
 I gn,gk[256];A gv[256],cns,ce[tn],cn[tn],ci[2][5];Q*argv,*env;
@@ -83,7 +83,7 @@ SN V od(Lv){Cb[32];ow(b,sl(b,v)-b);}
 SN V osd(Qs,Lv){os(s);od(v);}
 SN A1(ox,o8(x);osd(" U",xU);Ct=_t1(x);os(" t");I(c3(1,t,tn),ow(&TS[t],1))E(od(t))
  osd(" r",xr);osd("=",xm);osd(" n",xn);i(min(5,xZ/8),os(" ");o8(xl))os("\n");x)
-AQ(cmdm,obs(xm=0)xys(I(!ytP,_m(y)++))rts(I(!xtP,xm++))
+AQ(bsm,obs(xm=0)xys(I(!ytP,_m(y)++))rts(I(!xtP,xm++))
 // In=0;obs(ox(x);n++);osd("nObjs:",n)
 // os("mapped regions:");mms(o8((L)p);os("-");o8((L)q);osd(" F",*(C*)p);osd(" N",q-p))
  obs(I(!c3(tA,xt,tn-1)&&xr,os("!type:");ox(x)))
