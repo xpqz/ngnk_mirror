@@ -1,4 +1,4 @@
-#!/home/n/k/k
+#!../k
 x:0:"i/04"        /input
 r:.*x             /random order for bingo
 b:.''1_'(&~#'x)_x /boards
