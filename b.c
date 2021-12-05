@@ -23,7 +23,7 @@ S A cr(Ax/*0*/,I r)_(I o=xo;
  XS(P(xn-1,hc(AO(0,xR))h(bu+DOT-av)I(!r,h(bp))OK)I(r,hc(ii(x,0)))OK)
  P(!xtA||!xn,I(r,hc(x-PLH?xR:au))OK)
  Nn=xn;Ay=xx;
- P(y==PRG,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)
+ P(y==PLH,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)
  P(n<2,I(r,hc(yR))OK)
  P(n==3&&(ytu||y==av)&&_tsSA(xy),Nr(xz,1);Nl(x,xy,1);I(!r,h(bp))OK)
  P(n>3&&y==CST,n--;I p[n];A*a=xA;i(n&~1,Nr(*++a,1);h(i&1?bj:bz)p[i]=nb;h(0))Nr(n&1?*++a:au,1);
