@@ -11,7 +11,7 @@ S A0(pD,Ax=oD;W(1,x=apv(x,(D[]){pd(&s)});Qp=p32(s);B(p==s||!num(p))s=p)x)
 S A0(pC,Ax=oC;Cc=*++s;W(c&&c-'"',I(c=='\\',c=*++s;Ii=si("tnr0",c);I(i<4,c="\t\n\r"[i]))x=apc(x,c);c=*++s)P(!c,ep1(x))c=*++s;x)
 S C ph()_(Cc=*s;c09(c)?c-'0':c-'a'<6u?c+10-'a':16)
 S A0(p0x,Ax=oC;s+=2;W(1,Cc=ph();P(c>15,x)s++;Cd=ph();P(d>15,ep1(x))s++;x=apc(x,c<<4|d))x)
-S A0(ps,Qp=s;Cc=*s;I(c>>7,W((UC)(c=*++s)>>6==2)s+=c==':')J(cAz(c),W(cA9(c),c=*++s))aCm(p,s))
+S A0(ps,Qp=s;Cc=*s;I(c>>7,W(*++s<-64)s+=*s==':')J(cAz(c),W(cA9(c),c=*++s))aCm(p,s))
 S A0(pS,Ax=oS;W(1,Ay=*s-'"'?ps():Nx(pC());y=str0(y);xq(y(sym(yV)));Qp=p32(s);P(*p-'`',x)s=p+1)0)
 S A0(pP,Ax=oS;W(1,Ay=str0(ps());y(xq(sym(yV)));P(*s-'.',x)++s)0)
 S A1(shy,P(xn<2,x)Ay=xA[xn-1];I(ytA&&yn>2,Az=yx;I((z==av||ztu)&&_tsSA(yy),xq(au)))x) //if last is assignment, return ::
