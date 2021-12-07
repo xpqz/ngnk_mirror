@@ -3,10 +3,10 @@ a:`I$","\*0:"i/07"     /input
 a-:&/a                 /translate left end to 0
 a@:<a                  /sort
 
-/part1
 c:{+/d|-d:a-x}         /cost function
-&/c'0 1+a@-2!#a        /best is near the median
+m:0.5*+/a@-2!0 1+#a    /median
+&/c'(_m;-_-m)          /part1
 
-/part2
 c:{+/-2!d*1+d|:-d:a-x} /cost function
-&/c'0 1+_(+/a)%#a      /best is near the average
+m:(+/a)%#a             /mean
+&/c'(_m;-_-m)          /part2
