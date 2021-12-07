@@ -174,7 +174,7 @@ Adverbs:   ' / \ ': /: \:
    C\ split     "ra"\"abracadabra" -> ("ab";"cadab";"")
    I/ decode    24 60 60/1 2 3 -> 3723   2/1 1 0 1 -> 13
    I\ encode    24 60 60\3723 -> 1 2 3   2\13 -> 1 1 0 1
-  i': window    3'"abcdef" -> ("abc";"bcd";"cde";"def")
+  i': window    3':"abcdef" -> ("abc";"bcd";"cde";"def")
 i f': stencil   3{x,"."}':"abcde" -> ("abc.";"bcd.";"cde.")
   F': eachprior -':12 13 11 17 14 -> 12 1 -2 6 -3
 x F': seeded ': 10-':12 13 11 17 14 -> 2 1 -2 6 -3
