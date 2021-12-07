@@ -1,7 +1,8 @@
 #include"a.h" // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 SN A2(enc/*01*/,Q(xtzZ)P(x==ai(2)&&ytz&&gl_(y)<0,x=rsh(64,xR);x(enc(x,y)))
  Ii=ytt;x=K("{$[0>&/x;`err\"domain\"; `i~@x;|x!-1_![-x;]\\y; x!'|(,y),y{(-y)!x}\\|1_x]}",xR,y);!x||xN?x:x(i?oB:oA))
-SN A2(dec,/*01*/K("{z+x*y}/[0;;]",xR,y))SN A2(win,/*01*/K("{y(!x)+/:!0|1-x-#y}",xR,y))
+SN A2(dec,/*01*/K("{z+x*y}/[0;;]",xR,y))
+SN ALA(win,/*P(n<0,ed1(x))*/K("{[n;x]x(!n)+/:!0|1-n-#x}",az(n),x))
 SN A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=MC(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(c-10||n,xq(aCn(p,n)))x)
 SN A sCC(C*s,Lm,C*p,Ln)_(P(!m,el0())Ax=oA;C*q;W((q=MM(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)xq(aCn(p,n)))
 SN A sc(Cc    ,Ax)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))
@@ -85,7 +86,7 @@ AX(adv,Q(xtr)Ii=xw;x=xx;Ik=xK;
   C(0,P(n==1,Xt(eac1(*a,x))bin(x,*a))eac(x,a,n))
   C(1,P(n==1,Ay=*a;XzZ(dec(x,y))Xc(jc(xv,y))XC(jC(xV,xn,y))P(k<2,cf(x,y))fld1(y,x))P(k<2,nwf(x,a,n))P(n-k==1,nwf(x,a,n))fld(x,a,n))
   C(2,P(n==1,Ay=*a;XzZ(enc(x,y))Xc(sc(xv,y))XC(sC(xV,xn,y))P(k<2,cs(x,y))scn1(y,x))P(k<2,nws(x,a,n))P(n-k==1,nws(x,a,n))scn(x,a,n))
-  C(3,n==1?xtz?win(x,*a):eap1(*a,x):n==2?k==1?ste(*a,a[1],x):eap2(*a,a[1],x):er8(a,n))
+  C(3,n==1?xtz?win(gl(x),*a):eap1(*a,x):n==2?k==1?ste(*a,a[1],x):eap2(*a,a[1],x):er8(a,n))
   C(4,P(n==2,ear2(*a,a[1],x))er8(a,n))
   C(5,P(n==2,eal2(*a,a[1],x))eal(x,a,n)))
  er8(a,n))
