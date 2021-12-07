@@ -7,10 +7,10 @@ s:+\0,a                    /partial sums
 S:s n                      /sum
 Q:+/a*a                    /sum of squares
 
-f:{(x*-n-2*i)+S-2*s i:a'x} /cost function (sum of distances to x)
-m:0.5*+/a@-2!0 1+n         /median
+f:{(x*-n-2*i)+S-2*s@i:a'x} /cost function (sum of distances to x)
+m:a@-2!n                   /median
 &/f'(_m;-_-m)              /part1
 
-g:{-2!f[x]+Q+x*(-2*S)+x*n} /cost function (sum of squares of distances to x)
+g:{-2!f[x]+x/(n;-2*S;Q)}   /cost function (sum of squares of distances to x)
 m:S%n                      /mean
 &/g'(_m;-_-m)              /part2
