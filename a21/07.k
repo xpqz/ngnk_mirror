@@ -1,7 +1,12 @@
 #!../k
-x:`I$","\*0:"i/07" /input
-x-:&/x             /translate leftmost end to 0
-p:!1+|/x           /positions
-d|:-d:x-\:p        /distances
-&/+/d              /part1
--2!&/+/d*1+d       /part2
+a:`I$","\*0:"i/07"     /input
+a-:&/a                 /translate left end to 0
+a@:<a                  /sort
+
+/part1
+c:{+/d|-d:a-x}         /cost function
+&/c'0 1+a@-2!#a        /best is near the median
+
+/part2
+c:{+/-2!d*1+d|:-d:a-x} /cost function
+&/c'0 1+_(+/a)%#a      /best is near the average
