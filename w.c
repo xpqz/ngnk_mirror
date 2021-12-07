@@ -2,7 +2,7 @@
 SN A2(enc/*01*/,Q(xtzZ)P(x==ai(2)&&ytz&&gl_(y)<0,x=rsh(64,xR);x(enc(x,y)))
  Ii=ytt;x=K("{$[0>&/x;`err\"domain\"; `i~@x;|x!-1_![-x;]\\y; x!'|(,y),y{(-y)!x}\\|1_x]}",xR,y);!x||xN?x:x(i?oB:oA))
 SN A2(dec,/*01*/K("{z+x*y}/[0;;]",xR,y))
-SN ALA(win,/*P(n<0,ed1(x))*/K("{[n;x]x(!n)+/:!0|1-n-#x}",az(n),x))
+SN ALA(win,P(n<0,ed1(x))K("{[n;x]x(!n)+/:!0|1-n-#x}",az(n),x))
 SN A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=MC(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(c-10||n,xq(aCn(p,n)))x)
 SN A sCC(C*s,Lm,C*p,Ln)_(P(!m,el0())Ax=oA;C*q;W((q=MM(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)xq(aCn(p,n)))
 SN A sc(Cc    ,Ax)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))
