@@ -116,7 +116,8 @@ X_i delete    "abcde"_2 -> "abde"
 i$C pad       5$"abc" -> "abc  "   -3$"a" -> "  a"
 s$y cast      `c$97 -> "a"   `i$-1.2 -> -1   `$"a" -> `a
 s$y int       `I$"-12" -> -12
- ?x uniq      ?"abacus" -> "abcus"
+ ?X uniq      ?"abacus" -> "abcus"
+ ?i uniform   ?2 -> 0.6438163747387873 0.8852656305774402 /random
 X?y find      "abcde"?"bfe" -> 1 0N 4
 i?x roll      3?1000 -> 11 398 293   1?0 -> ,-8164324247243690787
 i?x deal      -3?1000 -> 11 398 293 /guaranteed distinct
