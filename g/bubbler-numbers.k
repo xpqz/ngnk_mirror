@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/205396/bubbler-numbers/205430#205430
+/ https://codegolf.stackexchange.com/questions/205396/bubbler-numbers/205430#205430
 f:{(*/0<3!+/+3':x)>*/^a?,/'3#','a:,/,\'|',\x}@2\
 \l 0.k
 

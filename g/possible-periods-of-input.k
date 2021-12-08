@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/222905/possible-periods-of-input/222919#222919
+/ https://codegolf.stackexchange.com/questions/222905/possible-periods-of-input/222919#222919
 f:1+?{((#x)#',\x)?x}',\
 
 \l 0.k

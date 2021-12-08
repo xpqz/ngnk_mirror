@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/168561/tuples-by-sequentially-stepping-through-entries-in-list-of-lists/168566#168566
+/ https://codegolf.stackexchange.com/questions/168561/tuples-by-sequentially-stepping-through-entries-in-list-of-lists/168566#168566
 f:{x@'/:?|\+|!|#'x}
 \l 0.k
 t[();,()]

@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/35177/base-2-integer-logarithm-of-64-bit-unsigned-integer/229647#229647
+/ https://codegolf.stackexchange.com/questions/35177/base-2-integer-logarithm-of-64-bit-unsigned-integer/229647#229647
 f:-1+#2\
 
 \l 0.k

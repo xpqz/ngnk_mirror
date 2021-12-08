@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/71833/how-even-is-a-number/216768#216768
+/ https://codegolf.stackexchange.com/questions/71833/how-even-is-a-number/216768#216768
 f:*&|2\
 
 \l 0.k

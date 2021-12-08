@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/34505/simulate-rule-110/177043#177043
+/ https://codegolf.stackexchange.com/questions/34505/simulate-rule-110/177043#177043
 f:{"X "39{(2\145)@2/'3':1,x,1}\^x?!40}
 \l 0.k
 t[38 39

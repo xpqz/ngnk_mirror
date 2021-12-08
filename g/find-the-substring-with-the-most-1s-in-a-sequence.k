@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/44818/find-the-substring-with-the-most-1s-in-a-sequence/216835#216835
+/ https://codegolf.stackexchange.com/questions/44818/find-the-substring-with-the-most-1s-in-a-sequence/216835#216835
 f:{*>+/'x':y}
 
 \l 0.k

@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/111991/rotating-a-2d-matrix/217637#217637
+/ https://codegolf.stackexchange.com/questions/111991/rotating-a-2d-matrix/217637#217637
 f:{(,()){(,y),+|x}/|,/{1_{1_y,*x}':x,,*x}'0N 4#-1_*'(|+1_)\x}/
 
 \l 0.k

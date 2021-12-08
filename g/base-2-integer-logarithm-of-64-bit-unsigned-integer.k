@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/229772/binomial-transform/229780#229780
+/ https://codegolf.stackexchange.com/questions/229772/binomial-transform/229780#229780
 f:,/*'(-/'2':)\
 
 f:f\

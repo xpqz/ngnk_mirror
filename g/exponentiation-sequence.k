@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/142555/exponentiation-sequence/214133#214133
+/ https://codegolf.stackexchange.com/questions/142555/exponentiation-sequence/214133#214133
 f:{(x=#:')#,/{,/'$x':|2/=12}'2+!11}
 
 \l 0.k

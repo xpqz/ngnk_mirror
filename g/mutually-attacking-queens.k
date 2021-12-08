@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/164175/mutually-attacking-queens/164201#164201
+/ https://codegolf.stackexchange.com/questions/164175/mutually-attacking-queens/164201#164201
 f:{+/0|-1++/0|-':x,'+x,+8 31#,/+x,a,(|x),a:0*x}
 \l 0.k
 b:{8 8#x-"0"}

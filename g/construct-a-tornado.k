@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/133610/construct-a-tornado/217057#217057
+/ https://codegolf.stackexchange.com/questions/133610/construct-a-tornado/217057#217057
 f:{(-x,x-\y)$|,\x#$0}
 
 \l 0.k

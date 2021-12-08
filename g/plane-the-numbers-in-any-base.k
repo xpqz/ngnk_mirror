@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/226839/plane-the-numbers-in-any-base/226857#226857
+/ https://codegolf.stackexchange.com/questions/226839/plane-the-numbers-in-any-base/226857#226857
 f:{(y/*'(1=#'?:')#z':y\)'1+!x}
 
 \l 0.k

@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/68186/cracking-the-enigma/215550#215550
+/ https://codegolf.stackexchange.com/questions/68186/cracking-the-enigma/215550#215550
 f:{**&~|/'y=/:(#y)':x}
 
 \l 0.k

@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/190223/insert-inbetween/218951#218951
+/ https://codegolf.stackexchange.com/questions/190223/insert-inbetween/218951#218951
 f:{x,/y,'x}"!"
 
 \l 0.k

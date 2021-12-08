@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/185857/gravitational-force-between-numbers/185980#185980
+/ https://codegolf.stackexchange.com/questions/185857/gravitational-force-between-numbers/185980#185980
 f:{+/'x@.={x@x}/(!#x)+{-/2=+/x<\:x 2 0}'3':0,x,0}
 \l 0.k
 t[10 15 20 10 20 10 10]45 10 30 10

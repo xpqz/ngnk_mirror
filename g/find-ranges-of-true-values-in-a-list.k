@@ -1,5 +1,5 @@
 #!../k
-/https://codegolf.stackexchange.com/questions/69156/find-ranges-of-true-values-in-a-list/214387#214387
+/ https://codegolf.stackexchange.com/questions/69156/find-ranges-of-true-values-in-a-list/214387#214387
 /f:-2++&'+{y&~x,z}.'0^-3': /original golf in oK
 f:{+&'(0>':x;1_<':x,:0)}   /ported to ngn/k
 
