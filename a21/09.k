@@ -1,7 +1,7 @@
 #!../k
 x:-48+0:"i/09"      /input
 x:4(+|9,)/x         /surround with 9s
-(m;n):#'1*:\x       /(height;width)
+n:#*x               /width
 x:,/x               /flatten
 h:(1;n;-1;-n)+\:!#x /neighbours
 h:0|h&-1+#x         /avoid outdexing
