@@ -36,7 +36,7 @@ A1(cH, XH(x)x=N(cI(x));Xt(x)Ay=an(tH,xn);xe(cIH(xV,yV,yn);y))
 A1(cI, XI(x)Xzc(ai(gl(x)))XdD(cI(N(cL(x))))XZC(Ay=aI(xn);Ii=xt-tB;xe(T(&cBI,cHI,0,cLI,0,cBI)[i](xV,yV,yn);y))et1(x))
 A1(cL,XlL(x)Xzc(al(gl(x)))Xt(fir(N(cL(enl(x)))))XD(Ay=aL(xn);xe(cDL(xV,yV,yn);y))x=N(cI(x));Ay=aL(xn);xe(cIL(xV,yV,yn);y))
 A1(cD,XdD(x)Xzc(ad(gl(x)))Xt(fir(N(cD(enl(x)))))x=N(cL(x));Ay=aD(xn);xe(cLD(xV,yV,yn);y))
-A1(cS,XsS(x)XC(x=str0(x);x(sym(xV)))Xc(as(xv))pen(x,cS))
+A1(cS,XsS(x)XC(x=str0(x);x(sym(xV)))Xc(as(xv))P(xtA&&!xn,x(oS))pen(x,cS))
 A1(pI,Xc(pI(enl(x)))XC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tl])))Lv=pl(&s);x(*s?_R(cn[tl]):az(v)))pen(x,pI))
 A1*cT[]={[tA]=cA,cB,cH,cI,cL,cD,cC,cS};
 A1(csti,XD(sqzZ(cL(x)))Xd(az(gd(x)))XC(sqzZ(cB(x)))Xc(ai(xv))XzZ(x)et1(x))
