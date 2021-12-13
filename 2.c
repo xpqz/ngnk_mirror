@@ -123,7 +123,7 @@ S TY(&mxmaBL)araT[][11][2]={
  {{dexaHI,dexaHL},{             },{             },{             },{},{},{mnmaHI,mnmaHL},{mxmaHI,mxmaHL}},
  {{dexaII,dexaIL},{             },{             },{             },{},{},{mnmaII,mnmaIL},{mxmaII,mxmaIL}},
  {{dexaLI,dexaLL},{addaLI,addaLL},{subaLI,subaLL},{mulaLI,mulaLL},{},{},{mnmaLI,mnmaLL},{mxmaLI,mxmaLL}}};
-A4(ara,/*1111*/Q(xtZ)Q(ytZ)Q(ztv)Q(zv<11)Q(utzZ)P(utT&&yn-un,el2(x(y),u))I(ADD<=z&&z<=MUL,/*todo*/x=cL(x))
+A4(ara,/*1111*/Q(xtZ)Q(ytZC)Q(ztv)Q(zv<11)Q(utzZ)P(utT&&yn-un,el2(x(y),u))I(ADD<=z&&z<=MUL,/*todo*/x=cL(x))
  x=mut(x);Ny(sup(&x,&u));Nn=xn;
  I(ytL,    i(yn,P(yl>=n,ei2(x(y),u))))
  E(y=cI(y);i(yn,P(yi>=n,ei2(x(y),u))))
