@@ -98,6 +98,7 @@ N=N equal     0 1 2=0 1 3 -> 1 1 0
 x~y match     2 3~2 3 -> 1   "4"~4 -> 0   0~0.0 -> 0
  ,x enlist    ,0 -> ,0   ,0 1 -> ,0 1   ,`a!1 -> +(,`a)!,,1
 x,y concat    0,1 2 -> 0 1 2  "a",1 -> ("a";1)
+d,d merge     (`a`b!0 1),`b`c!2 3 -> `a`b`c!0 2 3
  ^x null      ^(" a";0 1 0N;``a;0.0 0n) -> (1 0;0 0 1;1 0;0 1)
 a^y fill      1^0 0N 2 3 0N -> 0 1 2 3 1   "b"^" " -> "b"
 X^y without   "abracadabra"^"bc" -> "araadara"
