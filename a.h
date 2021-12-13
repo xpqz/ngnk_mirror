@@ -72,12 +72,12 @@ TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX
 #define ALA(f,b...) A f(Ln,Ax      )_(b)
 #define AAL(f,b...) A f(Ax,Li      )_(b)
 #define  AQ(f,b...) A f(Qs         )_(b)
-A1 a1,asc,ax,cA,cB,cC,cD,cH,cI,cL,cS,des,dsc,enl,enla,epr,fir,flp,flr,frk,grp,hex,js0,js1,kst,ksin,kcos,klog,kexp,las,
- len,mr,m0,m1,mRa,mut,neg,not,nul,opn,out,prng,rev,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr,_R;
-A2 a2,add,aM,am,ap1,dot,apd,bin,cat,cst,cut,dct,dex,dvd,eql,fil,fnd,gtn,id_,idx,ltn,mnm,mod,mtc,mul,mxm,que,fld1,
- hsh,sub,v0c,v1c,exc,_1;
-A0 aa0;A3 a3,arf,arp,ars,cpl,try,ear2,_2;A4 ara,dm4;ALA drp,room,rsh;AAL ii;AX adv,eac,fld,prj,run,_8;AA am8,dmd,dm8,ins;
-AL aA,aB,aC,aI,aL,aD,aS,al,az,cls,tilL,rndD;AQ aCz,bsl,bsm,die,evs,pk,sym;
+A1 _R,a1,asc,ax,cA,cB,cC,cD,cH,cI,cL,cS,des,dsc,enl,enla,epr,fir,flp,flr,frk,grp,hex,js0,js1,kcos,kexp,klog,ksin,kst,
+ las,len,m0,m1,mRa,mr,mut,neg,not,nul,opn,out,prng,rev,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
+A2 _1,a2,aM,add,am,ap1,apd,bin,cat,cst,cut,dct,dex,dot,dvd,eql,exc,fil,fld1,fnd,gtn,hsh,id_,idx,ltn,mnm,mod,mtc,mul,mxm,
+ que,sub,v0c,v1c;
+A0 aa0;A3 _2,a3,arf,arp,ars,cpl,ear2,try;A4 ara,dm4;AX _8,adv,eac,fld,prj,run;AA am8,dm8,dmd,ins;
+AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,rsh;AAL ii;AQ aCz,bsl,bsm,die,evs,pk,sym;
 A ac(C),ai(I),as(I),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),eac1f(A,A1),
  eac2f(A,A,A2),e0(Q),e1(A,Q),K0(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),mf(I,N),mnd(OA*,I,AA*),pen(A,A1*),sur(C,A,C),
  wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
@@ -91,8 +91,8 @@ EX OC vc[],Tz[],TZ[],TT[],TX[],Tk[];
 
 //           0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
 //             () ,3 ,4 ,5 ,6 ,d "" ,` +!  !  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
-enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw,te,tn}; //types
-#define TS  "?""A""I""I""I""I""D""C""S""M""m""i""i""d""c""s""o""p""q""r""u""v""w""e" //their symbols
+enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw,te,tn};
+#define TS  "?""A""I""I""I""I""D""C""S""M""m""i""i""d""c""s""o""p""q""r""u""v""w""e" //type symbols
 #define TZv  0, 8, 1, 2, 4, 8, 8, 1, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8  //item size in bytes
 #define Tzv  0, 4, 0, 1, 2, 3, 3, 0, 2, 4, 4, 3, 3, 3, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3  //log2(size) or 4=reftypes
 #define TTv  0,tA,tB,tH,tI,tL,tD,tC,tS,tM,tM,tI,tL,tD,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA  //corresponding list type
