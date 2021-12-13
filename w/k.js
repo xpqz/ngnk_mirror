@@ -54,24 +54,22 @@ rdy(_=>{
    if(i>=0){s=s.slice(0,i);r.push`till empty line`}
    if(s.slice(0,2)==='f:'){s=s.slice(2);r.push`not counting initial "f:"`}
    bc.textContent=s.length+'bytes'+(r.length?`(${r.join`, `})`:'');return s}
-  ed.value=p0(location.hash.slice(1).replace(/-$/,''))
-  const ev=_=>{w.then(x=>{app=x.instance.exports;heap=app.__heap_base;txt()
-   const v=ed.value,s=v.slice(-1)==='\n'?v:v+'\n',p=p1(v);location.hash=p+'-';out.value='';ubc();
+  out.value='';ed.value=p0(location.hash.slice(1).replace(/-$/,''))
+  const ev=s=>w.then(x=>{app=x.instance.exports;heap=app.__heap_base;txt();out.value='';ubc()
    const f=app.open(ms('a.k\0'),514,438/*O_RDWR|O_CREAT,0666*/),[q,nq]=msn(s);app.write(f,q,nq);app.close(f)
-   const h=heap,a=heap+=T1.encodeInto('k\0a.k\0',M(heap,8)).written;S4(a,[h,h+2,0,0]);heap+=16
-   let e;try{app.main(2,a)}catch(x){e=x}
-   location.hash=p;w=wa();if(e&&e.message!=='exit(0)')throw e})}
-  if(location.hash.slice(-1)!=='-')ev()
-  out.value=''
-  bEval.onclick=ev
+   const h=heap,a=heap+=T1.encodeInto('k\0a.k\0',M(heap,8)).written;S4(a,[h,h+2,0,0]);heap+=16;
+   let e;try{app.main(2,a)}catch(x){e=x}if(e&&e.message!=='exit(0)')throw e;w=wa()})
+  const evp=_=>{const v=ed.value,s=v.slice(-1)==='\n'?v:v+'\n',p=p1(v);location.hash=p+'-';ev(s).then(_=>location.hash=p)}
+  bEval.onclick=evp;if(location.hash.slice(-1)!=='-')evp()
   bGolf.onclick=_=>{const s=ed.value,h='ngn-'+hx8(hsh(s)),g=ubc()
    cpy(out.value=`# [K (ngn/k)], ${g.length} bytes\n\n    ${g.replace(/\n/g,'\n    ')}\n\n[Try it online!][${h}]\n`+
     `\n[K (ngn/k)]: https://codeberg.org/ngn/k\n[${h}]: ${location.origin}/k#${p1(s)}\n`)}
   bLink.onclick=_=>{const s=ed.value,g=ubc(),u=g.replace(/`/g,'\\`').replace(/\\$/,'\\ ')
    cpy(out.value=`ngn/k, ${g.length} bytes: [\`${u}\`](${location.origin}/k#${p1(s)})`)}
+  bHelp.onclick=_=>{ev('`0:,/(,80#"-"),/:2_\'(&"-"=*\'x)_x:0:"repl.k"\n').then(_=>setTimeout(_=>{out.scrollTop=0},1))}
   selEx.onchange=_=>{const v=selEx.selectedOptions[0].value
-   if(v){fetch(v).then(x=>x.text()).then(x=>{ed.value=x;ev();selEx.blur()})}}
-  ed.onkeydown=x=>{const b={1013:bEval,1071:bGolf,1075:bLink}[kc(x)];if(b){b.onclick();return!1}}
+   if(v){fetch(v).then(x=>x.text()).then(x=>{ed.value=x;evp();selEx.blur()})}}
+  ed.onkeydown=x=>{const b={1013:bEval,1071:bGolf,1075:bLink,112:bHelp}[kc(x)];if(b){b.onclick();return!1}}
   ed.onkeyup=thr(ubc,1000)}})
 
 let cnv,g,iid,tid,aid,tickPeriod=50
