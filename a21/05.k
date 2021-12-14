@@ -1,9 +1,12 @@
 #!../k
-l:`I$","\''" -> "\'0:"i/05" /lines, 2x2xN
-l:l-\:\:&/&/l               /translate to (0;0)
-n:1+|/|/l                   /grid shape
-/g:put line on grid [x:flattened grid; y:(start; end)]
-g:{@[x;n/y[0]+(1&-1|d)*\:!1+|/d,-d:--/y;+;1]}
-f:+/1<(&*/n)g/              /solve (put lines on grid and count intersections of >1)
-f(|/'=/')#l                 /part1
-f@l                         /part2
+l:`I$+'+","\''" -> "\'0:"i/05" /lines
+n:1+|/|/''l                    /grid shape
+p:n/*l                         /start
+d:-/|l                         /deltas
+s:n/-1|1&d                     /step
+k:1+|/d|-d                     /distance
+f:{[x;p;s;k] @[x;p+s*!k;+;1]}  /put line on (flattened) grid
+i:&m:~*/d                      /only horizontal or vertical
+j:&~m                          /only diagonal
++/1<a:f/[&*/n;p i;s i;k i]     /part1
++/1<  f/[a   ;p j;s j;k j]     /part2
