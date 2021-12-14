@@ -70,7 +70,7 @@ AA(am8,Ax=*a,y=a[1];
   Yzc(Li=gl_(y);P(!in(i,xn),ei8(a,n))x=mut(y(x));Ab8;Az=a[2];*b=ii(x,i);Mc(b+1,a+3,8*n-24);set(x,i,Nx(z(z8(b,n-2)))))
   I(ytZC&&n==4,Az=a[2],u=a[3];
    P(xtZ&&ztv&&utzZ&&zv<11,ara(x,y,z,u))
-   P(xtC&&z==av&&utcC,x=mut(x);y=cL(y);I d=utT;u=enla(u);P(d&&yn-un,el2(x(y),u))
+   P(xtC&&z==av&&utcC,x=mut(x);y=cL(y);I d=utT;I(!d,u=enl(u))P(d&&yn-un,el2(x(y),u))
     x=ye(ue(i(yn,Lj=yl;B(!in(j,xn),x=0)xC[j]=uC[d*i])x));P(!x,ei0())x))
   Yt(et8(a,n))
   fld(AP1,a,n))

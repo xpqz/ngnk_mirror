@@ -20,7 +20,6 @@ S AAL(rmv,XT(P(!in(i,xn),x)Ay=an(xt,xn-1);Mc(yV,xV,i*xW);Mc(yV+i*xW,xV+i*xW+xW,(
 A2(cut,Xz(drp(gl(x),y))XF(flt(x,y,0))Xm(Az=kv(&x);y=fnd(xR,y);P(!y,x(z(0)))yR;am(Nz(cut(x,y)),Nx(cut(z,y))))
  YMT(K("{y$[|/0<':x,#y;`err\"domain\";x+!'1_-':x,#y]}",Ny(cL(x)),y))Ym(K("{((!y)^x)#y}",x,y))Yz(rmv(x,gl(y)))et2(x,y))
 A1(enl,Xi(aV(tZ(xv),1,&x))XF(a1(x))XP(aV(TT[xt],1,&x))Xt(x(aV(TT[xt],1,xV)))Xm(Ay=kv(&x);aM(x,eac1f(y,enl)))a1(x))
-A1(enla,Xmt(enl(x))x)
 A2(cat,Xt(cat(enl(x),y))Yt(cat(x,enl(y)))
  P(xtmM||ytmM,P(!xtmM||!ytmM,et2(x,y))P(xtm&&ytm,Az=kv(&y);K("@[;;:;]",x,y,z))P(!mtc_(xx,yx),ed2(x,y))
   Az=eac2f(_R(xy),_R(yy),cat);x(y(z?aM(_R(xx),z):0)))
