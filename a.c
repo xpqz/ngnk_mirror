@@ -63,7 +63,7 @@ S A set(Ax,Li,Ay/*1i1*/)_(Q(xr==1);XA(Az=xa;xa=z(y);ytt&&!ytF?sqz(x):x)
 S I stp(Li,Ax/*0*/,A**p)_(Ay=**p;P(!ytm,ed1(x))**p=y=mut(y);Az=yx;P(!ztS,ed1(x))Lj=fpI(&yx,xI[i+1]);
  z=yy;P(!ztA,ed1(x))yy=j==zn?zq(aa0()):mut(z);Q(_r(yy)==1);*p=(A*)_V(yy)+j;1)
 S A*pth(Ax/*1*/)_(Xt(pth(enl(x)))
- Li=fI(gk,gn,*xI);I(i<0||!gv[i],gk[i=gn]=*xI;gv[gn++]=xn>1?aa0():au)A*p=gv+i;i(xn-1,P(!stp(i,x,&p),(A*)0))x(0);p)
+ Li=fI(gk,gn,*xI);I(i<0,gk[i=gn]=*xI;gv[gn++]=xn>1?aa0():au)A*p=gv+i;I(!*p,*p=au)i(xn-1,P(!stp(i,x,&p),(A*)0))x(0);p)
 A mnd(OA*a,In,AA*f)_(A*p=pth(*a);P(!p,mrn(n-1,a+1);0)Ab8;*b=*p;Mc(b+1,a+1,(n-1)*8);*p=au;*p=_R(N(f(b,n))))
 AA(am8,Ax=*a,y=a[1];
  XT(P(y==au,Ab8;Mc(b,a,n*8);b[1]=tilL(xN);am8(b,n))
