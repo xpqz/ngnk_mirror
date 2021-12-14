@@ -186,7 +186,7 @@ x F\: eachleft  1 2*\:3 4 -> (3 4;6 8)
 \h
 : SET      RETURN    '  each|slide|bin
 + add      flip      /  fold|join |dec
-- subtract negate    \  scan|split|enc
+- subtract negate    \  scan|split|enc|trace
 * multiply first     ': eachprior
 % divide   sqrt      /: eachright
 ! mod|dict enum|key  \: eachleft
