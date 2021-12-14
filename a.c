@@ -18,20 +18,11 @@ S AAL(io,/*0*/xtt||in(i,xN)?ii(x,i):xN?mkn(ii(x,0)):xtm?io(xy,i):_R(cn[xt]))A1(f
  L l=n/g*g;j(n-l,P(!in(q[j],m),l))j(n-l,r[j]=p[q[j]]))
 iC_(I)iC_(L)i_(B,I)j_(B,I)i_(B,L)j_(B,L)i_(H,I)j_(H,I)i_(H,L)j_(H,L)i_(I,I)j_(I,I)i_(I,L)j_(I,L)j_(L,I)j_(L,L)
 iD_(I)iD_(L)iS_(I)iS_(L)
-S A2(i1,/*01*/
- Xt(y(xR))
- P(y==PLH||y==au,xR)
- P(xtm||xtM&&ytsS,i1(xy,N(fnd(_R(xx),y))))
- Yzc(io(x,gl(y)))
- Yt(et1(y))
- YmM(Az=kv(&y);am(y,Ny(i1(x,z))))
- YA(ear2(xR,y,AP1))
- I(!ytL&&!ytI,y=N(cI(y)))
- Nn=yn;P(xtA||xtM,Az=oA;I(ytL,i(n,zq(io(x,yl))))E(i(n,zq(io(x,yi))))y(z))
- Az=xtL&&ytL&&yr==1?y:an(xt,n);
- Lm=T(&iBI,iHI,iII,jLI,iDI,iCI,iSI,iBL,iHL,iIL,jLL,iDL,iCL,iSL)[xt-tB+7*ytL](xV,xn,yV,zV,n);
- I(m<n,z=z(aL(n));T(&jBI,jHI,jII,jBL,jHL,jIL)[xt-tB+3*ytL](xV,xn,yV,zV,n))
- y-z?y(z):z)
+S A2(i1,/*01*/Xt(y(xR))P(y==PLH||y==au,xR)P(xtm||xtM&&ytsS,i1(xy,N(fnd(_R(xx),y))))
+ Yzc(io(x,gl(y)))Yt(et1(y))YmM(Az=kv(&y);am(y,Ny(i1(x,z))))YA(ear2(xR,y,AP1))
+ I(!ytL&&!ytI,y=N(cI(y)))Nn=yn;P(xtA||xtM,Az=oA;I(ytL,i(n,zq(io(x,yl))))E(i(n,zq(io(x,yi))))y(z))
+ Az=xtL&&ytL&&yr==1?y:an(xt,n);Lm=T(&iBI,iHI,iII,jLI,iDI,iCI,iSI,iBL,iHL,iIL,jLL,iDL,iCL,iSL)[xt-tB+7*ytL](xV,xn,yV,zV,n);
+ I(m<n,z=z(aL(n));T(&jBI,jHI,jII,jBL,jHL,jIL)[xt-tB+3*ytL](xV,xn,yV,zV,n))y-z?y(z):z)
 S A3(i2,/*011*/Cb=ytT||y==PLH||y==au;x=Nz(i1(x,y));P(!b,x(i1(x,z)))K(".\\:",x,a1(z)))
 S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,i2(x,y,a[1]))
  a++;n--;Cb=ytT||y==PLH||y==au;x=i1(x,y);P(!n,x)P(!x,mrn(n,a);x)P(!b,x(i8(x,a,n)))K(".\\:",x,aV(tA,n,a)))
