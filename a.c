@@ -69,9 +69,8 @@ AA(am8,Ax=*a,y=a[1];
  XT(P(y==au,Ab8;Mc(b,a,n*8);b[1]=tilL(xN);am8(b,n))
   Yzc(Li=gl_(y);P(!in(i,xn),ei8(a,n))x=mut(y(x));Ab8;Az=a[2];*b=ii(x,i);Mc(b+1,a+3,8*n-24);set(x,i,Nx(z(z8(b,n-2)))))
   I(ytZC&&n==4,Az=a[2],u=a[3];
-   P(xtZ&&ztv&&utzZ&&zv<11,ara(x,y,z,u))
-   P(xtC&&z==av&&utcC,x=mut(x);y=cL(y);I d=utT;I(!d,u=enl(u))P(d&&yn-un,el2(x(y),u))
-    x=ye(ue(i(yn,Lj=yl;B(!in(j,xn),x=0)xC[j]=uC[d*i])x));P(!x,ei0())x))
+   P(xtZ&&ztv&&utzZ&&(0xcf&1<<zv),ara(x,y,z,u))
+   P(xtC&&z==av&&utcC,cC(ara(x,y,z,u))))
   Yt(et8(a,n))
   fld(AP1,a,n))
  XM(Ab8;i(n,Ax=a[i];b[i]=xtM?flp(x):x;Q(b[i]))flp(N(eac(AP1,b,n))))

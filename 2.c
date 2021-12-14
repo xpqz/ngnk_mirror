@@ -112,19 +112,20 @@ A3(arp,Q(ztv)Q(zv<11)Q(xtzc)Q(ytZC)T(&dexp,___p,___p,___p,___p,modp,mmmp,mmmp,cm
 #define ha(v,T)\
  S V v##a##T##L(V*RE p,Nn,OV*RE q,Nm,O V*RE r,N d){T*a=p;O L*b=q;O T*c=r;i(m,Lj=b[i];a[j]=v##o##T(a[j],c[d*i]))}\
  S V v##a##T##I(V*RE p,Nn,OV*RE q,Nm,O V*RE r,N d){T*a=p;O I*b=q;O T*c=r;i(m,Ij=b[i];a[j]=v##o##T(a[j],c[d*i]))}
-ha(dex,B)ha(dex,H)ha(dex,I)ha(dex,L)
-                           ha(add,L)
-                           ha(sub,L)
-                           ha(mul,L)
-ha(mnm,B)ha(mnm,H)ha(mnm,I)ha(mnm,L)
-ha(mxm,B)ha(mxm,H)ha(mxm,I)ha(mxm,L)
+ha(add,L)ha(mul,L)ha(mnm,B)ha(mnm,H)ha(mnm,I)ha(mnm,L)ha(mxm,B)ha(mxm,H)ha(mxm,I)ha(mxm,L)
 S TY(&mxmaBL)araT[][11][2]={
- {{dexaBI,dexaBL},{             },{             },{             },{},{},{mnmaBI,mnmaBL},{mxmaBI,mxmaBL}},
- {{dexaHI,dexaHL},{             },{             },{             },{},{},{mnmaHI,mnmaHL},{mxmaHI,mxmaHL}},
- {{dexaII,dexaIL},{             },{             },{             },{},{},{mnmaII,mnmaIL},{mxmaII,mxmaIL}},
- {{dexaLI,dexaLL},{addaLI,addaLL},{subaLI,subaLL},{mulaLI,mulaLL},{},{},{mnmaLI,mnmaLL},{mxmaLI,mxmaLL}}};
-A4(ara,/*1111*/Q(xtZ)Q(ytZC)Q(ztv)Q(zv<11)Q(utzZ)P(utT&&yn-un,el2(x(y),u))I(ADD<=z&&z<=MUL,/*todo*/x=cL(x))
- x=mut(x);Ny(sup(&x,&u));Nn=xn;
- I(ytL,    i(yn,P(yl>=n,ei2(x(y),u))))
- E(y=cI(y);i(yn,P(yi>=n,ei2(x(y),u))))
- ye(ue(araT[xt-tB][zv][ytL](xV,xn,yV,yn,utP?&u:uV,utT);x)))
+ {{             },{},{             },{},{},{mnmaBI,mnmaBL},{mxmaBI,mxmaBL}},
+ {{             },{},{             },{},{},{mnmaHI,mnmaHL},{mxmaHI,mxmaHL}},
+ {{             },{},{             },{},{},{mnmaII,mnmaIL},{mxmaII,mxmaIL}},
+ {{addaLI,addaLL},{},{mulaLI,mulaLL},{},{},{mnmaLI,mnmaLL},{mxmaLI,mxmaLL}}};
+#define S4(i,a,b,c,d,e...) switch(i){case 0:a;break;case 1:b;break;case 2:c;break;case 3:d;break;e}
+S I ina(Ax/*0*/,Nn)_(S4(Tz[xt],P(n-(B)n,1)
+ i(xn,P(xb>=n,0)),P(n-(H)n,1)i(xn,P(xh>=n,0)),P(n-(I)n,1)i(xn,P(xi>=n,0)),i(xn,P(xl>=n,0)))1)
+S A4(___a,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))I(!ytL,y=cI(y))
+ ye(ue(araT[xt-tB][zv-1][ytL](xV,xn,yV,yn,utP?&u:uV,utT);x)))
+S A4(dexa,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))
+ Nn=yn;I wx=Tz[xt],wy=Tz[yt],wu=utt?-1:Tz[ut];Lv;I(wu<0,v=gl_(u))
+ i(n,Lj;S4(wy,j=yb,j=yh,j=yi,j=yl)S4(wu,v=ub,v=uh,v=ui,v=ul)S4(wx,xB[j]=v,xH[j]=v,xI[j]=v,xL[j]=v))u(y(x)))
+S A4(adma,___a(cL(x),y,z,cL(u)))
+S A4(suba,adma(x,y,ADD,neg(u)))
+A4(ara,/*1101*/Q(xtZ)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ)T(&dexa,adma,suba,adma,0,0,___a,___a)[zv](x,y,z,u))
