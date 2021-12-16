@@ -1,10 +1,11 @@
 #!../k
 \l l.k
-f:**|I[`I$","\*0:"i/19"]@
-+/f'+!2#50
+f:*|I[`I$","\*0:"i/19"]@ /intcode machine
 
-(i;j):(2#n)\*1_&f'+!2#n:10
-t:{x+:1;(x;(~f x,)(1+)/y;(f x,)(1+)/z|1+y)}.
-(p;h):{(p;h):x;q:100!1+p;$[99<h[q;2]-h[p;1];x;(q;@[h;q;:;t h p])]}/(99;(99 3#0),,i,j+!2)
-q:100!1+p
-h[p;1]+10000*h[q;0]
++/f@!2#50                /part1
+
+s:100                    /square size
+d:f 1|:\!:               /x-th diagonal of the grid
+ij:-2 0!'(s>+/d@)(2*)/1  /the first diagonal with sum s is between i and j
+k:*|{$[-2<-/x;x;s>+/d@m:-2!+/x;(1+m),*|x;(*x),m]}/ij /binary search
+10000/i,k-s+i:*&d k      /part2

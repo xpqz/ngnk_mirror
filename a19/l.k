@@ -1,10 +1,10 @@
 \l ../l/maths.k
-D:(|-1 1*)\!2
-I:{T/(0;x;0;y;!0)}
-E:99=100!@/|2#
-Am:{@[$[y<#x;x;x,(0|y+1-#x)#0];y;:;z]}
-Tf:(+/;*/;</;=/)
-T:{[i;a;r;u;v]
+D:(|-1 1*)\!2      /cardinal directions
+I:{T/(0;x;0;y;!0)} /evaluate intcode
+E:99=100!@/|2#     /stop condition
+Am:{@[$[y<#x;x;x,(0|y+1-#x)#0];y;:;z]} /list-extending amend
+Tf:(+/;*/;</;=/)   /intcode operators
+T:{[i;a;r;u;v]     /transition function
  p:(a;::;r+a@)[10!-100 -1000 -10000!'a i]@'i+1 2 3
  c:100!a i
  $[c=3;(a;u):(Am[a;*p;*u];1_u)
