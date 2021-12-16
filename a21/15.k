@@ -6,7 +6,7 @@ f:{            /solve
  h::n/'(n-1)&/:0|D+\:!n /neighbours
  a::,/x        /flattened input
  d::&*/n       /distances (0 for unknown)
- q::0,9999#,!0 /q[x]:list of cells at distance x
+ q::(,,0),9999#,!0 /q[x]:list of cells at distance x
  {q[d[i]:x+a i],:i:?(d@)_,/h@\:q x;x+~*|d}/0 /wave
  *|d}
 f@x /part1
