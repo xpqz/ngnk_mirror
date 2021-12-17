@@ -1,16 +1,12 @@
 #!../k
-x:*0:"i/17"
-/x:"target area: x=20..30, y=-10..-5"
-(tx;ty):0 1+/:`I$".."\'*'|'"="\'","\x
+(tx;ty):0 1+/:`I$".."\'*'|'"="\'","\*0:"i/17"
 
 /parameters to test
-vx:!1000       /velocities by x
-vy:-1000+!2000 /velocities by y
-k:5000         /steps
+vx:!100;vy:-1000+!2000;k:500 /vx,vy:velocities,k:steps
 
-rx:</tx>\:+\'0|vx-\:!k
-ry:</ty>\:+\'  vy-\:!k
-r:(*vx;*vy)+/: ,/,/' (&'+rx) ,/:\:' &'+ry
+rx:</tx>\:+\0|vx-/:!k
+ry:</ty>\:+\  vy-/:!k
+r:(*vx;*vy)+/:,/,/'(&'rx),/:\:'&'ry
 
 +/1+!|/*'|'r /part1
 #?r          /part2
