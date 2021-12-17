@@ -79,7 +79,7 @@ A2 _1,a2,aM,add,am,ap1,apd,bin,cat,cst,cut,dct,dex,dot,dvd,eql,exc,fil,fld1,fnd,
 A0 aa0;A3 _2,a3,arf,arp,ars,cpl,ear2,try;A4 ara,dm4;AX _8,adv,eac,fld,prj,run;AA am8,dm8,dmd,ins;
 AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,rsh;AAL ii;AQ aCz,bsl,bsm,die,evs,pk,sym;
 A ac(C),ai(I),as(I),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),eac1f(A,A1),
- eac2f(A,A,A2),e0(Q),e1(A,Q),K0(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),mf(I,N),mnd(OA*,I,AA*),pen(A,A1*),sur(C,A,C),
+ eac2f(A,A,A2),e0(Q),e1(A,Q),evK(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),mf(I,N),mnd(OA*,I,AA*),pen(A,A1*),sur(C,A,C),
  wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
 V dir(I,void(*)(V*,Q),V*),exit(I),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),*memmem(OV*,N,OV*,N),
  *memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),tilV(V*,L,I),eS(A,N),eQ(Q,N,N);
@@ -150,7 +150,7 @@ enum{au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,FLR,STR,U
 #define WD __builtin_inf()
 #define NL (1ll<<63)
 #define WL (~NL)
-#define K(s,a...) ({S A f;K0(&f,s,A(a),ZZ(A(a)));})
+#define K(s,a...) ({S A f;evK(&f,s,A(a),ZZ(A(a)));})
 
 #define EA h(c,compile)h(d,domain)h(i,index)h(l,length)h(n,nyi)h(o,io)h(p,parse)h(r,rank)h(s,stack)h(t,type)h(v,value)h(z,limit)
 #define h(t,m) A0 e##t##0;A1 e##t##1;A2 e##t##2;AA e##t##8;

@@ -84,5 +84,5 @@ A3(dm3,Nm=yN;P(y==au||!m,z(z1(y(x)  )))P(m==1,am3(x,fir(y),z  ))yR;am4(x,fir(y),
 A4(dm4,Nm=yN;P(y==au||!m,z(z2(y(x),u)))P(m==1,am4(x,fir(y),z,u))yR;am5(x,fir(y),prj(DOT,A(PLH,drp(1,y)),2),z,u))
 AA(dm8,n==4?dm4(*a,a[1],a[2],a[3]):n==3?dm3(*a,a[1],a[2]):en8(a,n))
 AA(dmd,Ax=*a;XsS(mnd(a,n,dm8))I(n==3,XF(try(x,a[1],a[2])))dm8(a,n))
-SN A K0i(A*p,Qs)_(*p=evs(s);I(!*p,die(s))cns=apd(cns,*p))
-A K0(A*p,Qs,OA*a,In)_(I(!*p,K0i(p,s))_8(*p,a,n))
+SN A evKi(A*p,Qs)_(*p=evs(s);I(!*p,die(s))cns=apd(cns,*p))
+A evK(A*p,Qs,OA*a,In)_(I(!*p,evKi(p,s))_8(*p,a,n))
