@@ -64,6 +64,12 @@ A2(ltn,ar2(x,y,LTN))
 A2(gtn,ltn(y,x))
 A2(eql,XYmMA(eac2f(x,y,eql))P(xtsS-ytsS,et2(x,y))P(xtsS,eql(AT(xt+ti-ts,mut(x)),AT(yt+ti-ts,mut(y))))ar2(x,y,EQL))
 
+#define S4(i,a,b,c,d,e...) switch(i){case 0:a;break;case 1:b;break;case 2:c;break;case 3:d;break;e}
+S L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)
+S V iW(Ax/*0*/,I w,Li,Lv){S4(w,xb=v,xh=v,xi=v,xl=v)}
+S I ina(Ax/*0*/,Nn)_(S4(Tz[xt],P(n-(B)n,1)
+ i(xn,P(xb>=n,0)),P(n-(H)n,1)i(xn,P(xh>=n,0)),P(n-(I)n,1)i(xn,P(xi>=n,0)),i(xn,P(xl>=n,0)))1)
+
 #define hf(v,T)S L v##f##T(L a,O V*b,Nn)_(O T*p=b;i(n,a=v##oL(a,p[i]))a)
 #define hfD(v) S D v##f##D(D a,O D*b,Nn)_(i(n,a=v##oD(a,b[i]))a)
 hf(add,B)hf(add,H)hf(add,I)hf(add,L)hfD(add) hf(mul,B)hf(mul,H)hf(mul,I)hf(mul,L)hfD(mul)
@@ -98,15 +104,37 @@ SN A1(inv,x=mut(x);Nn=xn*xW;i(PD(n,xC),xc^=-1)x)
 S A3(mnms,P((!x||xtz)&&ytZ,inv(mxms(x?az(-1-gl(x)):0,inv(y),MXM)))___s(x,y,z))
 A3(ars,Q(ztv)Q(zv<11)Q(!x||xtzdc)Q(ytZDC)T(&dexs,adds,subs,muls,___s,___s,mnms,mxms,___s,___s,___s)[zv](x,y,z))
 
-#define hp(v,T,R) S I v##p##T(OV*RE p,OV*RE q,V*RE s,Nn)_(O T*a=p,*b=q;R*r=s;T c=*a;i(PD(n,b),T d=b[i];r[i]=v##o##T(b[i],c);c=d);0)
-hp(mnm,B,B)hp(mnm,H,H)hp(mnm,I,I)hp(mnm,L,L) hp(ltn,B,B)hp(ltn,H,B)hp(ltn,I,B)hp(ltn,L,B)
-hp(mxm,B,B)hp(mxm,H,H)hp(mxm,I,I)hp(mxm,L,L) hp(gtn,B,B)hp(gtn,H,B)hp(gtn,I,B)hp(gtn,L,B)
-S A3(dexp,cat(x,drp(-1,y)))                  hp(eql,B,B)hp(eql,H,B)hp(eql,I,B)hp(eql,L,B)
+S A3(dexp,cat(x,drp(-1,y)))
 S A3(___p,v2[zv](y,dexp(x,yR,av)))
 S A3(modp,eac2f(y,dexp(x,yR,av),mod))
-S A3(mmmp,N(sup(&x,&y));Lv=gl(x);Ii=(z-MNM)<<2|Tz[yt];x=ax(y);T(&mnmpB,mnmpH,mnmpI,mnmpL,mxmpB,mxmpH,mxmpI,mxmpL)[i](&v,yV,xV,yn);x)
-S A3(cmpp,Ii=z-LTN,j=Tz[yt];Lv=gl(x);x=aB(yn);Cc=tZ(v)-tB<=j?2:!i?v>0:i==1?v<0:0;
- ye(T(&ltnpB,ltnpH,ltnpI,ltnpL,gtnpB,gtnpH,gtnpI,gtnpL,eqlpB,eqlpH,eqlpI,eqlpL)[i<<2|j](&v,yV,xV,yn);I(c-2,*xB=c)x))
+S A3(mmmp,Nn=yn;I w=Tz[yt],o=z-MNM;Lv=gl(x),l=-1ll<<(8<<w)-1,h=~l;v=o&&v<=l?l:!o&&v>=h?h:v;P(o?v>=h:v<=l,rsh(n,y(az(v))))
+ x=ax(y);iW(y,w,-1,v);
+ switch(4*o+w){
+  case  0:j(n,Ni=n-1-j;xb=min(yb,yB[i-1]))break;
+  case  1:j(n,Ni=n-1-j;xh=min(yh,yH[i-1]))break;
+  case  2:j(n,Ni=n-1-j;xi=min(yi,yI[i-1]))break;
+  case  3:j(n,Ni=n-1-j;xl=min(yl,yL[i-1]))break;
+  case  4:j(n,Ni=n-1-j;xb=max(yb,yB[i-1]))break;
+  case  5:j(n,Ni=n-1-j;xh=max(yh,yH[i-1]))break;
+  case  6:j(n,Ni=n-1-j;xi=max(yi,yI[i-1]))break;
+  default:j(n,Ni=n-1-j;xl=max(yl,yL[i-1]))break;}
+ yn=n;x)
+S A3(cmpp,I o=z-LTN,w=Tz[yt];Nn=yn;Au=aB(n);Lv=gl(x),p=iw(y,w,0);*uB=!o?p<v:o==1?p>v:p==v;
+ switch(4*o+w){
+  case  0:j(n-1,Ni=n-1-j;ub=yb< yB[i-1])break;
+  case  1:j(n-1,Ni=n-1-j;ub=yh< yH[i-1])break;
+  case  2:j(n-1,Ni=n-1-j;ub=yi< yI[i-1])break;
+  case  3:j(n-1,Ni=n-1-j;ub=yl< yL[i-1])break;
+  case  4:j(n-1,Ni=n-1-j;ub=yb> yB[i-1])break;
+  case  5:j(n-1,Ni=n-1-j;ub=yh> yH[i-1])break;
+  case  6:j(n-1,Ni=n-1-j;ub=yi> yI[i-1])break;
+  case  7:j(n-1,Ni=n-1-j;ub=yl> yL[i-1])break;
+  case  8:j(n-1,Ni=n-1-j;ub=yb==yB[i-1])break;
+  case  9:j(n-1,Ni=n-1-j;ub=yh==yH[i-1])break;
+  case 10:j(n-1,Ni=n-1-j;ub=yi==yI[i-1])break;
+  default:j(n-1,Ni=n-1-j;ub=yl==yL[i-1])break;}
+ y(u))
+
 A3(arp,Q(ztv)Q(zv<11)Q(xtzc)Q(ytZC)T(&dexp,___p,___p,___p,___p,modp,mmmp,mmmp,cmpp,cmpp,cmpp)[zv](x,y,z))
 
 #define ha(v,T)\
@@ -118,11 +146,6 @@ S TY(&mxmaBL)araT[][11][2]={
  {{             },{},{             },{},{},{mnmaHI,mnmaHL},{mxmaHI,mxmaHL}},
  {{             },{},{             },{},{},{mnmaII,mnmaIL},{mxmaII,mxmaIL}},
  {{addaLI,addaLL},{},{mulaLI,mulaLL},{},{},{mnmaLI,mnmaLL},{mxmaLI,mxmaLL}}};
-#define S4(i,a,b,c,d,e...) switch(i){case 0:a;break;case 1:b;break;case 2:c;break;case 3:d;break;e}
-S I ina(Ax/*0*/,Nn)_(S4(Tz[xt],P(n-(B)n,1)
- i(xn,P(xb>=n,0)),P(n-(H)n,1)i(xn,P(xh>=n,0)),P(n-(I)n,1)i(xn,P(xi>=n,0)),i(xn,P(xl>=n,0)))1)
-S L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)
-S V iW(Ax/*0*/,I w,Li,Lv){S4(w,xb=v,xh=v,xi=v,xl=v)}
 S A4(___a,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))I(!ytL,y=cI(y))
  ye(ue(araT[xt-tB][zv-1][ytL](xV,xn,yV,yn,utP?&u:uV,utT);x)))
 S A4(dexa,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))
