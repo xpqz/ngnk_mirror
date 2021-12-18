@@ -4,7 +4,7 @@ repl.cmds:(,"a")!{`1:1:repl.joinpath[repl.dirname`argv 0]"LICENSE";}
 repl.dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
 repl.joinpath:{$[x~,".";y;"/"~*|x;x,y;x,"/",y]}
 repl.fmt:{$[x~(::);"";(`A~@x)&1<#x;"(",("\n "/`k'x),")\n";`k[x],"\n"]}
-repl.line:{$[#x;;:0];x:-1_x;$[(3>#x)&("\\"=*x)&~^(!repl.cmds)?x 1;repl.cmds[x 1]x 1;.[`1:repl.fmt@.:;,x;`epr@]];`1:repl.prompt;1}
+repl.line:{$[#x;;:0];x:-1_x;$[(3>#x)&("\\"=*x)&~^(!repl.cmds)?x 1;repl.cmds[x 1]x 1;.[`1:repl.fmt@.:;,x;{`0:`err[]}]];`1:repl.prompt;1}
 {repl.cmds[x[1]1]:{y;`0:x}2_x}'{(&x~\:80#"-")_x:(1+*&x~\:,"/")_-1_x}@0:`argv 1;
 $["kw"~`argv 0;;{repl.line@1:`}::/`];
 /
