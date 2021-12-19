@@ -6,4 +6,4 @@ m:{(v;d):x;+/v*(+*\3-2\-1+\16 8 4 2 1@d)@'d-1} /magnitude
 D:{$[x~*x;0;1+,/o'x]} /depths
 x:{(,//x;D x)}'_`j?'0:"i/18" /input
 m@a/x /part1
-|/(m@a/)'+x@!2##x /part2
+|/(m@a/)'x(=/')_+!2##x /part2
