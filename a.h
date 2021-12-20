@@ -82,11 +82,11 @@ A ac(C),ai(I),as(I),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,
  eac2f(A,A,A2),e0(Q),e1(A,Q),evK(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),mf(I,N),mnd(OA*,I,AA*),pen(A,A1*),sur(C,A,C),
  wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
 V dir(I,void(*)(V*,Q),V*),exit(I),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),*memmem(OV*,N,OV*,N),
- *memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),tilV(V*,L,I),eS(A,N),eQ(Q,N,N);
+ *memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),repl(),tilV(V*,L,I),eS(A,N),eQ(Q,N,N);
 D gd(A);N strlen(Q),_N(A);C*sl(C*,L),sup(A*,A*),tZ(L);C*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);
-I _K(A),qD(D,D),js_eval(C*,I,C*,I),memcmp(OV*,OV*,N),mtc_(A,A),repl(),si(Q,I),strcmp(Q,Q),rnk(A),osf(Q,L);
+I _K(A),qD(D,D),js_eval(C*,I,C*,I),memcmp(OV*,OV*,N),mtc_(A,A),si(Q,I),strcmp(Q,Q),rnk(A),osf(Q,L);
 L cfm(OA*,I),gl_(A),gl(A),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),fAI(A,I),fpI(A*,I);Q qs(O L*);
-EX I gn,gk[];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env;
+EX I gn,gk[];EX C gp[32];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env;
 EX OC vc[],Tz[],TZ[],TT[],TX[],Tk[];
 
 //           0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
