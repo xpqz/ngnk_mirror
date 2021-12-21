@@ -64,12 +64,6 @@ A2(ltn,ar2(x,y,LTN))
 A2(gtn,ltn(y,x))
 A2(eql,XYmMA(eac2f(x,y,eql))P(xtsS-ytsS,et2(x,y))P(xtsS,eql(AT(xt+ti-ts,mut(x)),AT(yt+ti-ts,mut(y))))ar2(x,y,EQL))
 
-#define S4(i,a,b,c,d,e...) switch(i){case 0:a;break;case 1:b;break;case 2:c;break;case 3:d;break;e}
-S L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)
-S V iW(Ax/*0*/,I w,Li,Lv){S4(w,xb=v,xh=v,xi=v,xl=v)}
-S I ina(Ax/*0*/,Nn)_(S4(Tz[xt],P(n-(B)n,1)
- i(xn,P(xb>=n,0)),P(n-(H)n,1)i(xn,P(xh>=n,0)),P(n-(I)n,1)i(xn,P(xi>=n,0)),i(xn,P(xl>=n,0)))1)
-
 #define hf(v,T)S L v##f##T(L a,O V*b,Nn)_(O T*p=b;i(n,a=v##oL(a,p[i]))a)
 #define hfD(v) S D v##f##D(D a,O D*b,Nn)_(i(n,a=v##oD(a,b[i]))a)
 hf(add,B)hf(add,H)hf(add,I)hf(add,L)hfD(add) hf(mul,B)hf(mul,H)hf(mul,I)hf(mul,L)hfD(mul)
