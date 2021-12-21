@@ -29,10 +29,10 @@ S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,i2(x,y,a[1]))
 #define S4(i,a,b,c,d) switch(i){case 0:a;break;case 1:b;break;case 2:c;break;default:d;break;}
 L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)
 V iW(Ax/*0*/,I w,Li,Lv){S4(w,xb=v,xh=v,xi=v,xl=v)}
-I ina(Ax/*0*/,Nn)_(S4(Tz[xt],P(n-(B)n,1)i(xn,P(xb>=(B)n,0)),
-                       P(n-(H)n,1)i(xn,P(xh>=(H)n,0)),
-                       P(n-(I)n,1)i(xn,P(xi>=(I)n,0)),
-                                  i(xn,P(xl>=   n,0)))1)
+I ina(Ax/*0*/,Nn)_(S4(Tz[xt],P(n-(B)n,1)i(xn,P(xb>=(UI)n,0)),
+                             P(n-(H)n,1)i(xn,P(xh>=(UI)n,0)),
+                             P(n-(I)n,1)i(xn,P(xi>=(UI)n,0)),
+                                        i(xn,P(xl>=(UL)n,0)))1)
 S A1(qt,x(al(now())))
 S A1(qar,Ay=oA;Q*p=argv;W(*p,yq(aCz(*p++)))ap1(y,x))
 S A1(qen,Ay=oS,z=oA;Q*e=env;W(*e,Qp=*e++,q=p+si(p,'=');yq(cS(aCm(p,q)));zq(aCz(q+!!*q)))y=am(y,z);x-au?ap1(y,x):y)
