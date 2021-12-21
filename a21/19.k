@@ -5,7 +5,9 @@ Q:11<+/(|/=)\:                      /is there overlap? (x and y must be encoded)
 QO:{((Q[B/x]@B/y+)')#-+y(,/-\:)'x}  /offset or ()
 QD:{$[^i:*&0<#'O:QO[x]'D*\:y;()     /direction-offset or ()
     ,(D[i];*O[i])]}
-QP:{,/(,'P),/:'QD[x]'y P}           /permutation-direction-offset or ()
+QP:{                                /permutation-direction-offset or ()
+ (d;e):(+/*/2#,(,/-\:)'/2#,:)'(x;y)
+ $[67>#d^d^e;();,/(,'P),/:'QD[x]'y P]}
 T:{(p;d;O):x;O+d*y@p}               /apply transform
 L:(#S)#,&3                          /scanner locations
 M:(2##S)#0                          /M[i;j]: have we tried to match S[i] and S[j]?
