@@ -6,7 +6,10 @@ A1(flp,XM(Ay=kv(&x);am(x,y))
  Xm(Ay=kv(&x);I(ytT>ytA,y=flp(flp(y)))P(!ytA,et2(x,y))Ln=cfm(yA,yn);P(n<0,el2(x,y))i(yn,Az=ya;I(ztt,y=mut(y);ya=rsh(n,z)))aM(x,y))
  Xt(enl(enl(x)))P(!xtA||!xn,enl(x))Ln=cfm(xA,xn);P(n==-1,enl(x))P(n<0,el1(x))
  Ct=_t(*xA);I(t<tM,i(xn,Ay=xa;B(yt-t,t=0)))E(t=0)Ay=aA(n);P(!t,i(n,Az=aA(xn);j(xn,zA[j]=ii(xA[j],i))ya=sqz(z))x(y))
- I w=Tz[t];i(n,Az=ya=an(t,xn);j(xn,Ay=xA[j];!w?zB[j]=yb:w==1?zH[j]=yh:w==2?zI[j]=yi:(zL[j]=yl))I(w==4,ya=sqz(mRa(z))))x(y))
+ I w=Tz[t];j(n,Az=yA[j]=an(t,xn);Y(w,case  0:i(xn,zb=_B(xa)[j])break;
+                                     case  1:i(xn,zh=_H(xa)[j])break;
+                                     case  2:i(xn,zi=_I(xa)[j])break;
+                                     default:i(xn,zl=_L(xa)[j])I(w==4,yA[j]=sqz(mRa(z)))))x(y))
 V tilV(V*p,Ln,I w){L*a=p,v=T(0x706050403020100ll,0x3000200010000ll,1ll<<32,0)[w],
  d=T(0x808080808080808ll,0x4000400040004ll,2ll<<32|2,1)[w];LN(a)i(PD((n-1>>3-w)+1,a),a[i]=v;v+=d)}
 AL(tilL,P(n<0,n-NL?add(az(n),N(tilL(-n))):ed0())P(n>1<<30,ez0())Ax=an(tZ(n-1),n);tilV(xV,n,xt-tB);x)
