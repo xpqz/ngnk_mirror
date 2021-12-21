@@ -7,7 +7,7 @@ enum{bu,bv=32,bs=64,bg=72,bd=80,ba=88,bP,bi,bx,bI,bX,bm,bM,bG,bS,bl,bL,bz,bj,bA,
 #define Nl(a...) {I r=cl(a);P(r-OK,r);}
 #define fl uA[3]
 S A u;S UC*b,*m;S I nb,lu[8];S A cr(A,I);
-SN I lc(Ax/*1*/,I o)_(Ay=u;Nn=yn,i=4;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,uq(x))h(i+bc-4);1)
+SN I lc(Ax/*1*/,I o)_(Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,uq(x))h(i+bc-5);1)
 SN I ig(Iv)_(Li=fI(gk,gn,v);P(i>=0,i)P(gn-(UC)gn,-1)gk[gn]=v;gv[gn]=0;gn++)
 SN I il(Iv)_(Li=fAI(fl,v);P(i>=0,lu[i]=nb;i)-1)
 S A cl(Ax,Ay/*00*/,I r)_(I o=xo;Q(xx==av||_t(xx)==tu)Iv=_v(xx);
@@ -45,7 +45,7 @@ S I mxs(Ii,I s)_(I r=s;W(1,UC c=b[i++];Q(s>=0)r=max(r,s);P(!c,r)P(c==bz,i++;s--;
  I(c>=bc||c==bo||c-bg<8u||c-bd<8u||c==bG,s++)J(c-bs<8u||c-bv<32u||c==bp||c==bm||c==bx||c==bM||c==bS,s--)
  J(c==bi||c==bX,s-=2)J(c==bI||c==bA,s-=3)J(c==bL,s+=b[i])J(c==bl||c==ba||c==bP,s-=b[i]-1)
  I(c==bm||c==bx||c==bM||c==bi,i+=2)J(c==bX||c==bI||c==bL||c==bl||c==ba||c==bP||c==bG||c==bS,i++)J(c==bj,i+=b[i]+1))r)
-A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,4,A(x,au,au,z));Ms(lu,-1,SZ lu);y=Nu(cf(y));
+A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,5,A(x,au,au,z,au));Ms(lu,-1,SZ lu);y=Nu(cf(y));
  I r=cr(y,1);y(0);I o=0;h(bu);P(r-OK,ec0();eS(ux,r);u(0))P(_n(fl)>8||nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
  i(8,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);AK(k,AT(to,u)))
 
@@ -53,7 +53,7 @@ A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,4,A(x,au,a
 AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>1024,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=_n(xA[3]);A t[ns+nl],*s=t+ns,*l=s;
  Ms(t,0,SZ t);Mc(l,a,8*n);
  W((c=*b++),
-  I(c>=bc,*--s=_R(xA[c-bc+4]))
+  I(c>=bc,*--s=_R(xA[c-bc+5]))
   J(c>=ba,
    I(c>=bA,
     I(c==bA,s+=3;U(*s=dmd(s-3,4)))
