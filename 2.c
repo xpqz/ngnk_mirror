@@ -107,32 +107,14 @@ S A3(___p,v2[zv](y,dexp(x,yR,av)))
 S A3(modp,eac2f(y,dexp(x,yR,av),mod))
 S A3(mmmp,Nn=yn;I w=Tz[yt],o=z-MNM;Lv=gl(x),l=-1ll<<(8<<w)-1,h=~l;v=o&&v<=l?l:!o&&v>=h?h:v;P(o?v>=h:v<=l,rsh(n,y(az(v))))
  x=ax(y);iW(y,w,-1,v);
- switch(4*o+w){
-  case  0:j(n,Ni=n-1-j;xb=min(yb,yB[i-1]))break;
-  case  1:j(n,Ni=n-1-j;xh=min(yh,yH[i-1]))break;
-  case  2:j(n,Ni=n-1-j;xi=min(yi,yI[i-1]))break;
-  case  3:j(n,Ni=n-1-j;xl=min(yl,yL[i-1]))break;
-  case  4:j(n,Ni=n-1-j;xb=max(yb,yB[i-1]))break;
-  case  5:j(n,Ni=n-1-j;xh=max(yh,yH[i-1]))break;
-  case  6:j(n,Ni=n-1-j;xi=max(yi,yI[i-1]))break;
-  default:j(n,Ni=n-1-j;xl=max(yl,yL[i-1]))break;}
+ I(o,S4(w,j(n,Ni=n-1-j;xb=max(yb,yB[i-1])),j(n,Ni=n-1-j;xh=max(yh,yH[i-1])),j(n,Ni=n-1-j;xi=max(yi,yI[i-1])),j(n,Ni=n-1-j;xl=max(yl,yL[i-1]))))
+ E(  S4(w,j(n,Ni=n-1-j;xb=min(yb,yB[i-1])),j(n,Ni=n-1-j;xh=min(yh,yH[i-1])),j(n,Ni=n-1-j;xi=min(yi,yI[i-1])),j(n,Ni=n-1-j;xl=min(yl,yL[i-1]))))
  yn=n;x)
 S A3(cmpp,I o=z-LTN,w=Tz[yt];Nn=yn;Au=aB(n);Lv=gl(x),p=iw(y,w,0);*uB=!o?p<v:o==1?p>v:p==v;
- switch(4*o+w){
-  case  0:j(n-1,Ni=n-1-j;ub=yb< yB[i-1])break;
-  case  1:j(n-1,Ni=n-1-j;ub=yh< yH[i-1])break;
-  case  2:j(n-1,Ni=n-1-j;ub=yi< yI[i-1])break;
-  case  3:j(n-1,Ni=n-1-j;ub=yl< yL[i-1])break;
-  case  4:j(n-1,Ni=n-1-j;ub=yb> yB[i-1])break;
-  case  5:j(n-1,Ni=n-1-j;ub=yh> yH[i-1])break;
-  case  6:j(n-1,Ni=n-1-j;ub=yi> yI[i-1])break;
-  case  7:j(n-1,Ni=n-1-j;ub=yl> yL[i-1])break;
-  case  8:j(n-1,Ni=n-1-j;ub=yb==yB[i-1])break;
-  case  9:j(n-1,Ni=n-1-j;ub=yh==yH[i-1])break;
-  case 10:j(n-1,Ni=n-1-j;ub=yi==yI[i-1])break;
-  default:j(n-1,Ni=n-1-j;ub=yl==yL[i-1])break;}
- y(u))
-
+ S4(o,S4(w,j(n-1,Ni=n-1-j;ub=yb< yB[i-1]),j(n-1,Ni=n-1-j;ub=yh< yH[i-1]),j(n-1,Ni=n-1-j;ub=yi< yI[i-1]),j(n-1,Ni=n-1-j;ub=yl< yL[i-1])),
+      S4(w,j(n-1,Ni=n-1-j;ub=yb> yB[i-1]),j(n-1,Ni=n-1-j;ub=yh> yH[i-1]),j(n-1,Ni=n-1-j;ub=yi> yI[i-1]),j(n-1,Ni=n-1-j;ub=yl> yL[i-1])),
+      S4(w,j(n-1,Ni=n-1-j;ub=yb==yB[i-1]),j(n-1,Ni=n-1-j;ub=yh==yH[i-1]),j(n-1,Ni=n-1-j;ub=yi==yI[i-1]),j(n-1,Ni=n-1-j;ub=yl==yL[i-1])),
+      {})y(u))
 A3(arp,Q(ztv)Q(zv<11)Q(xtzc)Q(ytZC)T(&dexp,___p,___p,___p,___p,modp,mmmp,mmmp,cmpp,cmpp,cmpp)[zv](x,y,z))
 
 #define ha(v,T)\
