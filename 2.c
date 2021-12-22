@@ -1,7 +1,6 @@
 #include"a.h" // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-
-//{dex,add,sub,mul,dvd,mod,mnm,mxm,ltn,gtn,eql}x{o0123fspa}x{BHILD} =
-// = {:+-*%!&|<>=}x{op,a+a,a+l,l+a,l+l,f/,f\,f':,@}x{byte,short,int,long,double}
+//{dex add sub mul dvd mod mnm mxm ltn gtn eql} x {o0123fspa} x {BHILD} =
+// = {:+-*%!&|<>=} x {op a+a a+l l+a l+l f/ f\ f': @} x {byte short int long double}
 #define hv(v,T,R,f) S R v##o##T(T x,T y)_(f)
 #define hd(v,f,g) hv(v,B,B,f)hv(v,H,H,f)hv(v,I,I,f)hv(v,L,L,f)hv(v,D,D,g)
 #define hc(v,f,g) hv(v,B,B,f)hv(v,H,B,f)hv(v,I,B,f)hv(v,L,B,f)hv(v,D,B,g)
@@ -66,16 +65,21 @@ A2(eql,XYmMA(eac2f(x,y,eql))P(xtsS-ytsS,et2(x,y))P(xtsS,eql(AT(xt+ti-ts,mut(x)),
 
 #define hf(v,T)S L v##f##T(L a,O V*b,Nn)_(O T*p=b;i(n,a=v##oL(a,p[i]))a)
 #define hfD(v) S D v##f##D(D a,O D*b,Nn)_(i(n,a=v##oD(a,b[i]))a)
-hf(add,B)hf(add,H)hf(add,I)hf(add,L)hfD(add) hf(mul,B)hf(mul,H)hf(mul,I)hf(mul,L)hfD(mul)
-hf(mnm,B)hf(mnm,H)hf(mnm,I)hf(mnm,L)hfD(mnm) hf(mxm,B)hf(mxm,H)hf(mxm,I)hf(mxm,L)hfD(mxm)
+hf(add,B)hf(add,H)hf(add,I)hf(add,L)hfD(add) hf(mul,B)hf(mul,H)hf(mul,I)hf(mul,L)hfD(mul) S A3 dexs;
 S A3(___f,Nn=yn,i=!x;I(i,x=ii(y,0))W(i<n,x=z2(x,ii(y,i++));B(!x))y(x))
-S A3 dexs;S A3(dexf,las(dexs(x,y,z)))
-S A3(ammf,Q(ztv)I(ytC,y=cB(y))I(ytD||(x&&xtd),I(x,x=cD(x))y=cD(y))
- Ii=T((C)9,0,9,1,9,9,2,3)[zv];YD(ad(ye(T(&addfD,mulfD,mnmfD,mxmfD)[i](x?gd(x):T(0.0,1,WD,-WD)[i],yV,yn))))
- V(f,T(&addfB,addfH,addfI,addfL,mulfB,mulfH,mulfI,mulfL,mnmfB,mnmfH,mnmfI,mnmfL,mxmfB,mxmfH,mxmfI,mxmfL)[i<<2|yt-tB])
+S A3(dexf,las(dexs(x,y,z)))
+L mnmfZ(Lv,Ax/*0*/)_(Q(xtZC)L l=-1ll<<8*xW-1,h=~l;P(v<=l||!xn,v)I(v>=h,v=h)
+ S4(Tz[xt],i(xn,v=min(v,xb)),i(xn,v=min(v,xh)),i(xn,v=min(v,xi)),i(xn,v=min(v,xl)))v)
+L mxmfZ(Lv,Ax/*0*/)_(Q(xtZC)L l=-1ll<<8*xW-1,h=~l;P(v>=h||!xn,v)I(v<=l,v=l)
+ S4(Tz[xt],i(xn,v=max(v,xb)),i(xn,v=max(v,xh)),i(xn,v=max(v,xi)),i(xn,v=max(v,xl)))v)
+S A3(mnmf,P((x&&xtd)||ytD,___f(x?cD(x):_R(ci[1][2]),cD(y),z))Lv=x?gl(x): WL;az(ye(mnmfZ(v,y))))
+S A3(mxmf,P((x&&xtd)||ytD,___f(x?cD(x):_R(ci[1][3]),cD(y),z))Lv=x?gl(x):-WL;az(ye(mxmfZ(v,y))))
+S A3(admf,Q(ztv)I(ytC,y=cB(y))I(ytD||(x&&xtd),I(x,x=cD(x))y=cD(y))
+ Ii=z==MUL;YD(ad(ye(T(&addfD,mulfD)[i](x?gd(x):T(0.0,1,WD,-WD)[i],yV,yn))))
+ V(f,T(&addfB,addfH,addfI,addfL,mulfB,mulfH,mulfI,mulfL)[i<<2|yt-tB])
  az(ye(f(x?gl(x):T(0ll,1,WL,-WL)[i],yV,yn))))
-S A3(subf,neg(ammf(x?neg(x):yn?mul(ai(-2),ii(y,0)):0,y,ADD)))
-A3(arf,Q(ztv)Q(zv<11)Q(!x||xtzdc)Q(ytZDC)T(&dexf,ammf,subf,ammf,___f,___f,ammf,ammf,___f,___f,___f)[zv](x,y,z))
+S A3(subf,neg(admf(x?neg(x):yn?mul(ai(-2),ii(y,0)):0,y,ADD)))
+A3(arf,Q(ztv)Q(zv<11)Q(!x||xtzdc)Q(ytZDC)T(&dexf,admf,subf,admf,___f,___f,mnmf,mxmf,___f,___f,___f)[zv](x,y,z))
 
 #define hs(v,T) S V v##s##T(L a,V*RE q,V*RE s,Nn){T*b=q,*r=s,c=a;i(PD(n,b),c=r[i]=v##o##T(c,b[i]));}
 hs(mxm,B)hs(mxm,H)hs(mxm,I)hs(mxm,L)

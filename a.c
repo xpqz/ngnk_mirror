@@ -26,7 +26,6 @@ S A2(i1,/*01*/Xt(y(xR))P(y==PLH||y==au,xR)P(xtm||xtM&&ytsS,i1(xy,N(fnd(_R(xx),y)
 S A3(i2,/*011*/Cb=ytT||y==PLH||y==au;x=Nz(i1(x,y));P(!b,x(i1(x,z)))K(".\\:",x,a1(z)))
 S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,i2(x,y,a[1]))
  a++;n--;Cb=ytT||y==PLH||y==au;x=i1(x,y);P(!n,x)P(!x,mrn(n,a);x)P(!b,x(i8(x,a,n)))K(".\\:",x,aV(tA,n,a)))
-#define S4(i,a,b,c,d) switch(i){case 0:a;break;case 1:b;break;case 2:c;break;default:d;break;}
 L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)
 V iW(Ax/*0*/,I w,Li,Lv){S4(w,xb=v,xh=v,xi=v,xl=v)}
 I ina(Ax/*0*/,Nn)_(S4(Tz[xt],P(n-(B)n,1)i(xn,P(!in(xb,n),0)),
