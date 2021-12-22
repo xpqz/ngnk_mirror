@@ -150,4 +150,4 @@ S A4(dexa,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),
  Nn=yn;I wx=Tz[xt],wy=Tz[yt],wu=utt?-1:Tz[ut];Lv=wu<0?gl_(u):0;ye(ue(i(n,iW(x,wx,iw(y,wy,i),wu<0?v:iw(u,wu,i)))x)))
 S A4(adma,___a(cL(x),y,z,cL(u)))
 S A4(suba,adma(x,y,ADD,neg(u)))
-A4(ara,/*1101*/Q(xtZ)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ)T(&dexa,adma,suba,adma,0,0,___a,___a)[zv](x,y,z,u))
+A4(ara,/*1101*/Q(xtZC)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ||utcC)T(&dexa,adma,suba,adma,0,0,___a,___a)[zv](x,y,z,u))

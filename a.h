@@ -35,7 +35,7 @@
 #define M1(x) #x
 #define M2(x) M1(x)
 #define EX extern
-#define Q(x) DBG(I(!(x),die(__FILE__":"M2(__LINE__)": "M2(x)))) //assert
+#define Q(x) DBG(I(!(x),die(__FILE__":"M2(__LINE__)": "#x))) //assert
 #define Ab8 A b[8];
 #define Ms(a...) __builtin_memset(a)
 #define Mm(a...) __builtin_memmove(a)
