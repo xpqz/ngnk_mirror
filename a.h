@@ -74,7 +74,8 @@ TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX
 #define AAL(f,b...) A f(Ax,Li      )_(b)
 #define  AQ(f,b...) A f(Qs         )_(b)
 A1 _R,a1,asc,ax,cA,cB,cC,cD,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,grp,hex,js0,js1,kcos,kexp,klog,ksin,
- kst,las,len,m0,m1,mRa,mr,mut,neg,not,nul,opn,out,prng,rev,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
+ kst,las,len,m0,m1,mRa,mr,mut,neg,not,nul,opn,ordD,out,prng,rev,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,
+ unh,unq,val,whr;
 A2 _1,a2,aM,add,am,ap1,apd,bin,cat,cst,cut,dct,dex,dot,dvd,eql,exc,fil,fld1,fnd,gtn,hsh,id_,idx,ltn,mnm,mod,mtc,mul,mxm,
  que,sub,v0c,v1c;
 A0 aa0;A3 _2,a3,arf,arp,ars,cpl,ear2,try;A4 ara,dm4;AX _8,adv,eac,fld,prj,run;AA am8,dm8,dmd,ins;
@@ -82,12 +83,12 @@ AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,rsh;AAL ii;AQ aCz,bsl,b
 A ac(C),ai(I),as(I),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),eac1f(A,A1),
  eac2f(A,A,A2),e0(Q),e1(A,Q),evK(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),mf(I,N),mnd(OA*,I,AA*),pen(A,A1*),sur(C,A,C),
  wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
-V dir(I,void(*)(V*,Q),V*),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),
- *memmem(OV*,N,OV*,N),*memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),repl(),tilV(V*,L,I),eS(A,N),eQ(Q,N,N);
-D gd(A);N strlen(Q),_N(A);C*sl(C*,L),sup(A*,A*),tZ(L);C*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);Q qs(O L*);
+V dir(I,void(*)(V*,Q),V*),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),
+ *memmem(OV*,N,OV*,N),*memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),OFP(A),repl(),tilV(V*,L,I);
+D dord(L),gd(A);N strlen(Q),_N(A);C*sl(C*,L),sup(A*,A*),tZ(L);C*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);Q qs(O L*);
 I _K(A),qD(D,D),ina(A,N),js_eval(C*,I,C*,I),memcmp(OV*,OV*,N),mtc_(A,A),si(Q,I),strcmp(Q,Q),rnk(A),osf(Q,L);
 L cfm(OA*,I),gl_(A),gl(A),iw(A,I,L),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),fAI(A,I),fpI(A*,I),
- mnmfZ(L,A),mxmfZ(L,A);
+ mnmfZ(L,A),mxmfZ(L,A),ordd(D);
 
 EX I gn,gk[];EX C gp[32];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env;
 EX OC vc[],Tz[],TZ[],TT[],TX[],Tk[];
