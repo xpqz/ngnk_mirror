@@ -8,7 +8,6 @@
 #define B(x,a...) I(x,a;break)
 #define P(x,a...) I(x,_(a))
 #define I(x,a...) if(x){a;}
-#define Y(x,a...) switch(x){a}
 #define C(x,a...) case x:return({a;});
 #define T(x,a...) (TY(x)[]){x,a}
 #define   J(a...) else I(a)
