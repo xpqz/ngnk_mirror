@@ -6,7 +6,7 @@ A2(mtc,x(y(ai(mtc_(x,y)))))
 S L ofp(Lv)_(v^(UL)(v>>63)>>1)
 L ordd(Dv)_(ofp(*(L*)&v))
 D dord(Lv)_(*(D*)T(ofp(v)))
-V OFP(Ax/*!*/){Q(xtdD)i(PD(xn,xL),xl^=(UL)(xl>>63)>>1)}
+V OFP(Ax/*!*/){Q(xtdD||xtlL)i(PD(xn,xL),xl^=(UL)(xl>>63)>>1)}
 A1(ordD,Q(xtdD);x=AT(xt-tD+tL,mut(x));OFP(x);x)
 S C ordt(Ax)_(xtz?tl:xtZ?tL:xt)
 S I qL(Li,Lj)_(i<j?-1:i>j)
