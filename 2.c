@@ -108,17 +108,19 @@ S A3(cmpp,I o=z-LTN,w=yw;Nn=yn;Au=aB(n);Lv=gl(x),p=iw(y,w,0);*uB=!o?p<v:o==1?p>v
       {})y(u))
 A3(arp,Q(ztv)Q(zv<11)Q(xtzc)Q(ytZC)T(&dexp,___p,___p,___p,___p,modp,mmmp,mmmp,cmpp,cmpp,cmpp)[zv](x,y,z))
 
-#define ha(v,T)\
- S V v##a##T##L(V*RE p,Nn,OV*RE q,Nm,O V*RE r,N d){T*a=p;O L*b=q;O T*c=r;i(m,Lj=b[i];a[j]=v##o##T(a[j],c[d*i]))}\
- S V v##a##T##I(V*RE p,Nn,OV*RE q,Nm,O V*RE r,N d){T*a=p;O I*b=q;O T*c=r;i(m,Ij=b[i];a[j]=v##o##T(a[j],c[d*i]))}
-ha(add,L)ha(mul,L)ha(mnm,B)ha(mnm,H)ha(mnm,I)ha(mnm,L)ha(mxm,B)ha(mxm,H)ha(mxm,I)ha(mxm,L)
-S TY(&mxmaBL)araT[][11][2]={
- {{             },{},{             },{},{},{mnmaBI,mnmaBL},{mxmaBI,mxmaBL}},
- {{             },{},{             },{},{},{mnmaHI,mnmaHL},{mxmaHI,mxmaHL}},
- {{             },{},{             },{},{},{mnmaII,mnmaIL},{mxmaII,mxmaIL}},
- {{addaLI,addaLL},{},{mulaLI,mulaLL},{},{},{mnmaLI,mnmaLL},{mxmaLI,mxmaLL}}};
 S A4(___a,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))I(!ytL,y=cI(y))
- ye(ue(araT[xt-tB][zv-1][ytL](xV,xn,yV,yn,utP?&u:uV,utT);x)))
+ V*v=utP?&u:uV;I d=utT;Nn=yn;
+ ye(ue(switch(zv){
+  case 1:{S4(xw,{},{},{},I(ytL,i(n,xL[yl]+=uL[d*i]))E(i(n,xL[yi]+=uL[d*i])))break;}
+  case 3:{S4(xw,{},{},{},I(ytL,i(n,xL[yl]*=uL[d*i]))E(i(n,xL[yi]*=uL[d*i])))break;}
+  case 6:{S4(xw,I(ytL,i(n,xB[yl]=min(xB[yl],uB[d*i])))E(i(n,xB[yi]=min(xB[yi],uB[d*i]))),
+                I(ytL,i(n,xH[yl]=min(xH[yl],uH[d*i])))E(i(n,xH[yi]=min(xH[yi],uH[d*i]))),
+                I(ytL,i(n,xI[yl]=min(xI[yl],uI[d*i])))E(i(n,xI[yi]=min(xI[yi],uI[d*i]))),
+                I(ytL,i(n,xL[yl]=min(xL[yl],uL[d*i])))E(i(n,xL[yi]=min(xL[yi],uL[d*i]))))break;}
+  case 7:{S4(xw,I(ytL,i(n,xB[yl]=max(xB[yl],uB[d*i])))E(i(n,xB[yi]=max(xB[yi],uB[d*i]))),
+                I(ytL,i(n,xH[yl]=max(xH[yl],uH[d*i])))E(i(n,xH[yi]=max(xH[yi],uH[d*i]))),
+                I(ytL,i(n,xI[yl]=max(xI[yl],uI[d*i])))E(i(n,xI[yi]=max(xI[yi],uI[d*i]))),
+                I(ytL,i(n,xL[yl]=max(xL[yl],uL[d*i])))E(i(n,xL[yi]=max(xL[yi],uL[d*i]))))break;}}x)))
 S A4(dexa,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))
  Nn=yn;I wx=xw,wy=yw,wu=utt?-1:uw;Lv=wu<0?gl_(u):0;ye(ue(i(n,iW(x,wx,iw(y,wy,i),wu<0?v:iw(u,wu,i)))x)))
 S A4(adma,___a(cL(x),y,z,cL(u)))
