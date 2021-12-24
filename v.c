@@ -19,14 +19,14 @@ A1(whr,Xz(whr(enl(x)))XA(K("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Xm(
   xe(Y(t,case tB:{B*a=yV;i(xn,j(iw(x,w,i),*a++=i))break;}
          case tH:{H*a=yV;i(xn,j(iw(x,w,i),*a++=i))break;}
          default:{I*a=yV;i(xn,j(iw(x,w,i),*a++=i))break;})y))et1(x))
-A1(rev,Xm(Ay=kv(&x);am(rev(x),rev(y)))XM(Ay=kv(&x);aM(x,Nx(eac1f(y,rev))))Xt(x)x=mut(x);Ii=0,j=xn-1,w=Tz[xt];
+A1(rev,Xm(Ay=kv(&x);am(rev(x),rev(y)))XM(Ay=kv(&x);aM(x,Nx(eac1f(y,rev))))Xt(x)x=mut(x);Ii=0,j=xn-1,w=xw;
  W(i<j,I(!w,SWP(xb,xB[j]))J(w==1,SWP(xh,xH[j]))J(w==2,SWP(xi,xI[j]))E(SWP(xl,xL[j]))i++;j--)x)
 A1(typ,x(as(TS[xt])))
 A1(len,x(az(xN)))N _N(Ax/*0*/)_(XT(xn)Xm(_N(xy))XM(_n(xy)?_N(*_A(xy)):1)1)
 S A1(cSI,Q(xtS||xtI)Ct=tS^tI^xt;xr-1?x(aV(t,xn,xV)):AT(t,x))
 A1(unq,
  XT(P(xn<2,x)
-    P(xn<<Tz[xt]<ZP&&!xtA,K("{x@&(x?x)=!#x}",x))
+    P(xn<<xw<ZP&&!xtA,K("{x@&(x?x)=!#x}",x))
     P(xtB||xtC,C a[256]={};Ay=an(xt,0);i(xn,I(!a[(UI)xc],a[(UI)xc]=1;y=apc(y,xc)))x(y))
     XS(cSI(unq(cSI(x))))
     K("{x@i@<i@:&@[;0;:;1]@~~':x@i:<x}",x))
@@ -57,6 +57,6 @@ A1(sqz,P(!xtA||!xn,x)Nn=xn;Ay=xx;Ct=yt;Ym(y=oA;i(n,yq(_R(xa)))x(y))P(!c3(ti,t,ts
  I(ytz,I l=0;i(n,Ay=xa;I(ytl,l=1)E(P(!yti,x)))
        I(l,t=tL)E(I a=0,b=0;i(n,Ay=xa;a=min(a,yv);b=max(b,yv))t=max(tZ(a),tZ(b))))
  E(i(n,P(t-_t(xa),x)))
- y=an(TT[t],n);Iv=Tz[yt];I(v<3,T(&cLB,cLH,cLI)[v](xV,yV,n))E(i(n,yl=gl_(xa)))x(y))
+ y=an(TT[t],n);Iv=yw;I(v<3,T(&cLB,cLH,cLI)[v](xV,yV,n))E(i(n,yl=gl_(xa)))x(y))
 A1(cA,XA(x)Xt(a1(x))Xm(et1(x))Nn=xN;Ay=aA(n);i(yn,ya=ii(x,i))x(y))
 L tru(Ax/*1*/)_(Lv=xtF?x!=au:xtt?gl_(x):xN;x(0);v)

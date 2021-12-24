@@ -111,30 +111,31 @@ enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw
 // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
 // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx te
 // ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
-#define _V(x) (V*)(x)          //ptr to data
-#define _W(x) TZ[_t(x)]        //item size in bytes
+#define _e(x,a...) ({A t_=m0(x);TY(({a;}))r_=({a;});DBG(x=0);m1(t_);r_;}) //two-phase free()
+#define _E(x) _C(x)[-14]       //adverb(for tr)
 #define _k(x) _C(x)[-13]       //arity(for funcs)
+#define _m(x) ((I*)_V(x))[-7]  //shadow refcount
 #define _n(x) _L(x)[-1]        //length
 #define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13]) //srcoffset
 #define _q(x,y) (x=apd(x,y))   //append
 #define _r(x) ((I*)_V(x))[-3]  //refcount
-#define _m(x) ((I*)_V(x))[-7]  //shadow refcount
 #define _t(x) ({A x_=(x);Ct=_t0(x_);t?t:_t1(x_);}) //type
 #define _t0(x) ((x)>>56)       //type(tag)
 #define _t1(x) _C(x)[-15]      //type(hdr)
 #define _tF(x) TF(_t(x))       // func?
 #define _tP(x) TP(_t(x))       // packed?
-#define _tR(x) (Tz[_t(x)]==4)  // ref?
+#define _tR(x) (_w(x)==4)      // ref?
 #define _tT(x) (_t(x)<tM)      // list?
 #define _tZ(x) c3(tB,_t(x),tL) // intlist?
 #define _tt(x) (_t(x)>tm)      // atom?
 #define _tz(x) c3(ti,_t(x),tl) // intatom?
-#define _v(x) (I)(x)           //value
-#define _E(x) _C(x)[-14]       //adverb(for tr)
 #define _U(x) _C(x)[-16]       //bucket
+#define _v(x) (I)(x)           //value
+#define _V(x) (V*)(x)          //ptr to data
+#define _w(x) Tz[_t(x)]        //log2(item size in bytes)
+#define _W(x) TZ[_t(x)]        //item size in bytes
 #define _X(x) _A(x)[-3]        //next
 #define _Z(x) ((ZA<<_U(x))-ZA) //capacity
-#define _e(x,a...) ({A t_=m0(x);TY(({a;}))r_=({a;});DBG(x=0);m1(t_);r_;}) //two-phase free()
 #define XYmMA(a...) P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA),a)
 
 #define Lt(t) (L)t<<56

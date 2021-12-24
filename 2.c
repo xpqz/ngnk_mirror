@@ -69,9 +69,9 @@ hf(add,B)hf(add,H)hf(add,I)hf(add,L)hfD(add) hf(mul,B)hf(mul,H)hf(mul,I)hf(mul,L
 S A3(___f,Nn=yn,i=!x;I(i,x=ii(y,0))W(i<n,x=z2(x,ii(y,i++));B(!x))y(x))
 S A3(dexf,las(dexs(x,y,z)))
 L mnmfZ(Lv,Ax/*0*/)_(Q(xtZDC)L l=-1ll<<8*xW-1,h=~l;P(v<=l||!xn,v)I(v>=h,v=h)
- S4(Tz[xt],i(xn,v=min(v,xb)),i(xn,v=min(v,xh)),i(xn,v=min(v,xi)),i(xn,v=min(v,xl)))v)
+ S4(xw,i(xn,v=min(v,xb)),i(xn,v=min(v,xh)),i(xn,v=min(v,xi)),i(xn,v=min(v,xl)))v)
 L mxmfZ(Lv,Ax/*0*/)_(Q(xtZDC)L l=-1ll<<8*xW-1,h=~l;P(v>=h||!xn,v)I(v<=l,v=l)
- S4(Tz[xt],i(xn,v=max(v,xb)),i(xn,v=max(v,xh)),i(xn,v=max(v,xi)),i(xn,v=max(v,xl)))v)
+ S4(xw,i(xn,v=max(v,xb)),i(xn,v=max(v,xh)),i(xn,v=max(v,xi)),i(xn,v=max(v,xl)))v)
 S A3(mmmf,Ii=zv==7;V(f,i?mxmfZ:mnmfZ)
  P((x&&xtd)||ytD,Lv=ordd(x?gd(cD(x)):i?-WD:WD);y=cD(y);ad(ye(OFP(y);L r=f(v,y);OFP(y);dord(r))))
  Lv=x?gl(x):i?-WL:WL;az(ye(f(v,y))))
@@ -85,14 +85,14 @@ S A3(___s,Ni=!x;Au=i?x=ii(y,0),enl(xR):oA;Nn=yn;W(i<n,x=z2(x,ii(y,i++));P(!x,y(u
 S A3(dexs,x?x(y):y)
 S A3(adds,L w=x?gl(x):0;Nn=yn;
  W(1,I b=1;Lv=w;Ct=yt;Au=an(t,n);
-  S4(Tz[t],i(n,ub=v+=yb;B(v-(B)v,b=0)),i(n,uh=v+=yh;B(v-(H)v,b=0)),i(n,ui=v+=yi;B(v-(I)v,b=0)),i(n,ul=v+=yl))
+  S4(yw,i(n,ub=v+=yb;B(v-(B)v,b=0)),i(n,uh=v+=yh;B(v-(H)v,b=0)),i(n,ui=v+=yi;B(v-(I)v,b=0)),i(n,ul=v+=yl))
   P(b,y(u))y=cT[t+1](u(y)))0)
 S A3(muls,L w=x?gl(x):1;Nn=yn;
  W(1,I b=1;Lv=w;Ct=yt;Au=an(t,n);I(t==tL,i(n,ul=v*=yl))J(t==tI,i(n,ui=v*=yi;B(v-(I)v,b=0)))
   J(t==tH,i(n,uh=v*=yh;B(v-(H)v,b=0)))J(t==tB,i(n,ub=v*=yb;B(v-(B)v,b=0)))E(Q(0))P(b,y(u))y=cT[t+1](u(y)))0)
 S A3(subs,neg(adds(neg(x?x:mul(ai(2),ii(y,0))),y,0)))
 S A3(mxms,P((!x||xtz)&&ytZ,Lv=x?gl(x):-WL,l=-1ll<<8*yW-1,h=~l;I(v<=l||h<=v,P(v>=0,y(rsh(yn,az(v))))v=v<0?l:h)
- Au=yr==1?y:an(yt,yn);S4(Tz[yt],i(yn,ub=v=max(v,yb)),i(yn,uh=v=max(v,yh)),i(yn,ui=v=max(v,yi)),i(yn,ul=v=max(v,yl)))
+ Au=yr==1?y:an(yt,yn);S4(yw,i(yn,ub=v=max(v,yb)),i(yn,uh=v=max(v,yh)),i(yn,ui=v=max(v,yi)),i(yn,ul=v=max(v,yl)))
  y-u?y(u):u)___s(x,y,z))
 SN A1(inv,x=mut(x);Nn=xn*xW;i(PD(n,xC),xc^=-1)x)
 S A3(mnms,P((!x||xtz)&&ytZ,inv(mxms(x?az(-1-gl(x)):0,inv(y),MXM)))___s(x,y,z))
@@ -101,12 +101,12 @@ A3(ars,Q(ztv)Q(zv<11)Q(!x||xtzdc)Q(ytZDC)T(&dexs,adds,subs,muls,___s,___s,mnms,m
 S A3(dexp,cat(x,drp(-1,y)))
 S A3(___p,v2[zv](y,dexp(x,yR,av)))
 S A3(modp,eac2f(y,dexp(x,yR,av),mod))
-S A3(mmmp,Nn=yn;I w=Tz[yt],o=z-MNM;Lv=gl(x),l=-1ll<<(8<<w)-1,h=~l;v=o&&v<=l?l:!o&&v>=h?h:v;P(o?v>=h:v<=l,rsh(n,y(az(v))))
+S A3(mmmp,Nn=yn;I w=yw,o=z-MNM;Lv=gl(x),l=-1ll<<(8<<w)-1,h=~l;v=o&&v<=l?l:!o&&v>=h?h:v;P(o?v>=h:v<=l,rsh(n,y(az(v))))
  x=ax(y);iW(y,w,-1,v);
  I(o,S4(w,j(n,Ni=n-1-j;xb=max(yb,yB[i-1])),j(n,Ni=n-1-j;xh=max(yh,yH[i-1])),j(n,Ni=n-1-j;xi=max(yi,yI[i-1])),j(n,Ni=n-1-j;xl=max(yl,yL[i-1]))))
  E(  S4(w,j(n,Ni=n-1-j;xb=min(yb,yB[i-1])),j(n,Ni=n-1-j;xh=min(yh,yH[i-1])),j(n,Ni=n-1-j;xi=min(yi,yI[i-1])),j(n,Ni=n-1-j;xl=min(yl,yL[i-1]))))
  yn=n;x)
-S A3(cmpp,I o=z-LTN,w=Tz[yt];Nn=yn;Au=aB(n);Lv=gl(x),p=iw(y,w,0);*uB=!o?p<v:o==1?p>v:p==v;
+S A3(cmpp,I o=z-LTN,w=yw;Nn=yn;Au=aB(n);Lv=gl(x),p=iw(y,w,0);*uB=!o?p<v:o==1?p>v:p==v;
  S4(o,S4(w,j(n-1,Ni=n-1-j;ub=yb< yB[i-1]),j(n-1,Ni=n-1-j;ub=yh< yH[i-1]),j(n-1,Ni=n-1-j;ub=yi< yI[i-1]),j(n-1,Ni=n-1-j;ub=yl< yL[i-1])),
       S4(w,j(n-1,Ni=n-1-j;ub=yb> yB[i-1]),j(n-1,Ni=n-1-j;ub=yh> yH[i-1]),j(n-1,Ni=n-1-j;ub=yi> yI[i-1]),j(n-1,Ni=n-1-j;ub=yl> yL[i-1])),
       S4(w,j(n-1,Ni=n-1-j;ub=yb==yB[i-1]),j(n-1,Ni=n-1-j;ub=yh==yH[i-1]),j(n-1,Ni=n-1-j;ub=yi==yI[i-1]),j(n-1,Ni=n-1-j;ub=yl==yL[i-1])),
@@ -125,7 +125,7 @@ S TY(&mxmaBL)araT[][11][2]={
 S A4(___a,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))I(!ytL,y=cI(y))
  ye(ue(araT[xt-tB][zv-1][ytL](xV,xn,yV,yn,utP?&u:uV,utT);x)))
 S A4(dexa,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))
- Nn=yn;I wx=Tz[xt],wy=Tz[yt],wu=utt?-1:Tz[ut];Lv=wu<0?gl_(u):0;ye(ue(i(n,iW(x,wx,iw(y,wy,i),wu<0?v:iw(u,wu,i)))x)))
+ Nn=yn;I wx=xw,wy=yw,wu=utt?-1:uw;Lv=wu<0?gl_(u):0;ye(ue(i(n,iW(x,wx,iw(y,wy,i),wu<0?v:iw(u,wu,i)))x)))
 S A4(adma,___a(cL(x),y,z,cL(u)))
 S A4(suba,adma(x,y,ADD,neg(u)))
 A4(ara,/*1101*/Q(xtZC)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ||utcC)T(&dexa,adma,suba,adma,0,0,___a,___a)[zv](x,y,z,u))

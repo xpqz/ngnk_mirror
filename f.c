@@ -27,9 +27,9 @@ S A2(sdf,K("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y)) //small-domain fin
 A2(fnd,
  P(xtT&&!xtA&&!ytmMA,
   P(xtZ&&ytzZ||xt==TT[yt],
-   P(Tz[xt]<2&&xn>99&&yN>99,sdf(x,y))
-   V(f,T(&fB,fH,fI,fL)[Tz[xt]])Yt(x(az(f(xV,xn,gl(y)))))
-   Az=aL(yn);Ii=Tz[yt];xe(ye(T(&FB,FH,FI,FL)[i](xV,xn,f,yV,yn,zV);z)))
+   P(xw<2&&xn>99&&yN>99,sdf(x,y))
+   V(f,T(&fB,fH,fI,fL)[xw])Yt(x(az(f(xV,xn,gl(y)))))
+   Az=aL(yn);Ii=yw;xe(ye(T(&FB,FH,FI,FL)[i](xV,xn,f,yV,yn,zV);z)))
   Az=cn[tl];zR;x(y(ytt?z:rsh(yN,z))))
  Xm(Az=kv(&x);idx(x,Nx(fnd(z,y))))
  Ik=urnk(x),l=urnk(y);P(k==l+1,x(y(az(fA(x,y)))))P(k<=l,ear2(x,y,QUE))er2(x,y))

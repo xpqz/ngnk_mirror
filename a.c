@@ -28,10 +28,10 @@ S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,i2(x,y,a[1]))
  a++;n--;Cb=ytT||y==PLH||y==au;x=i1(x,y);P(!n,x)P(!x,mrn(n,a);x)P(!b,x(i8(x,a,n)))K(".\\:",x,aV(tA,n,a)))
 L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)
 V iW(Ax/*0*/,I w,Li,Lv){S4(w,xb=v,xh=v,xi=v,xl=v)}
-I ina(Ax/*0*/,Nn)_(S4(Tz[xt],P(n-(B)n,1)i(xn,P(!in(xb,n),0)),
-                             P(n-(H)n,1)i(xn,P(!in(xh,n),0)),
-                             P(n-(I)n,1)i(xn,P(!in(xi,n),0)),
-                                        i(xn,P(!in(xl,n),0)))1)
+I ina(Ax/*0*/,Nn)_(S4(xw,P(n-(B)n,1)i(xn,P(!in(xb,n),0)),
+                         P(n-(H)n,1)i(xn,P(!in(xh,n),0)),
+                         P(n-(I)n,1)i(xn,P(!in(xi,n),0)),
+                                    i(xn,P(!in(xl,n),0)))1)
 S A1(qt,x(al(now())))
 S A1(qar,Ay=oA;Q*p=argv;W(*p,yq(aCz(*p++)))ap1(y,x))
 S A1(qen,Ay=oS,z=oA;Q*e=env;W(*e,Qp=*e++,q=p+si(p,'=');yq(cS(aCm(p,q)));zq(aCz(q+!!*q)))y=am(y,z);x-au?ap1(y,x):y)
@@ -64,7 +64,7 @@ S I knd(Ax/*0*/)_(Xz(ti)XZ(tI)xt)
 S A set(Ax,Li,Ay/*1i1*/)_(Q(xr==1);XA(Az=xa;xa=z(y);ytt&&!ytF?sqz(x):x)
  XM(Az=kv(&x);z=mut(z);Q(ztA);I(ytT&&yN-zn,x(el2(y,z)))Ij=i;i(zn,za=set(mut(za),j,ii(y,i));P(!za,za=au;x(y(z(0)))))y(aM(x,z)))
  P(knd(x)-knd(y)-tC+tc,set(cA(x),i,y))
- I(xtZ,N(sup(&x,&y)))C w=Tz[xt];w==0?xb=yv:w==1?xh=yv:w==2?xi=yv:(xl=gl(y));x)
+ I(xtZ,N(sup(&x,&y)))C w=xw;!w?xb=yv:w==1?xh=yv:w==2?xi=yv:(xl=gl(y));x)
 S I stp(Li,Ax/*0*/,A**p)_(Ay=**p;P(!ytm,ed1(x))**p=y=mut(y);Az=yx;P(!ztS,ed1(x))Lj=fpI(&yx,xI[i+1]);
  z=yy;P(!ztA,ed1(x))yy=j==zn?zq(aa0()):mut(z);Q(_r(yy)==1);*p=(A*)_V(yy)+j;1)
 S A*pth(Ax/*1*/)_(Xt(pth(enl(x)))
