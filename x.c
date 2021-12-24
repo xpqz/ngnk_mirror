@@ -7,7 +7,7 @@ S A2(f,y=Nx(apc(y,xt));
  XmMA(f(AT(tA,mut(x)),y))
  Xs(Lv=xv;Qs=qs(&v);In=Sn(s)+1;y=Nx(apc(y,n));cts(y,s,n))
  XP(f8(x,y))
- Xr(f(AT(tA,mut(x)),Nx(apc(y,xw<<3|xk))))
+ Xr(f(AT(tA,mut(x)),Nx(apc(y,xE<<3|xk))))
  XF(f(AT(tA,mut(x)),Nx(apc(y,xv<<3|xk))))
  In=8*xtT;x(cts(y,xV-n,n+xn*xW)))
 A1(ser,f(x,oC))

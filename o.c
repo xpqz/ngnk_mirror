@@ -1,6 +1,6 @@
 #include"a.h" // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 I mtc_(Ax,Ay/*00*/)_(P(x==y,1)P(xtz&&ytz,gl_(x)==gl_(y))P(xts&&yts,xv==yv)
- P(xtZ&&ytZ&&xt-yt&&xn==yn,xR;yR;sup(&x,&y);x(y(!MQ(xV,yV,xn*TZ[xt]))))P(xt-yt||xtP||(xtr&&xw-yw)||xn-yn,0)
+ P(xtZ&&ytZ&&xt-yt&&xn==yn,xR;yR;sup(&x,&y);x(y(!MQ(xV,yV,xn*TZ[xt]))))P(xt-yt||xtP||(xtr&&xE-yE)||xn-yn,0)
  P(!xtR,i(xn*xW,P(xc-yc,0))1)P(c3(tB,xt,tS)&&xt==yt&&xn==yn,!MQ(xV,yV,xn*TZ[xt]))i(xn,P(!mtc_(xa,ya),0))1)
 A2(mtc,x(y(ai(mtc_(x,y)))))
 S L ofp(Lv)_(v^(UL)(v>>63)>>1)
