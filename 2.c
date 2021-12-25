@@ -108,11 +108,15 @@ S A3(cmpp,I o=z-LTN,w=yw;Nn=yn;Au=aB(n);Lv=gl(x),p=iw(y,w,0);*uB=!o?p<v:o==1?p>v
       {})y(u))
 A3(arp,Q(ztv)Q(zv<11)Q(xtzc)Q(ytZC)T(&dexp,___p,___p,___p,___p,modp,mmmp,mmmp,cmpp,cmpp,cmpp)[zv](x,y,z))
 
-S A4(___a,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))I(!ytL,y=cI(y))
+S A4(dexa,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))
+ Nn=yn;I wx=xw,wy=yw,wu=utt?-1:uw;Lv=wu<0?gl_(u):0;ye(ue(i(n,iW(x,wx,iw(y,wy,i),wu<0?v:iw(u,wu,i)))x)))
+S A4(adma,/*1101*/P(utT&&yn-un,el2(x(y),u))x=cL(x);u=cL(u);x=mut(x);P(!ina(y,xn),ei2(x(y),u))I(!ytL,y=cI(y))
+ V*v=utP?&u:uV;I d=utT;Nn=yn;
+ ye(ue(I(zv==1,I(ytL,i(n,xL[yl]+=uL[d*i]))E(i(n,xL[yi]+=uL[d*i])))
+       E(      I(ytL,i(n,xL[yl]*=uL[d*i]))E(i(n,xL[yi]*=uL[d*i])))x)))
+S A4(mmma,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))I(!ytL,y=cI(y))
  V*v=utP?&u:uV;I d=utT;Nn=yn;
  ye(ue(switch(zv){
-  case 1:{S4(xw,{},{},{},I(ytL,i(n,xL[yl]+=uL[d*i]))E(i(n,xL[yi]+=uL[d*i])))break;}
-  case 3:{S4(xw,{},{},{},I(ytL,i(n,xL[yl]*=uL[d*i]))E(i(n,xL[yi]*=uL[d*i])))break;}
   case 6:{S4(xw,I(ytL,i(n,xB[yl]=min(xB[yl],uB[d*i])))E(i(n,xB[yi]=min(xB[yi],uB[d*i]))),
                 I(ytL,i(n,xH[yl]=min(xH[yl],uH[d*i])))E(i(n,xH[yi]=min(xH[yi],uH[d*i]))),
                 I(ytL,i(n,xI[yl]=min(xI[yl],uI[d*i])))E(i(n,xI[yi]=min(xI[yi],uI[d*i]))),
@@ -121,8 +125,5 @@ S A4(___a,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),
                 I(ytL,i(n,xH[yl]=max(xH[yl],uH[d*i])))E(i(n,xH[yi]=max(xH[yi],uH[d*i]))),
                 I(ytL,i(n,xI[yl]=max(xI[yl],uI[d*i])))E(i(n,xI[yi]=max(xI[yi],uI[d*i]))),
                 I(ytL,i(n,xL[yl]=max(xL[yl],uL[d*i])))E(i(n,xL[yi]=max(xL[yi],uL[d*i]))))break;}}x)))
-S A4(dexa,/*1101*/P(utT&&yn-un,el2(x(y),u))Ny(sup(&x,&u));x=mut(x);P(!ina(y,xn),ei2(x(y),u))
- Nn=yn;I wx=xw,wy=yw,wu=utt?-1:uw;Lv=wu<0?gl_(u):0;ye(ue(i(n,iW(x,wx,iw(y,wy,i),wu<0?v:iw(u,wu,i)))x)))
-S A4(adma,___a(cL(x),y,z,cL(u)))
 S A4(suba,adma(x,y,ADD,neg(u)))
-A4(ara,/*1101*/Q(xtZC)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ||utcC)T(&dexa,adma,suba,adma,0,0,___a,___a)[zv](x,y,z,u))
+A4(ara,/*1101*/Q(xtZC)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ||utcC)T(&dexa,adma,suba,adma,0,0,mmma,mmma)[zv](x,y,z,u))
