@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S A1(sam,x)S A2(com,AK(yK,AT(tq,a2(x,y))))VS;OC Tz[]={Tzv},TZ[]={TZv},TT[]={TTv},TX[]={TXv},Tk[]={Tkv};
+S A1(sam,x)VS;OC Tz[]={Tzv},TZ[]={TZv},TT[]={TTv},TX[]={TXv},Tk[]={Tkv};
 A1(mkn,XmMA(eac1f(x,mkn))Ay=_R(cn[xt]);Xt(x(y))rsh(xN,x(y)))I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xte?x>>48&7:xtF?xk:0) //_K:arity
 A2(id_,/*00*/x==CAT?_R(ce[ce[yt]?yt:tA]):xtv&&xv<11&&xv?_R(ci[ytdD][T((C)4,0,0,1,1,2,2,3,3,2,4)[xv]]):mkn(fir(yR)))
 AX(prj,XmMA(x8(a,n))Ik=max(n,xK);i(n,k-=a[i]!=PLH)
@@ -46,7 +46,7 @@ A2(_1,/*01*/P(!xtt,i1(x,y))Xz(dex(Ny(v1c(xR,y)),x))
  Xp(P(xn+k>9,er1(y))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&!j?j++,y:_R(xA[i+1]))I l=max(0,1-j);Mc(b+m,&y,8*l);_8(xx,b,m+l))
  Xq(_1(xx,N(_1(xy,y))))P(1>k,er1(y))Xu(v1[xv](y))Xw(AK(0<xv&&xv<4&&yK==2?1:ytF?yK:1,AW(xv,aV(tr,1,&y))))et1(y))
 A3(_2,/*011*/P(!xtt,i2(x,y,z))A a[]={y,z};Ik=xK;P(2<k,prj(x,a,2))Xo(run(x,a,2))Xv(v2[xv](y,z))Xr(adv(x,a,2))
- Xw((xv?en2:com)(y,z))Xp(P(xn+k>9,er2(y,z))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<2?a[j++]:_R(xA[i+1]))
+ Xw(xv?en2(x,y):AK(zK,AT(tq,a2(y,z))))Xp(P(xn+k>9,er2(y,z))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<2?a[j++]:_R(xA[i+1]))
  I l=max(0,2-j);Mc(b+m,a+j,8*l);_8(xx,b,m+l))Xq(_1(xx,N(_2(xy,y,z))))P(2>k,er2(y,z))Xe(((A2*)(x<<16>>16))(y,z))et2(y,z))
 AX(_8,Q(n)P(n==1,x1(*a))P(n==2,x2(*a,a[1]))P(!xtt,i8(x,a,n))
  Ik=xK;P(n<k,prj(x,a,n))Xo(run(x,a,n))Xv(v8[xv](a,n))Xr(adv(x,a,n))
