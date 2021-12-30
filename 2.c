@@ -79,8 +79,14 @@ S A3(___p,v2[zv](y,dexp(x,yR,av)))
 S A3(modp,eac2f(y,dexp(x,yR,av),mod))
 S A3(mmmp,I w=yw,o=z-MNM;Lv=gl(x),l=-1ll<<(8<<w)-1,h=~l;v=o&&v<=l?l:!o&&v>=h?h:v;Nn=yn;Lm=n-1;P(o?v>=h:v<=l,rsh(n,y(az(v))))
  x=ax(y);iW(y,w,-1,v);
- I(o,i4(w,n,Nj=m-i;xB[j]=max(yB[j],yB[j-1]),Nj=m-i;xH[j]=max(yH[j],yH[j-1]),Nj=m-i;xi=max(yI[j],yI[j-1]),Nj=m-i;xL[j]=max(yL[j],yL[j-1])))
- E(  i4(w,n,Nj=m-i;xB[j]=min(yB[j],yB[j-1]),Nj=m-i;xH[j]=min(yH[j],yH[j-1]),Nj=m-i;xi=min(yI[j],yI[j-1]),Nj=m-i;xL[j]=min(yL[j],yL[j-1])))
+ I(o,i4(w,n,Nj=m-i;xB[j]=max(yB[j],yB[j-1]),
+            Nj=m-i;xH[j]=max(yH[j],yH[j-1]),
+            Nj=m-i;xI[j]=max(yI[j],yI[j-1]),
+            Nj=m-i;xL[j]=max(yL[j],yL[j-1])))
+ E(  i4(w,n,Nj=m-i;xB[j]=min(yB[j],yB[j-1]),
+            Nj=m-i;xH[j]=min(yH[j],yH[j-1]),
+            Nj=m-i;xI[j]=min(yI[j],yI[j-1]),
+            Nj=m-i;xL[j]=min(yL[j],yL[j-1])))
  yn=n;x)
 S A3(cmpp,I o=z-LTN,w=yw;Nn=yn;Lm=n-1;Au=aB(n);Lv=gl(x),p=iw(y,w,0);*uB=!o?p<v:o==1?p>v:p==v;
  S4(o,i4(w,m,Nj=m-i;uB[j]=yB[j]< yB[j-1],Nj=m-i;uB[j]=yH[j]< yH[j-1],Nj=m-i;uB[j]=yI[j]< yI[j-1],Nj=m-i;uB[j]=yL[j]< yL[j-1]),
@@ -89,7 +95,8 @@ S A3(cmpp,I o=z-LTN,w=yw;Nn=yn;Lm=n-1;Au=aB(n);Lv=gl(x),p=iw(y,w,0);*uB=!o?p<v:o
 A3(arp,Q(ztv)Q(zv<11)Q(xtzc)Q(ytZC)T(&dexp,___p,___p,___p,___p,modp,mmmp,mmmp,cmpp,cmpp,cmpp)[zv](x,y,z))
 
 S A4(dexa,/*1101*/Ny(sup(&x,&u));x=mut(x);Nn=yn;I wx=xw,wy=yw,wu=utt?-1:uw;Lv=wu<0?gl_(u):0;
- ye(ue(i(n,iW(x,wx,iw(y,wy,i),wu<0?v:iw(u,wu,i)))x)))
+ ye(ue(I(utt,i(n,iW(x,wx,iw(y,wy,i),v)))
+       E(    i(n,iW(x,wx,iw(y,wy,i),iw(u,wu,i))))x)))
 S A4(adma,/*1101*/x=cL(x);u=cL(u);x=mut(x);I(!ytL,y=cI(y))Nn=yn;
  I(utt,Lv=gl(u);ye(I(zv==1,I(ytL,i(n,xL[yl]+=v))E(i(n,xL[yi]+=v)))E(I(ytL,i(n,xL[yl]*=v))E(i(n,xL[yi]*=v)))0))
  E(ue(ye(I(zv==1,I(ytL,i(n,xL[yl]+=uL[i]))E(i(n,xL[yi]+=uL[i])))E(I(ytL,i(n,xL[yl]*=uL[i]))E(i(n,xL[yi]*=uL[i])))0)))x)
