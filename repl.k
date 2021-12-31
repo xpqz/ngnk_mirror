@@ -184,21 +184,21 @@ x F/: eachright 1 2*/:3 4 -> (3 6;4 8)
 x F\: eachleft  1 2*\:3 4 -> (3 4;6 8)
 --------------------------------------------------------------------------------
 \h
-: SET      RETURN    '  each|slide|bin
-+ add      flip      /  fold|join |dec
-- subtract negate    \  scan|split|enc|trace
+: SET      RETURN    '  each|slide|bin           
++ add      flip      /  fold|join |dec|comment   
+- subtract negate    \  scan|split|enc|trace     
 * multiply first     ': eachprior
 % divide   sqrt      /: eachright
 ! mod|dict enum|key  \: eachleft
 & min|and  where
-| max|or   reverse
-< less     ascend    0: lines i/o
-> more     descend   1: bytes i/o
+| max|or   reverse   /                 
+< less     ascend    multiline comment 
+> more     descend   \                 
 = equal    group
-~ match    not
-, concat   enlist
-^ without  null
-# reshape  length
+~ match    not       0: lines i/o  
+, concat   enlist    1: bytes i/o  
+^ without  null     
+# reshape  length   
 _ drop|cut floor
 $ cast     string    $[c;t;f] COND
 ? find|rnd uniq
