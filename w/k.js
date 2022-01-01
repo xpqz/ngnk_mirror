@@ -66,7 +66,7 @@ rdy(_=>{
     `\n[K (ngn/k)]: https://codeberg.org/ngn/k\n[${h}]: ${location.origin}/k#${p1(s)}\n`)}
   bLink.onclick=_=>{const s=ed.value,g=ubc(),u=g.replace(/`/g,'\\`').replace(/\\$/,'\\ ')
    cpy(out.value=`ngn/k, ${g.length} bytes: [\`${u}\`](${location.origin}/k#${p1(s)})`)}
-  bHelp.onclick=_=>{ev('`0:,/(,80#"-"),/:2_\'(&"-"=*\'x)_x:0:"repl.k"\n').then(_=>setTimeout(_=>{out.scrollTop=0},1))}
+  bHelp.onclick=_=>{ev('`0:,/(,80#"-"),/:2_\'(&"--"~/:2#\'x)_x:0:"repl.k"\n').then(_=>setTimeout(_=>{out.scrollTop=0},1))}
   selEx.onchange=_=>{const v=selEx.selectedOptions[0].value
    if(v){fetch(v).then(x=>x.text()).then(x=>{ed.value=x;evp();selEx.blur()})}}
   ed.onkeydown=x=>{const b={1013:bEval,1071:bGolf,1075:bLink,112:bHelp}[kc(x)];if(b){b.onclick();return!1}}
