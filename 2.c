@@ -1,4 +1,4 @@
-#include"a.h" // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 //{dex add sub mul dvd mod mnm mxm ltn gtn eql} x {o0123fspa} x {BHILD} =
 // = {:+-*%!&|<>=} x {op a+a a+l l+a l+l f/ f\ f': @} x {byte short int long double}
 #define hv(v,T,R,f) S R v##o##T(T x,T y)_(f)

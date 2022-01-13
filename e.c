@@ -1,4 +1,4 @@
-#include"a.h" // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S C b[ZP],*r=b;S I d;
 SN V eC(){r=b;d=0;}
 NI A e0(Qs)_(eC();Nn=min(Sn(s),32);r=b;*r++='\'';Mc(r,s,n);r+=n;*r++=10;0)

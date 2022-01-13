@@ -1,5 +1,5 @@
 #!k
-`1:"ngn/k, (c) 2019-2021 ngn, GNU AGPLv3. type \\ for more info\n",repl.prompt:," "
+`1:"ngn/k, (c) 2019-2022 ngn, GNU AGPLv3. type \\ for more info\n",repl.prompt:," "
 repl.cmds:(,"a")!{`1:1:repl.joinpath[repl.dirname`argv 0]"LICENSE";}
 repl.dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
 repl.joinpath:{$[x~,".";y;"/"~*|x;x,y;x,"/",y]}
