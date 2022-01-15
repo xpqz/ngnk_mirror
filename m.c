@@ -52,7 +52,10 @@ AQ(evs,P(*s-'\\',Ax=N(cps(s));x(run(x,0,0)))Cc=s[1],d=s[2];P(c=='c'&&d=='d'&&(!s
  K("0x0a\\`x(,,\"/bin/sh\"),,:",aCz(s+1)))
 
 I gn,gk[256];C gp[32];A gv[256],cns,ce[tn],cn[tn],ci[2][5];Q*argv,*env;
-I rep()_(Cb[256];Ln=read(0,b,SZ(b)-1);P(n<0,0)b[n]=0;C*p=b;W(*p,C*q=SC0(p,10);*q=0;ln(p);p=q+1)1)V repl(){W(rep())}
+I rep()_(Cb[256],*s=b,*q;W(1,Ln=read(0,s,b-s+SZ b);P(n<0,0)s+=n;q=MC(s-n,10,n);
+                             I(q,C*p=b;W(q,*q=0;ln(p);p=q+1;q=MC(p,10,s-p))Mc(b,p,s-p);s+=b-p)
+                             P(b+SZ b<=s,oo die("longline")))1)
+V repl(){W(rep())}
 L k(Qs)_(Ax=N(evs(s));Xz(gl(x))x(0))
 V kf(Qs,L(*f)(L)){dmd(A(sym(s),au,av,AT(te,(A)f)),4);}
 V kinit(){z[ZZ(z)-1]=1;Ax=AN(0,aA(32)),*c=xA;i(tS-tA+1,*c++=ce[tA+i]=an(tA+i,0))*c++=ce[tm]=am(oS,oA);
