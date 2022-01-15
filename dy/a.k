@@ -32,7 +32,8 @@ p155:{%(x y*y)-a*a:x y}{(+/x)%#x}            / https://problems.tryapl.org/psets
 p156:&/~=/2#+-2!<'+,/                        / https://problems.tryapl.org/psets/2015.html?goto=P6_Hey_This_is_My_Space (via @ngn)
 p157:~^?/_|:                                 / https://problems.tryapl.org/psets/2015.html?goto=P7_Just_In_Upper_Case
 p158:{@[x;&13=x;:;12.99]}                    / https://problems.tryapl.org/psets/2015.html?goto=P8_Unlucky_13
-p159:{(""/x@0,(|'0N 2#1+!-2+#x),-1+#x)^" "}  / https://problems.tryapl.org/psets/2015.html?goto=P9_Id_Like_Mine_Scrambled_Please
+p159:{(x@0,(,/|'0N 2#1+!-2+#x),-1+#x)^" "}   / https://problems.tryapl.org/psets/2015.html?goto=P9_Id_Like_Mine_Scrambled_Please
+
 p15X:{(--2!x+|/x:#'x)$x:`k'x(+':|0,)\1}      / https://problems.tryapl.org/psets/2015.html?goto=P10_Blaiseing_a_Trail (via @ngn)
 
 p161:{(+/x)%#x}                              / https://problems.tryapl.org/psets/2016.html?goto=P1_Statistics_Mean
