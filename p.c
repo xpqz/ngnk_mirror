@@ -21,7 +21,7 @@ S A0(po,C k0=k;k=1;Q s1=s0,t=s0=s++;Ay;I(*s-'[',y=au)E(s++;y=sqz(N(pb(oA,']')));
 S A pt(C*v)_(Cc=*s;P(c=='`',s++;Ax=N(pS());xn>1?enl(x):x)P(c=='{',po())P(c=='"',p1(N(pC())))
  P(c=='(',s++;P(*s==')',s++;oA)Ax=N(pb(enl(MKL),')'));xn-2?x:las(x))P(c=='[',s++;pb(a1(PLH),']'))
  P(c09(c)&&s[1]==':',I u=s[2]==':';s+=2+u;Ii=20+c-'0';P(i>25,ep0())*v=1;AT(tv-u,i))P(c=='0'&&s[1]=='x',p1(N(p0x())))
- P(num(s)&&(c-'-'||(!cA9(s[-1])&&si(")]}\"",s[-1])==4)),L d=0;Qp=s;c=*p;
+ P(num(s)&&(c-'-'||s==s0||(!cA9(s[-1])&&si(")]}\"",s[-1])==4)),L d=0;Qp=s;c=*p;
   W(1,p+=*p==32;B(!num(p))p+=*p=='-';c=*p;B(!cA9(c))W(cA9(c)||c=='.'||c==':',d|=si(".nwe",c)<4;c=*++p))p1(N(d?pD():pZ())))
  P(cAz(c),Qp=s;Ax=pP();I(s-p==1&&c-'y'<2u,k=max(k,c-'w'))AO(p-s0,p1(x)))P(c>>7,Qp=s;Ax=pP();*v=1;AO(p-s0,p1(x)))
  Ii=si("'/\\",c);P(i<3,c=*++s;I h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,PLH)I u=*++s==':';s+=u;*v=1;AT(tv-u,i))
