@@ -1,4 +1,5 @@
 -fsigned-char
+-fno-math-errno
 -fno-signed-zeros
 -fno-stack-protector
 -fomit-frame-pointer
