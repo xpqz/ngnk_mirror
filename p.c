@@ -31,7 +31,7 @@ S A pT(C*v)_(Ax=N(pt(v));
  W(1,Cc=*s;Ii=si("'/\\[",c);P(i>3,x)s++;
   I(i>2,x=AO(s-1-s0,N(pb(a1(x),']')));I(xn==2,I(xy==PLH,xy=au)E(xx=pm(xx)))*v=0)
   E(I u=*s==':';s+=u;x=a2(aw+i+3*u,x);*v=1))x)
-S V pW()_(s=pw(s);Cc=*s;P(c-'/')c=s[-1];P(s>s0&&c-32&&c-10)W((c=*++s)&&c-10))
+S V pW()_(s=pw(s);Cc=*s;P(c-'/')P(s>s0&&s[-1]-32&&s[-1]-10)W((c=*++s)&&c-10))
 S A pe(Ax,C*v)_(pW();P(s>s0&&*s=='\\'&&s[-1]==32,s++;Ay=pe(0,v);P(!y,x?x(0):0);*v=0;y=a2(OUT,y);I(x,y=a2(pm(x),y))y)
  UH o=s-s0;Cb=0;Ay=pT(&b);P(!y,x?x(0):0)P(y==PLH,x?x:y)P(!b,Az=pe(y,v);P(!x,z)Nx(z);*v?a3(aw,x,z):AO(o,a2(pm(x),z)))
  Az=pe(0,v);P(!z,y(x?x(0):0))P(z==PLH,*v=1;P(!x,y)Yu(ep1(x))AO(o,a3(y,x,z)))
