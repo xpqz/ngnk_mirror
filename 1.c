@@ -11,7 +11,7 @@ A1(neg,XmMA(eac1f(x,neg))Xzc(az(-gl(x)))Xd(ad(-gd(x)))XC(neg(cB(x)))
   I(m<n,I(x-y,x=wdn(x,m,n,n-m);y=wdn(y,0,m,n))E(x=y=wdn(y,0,n,n))N mw=m*yW;f[xt-tB](xV+(x-y?0:mw),yV+mw,n-m))x-y?x(y):y)
  et1(x))
 A1(not,XmMA(eac1f(x,not))XF(x(ai(x==au)))eql(xtsS?as(0):ai(0),x))
-A1(nul,XmMA(eac1f(x,nul))XF(x(ai(x==au)))eql(_R(cn[xt]),x))
+A1(nul,XmMA(eac1f(x,nul))XF(x(ai(x==au)))XD(Ay=aB(xn);xe(i(xn,yb=xd!=xd);y))Xd(x(ai(*xD!=*xD)))eql(_R(cn[xt]),x))
 A1(flr,XmMA(eac1f(x,flr))XcC(K("`c$@[!256;65+!26;+;32]",cB(x)))XsS(cS(flr(str(x))))XzZ(x)
  XdD(Ay=an(xt+tl-td,xn);xe(i(yn,yl=xd<0?(L)xd-(xd<(L)xd):(L)xd)y))et1(x))
 
