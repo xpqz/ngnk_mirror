@@ -73,7 +73,7 @@ S A3(subs,neg(adds(neg(x?x:mul(ai(2),ii(y,0))),y,0)))
 S A3(mxms,P((!x||xtz)&&ytZ,Lv=x?gl(x):-WL,l=-1ll<<8*yW-1,h=~l;Nn=yn;I(v<=l||h<=v,P(v>=0,y(rsh(n,az(v))))v=v<0?l:h)
  Au=yr-1?an(yt,n):y;i4(yw,n,ub=MAX(v,yb),uh=MAX(v,yh),ui=MAX(v,yi),ul=MAX(v,yl))y-u?y(u):u)___s(x,y,z))
 S A3(mnms,P((!x||xtz)&&ytZ,inv(mxms(x?az(~gl(x)):0,inv(y),MXM)))___s(x,y,z))
-A3(ars,Q(ztv)Q(zv<11)Q(!x||xtzdc)Q(ytZDC)T(&dexs,adds,subs,muls,___s,___s,mnms,mxms,___s,___s,___s)[zv](x,y,z))
+A3(ars,Q(ztv)Q(zv<11)Q(!x||xtzc)Q(ytZC)T(&dexs,adds,subs,muls,___s,___s,mnms,mxms,___s,___s,___s)[zv](x,y,z))
 
 S A3(dexp,cat(x,drp(-1,y)))
 S A3(___p,v2[zv](y,dexp(x,yR,av)))

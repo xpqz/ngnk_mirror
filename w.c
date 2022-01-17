@@ -71,9 +71,9 @@ A2(fld1,/*10*/Xt(x)P(ytv&&yv<11&&xtZDC,arf(0,x,y))P(!xN,x(id_(y,x)))Az=ii(x,0);i
 AX(fld,P(n==1,fld1(*a,x))P(n==2,fld2(*a,a[1],x))n--;Ay=*a++,z=*a;Lm=cfm(a,n);
  P(m==-1,y?x8(a-1,n+1):z)P(m<0,I(y,y(0))el8(a,n))P(!m&&!y,x=id_(x,z);mrn(n,a);x)
  Li=!y;I(i,y=ii(z,0))Ab8;W(i<m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);B(!y)i++)mrn(n-1,a+1);z(y))
-SN A3(scn2,/*110*/Yt(z2(x,y))Ym(Au=kv(&y);am(y,Ny(scn2(x,u,z))))P(!yN,x(y))P(ztv&&zv<11&&xtzdc&&ytZDC,ars(x,y,z))
+SN A3(scn2,/*110*/Yt(z2(x,y))Ym(Au=kv(&y);am(y,Ny(scn2(x,u,z))))P(!yN,x(y))P(ztv&&zv<11&&xtzc&&ytZC,ars(x,y,z))
  Au=oA;i(yN,x=z2(x,ii(y,i));P(!x,y(u(0)))uq(xR))x(y(u)))
-SN A2(scn1,/*10*/Xt(x)P(!xN,x)Xm(Az=kv(&x);am(x,Nx(scn1(z,y))))P(y==CAT,scn2(oA,x,y))P(ytv&&yv<11&&xtZDC,ars(0,x,y))
+SN A2(scn1,/*10*/Xt(x)P(!xN,x)Xm(Az=kv(&x);am(x,Nx(scn1(z,y))))P(y==CAT,scn2(oA,x,y))P(ytv&&yv<11&&xtZC,ars(0,x,y))
  Ni=0,n=xN;Az=ii(x,0),u=enl(zR);W(++i<n,z=N(y2(z,ii(x,i)));uq(zR))z(x(u)))
 SN AX(scn,P(n==1,scn1(*a,x))P(n==2,scn2(*a,a[1],x))Ay=*a++;n--;Lm=cfm(a,n);P(m==-2,y(el8(a,n)))
  Az=oA;Ab8;i(m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);P(!y,mrn(n,a);z(0))zq(yR))mrn(n,a);y(z))
