@@ -54,7 +54,7 @@ S A3(___f,Nn=yn,i=!x;I(i,x=ii(y,0))W(i<n,x=z2(x,ii(y,i++));B(!x))y(x))S A3 dexs;
 S A3(dexf,las(dexs(x,y,z)))
 S L mmmfZ(Lv,Ax/*0*/,Ii)_(Q(xtZDC)L l=-1ll<<8*xW-1,h=~l;Nn=xn;P((i?v>=h:v<=l)||!n,v)v=v<l?l:v>h?h:v;
  I(i,i4(xw,n,MAX(v,xb),MAX(v,xh),MAX(v,xi),MAX(v,xl)))E(i4(xw,n,MIN(v,xb),MIN(v,xh),MIN(v,xi),MIN(v,xl)))v)
-S A3(mmmf,Ii=zv==7;P((x&&xtd)||ytD,Lv=ordd(x?gd(cD(x)):i?-WD:WD);y=cD(y);ad(ye(OFP(y);L r=mmmfZ(v,y,i);OFP(y);dord(r))))
+S A3(mmmf,Ii=zv==7;P((x&&xtd)||ytD,Lv=ofpd1(x?gd(cD(x)):i?-WD:WD);y=cD(y);ad(ye(OFP1(y);L r=mmmfZ(v,y,i);OFP0(y);ofpd0(r))))
  Lv=x?gl(x):i?-WL:WL;az(ye(mmmfZ(v,y,i))))
 S A3(admf,Ii=zv==3;Nn=yn;P((x&&xtd)||ytD,Dv=x?gd(cD(x)):i;y=cD(y);ad(ye(I(i,i(n,v*=yd))E(i(n,v+=yd))v)))
  Lv=x?gl(x):i;az(ye(I(i,i4(yw,n,v*=yb,v*=yh,v*=yi,v*=yl))E(i4(yw,n,v+=yb,v+=yh,v+=yi,v+=yl))v)))
