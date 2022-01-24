@@ -39,7 +39,7 @@ S A1(qex,exit(xtz?gl(x):1);0)
 S A1(qr,x(ai(xr)))
 S A1(qjs,XC(Cb[ZP];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))XA(eac1f(x,qjs))et1(x))
 S A1(qp,XC(x=str0(x);x(pk(xV)))et1(x))
-A2(_1,/*01*/P(!xtt,i1(x,y))Xz(dex(Ny(v1c(xR,y)),x))
+A2(_1,/*01*/P(!xtt,i1(x,y))
  Xs(S O C s[][4]={"","k","j","p","t","x","hex","err","argv","env","exit","js","prng","sin","cos","exp","ln","r"};
   Li=fI(s,ZZ(s),xv);T(&ser,kst,js1,qp,qt,frk,hex,err,qar,qen,qex,qjs,prng,ksin,kcos,kexp,klog,qr,ed1)[i<0?ZZ(s):i](y))
  Ik=xK;P(1<k,prj(x,&y,1))Xo(run(x,&y,1))Xv(en1(y))Xr(adv(x,&y,1))Xe(((A1*)(x<<16>>16))(y))
