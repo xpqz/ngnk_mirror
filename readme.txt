@@ -25,9 +25,10 @@ e.c error handling
 k.c impl of embedding api
 
 related projects:
-https://github.com/xpqz/ngnk_mirror    - continuous integration for osx
-https://github.com/traws0/ngnk-windows - windows port
-https://copy.sh/k/                     - aoc20 and aoc21 solutions
-https://github.com/chrispsn/aoc2017    - aoc17 solutions
-https://github.com/xpqz/dyalogk        - dyalog competition solutions
-https://codeberg.org/CptJimKirk/kpl    - kpl, apl-like extensions for k
+https://github.com/xpqz/ngnk_mirror        - continuous integration for osx
+https://github.com/traws0/ngnk-windows     - windows port
+https://copy.sh/k/                         - aoc20 and aoc21 solutions
+https://github.com/chrispsn/aoc2017        - aoc17 solutions
+https://github.com/xpqz/dyalogk            - dyalog competition solutions
+https://codeberg.org/CptJimKirk/kpl        - kpl, apl-like extensions for k
+https://github.com/razetime/ngn-k-tutorial - tutorial
