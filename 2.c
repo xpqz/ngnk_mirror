@@ -64,8 +64,8 @@ A3(arf,Q(ztv)Q(zv<11)Q(!x||xtzdc)Q(ytZDC)T(&dexf,admf,subf,admf,___f,___f,mmmf,m
 S A3(___s,Ni=!x;Au=i?x=ii(y,0),enl(xR):oA;Nn=yn;W(i<n,x=z2(x,ii(y,i++));P(!x,y(u))uq(xR))x(y(u)))
 S A3(dexs,x?x(y):y)
 S A3(adds,L w=x?gl(x):0;Nn=yn;
- W(1,I b=1;Lv=w;Ct=yt;Au=an(t,n);i4(yw,n,ub=v+=yb;B(v-(B)v,b=0),uh=v+=yh;B(v-(H)v,b=0),ui=v+=yi;B(v-(I)v,b=0),ul=v+=yl)
-  P(b,y(u))y=cT[t+1](u(y)))0)
+ W(1,I b=1;Lv=w;Ct=tB+yw;Au=an(t,n);
+  i4(yw,n,ub=v+=yb;B(v-(B)v,b=0),uh=v+=yh;B(v-(H)v,b=0),ui=v+=yi;B(v-(I)v,b=0),ul=v+=yl)P(b,y(u))y=cT[t+1](u(y)))0)
 S A3(muls,L w=x?gl(x):1;Nn=yn;
  W(1,I b=1;Lv=w;Ct=yt;Au=an(t,n);I(t==tL,i(n,ul=v*=yl))J(t==tI,i(n,ui=v*=yi;B(v-(I)v,b=0)))
   J(t==tH,i(n,uh=v*=yh;B(v-(H)v,b=0)))J(t==tB,i(n,ub=v*=yb;B(v-(B)v,b=0)))E(Q(0))P(b,y(u))y=cT[t+1](u(y)))0)
