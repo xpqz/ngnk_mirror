@@ -56,7 +56,8 @@ rdy(_=>{
    bc.textContent=s.length+'bytes'+(r.length?`(${r.join`, `})`:'');return s}
   out.value='';ed.value=p0(location.hash.slice(1).replace(/-$/,''))
   const ev=s=>w.then(x=>{app=x.instance.exports;heap=app.__heap_base;txt();out.value='';ubc()
-   const f=app.open(ms('a.k\0'),514,438/*O_RDWR|O_CREAT,0666*/),[q,nq]=msn(s);app.write(f,q,nq);app.close(f)
+   const O_RDWR=2,O_CREAT=64/*512 on freebsd*/
+   const f=app.open(ms('a.k\0'),O_RDWR|O_CREAT,438/*0666*/),[q,nq]=msn(s);app.write(f,q,nq);app.close(f)
    const h=heap,a=heap+=T1.encodeInto('k\0a.k\0',M(heap,8)).written;S4(a,[h,h+2,0,0]);heap+=16;
    let e;try{app.main(2,a)}catch(x){e=x}if(e&&e.message!=='exit(0)')throw e;w=wa()})
   const evp=_=>{const v=ed.value,s=v.slice(-1)==='\n'?v:v+'\n',p=p1(v);location.hash=p+'-';ev(s).then(_=>location.hash=p)}
