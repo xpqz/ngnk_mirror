@@ -45,7 +45,7 @@ S I mxs(Ii,I s)_(I r=s;W(1,UC c=b[i++];Q(s>=0)r=max(r,s);P(!c,r)P(c==bz,i++;s--;
  I(c>=bc||c==bo||c-bg<8u||c-bd<8u||c==bG,s++)J(c-bs<8u||c-bv<32u||c==bp||c==bm||c==bx||c==bM||c==bS,s--)
  J(c==bi||c==bX,s-=2)J(c==bI||c==bA,s-=3)J(c==bL,s+=b[i])J(c==bl||c==ba||c==bP,s-=b[i]-1)
  I(c==bm||c==bx||c==bM||c==bi,i+=2)J(c==bX||c==bI||c==bL||c==bl||c==ba||c==bP||c==bG||c==bS,i++)J(c==bj,i+=b[i]+1))r)
-S I shy(Ax/*0*/)_(!xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu))
+S I shy(Ax/*0*/)_(!xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu)&&_tsSA(xy))
 A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,5,A(x,au,au,z,au));Ms(lu,-1,SZ lu);y=Nu(cf(y));
  I s=shy(y),r=cr(y,1);y(0);I o=0;I(s,hc(au))h(bu)P(r-OK,ec0();eS(ux,r);u(0))P(_n(fl)>8||nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
  i(8,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);AK(k,AT(to,u)))
