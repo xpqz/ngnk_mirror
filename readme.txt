@@ -32,4 +32,4 @@ https://copy.sh/k/                         - aoc20 and aoc21 solutions
 https://github.com/chrispsn/aoc2017        - aoc17 solutions
 https://github.com/xpqz/dyalogk            - dyalog competition solutions
 https://codeberg.org/CptJimKirk/kpl        - kpl, apl-like extensions for k
-https://github.com/razetime/ngn-k-tutorial - tutorial
+https://github.com/razetime/ngn-k-tutorial - tutorial (incomplete)
