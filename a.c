@@ -83,8 +83,9 @@ S A3(am3,am8(A(x,y,z),3))S A4(am4,am8(A(x,y,z,u),4))S A am5(Ax,Ay,Az,Au,A v)_(am
 A3(dm3,Nm=yN;P(y==au||!m,z(z1(y(x)  )))P(m==1,am3(x,fir(y),z  ))yR;am4(x,fir(y),prj(DOT,A(PLH,drp(1,y)),2),z))
 A4(dm4,Nm=yN;P(y==au||!m,z(z2(y(x),u)))P(m==1,am4(x,fir(y),z,u))yR;am5(x,fir(y),prj(DOT,A(PLH,drp(1,y)),2),z,u))
 AA(dm8,n==4?dm4(*a,a[1],a[2],a[3]):n==3?dm3(*a,a[1],a[2]):en8(a,n))
-A mnd(OA*a,In)_(Ax=*a;Q(xtsS)I(xtS,x=jS(x))Li=fI(gk,gn,xv);I(i<0,gk[i=gn++]=xv)A*p=gv+i;I(!*p,*p=au)
- Ab8;*b=*p;Mc(b+1,a+1,(n-1)*8);*p=au;*p=_R(N(dm8(b,n))))
-AA(dmd,Ax=*a;XsS(mnd(a,n))I(n==3,XF(try(x,a[1],a[2])))dm8(a,n))
+AA(dmd,Ax=*a;
+ XsS(Iv=_v(xts?x:jS(x));Li=fI(gk,gn,v);I(i<0,gk[i=gn++]=v)A*p=gv+i;I(!*p,*p=au)
+  Ab8;*b=*p;Mc(b+1,a+1,(n-1)*8);*p=au;*p=_R(N(dm8(b,n))))
+ I(n==3,XF(try(x,a[1],a[2])))dm8(a,n))
 SN A evKi(A*p,Qs)_(*p=evs(s);I(!*p,die(s))cns=apd(cns,*p))
 A evK(A*p,Qs,OA*a,In)_(I(!*p,evKi(p,s))n?_8(*p,a,n):*p)
