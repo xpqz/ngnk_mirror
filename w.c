@@ -56,7 +56,7 @@ SN A3(wf,/*011*/w3(x,y,z,0))
 SN A n3(Ax,Lm,Ay,Az/*0m11*/)_(i(m,I(z,zq(yR))y=x1(y);B(!y))z?y?zq(y):z(y):y)
 SN A ns(Ax,Lm,Ay/*0m1*/)_(n3(x,m,y,oA))
 SN A nf(Ax,Lm,Ay/*0m1*/)_(n3(x,m,y,0))
-SN A nS(Ax,Lm,OA*a,Nn/*0m1n*/)_(P(n==1,ns(x,m,*a))Az=aA(n+m),*b=zV;zn=n;Mc(b,a,8*n);i(m,mRn(n,b);b[n]=Nz(x8(b,n));zn++;b++)sqz(z))
+SN A nS(Ax,Lm,OA*a,Nn/*0m1n*/)_(P(n==1,ns(x,m,*a))m=max(0,m);Az=aA(n+m),*b=zV;zn=n;Mc(b,a,8*n);i(m,mRn(n,b);b[n]=Nz(x8(b,n));zn++;b++)sqz(z))
 SN A nF(Ax,Lm,OA*a,Nn/*0m1n*/)_(P(n==1,nf(x,m,*a))las(N(nS(x,m,a,n))))
 SN A wS(Ax,Ay,OA*a,Nn/*0m1n*/)_(P(n==1,ws(x,y,*a))Ab8;Mc(b,a,8*n);mRn(n,b);Az=sqz(aV(tA,n,b));
  W(1,Au=y1(ii(z,zn-1));B(!u,z=z(0))B(!tru(u))mRn(n-1,b+1);u=x8(b,n);B(!u,*b=au;z=z(0))Mm(b,b+1,8*n-8);b[n-1]=u;zq(uR))
