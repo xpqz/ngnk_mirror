@@ -3,7 +3,7 @@ license: GNU AGPLv3 (v3 only) - https://codeberg.org/ngn/k/raw/branch/master/LIC
 build: make CC=clang-12 # or CC=gcc-10
  (for unusual platforms or compilers, if that doesn't work, try "make k-libc" instead of "make")
 usage: rlwrap ./k repl.k
-online: https://ngn.codeberg.page/k or https://ngn.bitbucket.io/k
+try online: https://ngn.codeberg.page/k or https://ngn.bitbucket.io/k
 
 0.c syscalls and main()                 k.h  embedding api
 m.c memory manager                      a.h  common header
@@ -26,10 +26,11 @@ e.c error handling
 k.c impl of embedding api
 
 related projects:
-https://github.com/xpqz/ngnk_mirror        - continuous integration for osx
-https://github.com/traws0/ngnk-windows     - windows port
-https://copy.sh/k/                         - aoc20 and aoc21 solutions
-https://github.com/chrispsn/aoc2017        - aoc17 solutions
-https://github.com/xpqz/dyalogk            - dyalog competition solutions
-https://codeberg.org/CptJimKirk/kpl        - kpl, apl-like extensions for k
-https://github.com/razetime/ngn-k-tutorial - tutorial (incomplete)
+https://github.com/xpqz/ngnk_mirror          - continuous integration for osx
+https://github.com/traws0/ngnk-windows       - windows port
+https://copy.sh/k/                           - aoc20 and aoc21 solutions
+https://github.com/chrispsn/aoc2017          - aoc17 solutions
+https://github.com/xpqz/dyalogk              - dyalog competition solutions
+https://codeberg.org/CptJimKirk/kpl          - kpl, apl-like extensions for k
+https://github.com/razetime/ngn-k-tutorial   - tutorial (incomplete)
+https://code.golf/rankings/holes/all/k/bytes - code golf
