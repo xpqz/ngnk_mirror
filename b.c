@@ -14,7 +14,7 @@ SN I il(Iv)_(Li=fAI(fl,v);P(i>=0,lu[i]=nb;i)-1)
 S A cl(Ax,Ay/*00*/,I r)_(I o=xo;Q(xx==av||_t(xx)==tu)Iv=_v(xx);
  Ys(P(xx==av&&_n(fl),Li=fpI(&fl,yv);P(i>15,ez0())lu[i]=nb;h(bs+i)I(r,h(bg+i))OK)
   Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK)i=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
- YS(hc(av+v)hc(au)hc(yR)h(bA)I(!r,h(bp))OK)
+ YS(P(yn==1,ec0())hc(av+v)hc(au)hc(yR)h(bA)I(!r,h(bp))OK)
  YA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;
   P(ztS,hc(av+v)i(n,Nr(yA[n-i],1))h(bl)h(n)hc(zR)h(bA)I(!r,h(bp))OK)
   P(zts,i(n,Nr(yA[n-i],1))h(bl)h(n);Ii=il(zv);P(i<0,hc(z)h(r?bX:bI)h(v)OK)h(r?bx:bi)h(i)h(v)OK)
