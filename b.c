@@ -12,16 +12,16 @@ SN I ig(Lv)_(I(*gp,Qq=qs(&v);C s[32];Nm=Sn(gp),n=Sn(q);P(m+n+2>=SZ s,-1)Mc(s,gp,
  Li=fI(gk,gn,v);P(i>=0,i)P(gn-(UC)gn,-1)gk[gn]=v;gv[gn]=0;gn++)
 SN I il(Iv)_(Li=fAI(fl,v);P(i>=0,lu[i]=nb;i)-1)
 S A cl(Ax,Ay/*00*/,I r)_(I o=xo;Q(xx==av||_t(xx)==tu)Iv=_v(xx);
- Ys(P(xx==av&&_n(fl),Li=fpI(&fl,yv);P(i>15,ez0())lu[i]=nb;h(bs+i)I(r,h(bg+i))OK)
-  Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK)i=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
- YS(P(yn==1,o)hc(av+v)hc(au)hc(yR)h(bA)I(!r,h(bp))OK)
- YA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;
-  P(ztS,hc(av+v)i(n,Nr(yA[n-i],1))h(bl)h(n)hc(zR)h(bA)I(!r,h(bp))OK)
-  P(zts,i(n,Nr(yA[n-i],1))h(bl)h(n);Ii=il(zv);P(i<0,hc(z)h(r?bX:bI)h(v)OK)h(r?bx:bi)h(i)h(v)OK)
-  P(z==MKL&&xx==av,h(bL)h(n);i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)o)o)
+ YsS(
+  I(yts,P(xx==av&&_n(fl),Li=fpI(&fl,yv);P(i>15,ez0())lu[i]=nb;h(bs+i)I(r,h(bg+i))OK)
+        Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
+  E(P(yn==1,o)y=jS(yR))
+  Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
+ YA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;P(z==MKL&&xx==av,h(bL)h(n);i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
+  P(ztsS,I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n);Ii=il(zv);P(i<0,hc(z)h(r?bX:bI)h(v)OK)h(r?bx:bi)h(i)h(v)OK)o)o)
 S A cr(Ax/*0*/,I r)_(I o=xo;
- Xs(Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK)i=ig(xv);P(i<0,ez0())h(bG)h(i)I(!r,h(bp))OK)
- XS(P(xn-1,hc(AO(0,xR))h(bu+DOT-av)I(!r,h(bp))OK)I(r,hc(ii(x,0)))OK)
+ XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))E(P(xn==1,I(r,hc(ii(x,0)))OK)x=jS(xR))
+  Ii=ig(xv);P(i<0,ez0())h(bG)h(i)I(!r,h(bp))OK)
  P(!xtA||!xn,I(r,hc(x-PLH?xR:au))OK)
  Nn=xn;Ay=xx;
  P(y==PLH,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)
