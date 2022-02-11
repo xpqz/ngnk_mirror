@@ -78,7 +78,8 @@ A3(ars,Q(ztv)Q(zv<11)Q(!x||xtzc)Q(ytZC)T(&dexs,adds,subs,muls,___s,___s,mnms,mxm
 S A3(dexp,cat(x,drp(-1,y)))
 S A3(___p,v2[zv](y,dexp(x,yR,av)))
 S A3(modp,eac2f(y,dexp(x,yR,av),mod))
-S A3(mxmp,I w=yw;Lv=gl(x),l=-1ll<<(8<<w)-1,h=~l;MAX(v,l);Nn=yn;P(v>=h,rsh(n,y(az(v))))x=ax(y);iW(y,w,-1,v);Nj=n-1;
+S A3(mxmp,YC(mxmp(x,cB(y),z))
+ I w=yw;Lv=gl(x),l=-1ll<<(8<<w)-1,h=~l;MAX(v,l);Nn=yn;P(v>=h,rsh(n,y(az(v))))x=ax(y);iW(y,w,-1,v);Nj=n-1;
  i4(w,n,xB[j]=max(yB[j],yB[j-1]);j--,xH[j]=max(yH[j],yH[j-1]);j--,xI[j]=max(yI[j],yI[j-1]);j--,xL[j]=max(yL[j],yL[j-1]);j--)
  yn=n;x)
 S A3(mnmp,inv(mxmp(az(~gl(x)),inv(y),MXM)))
