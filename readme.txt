@@ -26,11 +26,13 @@ e.c error handling
 k.c impl of embedding api
 
 related projects:
+https://github.com/razetime/ngn-k-tutorial   - tutorial (work in progress)
+https://xpqz.github.io/kbook/                - book (work in progress)
 https://github.com/xpqz/ngnk_mirror          - continuous integration for osx
 https://github.com/traws0/ngnk-windows       - windows port
+https://github.com/nathyong/ngnk-nix         - nix package
+https://code.golf/rankings/holes/all/k/bytes - code golf
 https://copy.sh/k/                           - aoc20 and aoc21 solutions
 https://github.com/chrispsn/aoc2017          - aoc17 solutions
 https://github.com/xpqz/dyalogk              - dyalog competition solutions
 https://codeberg.org/CptJimKirk/kpl          - kpl, apl-like extensions for k
-https://github.com/razetime/ngn-k-tutorial   - tutorial (incomplete)
-https://code.golf/rankings/holes/all/k/bytes - code golf
