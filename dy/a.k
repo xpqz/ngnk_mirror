@@ -77,7 +77,7 @@ p192:"FDCBA"@0 65 70 80 90'                  / https://problems.tryapl.org/psets
 p193:{+(!x;.x;0.1*_0.5+1e3*.x%+/x)}0^"ABCDF"##'=: / https://problems.tryapl.org/psets/2019.html?goto=P3_Grade_Distribution (-10, @coltim, @chrispsn)
 p194:(&/'0<)#(+,/'|:\2 1*1 -1@!2 2)+\:       / https://problems.tryapl.org/psets/2019.html?goto=P4_Knight_Moves
 p195:(|/=':" ",)'                            / https://problems.tryapl.org/psets/2019.html?goto=P5_Doubling_Up
-p196:(AZ!&.'"0033333434"),*'=,/$!10          / https://problems.tryapl.org/psets/2019.html?goto=P6_Telephone_Names
+p196:10!((,/$!10),"AAADGJMPTW")'             / https://problems.tryapl.org/psets/2019.html?goto=P6_Telephone_Names
 p197:{{?[x$"";-2!x-:#y;y]}[x]'(x&'#'y)#'y}   / https://problems.tryapl.org/psets/2019.html?goto=P7_In_the_Center_of_It_All
 p198:{+/%+/'x*x:(*|x)-':x}                   / https://problems.tryapl.org/psets/2019.html?goto=P8_Going_the_Distance (-4 via @coltim)
 rot:{@[x;(2!)#!#x;|:]} /flip pairs at odd indices
