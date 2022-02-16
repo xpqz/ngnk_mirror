@@ -14,6 +14,11 @@ S A jr(Qp,Lv)_(Cc;W((c=*p++),P(c-*s,0)s++)az(v))S A0(jt,jr("true",1))S A0(jf,jr(
 S A0(jv,Cc=jw();Ii=si("-ftn[{\"",c)*!c09(c);Ax=T(&jd,jf,jt,jN,ja,jo,js,je)[i]();jw();x)
 A1(js0,XC(x=str0(x);s=xV;Ay=jv();I(y&&*s,y=y(0))P(!y,eS(x,s-(Q)xV);ep1(x))x(y))Xc(js0(enl(x)))et1(x))
 
-A1(js1,Xz(Lv=gl(x);Qs=!v?"false":v==1?"true":v==NL?"null":0;s?aCz(s):js1(ad(v)))
- Xd(str(x))Xc(js1(enl(x)))XC(xn-1?kst(x):kst(fir(x)))
- XMT(sur('[',jc(',',N(eac1f(x,js1))),']'))Xm(Ay=kv(&x);sur('{',jc(',',N(K("{(`j'x),'\":\",'`j'y}",x,y))),'}'))js1(str(x)))
+S A jstr(Qs,Nn)_(Nm=2+n;i(n,Cc=s[i];I(si("\"\\\b\f\n\r\t",c)<7,n++)J((UC)c<32||c==127,n+=5))
+ Ax=aC(m);C*r=xC;*r++='"';S Q h="0123456789abcdef";
+ i(n,Cc=*s++;Ij=si("\"\\\b\f\n\r\t",c);
+  I(j<7,*r++='\\';*r++="\"\\bfnrt"[j])J((UC)c<32||c==127,Mc(r,"\\u00",4);r+=4;*r++=h[(UC)c>>4];*r++=h[c&15])E(*r++=c))
+ *r='"';x)
+A1(js1,Xz(Lv=gl(x);Qs=!v?"false":v==1?"true":v==NL?"null":0;s?aCz(s):js1(ad(v)))Xd(str(x))
+ Xc(Cc=xv;jstr(&c,1))XC(x(jstr(xC,xn)))XMT(sur('[',jc(',',N(eac1f(x,js1))),']'))
+ Xm(Ay=kv(&x);sur('{',jc(',',N(K("{(`j'x),'\":\",'`j'y}",x,y))),'}'))js1(str(x)))
