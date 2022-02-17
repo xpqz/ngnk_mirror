@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S Q HX="0123456789abcdef",JE="\"\\/\b\f\n\r\t",EJ="\"\\/bfnrt";
+S Q JE="\"\\/\b\f\n\r\t",EJ="\"\\/bfnrt";
 S Qs;S A0 jv;S A0(je,0)S C jw()_(W(si(" \n\t\r",*s)<4,++s)*s)
 S A0(jd,Im=*s=='-';s+=m;Cc=*s++;P(!c09(c),0)Dv=c-'0';W(c09(*s),v*=10;v+=*s++-'0')
  I(*s=='.',s++;D t=1;W(c09(*s),t/=10;v+=(*s++-'0')*t))
@@ -17,7 +17,7 @@ A1(js0,XC(x=str0(x);s=xV;Ay=jv();I(y&&*s,y=y(0))P(!y,ep0();eS(x,s-(Q)xV);x(0))x(
 
 S A f(Qs,Nn)_(Nm=2+n;i(n,Cc=s[i];I(si(JE,c)<SZ JE,m++)J((UC)c<32||c==127,m+=5))Ax=aC(m);C*r=xC;*r++='"';
  i(n,Cc=*s++;Ij=si(JE,c);
-  I(j<SZ JE,*r++='\\';*r++=EJ[j])J((UC)c<32||c==127,Mc(r,"\\u00",4);r+=4;*r++=HX[(UC)c>>4];*r++=HX[c&15])E(*r++=c))
+  I(j<SZ JE,*r++='\\';*r++=EJ[j])J((UC)c<32||c==127,Mc(r,"\\u00",4);r+=4;*r++=HEX[(UC)c>>4];*r++=HEX[c&15])E(*r++=c))
  *r='"';x)
 A1(js1,Xz(Lv=gl(x);Qs=!v?"false":v==1?"true":v==NL?"null":0;s?aCz(s):js1(ad(v)))Xd(str(x))
  Xc(Cc=xv;f(&c,1))XC(x(f(xC,xn)))XMT(sur('[',jc(',',N(eac1f(x,js1))),']'))
