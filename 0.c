@@ -5,6 +5,8 @@
 #include<fcntl.h>
 #include<errno.h>
 #include<sys/socket.h>
+#include<sys/types.h>
+#include<sys/wait.h>
 #include<netinet/in.h>
 #include<netinet/tcp.h>
 #include<arpa/inet.h>
@@ -42,8 +44,9 @@ I main(In,Q*a)_(kinit();kargs(n,a);I r=0;I(n<2,repl())J(!bsl(a[1]),r=1;epr(0))Q(
   #define h1 h
   #define h2 h
   #define h3 h
-  #define h5(x) h(x,"movq %rcx,%r10;")
-  #define h6 h5
+  #define h4(x) h(x,"movq %rcx,%r10;")
+  #define h5 h4
+  #define h6 h4
  #endif
 #endif
 
@@ -114,7 +117,7 @@ I main(In,Q*a)_(kinit();kargs(n,a);I r=0;I(n<2,repl())J(!bsl(a[1]),r=1;epr(0))Q(
  ;
 #else
  asm(h3(read)h3(write)h3(open)h1(close)h2(fstat)h3(lseek)h2(munmap)h2(dup2)h3(socket)h5(setsockopt)h3(connect)
-     h(fork)h3(execve)h1(exit)h2(gettimeofday)h6(mmap)h1(chdir)h2(ftruncate));
+     h(fork)h4(wait4)h3(execve)h1(exit)h2(gettimeofday)h6(mmap)h1(chdir)h2(ftruncate));
 #endif
 
 //mem and str functions
