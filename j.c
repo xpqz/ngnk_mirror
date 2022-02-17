@@ -13,7 +13,7 @@ S A0(jo,s++;Ax=am(oS,oA);Cc=jw();P(c=='}',s++;x)
  W(1,Nx(c=='"');_q(xx,cS(Nx(js())));Nx(jw()==':');s++;_q(xy,Nx(jv()));P(*s=='}',s++;x)Nx(*s==',');s++;c=jw())0)
 S A jr(Qp,Lv)_(Cc;W((c=*p++),P(c-*s,0)s++)az(v))S A0(jt,jr("true",1))S A0(jf,jr("false",0))S A0(jN,jr("null",NL))
 S A0(jv,Cc=jw();Ii=si("-ftn[{\"",c)*!c09(c);Ax=T(&jd,jf,jt,jN,ja,jo,js,je)[i]();jw();x)
-A1(js0,XC(x=str0(x);s=xV;Ay=jv();I(y&&*s,y=y(0))P(!y,eS(x,s-(Q)xV);ep1(x))x(y))Xc(js0(enl(x)))et1(x))
+A1(js0,XC(x=str0(x);s=xV;Ay=jv();I(y&&*s,y=y(0))P(!y,ep0();eS(x,s-(Q)xV);x(0))x(y))Xc(js0(enl(x)))et1(x))
 
 S A f(Qs,Nn)_(Nm=2+n;i(n,Cc=s[i];I(si(JE,c)<SZ JE,m++)J((UC)c<32||c==127,m+=5))Ax=aC(m);C*r=xC;*r++='"';
  i(n,Cc=*s++;Ij=si(JE,c);
