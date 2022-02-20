@@ -7,7 +7,7 @@ enum{bu,bv=32,bs=64,bg=72,bd=80,ba=88,bP,bi,bx,bI,bX,bm,bM,bG,bS,bl,bL,bz,bj,bA,
 #define Nl(a...) {I r=cl(a);P(r-OK,r);}
 #define fl uA[3]
 S A u;S UC*b,*m;S I nb,lu[8];S A cr(A,I);
-SN I lc(Ax/*1*/,I o)_(Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,uq(x))h(i+bc-5);1)
+SN I lc(Ax/*1*/,I o)_(Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,uq(x))h(i+bc-5)1)
 SN I ig(Lv)_(I(*gp,Qq=qs(&v);C s[32];Nm=Sn(gp),n=Sn(q);P(m+n+2>=SZ s,-1)Mc(s,gp,m);s[m]='.';Mc(s+m+1,q,n+1);v=(I)sym(s))
  Li=fI(gk,gn,v);P(i>=0,i)P(gn-(UC)gn,-1)gk[gn]=v;gv[gn]=0;gn++)
 SN I il(Iv)_(Li=fAI(fl,v);P(i>=0,lu[i]=nb;i)-1)
@@ -17,8 +17,8 @@ S A cl(Ax,Ay/*00*/,I r)_(I o=xo;Q(xx==av||_t(xx)==tu)Iv=_v(xx);
         Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
   E(P(yn==1,o)y=jS(yR))
   Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
- YA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;P(z==MKL&&xx==av,h(bL)h(n);i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
-  P(ztsS,I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n);Ii=il(zv);P(i<0,hc(z)h(r?bX:bI)h(v)OK)h(r?bx:bi)h(i)h(v)OK)o)o)
+ YA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;P(z==MKL&&xx==av,h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
+  P(ztsS,I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);P(i<0,hc(z)h(r?bX:bI)h(v)OK)h(r?bx:bi)h(i)h(v)OK)o)o)
 S A cr(Ax/*0*/,I r)_(I o=xo;
  XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))E(P(xn==1,I(r,hc(ii(x,0)))OK)x=jS(xR))
   Ii=ig(xv);P(i<0,ez0())h(bG)h(i)I(!r,h(bp))OK)
