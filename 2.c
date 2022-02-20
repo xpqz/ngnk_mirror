@@ -41,7 +41,7 @@ A2(dvd,XYmMA(eac2f(x,y,dvd))ar2(Ny(cD(x)),Nx(cD(y)),DVD))
 A2(mod,Xzc(YdD(Ln=gl_(x);P(!n,y)P(n<0,ar2(x,Nx(csti(y)),MOD))K("{y-x*(-x)!`i$y}",x,y))ar2(x,y,MOD))dct(x,y))
 A2(mnm,ar2(x,y,MNM))
 A2(mxm,ar2(x,y,MXM))
-A2(ltn,ar2(x,y,LTN))
+A2(ltn,P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA|1<<tS),eac2f(x,y,ltn))P(xts&&yts,ai(qA(x,y)<0))ar2(x,y,LTN))
 A2(gtn,ltn(y,x))
 A2(eql,XYmMA(eac2f(x,y,eql))P(xtsS-ytsS,et2(x,y))P(xtsS,eql(AT(xt+ti-ts,mut(x)),AT(yt+ti-ts,mut(y))))ar2(x,y,EQL))
 

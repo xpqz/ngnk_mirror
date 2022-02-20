@@ -10,7 +10,7 @@ A1(ordD,Q(xtdD);x=AT(xt-tD+tL,mut(x));OFP1(x);x)
 S C ordt(Ax)_(xtz?tl:xtZ?tL:xt)
 S I qL(Li,Lj)_(i<j?-1:i>j)
 I qD(D u,Dv)_(qL(ofpd1(u),ofpd1(v)))
-S I qA(Ax,Ay/*00*/)_(P(mtc_(x,y),0)P(xtd&&ytd,qD(*xD,*yD))P(xtzc&&ytd,qD(gl_(x),*yD))P(xtd&&ytzc,qD(*xD,gl_(y)))
+I qA(Ax,Ay/*00*/)_(P(mtc_(x,y),0)P(xtd&&ytd,qD(*xD,*yD))P(xtzc&&ytd,qD(gl_(x),*yD))P(xtd&&ytzc,qD(*xD,gl_(y)))
  Iv=ordt(x)-ordt(y);P(v,v)Xzc(qL(gl_(x),gl_(y)))Xd(*xD<*yD?-1:*xD>*yD?1:0)Xs(SQ(qs(&x),qs(&y)))
  I(!xtP,Iv=qL(xn,yn);XT(i(min(xn,yn),Az=ii(x,i),u=ii(y,i);I d=qA(z,u);mr(z(u));P(d,d))v))qL(x,y))
 S I*ascZ(O UC*v,UC*g,I*a,I*b,In,I w)_(UI c[257];tilV(a,n,2);
