@@ -8,7 +8,6 @@
 #define B(x,a...) I(x,a;break)
 #define P(x,a...) I(x,_(a))
 #define I(x,a...) if(x){a;}
-#define C(x,a...) case x:return({a;});
 #define T(x,a...) (TY(x)[]){x,a}
 #define   J(a...) else I(a)
 #define   E(a...) else{a;}
@@ -16,6 +15,10 @@
 #define   i(a...) ij(i,a)
 #define   j(a...) ij(j,a)
 #define ij(i,n,a...) for(TY(n)n_=(n),i=0;i<n_;i++){a;}
+#define SW(x,a...) switch(x){a}
+#define DF(a...) default:{a;break;}
+#define C(x,a...) case x:{a;break;}
+#define CR(x,a...) C(x,_(a))
 #define O const
 #define S static
 #define SZ sizeof
@@ -84,7 +87,7 @@ A a2t(A,A,C),ac(C),ai(I),as(I),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A
  wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
 V dir(I,void(*)(V*,Q),V*),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),
  *memmem(OV*,N,OV*,N),*memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),OFP0(A),OFP1(A),repl(),tilV(V*,L,I);
-D ofpd0(L),gd(A);N strlen(Q),_N(A);C*sl(C*,L),sup(A*,A*),tZ(L);C*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);Q qs(O L*);
+D ofpd0(L),gd(A);N strlen(Q),_N(A);C*sd(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);Q qs(O L*);
 I _K(A),qA(A,A),qD(D,D),ina(A,N),js_eval(C*,I,C*,I),memcmp(OV*,OV*,N),mtc_(A,A),si(Q,I),strcmp(Q,Q),rnk(A),osf(Q,L);
 L cfm(OA*,I),gl_(A),gl(A),iw(A,I,L),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),fAI(A,I),fpI(A*,I),ofpd1(D);
 
