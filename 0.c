@@ -130,7 +130,7 @@ I main(In,Q*a)_(kinit();kargs(n,a);I r=0;I(n<2,repl())J(!bsl(a[1]),r=1;epr(0))Q(
  V*memchr(OV*x,Iv,Nn)_(Qs=x;i(n,P(s[i]==v,(V*)(s+i)))(V*)0)
  V*memmem(OV*x,Nm,OV*y,Nn)_(Qp=x,q=y;i((L)m-(L)n+1,P(!memcmp(p+i,q,n),(V*)(p+i)))(V*)0)
  I memcmp(OV*x,OV*y,Nn)_(Qs=x,t=y;i(n,Iv=*s++-*t++;P(v,v))0)
- N strlen(Qs)_(Qp=s;W(*p,p++)p-s)
+ N strlen(Qs)_(Qp=s;W(1,UL v=~*(UL*)(V*)p;v&=v>>1;v&=v>>2;v&=v>>4;v&=0x0101010101010101ll;B(v)p+=8)W(*p,p++)p-s)
  C*strchr(O C*s,Iv)_(W(1,P(*s==v,(V*)s)P(!*s++,(V*)0))(V*)0)
  C*strstr(O C*p,O C*q)_(MM(p,Sn(p),q,Sn(q)))
  I strcmp(Qp,Qq)_(W(*p&&*p==*q,p++;q++)*p-*q)
