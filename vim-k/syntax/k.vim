@@ -28,7 +28,7 @@ sy match  k_aj /;/                                                              
 sy match  k_bj /;/                                                              contained               |hi link k_bj      k_b
 sy match  k_cj /;/                                                                                      |hi link k_cj      k_c
 sy match  k_t  / \\/                                                                                    |hi link k_t       k_u
-sy region k_comment matchgroup=k_comment start=/\(^\/\| \/\|\%^#!\)/ end=/$/                               |hi link k_comment comment
+sy region k_comment matchgroup=k_comment start=/\(^\/\| \/\|\%^#!\)/ end=/$/                            |hi link k_comment comment
 sy region k_comment matchgroup=k_comment start=/^\/$/                end=/^\\$/
 sy region k_comment matchgroup=k_comment start=/^\\\\$/              end=/^\%$/
 sy cluster k_vw contains=k_v,k_w
