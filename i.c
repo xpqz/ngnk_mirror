@@ -17,7 +17,7 @@ S I skt(UI h,UH p)_(If=socket(AF_INET,SOCK_STREAM,0);P(f<0,eo0())Iv=setsockopt(f
 I osf(Qs,L fl)_(P(!SC(s,':'),If=open(s,fl,0666);P(f<3/*fbsd*/,eo0())f)UI h=addr(&s);P(*s-':',ed0())s++;UL p=pu(&s);P(*s,ed0())skt(h,p))
 S I o(Ax/*1*/,I fl)_(Xz(gl(x))Xs(Lv=xv;P(!v,1)Qs=qs(&v);osf(s,fl))XC(x=str0(x);xe(osf(xV,fl)))et1(x))
 S I fmd(If)_(ST stat s;fstat(f,&s)<0?0:s.st_mode)
-A1(opn,az(N(o(x,O_RDWR|O_CREAT))))
+A1(opn,Xz(x)az(N(o(x,O_RDWR|O_CREAT))))
 AL(cls,close(n);au)
 A1(u0c,x=N(spl(N(u1c(x))));xn&&!_n(xA[xn-1])?drp(-1,x):x)
 S V d(V*p,Qs){*(A*)p=apc(cts(*(A*)p,s,Sn(s)),10);}
