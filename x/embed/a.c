@@ -13,7 +13,6 @@ int main(){
  setbuf(stdout,0);
  printf("kinit()\n"); kinit();
  printf("KR()\n");    KR("add",add,2);
- printf("KC()\n");    K s=KC("`0:$add[2;3]",13);
- printf("K1()\n");    K1('.',s);
+ printf("Kx()\n");    Kx("`0:$add[2;3]");
  printf("return\n");  return 0;
 }

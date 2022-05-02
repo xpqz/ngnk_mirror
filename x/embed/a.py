@@ -7,16 +7,17 @@
 # $ LD_LIBRARY_PATH=. python3 x/embed/a.py
 
 from ctypes import *
-k=CDLL('libk.so')
+k=CDLL('../../libk.so')
 
 # declare the function signatures
 K=c_void_p
+K_p=POINTER(K)
 K2f=CFUNCTYPE(K,K,K)
 iK=k.iK;iK.restype=c_int;iK.argtypes=[K]
 Ki=k.Ki;Ki.restype=K;    Ki.argtypes=[c_int]
 KR=k.KR;KR.restype=K;    KR.argtypes=[c_char_p,K2f,c_int]
 KC=k.KC;KC.restype=K;    KC.argtypes=[c_char_p,c_int]
-K1=k.K1;K1.restype=K;    K1.argtypes=[c_char,K]
+K0=k.K0;K0.restype=K;    K0.argtypes=[K_p,c_char_p,K_p,c_int]
 
 def add(x,y):
  print("add()")
@@ -29,14 +30,17 @@ def til(x):
  import numpy as np
  a=np.empty(x,np.int32)
  IK=k.IK;IK.argtypes=[np.ctypeslib.ndpointer(np.int32),K]
- IK(a,K1(b'!',Ki(x)))
+ b=(K*1)()     # args array
+ b[0]=Ki(x)
+ r=c_void_p()  # result
+ IK(a,K0(byref(r),b"!:",b,1))
  return a
 
 def main():
  print("kinit()"); k.kinit()
  print("KR()");    KR(b"add",K2f(add),2)
- print("KC()");    s=KC(b"`0:$add[2;3]",13)
- print("K1()");    K1(b'.',s)
+ r=c_void_p()
+ print("K0()");    K0(byref(r),b"`0:$add[2;3]",None,0)
  print("til(5)");  print(til(5))
  print("return");  return 0
 
