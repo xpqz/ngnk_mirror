@@ -7,7 +7,7 @@
 # $ LD_LIBRARY_PATH=. python3 x/embed/a.py
 
 from ctypes import *
-k=CDLL('../../libk.so')
+k=CDLL('libk.so')
 
 # declare the function signatures
 K=c_void_p
