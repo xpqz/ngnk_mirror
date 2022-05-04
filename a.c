@@ -23,7 +23,7 @@ S A2(i1,/*01*/Xt(y(xR))P(y==PLH||y==au,xR)P(xtm||xtM&&ytsS,i1(xy,N(fnd(_R(xx),y)
  I(!ytL&&!ytI,y=N(cI(y)))Nn=yn;P(xtA||xtM,Az=oA;I(ytL,i(n,zq(io(x,yl))))E(i(n,zq(io(x,yi))))y(z))
  Az=xtL&&ytL&&yr==1?y:an(xt,n);Lm=T(&iBI,iHI,iII,jLI,iDI,iCI,iSI,iBL,iHL,iIL,jLL,iDL,iCL,iSL)[xt-tB+7*ytL](xV,xn,yV,zV,n);
  I(m<n,z=z(aL(n));T(&jBI,jHI,jII,jBL,jHL,jIL)[xt-tB+3*ytL](xV,xn,yV,zV,n))y-z?y(z):z)
-S A3(i2,/*011*/Cb=ytT||y==PLH||y==au;x=Nz(i1(x,y));P(!b,x(i1(x,z)))K(".\\:",x,a1(z)))
+S A3(i2,/*011*/Cb=ytT||y==PLH||y==au;x=Nz(i1(x,y));P(!b,x(x1(z)))K(".\\:",x,a1(z)))
 S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,i2(x,y,a[1]))
  a++;n--;Cb=ytT||y==PLH||y==au;x=i1(x,y);P(!n,x)P(!x,mrn(n,a);x)P(!b,x(i8(x,a,n)))K(".\\:",x,aV(tA,n,a)))
 L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)
@@ -52,7 +52,6 @@ AX(_8,Q(n)P(n==1,x1(*a))P(n==2,x2(*a,a[1]))P(!xtt,i8(x,a,n))
  Ik=xK;P(n<k,prj(x,a,n))Xo(run(x,a,n))Xv(v8[xv](a,n))Xr(adv(x,a,n))
  Xp(P(xn+k>9,er8(a,n))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<n?a[j++]:_R(xA[i+1]))I l=max(0,n-j);Mc(b+m,a+j,8*l);_8(xx,b,m+l))
  Xq(_1(xx,N(_8(xy,a,n))))P(n>k,er8(a,n))Xw(en8(a,n))Xe(en8(a,n))et8(a,n))
-//A1(jS,K("`$\".\"/$:",x))//join symbols with "."
 A1(jS,cS(jc('.',str(x))))//join symbols with "."
 A1(val,XS(P(!xn,Ax=oS,y=oA;i(gn,I(gv[i],xq(as(gk[i]));yq(_R(gv[i]))))am(x,y))val(jS(x)))
  Xs(Li=fI(gk,gn,xv);i<0||!gv[i]?ev0():_R(gv[i]))XC(x=str0(x);x(evs(xV)))Xc(evs((V*)&x))XmM(x(_R(xy)))
