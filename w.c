@@ -84,8 +84,8 @@ SN A3(ste,/*110*/K("{z'x':y}",x,y,zR))
 AX(adv,Q(xtr)Ii=xE;x=xx;Ik=xK;
  SW(i,
   CR(0,P(n==1,Xt(eac1(*a,x))bin(x,*a))eac(x,a,n))
-  CR(1,P(n==1,Ay=*a;XzZ(dec(x,y))Xc(jc(xv,y))XC(jC(xV,xn,y))P(k<2,cf(x,y))fld1(y,x))P(k<2,nwf(x,a,n))P(n-k==1,nwf(x,a,n))fld(x,a,n))
-  CR(2,P(n==1,Ay=*a;XzZ(enc(x,y))Xc(sc(xv,y))XC(sC(xV,xn,y))P(k<2,cs(x,y))scn1(y,x))P(k<2,nws(x,a,n))P(n-k==1,nws(x,a,n))scn(x,a,n))
+  CR(1,P(n==1,Ay=*a;P(xtzZ||xtdD,dec(x,y))Xc(jc(xv,y))XC(jC(xV,xn,y))P(k<2,cf(x,y))fld1(y,x))P(k<2,nwf(x,a,n))P(n-k==1,nwf(x,a,n))fld(x,a,n))
+  CR(2,P(n==1,Ay=*a;P(xtzZ||xtdD,enc(x,y))Xc(sc(xv,y))XC(sC(xV,xn,y))P(k<2,cs(x,y))scn1(y,x))P(k<2,nws(x,a,n))P(n-k==1,nws(x,a,n))scn(x,a,n))
   CR(3,n==1?xtz?win(gl(x),*a):eap1(*a,x):n==2?k==1?ste(*a,a[1],x):eap2(*a,a[1],x):er8(a,n))
   CR(4,P(n==2,ear2(*a,a[1],x))er8(a,n))
   CR(5,P(n==2,eal2(*a,a[1],x))eal(x,a,n)))
