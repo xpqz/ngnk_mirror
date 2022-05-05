@@ -72,7 +72,7 @@ N-N subtract  1-2 3 -> -1 -2
  *x first     *`a`b -> `a   *(0 1;"cd") -> 0 1
 N*N multiply  1 2*3 4 -> 3 8
  %N sqrt      %25 -> 5.0   %-1 -> 0n
-N%N divide    4 3%2 -> 2 1   4 3%2.0 -> 2.0 1.5
+N%N divide    2 3%4 -> 0.5 0.75
  !i enum      !3 -> 0 1 2   !-3 -> -3 -2 -1
  !I odometer  !2 3 -> (0 0 0 1 1 1;0 1 2 0 1 2)
  !d keys      !`a`b!0 1 -> `a`b
