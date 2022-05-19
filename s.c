@@ -52,7 +52,9 @@ A1(kst,P(xtT&&xn==1,pre(',',ksr(fir(x))))XA(par(jc(';',ek(x))))Xc(kss(enl(x)))XC
  XZD(xn?jc(32,eac1f(x,str)):x(aCz(xtD?"0#0n":"!0")))XS(xn?raz(ek(x)):x(aCz("0#`")))XM(pre('+',kst(flp(x))))
  Xm(Ay=kv(&x);cat(apc(ksl(x),'!'),ksr(y)))Xzd(str(x))
  Xs(x=str(x);Iv=1;i(xn,v&=c09(xc)||cAz(xc))I(!v,x=kst(x);I(*xC==',',x=drp(1,x)))pre('`',x))Xo(x(_R(xx)))
- Xp(x=val(x);P(xn==3&&SC("vr",TS[_t(xx)])&&xx-av&&xy-PLH&&xz==PLH,Ay=_R(xy);cat(ksl(y),kst(fir(x))))
+ Xp(x=val(x);Ay=xx,z=xy;
+  P(xn==3&&((ytv&&y-av)||ytr)&&xy-PLH&&xz==PLH,
+   z=ksl(zR);y=kst(fir(x));cA9(zC[zn-1])&&(cA9(*yC)||*yC==':'||*yC=='-')?cts(cat(apc(y,'['),z),";]",2):cat(z,y))
   x=ek(x);Nm=_n(xx);x=apc(jc(';',x),']');Q(xr==1);xC[m]='[';x)
  Xq(raz(ek(val(x))))Xr(x=val(x);Ay=_R(xy);cat(ksw(fir(x)),str(y)))Xw(aCn(&"':/:\\:"[xv%3*2],1+xv/3))
  P(x==PLH,oC)Xu(apc(kst(au^av^x),':'))Xv(Ay=aCn(vc+xv,1);xv<20?y:apc(y,':'))aCz("???"))
