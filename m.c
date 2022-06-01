@@ -58,7 +58,8 @@ I rep()_(Cb[256],*s=b,*q;W(1,Ln=read(0,s,b-s+SZ b);P(n<0,0)s+=n;q=MC(s-n,10,n);
 V repl(){W(rep())}
 L k(Qs)_(Ax=N(evs(s));Xz(gl(x))x(0))
 V kf(Qs,L(*f)(L)){dmd(A(sym(s),au,av,AT(te,(A)f)),4);}
-V kinit(){z[ZZ(z)-1]=1;Ax=AN(0,aA(32)),*c=xA;i(tS-tA+1,*c++=ce[tA+i]=an(tA+i,0))*c++=ce[tm]=am(oS,oA);
+V kinit(){S I l;P(l)l=1;
+ z[ZZ(z)-1]=1;Ax=AN(0,aA(32)),*c=xA;i(tS-tA+1,*c++=ce[tA+i]=an(tA+i,0))*c++=ce[tm]=am(oS,oA);
  cn[tA]=ce[tC];*c++=cn[tB]=cn[tH]=cn[tI]=cn[tL]=cn[ti]=cn[tl]=al(NL);*c++=cn[tD]=cn[td]=ad(ND);
  cn[tC]=cn[tc]=ac(32);cn[tS]=cn[ts]=as(0);i(tn-to,cn[to+i]=au)
       ci[0][0]=ai(0);     ci[0][1]=ai(1);*c++=ci[0][2]=al(WL);*c++=ci[0][3]=al(-WL);ci[0][4]=cn[tL];
