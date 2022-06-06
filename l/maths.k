@@ -10,4 +10,4 @@ pri:{$[x<10;(x>)#o 10 /primes <x
 isp:{p:2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 /is x prime?
  $[x<62;~^p?x;+/~p!'x;0;&/(1=a)|/x=1+(s-1)q\a:(x!*)/((-1+#d)(q:x!*/2#,:)\2 7 61)@&d:(s:*&b)_b:|2\x-1]}
 mmu:(+/*)\: /matrix multiplication
-inv:{y!*|*|(**:)({(y-x*(-*x)!*y;x)}.)/(y,0;x,1)} /multiplicative inverse of x modulo y (extended Euclidean algorithm)
+inv:{y!*|{x-y*(-*y)!*x}/[1<**:;y,0;x,1]} /multiplicative inverse of x modulo y (extended Euclidean algorithm)
