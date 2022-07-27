@@ -42,7 +42,7 @@ S A1(qp,XC(x=str0(x);x(pk(xV)))et1(x))
 A2(_1,/*01*/P(!xtt,i1(x,y))
  Xs(S O C s[][4]={"","k","j","p","t","x","hex","err","argv","env","exit","js","prng","sin","cos","exp","ln","r","pri"};
   Li=fI(s,ZZ(s),xv);T(&ser,kst,js1,qp,qt,frk,hex,err,qar,qen,qex,qjs,prng,ksin,kcos,kexp,klog,qr,qpri,ed1)[i<0?ZZ(s):i](y))
- Ik=xK;P(1<k,prj(x,&y,1))Xo(run(x,&y,1))Xv(en1(y))Xr(adv(x,&y,1))Xe(((A1*)(x<<16>>16))(y))
+ Ik=xK;P(k==2&&!xtp,prj(x,A(y,PLH),2))P(1<k,prj(x,&y,1))Xo(run(x,&y,1))Xr(adv(x,&y,1))Xe(((A1*)(x<<16>>16))(y))
  Xp(P(xn+k>9,er1(y))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&!j?j++,y:_R(xA[i+1]))I l=max(0,1-j);Mc(b+m,&y,8*l);_8(xx,b,m+l))
  Xq(_1(xx,N(_1(xy,y))))P(1>k,er1(y))Xu(v1[xv](y))Xw(AK(0<xv&&xv<4&&yK==2?1:ytF?yK:1,AW(xv,aV(tr,1,&y))))et1(y))
 A3(_2,/*011*/P(!xtt,i2(x,y,z))A a[]={y,z};Ik=xK;P(2<k,prj(x,a,2))Xo(run(x,a,2))Xv(v2[xv](y,z))Xr(adv(x,a,2))
