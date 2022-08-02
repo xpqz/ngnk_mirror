@@ -65,7 +65,7 @@ V kinit(){S I l;P(l)l=1;
       ci[0][0]=ai(0);     ci[0][1]=ai(1);*c++=ci[0][2]=al(WL);*c++=ci[0][3]=al(-WL);ci[0][4]=cn[tL];
  *c++=ci[1][0]=ad(0);*c++=ci[1][1]=ad(1);*c++=ci[1][2]=ad(WD);*c++=ci[1][3]=ad(-WD);ci[1][4]=cn[tD];
  xn=c-xA;Q(xn<=32);cns=x;}
-V kargs(In,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=max(0,n-2);Ax=n?aA(n):oA;i(n,xa=aCz(a[2+i]))gn=1;*gk='x';*gv=x;}
+V kargs(In,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=max(0,n-2);Ax=n?aA(n):oA;i(n,xa=aCz(a[2+i]))gk[gn]='x';gv[gn++]=x;}
 
 A AT(UL t,Ax)_(Q(c3(0,t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)
 A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)
