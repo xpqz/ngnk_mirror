@@ -119,7 +119,7 @@ I getdents(If,char*s,Nn)_(-1)I ftruncate(If,off_t o)_(-1)I wait4()_(-1)
   *r=(TY(*r)){.st_ino=i,.st_mode=S_IFCHR,.st_nlink=1,.st_size=n,.st_blksize=512,.st_blocks=n+511>>9};0)
  V*mmap(V*a,Nn,I pr,I fl,If,off_t o)_(I(!a,a=js_alloc(n))P(f<0,a)P(f>=nd||!d[f].i,(V*)-1)Ii=d[f].i;Mc(a,s[i].a+o,n);a)
  I munmap(If,In)_(0)
- I gettimeofday(ST timeval*a,ST timezone*b)_(js_time(&a->tv_sec,&a->tv_usec);0)
+ I gettimeofday(ST timeval*a,V*b)_(js_time((V*)&a->tv_sec,(V*)&a->tv_usec);0)
  V exit(Iv){js_exit(v);}
  I dup2(If,Iv)_(-1)I execve(Qp,C*O*a,C*O*e)_(-1)I fork()_(-1)I socket(Ii,Ij,Ik)_(-1)
  I setsockopt(If,I l,I s,OV*v,socklen_t n)_(-1)I connect(If,O ST sockaddr*s,socklen_t n)_(-1)I chdir(Qp)_(-1)
