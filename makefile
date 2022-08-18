@@ -15,7 +15,7 @@ k-obsd:; $(MAKE) a N=$@ R=k  O='-fPIC -Dlibc=1 -DSYS_getcwd=304 -Dstrchrnul=strc
 k-wasi:; $(MAKE) a N=$@ R=k  O='-O3 -target wasm32-wasi -nostdlib -ffreestanding -Dwasm -U__SIZEOF_INT128__ -I/usr/include' STRIP=true CC=clang
 libk.so:;$(MAKE) a N=$@ R=$@ O='-O3 -march=native -nostdlib -ffreestanding -fPIC -Dshared' L='-shared'                      STRIP=true
 o/$N/%.o:%.c *.h;$M;$(CC) @opts $O -o $@ -c $<
-o/$N/bin:$(patsubst %.c,o/$N/%.o,$(wildcard *.c));$(CC) $O -o $@ $^ $L;$(STRIP) -R .comment $@ -R '.note*'
+o/$N/bin:$(patsubst %.c,o/$N/%.o,$(wildcard *.c));$(CC) $O -o $@ $^ @lopts $L;$(STRIP) -R .comment $@ -R '.note*'
 a:o/$N/bin;cp o/$N/bin $R
 
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
