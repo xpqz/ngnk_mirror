@@ -33,7 +33,7 @@ k.c impl of embedding api
 related projects:
 https://github.com/razetime/ngn-k-tutorial   - tutorial (work in progress)
 https://xpqz.github.io/kbook/                - book (work in progress)
-https://github.com/secwang/ngnkcart          - snippets db
+https://github.com/secwang/ngnkcart          - searchable database of snippets
 https://github.com/xpqz/ngnk_mirror          - continuous integration for osx
 https://github.com/traws0/ngnk-windows       - windows port
 https://github.com/nathyong/ngnk-nix         - nix package
