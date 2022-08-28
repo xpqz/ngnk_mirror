@@ -1,4 +1,4 @@
-'use strict' // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/blob/master/LICENSE
+'use strict' // ngn/k, (c) 2019-2021 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 const{min,max}=Math,{now}=Date,U8=x=>new Uint8Array(x),doc=document,
 T1=new TextEncoder,t1=x=>T1.encode(x),z1=pako.deflate,
 T0=new TextDecoder,t0=x=>T0.decode(x),z0=pako.inflate,
