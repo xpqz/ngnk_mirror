@@ -31,6 +31,7 @@ e.c error handling
 k.c impl of embedding api
 
 related projects:
+https://github.com/gitonthescene/ngnk-mode   - emacs mode
 https://github.com/razetime/ngn-k-tutorial   - tutorial (work in progress)
 https://xpqz.github.io/kbook/                - book (work in progress)
 https://github.com/secwang/ngnkcart          - searchable database of snippets
