@@ -12,12 +12,12 @@ $["kw"~`argv 0;;{repl.line@1:`}::/`];
 
 \   help               \\         exit
 \a  license(AGPLv3)    \l file.k  load
-\0  types              \t:n expr  time(elapsed milliseconds after n runs)
-\+  verbs              \v         variables
-\:  I/O verbs          \f         functions
-\'  adverbs            \cd path   change directory
-\`  symbols            \other     command(through /bin/sh)
-\h  summary
+\0  types              \d foo.bar set namespace; restore with  \d .
+\+  verbs              \t:n expr  time(elapsed milliseconds after n runs)
+\:  I/O verbs          \v         variables
+\'  adverbs            \f         functions
+\`  symbols            \cd path   change directory
+\h  summary            \other     command(through /bin/sh)
 --------------------------------------------------------------------------------
 \0
 Types:
