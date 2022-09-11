@@ -1,8 +1,7 @@
 #!k
 `1:"ngn/k, (c) 2019-2022 ngn, GNU AGPLv3. type \\ for more info\n"
 \d repl
-web:"kw"~`argv 0 /running in a web browser?
-`1:prompt:web_0x0720
+`1:prompt:," " /use 0x0720 for emacs integration
 cmds:(,"a")!{`1:1:joinpath[dirname`argv 0]"LICENSE";}
 dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
 joinpath:{$[x~,".";y;"/"~*|x;x,y;x,"/",y]}
@@ -12,7 +11,7 @@ line1:{$[#x;;:0];x:-1_x;$[(3>#x)&("\\"=*x)&~^(!cmds)?x 1;cmds[x 1]x 1;.[`1:fmt@.
 line:line1@line0@
 {cmds::@[cmds;x[1]1;:;{y;`0:x}2_x]}'{(&x~\:80#"-")_x:(1+*&x~\:,"/")_-1_x}@0:`argv 1;
 \d .
-$[repl.web;;{repl.line@1:`}::/`];
+$["kw"~`argv 0;;{repl.line@1:`}::/`];
 
 /
 --------------------------------------------------------------------------------
