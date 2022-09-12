@@ -5,7 +5,11 @@ SN A2(dec,/*01*/K("{z+x*y}/[0;;]",xR,y))
 SN ALA(win,P(n<0,ed1(x))K("{[n;x]x(!n)+/:!0|1-n-#x}",az(n),x))
 SN A2(bin,/*01*/Xm(_1(xx,bin(xy,y)))Q(xtZC)Yt(fir(bin(x,enl(y))))
  YZC(P(xn-(I)xn,ez1(y))Az=an(tZ(xn-1),yn);I wx=xw,wy=yw,wz=zw;
-  i(yn,Lv=iw(y,wy,i);Ij=-1,k=xn;W(j+1<k,Im=(j+k)/2;v<iw(x,wx,m)?k=m:(j=m))iW(z,wz,i,j))y(z))
+  i(yn,Lv;S4(wy,v=yb,v=yh,v=yi,v=yl)Ij=-1,k=xn;S4(wx,W(j+1<k,C*m=xC+j+(k-j>>1);v<*m?k=m-xC:(j=m-xC)),
+                                                     W(j+1<k,H*m=xH+j+(k-j>>1);v<*m?k=m-xH:(j=m-xH)),
+                                                     W(j+1<k,I*m=xI+j+(k-j>>1);v<*m?k=m-xI:(j=m-xI)),
+                                                     W(j+1<k,L*m=xL+j+(k-j>>1);v<*m?k=m-xL:(j=m-xL)))
+   S4(wz,zb=j,zh=j,zi=j,zl=j))y(z))
  YMT(K("{x''y}",xR,y))ed1(y))
 SN A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=MC(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(c-10||n,xq(aCn(p,n)))x)
 SN A sCC(C*s,Lm,C*p,Ln)_(P(!m,el0())Ax=oA;C*q;W((q=MM(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)xq(aCn(p,n)))
