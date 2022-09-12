@@ -23,5 +23,3 @@ A1(asc,Xt(opn(x))Xm(K("{(!x)@<. x}",x))XM(K("{(!#x){x@<y x}/|.+x}",x))XS(asc(str
 A1(dsc,XMT(x=rev(asc(rev(x)));sub(ai(xN-1),x))Xm(Ay=kv(&x);idx(x,Nx(dsc(y))))Xz(cls(gl(x)))et1(x))
 A1(grp,Xz(K("{@[&x;;:;1]'!x}",x))Xt(et1(x))Xm(Ay=kv(&x);y=Nx(grp(y));yy=idx(x,yy);y)
  K("{(x[(!0),*'g])!g@:<g:(&(!0),~x~':x i)_i:<x}",x))
-A2(bin,/*01*/Xt(er1(y))Xm(_1(xx,bin(xy,y)))YMT(K("{x''y}",xR,y))
- Li=-1,j=xn;W(i+1<j,Lm=(i+j)/2;Az=ii(x,m);qA(y,z)<0?j=m:(i=m);z(0))y(az(i)))
