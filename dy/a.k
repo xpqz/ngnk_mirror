@@ -197,7 +197,7 @@ M[p18X].'((("ALBERT EINSTEIN";"TEN ELITE BRAINS");1);((,"";,"");1);((,"d";,"d");
 M[p191 .].'(((3;1+!9);(1 2 3;4 5 6;7 8 9));((3;1+!11);(1 2 3;4 5 6;7 8 9;10 11));((10;"Dyalog");,"Dyalog")
  ((2;$`the`cat`in`the`hat`sat`pat);$(`the`cat;`in`the;`hat`sat;,`pat))
  (4 5;+5)); /dyalog expects ,,5 but this seems inconsistent, as every other example returns vector of vectors
-M[p192].'((0 64 65 69 70 79 80 89 90 100;"FFDDCCBBAA");(!0;());(2 3#71 82 81 82 84 59;$`CBB`BBF));
+M[p192].'((0 64 65 69 70 79 80 89 90 100;"FFDDCCBBAA");(!0;"");(2 3#71 82 81 82 84 59;$`CBB`BBF));
 /floating point CT is too annoying at depth
 tmp:+p193@{9 3 8 4 7}#"DABFC";M[::;tmp@0;"ABCDF"];M[::;tmp@1;3 8 7 9 4];A[::;tmp@2;9.7 25.8 22.6 29.0 12.9]
 M[p194].'((5 4;(7 5;7 3;3 5;3 3;6 6;4 6;6 2;4 2));(1 1;(3 2;2 3)));
