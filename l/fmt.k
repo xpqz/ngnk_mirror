@@ -10,14 +10,14 @@ prs0:{{(a;cs):x;$[(spec@y)~cs[0;0];(a,'(y;-1#*'cs);1_'cs);x]}/[i;(#**i:init@x)_!
 prs:{$[#**|r:prs0@lex@x;`err@"prs: ",`k@r;>/`dot`digit=spec@s@0 1+(s:**r)?`dot;`err@"prs";(mtch@**r)!*|*r]}
 
 DFLT:`fill`align`sign`width`type!(" <-0s")
-dflt:{x[`aligndef]:(!x)?`align
+dflt:{x[`aligndef]:^(!x)?`align
   x[f@w]:(.DFLT)@w:&^(!x)?f:!DFLT
   x[f]:*'x[f:`fill`align`sign`group`dot`type`prec]
   x[f]:.'x[f:`prec];
   x}
 
 D:`c$"0"+!10
-fills:{(f;a;l):x;@[(l|#y)#f;(!#y)+-2!1+0|(l-#y)*"<^>"?a;:;y]}
+fills:{(f;a;l):x;@[(l|#y)#f;(!#y)+-2!0|(l-#y)*"<^>"?a;:;y]}
 filln:{(f;l):x;(c#y),fills[(f;">";l-c)](c:^D?*y)_y}
 sign:{r:z;s:0N 2#"+- -";$[~x~"-";s[^x;y],r;(("";"-")y),r]}
 grp0:{r:z,(c:(-y)!#1_z)#x;r@<<@[&#r;(#r)-(y+1)*1+!c;:;1]}
@@ -27,10 +27,10 @@ A:`c$,/("0"+!10;"A"+!6)
 cnv:{_A@(2 8 10 16@2^"bodx"?x)\y}
 
 fmti:{r:sign[x`sign;y<0;cnv[x`type]{x|-x}y]
-  (f;a):$["0"~*x`width;"0=";x`fill`align]
+  r:$[^x`group;r;grp[x`group;4-^"box"?x`type;r]]
+  (f;a):$["0"~*x`width;"0=";(x`fill),">"]
   a:$[x`aligndef;a;x`align]
-  $["="~a;:filln[f,.x`width]r
-  fills[(f,a),.x`width]]$[^x`group;r;grp[x`group;4-^"box"?x`type;r]]}
+  $["="~a;:filln[f,.x`width]r;fills[(f,a),.x`width]r]}
 fmts:{fills[(x`fill`align),.x`width;y]}
 fmt:{f:$[`c~_t:@y;fmts;`i~t;fmti;:`err@"nyi"];f[dflt@prs@x;y]}
 
