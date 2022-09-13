@@ -3,8 +3,10 @@ SN A2(enc,/*01*/P(!xtzZ,en1(y))P(x==ai(2)&&ytz&&gl_(y)<0,x=rsh(64,xR);x(enc(x,y)
  Ii=ytt;x=K("{$[0>&/x;`err\"domain\"; `i~@x;|x!-1_![-x;]\\y; x!'|(,y),y{(-y)!x}\\|1_x]}",xR,y);!x||xN?x:x(i?oB:oA))
 SN A2(dec,/*01*/K("{z+x*y}/[0;;]",xR,y))
 SN ALA(win,P(n<0,ed1(x))K("{[n;x]x(!n)+/:!0|1-n-#x}",az(n),x))
-SN A2(bin,/*01*/Xm(_1(xx,bin(xy,y)))Q(xtZC)Yt(fir(bin(x,enl(y))))
- YZC(P(xn-(I)xn,ez1(y))Az=an(tZ(xn-1),yn);I wx=xw,wy=yw,wz=zw;
+SN A2(bin,/*01*/ Xm(_1(xx,bin(xy,y)))Q(xtZC)Yt(fir(bin(x,enl(y))))
+ YZC(P(xn-(I)xn,ez1(y))I wx=xw,wy=yw;
+  P(!wx,wy?K("{@[x'`c$127&y;&-128>y;:;-1]}",xR,y):K("{(-1+\\@[&256;128+x;+;1])128+y}",xR,y))
+  Az=an(tZ(xn-1),yn);I wz=zw;
   i(yn,Lv;S4(wy,v=yb,v=yh,v=yi,v=yl)Ij=-1,k=xn;S4(wx,W(j+1<k,C*m=xC+j+(k-j>>1);v<*m?k=m-xC:(j=m-xC)),
                                                      W(j+1<k,H*m=xH+j+(k-j>>1);v<*m?k=m-xH:(j=m-xH)),
                                                      W(j+1<k,I*m=xI+j+(k-j>>1);v<*m?k=m-xI:(j=m-xI)),
