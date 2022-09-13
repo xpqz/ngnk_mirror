@@ -3,7 +3,7 @@ cls:@[&256;c;:;1+!#c:("0"+!10;".";"<>=^";"+- ";"_,";"bcdeEfFgGnosxX%")]
 CLS:`other`digit`dot`align`sign`group`type@cls@
 spec:`chr`align`sign`digit`group`dot`digit`type
 mtch:`fill`align`sign`width`group`dot`prec`type
-lex:{s:(&~=':1=cls@x)_x;$[(`digit~CLS@**s)&1=#s;(,`digit;s);|,/'((#s)#'0N 2#((),/:;,:;CLS;{`digit}))@'\:s]}
+lex:{s:((p:1~cls@*x)#,,"<"),(&~=':1=cls@x)_x;p_'|,/'((#s)#'0N 2#((),/:;,:;CLS;{`digit}))@'\:s}
 
 init:{$[`align~x[0;1];((0 1;2#*|x);2_'x);((();"");x)]}
 prs0:{{(a;cs):x;$[(spec@y)~cs[0;0];(a,'(y;-1#*'cs);1_'cs);x]}/[i;(#**i:init@x)_!#spec]}
