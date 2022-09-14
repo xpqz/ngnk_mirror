@@ -1,6 +1,6 @@
 #!/usr/bin/env k
 / https://codegolf.stackexchange.com/questions/251864/re-name-all-identifiers-to-a-single-letter
-f:*|{$[y~*y;(?x;`s$`c$97+(x,:y)?y);(x;*|+(,x){x[*y;z]}[o]\y)]}[()]@
+f:{$[x~*x;`s$`c$97+(s::?s,x)?x;[t:s;r:o'x;s::t;r]]};s:!0
 
 \l 0.k
 t[,`rudolf                    ;,`a                    ]
