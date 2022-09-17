@@ -78,7 +78,7 @@ TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX
 A1 _R,a1,asc,ax,cA,cB,cC,cD,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,grp,hex,jS,js0,js1,kcos,kexp,klog,ksin,
  kst,las,len,m0,m1,mRa,mr,mut,neg,not,nul,opn,out,prng,qpri,rev,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,
  unh,unq,val,whr;
-A2 _1,a2,aM,add,am,ap1,apd,cat,cst,dct,dex,dot,dvd,eql,exc,fil,fld1,fnd,gtn,hsh,id_,idx,ltn,mnm,mod,mtc,mul,mxm,
+A2 _1,a2,aM,add,am,ap1,apd,cat,cst,dct,dex,dot,dvd,eql,exc,fil,fld1,fnd,gtn,hsh,id_,idx,ltn,mnm,bng,mtc,mul,mxm,
  que,sub,und,v0c,v1c;
 A0 aa0;A3 _2,a3,arf,arp,ars,cpl,ear2,try;A4 ara,dm4;AX _8,adv,eac,fld,prj,run;AA am8,dm8,dmd,ins;
 AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,rsh;AAL ii;AQ aCz,bsl,bsm,die,evs,pk,sym;
@@ -147,7 +147,7 @@ enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw
 #define ae(v,k) (Lt(te)|(UL)(k)<<48|(UL)(v)<<16>>16)
 #define VS \
   A1*v1[]={sam,flp,neg,fir,sqr,til,whr,rev,asc,dsc,grp,not,enl,nul,len,flr,str,unq,typ,val,u0c,u1c,sam,sam,las,out};\
-  A2*v2[]={dex,add,sub,mul,dvd,mod,mnm,mxm,ltn,gtn,eql,mtc,cat,exc,hsh,und,cst,que,ap1,dot,v0c,v1c,dex,dex,dex,dex};\
+  A2*v2[]={dex,add,sub,mul,dvd,bng,mnm,mxm,ltn,gtn,eql,mtc,cat,exc,hsh,und,cst,que,ap1,dot,v0c,v1c,dex,dex,dex,dex};\
   AA*v8[]={er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,ins,am8,dmd,er8,er8,er8,er8,er8,er8};\
   OC vc[]={':','+','-','*','%','!','&','|','<','>','=','~',',','^','#','_','$','?','@','.','0','1','2','3','4','5'};
 enum{au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,FLR,STR,UNQ,TYP,VAL,U0C,U1C,U2C,U3C,LAS,OUT,
