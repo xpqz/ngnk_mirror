@@ -85,7 +85,7 @@ AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,rsh;AAL ii;AQ aCz,bsl,b
 A a2t(A,A,C),ac(C),ai(I),as(I),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),
  eac1f(A,A1),eac2f(A,A,A2),e0(Q),e1(A,Q),evK(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),mf(I,N),pen(A,A1*),sur(C,A,C),
  wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
-V cyc(V*,N,N),ccp(OV*,N,V*,N),dir(I,void(*)(V*,Q),V*),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),
+V cyc(V*,N,N),dir(I,void(*)(V*,Q),V*),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),
  *memchr(OV*,I,N),*memcpy(V*,OV*,N),*memmem(OV*,N,OV*,N),*memmove(V*,OV*,N),*memset(V*,I,N),
  mrn(N,OA*),mRn(N,OA*),OFP0(A),OFP1(A),repl(),tilV(V*,L,I);
 D ofpd0(L),gd(A);N strlen(Q),_N(A);C*sd(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);Q qs(O L*);
