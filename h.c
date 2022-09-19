@@ -3,7 +3,10 @@ SN A flt(Ax,Ay,Cb)_(Q(xtF);P(xK-1,er2(x,y))Ym(K("{(!y)[i]!(. y)i:&z~/:x@. y}",x,
  Az=rsh(0,yR);i(yN,Ln=gl(ii(x,i));B(b&&n-(UI)n,z=ed1(z))j(b?n:!n,zq(ii(y,i))))x(y(z)))
 V cyc(V*a,Nm,Nn){Q(m);W(2*m<=n,Mc(a+m,a,m);m*=2)I(n>m,Mc(a+m,a,n-m))}
 V ccp(OV*a,Nm,V*b,Nn){Q(m);Mc(b,a,min(m,n));cyc(b,m,n);}
-ALA(rsh,Xt(rsh(n,enl(x)))XT(P(!xn,rsh(n,enl(fir(x))))P(n<0,n-NL?rev(rsh(-n,rev(x))):x)Ay=an(xt,n);ccp(xV,xn*xW,yV,n*xW);x(ytA?sqz(mRa(y)):y))
+ALA(rsh,Xt(rsh(n,enl(x)))
+ XT(P(!xn,rsh(n,enl(fir(x))))P(n==NL,x)Ay=an(xt,n>0?n:-n);
+  I(n<0,n=-n;I(n<=xn,Mc(yV,xV+(xn-n)*xW,n*xW))E(N r=n%xn;Mc(yV,xV+r*xW,(xn-r)*xW);Mc(yV+(xn-r)*xW,xV,r*xW);ccp(xV,xn*xW,yV,n*xW)))E(ccp(xV,xn*xW,yV,n*xW))
+  x(ytA?sqz(mRa(y)):y))
  XM(Ay=kv(&x);aM(x,Nx(ear2(az(n),y,RSH))))Q(xtm)Ay=kv(&x);x=Ny(rsh(n,x));y=Nx(rsh(n,y));am(x,y))
 S A slc(Ax/*0*/,Ni,Nj)_(Q(xtT&&i<=j&&i<=xn)Ay=an(xt,j-i);Mc(yV,xV+i*xW,(j-i)*xW);XA(sqz(mRa(y)))y)
 S ALA(chp,P(n<0,ed1(x))Lm=(xn+n-1)/n;Ay=aA(m);i(m,ya=slc(x,n*i,min(xn,n*i+n)))x(y))
