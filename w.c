@@ -3,15 +3,12 @@ SN A2(enc,/*01*/P(!xtzZ,en1(y))P(x==ai(2)&&ytz&&gl_(y)<0,x=rsh(64,xR);x(enc(x,y)
  Ii=ytt;x=K("{$[0>&/x;`err\"domain\"; `i~@x;|x!-1_![-x;]\\y; x!'|(,y),y{(-y)!x}\\|1_x]}",xR,y);!x||xN?x:x(i?oB:oA))
 SN A2(dec,/*01*/K("{z+x*y}/[0;;]",xR,y))
 SN ALA(win,P(n<0,ed1(x))K("{[n;x]x(!n)+/:!0|1-n-#x}",az(n),x))
-SN A2(bin,/*01*/ Xm(_1(xx,bin(xy,y)))Q(xtZC)Yt(fir(bin(x,enl(y))))
- YZC(P(xn-(I)xn,ez1(y))I wx=xw,wy=yw;
-  P(!wx,wy?K("{@[x'`c$127&y;&-128>y;:;-1]}",xR,y):K("{(-1+\\@[&256;128+x;+;1])128+y}",xR,y))
+SN A2(bin,/*01*/Xm(_1(xx,bin(xy,y)))Q(xtZC)Yt(fir(bin(x,enl(y))))
+ YZC(P(xn-(I)xn,ez1(y))I wx=xw,wy=yw;P(!wx,wy?K("{@[x'`c$127&y;&-128>y;:;-1]}",xR,y):K("{(-1+\\@[&256;128+x;+;1])128+y}",xR,y))
   Az=an(tZ(xn-1),yn);I wz=zw;
-  i(yn,Lv;S4(wy,v=yb,v=yh,v=yi,v=yl)Ij=-1,k=xn;S4(wx,W(j+1<k,C*m=xC+j+(k-j>>1);v<*m?k=m-xC:(j=m-xC)),
-                                                     W(j+1<k,H*m=xH+j+(k-j>>1);v<*m?k=m-xH:(j=m-xH)),
-                                                     W(j+1<k,I*m=xI+j+(k-j>>1);v<*m?k=m-xI:(j=m-xI)),
-                                                     W(j+1<k,L*m=xL+j+(k-j>>1);v<*m?k=m-xL:(j=m-xL)))
-   S4(wz,zb=j,zh=j,zi=j,zl=j))y(z))
+  i(yn,Lv;S4(wy,v=yb,v=yh,v=yi,v=yl)Ij=-1,k=xn;S4(wx,,W(j+1<k,Ii=j+(k-j>>1);v<xh?k=i:(j=i)),
+                                                      W(j+1<k,Ii=j+(k-j>>1);v<xi?k=i:(j=i)),
+                                                      W(j+1<k,Ii=j+(k-j>>1);v<xl?k=i:(j=i)))S4(wz,zb=j,zh=j,zi=j,zl=j))y(z))
  YMT(K("{x''y}",xR,y))ed1(y))
 SN A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=MC(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)
 SN A sCC(C*s,Lm,C*p,Ln)_(P(!m,el0())Ax=oA;C*q;W((q=MM(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)
