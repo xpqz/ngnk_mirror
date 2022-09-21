@@ -1,6 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-//{dex add sub mul dvd mod mnm mxm ltn gtn eql} x {o0123fspa} x {BHILD} =
-// = {:+-*%!&|<>=} x {op a+a a+l l+a l+l f/ f\ f': @} x {byte short int long double}
+//{dex add sub mul dvd mod mnm mxm ltn gtn eql}x{o0123fspa}x{BHILD} = {:+-*%!&|<>=}x{op a+a a+l l+a l+l f/ f\ f': @}x{byte short int long double}
 #define hv(v,T,R,f) S R v##o##T(T x,T y)_(f)
 #define hd(v,f,g) hv(v,B,B,f)hv(v,H,H,f)hv(v,I,I,f)hv(v,L,L,f)hv(v,D,D,g)
 #define hc(v,f,g) hv(v,B,B,f)hv(v,H,B,f)hv(v,I,B,f)hv(v,L,B,f)hv(v,D,B,g)
@@ -29,24 +28,14 @@ S A3(ar2,Q(ztv)XYmMA(e2f(x,y,v2[zv]))N(sup(&x,&y));Ik=xtT<<1|ytT;P(k==3&&xn-yn,e
  Ct=k?min(xt,yt):max(xt,yt);V*a=xtP?(V*)&x:xV,*b=ytP?(V*)&y:yV;t=TT[t];V(f,aro[k][t-tB][zv-4]);I(z>MXM,t=tB)
  I(!k,t=max(ti,t+tc-tC);P(TP(t),Ii=0;f(a,b,&i,1);x(y(az(i)))))
  Az=xt==t&&xr==1?x:yt==t&&yr==1?y:an(t,k-1?xn:yn);f(a,b,zV,zn);x-z?x(y-z?y(z):z):y(z))
-S ALA(ext,XMT(x)rsh(n,xtm?enl(x):x))
-A2(dct,P(rnk(x)<0,ed2(x,y))x=ext(yN,x);y=ext(xN,y);(xN-yN?el2:am)(x,y))
-A2(dex,mr(x);y)
-A2(add,adm(x,y,0))
-A2(sub,add(x,Nx(neg(y))))
-A2(mul,adm(x,y,1))
-A2(dvd,XYmMA(e2f(x,y,dvd))ar2(Ny(cD(x)),Nx(cD(y)),DVD))
+S ALA(ext,XMT(x)rsh(n,xtm?enl(x):x))A2(dct,P(rnk(x)<0,ed2(x,y))x=ext(yN,x);y=ext(xN,y);(xN-yN?el2:am)(x,y))
+A2(dex,mr(x);y)A2(add,adm(x,y,0))A2(sub,add(x,Nx(neg(y))))A2(mul,adm(x,y,1))A2(dvd,XYmMA(e2f(x,y,dvd))ar2(Ny(cD(x)),Nx(cD(y)),DVD))
 A2(mod,YmMA(e2f(x,y,mod))YdD(Ln=gl_(x);P(!n,y)P(n<0,ar2(x,Nx(csti(y)),MOD))K("{y-x*(-x)!`i$y}",x,y))Yzc(fir(N(mod(x,enl(y)))))YC(mod(x,cB(y)))
- YZ(Lm=gl(x);P(!m,y)
-  P(m<0,m=-m;Az=an(yt,yn);S4(yw,i(zn,Cv=yb;zb=v<0?-1-~v/m:v/m),i(zn,Hv=yh;zh=v<0?-1-~v/m:v/m),i(zn,Iv=yi;zi=v<0?-1-~v/m:v/m),i(zn,Lv=yl;zl=v<0?-1-~v/m:v/m))y(z))
+ YZ(Lm=gl(x);P(!m,y)P(m<0,m=-m;Az=an(yt,yn);S4(yw,i(zn,Cv=yb;zb=v<0?-1-~v/m:v/m),i(zn,Hv=yh;zh=v<0?-1-~v/m:v/m),i(zn,Iv=yi;zi=v<0?-1-~v/m:v/m),i(zn,Lv=yl;zl=v<0?-1-~v/m:v/m))y(z))
   P(m&m-1,Az=an(tZ(m),yn);I wy=yw;S4(zw,i(zn,zb=(iw(y,wy,i)%m+m)%m),i(zn,zh=(iw(y,wy,i)%m+m)%m),i(zn,zi=(iw(y,wy,i)%m+m)%m),i(zn,zl=(iw(y,wy,i)%m+m)%m))y(z))
   m--;I t=tZ(m),w=t-tB;y=mut(N(cT[t](y)));i(3-w,m|=m<<(8<<w+i))L*p=yV;i((yn<<w)+31>>5,j(4,*p++&=m))y)
  ed2(x,y))
-A2(bng,Xzc(mod(x,y))dct(x,y))
-A2(mnm,ar2(x,y,MNM))
-A2(mxm,ar2(x,y,MXM))
-A2(ltn,P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA|1<<tS),e2f(x,y,ltn))P(xts&&yts,ai(qA(x,y)<0))ar2(x,y,LTN))
-A2(gtn,ltn(y,x))
+A2(bng,Xzc(mod(x,y))dct(x,y))A2(mnm,ar2(x,y,MNM))A2(mxm,ar2(x,y,MXM))A2(ltn,P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA|1<<tS),e2f(x,y,ltn))P(xts&&yts,ai(qA(x,y)<0))ar2(x,y,LTN))A2(gtn,ltn(y,x))
 A2(eql,XYmMA(e2f(x,y,eql))P(xtsS-ytsS,et2(x,y))P(xtsS,eql(AT(xt+ti-ts,mut(x)),AT(yt+ti-ts,mut(y))))ar2(x,y,EQL))
 
 #define i4(w,n,a,b,c,d) S4(w,i(n,a),i(n,b),i(n,c),i(n,d))
@@ -56,23 +45,17 @@ SN A1(inv,x=mut(x);Nn=xn*xW;i(PD(n,xC),xc^=-1)x)
 
 S A3(___f,Nn=yn,i=!x;I(i,x=ii(y,0))W(i<n,x=z2(x,ii(y,i++));B(!x))y(x))S A3 dexs;
 S A3(dexf,las(dexs(x,y,z)))
-S L mmmfZ(Lv,Ax/*0*/,Ii)_(Q(xtZDC)L l=-1ll<<8*xW-1,h=~l;Nn=xn;P((i?v>=h:v<=l)||!n,v)v=v<l?l:v>h?h:v;
- I(i,i4(xw,n,MAX(v,xb),MAX(v,xh),MAX(v,xi),MAX(v,xl)))E(i4(xw,n,MIN(v,xb),MIN(v,xh),MIN(v,xi),MIN(v,xl)))v)
-S A3(mmmf,Ii=zv==7;P((x&&xtd)||ytD,Lv=ofpd1(x?gd(cD(x)):i?-WD:WD);y=cD(y);ad(ye(OFP1(y);L r=mmmfZ(v,y,i);OFP0(y);ofpd0(r))))
- Lv=x?gl(x):i?-WL:WL;az(ye(mmmfZ(v,y,i))))
-S A3(admf,Ii=zv==3;Nn=yn;P((x&&xtd)||ytD,Dv=x?gd(cD(x)):i;y=cD(y);ad(ye(I(i,i(n,v*=yd))E(i(n,v+=yd))v)))
- Lv=x?gl(x):i;az(ye(I(i,i4(yw,n,v*=yb,v*=yh,v*=yi,v*=yl))E(i4(yw,n,v+=yb,v+=yh,v+=yi,v+=yl))v)))
+S L mmmfZ(Lv,Ax/*0*/,Ii)_(Q(xtZDC)L l=-1ll<<8*xW-1,h=~l;Nn=xn;P((i?v>=h:v<=l)||!n,v)v=v<l?l:v>h?h:v;I(i,i4(xw,n,MAX(v,xb),MAX(v,xh),MAX(v,xi),MAX(v,xl)))E(i4(xw,n,MIN(v,xb),MIN(v,xh),MIN(v,xi),MIN(v,xl)))v)
+S A3(mmmf,Ii=zv==7;P((x&&xtd)||ytD,Lv=ofpd1(x?gd(cD(x)):i?-WD:WD);y=cD(y);ad(ye(OFP1(y);L r=mmmfZ(v,y,i);OFP0(y);ofpd0(r))))Lv=x?gl(x):i?-WL:WL;az(ye(mmmfZ(v,y,i))))
+S A3(admf,Ii=zv==3;Nn=yn;P((x&&xtd)||ytD,Dv=x?gd(cD(x)):i;y=cD(y);ad(ye(I(i,i(n,v*=yd))E(i(n,v+=yd))v)))Lv=x?gl(x):i;az(ye(I(i,i4(yw,n,v*=yb,v*=yh,v*=yi,v*=yl))E(i4(yw,n,v+=yb,v+=yh,v+=yi,v+=yl))v)))
 S A3(subf,neg(admf(x?neg(x):yn?mul(ai(-2),ii(y,0)):0,y,ADD)))
 A3(arf,Q(ztv)Q(zv<11)Q(!x||xtzdc)Q(ytZDC)T(&dexf,admf,subf,admf,___f,___f,mmmf,mmmf,___f,___f,___f)[zv](x,y,z))
 
 S A3(___s,Ni=!x;Au=i?x=ii(y,0),enl(xR):oA;Nn=yn;W(i<n,x=z2(x,ii(y,i++));P(!x,y(u))uq(xR))x(y(u)))
 S A3(dexs,x?x(y):y)
-S A3(adds,L w=x?gl(x):0;Nn=yn;
- W(1,I b=1;Lv=w;Ct=tB+yw;Au=an(t,n);
-  i4(yw,n,ub=v+=yb;B(v-(B)v,b=0),uh=v+=yh;B(v-(H)v,b=0),ui=v+=yi;B(v-(I)v,b=0),ul=v+=yl)P(b,y(u))y=cT[t+1](u(y)))0)
+S A3(adds,L w=x?gl(x):0;Nn=yn;W(1,I b=1;Lv=w;Ct=tB+yw;Au=an(t,n);i4(yw,n,ub=v+=yb;B(v-(B)v,b=0),uh=v+=yh;B(v-(H)v,b=0),ui=v+=yi;B(v-(I)v,b=0),ul=v+=yl)P(b,y(u))y=cT[t+1](u(y)))0)
 S A3(muls,L w=x?gl(x):1;Nn=yn;
- W(1,I b=1;Lv=w;Ct=yt;Au=an(t,n);I(t==tL,i(n,ul=v*=yl))J(t==tI,i(n,ui=v*=yi;B(v-(I)v,b=0)))
-  J(t==tH,i(n,uh=v*=yh;B(v-(H)v,b=0)))J(t==tB,i(n,ub=v*=yb;B(v-(B)v,b=0)))E(Q(0))P(b,y(u))y=cT[t+1](u(y)))0)
+ W(1,I b=1;Lv=w;Ct=yt;Au=an(t,n);I(t==tL,i(n,ul=v*=yl))J(t==tI,i(n,ui=v*=yi;B(v-(I)v,b=0)))J(t==tH,i(n,uh=v*=yh;B(v-(H)v,b=0)))J(t==tB,i(n,ub=v*=yb;B(v-(B)v,b=0)))E(Q(0))P(b,y(u))y=cT[t+1](u(y)))0)
 S A3(subs,neg(adds(neg(x?x:mul(ai(2),ii(y,0))),y,0)))
 S A3(mxms,P((!x||xtz)&&ytZ,Lv=x?gl(x):-WL,l=-1ll<<8*yW-1,h=~l;Nn=yn;I(v<=l||h<=v,P(v>=0,y(rsh(n,az(v))))v=v<0?l:h)
  Au=yr-1?an(yt,n):y;i4(yw,n,ub=MAX(v,yb),uh=MAX(v,yh),ui=MAX(v,yi),ul=MAX(v,yl))y-u?y(u):u)___s(x,y,z))
@@ -104,5 +87,4 @@ S A4(mmma,/*1101*/Ny(sup(&x,&u));x=mut(x);I(!ytL,y=cI(y))V*v=utP?&u:uV;I d=utT;N
        E(      I(ytL,i4(xw,n,MAX(xB[yl],uB[d*i]),MAX(xH[yl],uH[d*i]),MAX(xI[yl],uI[d*i]),MAX(xL[yl],uL[d*i])))
                E(    i4(xw,n,MAX(xB[yi],uB[d*i]),MAX(xH[yi],uH[d*i]),MAX(xI[yi],uI[d*i]),MAX(xL[yi],uL[d*i]))))x)))
 S A4(suba,adma(x,y,ADD,neg(u)))
-A4(ara,/*1101*/Q(xtZC)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ||utcC)
- P(utT&&yn-un,el2(x(y),u))P(!ina(y,xn),ei2(x(y),u))T(&dexa,adma,suba,adma,0,0,mmma,mmma)[zv](x,y,z,u))
+A4(ara,/*1101*/Q(xtZC)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ||utcC)P(utT&&yn-un,el2(x(y),u))P(!ina(y,xn),ei2(x(y),u))T(&dexa,adma,suba,adma,0,0,mmma,mmma)[zv](x,y,z,u))
