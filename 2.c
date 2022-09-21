@@ -14,13 +14,12 @@ h(dex,y)h(add,x+y)h(sub,x-y)h(mul,x*y)hv(dvd,D,D,x/y)h(mnm,min(x,y))h(mxm,max(x,
 #define hS(v,T,R) hV(v##2##T,T,R,v##1##T(b,a,r,n))
 #define h0123(a...) h0(a)h1(a)h2(a)h3(a)
 #define h01S3(a...) h0(a)h1(a)hS(a)h3(a)
-                                                        h0123(dvd,D,D)
 h01S3(mnm,B,B)h01S3(mnm,H,H)h01S3(mnm,I,I)h01S3(mnm,L,L)h01S3(mnm,D,D)
 h01S3(mxm,B,B)h01S3(mxm,H,H)h01S3(mxm,I,I)h01S3(mxm,L,L)h01S3(mxm,D,D)
 h0123(ltn,B,B)h0123(ltn,H,B)h0123(ltn,I,B)h0123(ltn,L,B)h0123(ltn,D,B)
 h01S3(eql,B,B)h01S3(eql,H,B)h01S3(eql,I,B)h01S3(eql,L,B)h01S3(eql,D,B)
 #define hiT(i,T) 0,mnm##i##T,mxm##i##T,ltn##i##T,0,eql##i##T
-#define hi(i) {{0,hiT(i,B)},{0,hiT(i,H)},{0,hiT(i,I)},{0,hiT(i,L)},{dvd##i##D,hiT(i,D)}},
+#define hi(i) {{0,hiT(i,B)},{0,hiT(i,H)},{0,hiT(i,I)},{0,hiT(i,L)},{0,hiT(i,D)}},
 TY(&eql0B)aro[][5][7]={hi(0)hi(1)hi(2)hi(3)};//a+a a+l l+a l+l
 S C tZx(Ax)_(Ct=TX[xt];P(t,t)Xl(tZ(gl_(x)))tZ(xv))
 C sup(A*p,A*q)_(Ax=*p,y=*q;Ct=max(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
@@ -29,7 +28,9 @@ S A3(ar2,Q(ztv)XYmMA(e2f(x,y,v2[zv]))N(sup(&x,&y));Ik=xtT<<1|ytT;P(k==3&&xn-yn,e
  I(!k,t=max(ti,t+tc-tC);P(TP(t),Ii=0;f(a,b,&i,1);x(y(az(i)))))
  Az=xt==t&&xr==1?x:yt==t&&yr==1?y:an(t,k-1?xn:yn);f(a,b,zV,zn);x-z?x(y-z?y(z):z):y(z))
 S ALA(ext,XMT(x)rsh(n,xtm?enl(x):x))A2(dct,P(rnk(x)<0,ed2(x,y))x=ext(yN,x);y=ext(xN,y);(xN-yN?el2:am)(x,y))
-A2(dex,mr(x);y)A2(add,adm(x,y,0))A2(sub,add(x,Nx(neg(y))))A2(mul,adm(x,y,1))A2(dvd,XYmMA(e2f(x,y,dvd))ar2(Ny(cD(x)),Nx(cD(y)),DVD))
+A2(dex,mr(x);y)A2(add,adm(x,y,0))A2(sub,add(x,Nx(neg(y))))A2(mul,adm(x,y,1))
+A2(dvd,XYmMA(e2f(x,y,dvd))x=Ny(cD(x));y=Nx(cD(y));Xd(Dv=gd(x);Yd(ad(v/gd(y)))Az=yr==1?y:aD(yn);i(yn,zd=v/yd)y-z?y(z):z)Yd(Dv=gd(y);Az=xr==1?x:aD(xn);i(xn,zd=xd/v)y-z?y(z):z)
+ P(xn-yn,el2(x,y))Az=xr==1?x:yr==1?y:aD(xn);i(xn,zd=xd/yd)x==z?y(z):y==z?x(z):x(y(z)))
 A2(mod,YmMA(e2f(x,y,mod))YdD(Ln=gl_(x);P(!n,y)P(n<0,ar2(x,Nx(csti(y)),MOD))K("{y-x*(-x)!`i$y}",x,y))Yzc(fir(N(mod(x,enl(y)))))YC(mod(x,cB(y)))
  YZ(Lm=gl(x);P(!m,y)P(m<0,m=-m;Az=an(yt,yn);S4(yw,i(zn,Cv=yb;zb=v<0?-1-~v/m:v/m),i(zn,Hv=yh;zh=v<0?-1-~v/m:v/m),i(zn,Iv=yi;zi=v<0?-1-~v/m:v/m),i(zn,Lv=yl;zl=v<0?-1-~v/m:v/m))y(z))
   P(m&m-1,Az=an(tZ(m),yn);I wy=yw;S4(zw,i(zn,zb=(iw(y,wy,i)%m+m)%m),i(zn,zh=(iw(y,wy,i)%m+m)%m),i(zn,zi=(iw(y,wy,i)%m+m)%m),i(zn,zl=(iw(y,wy,i)%m+m)%m))y(z))
