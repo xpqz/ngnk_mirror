@@ -1,12 +1,12 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 
 //serialize
-S A f8(Lv,Ay)_(cts(y,(V*)&v,8))
+S A ff(Lv,Ay)_(cts(y,(V*)&v,8))
 S A2(f,y=Nx(apc(y,xt));
- P(xtA||xtS,y=Nx(f8(xn,y));i(xn,y=Nx(f(ii(x,i),y)))x(y))
+ P(xtA||xtS,y=Nx(ff(xn,y));i(xn,y=Nx(f(ii(x,i),y)))x(y))
  XmMA(f(AT(tA,mut(x)),y))
  Xs(Lv=xv;Qs=qs(&v);In=Sn(s)+1;y=Nx(apc(y,n));cts(y,s,n))
- XP(f8(x,y))
+ XP(ff(x,y))
  Xr(f(AT(tA,mut(x)),Nx(apc(y,xE<<3|xk))))
  XF(f(AT(tA,mut(x)),Nx(apc(y,xv<<3|xk))))
  In=8*xtT;x(cts(y,xV-n,n+xn*xW)))

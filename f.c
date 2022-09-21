@@ -29,6 +29,6 @@ A2(fnd,
    Az=aL(yn);Ii=yw;xe(ye(T(&FB,FH,FI,FL)[i](xV,xn,f,yV,yn,zV);z)))
   Az=cn[tl];zR;x(y(ytt?z:rsh(yN,z))))
  Xm(Az=kv(&x);idx(x,Nx(fnd(z,y))))
- Ik=urnk(x),l=urnk(y);P(k==l+1,x(y(az(fA(x,y)))))P(k<=l,ear2(x,y,QUE))er2(x,y))
+ Ik=urnk(x),l=urnk(y);P(k==l+1,x(y(az(fA(x,y)))))P(k<=l,r2(x,y,QUE))er2(x,y))
 
 A2(que,Xs(S O C s[][4]={"","j","hex"};Li=fI(s,ZZ(s),xv);T(&des,js0,unh,ed1)[i<0?ZZ(s):i](y))Xz(rnd(gl(x),y))Xt(et2(x,y))fnd(x,y))

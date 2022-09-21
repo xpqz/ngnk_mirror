@@ -15,7 +15,7 @@ S C tZx(Ax)_(Xz(tZ(gl_(x)))Xd(tD)XZD(xt)tn)
 A adm(Ax,Ay,Iv)_(
  P(xti&&yti,Lm=xv,n=yv;az(v?m*n:m+n))
  P(xtz&&ytz,Lm=gl(x),n=gl(y);az(v?m*n:m+n))
- XYmMA(eac2f(x,y,v?mul:add))
+ XYmMA(e2f(x,y,v?mul:add))
  XcC(adm(cB(x),y,v))
  YcC(adm(x,cB(y),v))
  P(xtdD-ytdD,adm(Ny(cD(x)),Nx(cD(y)),v))

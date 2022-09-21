@@ -1,6 +1,6 @@
 #include"a.h"// ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A1(sam,x)VS;OC Tz[]={Tzv},TZ[]={TZv},TT[]={TTv},TX[]={TXv},Tk[]={Tkv};
-S A1(mkn,XmMA(eac1f(x,mkn))Ay=_R(cn[xt]);Xt(x(y))rsh(xN,x(y)))I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xte?x>>48&7:xtF?xk:0)//_K:arity
+S A1(mkn,XmMA(e1f(x,mkn))Ay=_R(cn[xt]);Xt(x(y))rsh(xN,x(y)))I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xte?x>>48&7:xtF?xk:0)//_K:arity
 A2(id_,/*00*/x==CAT?_R(ce[ce[yt]?yt:tA]):xtv&&xv<11&&xv?_R(ci[ytdD][T((C)4,0,0,1,1,2,2,3,3,2,4)[xv]]):mkn(fir(yR)))
 AX(prj,XmMA(x8(a,n))Ik=max(n,xK);i(n,k-=a[i]!=PLH)x=(xtp?val:a1)(xR);Ii=0,j=1;W(i<n&&j<xn,I(xA[j]==PLH,xA[j]=a[i++])j++)W(i<n,xq(a[i++]))P(xn>9,ez1(x))AT(tp,AK(k,x)))
 S A iM(Ax,Li,AAL*f)_(Q(xtM);Ay=xy,z=aA(yn);Q(ytA);j(zn,zA[j]=f(yA[j],i))am(_R(xx),sqz(z)))
@@ -14,7 +14,7 @@ S AAL(io,/*0*/P(xtt||in(i,xN),ii(x,i))P(xN,mkn(ii(x,0)))Xm(io(xy,i))XM(iM(x,i,io
 #define j_(T,U)iF(j##T##U,T,U,L,i(n,r[i]=in(q[i],m)?p[q[i]]:NL))
 #define i_(T,U)iF(i##T##U,T,U,T,UI g=G(T,U);U k[g];i(n/g,j(g,k[j]=q[j])U o=0;j(g,o|=!in(k[j],m))P(o,i*g)j(g,r[j]=p[k[j]])q+=g;r+=g)L l=n/g*g;j(n-l,P(!in(q[j],m),l))j(n-l,r[j]=p[q[j]]))
 iC_(I)iC_(L)i_(B,I)j_(B,I)i_(B,L)j_(B,L)i_(H,I)j_(H,I)i_(H,L)j_(H,L)i_(I,I)j_(I,I)i_(I,L)j_(I,L)j_(L,I)j_(L,L)iD_(I)iD_(L)iS_(I)iS_(L)
-S A2(i1,/*01*/Xt(y(xR))P(y==PLH||y==au,xR)P(xtm||xtM&&ytsS,i1(xy,N(fnd(_R(xx),y))))Yzc(io(x,gl(y)))Yt(et1(y))YmM(Az=kv(&y);am(y,Ny(i1(x,z))))YA(ear2(xR,y,AP1))
+S A2(i1,/*01*/Xt(y(xR))P(y==PLH||y==au,xR)P(xtm||xtM&&ytsS,i1(xy,N(fnd(_R(xx),y))))Yzc(io(x,gl(y)))Yt(et1(y))YmM(Az=kv(&y);am(y,Ny(i1(x,z))))YA(r2(xR,y,AP1))
  I(!ytL&&!ytI,y=N(cI(y)))Nn=yn;P(xtA||xtM,Az=oA;I(ytL,i(n,zq(io(x,yl))))E(i(n,zq(io(x,yi))))y(z))
  Az=xtL&&ytL&&yr==1?y:an(xt,n);Lm=T(&iBI,iHI,iII,jLI,iDI,iCI,iSI,iBL,iHL,iIL,jLL,iDL,iCL,iSL)[xt-tB+7*ytL](xV,xn,yV,zV,n);
  I(m<n,z=z(aL(n));T(&jBI,jHI,jII,jBL,jHL,jIL)[xt-tB+3*ytL](xV,xn,yV,zV,n))y-z?y(z):z)
@@ -22,7 +22,7 @@ S A3(i2,/*011*/Cb=ytT||y==PLH||y==au;x=Nz(i1(x,y));P(!b,x(x1(z)))K(".\\:",x,a1(z
 S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,i2(x,y,a[1]))a++;n--;Cb=ytT||y==PLH||y==au;x=i1(x,y);P(!n,x)P(!x,mrn(n,a);x)P(!b,x(i8(x,a,n)))K(".\\:",x,aV(tA,n,a)))
 L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)I ina(Ax/*0*/,Nn)_(S4(xw,P(n-(B)n,1)i(xn,P(!in(xb,n),0)),P(n-(H)n,1)i(xn,P(!in(xh,n),0)),P(n-(I)n,1)i(xn,P(!in(xi,n),0)),i(xn,P(!in(xl,n),0)))1)
 S A1(qa,Ay=oA;Q*p=argv;W(*p,yq(aCz(*p++)))ap1(y,x))S A1(qe,Ay=oS,z=oA;Q*e=env;W(*e,Qp=*e++,q=p+si(p,'=');yq(cS(aCm(p,q)));zq(aCz(q+!!*q)))y=am(y,z);x-au?ap1(y,x):y)
-S A1(qx,exit(xtz?gl(x):1);0)S A1(qj,XC(Cb[ZP];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))XA(eac1f(x,qj))et1(x))S A1(qp,XC(x=str0(x);x(pk(xV)))et1(x))S A1(qr,x(ai(xr)))S A1(qt,x(al(now())))
+S A1(qx,exit(xtz?gl(x):1);0)S A1(qj,XC(Cb[ZP];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))XA(e1f(x,qj))et1(x))S A1(qp,XC(x=str0(x);x(pk(xV)))et1(x))S A1(qr,x(ai(xr)))S A1(qt,x(al(now())))
 A2(_1,/*01*/P(!xtt,i1(x,y))S O C s[][4]={"","k","j","p","t","x","hex","err","argv","env","exit","js","prng","sin","cos","exp","ln","r","pri"};
  Xs(Li=fI(s,ZZ(s),xv);T(&ser,kst,js1,qp,qt,frk,hex,err,qa,qe,qx,qj,prng,ksin,kcos,kexp,klog,qr,qpri,ed1)[i<0?ZZ(s):i](y))
  Ik=xK;P(1<k,k==2&&!xtp?prj(x,A(y,PLH),2):prj(x,&y,1))Xo(run(x,&y,1))Xr(adv(x,&y,1))Xe(((A1*)(x<<16>>16))(y))
@@ -43,8 +43,8 @@ S A set(Ax,Li,Ay/*1i1*/)_(Q(xr==1);XA(Az=xa;xa=z(y);ytt&&!ytF?sqz(x):x)XM(Az=kv(
  P(knd(x)-knd(y)-tC+tc,set(cA(x),i,y))I(xtZ,N(sup(&x,&y)))C w=xw;!w?xb=yv:w==1?xh=yv:w==2?xi=yv:(xl=gl(y));x)
 AA(am8,Ax=*a,y=a[1];
  XT(P(y==au,Ab8;Mc(b,a,n*8);b[1]=tilL(xN);am8(b,n))Yzc(Li=gl_(y);P(!in(i,xn),ei8(a,n))x=mut(y(x));Ab8;Az=a[2];*b=ii(x,i);Mc(b+1,a+3,8*n-24);set(x,i,Nx(z(z8(b,n-2)))))
-  I(ytZC&&n==4,Az=a[2],u=a[3];P(xtZ&&ztv&&utzZ&&(0xcf&1<<zv),ara(x,y,z,u))P(xtC&&z==av&&utcC,cC(N(ara(x,y,z,u)))))Yt(et8(a,n))fld(AP1,a,n))
- XM(Ab8;i(n,Ax=a[i];b[i]=xtM?flp(x):x;Q(b[i]))flp(N(eac(AP1,b,n))))
+  I(ytZC&&n==4,Az=a[2],u=a[3];P(xtZ&&ztv&&utzZ&&(0xcf&1<<zv),ara(x,y,z,u))P(xtC&&z==av&&utcC,cC(N(ara(x,y,z,u)))))Yt(et8(a,n))f8(AP1,a,n))
+ XM(Ab8;i(n,Ax=a[i];b[i]=xtM?flp(x):x;Q(b[i]))flp(N(e8(AP1,b,n))))
  Xm(Az=kv(&x),u=fnd(xR,yR);P(!u,mrn(n-1,a+1);x(z(0)))I(utlL,Q(ur==1);i(uN,I(ul==NL,ul=xN;xq(utt?yR:ii(y,i));zq(id_(a[2],z)))))Ab8;*b=y(z);b[1]=u;Mc(b+2,a+2,8*n-16);am(x,Nx(am8(b,n))))
  XF(Q(n>1)x(_8(x,a+1,n-1)))
  et8(a,n))
