@@ -16,7 +16,7 @@ K Kp(V*p)_(al((L)p))
 
 V KA(Qs,K x){x=dmd(A(as(sym(s)),oA,av,x),4);if(x)mr(x);}
 V KR(Qs,V*f,In)_(KA(s,ae(f,n)))
-K KE(Qs)_(e0(s))
+K KE(Qs)_(err0(s))
 
 K ref(K x)_(xR)
 V unref(K x){mr(x);}

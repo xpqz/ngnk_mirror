@@ -79,7 +79,7 @@ A1 _R,a1,asc,ax,cA,cB,cC,cD,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk
 A2 _1,a2,aM,add,am,ap1,apd,cat,cst,dct,dex,dot,dvd,eql,exc,fil,fld1,fnd,gtn,hsh,id_,idx,ltn,mnm,bng,mtc,mul,mxm,que,sub,und,v0c,v1c;
 A0 aa0;A3 _2,a3,arf,arp,ars,cpl,ear2,try;A4 ara,dm4;AX _8,adv,eac,fld,prj,run;AA am8,dm8,dmd,ins;
 AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,rsh;AAL ii;AQ aCz,bsl,bsm,die,evs,pk,sym;
-A a2t(A,A,C),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),eac1f(A,A1),eac2f(A,A,A2),e0(Q),e1(A,Q),
+A a2t(A,A,C),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),eac1f(A,A1),eac2f(A,A,A2),err0(Q),
  evK(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),mf(I,N),pen(A,A1*),sur(C,A,C),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
 V cyc(V*,N,N),dir(I,void(*)(V*,Q),V*),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),*memmem(OV*,N,OV*,N),
  *memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),OFP0(A),OFP1(A),repl(),tilV(V*,L,I);
