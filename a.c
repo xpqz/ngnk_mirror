@@ -48,7 +48,7 @@ AA(a8,Ax=*a,y=a[1];
  Xm(Az=kv(&x),u=fnd(xR,yR);P(!u,mrn(n-1,a+1);x(z(0)))I(utlL,Q(ur==1);i(uN,I(ul==NL,ul=xN;xq(utt?yR:ii(y,i));zq(id_(a[2],z)))))Ab8;*b=y(z);b[1]=u;Mc(b+2,a+2,8*n-16);am(x,Nx(a8(b,n))))
  XF(Q(n>1)x(_8(x,a+1,n-1)))
  et8(a,n))
-S A3(a3,a8(A(x,y,z),3))S A4(a4,a8(A(x,y,z,u),4))S A a5(Ax,Ay,Az,Au,A v)_(a8(A(x,y,z,u,v),5))
+S A3(a3,a8(A(x,y,z),3))A4(a4,a8(A(x,y,z,u),4))S A a5(Ax,Ay,Az,Au,A v)_(a8(A(x,y,z,u,v),5))
 S A3(d3,Nm=yN;P(y==au||!m,z(z1(y(x)  )))P(m==1,a3(x,fir(y),z  ))yR;a4(x,fir(y),prj(DOT,A(PLH,drp(1,y)),2),z))
 A4(d4,Nm=yN;P(y==au||!m,z(z2(y(x),u)))P(m==1,a4(x,fir(y),z,u))yR;a5(x,fir(y),prj(DOT,A(PLH,drp(1,y)),2),z,u))
 AA(d8,n==4?d4(*a,a[1],a[2],a[3]):n==3?d3(*a,a[1],a[2]):en8(a,n))
