@@ -74,15 +74,14 @@ TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX
 #define ALA(f,b...) A f(Ln,Ax      )_(b)
 #define AAL(f,b...) A f(Ax,Li      )_(b)
 #define  AQ(f,b...) A f(Qs         )_(b)
-A1 _R,aA1,asc,ax,cA,cB,cC,cD,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,grp,hex,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mRa,mr,mut,neg,not,
- nul,opn,out,prng,qpri,rev,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
+A1 _R,aA1,asc,ax,cA,cB,cC,cD,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,grp,hex,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mRa,mr,mut,neg,not,nul,opn,out,prng,qpri,rev,ser,spl,sqr,
+ sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
 A2 _1,aA2,aM,add,am,ap1,apd,cat,cst,dct,dex,dot,dvd,eql,exc,fil,f1,fnd,gtn,hsh,id_,idx,ltn,mnm,bng,mtc,mul,mxm,que,sub,und,v0c,v1c;
-A0 aa0;A3 _2,aA3,arf,arp,ars,cpl,r2,try;A4 ara,a4,d4;AX _8,adv,e8,f8,prj,run;AA a8,dmd,ins;
-AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,rsh;AAL ii;AQ aCz,bsl,bsm,die,evs,pk,sym;
+A0 aa0;A3 _2,aA3,arf,arp,ars,cpl,r2,try;A4 ara,a4,d4;AX _8,adv,e8,f8,prj,run;AA a8,dmd,ins;AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,rsh;AAL ii;AQ aCz,bsl,bsm,die,evs,pk,sym;
 A a2t(A,A,C),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),e1f(A,A1),e2f(A,A,A2),err0(Q),evK(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),mf(I,N),pen(A,A1*),sur(C,A,C),
  wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
-V cyc(V*,N,N),dir(I,void(*)(V*,Q),V*),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),*memmem(OV*,N,OV*,N),
- *memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),OFP0(A),OFP1(A),repl(),tilV(V*,L,I);
+V cyc(V*,N,N),dir(I,void(*)(V*,Q),V*),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),*memmem(OV*,N,OV*,N),*memmove(V*,OV*,N),*memset(V*,I,N),mrn(N,OA*),
+ mRn(N,OA*),OFP0(A),OFP1(A),repl(),tilV(V*,L,I);
 D ofpd0(L),gd(A);N strlen(Q),_N(A);C*sd(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);Q qs(O L*);
 I _K(A),qA(A,A),qD(D,D),ina(A,N),js_eval(C*,I,C*,I),memcmp(OV*,OV*,N),mtc_(A,A),si(Q,I),strcmp(Q,Q),rnk(A),osf(Q,L);
 L cfm(OA*,I),gl_(A),gl(A),iw(A,I,L),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),fAI(A,I),fpI(A*,I),ofpd1(D);
@@ -100,19 +99,12 @@ enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<te)>>(t)&1)
 #define TF(t) ((t)>=to)
 
-//header bytes: Ut.orrrrnnnnnnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
-//tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
-// tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
-// tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
-// ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx te
-// ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
-#define _e(x,a...) ({A t_=m0(x);TY(({a;}))r_=({a;});DBG(x=0);m1(t_);r_;}) //two-phase free()
-#define _E(x) _C(x)[-14]       //adverb(for tr)
-#define _k(x) _C(x)[-13]       //arity(for funcs)
-#define _m(x) ((I*)_V(x))[-7]  //shadow refcount
-#define _n(x) _L(x)[-1]        //length
-#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13]) //srcoffset
-#define _q(x,y) (x=apd(x,y))   //append
+#define _E(x) _C(x)[-14]       //adverb(for tr)                             //header bytes: Ut.orrrrnnnnnnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
+#define _k(x) _C(x)[-13]       //arity(for funcs)                           //tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
+#define _m(x) ((I*)_V(x))[-7]  //shadow refcount                            // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
+#define _n(x) _L(x)[-1]        //length                                     // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
+#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13]) //srcoffset   // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx te
+#define _q(x,y) (x=apd(x,y))   //append                                     // ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
 #define _r(x) ((I*)_V(x))[-3]  //refcount
 #define _t(x) ({A x_=(x);Ct=_t0(x_);t?t:_t1(x_);}) //type
 #define _t0(x) ((x)>>56)       //type(tag)
@@ -131,6 +123,7 @@ enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw
 #define _W(x) TZ[_t(x)]        //item size in bytes
 #define _X(x) _A(x)[-3]        //next
 #define _Z(x) ((ZA<<_U(x))-ZA) //capacity
+#define _e(x,a...) ({A t_=m0(x);TY(({a;}))r_=({a;});DBG(x=0);m1(t_);r_;}) //two-phase free()
 #define XYmMA(a...) P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA),a)
 
 #define Lt(t) (L)t<<56
@@ -138,14 +131,13 @@ enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw
 #define ai(v) (Lt(ti)|(UI)(v))
 #define as(v) (Lt(ts)|(UI)(v))
 #define ae(v,k) (Lt(te)|(UL)(k)<<48|(UL)(v)<<16>>16)
-#define VS \
-  A1*v1[]={sam,flp,neg,fir,sqr,til,whr,rev,asc,dsc,grp,not,enl,nul,len,flr,str,unq,typ,val,u0c,u1c,sam,sam,las,out};\
-  A2*v2[]={dex,add,sub,mul,dvd,bng,mnm,mxm,ltn,gtn,eql,mtc,cat,exc,hsh,und,cst,que,ap1,dot,v0c,v1c,dex,dex,dex,dex};\
-  AA*v8[]={er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,ins,a8,dmd,er8,er8,er8,er8,er8,er8};\
-  OC vc[]={':','+','-','*','%','!','&','|','<','>','=','~',',','^','#','_','$','?','@','.','0','1','2','3','4','5'};
-enum{au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,FLR,STR,UNQ,TYP,VAL,U0C,U1C,U2C,U3C,LAS,OUT,
-     av=Lt(tv),ADD,SUB,MUL,DVD,MOD,MNM,MXM,LTN,GTN,EQL,MTC,CAT,EXC,RSH,UND,CST,QUE,AP1,DOT,V0C,V1C,V2C,V3C,MKL,PLH,
-     aw=Lt(tw)};
+#define VS A1*v1[]={sam,flp,neg,fir,sqr,til,whr,rev,asc,dsc,grp,not,enl,nul,len,flr,str,unq,typ,val,u0c,u1c,sam,sam,las,out};\
+           A2*v2[]={dex,add,sub,mul,dvd,bng,mnm,mxm,ltn,gtn,eql,mtc,cat,exc,hsh,und,cst,que,ap1,dot,v0c,v1c,dex,dex,dex,dex};\
+           AA*v8[]={er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,er8,ins,a8,dmd,er8,er8,er8,er8,er8,er8};\
+           OC vc[]={':','+','-','*','%','!','&','|','<','>','=','~',',','^','#','_','$','?','@','.','0','1','2','3','4','5'};
+enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,FLR,STR,UNQ,TYP,VAL,U0C,U1C,U2C,U3C,LAS,OUT,
+              av=Lt(tv),ADD,SUB,MUL,DVD,MOD,MNM,MXM,LTN,GTN,EQL,MTC,CAT,EXC,RSH,UND,CST,QUE,AP1,DOT,V0C,V1C,V2C,V3C,MKL,PLH,
+              aw=Lt(tw)};
 #define ND (*(D*)(L[]){0x7ff8000000000000ll})
 #define WD __builtin_inf()
 #define NL (1ll<<63)
