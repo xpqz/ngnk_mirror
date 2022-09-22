@@ -32,7 +32,7 @@
 #define ST struct
 #define RE restrict
 #define SWP(x,y) {TY(x)t_=x;x=y;y=t_;}
-#define LN(x) {Q(!((L)x&HD-1));x=__builtin_assume_aligned(x,HD);} //alignment
+#define LI(x) {Q(!((L)x&HD-1));x=__builtin_assume_aligned(x,HD);} //alignment
 #define PD(n,p) ((n)+HD/SZ(*p)-1&-HD/SZ(*p)) //pad
 #define M1(x) #x
 #define M2(x) M1(x)
