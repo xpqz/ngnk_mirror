@@ -9,7 +9,7 @@ S I nm;S ST{V*p;Ln;}m[8];SN A0(oom,die("oom"))
 S V*mm(V*p,Nn,If)_(p=mmap(p,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|(p?MAP_FIXED:0)|(f<0?MAP_ANON:0),f,0);
  P((L)p<PG,eo0();(V*)0)P(f>0,p)I(nm==ZZ(m),die("mmap lmt"))*(C*)p=nm;m[nm++]=(TY(*m)){p,n};p)
 S A mu(V*p,Nn)_(munmap(p,n);i(ZZ(m),B(m[i].p==p,Mc(m+i,m+i+1,(--nm-i)*SZ m[0])));0)
-S A mx(Nn)_(V*p=mm(0,n,-1);P(!p,oom())*(C*)p=0;(A)(p+ZA))
+S A mx(Nn)_(V*p=mm(0,n,-1);P(!p,oom())*(C*)p=0;(A)(p+HD))
 A mf(If,Nn)_(V*p=mm(0,PG+n,-1);P(!p,0)Ax=(A)(p+PG);*(C*)p=1;x=AT(tC,AN(n,x));xR;P(!mm(p+PG,n,f),x(0))x)
 
 S Az[SZ(N)==4?27:35];S I lck;
@@ -17,9 +17,9 @@ S A mb(Cb,Ax)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)
 V mrn(Nn,OA*a){i(n,mr(a[i]))}V mRn(Nn,OA*a){i(n,_R(a[i]))}A1(mRa,i(xn,_R(xa))x)
 A1(m0,DBG(lck++);Q(x);XP(0)Q(xr>0);P(--xr,0)Cb=xU;P(!b,x=AT(tn,x))xX=z[b];z[b]=(A)xV;XR(mrn(xn,xA);x)x)
 A1(m1,DBG(lck--);P(!x,0)P(xt==tn,mu(xV-PG,xn+PG))DBG(Ms(xV,0xab,xZ);DBG(AN(-1,AT(0,x))));0)A1(mr,m1(m0(x)))
-A an(Ct,Nn)_(Q(!lck);Q(c3(tA,t,tn-1));Q(!TP(t));Cb=59-__builtin_clzll(ZA|ZA-1+n*TZ[t]);P(n>1ull<<ZZ(z)||b>ZZ(z)-2,oom())
- Ax=z[b];Ii=b;W(!z[i],i++)I(i<ZZ(z)-1,x=z[i];z[i]=xX)E(x=mb(b,mx(ZA<<(i=max(b,24)))))
- I(b<i,xU=b;W(b<i--,z[i]=mb(i,(A)x+(ZA<<i))))xr=1;AT(t,AN(n,x)))
+A an(Ct,Nn)_(Q(!lck);Q(c3(tA,t,tn-1));Q(!TP(t));Cb=59-__builtin_clzll(HD|HD-1+n*TZ[t]);P(n>1ull<<ZZ(z)||b>ZZ(z)-2,oom())
+ Ax=z[b];Ii=b;W(!z[i],i++)I(i<ZZ(z)-1,x=z[i];z[i]=xX)E(x=mb(b,mx(HD<<(i=max(b,24)))))
+ I(b<i,xU=b;W(b<i--,z[i]=mb(i,(A)x+(HD<<i))))xr=1;AT(t,AN(n,x)))
 A aV(Ct,Nn,OV*v)_(Ax=an(t,n);Mc(xV,v,n*TZ[t]);x)A1(ax,xr>1?xr--,an(xt,xn):x)A0(aa0,am(enl(as(0)),enl(au)))
 A a2t(Ax,Ay,Ct)_(Az=an(t,2);zx=x;zy=y;z)
 A1(aA1,Ay=an(tA,1);yx=x;y)A3(aA3,Au=an(tA,3);ux=x;uy=y;uz=z;u)A2(aA2,a2t(x,y,tA))A2(aM,a2t(x,y,tM))A2(am,a2t(x,y,tm))
@@ -81,7 +81,7 @@ I os(Qs)_(ow(s,Sn(s)))
 L ov_(Qs,Lv)_(os(s);o8(v);ow("\n",1);v)
 
 #define mms(a...) i(nm,V*p=m[i].p,*q=p+m[i].n;If=!!*(C*)p;a)
-#define obs(a...) mms(Ax=(A)p+ZA+PG*f,y=(A)q;W(x<y,a;x+=xZ+ZA))
+#define obs(a...) mms(Ax=(A)p+HD+PG*f,y=(A)q;W(x<y,a;x+=xZ+HD))
 #define xys(a...) obs(I(xtR&&xr,i(xn,Ay=xa;a)))
 #define rts(a...) {i(gn,Ax=gv[i];I(x,a))Ax=cns;a;}
 SN V od(Lv){Cb[32];ow(b,sl(b,v)-b);}

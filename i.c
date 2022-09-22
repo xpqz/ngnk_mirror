@@ -32,8 +32,8 @@ A2(v1c,P(!ytC,et2(x,y))
     ftruncate(f,n);V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_SHARED,f,0);Mc(p,s,n);munmap(p,n);y(au))
  If=N(o(x,O_RDWR|O_CREAT|O_TRUNC));Az=v1c(ai(f),y);f>2&&close(f);z)
 
-S A rda(If)_(Ax=aC(256-ZA);L m=0,k;
- W((k=read(f,xV+m,xn-m))>0,m+=k;I(m+1000000>xn&&2*m>xn,Ay=aC(2*xn+ZA);Mc(yV,xV,m);x=x(y)))close(f);AN(m,x))
+S A rda(If)_(Ax=aC(256-HD);L m=0,k;
+ W((k=read(f,xV+m,xn-m))>0,m+=k;I(m+1000000>xn&&2*m>xn,Ay=aC(2*xn+HD);Mc(yV,xV,m);x=x(y)))close(f);AN(m,x))
 S I lC(Ax)_(P(!xtA,0)i(xn,P(_t(xa)-tC,0))1) //list of strings?
 A1(frk,P(!xtA||xn-2,et1(x))Ay=kv(&x);P(!lC(x)||!ytC,ed2(x,y))x=Ny(e1f(x,str0));Q a[xn+1];i(xn,a[i]=_V(xa))a[xn]=0;
  I p[4];pipe(p);pipe(p+2);I pid=fork();P(!pid,dup2(*p,0);dup2(p[3],1);i(4,close(p[i]))exit(execve(*a,(C**)a,(C*O*)env));0)

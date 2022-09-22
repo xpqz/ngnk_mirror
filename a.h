@@ -24,7 +24,7 @@
 #define SZ sizeof
 #define ZZ(x) (SZ(x)/SZ((x)[0]))
 #define PG 4096ll //page
-#define ZA 32ll   //hdr
+#define HD 32ll   //hdr
 #define NI __attribute__((noinline))
 #define SN S NI
 #define TD typedef
@@ -32,8 +32,8 @@
 #define ST struct
 #define RE restrict
 #define SWP(x,y) {TY(x)t_=x;x=y;y=t_;}
-#define LN(x) {Q(!((L)x&ZA-1));x=__builtin_assume_aligned(x,ZA);} //alignment
-#define PD(n,p) ((n)+ZA/SZ(*p)-1&-ZA/SZ(*p)) //pad
+#define LN(x) {Q(!((L)x&HD-1));x=__builtin_assume_aligned(x,HD);} //alignment
+#define PD(n,p) ((n)+HD/SZ(*p)-1&-HD/SZ(*p)) //pad
 #define M1(x) #x
 #define M2(x) M1(x)
 #define EX extern
@@ -122,7 +122,7 @@ enum        {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw
 #define _w(x) Tz[_t(x)]        //log2(item size in bytes)
 #define _W(x) TZ[_t(x)]        //item size in bytes
 #define _X(x) _A(x)[-3]        //next
-#define _Z(x) ((ZA<<_U(x))-ZA) //capacity
+#define _Z(x) ((HD<<_U(x))-HD) //capacity
 #define _e(x,a...) ({A t_=m0(x);TY(({a;}))r_=({a;});DBG(x=0);m1(t_);r_;}) //two-phase free()
 #define XYmMA(a...) P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA),a)
 

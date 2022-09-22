@@ -1,7 +1,7 @@
 #include<math.h> // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include"a.h"
 #define hf(f,T,e...) S N f(OV*RE a0,V*RE r0,Nn)_(O T*a=a0;T*r=r0;LN(a)LN(r)e)
-#define NG(T) hf(neg##T,T,Ni=0;I g=ZA/SZ(T);W(i<n,I o=0;j(g,o|=a[j]==(T)(1<<SZ(T)*8-1))P(o,i)j(g,r[j]=-a[j])a+=g;r+=g;i+=g)n)
+#define NG(T) hf(neg##T,T,Ni=0;I g=HD/SZ(T);W(i<n,I o=0;j(g,o|=a[j]==(T)(1<<SZ(T)*8-1))P(o,i)j(g,r[j]=-a[j])a+=g;r+=g;i+=g)n)
 #define F1(f,T,c...) hf(f##T,T,i(PD(n,a),r[i]=({c;}))n)
 TD size_t(*F1)(OV*,V*,N);NG(B)NG(H)NG(I)F1(neg,L,-a[i])F1(neg,D,-a[i])
 
