@@ -7,8 +7,8 @@
 #endif
 S I nm;S ST{V*p;Ln;}m[8];SN A0(oom,die("oom"))
 S V*mm(V*p,Nn,If)_(p=mmap(p,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|(p?MAP_FIXED:0)|(f<0?MAP_ANON:0),f,0);
- P((L)p<PG,eo0();(V*)0)P(f>0,p)I(nm==ZZ(m),die("mmap lmt"))*(C*)p=nm;m[nm++]=(TY(*m)){p,n};p)
-S A mu(V*p,Nn)_(munmap(p,n);i(ZZ(m),B(m[i].p==p,Mc(m+i,m+i+1,(--nm-i)*SZ m[0])));0)
+ P((L)p<PG,eo0();(V*)0)P(f>0,p)I(nm==LEN(m),die("mmap lmt"))*(C*)p=nm;m[nm++]=(TY(*m)){p,n};p)
+S A mu(V*p,Nn)_(munmap(p,n);i(LEN(m),B(m[i].p==p,Mc(m+i,m+i+1,(--nm-i)*SZ m[0])));0)
 S A mx(Nn)_(V*p=mm(0,n,-1);P(!p,oom())*(C*)p=0;(A)(p+HD))
 A mf(If,Nn)_(V*p=mm(0,PG+n,-1);P(!p,0)Ax=(A)(p+PG);*(C*)p=1;x=AT(tC,AN(n,x));xR;P(!mm(p+PG,n,f),x(0))x)
 
@@ -17,8 +17,8 @@ S A mb(Cb,Ax)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)
 V mrn(Nn,OA*a){i(n,mr(a[i]))}V mRn(Nn,OA*a){i(n,_R(a[i]))}A1(mRa,i(xn,_R(xa))x)
 A1(m0,DBG(lck++);Q(x);XP(0)Q(xr>0);P(--xr,0)Cb=xU;P(!b,x=AT(tn,x))xX=z[b];z[b]=(A)xV;XR(mrn(xn,xA);x)x)
 A1(m1,DBG(lck--);P(!x,0)P(xt==tn,mu(xV-PG,xn+PG))DBG(Ms(xV,0xab,xZ);DBG(AN(-1,AT(0,x))));0)A1(mr,m1(m0(x)))
-A an(Ct,Nn)_(Q(!lck);Q(c3(tA,t,tn-1));Q(!TP(t));Cb=59-__builtin_clzll(HD|HD-1+n*TZ[t]);P(n>1ull<<ZZ(z)||b>ZZ(z)-2,oom())
- Ax=z[b];Ii=b;W(!z[i],i++)I(i<ZZ(z)-1,x=z[i];z[i]=xX)E(x=mb(b,mx(HD<<(i=max(b,24)))))
+A an(Ct,Nn)_(Q(!lck);Q(c3(tA,t,tn-1));Q(!TP(t));Cb=59-__builtin_clzll(HD|HD-1+n*TZ[t]);P(n>1ull<<LEN(z)||b>LEN(z)-2,oom())
+ Ax=z[b];Ii=b;W(!z[i],i++)I(i<LEN(z)-1,x=z[i];z[i]=xX)E(x=mb(b,mx(HD<<(i=max(b,24)))))
  I(b<i,xU=b;W(b<i--,z[i]=mb(i,(A)x+(HD<<i))))xr=1;AT(t,AN(n,x)))
 A aV(Ct,Nn,OV*v)_(Ax=an(t,n);Mc(xV,v,n*TZ[t]);x)A1(ax,xr>1?xr--,an(xt,xn):x)A0(aa0,am(enl(as(0)),enl(au)))
 A a2t(Ax,Ay,Ct)_(Az=an(t,2);zx=x;zy=y;z)
@@ -59,7 +59,7 @@ V repl(){W(rep())}
 L k(Qs)_(Ax=N(evs(s));Xz(gl(x))x(0))
 V kf(Qs,L(*f)(L)){dmd(A(sym(s),au,av,AT(te,(A)f)),4);}
 V kinit(){S I l;P(l)l=1;
- z[ZZ(z)-1]=1;Ax=AN(0,aA(32)),*c=xA;i(tS-tA+1,*c++=ce[tA+i]=an(tA+i,0))*c++=ce[tm]=am(oS,oA);
+ z[LEN(z)-1]=1;Ax=AN(0,aA(32)),*c=xA;i(tS-tA+1,*c++=ce[tA+i]=an(tA+i,0))*c++=ce[tm]=am(oS,oA);
  cn[tA]=ce[tC];*c++=cn[tB]=cn[tH]=cn[tI]=cn[tL]=cn[ti]=cn[tl]=al(NL);*c++=cn[tD]=cn[td]=ad(ND);
  cn[tC]=cn[tc]=ac(32);cn[tS]=cn[ts]=as(0);i(tn-to,cn[to+i]=au)
       ci[0][0]=ai(0);     ci[0][1]=ai(1);*c++=ci[0][2]=al(WL);*c++=ci[0][3]=al(-WL);ci[0][4]=cn[tL];

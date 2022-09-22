@@ -105,7 +105,7 @@ I getdents(If,char*s,Nn)_(-1)I ftruncate(If,off_t o)_(-1)I wait4()_(-1)
  I js_in(V*,N);V js_out(OV*,N),js_log(OV*),*js_alloc(N),js_time(I*,long*),js_exit(I);
  S ST{C*a,p[16];Nn;}s[8]={{.a=""},{.a=""},//s:storage,
   #include"o/w/fs.h"
- };S ST{C i;N o;}d[8]={{.i=1},{.i=1},{.i=1}};S O I ns=ZZ(s),nd=ZZ(d);//d:fd table
+ };S ST{C i;N o;}d[8]={{.i=1},{.i=1},{.i=1}};S O I ns=LEN(s),nd=LEN(d);//d:fd table
  #define FI P((UI)f>=nd||!d[f].i,EBADF)Ii=d[f].i;//validate fd "f" and get inode "i"
  I open(Qp,Iv,...)_(Im=Sn(p);P(m>=SZ s[0].p,ENAMETOOLONG)Ii=0;W(i<ns&&SQ(s[i].p,p),i++)
   I(i>=ns,P(O_CREAT&~v,ENOENT)i=0;W(i<ns&&s[i].a,i++)P(i>=ns,ENOSPC)s[i].a="";s[i].n=0;Mc(s[i].p,p,m))

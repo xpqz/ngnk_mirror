@@ -22,7 +22,7 @@
 #define O const
 #define S static
 #define SZ sizeof
-#define ZZ(x) (SZ(x)/SZ((x)[0]))
+#define LEN(x) (SZ(x)/SZ((x)[0]))
 #define PG 4096ll //page
 #define HD 32ll   //hdr
 #define NI __attribute__((noinline))
@@ -142,7 +142,7 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define WD __builtin_inf()
 #define NL (1ll<<63)
 #define WL (~NL)
-#define K(s,a...) ({S A f;evK(&f,s,A(a),ZZ(A(a)));})
+#define K(s,a...) ({S A f;evK(&f,s,A(a),LEN(A(a)));})
 
 #define EA h(c,compile)h(d,domain)h(i,index)h(l,length)h(n,nyi)h(o,io)h(p,parse)h(r,rank)h(s,stack)h(t,type)h(v,value)h(z,limit)
 #define h(t,m) A0 e##t##0;A1 e##t##1;A2 e##t##2;AA e##t##8;

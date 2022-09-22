@@ -16,7 +16,7 @@
 #define S static
 #define O const
 #define SZ sizeof
-#define ZZ(x) (SZ(x)/SZ*(x))
+#define LEN(x) (SZ(x)/SZ*(x))
 #define Q(x) ({I r_=(x);r_<0?die(#x):r_;})
 #define Mc memcpy
 #define wr write
@@ -30,7 +30,7 @@ typedef void V;typedef char C;typedef int I;typedef unsigned UI;typedef unsigned
 S C*sk(C*s,C c)_(W(*s==c,s++)s)S C*su(C*s,UL x)_(I(x>9,s=su(s,x/10))*s++='0'+x%10;s)
 S I die(O C*s)_(I e=errno;wrZ(1,"ERR: ");wr(1,s,Sn(s));wrZ(1," -> ");s=strerror(e);wr(1,s,Sn(s));wrZ(1,"\n");exit(e);0)
 S O C*m[][2]={{"html","text/html"},{"js","application/javascript"},{"css","text/css"},{"ogg","application/ogg"},{"wasm","application/wasm"}};
-S O C*mime(O C*x)_(i(ZZ(m),P(!strcmp(x,*m[i]),m[i][1]))(V*)0)
+S O C*mime(O C*x)_(i(LEN(m),P(!strcmp(x,*m[i]),m[i][1]))(V*)0)
 S V r404(I f){wrZ(f,"HTTP/1.1 404 Not Found\nContent-Length:4\nConnection:close\nContent-Type:text/html\n\n404\n");}
 S V ap(C**p,O C*s){I n=Sn(s);Mc(*p,s,n);*p+=n;}
 S O C*web(I f)_(C b[4096];I r=read(f,b,SZ b-1);P(r<=0,"read failed")b[r]=0;*SC0(b,10)=0;*SC0(b,13)=0;
