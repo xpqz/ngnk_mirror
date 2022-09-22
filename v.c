@@ -14,7 +14,7 @@ A1(whr,Xz(whr(enl(x)))XA(K("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Xm(
 A1(rev,Xm(Ay=kv(&x);am(rev(x),rev(y)))XM(Ay=kv(&x);aM(x,Nx(e1f(y,rev))))Xt(x)x=mut(x);Ii=0,j=xn-1,w=xw;W(i<j,I(!w,SWP(xb,xB[j]))J(w==1,SWP(xh,xH[j]))J(w==2,SWP(xi,xI[j]))E(SWP(xl,xL[j]))i++;j--)x)
 A1(typ,x(as(TS[xt])))A1(len,x(az(xN)))N _N(Ax/*0*/)_(XT(xn)Xm(_N(xy))XM(_n(xy)?_N(*_A(xy)):1)1)
 S A1(cSI,Q(xtS||xtI)Ct=tS^tI^xt;xr-1?x(aV(t,xn,xV)):AT(t,x))
-A1(unq,XT(P(xn<2,x)P(xn<<xw<ZP&&!xtA,K("{x@&(x?x)=!#x}",x))P(xtB||xtC,C a[256]={};Ay=an(xt,0);i(xn,I(!a[(UI)xc],a[(UI)xc]=1;y=apc(y,xc)))x(y))XS(cSI(unq(cSI(x))))K("{x@i@<i@:&@[;0;:;1]@~~':x@i:<x}",x))
+A1(unq,XT(P(xn<2,x)P(xn<<xw<PG&&!xtA,K("{x@&(x?x)=!#x}",x))P(xtB||xtC,C a[256]={};Ay=an(xt,0);i(xn,I(!a[(UI)xc],a[(UI)xc]=1;y=apc(y,xc)))x(y))XS(cSI(unq(cSI(x))))K("{x@i@<i@:&@[;0;:;1]@~~':x@i:<x}",x))
  XM(en1(x))Xm(unq(val(x)))Xz(Ln=gl(x);P(n<0,ed0())rndD(n))et1(x))
 A2(fil,YmMA(e2f(x,y,exc))YF(y==au?x:x(y))Yt(fir(fil(x,enl(y))))K("{@[y;&^y;:;x]}",x,y))
 A2(exc,Xt(fil(x,y))P(xtmM||ytmM,en2(x,y))Yt(exc(x,enl(y)))P(!xn||!yn,y(x))Ik=rnk(x);k>0&&k==rnk(y)?K("{x@&^y?x}",x,y):K("{x@&~(!0),x~\\:y}/",x,y))

@@ -75,7 +75,7 @@ I main(In,Q*a)_(kinit();kargs(n,a);I r=0;I(n<2,repl())J(!bsl(a[1]),r=1;epr(0))Q(
   TD ST{long d_ino;off_t d_off;UH d_reclen;C d_name[];}DE;
  #endif
  ssize_t getdents(I,C*,N);asm(h3(getdents));
- V dir(If,void(*d)(V*,Q),V*x){Cb[ZP];Ik;W((k=getdents(f,b,SZ b))>0,Ii=0;W(i<k,DE*e=(V*)b+i;Qs=e->d_name;d(x,s);i+=e->d_reclen))}
+ V dir(If,void(*d)(V*,Q),V*x){Cb[PG];Ik;W((k=getdents(f,b,SZ b))>0,Ii=0;W(i<k,DE*e=(V*)b+i;Qs=e->d_name;d(x,s);i+=e->d_reclen))}
 #endif
 
 //getcwd()
