@@ -8,20 +8,15 @@ enum{bu,bv=32,bs=64,bg=72,bd=80,ba=88,bP,bi,bx,bI,bX,bm,bM,bG,bS,bl,bL,bz,bj,bA,
 #define fl uA[3]
 S A u;S UC*b,*m;S I nb,lu[8];S A cr(A,I);
 SN I lc(Ax/*1*/,I o)_(Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,uq(x))h(i+bc-5)1)
-SN I ig(Lv)_(I(*gp,Qq=qs(&v);I(!SC(q,'.'),C s[32];Nm=Sn(gp),n=Sn(q);P(m+n+2>=SZ s,-1)Mc(s,gp,m);s[m]='.';Mc(s+m+1,q,n+1);v=(I)sym(s)))
- Li=fI(gk,gn,v);P(i>=0,i)P(gn-(UC)gn,-1)gk[gn]=v;gv[gn]=0;gn++)
+SN I ig(Lv)_(I(*gp,Qq=qs(&v);I(!SC(q,'.'),C s[32];Nm=Sn(gp),n=Sn(q);P(m+n+2>=SZ s,-1)Mc(s,gp,m);s[m]='.';Mc(s+m+1,q,n+1);v=(I)sym(s)))Li=fI(gk,gn,v);P(i>=0,i)P(gn-(UC)gn,-1)gk[gn]=v;gv[gn]=0;gn++)
 SN I il(Iv)_(Li=fAI(fl,v);P(i>=0,lu[i]=nb;i)-1)
 S A cl(Ax,Ay/*00*/,I r)_(I o=xo;Q(xx==av||_t(xx)==tu)Iv=_v(xx);
- YsS(
-  I(yts,P(xx==av&&_n(fl),Li=fpI(&fl,yv);P(i>15,ez0())lu[i]=nb;h(bs+i)I(r,h(bg+i))OK)
-        Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
-  E(P(yn==1,o)y=jS(yR))
+ YsS(I(yts,P(xx==av&&_n(fl),Li=fpI(&fl,yv);P(i>15,ez0())lu[i]=nb;h(bs+i)I(r,h(bg+i))OK)Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))E(P(yn==1,o)y=jS(yR))
   Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
  YA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;P(z==MKL&&xx==av,h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
   P(ztsS,I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);P(i<0,hc(z)h(r?bX:bI)h(v)OK)h(r?bx:bi)h(i)h(v)OK)o)o)
 S A cr(Ax/*0*/,I r)_(I o=xo;
- XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))E(P(xn==1,I(r,hc(ii(x,0)))OK)x=jS(xR))
-  Ii=ig(xv);P(i<0,ez0())h(bG)h(i)I(!r,h(bp))OK)
+ XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))E(P(xn==1,I(r,hc(ii(x,0)))OK)x=jS(xR))Ii=ig(xv);P(i<0,ez0())h(bG)h(i)I(!r,h(bp))OK)
  P(!xtA||!xn,I(r,hc(x-PLH?xR:au))OK)
  Nn=xn;Ay=xx;
  P(y==PLH,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)
@@ -39,12 +34,9 @@ S A cr(Ax/*0*/,I r)_(I o=xo;
 S A2(f2,/*0*/P(xtw&&!ytsSA,1)/*P(x==TIL&&ytZ&&yn<4,i(yn,P(!in(gl(ii(y,i)),101),0))1)*/0)
 S A3(f3,/*0*/P(ADD<=x&&x<=MUL&&ytL&&ztL&&yn==zn&&yn<101,1)0)
 S A1(qt,/*1*/xtsSA?enl(x):x)
-S A1(cf,XA(P(xx==MKL,i(xn,Ay=xa;YsSA(x))aA1(drp(1,x)))
-           P(xn==2?f2(xx,xy):xn==3?f3(xx,xy,xz):0,qt(N(val(x))))
-           Ay=rsh(xn,au);i(xn,ya=cf(xa);xa=au;P(!ya,die("cf")))AO(xo,x(y)))x) //preserve src offsets
+S A1(cf,XA(P(xx==MKL,i(xn,Ay=xa;YsSA(x))aA1(drp(1,x)))P(xn==2?f2(xx,xy):xn==3?f3(xx,xy,xz):0,qt(N(val(x))))Ay=rsh(xn,au);/*preserve src offsets*/i(xn,ya=cf(xa);xa=au;P(!ya,die("cf")))AO(xo,x(y)))x)
 S I mxs(Ii,I s)_(I r=s;W(1,UC c=b[i++];Q(s>=0)r=max(r,s);P(!c,r)P(c==bz,i++;s--;max(r,max(mxs(i,s),mxs(i+b[i-1],s))))
- I(c>=bc||c==bo||c-bg<8u||c-bd<8u||c==bG,s++)J(c-bs<8u||c-bv<32u||c==bp||c==bm||c==bx||c==bM||c==bS,s--)
- J(c==bi||c==bX,s-=2)J(c==bI||c==bA,s-=3)J(c==bL,s+=b[i])J(c==bl||c==ba||c==bP,s-=b[i]-1)
+ I(c>=bc||c==bo||c-bg<8u||c-bd<8u||c==bG,s++)J(c-bs<8u||c-bv<32u||c==bp||c==bm||c==bx||c==bM||c==bS,s--)J(c==bi||c==bX,s-=2)J(c==bI||c==bA,s-=3)J(c==bL,s+=b[i])J(c==bl||c==ba||c==bP,s-=b[i]-1)
  I(c==bm||c==bx||c==bM||c==bi,i+=2)J(c==bX||c==bI||c==bL||c==bl||c==ba||c==bP||c==bG||c==bS,i++)J(c==bj,i+=b[i]+1))r)
 S I shy(Ax/*0*/)_(!xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu)&&_tsSA(xy))
 A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,5,A(x,au,au,z,au));Ms(lu,-1,SZ lu);y=Nu(cf(y));
