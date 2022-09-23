@@ -16,9 +16,10 @@
 #define   j(a...) ij(j,a)
 #define ij(i,n,a...) for(TY(n)n_=(n),i=0;i<n_;i++){a;}
 #define   SW(x,a...) switch(x){a}
-#define    C(x,a...) case x:{a;break;}
+#define    C(x,a...) case x:{a;}break;
+#define C2(x,y,a...) case x:case y:{a;}break;
 #define   CR(x,a...) case x:return({a;});
-#define      D(a...) default:{a;break;}
+#define      D(a...) default:{a;}break;
 #define O const
 #define S static
 #define SZ sizeof
