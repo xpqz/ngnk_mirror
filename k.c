@@ -14,7 +14,7 @@ K Kf(Dv)_(ad(v))     K KF(D*a,Nn)_(aV(tD,n,a))                   D fK(K x)_(*xD)
                      K KL(K*a,Nn)_(a?aV(tA,n,a):aA(n))           V LK(K*a,K x){VK(tA,a,x);}
 K Kp(V*p)_(al((L)p))
 
-V KA(Qs,K x){x=dmd(A(as(sym(s)),oA,av,x),4);if(x)mr(x);}
+V KA(Qs,K x){x=d8(A(as(sym(s)),oA,av,x),4);if(x)mr(x);}
 V KR(Qs,V*f,In)_(KA(s,ae(f,n)))
 K KE(Qs)_(err0(s))
 
