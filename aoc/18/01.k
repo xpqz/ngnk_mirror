@@ -1,4 +1,7 @@
 #!/usr/bin/env k
-a:+\`I$(0:"i/01")^'"+"
-*|a /part1
-(2=#:){(s;v):x;b:s+a;i:(^v?b)?0;$[~^i;b i;(*|b;v,b)]}/(0;!0) /part2
+x:+\`I$(0:"i/01")^'"+"
+*|x /part1
+
+/part2
+f:{1<|/@[&1-l-|/x;x-l:&/x;+;1]} /has dupes?
+a@*{@[x;f m#a;:;m:-2!+/x]}/0,#a:(~f@){x,x+*|x}/x /binary search
