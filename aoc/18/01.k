@@ -4,10 +4,11 @@ x:`I$(0:"i/01")^'"+"
 :s:+/x /part1
 
 /part2(Alve Björk)
-s*:u:1-2*0>s;x*:u
+s*:u:1-2*0>s
+x*:u
 d:,/p-/:p:(+\x)-x
-m:(~s!d)&(0<d)&~,/=#p
-(p(#p)!&m)(#r)^r?&/r:abs d@&m
+m:(~s!d)&(0<d)&(*/2##p)#&1,#p
+u*(p(#p)!&m)r?&/r:d@&m
 
 //part2(ngn)
 /f:{1<|/@[&1-l-|/x;x-l:&/x;+;1]} /has dupes?
