@@ -1,6 +1,6 @@
 pi:3.14159265359
-abs:|/-:\
-sgn:-/0<-:\
+abs:|/1-:\
+sgn:-/0<1-:\
 gcd:*|(*:)(|!\)/,
 lcm:{x*(-gcd[x]y)!y}
 prm:{$[x~*x;;:x@o@#x];(x-1){,/'((,(#*x)##x),x)(~i=\:i)*i+i<\:i:!1+#x}/0} /permutations(non-lexicographic)
