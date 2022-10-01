@@ -36,7 +36,8 @@ s.c string formatting: $x `k@x          l/   k libraries
 f.c find, random: x?y                   g/   https://codegolf.stackexchange.com/
 1.c monadic arithmetic                  e/   https://projecteuler.net/
 2.c dyadic  arithmetic except + and *   dy/  https://problems.tryapl.org/
-3.c dyadic  arithmetic + and *          a21/ https://adventofcode.com/2021
+3.c dyadic  arithmetic + and *          aoc/ https://adventofcode.com/
+4.c prime sieve
 i.c i/o and \cmds
 v.c the rest of the verbs
 w.c adverbs
