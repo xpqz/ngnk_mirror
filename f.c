@@ -9,8 +9,8 @@ S V shf(L*r,Nn){i(n,Ij=rm(i+1);SWP(r[i],r[j]))}
 S A ro(UL n,UL m)_(Ct=m?tZ(m-1):tL;Ax=an(t,n);P(t==tB,i(n,xb=rm(m))x)P(t==tH,i(n,xh=rm(m))x)P(t==tI,i(n,xi=rm(m))x)i(n,xl=rnd1())I(m,i(n,xl=(UL)xl%m))x)
 S A de(UL n,UL m)_(P(n>m,el0())Ax=ro(n,0);i(n,UL k=m-n+i;xl%=k+1;j(i,B(xL[j]==xl,xl=k)))shf(xV,n);x)
 S A rd(Ln,Lm)_(P(m<0,ed0())n<0?de(n-NL?-n:m,m):ro(n,m))
-AL(rndD,add(ai(-1),AT(tD,add(al(1023ll<<52),N(rd(n,1ll<<52))))))
-S ALA(rnd,Xz(rd(n,gl(x)))Xc(cC(add(xv-'A'?ac('a'):x,Nx(rd(n,26)))))Xd(mul(x,Nx(rndD(n))))XMT(idx(x,Nx(rd(n,xN))))et1(x))
+AL(rndD,Ay=al(1023ll<<52);add(ai(-1),AT(tD,y(add(y,N(rd(n,1ll<<52)))))))
+S ALA(rnd,Xz(rd(n,gl(x)))Xc(cC(add(xv-'A'?ac('a'):x,Nx(rd(n,26)))))Xd(x(mul(x,Nx(rndD(n)))))XMT(x(x1(Nx(rd(n,xN)))))et1(x))
 
 #define h(T) NI L f##T(OV*p,Nn,Lv)_(O T*a=p,q=v;P(v-q||!n,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)\
              NI V F##T(OV*p,Nm,TY(fB)f,OV*q,Nn,L*r){O T*a=q;i(n,r[i]=f(p,m,a[i]))}\
@@ -20,15 +20,15 @@ S L fA(Ax,Ay/*00*/)_(XA(i(xn,P(mtc_(xa,y),i))NL)i(xN,Az=ii(x,i);P(mtc_(z,y),z(0)
 L fAI(Ax/*0*/,Iv)_(fI(xV,xn,v))
 I rnk(Ax/*0*/)_(XA(P(!xn,2)Iv=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)XmM(rnk(xy))xtT)//-1 for mixed rank
 I urnk(Ax/*0*/)_(XA(xn?urnk(xx)+1:2)XmM(urnk(xy))xtT)//assuming unirank
-S A2(sdf,K("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))//small-domain find
-A2(fnd,
+S A2(sdf,/*01*/K("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",xR,y))//small-domain find
+A2(fnd,/*01*/
  P(xtT&&!xtA&&!ytmMA,
   P(xtZ&&ytzZ||xt==TT[yt],
    P(xw<2&&xn>99&&yN>99,sdf(x,y))
-   V(f,T(&fB,fH,fI,fL)[xw])Yt(x(az(f(xV,xn,gl(y)))))
-   Az=aL(yn);Ii=yw;xe(ye(T(&FB,FH,FI,FL)[i](xV,xn,f,yV,yn,zV);z)))
-  Az=cn[tl];zR;x(y(ytt?z:rsh(yN,z))))
- Xm(Az=kv(&x);idx(x,Nx(fnd(z,y))))
- Ik=urnk(x),l=urnk(y);P(k==l+1,x(y(az(fA(x,y)))))P(k<=l,r2(x,y,QUE))er2(x,y))
+   V(f,T(&fB,fH,fI,fL)[xw])Yt(az(f(xV,xn,gl(y))))
+   Az=aL(yn);Ii=yw;ye(T(&FB,FH,FI,FL)[i](xV,xn,f,yV,yn,zV);z))
+  Az=cn[tl];zR;y(ytt?z:rsh(yN,z)))
+ Xm(i1(xx,fnd(xy,y)))
+ Ik=urnk(x),l=urnk(y);P(k==l+1,y(az(fA(x,y))))P(k<=l,r2(QUE,x,y))er1(y))
 
-A2(que,Xs(S O C s[][4]={"","j","hex"};Li=fI(s,LEN(s),xv);T(&des,js0,unh,ed1)[i<0?LEN(s):i](y))Xz(rnd(gl(x),y))Xt(et2(x,y))fnd(x,y))
+A2(que,/*01*/Xs(S O C s[][4]={"","j","hex"};Li=fI(s,LEN(s),xv);T(&des,js0,unh,ed1)[i<0?LEN(s):i](y))Xz(rnd(gl_(x),y))Xt(et1(y))fnd(x,y))

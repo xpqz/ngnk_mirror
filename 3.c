@@ -11,18 +11,16 @@
 #define ho(t,T)          hA(a##t##T,T,0,GZ(T))hA(a##T##T,T,1,GZ(T))hM(m##t##T,T,0,GZ(T))hM(m##T##T,T,1,GZ(T))
 #define hn(t,T)          hN(a##t##T,T,0,+)hN(a##T##T,T,1,+)hN(m##t##T,T,0,*)hN(m##T##T,T,1,*)
 ho(b,B)ho(h,H)ho(i,I)hn(l,L)hn(d,D)
-S C tZx(Ax)_(Xz(tZ(gl_(x)))Xd(tD)XZD(xt)tn)
-A adm(Ax,Ay,Iv)_(
+S C tZx(Ax/*0*/)_(Xz(tZ(gl_(x)))Xd(tD)XZD(xt)tn)
+A adm(Ax,Ay,Iv/*01v*/)_(
  P(xti&&yti,Lm=xv,n=yv;az(v?m*n:m+n))
- P(xtz&&ytz,Lm=gl(x),n=gl(y);az(v?m*n:m+n))
- XYmMA(e2f(x,y,v?mul:add))
- XcC(adm(cB(x),y,v))
+ P(xtz&&ytz,Lm=gl_(x),n=gl(y);az(v?m*n:m+n))
+ XYmMA(e2f(v?mul:add,x,y))
  YcC(adm(x,cB(y),v))
- P(xtdD-ytdD,adm(Ny(cD(x)),Nx(cD(y)),v))
- Ct=max(tZx(x),tZx(y));P(t==tn,et2(x,y))
- x=Ny(cT[t](x));
- y=Nx(cT[t](y));
- Ik=2*xtT+ytT;
+ XcC(y(adm(y,cB(xR),v)))
+ P(xtdD-ytdD,x=Ny(cD(xR));y=Nx(cD(y));x(adm(x,y,v)))
+ Ct=max(tZx(x),tZx(y));P(t==tn,et1(y))
+ xR;x=Ny(cT[t](x));y=Nx(cT[t](y));Ik=2*xtT+ytT;
  P(!k,Xd(ad(v?gd(x)*gd(y):gd(x)+gd(y)))az(v?gl(x)*gl(y):gl(x)+gl(y)))
  I(k==2||(k==3&&xr==1),SWP(x,y))
  S O TY(&abB)f[][2][5]={{{abB,ahH,aiI,alL,adD},{aBB,aHH,aII,aLL,aDD}},{{mbB,mhH,miI,mlL,mdD},{mBB,mHH,mII,mLL,mDD}}};
