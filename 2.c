@@ -26,7 +26,7 @@ S ALA(ext/*n1*/,XMT(x)rsh(n,xtm?enl(x):x))A2(dct,/*01*/P(rnk(x)<0,ed1(y))x=ext(y
 A2(dex,y)A2(add,adm(x,y,0))A2(sub,add(x,N(neg(y))))A2(mul,adm(x,y,1))
 A2(dvd,XYmMA(e2f(dvd,x,y))x=Ny(cD(xR));y=Nx(cD(y));Xd(Dv=gd(x);Yd(ad(v/gd(y)))Az=yr==1?y:aD(yn);i(yn,zd=v/yd)y-z?y(z):z)Yd(Dv=gd(y);Az=xr==1?x:aD(xn);i(xn,zd=xd/v)y-z?y(z):z)
  P(xn-yn,el2(x,y))Az=xr==1?x:yr==1?y:aD(xn);i(xn,zd=xd/yd)x==z?y(z):y==z?x(z):x(y(z)))
-A2(mod,YmMA(e2f(mod,x,y))YdD(Ln=gl_(x);P(!n,y)P(n<0,ar2(5,x,N(csti(y))))K("{y-x*(-x)!`i$y}",xR,y))Yzc(fir(N(mod(x,enl(y)))))YC(mod(x,cB(y)))
+A2(mod,YmMA(e2f(mod,x,y))YdD(Ln=gl_(x);P(!n,y)P(n<0,ar2(5,x,N(csti(y))))K2("{y-x*(-x)!`i$y}",x,y))Yzc(fir(N(mod(x,enl(y)))))YC(mod(x,cB(y)))
  YZ(Lm=gl_(x);P(!m,y)P(m<0,m=-m;Az=an(yt,yn);S4(yw,i(zn,Cv=yb;zb=v<0?-1-~v/m:v/m),i(zn,Hv=yh;zh=v<0?-1-~v/m:v/m),i(zn,Iv=yi;zi=v<0?-1-~v/m:v/m),i(zn,Lv=yl;zl=v<0?-1-~v/m:v/m))y(z))
   P(m&m-1,Az=an(tZ(m),yn);I wy=yw;S4(zw,i(zn,zb=(iw(y,wy,i)%m+m)%m),i(zn,zh=(iw(y,wy,i)%m+m)%m),i(zn,zi=(iw(y,wy,i)%m+m)%m),i(zn,zl=(iw(y,wy,i)%m+m)%m))y(z))
   m--;I t=tZ(m),w=t-tB;y=mut(N(cT[t](y)));i(3-w,m|=m<<(8<<w+i))L*p=yV;i((yn<<w)+31>>5,j(4,*p++&=m))y)ed1(y))

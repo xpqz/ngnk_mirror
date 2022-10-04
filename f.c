@@ -20,7 +20,7 @@ S L fA(Ax,Ay/*00*/)_(XA(i(xn,P(mtc_(xa,y),i))NL)i(xN,Az=ii(x,i);P(mtc_(z,y),z(0)
 L fAI(Ax/*0*/,Iv)_(fI(xV,xn,v))
 I rnk(Ax/*0*/)_(XA(P(!xn,2)Iv=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)XmM(rnk(xy))xtT)//-1 for mixed rank
 I urnk(Ax/*0*/)_(XA(xn?urnk(xx)+1:2)XmM(urnk(xy))xtT)//assuming unirank
-S A2(sdf,/*01*/K("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",xR,y))//small-domain find
+S A2(sdf,/*01*/K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))//small-domain find
 A2(fnd,/*01*/
  P(xtT&&!xtA&&!ytmMA,
   P(xtZ&&ytzZ||xt==TT[yt],

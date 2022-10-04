@@ -1,7 +1,7 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 SN A2(enc,/*01*/P(!xtzZ,en1(y))P(x==ai(2)&&ytz&&gl_(y)<0,x=rsh(64,xR);x(enc(x,y)))
- Ii=ytt;x=K("{$[0>&/x;`err\"domain\"; `i~@x;|x!-1_![-x;]\\y; x!'|(,y),y{(-y)!x}\\|1_x]}",xR,y);!x||xN?x:x(i?oB:oA))
-SN A2(dec,/*01*/K("{z+x*y}/[0;;]",xR,y))
+ Ii=ytt;x=K2("{$[0>&/x;`err\"domain\"; `i~@x;|x!-1_![-x;]\\y; x!'|(,y),y{(-y)!x}\\|1_x]}",x,y);!x||xN?x:x(i?oB:oA))
+SN A2(dec,/*01*/K2("{z+x*y}/[0;;]",x,y))
 SN A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=MC(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)SN A sc(Cc    ,Ax)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))
 SN A sCC(C*s,Lm,C*p,Ln)_(P(!m,el0())Ax=oA;C*q;W((q=MM(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)SN A sC(C*s,Lm,Ax)_(XC(x(sCC(s,m,xV,xn)))et1(x))
 SN L jN(Lm,Ax/*0*/)_(P(!xtA,-1)Ln=(xn-!!xn)*m;i(xn,Ay=xa;P(!ytcC,-1)n+=yN)n)//total length or -1
@@ -56,11 +56,11 @@ SN A2(s1,/*01*/Yt(y)P(!yN,y)Ym(Az=kv(&y);am(y,Ny(s1(x,z))))P(x==CAT,s2(x,ce[tA],
 SN AX(s8,P(n==1,s1(x,*a))P(n==2,Ay=*a;y(s2(x,y,a[1])))Ay=*a++;n--;Lm=cfm(a,n);P(m==-2,y(el8(a,n)))Az=oA;Ab8;i(m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);P(!y,mrn(n,a);z(0))zq(yR))mrn(n,a);y(z))
 SN A3(p2,/*001*/Zm(Au=kv(&z);am(z,Nz(p2(x,y,u))))Zt(et1(z))P(!zN,z)P(xtv&&xv<11&&ytzc&&ztZC,arp(x,y,z))yR;Au=oA;i(zN,A v=ii(z,i);y=x2(v,y);mr(v);P(!y,z(u(0)))uq(y);y=ii(z,i))y(z(u)))
 SN A2(p1,/*01*/Az=ide(x,y);z(p2(x,z,y)))
-SN ALA(win,P(n<0,ed1(x))K("{[n;x]x(!n)+/:!0|1-n-#x}",az(n),x))
+SN ALA(win,P(n<0||n-(I)n,ed1(x))K2("{[n;x]x(!n)+/:!0|1-n-#x}",ai(n),x))
 SN A3(ste,/*001*/Yz(e1(x,N(win(gl_(y),z))))et1(z))
 SN A2 binD;
 SN A2(binZ,/*01*/Q(xtZC)
- YZC(P(xn-(I)xn,ez1(y))I wx=xw,wy=yw;P(!wx,wy?K("{@[x'`c$127&y;&-128>y;:;-1]}",xR,y):K("{(-1+\\@[&256;128+x;+;1])128+y}",xR,y))Az=an(tZ(xn-1),yn);I wz=zw,k[2];
+ YZC(P(xn-(I)xn,ez1(y))I wx=xw,wy=yw;P(!wx,wy?K2("{@[x'`c$127&y;&-128>y;:;-1]}",x,y):K2("{(-1+\\@[&256;128+x;+;1])128+y}",x,y))Az=an(tZ(xn-1),yn);I wz=zw,k[2];
   i(yn,Lv;S4(wy,v=yb,v=yh,v=yi,v=yl)*k=-1;k[1]=xn;S4(wx,,W(*k+1<k[1],Ii=*k+k[1]>>1;k[v<xh]=i),
                                                          W(*k+1<k[1],Ii=*k+k[1]>>1;k[v<xi]=i),
                                                          W(*k+1<k[1],Ii=*k+k[1]>>1;k[v<xl]=i))S4(wz,zb=*k,zh=*k,zi=*k,zl=*k))y(z))
