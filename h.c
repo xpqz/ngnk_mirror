@@ -1,6 +1,6 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-SN A flt(Ax,Ay,Cb/*01b*/)_(P(xK-1,er1(y))Ym(K("{(!y)[i]!(. y)i:&z~/:x@. y}",xR,y,ai(b)))x=Ny(x1(yR));x=xN?Ny(cL(x)):x(oB);P(!xtt&&xN-yN,el2(x,y))
- Az=rsh(0,yR);i(yN,Ln=gl(ii(x,i));B(b&&n-(UI)n,z=ed1(z))j(b?n:!n,zq(ii(y,i))))x(y(z)))
+SN A flt(Ax,Ay,Cb/*01b*/)_(P(xK-1,er1(y))Ym(K("{(!y)[i]!(.y)i:&z~/:x@.y}",xR,y,ai(b)))
+ x=Ny(x1(yR));x=xN?Ny(cL(x)):x(oB);P(!xtt&&xN-yN,el1(x(y)))Az=rsh(0,yR);i(yN,Ln=gl(ii(x,i));B(b&&n-(UI)n,z=ed1(z))j(b?n:!n,zq(ii(y,i))))x(y(z)))
 V cyc(V*a,Nm,Nn){Q(m);W(2*m<=n,Mc(a+m,a,m);m*=2)I(n>m,Mc(a+m,a,n-m))}
 ALA(rsh,/*1*/Xt(rsh(n,enl(x)))XM(Ay=kv(&x),z=az(n);aM(x,Nx(z(r2(RSH,z,y)))))Xm(Ay=kv(&x);x=Ny(rsh(n,x));y=Nx(rsh(n,y));am(x,y))Q(xtT)
  P(!xn,rsh(n,enl(fir(x))))P(n==NL,x)I r=n<0;I(r,n=-n)Ay=an(xt,n);N w=xW,m=xn*w,k=n%xn*w,l=n*w;
