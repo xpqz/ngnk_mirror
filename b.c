@@ -46,8 +46,8 @@ AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>1024,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=
   I(c>=bc,*--s=_R(xA[c-bc+5]))
   J(c>=ba,SW(c,
    C2(ba,bP,Nn=*b++;Ax=*s,*p=s+1;s+=n;U(*s=x((c==ba?_8:prj)(x,p,n))))
-   C(bi,Nn=*b++;Ax=l[n],y=*s++;U(x=l[n]=d4(x?x:au,y ,av+*b++,*s),*s=0)s++)
-   C(bx,Nn=*b++;Ax=l[n],y=*s++;U(x=l[n]=d4(x?x:au,yR,av+*b++,*s),*s=y(0))U(*s=dot(x,y)))
+   C(bi,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=x(y(d4(x,y,av+*b++,*s)));U(x,*s=0)s++)
+   C(bx,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=x(d4(x,y,av+*b++,*s));U(x,*s=y(0))U(*s=dot(x,y)))
    C(bI,Nn=*b++;Ax=*s++,y=*s++;U(x=d8(A(x,y ,av+n,*s),4),*s=0)s++)
    C(bX,Nn=*b++;Ax=*s++,y=*s++;U(x=d8(A(x,yR,av+n,*s),4),*s=y(0))U(*s=x(dot(x,y))))
    C2(bm,bM,Nn=*b++;A*v=(c==bm?l:gv)+n,x=*v;U(x,*s=ev1(*s))U(x=*v=x(v2[*b++](x,*s++)),*--s=0))
