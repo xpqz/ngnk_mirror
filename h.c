@@ -1,18 +1,17 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+S A1(rl0,rln(0,x))
 SN A flt(Ax,Ay,Cb/*01b*/)_(P(xK-1,er1(y))Ym(K("{(!y)[i]!(.y)i:&z~/:x@.y}",xR,y,ai(b)))
- x=Ny(x1(yR));x=xN?Ny(cL(x)):x(oB);P(!xtt&&xN-yN,el1(x(y)))Az=rsh(0,yR);i(yN,Ln=gl(ii(x,i));B(b&&n-(UI)n,z=ed1(z))j(b?n:!n,zq(ii(y,i))))x(y(z)))
+ x=Ny(x1(yR));x=xN?Ny(cL(x)):x(oB);P(!xtt&&xN-yN,el1(x(y)))Az=rl0(yR);i(yN,Ln=gl(ii(x,i));B(b&&n-(UI)n,z=ed1(z))j(b?n:!n,zq(ii(y,i))))x(y(z)))
 V cyc(V*a,Nm,Nn){Q(m);W(2*m<=n,Mc(a+m,a,m);m*=2)I(n>m,Mc(a+m,a,n-m))}
-ALA(rsh,/*1*/Xt(rsh(n,enl(x)))XM(Ay=kv(&x),z=az(n);aM(x,Nx(z(r2(RSH,z,y)))))Xm(Ay=kv(&x);x=Ny(rsh(n,x));y=Nx(rsh(n,y));am(x,y))Q(xtT)
- P(!xn,rsh(n,enl(fir(x))))P(n==NL,x)I r=n<0;I(r,n=-n)Ay=an(xt,n);N w=xW,m=xn*w,k=n%xn*w,l=n*w;
-  I(!r,Mc(yV,xV,min(m,l)))J(l<=m,Mc(yV,xV+m-l,l))E(Mc(yV,xV+m-k,k);Mc(yV+k,xV,m-k))cyc(yV,m,l);x(ytA?sqz(mRa(y)):y))
+ALA(rln,/*1*/Xt(rln(n,enl(x)))XM(Ay=kv(&x),z=az(n);aM(x,Nx(z(r2(RSH,z,y)))))Xm(Ay=kv(&x);x=Ny(rln(n,x));y=Nx(rln(n,y));am(x,y))Q(xtT)P(n==NL,x)P(!xn,rln(n,enl(fir(x))))
+ I r=n<0;n*=1-2*r;Ay=an(xt,n);N w=xW,m=xn*w,k=n%xn*w,l=n*w;I(!r,Mc(yV,xV,min(m,l)))J(l<=m,Mc(yV,xV+m-l,l))E(Mc(yV,xV+m-k,k);Mc(yV+k,xV,m-k))cyc(yV,m,l);x(ytA?sqz(mRa(y)):y))
 S A slc(Ax/*0*/,Ni,Nj)_(Q(xtT&&i<=j&&i<=xn)Ay=an(xt,j-i);Mc(yV,xV+i*xW,(j-i)*xW);XA(sqz(mRa(y)))y)
-S ALA(chp/*1*/,P(n<0,ed1(x))Lm=(xn+n-1)/n;Ay=aA(m);i(m,ya=slc(x,n*i,min(xn,n*i+n)))x(y))
-S A shp(O L*s,Nn,Ax,Lm)_(Q(xtT)Q(xn)Q(n)P(n==1,rsh(m**s,x))x=shp(s+1,n-1,x,m**s);s[1]?chp(s[1],x):rsh(m**s,enl(x)))
-S A rshL(O L*s,Nn,Ax)_(Xt(rshL(s,n,enl(x)))XmM(en1(x))P(!n,fir(x))P(n>8,ez1(x))
- P(n==1&&*s==NL,x)I(n==2,P(*s==NL,chp(s[1],x))P(s[1]==NL,K2("{((-x)!(#y)*!x)_y}",az(*s),x)))P(!xn,rshL(s,n,enl(fir(x))))
- Lm=1;i(n,P(s[i]<0,ed1(x))m*=max(1,s[i]))x=N(rsh(m,x));shp(s,n,x,1))
-A2(hsh,/*01*/Xz(rsh(gl_(x),y))XZ(x=Ny(cL(xR));x(rshL(xL,xn,y)))XF(flt(x,y,1))XT(P(ytm||ytM&&xtS,a2t(xR,y(y1(xR)),yt))et1(y))et1(y))
-ALA(drp,/*n1*/XT(P(n==NL,rsh(0,x))P(-n<=(UL)xn&&xr==1,I(xtA,mrn(-n,xA+xn+n))AN(xn+n,x))x(slc(x,max(0,min((L)xn,n)),max(0,min((L)xn,xn+n)))))
+S ALA(chp,/*1*/P(n<0,ed1(x))Lm=(xn+n-1)/n;Ay=aA(m);i(m,ya=slc(x,n*i,min(xn,n*i+n)))x(y))
+S A2(rsh,/*01*/YmM(en1(y))Yt(rsh(x,enl(y)))Q(xtZ);N r=xn;P(!r,fir(y))P(r>256,ez1(y))x=Ny(cL(xR));L s[r];Mc(s,xV,r<<3);x(0);
+ I(r==2,P(*s==NL,chp(s[1],y))P(s[1]==NL,K2("{((-x)!(#y)*!x)_y}",az(*s),y)))P(r==1&&*s==NL,y)I(!yn,y=enl(fir(y)))
+ L p[r],m=1;i(r,L d=s[r-1-i];P(d<0||m*d<0,ed1(y))p[i]=m*=max(1,d))y=N(rln(m,y));i(r-1,L d=s[r-1-i];I(d,y=N(chp(max(1,d),y)))E(y=N(e1f(rl0,chp(1,y)))))rln(*s,y))
+A2(hsh,/*01*/Xz(rln(gl_(x),y))XZ(rsh(x,y))XF(flt(x,y,1))XT(P(ytm||ytM&&xtS,a2t(xR,y(y1(xR)),yt))et1(y))et1(y))
+ALA(drp,/*n1*/XT(P(n==NL,rl0(x))P(-n<=(UL)xn&&xr==1,I(xtA,mrn(-n,xA+xn+n))AN(xn+n,x))x(slc(x,max(0,min((L)xn,n)),max(0,min((L)xn,xn+n)))))
  Xm(Ay=kv(&x);am(Ny(drp(n,x)),Nx(drp(n,y))))XM(Ay=kv(&x);aM(x,Nx(e2f(und,az(n),y))))er1(x))
 S AAL(rmv,XT(P(!in(i,xn),x)Ay=an(xt,xn-1);Mc(yV,xV,i*xW);Mc(yV+i*xW,xV+i*xW+xW,(xn-i-1)*xW);I(xtA,y=sqz(mRa(y)))x(y))et1(x))
 S A2(cut,/*01*/Q(xtZ)Q(ytMT)K2("{y$[|/0<':x,#y;`err\"domain\";x+!'1_-':x,#y]}",x,y))
