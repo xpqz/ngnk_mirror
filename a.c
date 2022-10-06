@@ -1,5 +1,5 @@
 #include"a.h"// ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S A1(sam,x)V_;T_;S A1(mkn,XmMA(e1f(mkn,x))Ay=_R(cn[xt]);Xt(x(y))rln(xN,x(y)))I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xte?x>>48&7:xtF?xk:0)//_K:arity
+S A1(sam,x)V_;T_;S A1(mkn,XmMA(e1f(mkn,x))Ay=_R(cn[xt]);Xt(x(y))cyc(xN,x(y)))I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xte?x>>48&7:xtF?xk:0)//_K:arity
 A2(ide,/*00*/x==CAT?_R(ce[ce[yt]?yt:tA]):xtv&&xv<11&&xv?_R(ci[ytdD][T((C)4,0,0,1,1,2,2,3,3,2,4)[xv]]):mkn(fir(yR)))
 AX(prj,XmMA(x8(a,n))Ik=max(n,xK);i(n,k-=a[i]!=PLH)x=(xtp?val:aA1)(xR);Ii=0,j=1;W(i<n&&j<xn,I(xA[j]==PLH,xA[j]=a[i++])j++)W(i<n,xq(a[i++]))P(xn>9,ez1(x))AT(tp,AK(k,x)))
 S A iM(Ax,Li,AAL*f)_(Q(xtM);Ay=xy,z=aA(yn);Q(ytA);j(zn,zA[j]=f(yA[j],i))am(_R(xx),sqz(z)))
