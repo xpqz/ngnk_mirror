@@ -109,7 +109,7 @@ d,d merge     (`a`b!0 1),`b`c!2 3 -> `a`b`c!0 2 3
 a^y fill      1^0 0N 2 3 0N -> 0 1 2 3 1   "b"^" " -> "b"
 X^y without   "abracadabra"^"bc" -> "araadara"
  #x length    #"abc" -> 3   #4 -> 1   #`a`b`c!0 1 0 -> 3
-i#y cycle     2#3 -> 3 3   5#"abc" -> "abcab"   -5#"abc" -> "bcabc"
+i#y take      5#"abc" -> "abcab"   -5#`a`b`c -> `b`c`a`b`c
 I#y reshape   2 3#` -> (```;```)
 f#y replicate (3>#:')#(0;2 1 3;5 4) -> (0;5 4)   {2}#"ab" -> "aabb"
 x#d take      `c`d`f#`a`b`c`d!1 2 3 4 -> `c`d`f!3 4 0N
