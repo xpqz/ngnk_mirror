@@ -1,8 +1,3 @@
-i've decided to stop working on my free reimplementation of k6 for an indefinite period.
--ngn, 24 may 2022
-
-
-
 ngn/k is a simple fast vector programming language
 license: GNU AGPLv3 (v3 only) - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 build: make CC=clang-12 # or CC=gcc-10
