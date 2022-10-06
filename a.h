@@ -76,7 +76,7 @@ TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX
 #define AAL(f,b...) A f(Ax,Li      )_(b)
 #define  AQ(f,b...) A f(Qs         )_(b)
 A1 _R,aA1,asc,cA,cB,cC,cD,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,grp,hex,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mRa,mr,mut,neg,not,nul,ofp,opn,out,prng,
- qpri,rev,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
+ qpri,raz,rev,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
 A2 _1,aA2,aM,add,am,apd,cat,cat11,cst,dct,dex,dot,dvd,eql,exc,fil,f1,fnd,gtn,hsh,ide,i1,ltn,mnm,bng,mtc,mul,mxm,que,sub,und,v0c,v1c;
 A3 _2,aA3,arf,arp,ars,cpl,r2,try;A4 ara,a4,d4;AX _8,adv,e8,f8,prj,run;AA a8,d8,ins;AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,tak;AAL ii;AQ aCz,bsl,bsm,die,evs,pk,sym;
 A a2t(A,A,C),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),evK(A*,Q,OA*,I),evK1(A*,Q,A),evK2(A*,Q,A,A),
