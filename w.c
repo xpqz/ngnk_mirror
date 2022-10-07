@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-SN A2(enc,/*01*/P(!xtzZ,en1(y))P(x==ai(2)&&ytz&&gl_(y)<0,x=tak(64,xR);x(enc(x,y)))
+SN A2(enc,/*01*/P(!xtzZ,en1(y))P(x==ai(2)&&ytz&&gl_(y)<0,x=rsz(64,xR);x(enc(x,y)))
  Ii=ytt;x=K2("{$[0>&/x;`err\"domain\"; `i~@x;|x!-1_![-x;]\\y; x!'|(,y),y{(-y)!x}\\|1_x]}",x,y);!x||xN?x:x(i?oB:oA))
 SN A2(dec,/*01*/K2("{z+x*y}/[0;;]",x,y))
 SN A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=MC(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)SN A sc(Cc    ,Ax)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))

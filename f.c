@@ -3,7 +3,7 @@
 // ","/"abcd",'"=0x",/:+"0123456789abcdef"@(16#16)\2/|+4 64#(n{(|(8#2)\30)@2/'3'0,x,0}\n=!2*n)@'n:256
 S UL a[]={0xd5a986ae75c9a33b,0x1016d8e3483a8f0f,0x81f9e6260eb8e5df,0xfa9b718d8d0769bf};
 UL rnd1()_(Lv=a[1]<<17;a[2]^=a[0];a[3]^=a[1];a[1]^=a[2];a[0]^=a[3];a[2]^=v;a[3]=rot(a[3],45);a[0]+a[3])
-A1(prng,P(x==au,aV(tL,4,a))XZ(x=cL(tak(4,x));Mc(a,xV,SZ a);x(au))Xz(UL v=gl(x);I(!v,v=now())i(LEN(a),a[i]=v=v*6364136223846793005+1442695040888963407)au)et1(x))//knuth mmix
+A1(prng,P(x==au,aV(tL,4,a))XZ(x=cL(rsz(4,x));Mc(a,xV,SZ a);x(au))Xz(UL v=gl(x);I(!v,v=now())i(LEN(a),a[i]=v=v*6364136223846793005+1442695040888963407)au)et1(x))//knuth mmix
 S UI rm(UL m)_((UI)rnd1()*m>>32)
 S V shf(L*r,Nn){i(n,Ij=rm(i+1);SWP(r[i],r[j]))}
 S A ro(UL n,UL m)_(Ct=m?tZ(m-1):tL;Ax=an(t,n);P(t==tB,i(n,xb=rm(m))x)P(t==tH,i(n,xh=rm(m))x)P(t==tI,i(n,xi=rm(m))x)i(n,xl=rnd1())I(m,i(n,xl=(UL)xl%m))x)
@@ -27,7 +27,7 @@ A2(fnd,/*01*/
    P(xw<2&&xn>99&&yN>99,sdf(x,y))
    V(f,T(&fB,fH,fI,fL)[xw])Yt(az(f(xV,xn,gl(y))))
    Az=aL(yn);Ii=yw;ye(T(&FB,FH,FI,FL)[i](xV,xn,f,yV,yn,zV);z))
-  Az=cn[tl];zR;y(ytt?z:tak(yN,z)))
+  Az=cn[tl];zR;y(ytt?z:rsz(yN,z)))
  Xm(i1(xx,fnd(xy,y)))
  Ik=urnk(x),l=urnk(y);P(k==l+1,y(az(fA(x,y))))P(k<=l,r2(QUE,x,y))er1(y))
 
