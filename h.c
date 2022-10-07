@@ -18,7 +18,7 @@ S A2(cut,/*01*/Q(xtZ)Q(ytMT)K2("{y$[|/0<':x,#y;`err\"domain\";x+!'1_-':x,#y]}",x
 A2(und,/*01*/Xz(drp(gl_(x),y))XF(flt(x,y,0))Xm(y=N(fnd(xx,y));yR;am(und(xx,y),und(xy,y)))P(xtZ&&ytMT,cut(x,y))P(xtMT&&ytz,rmv(xR,gl(y)))
  Ym(K2("{((!y)^x)#y}",x,y))YM(K2("{+x_+y}",x,y))et1(y))
 A1(enl,Xi(aV(tZ(xv),1,&x))XF(aA1(x))XP(aV(TT[xt],1,&x))Xt(x(aV(TT[xt],1,xV)))Xm(Ay=kv(&x);aM(x,e1f(enl,y)))aA1(x))
-A2(cat11,P(xtm&&ytm,Az=kv(&y);x(y(a4(x,y,av,z))))Xmt(cat11(enl(x),y))Ymt(cat11(x,enl(y)))
+A2(cat11,P(xtm&&ytm,Az=kv(&y);y(z(a4(x,y,av,z))))Xmt(cat11(enl(x),y))Ymt(cat11(x,enl(y)))
  P(xtM||ytM,P(xtT||ytT,x=Ny(cA(x));y=Nx(cA(y));cat11(x,y))P(!xtM||!ytM,et2(x,y))P(!mtc_(xx,yx),ed2(x,y))Az=e2f(cat,xy,_R(yy));x(y(z?aM(_R(xx),z):0)))
  P(!yn,y(x))P(!xn,x(y))I(xtZ&&ytzZ,N(sup(&x,&y)))I(xt-yt,x=cA(x);y=cA(y))
  Nm=xn,n=yn,w=xW;x=room(m+n,x);Mc(xV+m*w,yV,n*w);I(ytA,yr-1?mRa(y):AN(0,y))y(x))
@@ -40,4 +40,5 @@ S A insL(Ax,Li,Lj,Ay)_(YF(insL(x,i,j,Nx(y(y1(slc(x,i,j))))))Xmt(et2(x,y))Ymt(ins
  P(!in(i,j+1)||!in(j,xN+1),ei2(x,y))P(xtZ&&ytZ&&xt-yt,N(sup(&x,&y));insL(x,i,j,y))P(xt-yt,insL(cA(x),i,j,cA(y)))
  Az=an(xt,xn-j+i+yn);Mc(zV,xV,i*xW);Mc(zV+i*xW,yV,yn*xW);Mc(zV+(i+yn)*xW,xV+j*xW,(xn-j)*xW);
  I(xtR,I(xr-1,mRn(i,xA);mRn(xn-j,xA+j))E(mrn(j-i,xA+i);AN(0,x))I(yr-1,mRa(y))E(AN(0,y)))x(y(z)))
-AA(ins,P(n-3,en8(a,n))Ax=*a,y=a[1],z=a[2];Yz(Li=gl(y);insL(x,i,i,z))YZ(P(yN-2,el2(x,z(y)))Li=gl(ii(y,0)),j=gl(las(y));insL(x,i,j,z))et2(x,z(y)))
+A3(ins3,/*100*/Yz(Li=gl_(y);insL(x,i,i,zR))YZ(P(yn-2,el1(x))insL(x,gl_(ii(y,0)),gl_(ii(y,1)),zR))et1(x))
+AA(ins,/*10..0*/Ax=*a;P(n==3,ins3(x,a[1],a[2]))en1(x))
