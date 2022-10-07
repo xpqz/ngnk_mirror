@@ -31,9 +31,9 @@ S A cr(Ax/*0*/,I r)_(I o=xo;
  I p=0;i(n-1,Az=xA[n-1-i];I(z==PLH,p=1;hc(PLH))E(Nr(z,1)))
  I(p,Nr(xx,1);h(bP)h(n-1))J(y==MKL,n--;P(n-(UC)n,o);h(bl)h(n))J(n==2&&ytu,h(bu+yv))J(n==3&&ytv,h(bv+yv))J(n>9,ez0();_(o))E(Nr(xx,1);h(ba)h(n-1))
  I(!r,h(bp))OK)
-S A2(f2,/*00*/P(xtw&&!ytsSA,1)/*P(x==TIL&&ytZ&&yn<4,i(yn,P(!in(gl(ii(y,i)),101),0))1)*/0)
-S A3(f3,/*000*/P(ADD<=x&&x<=MUL&&ytL&&ztL&&yn==zn&&yn<101,1)0)S A1(qt,/*1*/xtsSA?enl(x):x)
-S A1(cf,XA(P(xx==MKL,i(xn,Ay=xa;YsSA(x))aA1(drp(1,x)))P(xn==2?f2(xx,xy):xn==3?f3(xx,xy,xz):0,qt(N(val(x))))Ay=rsz(xn,au);i(xn,ya=cf(xa);xa=au;P(!ya,die("cf")))AO(xo,x(y)))x)
+S A2(cf2,/*00*/P(xtw&&!ytsSA,1)/*P(x==TIL&&ytZ&&yn<4,i(yn,P(!in(gl(ii(y,i)),101),0))1)*/0)
+S A3(cf3,/*000*/P(ADD<=x&&x<=MUL&&ytzZ&&ztzZ&&(ytt||ztt||yn==zn)&&max(xN,yN)<101,1)0)S A1(qt,/*1*/xtsSA?enl(x):x)
+S A1(cf,XA(P(xx==MKL,i(xn,Ay=xa;YsSA(x))aA1(drp(1,x)))P(xn==2?cf2(xx,xy):xn==3?cf3(xx,xy,xz):0,qt(N(val(x))))Ay=rsz(xn,au);i(xn,ya=cf(xa);xa=au;P(!ya,die("cf")))AO(xo,x(y)))x)
 S I mxs(Ii,I s)_(I r=s;W(1,UC c=b[i++];Q(s>=0)r=max(r,s);P(!c,r)s+=(c-ba<LEN(ds)?ds[c-ba]:c>=bc||c-bg<8u||c-bd<8u?1:c-bs<8u||c-bv<32u?-1:0)+((c==bL)-(c==bl||c==ba||c==bP))*b[i];
  i+=(c-ba<LEN(di)?di[c-ba]:0)+(c==bj)*b[i];I(c==bz,r=max(r,mxs(i+b[i-1],s))))r)
 S I shy(Ax/*0*/)_(!xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu)&&_tsSA(xy))
