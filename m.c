@@ -12,7 +12,7 @@ S A mx(Nn)_(V*p=mm(0,n,-1);P(!p,oom())*(C*)p=0;(A)(p+HD))A mf(If,Nn)_(V*p=mm(0,P
 
 S Az[SZ(N)==4?27:35];S I lck;S A mb(Cb,Ax)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)V mrn(Nn,OA*a){i(n,mr(a[i]))}V mRn(Nn,OA*a){i(n,_R(a[i]))}A1(mRa,i(xn,_R(xa))x)
 A1(m0,DBG(lck++);Q(x);XP(0)Q(xr>0);P(--xr,0)Cb=xU;P(!b,x=AT(tn,x))xX=z[b];z[b]=(A)xV;XR(mrn(xn,xA);x)x)A1(m1,DBG(lck--);P(!x,0)P(xt==tn,mu(xV-PG,xn+PG))DBG(Ms(xV,0xab,xZ);DBG(AN(-1,AT(0,x))));0)
-A an(Ct,Nn)_(Q(!lck);Q(c3(tA,t,tn-1));Q(!TP(t));Cb=59-__builtin_clzll(HD|HD-1+n*TZ[t]);P(n>1ull<<LEN(z)||b>LEN(z)-2,oom())
+A an(Ct,Nn)_(Q(!lck);Q(LH(tA,t,tn-1));Q(!TP(t));Cb=59-__builtin_clzll(HD|HD-1+n*TZ[t]);P(n>1ull<<LEN(z)||b>LEN(z)-2,oom())
  Ax=z[b];Ii=b;W(!z[i],i++)I(i<LEN(z)-1,x=z[i];z[i]=xX)E(x=mb(b,mx(HD<<(i=max(b,24)))))I(b<i,xU=b;W(b<i--,z[i]=mb(i,(A)x+(HD<<i))))xr=1;AT(t,AN(n,x)))
 A1(mr,m1(m0(x)))A aV(Ct,Nn,OV*v)_(Ax=an(t,n);Mc(xV,v,n*TZ[t]);x)A a2t(Ax,Ay,Ct/*11t*/)_(Az=an(t,2);zx=x;zy=y;z)
 A1(aA1,Ay=an(tA,1);yx=x;y)A2(aA2,/*11*/a2t(x,y,tA))A3(aA3,/*111*/Au=an(tA,3);ux=x;uy=y;uz=z;u)A2(aM,/*11*/a2t(x,y,tM))A2(am,/*11*/a2t(x,y,tm))
@@ -43,7 +43,7 @@ V kinit(){S I l;P(l)l=1;z[LEN(z)-1]=1;Ax=AN(0,aA(32)),*c=xA;i(tS-tA+1,*c++=ce[tA
  *c++=ci[1][0]=ad(0);*c++=ci[1][1]=ad(1);*c++=ci[1][2]=ad(WD);*c++=ci[1][3]=ad(-WD);ci[1][4]=cn[tD];xn=c-xA;Q(xn<=32);cns=x;}
 V kargs(In,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=max(0,n-2);Ax=n?aA(n):oA;i(n,xa=aCz(a[2+i]))gk[gn]='x';gv[gn++]=x;}
 
-A AT(UL t,Ax)_(Q(c3(0,t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)A AW(C w,Ax)_(Q(w<6);xE=w;x)A AK(C k,Ax)_(Q(k<9);xk=k;x)
+A AT(UL t,Ax)_(Q(LH(0,t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)A AW(C w,Ax)_(Q(w<6);xE=w;x)A AK(C k,Ax)_(Q(k<9);xk=k;x)
 A AO(UC o,Ax)_(Xs(x&~(0xffll<<32)|(UL)o<<32)xB[-13]=o;x)A AN(Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)
 
 SN I ow(Qs,Nn)_(write(1,s,n))SN V o8(Lv){Cb[16],*s=b;i(16,Cc=v>>4*(15-i)&15;*s++="0W"[9<c]+c)ow(b,16);}I os(Qs)_(ow(s,Sn(s)))L ov_(Qs,Lv)_(os(s);o8(v);ow("\n",1);v)
@@ -53,11 +53,11 @@ SN I ow(Qs,Nn)_(write(1,s,n))SN V o8(Lv){Cb[16],*s=b;i(16,Cc=v>>4*(15-i)&15;*s++
 #define rts(a...) {i(gn,Ax=gv[i];I(x,a))Ax=cns;a;}
 SN V od(Lv){Cb[32];ow(b,sl(b,v)-b);}
 SN V osd(Qs,Lv){os(s);od(v);}
-SN A1(ox,o8(x);osd(" U",xU);Ct=_t1(x);os(" t");I(c3(1,t,tn),ow(&TS[t],1))E(od(t))
+SN A1(ox,o8(x);osd(" U",xU);Ct=_t1(x);os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))
  osd(" r",xr);osd("=",xm);osd(" n",xn);i(min(5,xZ/8),os(" ");o8(xl))os("\n");x)
 AQ(bsm,obs(xm=0)xys(I(!ytP,_m(y)++))rts(I(!xtP,xm++))
 // In=0;obs(ox(x);n++);osd("nObjs:",n)
 // os("mapped regions:");mms(o8((L)p);os("-");o8((L)q);osd(" F",*(C*)p);osd(" N",q-p))
- obs(I(!c3(tA,xt,tn-1)&&xr,os("!type:");ox(x)))
+ obs(I(!LH(tA,xt,tn-1)&&xr,os("!type:");ox(x)))
  obs(I(xr-xm,os("!refc:");ox(x)))
  xys(I(!yt,os("!dngl:");ox(x);ox(y)))au)

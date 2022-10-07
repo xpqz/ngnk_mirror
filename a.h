@@ -56,9 +56,9 @@
 #define extr(x,y,c) ({TY(x) x_=(x),y_=(y);x_ c y_?x_:y_;})
 #define rot(x,y) ({TY(x) x_=(x);TY(y) y_=(y);y?x_<<y_|x_>>SZ(x)*8-y_:x;})
 #define in(i,n) ((i)<(UL)(n))
-#define c3(x,y,z) ((y)-(x)<=(UI)((z)-(x)))
-#define c09(c) c3('0',c,'9')
-#define cAz(c) c3('a',(c)|32,'z')
+#define LH(x,y,z) ((y)-(x)<=(UI)((z)-(x)))//between(low,high)
+#define c09(c) LH('0',c,'9')
+#define cAz(c) LH('a',(c)|32,'z')
 #define cA9(c) (cAz(c)||c09(c))
 #define S4(i,a,b,c,d) switch(i){case 0:a;break;case 1:b;break;case 2:c;break;default:d;break;}
 
@@ -114,9 +114,9 @@ enum            {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,t
 #define _tP(x) TP(_t(x))       // packed?
 #define _tR(x) (_w(x)==4)      // ref?
 #define _tT(x) (_t(x)<tM)      // list?
-#define _tZ(x) c3(tB,_t(x),tL) // intlist?
+#define _tZ(x) LH(tB,_t(x),tL) // intlist?
 #define _tt(x) (_t(x)>tm)      // atom?
-#define _tz(x) c3(ti,_t(x),tl) // intatom?
+#define _tz(x) LH(ti,_t(x),tl) // intatom?
 #define _U(x) _C(x)[-16]       //bucket
 #define _v(x) (I)(x)           //value
 #define _V(x) (V*)(x)          //ptr to data

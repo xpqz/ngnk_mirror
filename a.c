@@ -34,7 +34,7 @@ AX(_8,/*11..1*/Q(n)P(n==1,x1(*a))P(n==2,Ay=*a;y(x2(y,a[1])))P(!xtt,i8(x,a,n))Ik=
  Xp(P(xn+k>9,er8(a,n))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<n?a[j++]:_R(xA[i+1]))I l=max(0,n-j);Mc(b+m,a+j,8*l);_8(xx,b,m+l))P(n>k,er8(a,n))Xw(en8(a,n))Xe(en8(a,n))et8(a,n))
 A1(jS,cS(jc('.',str(x))))//join symbols with "."
 A1(val,XS(P(!xn,Ax=oS,y=oA;i(gn,I(gv[i],xq(as(gk[i]));yq(_R(gv[i]))))am(x,y))val(jS(x)))Xs(Li=fI(gk,gn,xv);i<0||!gv[i]?ev0():_R(gv[i]))XC(x=str0(x);x(evs(xV)))Xc(evs((V*)&x))XmM(x(_R(xy)))
- XA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez1(x))x=mut(x);Ay=_8(xx,&xy,xn-1);AN(1,x);x(y))Xr(cat11(AT(tA,mut(x)),aw+xE))P(c3(tu,xt,tw),ai(xv))P(c3(to,xt,tq),AT(tA,mut(x)))et1(x))
+ XA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez1(x))x=mut(x);Ay=_8(xx,&xy,xn-1);AN(1,x);x(y))Xr(cat11(AT(tA,mut(x)),aw+xE))P(LH(tu,xt,tw),ai(xv))P(LH(to,xt,tq),AT(tA,mut(x)))et1(x))
 A2(dot,/*01*/Ym(et1(y))Nn=yN;P(!n,y(xR))P(n>8,ez1(y))y=mRa(N(cA(y)));y(x8(yA,n)))
 S I knd(Ax/*0*/)_(Xz(ti)XZ(tI)xt)
 S A set(Ax,Li,Ay/*1i1*/)_(Q(xr==1);XA(Az=xa;xa=z(y);ytt&&!ytF?sqz(x):x)XM(Az=kv(&x);z=mut(z);Q(ztA);I(ytT&&yN-zn,x(el2(y,z)))Ij=i;i(zn,za=set(mut(za),j,ii(y,i));P(!za,za=au;x(y(z(0)))))y(aM(x,z)))

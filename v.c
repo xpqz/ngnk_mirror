@@ -31,7 +31,7 @@ A1*cT[]={[tA]=cA,cB,cH,cI,cL,cD,cC,cS};
 A1(csti,XD(sqzZ(cL(x)))Xd(az(gd(x)))XC(sqzZ(cB(x)))Xc(ai(xv))XzZ(x)et1(x))
 A2(cst,/*01*/P(xtS||ytmMA,e2f(cst,x,y))Xz(YC(K2("{y@(!x)+(x<0)*#y}",x,y))Yc(cst(x,enl(y)))et1(y))Xs(Iv=xv;P(v-(C)v,ed1(y))T(&csti,cD,cC,cS,pI,ed1)[si("idcsI",v+'s'*!v)](y))et1(y))
 A1(sqzZ,XH(i(xn,P(xh-(B)xh,x))cB(x))XI(i(xn,P(xi-(H)xi,x))sqzZ(cH(x)))XL(i(xn,P(xl-(I)xl,x))sqzZ(cI(x)))x)
-A1(sqz,P(!xtA||!xn,x)Nn=xn;Ay=xx;Ct=yt;Ym(y=oA;i(n,yq(_R(xa)))x(y))P(!c3(ti,t,ts),x)
+A1(sqz,P(!xtA||!xn,x)Nn=xn;Ay=xx;Ct=yt;Ym(y=oA;i(n,yq(_R(xa)))x(y))P(!LH(ti,t,ts),x)
  I(ytz,I l=0;i(n,Ay=xa;I(ytl,l=1)E(P(!yti,x)))I(l,t=tL)E(I a=0,b=0;i(n,Ay=xa;a=min(a,yv);b=max(b,yv))t=max(tZ(a),tZ(b))))E(i(n,P(t-_t(xa),x)))
  y=an(TT[t],n);Iv=yw;I(v<3,T(&cLB,cLH,cLI)[v](xV,yV,n))E(i(n,yl=gl_(xa)))x(y))
 A1(cA,XA(x)Xt(aA1(x))Xm(et1(x))Nn=xN;Ay=aA(n);i(yn,ya=ii(x,i))x(y))
