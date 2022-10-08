@@ -9,7 +9,7 @@ S OC ds[]={                         1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1,
 #define Nl(a...) {I r=cl(a);P(r-OK,r);}
 #define fl uA[3]
 S A u,cr(A,I);S UC*b,*m;S I nb,lu[8];
-SN I lc(Ax/*1*/,I o)_(Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,uq(x))h(i+bc-5)1)
+SN I lc(Ax/*1*/,I o)_(Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,P(i-5>64,ez1(x))uq(x))h(bc+i-5)1)
 SN I ig(Lv)_(I(*gp,Qq=qs(&v);I(!SC(q,'.'),C s[32];Nm=Sn(gp),n=Sn(q);P(m+n+2>=SZ s,-1)Mc(s,gp,m);s[m]='.';Mc(s+m+1,q,n+1);v=(I)sym(s)))
  Li=fI(gk,gn,v);P(i>=0,i)P(gn-(UC)gn,-1)gk[gn]=v;gv[gn]=0;gn++)
 SN I il(Iv)_(Li=fAI(fl,v);P(i>=0,lu[i]=nb;i)-1)

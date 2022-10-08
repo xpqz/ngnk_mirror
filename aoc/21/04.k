@@ -1,6 +1,6 @@
 #!../../k
 x:0:"i/04"        /input
-r:.*x             /random order for bingo
+r:`I$","\*x       /random order for bingo
 b:.''1_'(&~#'x)_x /boards
 m:r?b             /times at which the numbers on each board are marked
 t:{&/|/'x,+x}'m   /times at which each board wins
