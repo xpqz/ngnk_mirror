@@ -42,8 +42,11 @@ S A set(Ax,Li,Ay/*1i1*/)_(Q(xr==1);XA(Az=xa;xa=z(y);ytt&&!ytF?sqz(x):x)XM(Az=kv(
 AA(a8,/*10..0*/Ax=*a,y=a[1];
  XT(P(y==au,Ab8;Mc(b,a,n*8);y=b[1]=tilL(xn);y(a8(b,n)))Yzc(Li=gl_(y);P(!in(i,xn),ei1(x))x=mut(x);Ab8;*b=ii(x,i);Mc(b+1,a+3,n-3<<3);mRn(n-3,b+1);Az=a[2];set(x,i,Nx(z8(b,n-2))))
   I(ytZC&&n==4,Az=a[2],u=a[3];P(xtZ&&ztv&&utzZ&&(0xcf&1<<zv),ara(x,y,z,u))P(xtC&&z==av&&utcC,cC(N(ara(x,y,z,u)))))Yt(et1(x))mRn(n-1,a+1);f8(AP1,a,n))
- Xm(Au=Nx(fnd(xx,yR));I(utlL,Q(ur==1);x=mut(x);i(uN,I(ul==NL,ul=xN;xx=apd(xx,utt?yR:ii(y,i));xy=apd(xy,ide(a[2],xy)))))Ab8;*b=xy;b[1]=u;Mc(b+2,a+2,n-2<<3);xy=u(a8(b,n));x)
- XM(Ab8;i(n,Ax=a[i];b[i]=xtM?flp(xR):xR;Q(b[i]))flp(N(x(e8(AP1,b,n)))))XF(mRn(n-1,a+1);x(x8(a+1,n-1)))et1(x))
+ Xm(Az=Nx(fnd(xx,yR));ZT(z(0);mRn(n-1,a+1);f8(AP1,a,n))x=mut(x);I(ztl,Q(zr==1);i(zN,I(zl==NL,zl=xN;xx=apd(xx,ztt?yR:ii(y,i));xy=apd(xy,ide(a[2],xy)))))
+  Ab8;*b=xy;b[1]=z;Mc(b+2,a+2,n-2<<3);xy=z(a8(b,n));x)
+ XM(Ab8;i(n,Ax=a[i];b[i]=xtM?flp(xR):xR;Q(b[i]))flp(N(x(e8(AP1,b,n)))))
+ XF(mRn(n-1,a+1);x(x8(a+1,n-1)))
+ et1(x))
 S A3(a3,/*100*/a8(A(x,y,z),3))
 A4(a4,/*1000*/a8(A(x,y,z,u),4))
 S A a5(Ax,Ay,Az,Au,A v/*10000*/)_(a8(A(x,y,z,u,v),5))
