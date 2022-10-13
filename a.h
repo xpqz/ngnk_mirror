@@ -79,7 +79,7 @@ A1 _R,aA1,asc,cA,cB,cC,cD,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,g
  qpri,raz,rev,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
 A2 _1,aA2,aM,w1,add,am,apd,cat,cat11,cst,dct,dex,dot,dvd,eql,exc,fil,f1,fnd,gtn,hsh,ide,i1,ltn,mnm,bng,mtc,mul,mxm,que,sub,und,v0c,v1c;
 A3 _2,aA3,w2,arf,arp,ars,cpl,r2,try;A4 ara,a4,d4;AX _8,w8,e8,f8,prj,run;AA a8,d8,ins,no8;AL aA,aB,aC,aD,aI,aL,aS,al,az,cls,rndD,tilL;ALA drp,room,rsz;AAL ii;AQ aCz,bsl,bsm,die,evs,pk,sym;
-A a2t(A,A,C),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),evK(A*,Q,OA*,I),evK1(A*,Q,A),evK2(A*,Q,A,A),
+A a2t(A,A,C),ad(D),adm(A,A,I),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(C,N),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),k8(A*,Q,OA*,I),k1(A*,Q,A),k2(A*,Q,A,A),
  jc(C,A),jC(Q,N,A),kv(A*),l2f(A2,A,A),mf(I,N),pen(A,A1*),sur(C,A,C),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
 V cyc(V*,N,N),dir(I,void(*)(V*,Q),V*),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),*memmem(OV*,N,OV*,N),*memmove(V*,OV*,N),
  *memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),OFP0(A),OFP1(A),repl(),tilV(V*,L,I);
@@ -143,9 +143,9 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define WD __builtin_inf()
 #define NL (1ll<<63)
 #define WL (~NL)
-#define K(s,a...) ({S A f;evK(&f,s,A(a),LEN(A(a)));})
-#define K1(s,x)   ({S A f;evK1(&f,s,x);})
-#define K2(s,x,y) ({S A f;evK2(&f,s,x,y);})
+#define K(s,a...) ({S A f;k8(&f,s,A(a),LEN(A(a)));})
+#define K1(s,x)   ({S A f;k1(&f,s,x);})
+#define K2(s,x,y) ({S A f;k2(&f,s,x,y);})
 
 #define EA h(c,compile)h(d,domain)h(i,index)h(l,length)h(n,nyi)h(o,io)h(p,parse)h(r,rank)h(s,stack)h(t,type)h(v,value)h(z,limit)
 #define h(t,m) A0 e##t##0;A1 e##t##1;A2 e##t##2;AA e##t##8;
