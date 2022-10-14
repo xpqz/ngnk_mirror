@@ -9,7 +9,7 @@ k:k-dflt
 w:k o/w/fs.h o/w/k.wasm o/w/index.html $(patsubst w/x/%.k,o/w/x/%.k,$(wildcard w/x/*.k))
 h:w o/w/http;cd o/w;./http
 
-k-dflt:; $(MAKE) a N=$@ R=k  O='-O3 -march=native -nostdlib -ffreestanding'                L=''
+k-dflt:; $(MAKE) a N=$@ R=k  O='-g -O3 -march=native -nostdlib -ffreestanding'                L=''
 k-libc:; $(MAKE) a N=$@ R=k  O='-O3 -march=native -Dlibc'                                  L='-lm'                          STRIP=true
 k-obsd:; $(MAKE) a N=$@ R=k  O='-fPIC -Dlibc=1 -DSYS_getcwd=304 -Dstrchrnul=strchr'        L='--static -fno-pie -lm -lc'    STRIP=true
 k-wasi:; $(MAKE) a N=$@ R=k  O='-O3 -target wasm32-wasi -nostdlib -ffreestanding -Dwasm -U__SIZEOF_INT128__ -I/usr/include' STRIP=true CC=clang
