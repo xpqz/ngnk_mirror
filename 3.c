@@ -24,7 +24,7 @@ S A3(mnms,/*010*/P((!y||ytz)&&ztZ,z=inv(zR);z(inv(mxms(MXM,y?az(~gl(y)):0,z))))_
 S A3(eqls,/*010*/Lv=y?gl(y):~*zL;Au=aB(zn);i4(zw,zn,ub=v=v==zb,ub=v=v==zh,ub=v=v==zi,ub=v=v==zl)u)
 A3(ars,/*010*/Q(xtv)Q(xv<11)Q(!y||ytzc)Q(ztZC)T(&dexs,adms,subs,adms,___s,___s,mnms,mxms,___s,___s,eqls)[xv](x,y,z))
 
-S A3(dexp,/*010*/cat11(y,drp(-1,zR)))
+S A3(dexp,/*010*/cat11(y?y:_R(cn[zt]),drp(-1,zR)))
 S A3(___p,/*010*/v2[xv](z,dexp(av,y,z)))
 S A3(modp,/*010*/e2f(mod,z,dexp(av,y,z)))
 S A3(mxmp,/*010*/I w=zw;Lv=gl(y),l=-1ll<<(8<<w)-1,h=~l;MAX(v,l);Nn=zn;P(v>=h,rsz(n,az(v)))y=an(tB+zw,zn);S4(w,zB[-1]=v,zH[-1]=v,zI[-1]=v,zL[-1]=v)Nj=n-1;
