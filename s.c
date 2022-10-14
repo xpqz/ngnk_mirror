@@ -36,7 +36,11 @@ S A pre(Cc,Ax)_(cat11(ac(c),x))A sur(Cc,Ax,Cd)_(apc(pre(c,x),d))S A1(par,sur('('
 S A1(kss,Nn=xn+2;Iv=1;i(xn,I e=esc(xc)>=0;n+=e;v&=e||LH(32,xc,126))P(!v,cat11(aCz("0x"),hex(x)))Ay=aC(n);C*s=yV;*s++='"';i(xn,Ij=esc(xc);I(j<0,*s++=xc)E(*s++='\\';*s++="0tnr\"\\"[j]))*s++='"';x(y))
 S A ksp(Ax,Qp,Qq,Qs)_(Ct=TS[xt];(SC(p,t)?xn==1:SC(q,t)?xn<2:!!SC(s,t))?par(kst(x)):kst(x))A1(ksl,ksp(x,"AC","IDS","Mmqruvw"))A1(ksr,ksp(x,"","","qruvw"))A1(ksw,ksp(x,"AC","IDS","Mmpqw"))
 A1(kst,P(xtT&&xn==1,pre(',',ksr(fir(x))))XA(par(jc(';',ek(x))))Xc(kss(enl(x)))XC(kss(x))XZD(xn?jc(32,e1f(str,x)):x(aCz(xtD?"0#0n":"!0")))XS(xn?raz(ek(x)):x(aCz("0#`")))XM(pre('+',kst(flp(x))))
- Xm(Ay=kv(&x);cat11(apc(ksl(x),'!'),ksr(y)))Xzd(str(x))Xs(x=str(x);Iv=1;i(xn,v&=c09(xc)||cAz(xc))I(!v,x=kst(x);I(*xC==',',x=drp(1,x)))pre('`',x))Xo(x(_R(xx)))
+ Xm(Ay=kv(&x);cat11(apc(ksl(x),'!'),ksr(y)))Xzd(str(x))
+ Xs(x=str0(str(x));
+  I(xC+xn-pID(xC),x=kst(x);I(*xC==',',x=drp(1,x)))
+  pre('`',x))
+ Xo(x(_R(xx)))
  Xp(x=val(x);Ay=xx,z=xy;P(xn==3&&((ytv&&y-av)||ytr)&&xy-PLH&&xz==PLH,z=ksl(zR);y=kst(fir(x));cA9(zC[zn-1])&&(cA9(*yC)||*yC==':'||*yC=='-')?cts(cat11(apc(y,'['),z),";]",2):cat11(z,y))
   x=ek(x);Nm=_n(xx);x=apc(jc(';',x),']');Q(xr==1);xC[m]='[';x)
  Xq(raz(ek(val(x))))Xr(x=val(x);Ay=_R(xy);cat11(ksw(fir(x)),str(y)))Xw(aCn(&"':/:\\:"[xv%3*2],1+xv/3))P(x==PLH,oC)Xu(apc(kst(au^av^x),':'))Xv(Ay=aCn(vc+xv,1);xv<20?y:apc(y,':'))aCz("???"))

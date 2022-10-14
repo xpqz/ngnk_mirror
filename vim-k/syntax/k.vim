@@ -1,6 +1,6 @@
 if exists('b:current_syntax')|fini|en|sy clear|sy case match |sy sync fromstart |if&l:syn==#'k'|setl com=:/ isk=a-z,A-Z,48-57 isi=a-z,A-Z,48-57|en
 sy match  k_e  /\i\+\|\S/
-sy match  k_s  /\(`\(\I\i*\>\|:[A-Za-z0-9.:/]*\)\=\)\+/         nextgroup=@k_vw                         |hi link k_s       constant
+sy match  k_s  /\c`\([a-zа-яё][a-zа-яё0-9]*\)\=/                nextgroup=@k_vw                         |hi link k_s       constant
 sy match  k_w  /[\\\/']:\=/                                     nextgroup=k_w   contained               |hi link k_w       operator
 sy match  k_c1 /.\+/                                                            contained               |hi link k_c1      special
 sy match  k_c0 /\\\(\w\+\|\\\|$\)/                              nextgroup=k_c1                          |hi link k_c0      statement
@@ -12,7 +12,7 @@ sy match  k_q  /\\./                                                            
 sy match  k_u  /[+\-*%!&|<>=~,^#_$?@.\x80-\U000fffff:]:\=/      nextgroup=k_w                           |hi link k_u       function
 sy match  k_v  /[+\-*%!&|<>=~,^#_$?@.\x80-\U000fffff]:\=/       nextgroup=k_w   contained               |hi link k_v       type
 sy match  k_n  /\v-=\d+([bNnw]|(\.\d+)=(e-=\d+)=)=/             nextgroup=@k_vw                         |hi link k_n       number
-sy match  k_i  /\I\i*\(\.\=\I\i*\)*/                            nextgroup=@k_vw                         |hi link k_i       variable
+sy match  k_i  /\c[a-zа-яё][a-zа-яё0-9]*\(\.[a-zа-яё][a-zа-яё0-9]*\)*/ nextgroup=@k_vw                  |hi link k_i       variable
 sy match  k_x  /\<[oxyz]\>/                                     nextgroup=@k_vw                         |hi link k_x       special
 sy match  k_string /\<0x\(\x\x\)*\>/                            nextgroup=@k_vw
 sy match  k_u  /\d::\=/                                         nextgroup=k_w
