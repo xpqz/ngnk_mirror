@@ -6,18 +6,19 @@ usage: rlwrap ./k repl.k
 try online: https://ngn.codeberg.page/k or https://ngn.bitbucket.io/k
 
 related projects:
-https://github.com/gitonthescene/ngnk-mode   - emacs mode
-https://github.com/razetime/ngn-k-tutorial   - tutorial (work in progress)
-https://xpqz.github.io/kbook/                - book (work in progress)
-https://github.com/secwang/ngnkcart          - searchable database of snippets
-https://github.com/xpqz/ngnk_mirror          - continuous integration for osx
-https://github.com/traws0/ngnk-windows       - windows port
-https://github.com/nathyong/ngnk-nix         - nix package
-https://code.golf/rankings/holes/all/k/bytes - code golf
-https://copy.sh/k/                           - aoc20 and aoc21 solutions
-https://github.com/chrispsn/aoc2017          - aoc17 solutions
-https://github.com/xpqz/dyalogk              - dyalog competition solutions
-https://codeberg.org/CptJimKirk/kpl          - kpl, apl-like extensions for k
+https://github.com/gitonthescene/ngnk-mode     - emacs mode
+https://github.com/razetime/ngn-k-tutorial     - tutorial (work in progress)
+https://xpqz.github.io/kbook/                  - book (work in progress)
+https://github.com/secwang/ngnkcart            - searchable database of snippets
+https://github.com/xpqz/ngnk_mirror            - continuous integration for osx
+https://github.com/traws0/ngnk-windows         - windows port
+https://github.com/nathyong/ngnk-nix           - nix package
+https://code.golf/rankings/holes/all/k/bytes   - code golf
+https://copy.sh/k/                             - aoc20 and aoc21 solutions
+https://github.com/chrispsn/aoc2017            - aoc17 solutions
+https://github.com/xpqz/dyalogk                - dyalog competition solutions
+https://codeberg.org/CptJimKirk/kpl            - kpl, apl-like extensions for k
+https://github.com/SirBogman/codemirror-lang-k - codemirror lezer parser
 
 
 0.c syscalls and main()                 k.h  embedding api
