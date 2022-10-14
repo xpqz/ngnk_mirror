@@ -30,9 +30,9 @@ h.c shape-related: x#y ,x x,y           x/   example for using libk.so
 o.c order and equivalence               o/   build output
 s.c string formatting: $x `k@x          l/   k libraries
 f.c find, random: x?y                   g/   https://codegolf.stackexchange.com/
-1.c monadic arithmetic                  e/   https://projecteuler.net/
-2.c dyadic  arithmetic except + and *   dy/  https://problems.tryapl.org/
-3.c dyadic  arithmetic + and *          aoc/ https://adventofcode.com/
+1.c arithmetic monadic verbs            e/   https://projecteuler.net/
+2.c arithmetic dyadic  verbs            dy/  https://problems.tryapl.org/
+3.c arithmetic       adverbs            aoc/ https://adventofcode.com/
 4.c prime sieve
 i.c input/output
 v.c the rest of the verbs
