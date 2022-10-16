@@ -98,7 +98,7 @@ enum            {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,t
               TX[]={0,tB,tB,tH,tI,tL,tD,tB,tI,tB,tB, 0, 0,tD,tB,tI,tB,tB,tB,tB,tB,tB,tB,tB},/*type for arith conformance*/\
               Tk[]="0""L""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*types for k.h             */
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
-#define TF(t) ((t)>=to)
+#define TU(t) ((t)>=to)
 
 #define _E(x) _C(x)[-14]       //adverb(for tr)                             //header bytes: Ut.orrrrnnnnnnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
 #define _k(x) _C(x)[-13]       //arity(for funcs)                           //tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
@@ -110,7 +110,7 @@ enum            {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,t
 #define _t(x) ({A x_=(x);Ct=_t0(x_);t?t:_t1(x_);}) //type
 #define _t0(x) ((x)>>56)       //type(tag)
 #define _t1(x) _C(x)[-15]      //type(hdr)
-#define _tF(x) TF(_t(x))       // func?
+#define _tU(x) TU(_t(x))       // func?
 #define _tP(x) TP(_t(x))       // packed?
 #define _tR(x) (_w(x)==4)      // ref?
 #define _tT(x) (_t(x)<tM)      // list?

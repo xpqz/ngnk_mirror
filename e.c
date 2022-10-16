@@ -9,7 +9,7 @@ NI V eQ(Qs,Nn,Ni){I(++d>=5,I(d==5,Mc(r," ..\n",4);r+=4)return)
  *r++=32;Mc(r,p,q-p);I(p<=t-h,*r=r[1]='.')I(q>t+h,r[q-p-2]=r[q-p-1]='.')r+=q-p;*r++=10;
  Ms(r,32,t-p+1);r+=t-p+1;*r++='^';*r++=10;}
 NI V eS(Ax/*0*/,Ni)_(eQ(xV,xn,i))
-A3(try,/*001*/x=dot(x,yR);P(x,z(x))I(ztF&&zK<3,z=z1(aCn(b,r-b)))r=b;d=0;z)
+A3(try,/*001*/x=dot(x,yR);P(x,z(x))I(ztU&&zK<3,z=z1(aCn(b,r-b)))r=b;d=0;z)
 A1(epr,write(2,b,r-b);r=b;x)
 A1(err,XC(x=str0(x);err1(x,xV))P(x==au,aCn(b,r-b))err1(x,"err"))
 NI A die(Qs)_(In=Sn(s);Cv[n+1];Mc(v,s,n);v[n]=10;write(2,v,n+1);exit(1);0)
