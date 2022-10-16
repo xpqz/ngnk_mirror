@@ -30,7 +30,7 @@ Types:
 list atom
  `A        generic list   ()   ,"ab"   (0;`1;"2";{3};%)
  `I   `i   int            0N -9223372036854775807 01b
- `D   `d   float          -0w -0.0 0.0 0w 1.2e308 0n
+ `F   `f   float          -0w -0.0 0.0 0w 1.2e308 0n
  `C   `c   char           "a"   0x6263   "d\0\"\n\r\t"
  `S   `s   symbol         `   `a   `"file.txt"   `b`cd`"ef"
  `M   `m   table&dict     +`a`b!(0 1;"23")   (0#`)!()
@@ -41,7 +41,7 @@ list atom
       `u   monadic verb   +:   0::
       `v   dyadic  verb   +   0:
       `w   adverb         '   /:
-      `e   external func
+      `x   external func
 --------------------------------------------------------------------------------
 \:
 I/O verbs
@@ -128,7 +128,7 @@ s$y int       `I$"-12" -> -12
 X?y find      "abcde"?"bfe" -> 1 0N 4
 i?x roll      3?1000 -> 11 398 293   1?0 -> ,-8164324247243690787
 i?x deal      -3?1000 -> 11 398 293 /guaranteed distinct
- @x type      @1 -> `b   @"ab" -> `C   @() -> `A   @(@) -> `v
+ @x type      @1 -> `i   @"ab" -> `C   @() -> `A   @(@) -> `v
 x@y apply(1)  {x+1}@2 -> 3   "abc"@1 -> "b"   (`a`b!0 1)@`b -> 1
  .S get       a:1;.`a -> 1   b.c:2;.`b`c -> 2
  .C eval      ."1+2" -> 3
