@@ -90,21 +90,21 @@ EX I gn,gk[];EX C gp[32];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2
 
 //                  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
 //                    () ,3 ,4 ,5 ,6 ,d "" ,` +!  !  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
-enum            {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw,te,tn};
+enum            {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
 #define T_ OC TS[]="?""A""I""I""I""I""D""C""S""M""m""i""i""d""c""s""o""p""q""r""u""v""w""e",/*type symbols              */\
               TZ[]={0, 8, 1, 2, 4, 8, 8, 1, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8},/*item size in bytes        */\
               Tz[]={0, 4, 0, 1, 2, 3, 3, 0, 2, 4, 4, 3, 3, 3, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3},/*log2(size) or 4=reftypes  */\
               TT[]={0,tA,tB,tH,tI,tL,tD,tC,tS,tM,tM,tI,tL,tD,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
               TX[]={0,tB,tB,tH,tI,tL,tD,tB,tI,tB,tB, 0, 0,tD,tB,tI,tB,tB,tB,tB,tB,tB,tB,tB},/*type for arith conformance*/\
               Tk[]="0""L""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*types for k.h             */
-#define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<te)>>(t)&1)
+#define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
 #define TF(t) ((t)>=to)
 
 #define _E(x) _C(x)[-14]       //adverb(for tr)                             //header bytes: Ut.orrrrnnnnnnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
 #define _k(x) _C(x)[-13]       //arity(for funcs)                           //tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
 #define _m(x) ((I*)_V(x))[-7]  //shadow refcount                            // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
 #define _n(x) _L(x)[-1]        //length                                     // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
-#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13]) //srcoffset   // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx te
+#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13]) //srcoffset   // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
 #define _q(x,y) (x=apd(x,y))   //append                                     // ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
 #define _r(x) ((I*)_V(x))[-3]  //refcount
 #define _t(x) ({A x_=(x);Ct=_t0(x_);t?t:_t1(x_);}) //type
@@ -131,7 +131,7 @@ enum            {tA=1,tB,tH,tI,tL,tD,tC,tS,tM,tm,ti,tl,td,tc,ts,to,tp,tq,tr,tu,t
 #define ac(v) (Lt(tc)|(UI)(C)(v))
 #define ai(v) (Lt(ti)|(UI)(v))
 #define as(v) (Lt(ts)|(UI)(v))
-#define ae(v,k) (Lt(te)|(UL)(k)<<48|(UL)(v)<<16>>16)
+#define ax(v,k) (Lt(tx)|(UL)(k)<<48|(UL)(v)<<16>>16)
 #define V_ A1*v1[]={sam,flp,neg,fir,sqr,til,whr,rev,asc,dsc,grp,not,enl,nul,len,flr,str,unq,typ,val,u0c,u1c,sam,sam,las,out};\
            A2*v2[]={dex,add,sub,mul,dvd,bng,mnm,mxm,ltn,gtn,eql,mtc,cat,exc,hsh,und,cst,que, _1,dot,v0c,v1c,dex,dex,dex,dex};\
            AA*v8[]={no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,ins, a8, d8,no8,no8,no8,no8,no8,no8};\

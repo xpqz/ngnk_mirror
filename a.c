@@ -1,5 +1,5 @@
 #include"a.h"// ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S A1(sam,x)V_;T_;S A1(mkn,XmMA(e1f(mkn,x))Ay=_R(cn[xt]);Xt(x(y))rsz(xN,x(y)))I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xte?x>>48&7:xtF?xk:0)//_K:arity
+S A1(sam,x)V_;T_;S A1(mkn,XmMA(e1f(mkn,x))Ay=_R(cn[xt]);Xt(x(y))rsz(xN,x(y)))I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xtx?x>>48&7:xtF?xk:0)//_K:arity
 A2(ide,/*00*/x==CAT?_R(ce[ce[yt]?yt:tA]):xtv&&xv<11&&xv?_R(ci[ytdD][T((C)4,0,0,1,1,2,2,3,3,2,4)[xv]]):mkn(fir(yR)))
 AX(prj,XmMA(x8(a,n))Ik=max(n,xK);i(n,k-=a[i]!=PLH)x=(xtp?val:aA1)(xR);Ii=0,j=1;W(i<n&&j<xn,I(xA[j]==PLH,xA[j]=a[i++])j++)W(i<n,xq(a[i++]))P(xn>9,ez1(x))AT(tp,AK(k,x)))
 S A iM(Ax,Li,AAL*f)_(Q(xtM);Ay=xy,z=aA(yn);Q(ytA);j(zn,zA[j]=f(yA[j],i))am(_R(xx),sqz(z)))
@@ -24,14 +24,14 @@ S A1(qa,Ay=oA;Q*p=argv;W(*p,yq(aCz(*p++)))y(y1(x)))S A1(qe,Ay=oS,z=oA;Q*e=env;W(
 S A1(qx,exit(xtz?gl(x):1);0)S A1(qj,XC(Cb[PG];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))XA(e1f(qj,x))et1(x))S A1(qp,XC(x=str0(x);x(pk(xV)))et1(x))S A1(qr,x(ai(xr)))S A1(qt,x(al(now())))
 A2(_1,/*01*/P(!xtt,i1(x,y))S O C s[][4]={"","k","j","p","t","x","hex","err","argv","env","exit","js","prng","sin","cos","exp","ln","r","pri"};
  Xs(Li=fI(s,LEN(s),xv);T(&ser,kst,js1,qp,qt,frk,hex,err,qa,qe,qx,qj,prng,ksin,kcos,kexp,klog,qr,qpri,ed1)[i<0?LEN(s):i](y))
- Ik=xK;P(1<k,k==2&&!xtp?prj(x,A(y,PLH),2):prj(x,&y,1))Xo(run(x,&y,1))Xr(w1(x,y))Xe(((A1*)(x<<16>>16))(y))
+ Ik=xK;P(1<k,k==2&&!xtp?prj(x,A(y,PLH),2):prj(x,&y,1))Xo(run(x,&y,1))Xr(w1(x,y))Xx(((A1*)(x<<16>>16))(y))
  Xp(P(xn+k>9,er1(y))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&!j?j++,y:_R(xA[i+1]))I l=max(0,1-j);Mc(b+m,&y,8*l);_8(xx,b,m+l))
  Xq(_1(xx,N(_1(xy,y))))P(1>k,er1(y))Xu(v1[xv](y))Xw(AK(0<xv&&xv<4&&yK==2?1:ytF?yK:1,AW(xv,aV(tr,1,&y))))et1(y))
 A3(_2,/*001*/P(!xtt,i2(x,y,z))A a[]={y,z};Ik=xK;P(2<k,yR;prj(x,a,2))Xv(v2[xv](y,z))Xo(yR;run(x,a,2))Xr(w2(x,y,z))Xw(xv?en1(x):AK(zK,AT(tq,aA2(yR,z))))
  Xp(P(xn+k>9,er1(z))yR;Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<2?a[j++]:_R(xA[i+1]))I l=max(0,2-j);Mc(b+m,a+j,8*l);_8(xx,b,m+l))
- Xq(_1(xx,N(_2(xy,y,z))))P(2>k,er1(z))Xe(((A2*)(x<<16>>16))(yR,z))et1(z))
+ Xq(_1(xx,N(_2(xy,y,z))))P(2>k,er1(z))Xx(((A2*)(x<<16>>16))(yR,z))et1(z))
 AX(_8,/*11..1*/Q(n)P(n==1,x1(*a))P(n==2,Ay=*a;y(x2(y,a[1])))P(!xtt,i8(x,a,n))Ik=xK;P(n<k,prj(x,a,n))Xo(run(x,a,n))Xv(x=v8[xv](a,n);mrn(n-1,a+1);x)Xr(w8(x,a,n))Xq(_1(xx,N(_8(xy,a,n))))
- Xp(P(xn+k>9,er8(a,n))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<n?a[j++]:_R(xA[i+1]))I l=max(0,n-j);Mc(b+m,a+j,8*l);_8(xx,b,m+l))P(n>k,er8(a,n))Xw(en8(a,n))Xe(en8(a,n))et8(a,n))
+ Xp(P(xn+k>9,er8(a,n))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<n?a[j++]:_R(xA[i+1]))I l=max(0,n-j);Mc(b+m,a+j,8*l);_8(xx,b,m+l))P(n>k,er8(a,n))Xw(en8(a,n))Xx(en8(a,n))et8(a,n))
 A1(jS,cS(jc('.',str(x))))//join symbols with "."
 A1(val,XS(P(!xn,Ax=oS,y=oA;i(gn,I(gv[i],xq(as(gk[i]));yq(_R(gv[i]))))am(x,y))val(jS(x)))Xs(Li=fI(gk,gn,xv);i<0||!gv[i]?ev0():_R(gv[i]))XC(x=str0(x);x(evs(xV)))Xc(evs((V*)&x))XmM(x(_R(xy)))
  XA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez1(x))x=mut(x);Ay=_8(xx,&xy,xn-1);AN(1,x);x(y))Xr(cat11(AT(tA,mut(x)),aw+xE))P(LH(tu,xt,tw),ai(xv))P(LH(to,xt,tq),AT(tA,mut(x)))et1(x))
