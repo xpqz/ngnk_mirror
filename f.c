@@ -9,8 +9,8 @@ S V shf(L*r,Nn){i(n,Ij=rm(i+1);SWP(r[i],r[j]))}
 S A ro(UL n,UL m)_(Ct=m?tZ(m-1):tL;Ax=an(t,n);P(t==tB,i(n,xb=rm(m))x)P(t==tH,i(n,xh=rm(m))x)P(t==tI,i(n,xi=rm(m))x)i(n,xl=rnd1())I(m,i(n,xl=(UL)xl%m))x)
 S A de(UL n,UL m)_(P(n>m,el0())Ax=ro(n,0);i(n,UL k=m-n+i;xl%=k+1;j(i,B(xL[j]==xl,xl=k)))shf(xV,n);x)
 S A rd(Ln,Lm)_(P(m<0,ed0())n<0?de(n-NL?-n:m,m):ro(n,m))
-AL(rndD,Ay=al(1023ll<<52);add(ai(-1),AT(tD,y(add(y,N(rd(n,1ll<<52)))))))
-S ALA(rnd,Xz(rd(n,gl(x)))Xc(cC(add(xv-'A'?ac('a'):x,Nx(rd(n,26)))))Xd(x(mul(x,Nx(rndD(n)))))XMT(x(x1(Nx(rd(n,xN)))))et1(x))
+AL(rndF,Ay=al(1023ll<<52);add(ai(-1),AT(tF,y(add(y,N(rd(n,1ll<<52)))))))
+S ALA(rnd,Xz(rd(n,gl(x)))Xc(cC(add(xv-'A'?ac('a'):x,Nx(rd(n,26)))))Xf(x(mul(x,Nx(rndF(n)))))XMT(x(x1(Nx(rd(n,xN)))))et1(x))
 
 #define h(T) NI L f##T(OV*p,Nn,Lv)_(O T*a=p,q=v;P(v-q||!n,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)\
              NI V F##T(OV*p,Nm,TY(fB)f,OV*q,Nn,L*r){O T*a=q;i(n,r[i]=f(p,m,a[i]))}\

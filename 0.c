@@ -152,7 +152,7 @@ I getdents(If,char*s,Nn)_(-1)I ftruncate(If,off_t o)_(-1)I wait4()_(-1)
 
 //mathematical functions
 #if (!defined(wasm)||defined(__wasi__))&&!defined(libc)
- D sin(Dv)_(ND)D cos(Dv)_(ND)D log(Dv)_(ND)D exp(Dv)_(ND)
+ F sin(Fv)_(NF)F cos(Fv)_(NF)F log(Fv)_(NF)F exp(Fv)_(NF)
 #endif
 
 //`js@

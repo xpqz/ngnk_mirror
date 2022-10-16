@@ -1,14 +1,14 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-I si(Qs,Iv)_(SC0(s,v)-(C*)s)S D p10(In)_(Dv=1;i(n,v*=10)v)S Q pw(Qs)_(W(*s==32,s++)s)
+I si(Qs,Iv)_(SC0(s,v)-(C*)s)S F p10(In)_(Fv=1;i(n,v*=10)v)S Q pw(Qs)_(W(*s==32,s++)s)
 S I id(UC c)_(cAz(c)|((c|1)==0xd1)<<1)S I id1(Cc)_(id(c)|c09(c))Q pID(Qs)_(W(1,Ii=id1(*s);B(!i)s+=i)s)
 L pu(Q*p)_(Qs=*p;Lv=0;Cc=*s;W(c09(c),v=10*v+c-'0';c=*++s)*p=s;v)L pl(Q*p)_(Im=**p=='-';*p+=m;(1-2*m)*pu(p))
-S D pdu(Q*p)_(UL v=pu(p);Qs=*p;Cc=*s;P(c=='n'||c=='w',(*p)++;c=='n'?ND:WD)I e=0;
+S F pfu(Q*p)_(UL v=pu(p);Qs=*p;Cc=*s;P(c=='n'||c=='w',(*p)++;c=='n'?NF:WF)I e=0;
  I(c=='.',c=*++s;W(c09(c),I(v<(1ull<<63)/10,v=10*v+c-'0';e--)c=*++s))I(c=='e',s++;e+=pl(&s))*p=s;e<0?v/p10(-e):v*p10(e))
-S D pd(Q*p)_(Im=**p=='-';(*p)+=m;Dv=(1-2*m)*pdu(p);(*p)+=**p=='f';v)
+S F pf(Q*p)_(Im=**p=='-';(*p)+=m;Fv=(1-2*m)*pfu(p);(*p)+=**p=='f';v)
 S Qs,s0;S I k;S I num(Qs)_(c09(s[*s=='-']))
 S A0(pZ,Qp=s;W(*p-'0'<2u,p++)P(*p=='b',Ax=aB(p-s);i(xn,xb=*s++&1)s++;x)
  Ax=oL;W(1,Lv=pl(&s);I(!v&&*s=='N',v=NL;s++)x=apv(x,&v);Qp=pw(s);B(p==s||!num(p))s=p)sqzZ(x))
-S A0(pD,Ax=oD;W(1,x=apv(x,(D[]){pd(&s)});Qp=pw(s);B(p==s||!num(p))s=p)x)
+S A0(pF,Ax=oF;W(1,x=apv(x,(F[]){pf(&s)});Qp=pw(s);B(p==s||!num(p))s=p)x)
 S A0(pC,Ax=oC;Cc=*++s;W(c&&c-'"',I(c=='\\',c=*++s;Ii=si("tnr0",c);I(i<4,c="\t\n\r"[i]))x=apc(x,c);c=*++s)P(!c,ep1(x))c=*++s;x)
 S C ph()_(Cc=*s;c09(c)?c-'0':c-'a'<6u?c+10-'a':16)
 S A0(p0x,Ax=oC;s+=2;W(1,Cc=ph();P(c>15,x)s++;Cd=ph();P(d>15,ep1(x))s++;x=apc(x,c<<4|d))x)
@@ -24,7 +24,7 @@ S A pt(C*v)_(Cc=*s;P(c=='`',s++;Ax=pS();x&&xn>1?enl(x):x)P(c=='"',p1(pC()))P(c==
  P(c09(c)&&s[1]==':',I u=s[2]==':';s+=2+u;Ii=20+c-'0';P(i>25,ep0())*v=1;AT(tv-u,i))
  P(c=='0'&&s[1]=='x',p1(p0x()))
  P(num(s)&&(c-'-'||s==s0||(!id1(s[-1])&&si(")]}\"",s[-1])==4)),L d=0;Qp=s;c=*p;
-  W(1,p+=*p==32;B(!num(p))p+=*p=='-';c=*p;B(!cA9(c))W(cA9(c)||c=='.'||c==':',d|=si(".nwef",c)<5;c=*++p))p1(d?pD():pZ()))
+  W(1,p+=*p==32;B(!num(p))p+=*p=='-';c=*p;B(!cA9(c))W(cA9(c)||c=='.'||c==':',d|=si(".nwef",c)<5;c=*++p))p1(d?pF():pZ()))
  P(c>>7,Qp=s;Ax=pP();*v=1;AO(p-s0,p1(x)))
  Ii=si("'/\\",c);P(i<3,c=*++s;I h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,PLH)I u=*++s==':';s+=u;*v=1;AT(tv-u,i))
 S A1(pm,Xv(x^au^av)XA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x) //monadify
