@@ -3,7 +3,7 @@
 #define hv(v,T,R,f) S R v##o##T(T x,T y)_(f)
 #define hc(v,f,g) hv(v,B,B,f)hv(v,H,B,f)hv(v,I,B,f)hv(v,L,B,f)hv(v,F,B,g)
 #define h(v,f)    hv(v,B,B,f)hv(v,H,H,f)hv(v,I,I,f)hv(v,L,L,f)hv(v,F,F,f)
-h(mnm,min(x,y))h(mxm,max(x,y))hc(ltn,x<y,qF(x,y)<0)hc(eql,x==y,*(L*)&x==*(L*)&y)
+h(mnm,min(x,y))h(mxm,max(x,y))hc(ltn,x<y,qf(x,y)<0)hc(eql,x==y,*(L*)&x==*(L*)&y)
 #undef h
 #define hV(f,T,R,e...) SN I f(OV*RE p,OV*RE q,V*RE s,Nn)_(O T*a=p,*b=q;R*r=s;e)
 #define h0(v,T,R) hV(v##0##T,T,R,*r=v##o##T(*a,*b);0)
