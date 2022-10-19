@@ -38,7 +38,7 @@ S ALA(ext/*n1*/,XMT(x)rsz(n,xtm?enl(x):x))A2(dct,/*01*/P(rnk(x)<0,ed1(y))x=ext(y
 ho(b,B)ho(h,H)ho(i,I)hn(l,L)hn(f,F)
 S C tZZ(Ax/*0*/)_(Xz(tZ(gl_(x)))Xf(tF)XZF(xt)tn)
 A adm(Ax,Ay,Iv/*01v*/)_(
- P(xti&&yti,Lm=xv,n=yv;az(v?m*n:m+n))
+ P(xti&&yti,az(v?xv*(L)yv:xv+(L)yv))
  P(xtz&&ytz,Lm=gl_(x),n=gl(y);az(v?m*n:m+n))
  XYmMA(e2f(v?mul:add,x,y))
  YcC(adm(x,cB(y),v))
