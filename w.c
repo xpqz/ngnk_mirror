@@ -64,7 +64,7 @@ S A2(binZ,/*01*/Q(xtZC)
   i(yn,Lv;S4(wy,v=yb,v=yh,v=yi,v=yl)*k=-1;k[1]=xn;S4(wx,,W(*k+1<k[1],Ii=*k+k[1]>>1;k[v<xh]=i),
                                                          W(*k+1<k[1],Ii=*k+k[1]>>1;k[v<xi]=i),
                                                          W(*k+1<k[1],Ii=*k+k[1]>>1;k[v<xl]=i))S4(wz,zb=*k,zh=*k,zi=*k,zl=*k))y(z))
- Yt(fir(binZ(x,enl(y))))YmMA(r2f(binZ,x,y))YF(x=x(cF(xR));binF(x,y))ed1(y))
+ Yt(fir(binZ(x,enl(y))))YmMA(r2f(binZ,x,y))YF(x=cF(xR);x(binF(x,y)))ed1(y))
 S A2(binF,/*01*/Q(xtF)YF(x=ofp(xR);x(binZ(x,ofp(y))))YZC(binF(x,N(cF(y))))Yt(fir(binF(x,enl(y))))YmMA(r2f(binF,x,y))ed1(y))
 S A2(bin,/*01*/XZC(binZ(x,y))XF(binF(x,y))Xm(_1(xx,bin(xy,y)))et1(y))
 A2(w1,/*01*/Q(xtr)Ii=xE;x=xx;SW(i,CR(0,Xt(e1(x,y))bin(x,y))CR(1,P(xtzZ||xtfF,dec(x,y))Xc(jc(xv,y))XC(jC(xV,xn,y))P(xK<2,cf(x,y))f1(x,y))
