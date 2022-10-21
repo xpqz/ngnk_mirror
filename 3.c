@@ -11,7 +11,6 @@ S A3(mmmf,/*010*/Ii=xv==7;P((y&&ytf)||ztF,Lv=ofpf1(y?gf(cF(y)):i?-WF:WF);z=cF(zR
 S A3(admf,/*010*/Ii=xv==3;Nn=zn;P((y&&ytf)||ztF,Fv=y?gf(cF(y)):i;z=cF(zR);af(ze(I(i,i(n,v*=zf))E(i(n,v+=zf))v)))Lv=y?gl(y):i;I(i,i4(zw,n,v*=zb,v*=zh,v*=zi,v*=zl))E(i4(zw,n,v+=zb,v+=zh,v+=zi,v+=zl))az(v))
 S A3(subf,/*010*/y=y?neg(y):zn?mul(ai(-2),ii(z,0)):ai(0);neg(admf(ADD,y,z)))
 A3(arf,/*010*/Q(xtv)Q(xv<11)Q(!y||ytzfc)Q(ztZFC)T(&dexf,admf,subf,admf,___f,___f,mmmf,mmmf,___f,___f,___f)[xv](x,y,z))
-V mmm(Ax/*0*/,L*r){Q(xtZC)r[0]=gl(mmmf(MNM,0,x));r[1]=gl(mmmf(MXM,0,x));}
 
 S A3(___s,/*010*/Ni=!y;Au;I(i,y=ii(z,0);u=enl(yR))E(yR;u=oB)Nn=zn;W(i<n,y=y(x2(y,ii(z,i++)));P(!y,u(0))uq(yR))y(u))
 S A3(dexs,/*010*/y?y(zR):zR)

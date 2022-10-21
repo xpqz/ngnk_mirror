@@ -2,7 +2,9 @@
 I mtc_(Ax,Ay/*00*/)_(P(x==y,1)P(xtz&&ytz,gl_(x)==gl_(y))P(xts&&yts,xv==yv)P(xtZ&&ytZ&&xt-yt&&xn==yn,xR;yR;sup(&x,&y);x(y(!MQ(xV,yV,xn*TZ[xt]))))P(xt-yt||xtP||(xtr&&xE-yE)||xn-yn,0)
  P(!xtR,i(xn*xW,P(xc-yc,0))1)P(LH(tB,xt,tS)&&xt==yt&&xn==yn,!MQ(xV,yV,xn*TZ[xt]))i(xn,P(!mtc_(xa,ya),0))1)
 A2(mtc,/*01*/y(ai(mtc_(x,y))))
-S O UL o=(-1ull>>12)-1;S L t(Lv)_(v^(UL)(v>>63)>>1)S L ofp1(Lv)_(t(v)+o)S L ofp0(Lv)_(t(v-o))A1(ofp,Q(xtfF);x=mut(x);OFP1(x);AT(xt-tf+tl,x))//ordered floating point
+S O UL o=(-1ull>>12)-1;S L t(Lv)_(v^(UL)(v>>63)>>1)S L ofp1(Lv)_(t(v)+o)S L ofp0(Lv)_(t(v-o))//ordered floating point
+A1(of1,Q(xtfF);x=mut(x);OFP1(x);AT(xt-tf+tl,x))
+A1(of0,Q(xtlL);x=mut(x);OFP0(x);AT(xt+tf-tl,x))
 V OFP1(Ax/*!*/){Q(xtfF||xtlL)i(PD(xn,xL),xl=ofp1(xl))}L ofpf1(Fv)_(ofp1(*(L*)&v))
 V OFP0(Ax/*!*/){Q(xtfF||xtlL)i(PD(xn,xL),xl=ofp0(xl))}F ofpf0(Lv)_(*(F*)T(ofp0(v)))
 A1(ordF,Q(xtfF);x=AT(xt-tF+tL,mut(x));OFP1(x);x)
