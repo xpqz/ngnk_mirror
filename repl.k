@@ -63,6 +63,7 @@ Verbs:    : + - * % ! & | < > = ~ , ^ # _ $ ? @ . 0: 1:
 notation: [c]har [i]nt [n]umber(int|float) [s]ymbol [a]tom [d]ict
           [f]unc(monad) [F]unc(dyad) [xyz]any
 special:  var:y     set    a:1;a -> 1
+          var::y    global a:1;{a::2}[];a -> 2
           (v;..):y  unpack (b;(c;d)):(2 3;4 5);c -> 4
           :x        return {:x+1;2}[3] -> 4
           $[x;y;..] cond   $[0;`a;"\0";`b;`;`c;();`d;`e] -> `e
