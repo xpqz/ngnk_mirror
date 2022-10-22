@@ -15,22 +15,12 @@ S ALA(ext/*n1*/,XMT(x)rsz(n,xtm?enl(x):x))A2(dct,/*01*/P(rnk(x)<0,ed1(y))x=ext(y
 #define hn(t,T)          hN(a##t##T,T,0,+)hN(a##T##T,T,1,+)hN(m##t##T,T,0,*)hN(m##T##T,T,1,*)
 ho(b,B)ho(h,H)ho(i,I)hn(l,L)hn(f,F)
 S C tZZ(Ax/*0*/)_(Xz(tZ(gl_(x)))Xf(tF)XZF(xt)tn)
-A adm(Ax,Ay,Iv/*01v*/)_(
- P(xti&&yti,az(v?xv*(L)yv:xv+(L)yv))
- P(xtz&&ytz,Lm=gl_(x),n=gl(y);az(v?m*n:m+n))
- XYmMA(e2f(v?mul:add,x,y))
- YcC(adm(x,cB(y),v))
- XcC(y(adm(y,cB(xR),v)))
- P(xtfF-ytfF,x=Ny(cF(xR));y=Nx(cF(y));x(adm(x,y,v)))
- Ct=max(tZZ(x),tZZ(y));P(t==tn,et1(y))
- xR;x=Ny(cT[t](x));y=Nx(cT[t](y));Ik=2*xtT+ytT;
- P(!k,Xf(af(v?gf(x)*gf(y):gf(x)+gf(y)))az(v?gl(x)*gl(y):gl(x)+gl(y)))
- I(k==2||(k==3&&xr==1),SWP(x,y))
+A adm(Ax,Ay,Iv/*01v*/)_(P(xti&&yti,az(v?xv*(L)yv:xv+(L)yv))P(xtz&&ytz,Lm=gl_(x),n=gl(y);az(v?m*n:m+n))XYmMA(e2f(v?mul:add,x,y))YcC(adm(x,cB(y),v))XcC(y(adm(y,cB(xR),v)))
+ P(xtfF-ytfF,x=Ny(cF(xR));y=Nx(cF(y));x(adm(x,y,v)))Ct=max(tZZ(x),tZZ(y));P(t==tn,et1(y))xR;x=Ny(cT[t](x));y=Nx(cT[t](y));Ik=2*xtT+ytT;
+ P(!k,Xf(af(v?gf(x)*gf(y):gf(x)+gf(y)))az(v?gl(x)*gl(y):gl(x)+gl(y)))I(k==2||(k==3&&xr==1),SWP(x,y))
  S O TY(&abB)f[][2][5]={{{abB,ahH,aiI,alL,afF},{aBB,aHH,aII,aLL,aFF}},{{mbB,mhH,miI,mlL,mfF},{mBB,mHH,mII,mLL,mFF}}};
  Nn=yn;P(k==3&&xn-n,el2(x,y))Az=yr-1?an(yt,n):y;Lm=f[v][k==3][yt-tB](xtP?(V*)&x:xV,yV,zV,n);
- I(m<n,I(k-3,x=cT[xt+1+tC-tc](x))E(x=wdn(x,m,n,n-m))
-       I(y-z,y=wdn(y,m,n,n-m);z=wdn(z,0,m,n))E(y=z=wdn(z,0,n,n))
-       N l=m*zW;f[v][k==3][yt-tB](xtP?(V*)&x:xV,yV+(y-z?0:l),zV+l,n-m))
+ I(m<n,I(k-3,x=cT[xt+1+tC-tc](x))E(x=wdn(x,m,n,n-m))I(y-z,y=wdn(y,m,n,n-m);z=wdn(z,0,m,n))E(y=z=wdn(z,0,n,n))N l=m*zW;f[v][k==3][yt-tB](xtP?(V*)&x:xV,yV+(y-z?0:l),zV+l,n-m))
  x(y-z?y(z):z))
 
 A2(dex,y)A2(add,adm(x,y,0))A2(sub,add(x,N(neg(y))))A2(mul,adm(x,y,1))
