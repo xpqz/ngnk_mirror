@@ -6,8 +6,8 @@ SN A1(inv,x=mut(x);Nn=xn*xW;i(PD(n,xC),xc^=-1)x)
 
 S A3(___f,/*010*/Ni=!y;I(i,y=ii(z,0))Nn=zn;W(i<n,y=y(x2(y,ii(z,i++)));B(!y))y)
 S A3(dexf,/*010*/Au=las(zR);y?y(u):u)
-S L mmmfZ(Lv,Ax/*0*/,Ii)_(Q(xtZFC)L l=-1ll<<8*xW-1,h=~l;Nn=xn;P((i?v>=h:v<=l)||!n,v)v=v<l?l:v>h?h:v;I(i,i4(xw,n,MAX(v,xb),MAX(v,xh),MAX(v,xi),MAX(v,xl)))E(i4(xw,n,MIN(v,xb),MIN(v,xh),MIN(v,xi),MIN(v,xl)))v)
-S A3(mmmf,/*010*/Ii=xv==7;P((y&&ytf)||ztF,Lv=ofpf1(y?gf(cF(y)):i?-WF:WF);z=cF(zR);af(ze(OFP1(z);L r=mmmfZ(v,z,i);OFP0(z);ofpf0(r))))Lv=y?gl(y):i?-WL:WL;az(mmmfZ(v,z,i)))
+S A3(mmmf,/*010*/Ii=xv==7;P((y&&ytf)||ztF,y=of1(y?cF(y):af(i?-WF:WF));z=of1(cF(zR));of0(N(z(mmmf(x,y,z)))))Lv=y?gl(y):i?-WL:WL;
+ L l=-1ll<<8*zW-1,h=~l;Nn=zn;P((i?v>=h:v<=l)||!n,az(v))v=v<l?l:v>h?h:v;I(i,i4(zw,n,MAX(v,zb),MAX(v,zh),MAX(v,zi),MAX(v,zl)))E(i4(zw,n,MIN(v,zb),MIN(v,zh),MIN(v,zi),MIN(v,zl)))az(v))
 S A3(admf,/*010*/Ii=xv==3;Nn=zn;P((y&&ytf)||ztF,Fv=y?gf(cF(y)):i;z=cF(zR);af(ze(I(i,i(n,v*=zf))E(i(n,v+=zf))v)))Lv=y?gl(y):i;I(i,i4(zw,n,v*=zb,v*=zh,v*=zi,v*=zl))E(i4(zw,n,v+=zb,v+=zh,v+=zi,v+=zl))az(v))
 S A3(subf,/*010*/y=y?neg(y):zn?mul(ai(-2),ii(z,0)):ai(0);neg(admf(ADD,y,z)))
 A3(arf,/*010*/Q(xtv)Q(xv<11)Q(!y||ytzfc)Q(ztZFC)T(&dexf,admf,subf,admf,___f,___f,mmmf,mmmf,___f,___f,___f)[xv](x,y,z))
