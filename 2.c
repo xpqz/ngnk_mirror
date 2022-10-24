@@ -1,19 +1,30 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S C tZx(Ax)_(Ct=TX[xt];P(t,t)Xl(tZ(gl_(x)))tZ(xv))C sup(A*p,A*q)_(Ax=*p,y=*q;Ct=max(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
-S ALA(ext/*n1*/,XMT(x)rsz(n,xtm?enl(x):x))A2(dct,/*01*/P(rnk(x)<0,ed1(y))x=ext(yN,xR);y=ext(xN,y);(xN-yN?el2:am)(x,y))
+#define hg(T) (HD/SZ(T))
+#define hf(f,T,e...) S N f(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O T*a=a0,*b=b0;T*r=r0;LI(b)LI(r)e)
 
-#define B2 H
-#define H2 I
-#define I2 L
-#define GZ(T) (HD/SZ(T))
-#define hf(f,T,e...)     S N f(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O T*a=a0,*b=b0;T*r=r0;LI(b)LI(r)e)
-#define hN(f,T,l,o)      hf(f,T,I(l,LI(a))i(PD(n,a),r[i]=a[l*i]o b[i])n) //+ and * for widest types, no overflow
 #define hO(f,T,l,g,e...) hf(f,T,I(l,LI(a))Li=0;W(i<n,e;i+=g;a+=l*g;b+=g;r+=g)i) //support overflows
-#define hA(f,T,l,g)      hO(f,T,l,g,T v[g],o=0;j(g,T u=a[l*j]+b[j];o|=(a[l*j]^u)&(b[j]^u);v[j]=u)P(o>>SZ(T)*8-1,i)Mc(r,v,HD))
-#define hM(f,T,l,g)      hO(f,T,l,g,T##2 v[g];j(g,v[j]=a[l*j]*(T##2)b[j])j(g,P(v[j]-(T)v[j],i))j(g,r[j]=v[j]))
-#define ho(t,T)          hA(a##t##T,T,0,GZ(T))hA(a##T##T,T,1,GZ(T))hM(m##t##T,T,0,GZ(T))hM(m##T##T,T,1,GZ(T))
-#define hn(t,T)          hN(a##t##T,T,0,+)hN(a##T##T,T,1,+)hN(m##t##T,T,0,*)hN(m##T##T,T,1,*)
-ho(b,B)ho(h,H)ho(i,I)hn(l,L)hn(f,F)
+hO(abB,B,0,hg(B),B v[hg(B)],o=0;j(hg(B),B u=a[0]+b[j];o|=(a[0]^u)&(b[j]^u);v[j]=u)P(o>>SZ(B)*8-1,i)Mc(r,v,HD))
+hO(aBB,B,1,hg(B),B v[hg(B)],o=0;j(hg(B),B u=a[j]+b[j];o|=(a[j]^u)&(b[j]^u);v[j]=u)P(o>>SZ(B)*8-1,i)Mc(r,v,HD))
+hO(ahH,H,0,hg(H),H v[hg(H)],o=0;j(hg(H),H u=a[0]+b[j];o|=(a[0]^u)&(b[j]^u);v[j]=u)P(o>>SZ(H)*8-1,i)Mc(r,v,HD))
+hO(aHH,H,1,hg(H),H v[hg(H)],o=0;j(hg(H),H u=a[j]+b[j];o|=(a[j]^u)&(b[j]^u);v[j]=u)P(o>>SZ(H)*8-1,i)Mc(r,v,HD))
+hO(aiI,I,0,hg(I),I v[hg(I)],o=0;j(hg(I),I u=a[0]+b[j];o|=(a[0]^u)&(b[j]^u);v[j]=u)P(o>>SZ(I)*8-1,i)Mc(r,v,HD))
+hO(aII,I,1,hg(I),I v[hg(I)],o=0;j(hg(I),I u=a[j]+b[j];o|=(a[j]^u)&(b[j]^u);v[j]=u)P(o>>SZ(I)*8-1,i)Mc(r,v,HD))
+hO(mbB,B,0,hg(B),H v[hg(B)];j(hg(B),v[j]=a[0]*(H)b[j])j(hg(B),P(v[j]-(B)v[j],i))j(hg(B),r[j]=v[j]))
+hO(mBB,B,1,hg(B),H v[hg(B)];j(hg(B),v[j]=a[j]*(H)b[j])j(hg(B),P(v[j]-(B)v[j],i))j(hg(B),r[j]=v[j]))
+hO(mhH,H,0,hg(H),I v[hg(H)];j(hg(H),v[j]=a[0]*(I)b[j])j(hg(H),P(v[j]-(H)v[j],i))j(hg(H),r[j]=v[j]))
+hO(mHH,H,1,hg(H),I v[hg(H)];j(hg(H),v[j]=a[j]*(I)b[j])j(hg(H),P(v[j]-(H)v[j],i))j(hg(H),r[j]=v[j]))
+hO(miI,I,0,hg(I),L v[hg(I)];j(hg(I),v[j]=a[0]*(L)b[j])j(hg(I),P(v[j]-(I)v[j],i))j(hg(I),r[j]=v[j]))
+hO(mII,I,1,hg(I),L v[hg(I)];j(hg(I),v[j]=a[j]*(L)b[j])j(hg(I),P(v[j]-(I)v[j],i))j(hg(I),r[j]=v[j]))
+
+S N alL(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O L*a=a0,*b=b0;L*r=r0;LI(b)LI(r)i(PD(n,a),r[i]=a[0]+b[i])n)
+S N mlL(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O L*a=a0,*b=b0;L*r=r0;LI(b)LI(r)i(PD(n,a),r[i]=a[0]*b[i])n)
+S N afF(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O F*a=a0,*b=b0;F*r=r0;LI(b)LI(r)i(PD(n,a),r[i]=a[0]+b[i])n)
+S N mfF(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O F*a=a0,*b=b0;F*r=r0;LI(b)LI(r)i(PD(n,a),r[i]=a[0]*b[i])n)
+S N aLL(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O L*a=a0,*b=b0;L*r=r0;LI(b)LI(r)i(PD(n,a),r[i]=a[i]+b[i])n)
+S N mLL(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O L*a=a0,*b=b0;L*r=r0;LI(b)LI(r)i(PD(n,a),r[i]=a[i]*b[i])n)
+S N aFF(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O F*a=a0,*b=b0;F*r=r0;LI(b)LI(r)i(PD(n,a),r[i]=a[i]+b[i])n)
+S N mFF(OV*RE a0,OV*RE b0,V*RE r0,Nn)_(O F*a=a0,*b=b0;F*r=r0;LI(b)LI(r)i(PD(n,a),r[i]=a[i]*b[i])n)
+
 S C tZZ(Ax/*0*/)_(Xz(tZ(gl_(x)))Xf(tF)XZF(xt)tn)
 A adm(Ax,Ay,Iv/*01v*/)_(P(xti&&yti,az(v?xv*(L)yv:xv+(L)yv))P(xtz&&ytz,Lm=gl_(x),n=gl(y);az(v?m*n:m+n))XYmMA(e2f(v?mul:add,x,y))YcC(adm(x,cB(y),v))XcC(y(adm(y,cB(xR),v)))
  P(xtfF-ytfF,x=Ny(cF(xR));y=Nx(cF(y));x(adm(x,y,v)))Ct=max(tZZ(x),tZZ(y));P(t==tn,et1(y))xR;x=Ny(cT[t](x));y=Nx(cT[t](y));Ik=2*xtT+ytT;
@@ -30,7 +41,8 @@ A2(mod,YmMA(e2f(mod,x,y))YfF(Ln=gl_(x);P(!n,y)P(n<0,en1(y))K2("{y-x*(-x)!`i$y}",
  YZ(Lm=gl_(x);P(!m,y)P(m<0,m=-m;Az=an(yt,yn);S4(yw,i(zn,Cv=yb;zb=v<0?-1-~v/m:v/m),i(zn,Hv=yh;zh=v<0?-1-~v/m:v/m),i(zn,Iv=yi;zi=v<0?-1-~v/m:v/m),i(zn,Lv=yl;zl=v<0?-1-~v/m:v/m))y(z))
   P(m&m-1,Az=an(tZ(m),yn);I wy=yw;S4(zw,i(zn,zb=(iw(y,wy,i)%m+m)%m),i(zn,zh=(iw(y,wy,i)%m+m)%m),i(zn,zi=(iw(y,wy,i)%m+m)%m),i(zn,zl=(iw(y,wy,i)%m+m)%m))y(z))
   m--;I t=tZ(m),w=t-tB;y=mut(N(cT[t](y)));i(3-w,m|=m<<(8<<w+i))L*p=yV;i((yn<<w)+31>>5,j(4,*p++&=m))y)ed1(y))
-A2(bng,Xzc(mod(x,y))dct(x,y))
+S ALA(ext/*n1*/,XMT(x)rsz(n,xtm?enl(x):x))A2(dct,/*01*/P(rnk(x)<0,ed1(y))x=ext(yN,xR);y=ext(xN,y);(xN-yN?el2:am)(x,y))A2(bng,Xzc(mod(x,y))dct(x,y))
+S C tZx(Ax)_(Ct=TX[xt];P(t,t)Xl(tZ(gl_(x)))tZ(xv))C sup(A*p,A*q)_(Ax=*p,y=*q;Ct=max(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
 S A mmm(Ax,Ay,A2 f)_(XYmMA(e2f(f,x,y))P(xtfF||ytfF,x=of1(Ny(cF(xR)));y=of1(Nx(cF(y)));x(of0(f(x,y))))
  Ik=xtT<<1|ytT;P(!k,P(xtzc&&ytzc,Lv=gl_(x),w=gl(y);az(f==mnm?min(v,w):max(v,w)))et1(y))P(k==2,y(f(y,xR)))P(k==3&&xn-yn,el1(y))
  xR;N(sup(&x,&y));Ct=TT[k?min(xt,yt):max(xt,yt)];Nn=k-1?xn:yn;Az=yt==t&&yr==1?y:an(t,n);
