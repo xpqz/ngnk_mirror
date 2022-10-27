@@ -30,7 +30,7 @@ A2(_1,/*01*/P(!xtt,i1(x,y))S O C s[][4]={"","k","j","p","t","x","hex","err","arg
 A3(_2,/*001*/P(!xtt,i2(x,y,z))A a[]={y,z};Ik=xK;P(2<k,yR;prj(x,a,2))Xv(v2[xv](y,z))Xo(yR;run(x,a,2))Xr(z(w2(x,yR,z)))Xw(xv?en1(x):AK(zK,AT(tq,aA2(yR,z))))
  Xp(P(xn+k>9,er1(z))yR;Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<2?a[j++]:_R(xA[i+1]))I l=max(0,2-j);Mc(b+m,a+j,8*l);_8(xx,b,m+l))
  Xq(_1(xx,N(_2(xy,y,z))))P(2>k,er1(z))Xx(((A2*)(x<<16>>16))(yR,z))et1(z))
-AX(_8,/*11..1*/Q(n)P(n==1,x1(*a))P(n==2,Ay=*a;y(x2(y,a[1])))P(!xtt,i8(x,a,n))Ik=xK;P(n<k,prj(x,a,n))Xo(run(x,a,n))Xv(x=v8[xv](a,n);mrn(n-1,a+1);x)Xr(w8(x,a,n))Xq(_1(xx,N(_8(xy,a,n))))
+AX(_8,/*11..1*/Q(n)P(n==1,x1(*a))P(n==2&&!xtp,Ay=*a;y(x2(y,a[1])))P(!xtt,i8(x,a,n))Ik=xK;P(n<k,prj(x,a,n))Xo(run(x,a,n))Xv(x=v8[xv](a,n);mrn(n-1,a+1);x)Xr(w8(x,a,n))Xq(_1(xx,N(_8(xy,a,n))))
  Xp(P(xn+k>9,er8(a,n))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<n?a[j++]:_R(xA[i+1]))I l=max(0,n-j);Mc(b+m,a+j,8*l);_8(xx,b,m+l))P(n>k,er8(a,n))Xw(en8(a,n))Xx(en8(a,n))et8(a,n))
 A1(jS,cS(jc('.',str(x))))//join symbols with "."
 A1(val,XS(P(!xn,Ax=oS,y=oA;i(gn,I(gv[i],xq(as(gk[i]));yq(_R(gv[i]))))am(x,y))val(jS(x)))Xs(Li=fI(gk,gn,xv);i<0||!gv[i]?ev0():_R(gv[i]))XC(x=str0(x);x(evs(xV)))Xc(evs((V*)&x))XmM(x(_R(xy)))
