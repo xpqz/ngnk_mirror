@@ -56,8 +56,7 @@ S A2(s1,/*01*/Yt(y)P(!yN,y)Ym(Az=kv(&y);am(y,Ny(s1(x,z))))P(x==CAT,y(s2(x,oA,y))
 S AX(s8,/*01..1*/P(n==1,s1(x,*a))P(n==2,Ay=*a,z=a[1];z(s2(x,y,z)))Ay=*a++;n--;Lm=cfm(a,n);P(m==-2,y(el8(a,n)))Az=AN(0,aA(m));Ab8;i(m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);P(!y,mrn(n,a);z(0))zq(yR))mrn(n,a);y(z))
 S A3(p2,/*010*/ Zt(er1(y))Zm(y=N(p2(x,y,zy));am(_R(zx),y))P(!zN,y(zR))P(xtv&&xv<11&&ytzc&&ztZC,arp(x,y,z))Au=AN(0,aA(zN));i(zN,A v=ii(z,i),r=x2(v,y);y=v;B(!r,u=u(0))uq(r))y(u))
 S A2(p1,/*01*/y(p2(x,ide(x,y),y)))
-S ALA(win,P(n<0||n-(I)n,ed1(x))K2("{[n;x]x(!n)+/:!0|1-n-#x}",ai(n),x))
-S A3(ste,/*001*/Yz(e1(x,N(win(gl_(y),z))))et1(z))
+S A stn(Ax,Ln,Ay/*0n0*/)_(P(n<0||n-(I)n,ed0())P(!ytT,et0())Lm=max(0,yn-n+1);Az=AN(0,aA(m));i(m,zq(Nz(x1(slc(y,i,i+n)))))z)S A3(ste,/*010*/Yz(stn(x,gl(y),z))et1(y))S ALA(win,x(stn(au,n,x)))
 S A2 binF;
 S A2(binZ,/*01*/Q(xtZC)
  YZC(P(xn-(I)xn,ez1(y))I wx=xw,wy=yw;P(!wx,wy?K2("{@[x'`c$127&y;&-128>y;:;-1]}",x,y):K2("{(-1+\\@[&256;128+x;+;1])128+y}",x,y))Az=an(tZ(xn-1),yn);I wz=zw,k[2];
@@ -69,7 +68,6 @@ S A2(binF,/*01*/Q(xtF)YF(x=of1(xR);x(binZ(x,of1(y))))YZC(binF(x,N(cF(y))))Yt(fir
 S A2(bin,/*01*/XZC(binZ(x,y))XF(binF(x,y))Xm(_1(xx,bin(xy,y)))et1(y))
 A2(w1,/*01*/Q(xtr)Ii=xE;x=xx;SW(i,CR(0,Xt(e1(x,y))bin(x,y))CR(1,P(xtzZ||xtfF,dec(x,y))Xc(jc(xv,y))XC(jC(xV,xn,y))P(xK<2,cf(x,y))f1(x,y))
  CR(2,P(xtzZ||xtfF,enc(x,y))Xc(sc(xv,y))XC(sC(xV,xn,y))P(xK<2,cs(x,y))s1(x,y))CR(3,Xz(win(gl_(x),y))p1(x,y))CR(4,er1(y))CR(5,e1(x,y)))en1(y))
-A3(w2,/*010*/Q(xtr)Ii=xE;x=xx;SW(i,
- CR(0,y(e2(x,y,zR)))CR(1,P(xK<2,lf2(x,y,z))f2(x,y,z))CR(2,P(xK<2,ls2(x,y,z))s2(x,y,z))CR(3,xK==1?y(ste(x,y,zR)):p2(x,y,z))CR(4,y(r2(x,y,zR)))CR(5,y(l2(x,y,zR))))en1(y))
-AX(w8,/*01..1*/Q(xtr)Ay=*a;P(n==1,w1(x,y))P(n==2,Az=a[1];z(w2(x,y,z)))Ii=xE;x=xx;SW(i,
- CR(0,e8(x,a,n))CR(1,P(xK<2||n-xK==1,lf8(x,a,n))f8(x,a,n))CR(2,P(xK<2||n-xK==1,ls8(x,a,n))s8(x,a,n))CR(3,er8(a,n))CR(4,er8(a,n))CR(5,l8(x,a,n)))en8(a,n))
+A3(w2,/*010*/Q(xtr)Ii=xE;x=xx;SW(i,CR(0,y(e2(x,y,zR)))CR(1,(xK<2?lf2:f2)(x,y,z))CR(2,(xK<2?ls2:s2)(x,y,z))CR(3,(xK==1?ste:p2)(x,y,z))CR(4,y(r2(x,y,zR)))CR(5,y(l2(x,y,zR))))en1(y))
+AX(w8,/*01..1*/Q(xtr)Ay=*a;P(n==1,w1(x,y))P(n==2,Az=a[1];z(w2(x,y,z)))Ii=xE;x=xx;SW(i,CR(0,e8(x,a,n))CR(1,P(xK<2||n-xK==1,lf8(x,a,n))f8(x,a,n))
+ CR(2,P(xK<2||n-xK==1,ls8(x,a,n))s8(x,a,n))CR(3,er8(a,n))CR(4,er8(a,n))CR(5,l8(x,a,n)))en8(a,n))

@@ -5,7 +5,7 @@ SN A flt(Ax,Ay,Cb/*01b*/)_(P(xK-1,er1(y))Ym(K("{(!y)[i]!(.y)i:&z~/:x@.y}",xR,y,a
 V cyc(V*a,Nm,Nn){Q(m);W(2*m<=n,Mc(a+m,a,m);m*=2)I(n>m,Mc(a+m,a,n-m))}
 ALA(rsz,/*1*/Xt(rsz(n,enl(x)))XM(Ay=kv(&x),z=az(n);aM(x,Nx(z(r2(RSH,z,y)))))Xm(Ay=kv(&x);x=Ny(rsz(n,x));y=Nx(rsz(n,y));am(x,y))Q(xtT)P(n==NL,x)P(!xn,rsz(n,enl(fir(x))))
  I r=n<0;n*=1-2*r;Ay=an(xt,n);N w=xW,m=xn*w,k=n%xn*w,l=n*w;I(!r,Mc(yV,xV,min(m,l)))J(l<=m,Mc(yV,xV+m-l,l))E(Mc(yV,xV+m-k,k);Mc(yV+k,xV,m-k))cyc(yV,m,l);x(ytA?sqz(mRa(y)):y))
-S A slc(Ax/*0*/,Ni,Nj)_(Q(xtT&&i<=j&&i<=xn)Ay=an(xt,j-i);Mc(yV,xV+i*xW,(j-i)*xW);XA(sqz(mRa(y)))y)
+A slc(Ax/*0*/,Ni,Nj)_(Q(xtT&&i<=j&&i<=xn)Ay=an(xt,j-i);Mc(yV,xV+i*xW,(j-i)*xW);XA(sqz(mRa(y)))y)
 S ALA(chp,/*1*/P(n<0,ed1(x))Lm=(xn+n-1)/n;Ay=aA(m);i(m,ya=slc(x,n*i,min(xn,n*i+n)))x(y))
 S A2(rsh,/*01*/YmM(en1(y))Yt(rsh(x,enl(y)))Q(xtZ);N r=xn;P(!r,fir(y))P(r>256,ez1(y))x=Ny(cL(xR));L s[r];Mc(s,xV,r<<3);x(0);
  I(r==2,P(*s==NL,chp(s[1],y))P(s[1]==NL,K2("{((-x)!(#y)*!x)_y}",az(*s),y)))P(r==1&&*s==NL,y)I(!yn,y=enl(fir(y)))
