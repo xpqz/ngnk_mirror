@@ -48,4 +48,5 @@ S A4(mmma,/*1000*/yR;uR;I d=utT;I(!d,u=enl(u))Ny(sup(&x,&u));x=mut(x);I(!ytL,y=c
        E(      I(ytL,i4(xw,n,MAX(xB[yl],uB[d*i]),MAX(xH[yl],uH[d*i]),MAX(xI[yl],uI[d*i]),MAX(xL[yl],uL[d*i])))
                E(    i4(xw,n,MAX(xB[yi],uB[d*i]),MAX(xH[yi],uH[d*i]),MAX(xI[yi],uI[d*i]),MAX(xL[yi],uL[d*i]))))x)))
 S A4(suba,/*1000*/u(adma(x,y,ADD,neg(uR))))
+S I ina(Ax/*0*/,Nn)_(S4(xw,P(n-(B)n,1)i(xn,P(!in(xb,n),0)),P(n-(H)n,1)i(xn,P(!in(xh,n),0)),P(n-(I)n,1)i(xn,P(!in(xi,n),0)),i(xn,P(!in(xl,n),0)))1)
 A4(ara,/*1000*/Q(xtZC)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ||utcC)P(utT&&yn-un,el1(x))P(!ina(y,xn),ei1(x))T(&dexa,adma,suba,adma,0,0,mmma,mmma)[zv](x,y,z,u))
