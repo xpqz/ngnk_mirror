@@ -26,7 +26,7 @@ AQ(sym,Nn=Sn(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,
 
 S AQ(cps,Ax=N(pk(s));cpl(str0(aCz(s)),x,oS))
 S AQ(bscd,P(!*s,Cb[256];getcwd(b,SZ b)?eo0():aCz(b))chdir(s)?eo0():au)S AQ(bsbs,exit(0);0)S AQ(bsd,P(!*s,aCz(gp))s+=*s=='.';Nn=Sn(s);P(n+2>SZ(gp),ez0())Mc(gp,s,n+1);au)
-S AQ(bsv,K1("{`0:($!h),'\":\",'`k'. h:(&x=^`o`p`q`r`u`v`w`e?@'h)#h:``repl_.:0#`}",ai(!!s)))S AQ(bst,Ln=s[-1]=='t'&&*s==':'?++s,pl(&s):1,t=now();Ax=N(cps(s));i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
+S AQ(bsv,K1("{`0:($!h),'\":\",'`k'. h:(&x=^`o`p`q`r`u`v`w`x?@'h)#h:``repl_.:0#`}",ai(!!s)))S AQ(bst,Ln=s[-1]=='t'&&*s==':'?++s,pl(&s):1,t=now();Ax=N(cps(s));i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
 S C*skp(C*s)_(W(!MQ(s,"/\n",2),C*p=SS(s+1,"\n\\\n");s=p?p+3:s+Sn(s))s)S I ln(Qs)_(Ax=evs(s);P(x,x(out(x));1)epr(0))S AQ(bsf,bsv(0))
 S A lns(C*p,Nn)_(Q(n)P(p[n-1]-10,err0("eoleof"))p[n-1]=0;I(!MQ(p,"#!",2),p=SC0(p+2,10))C*v=p;W(p<v+n,C*q=p=skp(p);W(*q&&(*q-10||si(" }",q[1])<2),q++)*q=0;N(ln(p));p=q+1)au)
 AQ(bsl,If=open(s,O_RDONLY,0600);P(f<0,eo0())Ln=lseek(f,0,2);P(n<0,ei0())C*p=mm(0,n,f);close(f);P(!n,au)P(!p,0)Ax=lns(p,n);mu(p,n);x)
