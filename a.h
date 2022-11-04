@@ -1,5 +1,5 @@
 // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-#define DBG(a...) //a
+#define DBG(a...)//a
 #include<unistd.h>
 #include"g.h"
 #define   _(a...) {return({a;});}
@@ -24,8 +24,8 @@
 #define S static
 #define SZ sizeof
 #define LEN(x) (SZ(x)/SZ((x)[0]))
-#define PG 4096ll //page
-#define HD 32ll   //hdr
+#define PG 4096ll//page
+#define HD 32ll//header
 #define NI __attribute__((noinline))
 #define SN S NI
 #define TD typedef
@@ -33,12 +33,12 @@
 #define ST struct
 #define RE restrict
 #define SWP(x,y) {TY(x)t_=x;x=y;y=t_;}
-#define LI(x) {Q(!((L)x&HD-1));x=__builtin_assume_aligned(x,HD);} //alignment
-#define PD(n,p) ((n)+HD/SZ(*p)-1&-HD/SZ(*p)) //pad
+#define LI(x) {Q(!((L)x&HD-1));x=__builtin_assume_aligned(x,HD);}//alignment
+#define PD(n,p) ((n)+HD/SZ(*p)-1&-HD/SZ(*p))//pad
 #define M1(x) #x
 #define M2(x) M1(x)
 #define EX extern
-#define Q(x) DBG(I(!(x),die(__FILE__":"M2(__LINE__)": "#x))) //assert
+#define Q(x) DBG(I(!(x),die(__FILE__":"M2(__LINE__)": "#x)))//assert
 #define Ab8 A b[8];
 #define Ms(a...) __builtin_memset(a)
 #define Mm(a...) __builtin_memmove(a)
@@ -69,7 +69,7 @@ TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX
 #define  A2(f,b...) A f(Ax,Ay      )_(b)
 #define  A3(f,b...) A f(Ax,Ay,Az   )_(b)
 #define  A4(f,b...) A f(Ax,Ay,Az,Au)_(b)
-#define  AX(f,b...) A f(Ax,OA*a,In )_(b) //doesn't consume x
+#define  AX(f,b...) A f(Ax,OA*a,In )_(b)//doesn't consume x
 #define  AA(f,b...) A f(   OA*a,In )_(b)
 #define  AL(f,b...) A f(Ln         )_(b)
 #define ALA(f,b...) A f(Ln,Ax      )_(b)
@@ -100,31 +100,31 @@ enum               {tA=1,tB,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,t
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
 #define TU(t) ((t)>=to)
 
-#define _E(x) _C(x)[-14]       //adverb(for tr)                             //header bytes: Ut.orrrrnnnnnnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
-#define _k(x) _C(x)[-13]       //arity(for funcs)                           //tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
-#define _m(x) ((I*)_V(x))[-7]  //shadow refcount                            // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
-#define _n(x) _L(x)[-1]        //length                                     // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
-#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13]) //srcoffset   // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
-#define _q(x,y) (x=apd(x,y))   //append                                     // ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
-#define _r(x) ((I*)_V(x))[-3]  //refcount
-#define _t(x) ({A x_=(x);Ct=_t0(x_);t?t:_t1(x_);}) //type
-#define _t0(x) ((x)>>56)       //type(tag)
-#define _t1(x) _C(x)[-15]      //type(hdr)
-#define _tU(x) TU(_t(x))       // func?
-#define _tP(x) TP(_t(x))       // packed?
-#define _tR(x) (_w(x)==4)      // ref?
-#define _tT(x) (_t(x)<tM)      // list?
-#define _tZ(x) LH(tB,_t(x),tL) // intlist?
-#define _tt(x) (_t(x)>tm)      // atom?
-#define _tz(x) LH(ti,_t(x),tl) // intatom?
-#define _U(x) _C(x)[-16]       //bucket
-#define _v(x) (I)(x)           //value
-#define _V(x) (V*)(x)          //ptr to data
-#define _w(x) Tz[_t(x)]        //log2(item size in bytes)
-#define _W(x) TZ[_t(x)]        //item size in bytes
-#define _X(x) _A(x)[-3]        //next
-#define _Z(x) ((HD<<_U(x))-HD) //capacity
-#define _e(x,a...) ({A t_=m0(x);TY(({a;}))r_=({a;});DBG(x=0);m1(t_);r_;}) //two-phase free()
+#define _E(x) _C(x)[-14]      //adverb(for tr)                           //header bytes: Ut.orrrrnnnnnnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
+#define _k(x) _C(x)[-13]      //arity(for funcs)                         //tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
+#define _m(x) ((I*)_V(x))[-7] //shadow refcount                          // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
+#define _n(x) _L(x)[-1]       //length                                   // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
+#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13])//srcoffset // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
+#define _q(x,y) (x=apd(x,y))  //append                                   // ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
+#define _r(x) ((I*)_V(x))[-3] //refcount
+#define _t(x) ({A x_=(x);Ct=_t0(x_);t?t:_t1(x_);})//type
+#define _t0(x) ((x)>>56)      //type(tag)
+#define _t1(x) _C(x)[-15]     //type(hdr)
+#define _tU(x) TU(_t(x))      // func?
+#define _tP(x) TP(_t(x))      // packed?
+#define _tR(x) (_w(x)==4)     // ref?
+#define _tT(x) (_t(x)<tM)     // list?
+#define _tZ(x) LH(tB,_t(x),tL)// intlist?
+#define _tt(x) (_t(x)>tm)     // atom?
+#define _tz(x) LH(ti,_t(x),tl)// intatom?
+#define _U(x) _C(x)[-16]      //bucket
+#define _v(x) (I)(x)          //value
+#define _V(x) (V*)(x)         //ptr to data
+#define _w(x) Tz[_t(x)]       //log2(item size in bytes)
+#define _W(x) TZ[_t(x)]       //item size in bytes
+#define _X(x) _A(x)[-3]       //next
+#define _Z(x) ((HD<<_U(x))-HD)//capacity
+#define _e(x,a...) ({A t_=m0(x);TY(({a;}))r_=({a;});DBG(x=0);m1(t_);r_;})//two-phase free()
 #define XYmMA(a...) P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA),a)
 
 #define Lt(t) (L)t<<56
@@ -151,7 +151,7 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define h(t,m) A0 e##t##0;A1 e##t##1;A2 e##t##2;AA e##t##8;
  ERR
 #undef h
-#define N(x,a...) ({A r_=(x);P(!r_,a;0)r_;}) //error pass-through
+#define N(x,a...) ({A r_=(x);P(!r_,a;0)r_;})//error pass-through
 
 #define ov(x) ov_(#x":",(L)(x))
 #define oo os("["__FILE__":"M2(__LINE__)"]");
