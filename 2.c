@@ -7,29 +7,26 @@ S A adm(Ax,Ay,Iv/*01v*/)_(XYmMA(e2f(v?mul:add,x,y))Ik=2*xtT+ytT;
  P((1<<xt|1<<yt)&~(1<<tB|1<<tH|1<<tI|1<<tL|1<<tC|1<<ti|1<<tl|1<<tc),et1(y))
  I ox=0;Az;Nn=yn,i=0;
  I(k==1,L a=gl_(x);I w=max(tZ(a)-tB,yw);y=cT[tB+w](y);z=yr-1?an(yt,n):y;
-  W(1,
-   I(v,S4(w,{B*b=yB-i*(y!=z);W(i<n,Iv=a*b[i];B(v-(B)v)zb=v;i++)},
-            {H*b=yH-i*(y!=z);W(i<n,Iv=a*b[i];B(v-(H)v)zh=v;i++)},
-            {I*b=yI-i*(y!=z);W(i<n,Lv=a*b[i];B(v-(I)v)zi=v;i++)},
-            {L*b=yL-i*(y!=z);W(i<n,zl=a*b[i];i++)}))
-   E(  S4(w,{B*b=yB-i*(y!=z);W(i<n,Iv=a+b[i];B(v-(B)v)zb=v;i++)},
-            {H*b=yH-i*(y!=z);W(i<n,Iv=a+b[i];B(v-(H)v)zh=v;i++)},
-            {I*b=yI-i*(y!=z);W(i<n,Lv=a+b[i];B(v-(I)v)zi=v;i++)},
-            {L*b=yL-i*(y!=z);W(i<n,zl=a+b[i];i++)}))
-   B(i>=n)w++;I(y-z,y=wdn(y,i,n,n-i);z=wdn(z,0,i,n))E(y=z=wdn(z,0,n,n))))
+  W(1,I(v,S4(w,{B*b=yB-i*(y!=z);W(i<n,Iv=a*b[i];B(v-(B)v)zb=v;i++)},
+               {H*b=yH-i*(y!=z);W(i<n,Iv=a*b[i];B(v-(H)v)zh=v;i++)},
+               {I*b=yI-i*(y!=z);W(i<n,Lv=a*b[i];B(v-(I)v)zi=v;i++)},
+               {L*b=yL-i*(y!=z);W(i<n,zl=a*b[i];i++)}))
+      E(  S4(w,{B*b=yB-i*(y!=z);W(i<n,Iv=a+b[i];B(v-(B)v)zb=v;i++)},
+               {H*b=yH-i*(y!=z);W(i<n,Iv=a+b[i];B(v-(H)v)zh=v;i++)},
+               {I*b=yI-i*(y!=z);W(i<n,Lv=a+b[i];B(v-(I)v)zi=v;i++)},
+               {L*b=yL-i*(y!=z);W(i<n,zl=a+b[i];i++)}))
+      B(i>=n)w++;I(y-z,y=wdn(y,i,n,n-i);z=wdn(z,0,i,n))E(y=z=wdn(z,0,n,n))))
  E(Q(k==3);I w=max(xw,yw);P(xw-w,x=cT[tB+w](xR);x(adm(x,y,v)))y=cT[tB+w](y);z=yr-1?an(yt,n):y;
-  W(1,
-   I(v,S4(w,{B*a=xB-i;B*b=yB-i*(y!=z);W(i<n,Iv=a[i]*(I)b[i];B(v-(B)v)zb=v;i++)},
-            {H*a=xH-i;H*b=yH-i*(y!=z);W(i<n,Iv=a[i]*(I)b[i];B(v-(H)v)zh=v;i++)},
-            {I*a=xI-i;I*b=yI-i*(y!=z);W(i<n,Lv=a[i]*(L)b[i];B(v-(I)v)zi=v;i++)},
-            {L*a=xL-i;L*b=yL-i*(y!=z);W(i<n,zl=a[i]*b[i];i++)}))
-   E(  S4(w,{B*a=xB-i;B*b=yB-i*(y!=z);W(i<n,Iv=a[i]+(I)b[i];B(v-(B)v)zb=v;i++)},
-            {H*a=xH-i;H*b=yH-i*(y!=z);W(i<n,Iv=a[i]+(I)b[i];B(v-(H)v)zh=v;i++)},
-            {I*a=xI-i;I*b=yI-i*(y!=z);W(i<n,Lv=a[i]+(L)b[i];B(v-(I)v)zi=v;i++)},
-            {L*a=xL-i;L*b=yL-i*(y!=z);W(i<n,zl=a[i]+b[i];i++)}))
-   B(i>=n)w++;x=wdn(ox?x:xR,i,n,n-i);ox=1;I(y-z,y=wdn(y,i,n,n-i);z=wdn(z,0,i,n))E(y=z=wdn(z,0,n,n))))
+  W(1,I(v,S4(w,{B*a=xB-i;B*b=yB-i*(y!=z);W(i<n,Iv=a[i]*(I)b[i];B(v-(B)v)zb=v;i++)},
+               {H*a=xH-i;H*b=yH-i*(y!=z);W(i<n,Iv=a[i]*(I)b[i];B(v-(H)v)zh=v;i++)},
+               {I*a=xI-i;I*b=yI-i*(y!=z);W(i<n,Lv=a[i]*(L)b[i];B(v-(I)v)zi=v;i++)},
+               {L*a=xL-i;L*b=yL-i*(y!=z);W(i<n,zl=a[i]*b[i];i++)}))
+      E(  S4(w,{B*a=xB-i;B*b=yB-i*(y!=z);W(i<n,Iv=a[i]+(I)b[i];B(v-(B)v)zb=v;i++)},
+               {H*a=xH-i;H*b=yH-i*(y!=z);W(i<n,Iv=a[i]+(I)b[i];B(v-(H)v)zh=v;i++)},
+               {I*a=xI-i;I*b=yI-i*(y!=z);W(i<n,Lv=a[i]+(L)b[i];B(v-(I)v)zi=v;i++)},
+               {L*a=xL-i;L*b=yL-i*(y!=z);W(i<n,zl=a[i]+b[i];i++)}))
+      B(i>=n)w++;x=wdn(ox?x:xR,i,n,n-i);ox=1;I(y-z,y=wdn(y,i,n,n-i);z=wdn(z,0,i,n))E(y=z=wdn(z,0,n,n))))
  I(ox,x(0))y-z?y(z):z)
-
 A2(dex,y)A2(add,adm(x,y,0))A2(sub,add(x,N(neg(y))))A2(mul,adm(x,y,1))
 A2(dvd,XYmMA(e2f(dvd,x,y))x=Ny(cF(xR));y=Nx(cF(y));Xf(Fv=gf(x);Yf(af(v/gf(y)))Az=yr==1?y:aF(yn);i(yn,zf=v/yf)y-z?y(z):z)Yf(Fv=gf(y);Az=xr==1?x:aF(xn);i(xn,zf=xf/v)x-z?x(z):z)
  P(xn-yn,el2(x,y))Az=xr==1?x:yr==1?y:aF(xn);i(xn,zf=xf/yf)x==z?y(z):y==z?x(z):x(y(z)))
