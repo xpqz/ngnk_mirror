@@ -147,9 +147,9 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define K1(s,x)   ({S A f;k1(&f,s,x);})
 #define K2(s,x,y) ({S A f;k2(&f,s,x,y);})
 
-#define EA h(c,compile)h(d,domain)h(i,index)h(l,length)h(n,nyi)h(o,io)h(p,parse)h(r,rank)h(s,stack)h(t,type)h(v,value)h(z,limit)
+#define ERR h(c,compile)h(d,domain)h(i,index)h(l,length)h(n,nyi)h(o,io)h(p,parse)h(r,rank)h(s,stack)h(t,type)h(v,value)h(z,limit)
 #define h(t,m) A0 e##t##0;A1 e##t##1;A2 e##t##2;AA e##t##8;
- EA
+ ERR
 #undef h
 #define N(x,a...) ({A r_=(x);P(!r_,a;0)r_;}) //error pass-through
 

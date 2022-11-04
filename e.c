@@ -19,4 +19,4 @@ NI A die(Qs)_(In=Sn(s);Cv[n+1];Mc(v,s,n);v[n]=10;write(2,v,n+1);exit(1);0)
  NI A1(e##t##1,err1(x,  #m))\
  NI A2(e##t##2,err2(x,y,#m))\
  NI AA(e##t##8,errN(a,n,#m))
-EA
+ERR
