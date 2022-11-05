@@ -18,9 +18,8 @@ A an(Ct,Nn)_(Q(!lck);Q(LH(tA,t,tn-1));Q(!TP(t));Cb=59-__builtin_clzll(HD|HD-1+n*
 A1(mr,m1(m0(x)))A aV(Ct,Nn,OV*v)_(Ax=an(t,n);Mc(xV,v,n*TW[t]);x)A a2t(Ax,Ay,Ct/*11t*/)_(Az=an(t,2);zx=x;zy=y;z)
 A aA0(Nn)_(AN(0,aA(n)))A1(aA1,Ay=an(tA,1);yx=x;y)A2(aA2,/*11*/a2t(x,y,tA))A3(aA3,/*111*/Au=an(tA,3);ux=x;uy=y;uz=z;u)
 A2(aM,/*11*/a2t(x,y,tM))A2(am,/*11*/a2t(x,y,tm))AL(aA,an(tA,n))AL(aB,an(tB,n))AL(aC,an(tC,n))AL(aI,an(tI,n))AL(aL,an(tL,n))AL(aF,an(tF,n))AL(aS,an(tS,n))
-A al(Lv)_(aV(tl,1,&v))A af(Fv)_(aV(tf,1,&v))A aCn(Qs,Nn)_(aV(tC,n,s))A aCm(Qp,Qq)_(aCn(p,q-p))AQ(aCz,aCn(s,Sn(s)))
+A al(Lv)_(aV(tl,1,&v))A af(Fv)_(aV(tf,1,&v))A aCn(Qs,Nn)_(aV(tC,n,s))A aCm(Qp,Qq)_(aCn(p,q-p))AQ(aCz,aCn(s,Sn(s)))A1(mut,XP(x)P(xr==1,x)x=x(aV(xt,xn,xV));XR(mRa(x))x)
 C tZ(Lv)_(v==(B)v?tB:v==(H)v?tH:v==(I)v?tI:tL)A kv(A*p)_(Ax=*p;Q(xn==2);P(xr>1,--xr;*p=_R(xx);_R(xy))*p=xx;AZ(x);x(xy))AL(az,n-(I)n?al(n):ai(n))
-A1(mut,XP(x)P(xr==1,x)x=x(aV(xt,xn,xV));XR(mRa(x))x)
 ALA(room,P(xr==1&&n*xW<=xZ,AN(n,x))Ay=an(xt,n);Mc(yV,xV,xn*xW);I(ytR,I(xr==1,AZ(x))E(i(xn,_R(ya))))x(y))L gl_(Ax)_(XP(xv)*xL)L gl(Ax)_(Lv=gl_(x);x(0);v)F gf(Ax)_(Fv=*xF;x(0);v)
 
 S C s0[1<<16],*s1=s0+1;Q qs(O L*p)_(*p<0?s0-*p:(V*)p)
