@@ -3,7 +3,7 @@
 C TK(K x)_(Tk[xt])
 N NK(K x)_(xn)
 V*dK(K x)_(xV)
-S V VK(Ct,V*a,K x){I(xtZ,x=cT[t](x))Mc(a,xV,xn*TZ[t]);I(xtR,I(xr==1,AN(0,x))E(mRn(xn,xV)))x(0);}
+S V VK(Ct,V*a,K x){I(xtZ,x=cT[t](x))Mc(a,xV,xn*TW[t]);I(xtR,I(xr==1,AN(0,x))E(mRn(xn,xV)))x(0);}
 
 //            constructors                                                    accessors
 //    atom                     list                                   atom                 list

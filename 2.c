@@ -40,7 +40,7 @@ A2(ltn,P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA|1<<tS),e2f(ltn,x,y))
  I(k==1,Lv=gl_(x);S4(yw,i(n,zb=v<yb),i(n,zb=v<yh),i(n,zb=v<yi),i(n,zb=v<yl)))E(Q(k==3);S4(xw,i(n,zb=xb<yb),i(n,zb=xh<yh),i(n,zb=xi<yi),i(n,zb=xl<yl)))x(y(z)))
 A2(eql,XYmMA(e2f(eql,x,y))P(xtsS-ytsS,et1(y))P(xtsS,x=AT(xt+ti-ts,mut(xR));x(eql(x,AT(yt+ti-ts,mut(y)))))
  Ik=xtT<<1|ytT;P(!k,P(xtzc&&ytzc,ai(gl_(x)==gl(y)))P(xtf||ytf,x=Ny(cF(xR));y=Nx(cF(y));ai(gl(x)==gl(y)))et1(y))P(k==2,y(eql(y,xR)))P(k==3&&xn-yn,el1(y))
- xR;N(sup(&x,&y));Ct=TT[k?min(xt,yt):max(xt,yt)];I w=Tz[t];Nn=k-1?xn:yn;Az=aB(n);
+ xR;N(sup(&x,&y));Ct=TT[k?min(xt,yt):max(xt,yt)];I w=Tw[t];Nn=k-1?xn:yn;Az=aB(n);
  I(k==1,S4(w,{Cv=xv;i(n,zb=v==yb)},{Hv=xv;i(n,zb=v==yh)},{Iv=xv;i(n,zb=v==yi)},{Lv=gl_(x);i(n,zb=v==yl)}))
  E(Q(k==3);S4(w,i(n,zb=xb==yb),i(n,zb=xh==yh),i(n,zb=xi==yi),i(n,zb=xl==yl)))x(y(z)))
 A2(dex,y)A2(add,adm(x,y,0))A2(sub,add(x,N(neg(y))))A2(mul,adm(x,y,1))A2(mnm,mmm(x,y,mnm))A2(mxm,mmm(x,y,mxm))A2(gtn,y(ltn(y,xR)))
