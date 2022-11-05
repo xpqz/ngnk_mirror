@@ -56,7 +56,8 @@ S A2(s1,/*01*/Yt(y)P(!yN,y)Ym(Az=kv(&y);am(y,Ny(s1(x,z))))P(x==CAT,y(s2(x,oA,y))
 S AX(s8,/*01..1*/P(n==1,s1(x,*a))P(n==2,Ay=*a,z=a[1];z(s2(x,y,z)))Ay=*a++;n--;Lm=cfm(a,n);P(m==-2,y(el8(a,n)))Az=aA0(m);Ab8;i(m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);P(!y,mrn(n,a);z(0))zq(yR))mrn(n,a);y(z))
 S A3(p2,/*010*/ Zt(er1(y))Zm(y=N(p2(x,y,zy));am(_R(zx),y))P(!zN,y(zR))P(xtv&&xv<11&&ytzc&&ztZC,arp(x,y,z))Au=aA0(zN);i(zN,A v=ii(z,i),r=x2(v,y);y=v;B(!r,u=u(0))uq(r))y(u))
 S A2(p1,/*01*/y(p2(x,ide(x,y),y)))
-S A stn(Ax,Ln,Ay/*0n0*/)_(P(n<0||n-(I)n,ed0())P(!ytT,et0())Lm=max(0,yn-n+1);Az=aA0(m);i(m,zq(Nz(x1(slc(y,i,i+n)))))z)S A3(ste,/*010*/Yz(stn(x,gl(y),z))et1(y))S ALA(win,x(stn(au,n,x)))
+S A stn(Ax,Ln,Ay/*0n0*/)_(P(n<0||n-(I)n,ed0())P(!ytT,et0())Lm=max(0,yn-n+1);Az=aA0(m);PR(P(!m,zx=mkn(rsz(n,fir(yR)));z))i(m,zq(Nz(x1(slc(y,i,i+n)))))z)
+S A3(ste,/*010*/Yz(stn(x,gl(y),z))et1(y))S ALA(win,x(stn(au,n,x)))
 S A2 binF;
 S A2(binZ,/*01*/Q(xtZC)
  YZC(P(xn-(I)xn,ez1(y))I wx=xw,wy=yw;P(!wx,wy?K2("{@[x'`c$127&y;&-128>y;:;-1]}",x,y):K2("{(-1+\\@[&256;128+x;+;1])128+y}",x,y))Az=an(tZ(xn-1),yn);I wz=zw,k[2];

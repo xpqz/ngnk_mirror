@@ -12,7 +12,7 @@ NI V eS(Ax/*0*/,Ni)_(eQ(xV,xn,i))
 A3(try,/*001*/x=dot(x,yR);P(x,z(x))I(ztU,z=z1(aCn(b,r-b)))r=b;d=0;z)
 A1(epr,write(2,b,r-b);r=b;x)
 A1(err,XC(x=str0(x);err1(x,xV))P(x==au,aCn(b,r-b))err1(x,"err"))
-NI A die(Qs)_(In=Sn(s);Cv[n+1];Mc(v,s,n);v[n]=10;write(2,v,n+1);exit(1);0)
+NI A die(Qs)_(In=Sn(s);Cv[n+1];Mc(v,s,n);v[n]=10;write(1,"'",1);write(2,v,n+1);exit(1);0)
 
 #define h(t,m)\
  NI A0(e##t##0,err0(    #m))\
