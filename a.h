@@ -100,12 +100,12 @@ enum               {tA=1,tB,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,t
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
 #define TU(t) ((t)>=to)
 
-#define _E(x) _C(x)[-14]      //adverb(for tr)                           //header bytes: Ut.orrrrnnnnnnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
-#define _k(x) _C(x)[-13]      //arity(for funcs)                         //tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
-#define _m(x) ((I*)_V(x))[-7] //shadow refcount                          // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
-#define _n(x) _L(x)[-1]       //length                                   // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
-#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13])//srcoffset // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
-#define _q(x,y) (x=apd(x,y))  //append                                   // ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
+#define _E(x) _C(x)[-14]      //adverb(for tr)                           | header bytes: Ut.orrrrnnnnnnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
+#define _k(x) _C(x)[-13]      //arity(for funcs)                         | tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
+#define _m(x) ((I*)_V(x))[-7] //shadow refcount                          |  tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
+#define _n(x) _L(x)[-1]       //length                                   |  tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
+#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13])//srcoffset |  ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
+#define _q(x,y) (x=apd(x,y))  //append                                   |  ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
 #define _r(x) ((I*)_V(x))[-3] //refcount
 #define _t(x) ({A x_=(x);Ct=_t0(x_);t?t:_t1(x_);})//type
 #define _t0(x) ((x)>>56)      //type(tag)
