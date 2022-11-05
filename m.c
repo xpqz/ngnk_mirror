@@ -19,9 +19,9 @@ A1(mr,m1(m0(x)))A aV(Ct,Nn,OV*v)_(Ax=an(t,n);Mc(xV,v,n*TW[t]);x)A a2t(Ax,Ay,Ct/*
 A aA0(Nn)_(AN(0,aA(n)))A1(aA1,Ay=an(tA,1);yx=x;y)A2(aA2,/*11*/a2t(x,y,tA))A3(aA3,/*111*/Au=an(tA,3);ux=x;uy=y;uz=z;u)
 A2(aM,/*11*/a2t(x,y,tM))A2(am,/*11*/a2t(x,y,tm))AL(aA,an(tA,n))AL(aB,an(tB,n))AL(aC,an(tC,n))AL(aI,an(tI,n))AL(aL,an(tL,n))AL(aF,an(tF,n))AL(aS,an(tS,n))
 A al(Lv)_(aV(tl,1,&v))A af(Fv)_(aV(tf,1,&v))A aCn(Qs,Nn)_(aV(tC,n,s))A aCm(Qp,Qq)_(aCn(p,q-p))AQ(aCz,aCn(s,Sn(s)))
-C tZ(Lv)_(v==(B)v?tB:v==(H)v?tH:v==(I)v?tI:tL)A kv(A*p)_(Ax=*p;Q(xn==2);P(xr>1,--xr;*p=_R(xx);_R(xy))*p=xx;AN(0,x);x(xy))AL(az,n-(I)n?al(n):ai(n))
+C tZ(Lv)_(v==(B)v?tB:v==(H)v?tH:v==(I)v?tI:tL)A kv(A*p)_(Ax=*p;Q(xn==2);P(xr>1,--xr;*p=_R(xx);_R(xy))*p=xx;AZ(x);x(xy))AL(az,n-(I)n?al(n):ai(n))
 A1(mut,XP(x)P(xr==1,x)x=x(aV(xt,xn,xV));XR(mRa(x))x)
-ALA(room,P(xr==1&&n*xW<=xZ,AN(n,x))Ay=an(xt,n);Mc(yV,xV,xn*xW);I(ytR,I(xr==1,AN(0,x))E(i(xn,_R(ya))))x(y))L gl_(Ax)_(XP(xv)*xL)L gl(Ax)_(Lv=gl_(x);x(0);v)F gf(Ax)_(Fv=*xF;x(0);v)
+ALA(room,P(xr==1&&n*xW<=xZ,AN(n,x))Ay=an(xt,n);Mc(yV,xV,xn*xW);I(ytR,I(xr==1,AZ(x))E(i(xn,_R(ya))))x(y))L gl_(Ax)_(XP(xv)*xL)L gl(Ax)_(Lv=gl_(x);x(0);v)F gf(Ax)_(Fv=*xF;x(0);v)
 
 S C s0[1<<16],*s1=s0+1;Q qs(O L*p)_(*p<0?s0-*p:(V*)p)
 AQ(sym,Nn=Sn(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,P(!SQ(p,s),as(s0-p))p+=Sn(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))Mc(s1,s,n);s1+=n;as(s0-s1+n))
@@ -47,7 +47,7 @@ V kinit(){S I l;P(l)l=1;z[LEN(z)-1]=1;Ax=aA0(32),*c=xA;i(tS-tA+1,*c++=ce[tA+i]=a
 V kargs(In,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=max(0,n-2);Ax=n?aA(n):oA;i(n,xa=aCz(a[2+i]))gk[gn]='x';gv[gn++]=x;}
 
 A AT(UL t,Ax)_(Q(LH(0,t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)A AW(C w,Ax)_(Q(w<6);xE=w;x)A AK(C k,Ax)_(Q(k<9);xk=k;x)
-A AO(UC o,Ax)_(Xs(x&~(0xffll<<32)|(UL)o<<32)xB[-13]=o;x)A AN(Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)
+A AO(UC o,Ax)_(Xs(x&~(0xffll<<32)|(UL)o<<32)xB[-13]=o;x)A AN(Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)A1(AZ,AT(tB,x))
 
 SN I ow(Qs,Nn)_(write(1,s,n))SN V o8(Lv){Cb[16],*s=b;i(16,Cc=v>>4*(15-i)&15;*s++="0W"[9<c]+c)ow(b,16);}I os(Qs)_(ow(s,Sn(s)))L ov_(Qs,Lv)_(os(s);o8(v);ow("\n",1);v)
 #define mms(a...) i(nm,V*p=m[i].p,*q=p+m[i].n;If=!!*(C*)p;a)
