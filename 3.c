@@ -22,7 +22,7 @@ S A3(mxms,/*010*/P((!y||ytz)&&ztZ,Lv=y?gl(y):-WL,l=-1ll<<8*zW-1,h=~l;Nn=zn;I(v<=
                                   Au=an(zt,n);i4(zw,n,ub=MAX(v,zb),uh=MAX(v,zh),ui=MAX(v,zi),ul=MAX(v,zl))u)___s(x,y,z))
 S A3(mnms,/*010*/P((!y||ytz)&&ztZ,z=inv(zR);z(inv(mxms(MXM,y?az(~gl(y)):0,z))))___s(x,y,z))
 S A eqlsL(Lv,Ax/*0*/)_(Ay=aB(xn);i4(xw,xn,yb=v=v==xb,yb=v=v==xh,yb=v=v==xi,yb=v=v==xl)y)
-S A3(eqls,/*010*/P(y,eqlsL(gl(y),z))Au=eqlsL(0,z);u&&un?a4(u,ai(0),av,fir(zR)):u)
+S A3(eqls,/*010*/Nn=zn,i=!y;Lv=gl(y?y:io(z,0)),a=v;Au=aB(n);S4(zw,W(i<n,ub=v=v==zb;i++),W(i<n,ub=v=v==zh;i++),W(i<n,ub=v=v==zi;i++),W(i<n,ub=v=v==zl;i++))y||!n?u:a4(u,ai(0),av,az(a)))
 A3(ars,/*010*/Q(xtv)Q(xv<11)Q(!y||ytzc)Q(ztZC)T(&dexs,adms,subs,adms,___s,___s,mnms,mxms,___s,___s,eqls)[xv](x,y,z))
 
 S A3(dexp,/*010*/cat11(y?y:_R(cn[zt]),drp(-1,zR)))
