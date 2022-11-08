@@ -3,8 +3,10 @@
 #define cN(T,R,p) SN V c##T##R(OV*RE v,V*RE w,Nn)_(O T*RE a=v;R*RE r=w;i(PD(n,p),r[i]=a[i]==N##T?N##R:a[i]))
 c_(B,H,r)c_(H,B,a)c_(B,I,r)c_(I,B,a)c_(L,B,a)c_(H,I,r)c_(I,H,a)c_(H,L,r)c_(L,H,a)c_(I,L,r)c_(L,I,a)cN(L,F,a)cN(F,L,a)
 A1(flp,XM(Ay=kv(&x);am(x,y))Xm(Ay=kv(&x);I(!ytA,y=flp(flp(y)))Ln=cfm(yA,yn);P(n<0,x(el1(y)))i(yn,Az=ya;I(ztt,y=mut(y);ya=rsz(n,z)))aM(x,y))Xt(enl(enl(x)))P(!xtA,enl(x))
- Ln=cfm(xA,xn PR(+!xn));P(n==-1,enl(x))P(n<0,el1(x))Ct=_t(xx);I(t<tM,i(xn,Ay=xa;B(yt-t,t=0)))E(t=0)Ay=aA(n);P(!t,i(n,Az=aA(xn);j(xn,zA[j]=ii(xA[j],i))ya=sqz(z))x(y))
- I w=Tw[t];j(n PR(+!n),Az=yA[j]=an(t,xn);S4(w,i(xn,zb=_B(xa)[j]),i(xn,zh=_H(xa)[j]),i(xn,zi=_I(xa)[j]),i(xn,zl=_L(xa)[j])I(w==4,yA[j]=sqz(mRa(z)))))x(y))
+ Nm=xn;Ln=cfm(xA,n1(m));P(n==-1,enl(x))P(n<0,el1(x))Ct=_t(xx);I(t<tM,i(m,Ay=xa;B(yt-t,t=0)))E(t=0)Ay=aA(n);
+ P(!t,i(n1(n),Az=aA(m);j(m,zA[j]=ii(xA[j],i))PR(I(!zn,zx=mkn(zx)));ya=sqz(z))x(0);PR(I(!yn,yx=mkn(yx)));y)
+ I w=Tw[t];j(n1(n),Az=yA[j]=an(t,m);S4(w,i(m,zb=_B(xa)[j]),i(m,zh=_H(xa)[j]),i(m,zi=_I(xa)[j]),i(n1(m),zl=_L(xa)[j])I(w==4,PR(I(!m,zx=mkn(_R(zx))));yA[j]=sqz(mRa(z)))))
+ x(0);PR(I(!n,yx=mkn(yx)))y)
 V tilV(V*p,Ln,I w){L*a=p,v=T(0x706050403020100ll,0x3000200010000ll,1ll<<32,0)[w],d=T(0x808080808080808ll,0x4000400040004ll,2ll<<32|2,1)[w];LI(a)i(PD((n-1>>3-w)+1,a),a[i]=v;v+=d)}
 AL(tilL,P(n<0,n==(I)n?add(ai(n),N(tilL(-n))):ed0())P(n>1<<30,ez0())Ax=an(tZ(n-1),n);tilV(xV,n,xt-tB);x)
 A1(til,Xz(tilL(gl(x)))XZ(K1("{x((*a)#&#)'1_a:|*\\|x,1}",x))XmM(x(_R(xx)))Xo(val(x))P(!xtA||xn,et1(x))x)
@@ -31,8 +33,8 @@ A1*cT[]={[tA]=cA,cB,cH,cI,cL,cF,cC,cS};
 A1(csti,XF(sqzZ(cL(x)))Xf(az(gf(x)))XC(sqzZ(cB(x)))Xc(ai(xv))XzZ(x)et1(x))
 A2(cst,/*01*/P(xtS||ytmMA,e2f(cst,x,y))Xz(YC(K2("{y@(!x)+(x<0)*#y}",x,y))Yc(cst(x,enl(y)))et1(y))Xs(Iv=xv;P(v-(C)v,ed1(y))T(&csti,cF,cC,cS,pI,ed1)[si("idcsI",v+'s'*!v)](y))et1(y))
 A1(sqzZ,XH(i(xn,P(xh-(B)xh,x))cB(x))XI(i(xn,P(xi-(H)xi,x))sqzZ(cH(x)))XL(i(xn,P(xl-(I)xl,x))sqzZ(cI(x)))x)
-A1(sqz,P(!xtA||(!xn PR(&&0)),x)Nn=xn;Ay=xx;Ct=yt;Ym(y=oA;i(n,yq(_R(xa)))x(y))P(!LH(ti,t,ts),x)
+A1(sqz,P(!xtA||(PR(0&&)!xn),x)Nn=xn;Ay=xx;Ct=yt;Ym(y=oA;i(n,yq(_R(xa)))x(y))P(!LH(ti,t,ts),x)
  I(ytz,I l=0;i(n,Ay=xa;I(ytl,l=1)E(P(!yti,x)))I(l,t=tL)E(I a=0,b=0;i(n,Ay=xa;a=min(a,yv);b=max(b,yv))t=max(tZ(a),tZ(b))))E(i(n,P(t-_t(xa),x)))
  y=an(TT[t],n);Iv=yw;I(v<3,T(&cLB,cLH,cLI)[v](xV,yV,n))E(i(n,yl=gl_(xa)))x(y))
-A1(cA,XA(x)Xt(aA1(x))Xm(et1(x))Nn=xN;Ay=aA(n);i(yn,ya=ii(x,i))x(y))
+A1(cA,XA(x)Xt(aA1(x))Xm(et1(x))Nn=xN;Ay=aA(n);i(n1(yn),ya=ii(x,i))x(0);PR(I(!yn,yx=mkn(yx)))y)
 L tru(Ax/*1*/)_(Lv=xtU?x!=au:xtt?gl_(x):xN;x(0);v)
