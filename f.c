@@ -12,10 +12,14 @@ S A rd(Ln,Lm)_(P(m<0,ed0())n<0?de(n-NL?-n:m,m):ro(n,m))
 AL(rndF,Ay=al(1023ll<<52);add(ai(-1),AT(tF,y(add(y,N(rd(n,1ll<<52)))))))
 S ALA(rnd,Xz(rd(n,gl(x)))Xc(cC(add(xv-'A'?ac('a'):x,Nx(rd(n,26)))))Xf(x(mul(x,Nx(rndF(n)))))XMT(x(x1(Nx(rd(n,xN)))))et1(x))
 
-#define h(T) NI L f##T(OV*p,Nn,Lv)_(O T*a=p,q=v;P(v-q||!n,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)\
-             NI V F##T(OV*p,Nm,TY(fB)f,OV*q,Nn,L*r){O T*a=q;i(n,r[i]=f(p,m,a[i]))}\
-             NI L fp##T(A*p,T v)_(Ax=*p;Nn=xn;Li=f##T(xV,n,v);P(i<0,*p=apv(x,&v);n)i)
-h(B)h(H)h(I)h(L)
+NI L fB(OV*p,Nn,Lv)_(O B*a=p,q=v;P(v-q||!n,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+NI L fH(OV*p,Nn,Lv)_(O H*a=p,q=v;P(v-q||!n,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+NI L fI(OV*p,Nn,Lv)_(O I*a=p,q=v;P(v-q||!n,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+NI L fL(OV*p,Nn,Lv)_(O L*a=p,q=v;P(v-q||!n,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+NI V FB(OV*p,Nm,TY(fB)f,OV*q,Nn,L*r){O B*a=q;i(n,r[i]=f(p,m,a[i]))} NI L fpB(A*p,Bv)_(Ax=*p;Nn=xn;Li=fB(xV,n,v);P(i<0,*p=apv(x,&v);n)i)
+NI V FH(OV*p,Nm,TY(fH)f,OV*q,Nn,L*r){O H*a=q;i(n,r[i]=f(p,m,a[i]))} NI L fpH(A*p,Hv)_(Ax=*p;Nn=xn;Li=fH(xV,n,v);P(i<0,*p=apv(x,&v);n)i)
+NI V FI(OV*p,Nm,TY(fI)f,OV*q,Nn,L*r){O I*a=q;i(n,r[i]=f(p,m,a[i]))} NI L fpI(A*p,Iv)_(Ax=*p;Nn=xn;Li=fI(xV,n,v);P(i<0,*p=apv(x,&v);n)i)
+NI V FL(OV*p,Nm,TY(fL)f,OV*q,Nn,L*r){O L*a=q;i(n,r[i]=f(p,m,a[i]))} NI L fpL(A*p,Lv)_(Ax=*p;Nn=xn;Li=fL(xV,n,v);P(i<0,*p=apv(x,&v);n)i)
 S L fA(Ax,Ay/*00*/)_(XA(i(xn,P(mtc_(xa,y),i))NL)i(xN,Az=ii(x,i);P(mtc_(z,y),z(0);i)z(0))NL)
 L fAI(Ax/*0*/,Iv)_(fI(xV,xn,v))
 I rnk(Ax/*0*/)_(XA(P(!xn,2)Iv=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)XmM(rnk(xy))xtT)//-1 for mixed rank
