@@ -82,7 +82,7 @@ p197:{{?[x$"";-2!x-:#y;y]}[x]'(x&'#'y)#'y}   / https://problems.tryapl.org/psets
 p198:{+/%+/'x*x:(*|x)-':x}                   / https://problems.tryapl.org/psets/2019.html?goto=P8_Going_the_Distance (-4 via @coltim)
 rot:{@[x;(2!)#!#x;|:]} /flip pairs at odd indices
 p199:{x|-x:0.5*-/+/rot 1_*':rot x,,*x}       / https://problems.tryapl.org/psets/2019.html?goto=P9_Area_Code_a_la_Gauss
-p19X:{(#;_)[;2!#:';x]}                       / https://problems.tryapl.org/psets/2019.html?goto=P10_Odd_and_Evens (via @coltim)
+p19X:{(),/:(#;_)[;2!#:';x]}                  / https://problems.tryapl.org/psets/2019.html?goto=P10_Odd_and_Evens (via @coltim)
 
 p201:{$[x<0;o[x+#y;y];(x;x-#y)#\:y]}         / https://problems.tryapl.org/psets/2020.html?goto=P1_Lets_Split
 p202:{(&~2=-64!x)_x}                         / https://problems.tryapl.org/psets/2020.html?goto=P2_Characters
@@ -156,12 +156,12 @@ M[p15X;10]("                 1"
 A[p161].'((1+!6;3.5);17 17;(5 3#1+!15;7 8 9.0));
 A[p161].'(!0;0n); /dyalog wants 0 instead of 0n, which makes no sense
 M[p162].'((1+!9;5.0);(1 8 2 7 3 6 4 5;4.5);(!0;0.0);(,7;7.0));
-M[p163].'((2 1 4 3 2 5 1 2;,2);(!0;,!0);(1 2 3 4 1 2;1 2)); /result ,!0 is dubious
+M[p163].'((2 1 4 3 2 5 1 2;,2);(!0;!0);(1 2 3 4 1 2;1 2));
 M[p164].'($(`MENS`EKES;`MEEKNESS);$(`Dyalog`APL;`DAyPaLlog);$(`APL`Dyalog;`ADPyLalog)
  ((1 3 5 7;2 4 6 8);1 2 3 4 5 6 7 8);$(``Hello;`Hello));
 M[p165].'((1+!5;1+!5);(1 2 3 4 5 4 3 2 1;,5);("hello world";"he wrd"));
 M[p166].'($(`one`two`three`four`five`six;`one`two`six`four`five`three);((2 4 3;4 5;,1;7 3);(,1;4 5;7 3;2 4 3));(!0;!0)
- (("one";,2;"three";," ";"four";5 6 7 8);(,2;," ";"one";"four";5 6 7 8;"three"))); /fudge; soln incorrect for empty vectors
+ (("one";,2;"three";," ";"four";5 6 7 8);(,2;," ";"one";"four";5 6 7 8;"three")));
 M[p167].'((1+!10;3 5 6 9 10);(!0;!0));
 M[p168].'((0 1 -2 3 -4 -5 6 7 8 -9 10;(-2 -4 -5 -9;0 1 3 6 7 8 10))
           (1 2 3 4 5;,1 2 3 4 5) /this isn't the behaviour Dyalog wants, but unsure how that maps to k's array model
@@ -175,7 +175,7 @@ M[p173].'(("this \"is\" a test";"this \"\" a test");("this is a test";"this is a
 A[p174 .].'((60 12;18.84955592);(0 12;0);(60 0;0);((60;9 12 15);10.60287521 18.84955592 29.45243113)
  ((60 90 120;12);18.84955592 28.27433388 37.69911184);((60 90 120;9 12 15);10.60287521 28.27433388 58.90486225));
 M[p175].'(("ATGCTTCAGAAAGGTCTTACG";1);("Dyalog";0);("";1);(,"T";1));
-M[p176 .].'(((4;"ATCGAAGGTCGT");$`ATCG`TCGA`CGAA`GAAG`AAGG`AGGT`GGTC`GTCG`TCGT);((4;"AC");()));
+M[p176 .].'(((4;"ATCGAAGGTCGT");$`ATCG`TCGA`CGAA`GAAG`AAGG`AGGT`GGTC`GTCG`TCGT);((4;"AC");0#,"    "));
 M[p177].'(("AGCTTTTCATTCTGACTGCTGTCTTTAAAAAAAGAGTGTCTGATAGCAG";14 8 10 17);("CCAAATGGGG";3 2 4 1);("";&4);(,"G";0010b));
 M[p178].'((0101001b;0100000b);(!0;!0);(0000b;0000b));
 M[p179].'(("bookkeeper";0101010000b);("";"");("aaaaaa";111110b);("d";,0)); /"" as result arguably dogdy?

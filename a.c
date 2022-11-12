@@ -4,7 +4,7 @@ A2(ide,/*00*/x==CAT?_R(ce[ce[yt]?yt:tA]):xtv&&xv<11&&xv?_R(ci[ytfF][T((C)4,0,0,1
 AX(prj,XmMA(x8(a,n))Ik=max(n,xK);i(n,k-=a[i]!=PLH)x=(xtp?val:aA1)(xR);Ii=0,j=1;W(i<n&&j<xn,I(xA[j]==PLH,xA[j]=a[i++])j++)W(i<n,xq(a[i++]))P(xn>9,ez1(x))AT(tp,AK(k,x)))
 S A iM(Ax,Li,AAL*f)_(Q(xtM);Ay=xy,z=aA(yn);Q(ytA);j(zn,zA[j]=f(yA[j],i))am(_R(xx),sqz(z)))
 AAL(ii,/*0*/XA(_R(xa))XC(ac(xc))XB(ai(xb))XH(ai(xh))XI(ai(xi))XL(al(xl))XF(af(xf))XS(as(xi))Xm(ii(xy,i))XM(iM(x,i,ii))xR)
-AAL(io,/*0*/XT(in(i,xn)?ii(x,i):xn?mkn(ii(x,0)):_R(cn[xt]))Xt(xR)Xm(io(xy,i))XM(iM(x,i,io))Q(0);0)A1(fir,x(io(x,0)))A1(las,x(io(x,xN-1)))
+AAL(io,/*0*/XT(in(i,xn)?ii(x,i):xn?mkn(ii(x,0)):PR(xtA?_R(xx):)_R(cn[xt]))Xt(xR)Xm(io(xy,i))XM(iM(x,i,io))Q(0);0)A1(fir,x(io(x,0)))A1(las,x(io(x,xN-1)))
 #define G(T,U) (32/(SZ(T)>SZ(U)?SZ(T):SZ(U)))
 #define iF(f,T,U,R,e...) S L f(OV*RE a,Lm,OV*RE b,V*RE c,Nn)_(O T*p=a;O U*q=b;R*r=c;LI(p)LI(q)LI(r)e;n)
 #define iC_(U) iF(  iC##U,C,U,C,i(PD(n,q),r[i]=in(q[i],m)?p[q[i]]:32))

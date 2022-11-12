@@ -9,7 +9,7 @@ A jc(Cc,   Ax)_(XC(jc(c,  flp(flp(x))))Ln=jN(1,x);P(n<0,et1(x))Ay=aC(n);C*p=yV;i
 A jC(Qs,Nm,Ax)_(XC(jC(s,m,flp(flp(x))))Ln=jN(m,x);P(n<0,et1(x))Ay=aC(n);C*p=yV;i(xn,I(i,Mc(p,s,m);p+=m)Az=xa;I(ztc,*p++=zv)E(Mc(p,zV,zn);p+=zn))x(y))
 L cfm(OA*a/*0*/,In)_(Lm=-1;i(n,Ax=a[i];I(!xtt,Lv=xN;P(m>=0&&m-v,-2)m=v))m)
 S A o1f(A1 f,Ax/*f1*/)_(f==len?x(ai(0)):f==str?x(oC):x)
-S A o2f(A2 f,Ax,Ay/*f01*/)_(y(f==bng?ai(0):oC))
+S A o2f(A2 f,Ax,Ay/*f01*/)_(f==add||f==sub||f==mul||f==dvd||f==mnm||f==mxm||f==ltn||f==gtn||f==eql?f(x,y):f==bng?y(ai(0)):y(oC))
 S A2(o1,/*01*/xtu?o1f(v1[xv],y):y(oC))
 S A3(o2,/*001*/xtv?o2f(v2[xv],y,z):z(oC))
 S AX(em,/*01..1*/Az=oS;Ik=0;i(n,Ay=a[i];I(ytm,k++;z=cat11(z,_R(yx))))I(k>1,z=unq(z))Ab8;i(n,Ay=b[i]=a[i];I(ytm,Au=kv(&y);uq(ide(x,u));b[i]=u(u1(y(fil(ai(yn),fnd(y,zR)))))))AX e8;x=e8(x,b,n);P(!x,z(x))z(dct(z,x)))
