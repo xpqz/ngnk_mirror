@@ -25,7 +25,7 @@ S A eqlsL(Lv,Ax/*0*/)_(Ay=aB(xn);i4(xw,xn,yb=v=v==xb,yb=v=v==xh,yb=v=v==xi,yb=v=
 S A3(eqls,/*010*/Nn=zn,i=!y;Lv=gl(y?y:io(z,0)),a=v;Au=aB(n);S4(zw,W(i<n,ub=v=v==zb;i++),W(i<n,ub=v=v==zh;i++),W(i<n,ub=v=v==zi;i++),W(i<n,ub=v=v==zl;i++))y||!n?u:a4(u,ai(0),av,az(a)))
 A3(ars,/*010*/Q(xtv)Q(xv<11)Q(!y||ytzc)Q(ztZC)T(&dexs,adms,subs,adms,___s,___s,mnms,mxms,___s,___s,eqls)[xv](x,y,z))
 
-S A3(dexp,/*010*/cat11(y?y:_R(cn[zt]),drp(-1,zR)))
+S A3(dexp,/*010*/zn?cat11(y?y:_R(cn[zt]),drp(-1,zR)):y(zR))
 S A3(___p,/*010*/v2[xv](z,dexp(av,y,z)))
 S A3(modp,/*010*/e2f(mod,z,dexp(av,y,z)))
 S A3(mxmp,/*010*/I w=zw;Lv=gl(y),l=-1ll<<(8<<w)-1,h=~l;MAX(v,l);Nn=zn;P(v>=h,rsz(n,az(v)))y=an(tB+zw,zn);S4(w,zB[-1]=v,zH[-1]=v,zI[-1]=v,zL[-1]=v)Nj=n-1;
