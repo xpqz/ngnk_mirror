@@ -14,12 +14,12 @@ A3(arf,/*010*/Q(xtv)Q(xv<11)Q(!y||ytzfc)Q(ztZFC)T(&dexf,admf,subf,admf,___f,___f
 
 S A3(___s,/*010*/Ni=!y;Au;I(i,y=ii(z,0);u=enl(yR))E(yR;u=oB)Nn=zn;W(i<n,y=y(x2(y,ii(z,i++)));P(!y,u(0))uq(yR))y(u))
 S A3(dexs,/*010*/y?y(zR):zR)
-S A3(adms,/*010*/L w=y?gl(y):x==MUL;Nn=zn;I b=1;Lv=w;Ct=tB+zw;Au=an(t,n);
+S A3(adms,/*010*/L w=y?gl(y):x==MUL;Nn=zn;I b=1;Lv=w;Ct=tB+zw;Au=an(n,t);
  I(x==ADD,i4(zw,n,ub=v+=zb;B(v-(B)v,b=0),uh=v+=zh;B(v-(H)v,b=0),ui=v+=zi;B(v-(I)v,b=0),ul=v+=zl))
  E(       i4(zw,n,ub=v*=zb;B(v-(B)v,b=0),uh=v*=zh;B(v-(H)v,b=0),ui=v*=zi;B(v-(I)v,b=0),ul=v*=zl))P(b,u)z=cT[t+1](u(zR));z(adms(x,az(w),z)))
 S A3(subs,/*010*/y=neg(y?y:mul(ai(2),ii(z,0)));neg(adms(ADD,y,z)))
 S A3(mxms,/*010*/P((!y||ytz)&&ztZ,Lv=y?gl(y):-WL,l=-1ll<<8*zW-1,h=~l;Nn=zn;I(v<=l||h<=v,P(v>=0,rsz(n,az(v)))v=v<0?l:h)
-                                  Au=an(zt,n);i4(zw,n,ub=MAX(v,zb),uh=MAX(v,zh),ui=MAX(v,zi),ul=MAX(v,zl))u)___s(x,y,z))
+                                  Au=an(n,zt);i4(zw,n,ub=MAX(v,zb),uh=MAX(v,zh),ui=MAX(v,zi),ul=MAX(v,zl))u)___s(x,y,z))
 S A3(mnms,/*010*/P((!y||ytz)&&ztZ,z=inv(zR);z(inv(mxms(MXM,y?az(~gl(y)):0,z))))___s(x,y,z))
 S A eqlsL(Lv,Ax/*0*/)_(Ay=aB(xn);i4(xw,xn,yb=v=v==xb,yb=v=v==xh,yb=v=v==xi,yb=v=v==xl)y)
 S A3(eqls,/*010*/Nn=zn,i=!y;Lv=gl(y?y:io(z,0)),a=v;Au=aB(n);S4(zw,W(i<n,ub=v=v==zb;i++),W(i<n,ub=v=v==zh;i++),W(i<n,ub=v=v==zi;i++),W(i<n,ub=v=v==zl;i++))y||!n?u:a4(u,ai(0),av,az(a)))
@@ -28,7 +28,7 @@ A3(ars,/*010*/Q(xtv)Q(xv<11)Q(!y||ytzc)Q(ztZC)T(&dexs,adms,subs,adms,___s,___s,m
 S A3(dexp,/*010*/zn?cat11(y?y:_R(cn[zt]),drp(-1,zR)):y(zR))
 S A3(___p,/*010*/v2[xv](z,dexp(av,y,z)))
 S A3(modp,/*010*/e2f(mod,z,dexp(av,y,z)))
-S A3(mxmp,/*010*/I w=zw;Lv=gl(y),l=-1ll<<(8<<w)-1,h=~l;MAX(v,l);Nn=zn;P(v>=h,rsz(n,az(v)))y=an(tB+zw,zn);S4(w,zB[-1]=v,zH[-1]=v,zI[-1]=v,zL[-1]=v)Nj=n-1;
+S A3(mxmp,/*010*/I w=zw;Lv=gl(y),l=-1ll<<(8<<w)-1,h=~l;MAX(v,l);Nn=zn;P(v>=h,rsz(n,az(v)))y=an(zn,tB+zw);S4(w,zB[-1]=v,zH[-1]=v,zI[-1]=v,zL[-1]=v)Nj=n-1;
  i4(w,n,yB[j]=max(zB[j],zB[j-1]);j--,yH[j]=max(zH[j],zH[j-1]);j--,yI[j]=max(zI[j],zI[j-1]);j--,yL[j]=max(zL[j],zL[j-1]);j--)zn=n;y)
 S A3(mnmp,/*010*/y=az(~gl(y));z=inv(zR);z(inv(mxmp(MXM,y,z))))
 S A3(cmpp,/*010*/I o=x-LTN,w=zw;Nn=zn;Au=aB(n);Lv=gl(y),p=iw(z,w,0);*uB=!o?p<v:o==1?p>v:p==v;Lm=n-1,j=m;

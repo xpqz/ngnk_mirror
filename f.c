@@ -6,7 +6,7 @@ UL rnd1()_(Lv=a[1]<<17;a[2]^=a[0];a[3]^=a[1];a[1]^=a[2];a[0]^=a[3];a[2]^=v;a[3]=
 A1(prng,P(x==au,aV(tL,4,a))XZ(x=cL(rsz(4,x));Mc(a,xV,SZ a);x(au))Xz(UL v=gl(x);I(!v,v=now())i(LEN(a),a[i]=v=v*6364136223846793005+1442695040888963407)au)et1(x))//knuth mmix
 S UI rm(UL m)_((UI)rnd1()*m>>32)
 S V shf(L*r,Nn){i(n,Ij=rm(i+1);SWP(r[i],r[j]))}
-S A ro(UL n,UL m)_(Ct=m?tZ(m-1):tL;Ax=an(t,n);P(t==tB,i(n,xb=rm(m))x)P(t==tH,i(n,xh=rm(m))x)P(t==tI,i(n,xi=rm(m))x)i(n,xl=rnd1())I(m,i(n,xl=(UL)xl%m))x)
+S A ro(UL n,UL m)_(Ct=m?tZ(m-1):tL;Ax=an(n,t);P(t==tB,i(n,xb=rm(m))x)P(t==tH,i(n,xh=rm(m))x)P(t==tI,i(n,xi=rm(m))x)i(n,xl=rnd1())I(m,i(n,xl=(UL)xl%m))x)
 S A de(UL n,UL m)_(P(n>m,el0())Ax=ro(n,0);i(n,UL k=m-n+i;xl%=k+1;j(i,B(xL[j]==xl,xl=k)))shf(xV,n);x)
 S A rd(Ln,Lm)_(P(m<0,ed0())n<0?de(n-NL?-n:m,m):ro(n,m))
 AL(rndF,Ay=al(1023ll<<52);add(ai(-1),AT(tF,y(add(y,N(rd(n,1ll<<52)))))))
