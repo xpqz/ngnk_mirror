@@ -14,7 +14,7 @@ AAL(io,/*0*/XT(in(i,xn)?ii(x,i):xn?mkn(ii(x,0)):PR(xtA?_R(xx):)_R(cn[xt]))Xt(xR)
 #define i_(T,U)iF(i##T##U,T,U,T,UI g=G(T,U);U k[g];i(n/g,j(g,k[j]=q[j])U o=0;j(g,o|=!in(k[j],m))P(o,i*g)j(g,r[j]=p[k[j]])q+=g;r+=g)L l=n/g*g;j(n-l,P(!in(q[j],m),l))j(n-l,r[j]=p[q[j]]))
 iC_(I)iC_(L)i_(B,I)j_(B,I)i_(B,L)j_(B,L)i_(H,I)j_(H,I)i_(H,L)j_(H,L)i_(I,I)j_(I,I)i_(I,L)j_(I,L)j_(L,I)j_(L,L)iF_(I)iF_(L)iS_(I)iS_(L)
 A2(i1,/*01*/Xt(y(xR))P(y==PLH||y==au,xR)P(xtm||xtM&&ytsS,i1(xy,N(fnd(xx,y))))Yzc(io(x,gl(y)))Yt(et1(y))YmM(Az=kv(&y);am(y,Ny(i1(x,z))))YA(r2(AP1,x,y))
- I(!ytL&&!ytI,y=N(cI(y)))Nn=yn;P(xtA||xtM,Az=aA(n);I(ytL,i(n1(n),za=io(x,yl)))E(i(n1(n),za=io(x,yi)))y(0);PR(I(!yn,yx=mkn(yx)));sqz(z))
+ I(!ytL&&!ytI,y=N(cI(y)))Nn=yn;P(xtA||xtM,Az=aA(n);I(ytL,i(n1(n),za=io(x,yl)))E(i(n1(n),za=io(x,yi)))y(0);PR(I(!n,zx=mkn(zx)));sqz(z))
  Az=xtL&&ytL&&yr==1?y:an(xt,n);Lm=T(&iBI,iHI,iII,jLI,iFI,iCI,iSI,iBL,iHL,iIL,jLL,iFL,iCL,iSL)[xt-tB+7*ytL](xV,xn,yV,zV,n);
  I(m<n,z=z(aL(n));T(&jBI,jHI,jII,jBL,jHL,jIL)[xt-tB+3*ytL](xV,xn,yV,zV,n))y-z?y(z):z)
 S A3(i2,/*001*/Cb=ytT||y==PLH||y==au;x=Nz(i1(x,yR));P(!b,x(x1(z)))x(l2f(dot,x,aA1(z))))
