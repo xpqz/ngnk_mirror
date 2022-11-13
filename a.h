@@ -1,6 +1,5 @@
 // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define DBG(a...)//a
-#define PR(a...)//a
 #include<unistd.h>
 #include"g.h"
 #define   _(a...) {return({a;});}
@@ -158,5 +157,3 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define oo os("["__FILE__":"M2(__LINE__)"]");
 #define nop {asm volatile("fnop");}
 I os(Q);L ov_(Q,L);
-
-#define n1(x) ((x)PR(+!(x)))

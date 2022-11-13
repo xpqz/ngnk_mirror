@@ -1,6 +1,6 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 I mtc_(Ax,Ay/*00*/)_(P(x==y,1)P(xtz&&ytz,gl_(x)==gl_(y))P(xts&&yts,xv==yv)P(xtZ&&ytZ&&xt-yt&&xn==yn,xR;yR;sup(&x,&y);x(y(!MQ(xV,yV,xn*TW[xt]))))P(xt-yt||xtP||(xtr&&xE-yE)||xn-yn,0)
- P(!xtR,i(xn*xW,P(xc-yc,0))1)P(LH(tB,xt,tS)&&xt==yt&&xn==yn,!MQ(xV,yV,xn*TW[xt]))i(n1(xn),P(!mtc_(xa,ya),0))1)
+ P(!xtR,i(xn*xW,P(xc-yc,0))1)P(LH(tB,xt,tS)&&xt==yt&&xn==yn,!MQ(xV,yV,xn*TW[xt]))i(xn|!xn,P(!mtc_(xa,ya),0))1)
 A2(mtc,/*01*/y(ai(mtc_(x,y))))
 S O UL o=(-1ull>>12)-1;S L t(Lv)_(v^(UL)(v>>63)>>1)
 S L o1(Lv)_(t(v)+o)A1(of1,Q(xtfF);Ay=an(xt+tl-tf,xn);i(PD(xn,xL),yl=o1(xl))x-y?x(y):y)

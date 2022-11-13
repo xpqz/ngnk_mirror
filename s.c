@@ -46,7 +46,7 @@ A1(ksr,ksp(x,"","","qruvw"))
 A1(ksw,ksp(x,"AC","IFS","Mmpqw"))
 A1(kst,
  P(xtT&&xn==1,pre(',',ksr(fir(x))))
- XA(PR(P(!xn&&!(_t(xx)==tC&&!_n(xx)),cat11(aCz("0#,"),kst(x(_R(xx))))))par(jc(';',ek(x))))
+ XA(P(!xn&&!(_t(xx)==tC&&!_n(xx)),cat11(aCz("0#,"),kst(x(_R(xx)))))par(jc(';',ek(x))))
  Xc(kss(enl(x)))
  XC(kss(x))
  XZF(xn?jc(32,e1f(str,x)):x(aCz(xtF?"0#0n":"!0")))
