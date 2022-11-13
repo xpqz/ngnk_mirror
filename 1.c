@@ -12,7 +12,7 @@ A1(neg,XmMA(e1f(neg,x))Xzc(az(-gl(x)))Xf(af(-gf(x)))XC(neg(cB(x)))
  et1(x))
 A1(not,XmMA(e1f(not,x))XU(x(ai(x==au)))eql(xtsS?as(0):ai(0),x))
 A1(nul,XmMA(e1f(nul,x))XU(x(ai(x==au)))XF(Ay=aB(xn);xe(i(xn,yb=xf!=xf);y))Xf(x(ai(*xF!=*xF)))eql(cn[xt],x))
-A1(flr,XmMA(e1f(flr,x))XcC(K1("`c$@[!256;65+!26;+;32]",cB(x)))XsS(cS(flr(str(x))))XzZ(x)XfF(Ay=an(xt+tl-tf,xn);xe(i(yn,yl=xf<0?(L)xf-(xf<(L)xf):(L)xf)y))et1(x))
+A1(flr,XmMA(e1f(flr,x))XcC(K1("`c$@[!256;65+!26;+;32]",x))XsS(cS(flr(str(x))))XzZ(x)XfF(Ay=an(xt+tl-tf,xn);xe(i(yn,yl=xf<0?(L)xf-(xf<(L)xf):(L)xf)y))et1(x))
 
 #define h(k,f) A1(k,XfF(Ay=xr-1?an(xt,xn):x;i(PD(xn,xF),yf=f(xf));x-y?x(y):y)XmMA(e1f(k,x))k(N(cF(x))))
 h(ksin,sin)h(kcos,cos)h(klog,log)h(kexp,exp)h(sqr,__builtin_sqrt)
