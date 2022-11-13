@@ -3,7 +3,7 @@ S C b[PG],*r=b;S I d;
 NI A err0(Qs)_(r=b;d=0;Nn=min(Sn(s),32);r=b;*r++='\'';Mc(r,s,n);r+=n;*r++=10;0)
 SN A err1(Ax,Qs)_(x(err0(s)))
 SN A err2(Ax,Ay,Qs)_(y(err1(x,s)))
-SN A errN(OA*a,In,Qs)_(mrn(n,a);err0(s))
+SN A err8(OA*a,In,Qs)_(mrn(n,a);err0(s))
 NI V eQ(Qs,Nn,Ni){I(++d>=5,I(d==5,Mc(r," ..\n",4);r+=4)return)
  Qp=s+i,q=p,t=p;I h=64;W(p>s&&p>t-h&&p[-1]&&p[-1]-10,p--)W(q<s+n&&q<=t+h&&*q&&*q-10,q++)
  *r++=32;Mc(r,p,q-p);I(p<=t-h,*r=r[1]='.')I(q>t+h,r[q-p-2]=r[q-p-1]='.')r+=q-p;*r++=10;
@@ -18,5 +18,5 @@ NI A die(Qs)_(In=Sn(s);Cv[n+1];Mc(v,s,n);v[n]=10;write(1,"'",1);write(2,v,n+1);e
  NI A0(e##t##0,err0(    #m))\
  NI A1(e##t##1,err1(x,  #m))\
  NI A2(e##t##2,err2(x,y,#m))\
- NI AA(e##t##8,errN(a,n,#m))
+ NI AA(e##t##8,err8(a,n,#m))
 ERR
