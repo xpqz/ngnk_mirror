@@ -31,8 +31,8 @@ C*sf(C*s,L d)_(UL x=d,m=x<<12>>12;I e=x<<1>>53;I(x>>63,*s++='-')P(e==2047,m?Mh(s
  P(-4<t&&t<0,i(l+1,s[l-t-i]=s[l-i])s[-1]='0';*s++='.';Ms(s,'0',-t-1)+l-t)I(l>0,*s++='.';s+=l)*s++='e';I(t<0,t=-t;*s++='-')su(s,t))
 A1(str0,Q(xtC);Nn=xn;x=AN(n,room(n+1,x));xC[n]=0;x)
 A1(str,Xzf(Ay=aC(24);V(f,xtf?sf:sl)AN(f(yC,gl(x))-yC,y))Xs(Lv=xv;aCz(qs(&v)))Xc(enl(x))XU(kst(x))e1f(str,x))
-Q HEX="0123456789abcdef0123456789ABCDEF";A1(hex,XC(Ay=aC(2*xn);C*s=yC;xe(i(xn,*s++=HEX[(UC)xc>>4];*s++=HEX[xc&15])y))pen(x,hex))
-A1(unh,XC(P(xn&1,el1(x))S C q[256];I(!q['1'],i(32,q[HEX[i]]=15&i))Ay=aC(xn/2);xe(i(yn,yc=q[xC[2*i]]<<4|q[xC[2*i+1]])y))pen(x,unh))
+Q HEX="0123456789abcdef0123456789ABCDEF";A1(hex,XC(Ay=aC(2*xn);C*s=yC;xe(i(xn,*s++=HEX[(UC)xc>>4];*s++=HEX[xc&15])y))XmMA(e1f(hex,x))et1(x))
+A1(unh,XC(P(xn&1,el1(x))S C q[256];I(!q['1'],i(32,q[HEX[i]]=15&i))Ay=aC(xn/2);xe(i(yn,yc=q[xC[2*i]]<<4|q[xC[2*i+1]])y))XmMA(e1f(unh,x))et1(x))
 
 S A pre(Cc,Ax)_(cat11(ac(c),x))
 A sur(Cc,Ax,Cd)_(apc(pre(c,x),d))
