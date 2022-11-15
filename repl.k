@@ -83,7 +83,7 @@ N%N divide    2 3%4 -> 0.5 0.75
  !i enum      !3 -> 0 1 2   !-3 -> -3 -2 -1
  !I odometer  !2 3 -> (0 0 0 1 1 1;0 1 2 0 1 2)
  !d keys      !`a`b!0 1 -> `a`b
- !S ns keys   a.b.c:1;a.b.d:2;!`a`b -> ``c`d
+ !S ns keys   a.b.c:1;a.b.d:2;!`a`b -> `c`d
 x!y dict      `a`b!1 2 -> `a`b!1 2
 i!I div       -10!1234 567 -> 123 56
 i!I mod       10!1234 567 -> 4 7
