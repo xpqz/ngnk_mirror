@@ -9,7 +9,7 @@ A1(flp,XM(Ay=kv(&x);am(x,y))Xm(Ay=kv(&x);I(!ytA,y=flp(flp(y)))Ln=cfm(yA,yn);P(n<
  x(0);I(!n,yx=mkn(yx))y)
 V tilV(V*p,Ln,I w){L*a=p,v=T(0x706050403020100ll,0x3000200010000ll,1ll<<32,0)[w],d=T(0x808080808080808ll,0x4000400040004ll,2ll<<32|2,1)[w];LI(a)i(PD((n-1>>3-w)+1,a),a[i]=v;v+=d)}
 AL(tilL,P(n<0,n==(I)n?add(ai(n),N(tilL(-n))):ed0())P(n>1<<30,ez0())Ax=an(n,tZ(n-1));tilV(xV,n,xt-tB);x)
-A1(til,Xz(tilL(gl(x)))XZ(K1("{(0#,,0N),x((*a)#&#)'1_a:|*\\|x,1}",x))XmM(x(_R(xx)))Xo(val(x))XS(K1("{x:\".\"/$x,`;(0#`),`$(#x)_'(x~/:@[;!#x]')#$!.0#`}",x))P(!xtA||xn,et1(x))x)
+A1(til,Xz(tilL(gl(x)))XZ(K1("{(0#,,0N),x((*a)#&#)'1_a:|*\\|x,1}",x))XmM(x(_R(xx)))Xo(val(x))XS(K1("{x:\".\"/$x,`;(0#`),`$(#x)_'(x~/:@[;!#x]')#$!.0#`}",x))et1(x))
 A1(whr,Xz(whr(enl(x)))XA(K1("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Xm(Ay=kv(&x);x(x1(Nx(whr(y)))))XM(et1(x))
  XZ(I w=xt-tB;Ln=0;i(xn,Lv=iw(x,w,i);n+=v;P(n<0||v<0,ed1(x)))Ct=tZ(xn-!!xn);P(t>tI,ez1(x))Ay=an(n,t);
   xe(S4(Tw[t],{B*a=yV;i(xn,j(iw(x,w,i),*a++=i))},{H*a=yV;i(xn,j(iw(x,w,i),*a++=i))},{I*a=yV;i(xn,j(iw(x,w,i),*a++=i))},)y))et1(x))
