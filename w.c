@@ -51,8 +51,10 @@ S A3(f2,/*010*/Zt(y(x2(y,zR)))P(xtv&&xv<11&&ytzfc&&ztZFC,arf(x,y,z))P(x==CAT,raz
 AX(f8,/*01..1*/P(n==1,f1(x,*a))P(n==2,Ay=*a,z=a[1];z(f2(x,y,z)))n--;Ay=*a++,z=*a;Lm=cfm(a,n);P(m==-1,y?x8(a-1,n+1):z)P(m<0,I(y,y(0))el8(a,n))P(!m&&!y,x=ie(x,z);mrn(n,a);x)
  Li=!y;I(i,y=ii(z,0))Ab8;W(i<m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);B(!y)i++)mrn(n-1,a+1);z(y))
 S A3(s2,/*010*/Zt(y(x2(y,zR)))Zm(Au=N(s2(x,y,zy));am(_R(zx),u))P(!zN,y(zR))P(xtv&&xv<11&&ytzc&&ztZC,ars(x,y,z))Au=aA0(zN);i(zN,y=y(x2(y,ii(z,i)));P(!y,u(0))uq(yR))y(u))
-S A2(s1,/*01*/Yt(y)P(!yN,y)Ym(Az=kv(&y);am(y,Ny(s1(x,z))))P(x==CAT,y(s2(x,oA,y)))P(xtv&&xv<11&&ytZC,y(ars(x,0,y)))Az=ii(y,0),u=enl(zR);i(yN-1,z=z(x2(z,ii(y,i+1)));P(!z,y(u(0)))uq(zR))z(y(u)))
-S AX(s8,/*01..1*/P(n==1,s1(x,*a))P(n==2,Ay=*a,z=a[1];z(s2(x,y,z)))Ay=*a++;n--;Lm=cfm(a,n);P(m==-2,y(el8(a,n)))Az=aA0(m);Ab8;i(m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);P(!y,mrn(n,a);z(0))zq(yR))mrn(n,a);y(z))
+S A2(s1,/*01*/Yt(y)P(!yN,y)Ym(Az=kv(&y);am(y,Ny(s1(x,z))))P(x==CAT,y(s2(x,oA,y)))P(xtv&&xv<11&&ytZC,y(ars(x,0,y)))
+ Az=ii(y,0),u=enl(zR);i(yN-1,z=z(x2(z,ii(y,i+1)));P(!z,y(u(0)))uq(zR))z(y(u)))
+S AX(s8,/*01..1*/Ay=*a;P(n==1,s1(x,y))P(n==2,Az=a[1];z(s2(x,y,z)))Lm=cfm(a+1,n-1);P(m==-2,el8(a,n))I(m<0,m=1)a++;n--;
+ Az=aA0(m);Ab8;i(m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);P(!y,mrn(n,a);z(0))zq(yR))mrn(n,a);y(z))
 S A3(p2,/*010*/ Zt(er1(y))Zm(y=N(p2(x,y,zy));am(_R(zx),y))P(!zN,y(zR))P(xtv&&xv<11&&ytzc&&ztZC,arp(x,y,z))Au=aA0(zN);i(zN,A v=ii(z,i),r=x2(v,y);y=v;B(!r,u=u(0))uq(r))y(u))
 S A2(p1,/*01*/y(p2(x,ie(x,y),y)))
 S A stn(Ax,Ln,Ay/*0n0*/)_(P(n<0||n-(I)n,ed0())P(!ytT,et0())Lm=max(0,yn-n+1);Az=aA0(m);P(!m,mr(zx);zx=mkn(rsz(n,fir(yR)));z)i(m,zq(Nz(x1(slc(y,i,i+n)))))z)
