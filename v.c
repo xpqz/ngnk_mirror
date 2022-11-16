@@ -27,7 +27,7 @@ A1(cH, XH(x)x=N(cI(x));Xt(x)Ay=an(xn,tH);xe(cIH(xV,yV,yn);y))
 A1(cI, XI(x)Xzc(ai(gl(x)))XfF(cI(N(cL(x))))XZC(Ay=aI(xn);Ii=xt-tB;xe(T(&cBI,cHI,0,cLI,0,cBI)[i](xV,yV,yn);y))et1(x))
 A1(cL,XlL(x)Xzc(al(gl(x)))Xt(fir(N(cL(enl(x)))))XF(Ay=aL(xn);xe(cFL(xV,yV,yn);y))x=N(cI(x));Ay=aL(xn);xe(cIL(xV,yV,yn);y))
 A1(cF,XfF(x)Xzc(af(gl(x)))Xt(fir(N(cF(enl(x)))))x=N(cL(x));Ay=aF(xn);xe(cLF(xV,yV,yn);y))
-A1(cS,XsS(x)XC(x=str0(x);x(sym(xV)))Xc(as(xv))P(xtA&&!xn,x(oS))XmMA(e1f(cS,x))et1(x))
+A1(cS,XsS(x)XC(x=str0(x);x(sym(xV)))Xc(as(xv))XmMA(e1f(cS,x))et1(x))
 A1(pI,Xc(pI(enl(x)))XC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tl])))Lv=pl(&s);x(*s?_R(cn[tl]):az(v)))XmMA(e1f(pI,x))et1(x))
 A1*cT[]={[tA]=cA,cB,cH,cI,cL,cF,cC,cS};
 A1(csti,XF(sqzZ(cL(x)))Xf(az(gf(x)))XC(sqzZ(cB(x)))Xc(ai(xv))XzZ(x)et1(x))
