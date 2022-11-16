@@ -1,5 +1,7 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S A adm(Ax,Ay,Iv/*01v*/)_(XYmMA(e2f(v?mul:add,x,y))Ik=2*xtT+ytT;
+S A adm(Ax,Ay,Iv/*01v*/)_(XYmMA(e2f(v?mul:add,x,y))
+ //I(!v,P(xtcC&&ytzZ,x=cB(xR);cC(N(x(adm(x,y,v)))))P(xtzZ&&ytcC,cC(N(adm(x,cB(y),v))))) //c+i -> c
+ Ik=2*xtT+ytT;
  P(!k,P(xti&&yti,az(v?xv*(L)yv:xv+(L)yv))P(xtzc&&ytzc,Lm=gl_(x),n=gl(y);az(v?m*n:m+n))x=Ny(cF(xR));y=Nx(cF(y));F a=gf(x),b=gf(y);af(v?a*b:a+b))P(k==2,y(adm(y,xR,v)))P(k==3&&xn-yn,el1(y))
  P(xtfF||ytF,P(!xtfF,x=Ny(cF(xR));x(adm(x,y,v)))P(!ytF,adm(x,Ny(cF(y)),v))
   Az=yr-1?aF(yn):y;Nn=PD(zn,zF);I(k==1,F a=*xF;I(v,i(n,zf=a*yf))E(i(n,zf=a+yf)))J(v,i(n,zf=xf*yf))E(i(n,zf=xf+yf))y-z?y(z):z)
