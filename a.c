@@ -44,7 +44,7 @@ AA(a8,/*10..0*/Ax=*a,y=a[1];
  XT(P(y==au,mRn(n-2,a+2);Ab8;*b=a[2];b[1]=x;Mc(b+2,a+3,n-3<<3);e8(AP1,b,n-1))
   Yzc(Li=gl_(y);P(!in(i,xn),ei1(x))x=mut(x);Ab8;*b=ii(x,i);Mc(b+1,a+3,n-3<<3);mRn(n-3,b+1);Az=a[2];set(x,i,Nx(z8(b,n-2))))
   I(ytZC&&n==4,Az=a[2],u=a[3];P(xtZ&&ztv&&utzZ&&(0xcf&1<<zv),ara(x,y,z,u))P(xtC&&z==av&&utcC,cC(N(ara(x,y,z,u)))))Yt(et1(x))mRn(n-1,a+1);f8(AP1,a,n))
- Xm(Az=Nx(fnd(xx,yR));ZT(z(0);mRn(n-1,a+1);f8(AP1,a,n))x=mut(x);I(ztl,Q(zr==1);i(zN,I(zl==NL,zl=xN;xx=apd(xx,ztt?yR:ii(y,i));xy=apd(xy,ie(a[2],xy)))))
+ Xm(Az=Nx(fnd(xx,yR));ZT(z(0);mRn(n-1,a+1);f8(AP1,a,n))x=mut(x);I(ztl,z=mut(z);i(zN,I(zl==NL,zl=xN;xx=apd(xx,ztt?yR:ii(y,i));xy=apd(xy,ie(a[2],xy)))))
   Ab8;*b=xy;b[1]=z;Mc(b+2,a+2,n-2<<3);xy=z(a8(b,n));x)
  XM(Ab8;i(n,Ax=a[i];b[i]=xtM?flp(xR):xR;Q(b[i]))flp(N(x(e8(AP1,b,n)))))
  XU(mRn(n-1,a+1);x(x8(a+1,n-1)))
