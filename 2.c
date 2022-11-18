@@ -29,7 +29,7 @@ A2(mod,YmMA(e2f(mod,x,y))YfF(Ln=gl_(x);P(!n,y)P(n<0,en1(y))K2("{y-x*(-x)!`i$y}",
   m--;I t=tZ(m),w=t-tB;y=mut(N(cT[t](y)));i(3-w,m|=m<<(8<<w+i))L*p=yV;i((yn<<w)+31>>5,j(4,*p++&=m))y)ed1(y))
 S ALA(ext/*n1*/,XMT(x)rsz(n,xtm?enl(x):x))A2(dct,/*01*/P(rnk(x)<0,ed1(y))x=ext(yN,xR);y=ext(xN,y);(xN-yN?el2:am)(x,y))A2(bng,Xzc(mod(x,y))dct(x,y))
 S C tZx(Ax)_(Ct=TX[xt];P(t,t)Xl(tZ(gl_(x)))tZ(xv))C sup(A*p,A*q)_(Ax=*p,y=*q;Ct=max(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
-S A mmm(Ax,Ay,A2 f)_(XYmMA(e2f(f,x,y))P(xtfF||ytfF,x=of1(Ny(cF(xR)));y=of1(Nx(cF(y)));x(of0(f(x,y))))
+S A mmm(Ax,Ay,A2 f)_(XYmMA(e2f(f,x,y))P(xtfF||ytfF,x=of1(Ny(cF(xR)));y=of1(Nx(cF(y)));of0(N(x(f(x,y)))))
  Ik=xtT<<1|ytT;P(!k,P(xtzc&&ytzc,Lv=gl_(x),w=gl(y);az(f==mnm?min(v,w):max(v,w)))et1(y))P(k==2,y(f(y,xR)))P(k==3&&xn-yn,el1(y))
  xR;N(sup(&x,&y));Ct=TT[k?min(xt,yt):max(xt,yt)];Nn=k-1?xn:yn;Az=yt==t&&yr==1?y:an(n,t);
  I(k==1,Lv=gl_(x);I(f==mnm,S4(zw,i(n,zb=min( v,yb)),i(n,zh=min( v,yh)),i(n,zi=min( v,yi)),i(n,zl=min( v,yl))))
