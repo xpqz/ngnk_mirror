@@ -66,9 +66,9 @@ S A2(binZ,/*01*/Q(xtZC)
   i(yn,Lv;S4(wy,v=yb,v=yh,v=yi,v=yl)*k=-1;k[1]=xn;S4(wx,,W(*k+1<k[1],Ii=*k+k[1]>>1;k[v<xh]=i),
                                                          W(*k+1<k[1],Ii=*k+k[1]>>1;k[v<xi]=i),
                                                          W(*k+1<k[1],Ii=*k+k[1]>>1;k[v<xl]=i))S4(wz,zb=*k,zh=*k,zi=*k,zl=*k))y(z))
- Yt(fir(binZ(x,enl(y))))YmMA(r2f(binZ,x,y))YF(x=cF(xR);x(binF(x,y)))ed1(y))
-S A2(binF,/*01*/Q(xtF)YF(x=of1(xR);x(binZ(x,of1(y))))YZC(binF(x,N(cF(y))))Yt(fir(binF(x,enl(y))))YmMA(r2f(binF,x,y))ed1(y))
-S A2(bin,/*01*/XZC(binZ(x,y))XF(binF(x,y))Xm(_1(xx,bin(xy,y)))et1(y))
+ Yt(fir(N(binZ(x,enl(y)))))YmMA(r2f(binZ,x,y))YF(x=cF(xR);x(binF(x,y)))ed1(y))
+S A2(binF,/*01*/Q(xtF)YF(x=of1(xR);x(binZ(x,of1(y))))YZC(binF(x,N(cF(y))))Yt(fir(N(binF(x,enl(y)))))YmMA(r2f(binF,x,y))ed1(y))
+S A2(bin,/*01*/XZC(binZ(x,y))XF(binF(x,y))Xm(_1(xx,N(bin(xy,y))))et1(y))
 A2(w1,/*01*/Q(xtr)Ii=xE;x=xx;SW(i,CR(0,Xt(e1(x,y))bin(x,y))CR(1,P(xtzZ||xtfF,dec(x,y))Xc(jc(xv,y))XC(jC(xV,xn,y))P(xK<2,cf(x,y))f1(x,y))
  CR(2,P(xtzZ||xtfF,enc(x,y))Xc(sc(xv,y))XC(sC(xV,xn,y))P(xK<2,cs(x,y))s1(x,y))CR(3,Xz(win(gl_(x),y))p1(x,y))CR(4,er1(y))CR(5,e1(x,y)))en1(y))
 A3(w2,/*010*/Q(xtr)Ii=xE;x=xx;SW(i,CR(0,y(e2(x,y,zR)))CR(1,(xK<2?lf2:f2)(x,y,z))CR(2,(xK<2?ls2:s2)(x,y,z))CR(3,(xK==1?ste:p2)(x,y,z))CR(4,y(r2(x,y,zR)))CR(5,y(l2(x,y,zR))))en1(y))
