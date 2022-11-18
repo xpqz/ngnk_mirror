@@ -2,8 +2,8 @@
 #define c_(T,R,p) SN V c##T##R(OV*RE v,V*RE w,Nn)_(O T*RE a=v;R*RE r=w;i(PD(n,p),r[i]=a[i]))
 #define cN(T,R,p) SN V c##T##R(OV*RE v,V*RE w,Nn)_(O T*RE a=v;R*RE r=w;i(PD(n,p),r[i]=a[i]==N##T?N##R:a[i]))
 c_(B,H,r)c_(H,B,a)c_(B,I,r)c_(I,B,a)c_(L,B,a)c_(H,I,r)c_(I,H,a)c_(H,L,r)c_(L,H,a)c_(I,L,r)c_(L,I,a)cN(L,F,a)cN(F,L,a)
-A1(flp,XM(Ay=kv(&x);am(x,y))Xm(Ay=kv(&x);I(!ytA,y=flp(flp(y)))Ln=cfm(yA,yn);P(n<0,x(el1(y)))i(yn,Az=ya;I(ztt,y=mut(y);ya=rsz(n,z)))aM(x,y))Xt(enl(enl(x)))P(!xtA,enl(x))
- Nm=xn;Ln=cfm(xA,m|!m);P(n==-1,enl(x))P(n<0,el1(x))Ct=_t(xx);I(t<tM,i(m,Ay=xa;B(yt-t,t=0)))E(t=0)Ay=aA(n);
+A1(flp,Xm(Ay=kv(&x);YA(I(yn>1,Ln=cfm(yA,yn);P(n<0,x(el1(y)))i(yn,Az=ya;I(ztt,y=mut(y);ya=rsz(n,z))))aM(x,y))YT(aM(x,e1f(enl,y)))en2(x,y))
+ XM(Ay=kv(&x);am(x,y))Xt(enl(enl(x)))P(!xtA,enl(x))Nm=xn;Ln=cfm(xA,m|!m);P(n==-1,enl(x))P(n<0,el1(x))Ct=_t(xx);I(t<tM,i(m,Ay=xa;B(yt-t,t=0)))E(t=0)Ay=aA(n);
  P(!t,i(n|!n,Az=aA(m);j(m,zA[j]=ii(xA[j],i))I(!zn,zx=mkn(zx))ya=sqz(z))x(0);I(!yn,yx=mkn(yx))y)
  I w=Tw[t];j(n|!n,Az=yA[j]=an(m,t);S4(w,i(m,zb=_B(xa)[j]),i(m,zh=_H(xa)[j]),i(m,zi=_I(xa)[j]),i(m|!m,zl=_L(xa)[j])I(w==4,I(!m,zx=mkn(_R(zx)))yA[j]=sqz(mRa(z)))))
  x(0);I(!n,yx=mkn(yx))y)
