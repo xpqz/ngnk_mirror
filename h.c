@@ -23,7 +23,7 @@ A2(cat11,P(xtT&&ytT,P(!yn,y(x))P(!xn,x(y))I(xtZ&&ytzZ,N(sup(&x,&y)))I(xt-yt,x=cA
  P(xtm&&ytm,y(a4(x,yx,av,yy)))Xmt(cat11(enl(x),y))Ymt(apd(x,y))
  P(xtM||ytM,P(xtT||ytT,x=Ny(cA(x));y=Nx(cA(y));cat11(x,y))P(!xtM||!ytM,et2(x,y))P(!mtc_(xx,yx),ed2(x,y))Az=e2f(cat,xy,_R(yy));x(y(z?aM(_R(xx),z):0)))Q(0);0)
 A2(cat,/*01*/cat11(xR,y))
-A2(apd,/*11*/Q(xtMT);Nn=xn;P(!n,enl(x(y)))
+A2(apd,/*11*/Q(xtMT);Nn=xN;P(!n,enl(x(y)))
  P(xtB&&yti&&yv==(B)yv||xtC&&ytc,apc(x,yv))
  P(xtH&&yti&&yv==(H)yv,x=room(n+1,x);xH[n]=yv;x)
  P(xtI&&yti||xtS&&yts ,x=room(n+1,x);xI[n]=yv;x)
