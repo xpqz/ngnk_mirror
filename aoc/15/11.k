@@ -1,5 +1,8 @@
 #!/usr/bin/env k
-iol:"iol"-"a"
-f:{$[2>#?x@&=':x;0;~|/&':(1+-1_x)=1_x;0;~|//iol=\:x]} /valid password?
-g:(~f@26\)(1+)/ /next valid
-`0:`c$"a"+26\'a,g 1+a:g@26/-"a"-*0:"i/11" /both parts
+a:-97+*0:"i/11"
+iol:"iol"-98
+f:{{a[x]+:1+/iol=a x;$[26=a x;[a[x]:0;o x-1];]}@-1+#a} /smart increment
+b:{$[2>#?a@&=':a;1;~|/&':(1+-1_a)=1_a]} /bad password?
+w:{`0:`c$97+a} /write
+b f/0;w[];f[]  /part1
+b f/0;w[]      /part2
