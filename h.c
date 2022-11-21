@@ -12,7 +12,7 @@ S A2(rsh,/*01*/YmM(en1(y))Yt(rsh(x,enl(y)))Q(xtZ);N r=xn;P(!r,fir(y))P(r>256,ez1
  I(r==2,P(*s==NL,chp(s[1],y))P(s[1]==NL,K2("{((-x)!(#y)*!x)_y}",az(*s),y)))P(r==1&&*s==NL,y)I(!yn,y=enl(fir(y)))
  L p[r],m=1;i(r,L d=s[r-1-i];P(d<0||m*d<0,ed1(y))p[i]=m*=max(1,d))y=N(rsz(m,y));i(r-1,L d=s[r-1-i];I(d,y=N(chp(max(1,d),y)))E(y=N(e1f(rs0,chp(1,y)))))rsz(*s,y))
 A2(hsh,/*01*/Xz(rsz(gl_(x),y))XZ(rsh(x,y))XU(flt(x,y,1))XT(P(ytm||ytM&&xtS,y(a2t(xR,y1(xR),yt)))et1(y))et1(y))
-ALA(drp,/*n1*/XT(P(n==NL,rs0(x))P(-n<=(UL)xn&&xr==1,I(xtA,mrn(-n,xA+xn+n))AN(xn+n,x))x(slc(x,max(0,min((L)xn,n)),max(0,min((L)xn,xn+n)))))
+ALA(drp,/*n1*/XT(P(n==NL,rs0(x))P(-n<(UL)xn&&xr==1,I(xtA,mrn(-n,xA+xn+n))AN(xn+n,x))x(slc(x,max(0,min((L)xn,n)),max(0,min((L)xn,xn+n)))))
  Xm(Ay=kv(&x);am(Ny(drp(n,x)),Nx(drp(n,y))))XM(Ay=kv(&x);aM(x,Nx(e2f(und,az(n),y))))er1(x))
 S AAL(rmv,XT(P(!in(i,xn),x)Ay=an(xn-1,xt);Mc(yV,xV,i*xW);Mc(yV+i*xW,xV+i*xW+xW,(xn-i-1)*xW);I(xtA,I(!yn,yx=mkn(_R(xx)))y=sqz(mRa(y)))x(y))et1(x))
 S A2(cut,/*01*/Q(xtZ)Q(ytMT)K2("{y$[|/0<':x,#y;`err\"domain\";x+!'1_-':x,#y]}",x,y))
