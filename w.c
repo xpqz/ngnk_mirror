@@ -1,7 +1,6 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A2(dec,/*01*/K2("0{z+x*y}/",x,y))
-S A2(enc,/*01*/P(!xtzZ,en1(y))P(x==ai(2)&&ytz&&gl_(y)<0,x=rsz(64,xR);x(enc(x,y)))
- Ii=ytt;x=K2("{$[0>&/x;`err\"domain\";x~*x;[$[0|/*y:x!|![-x;]\\y;@[y;0;-:0<];1_y]];x!'|(,y),y{(-y)!x}\\|1_x]}",x,y);!x||xN?x:x(i?oB:oA))
+S A2(enc,/*01*/Q(xtzZ)P(x==ai(2)&&ytz&&gl_(y)<0,x=rsz(64,xR);x(enc(x,y)))K2("{$[0>&/x;`err\"domain\";x~*x;[$[0|/*y:x!|![-x;]\\y;@[y;0;-:0<];1_y]];x!'|(,y),y{(-y)!x}\\|1_x]}",x,y))
 S A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=MC(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)S A sc(Cc    ,Ax)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))
 S A sCC(C*s,Lm,C*p,Ln)_(P(!m,el0())Ax=oA;C*q;W((q=MM(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)S A sC(C*s,Lm,Ax)_(XC(x(sCC(s,m,xV,xn)))et1(x))
 S L jN(Lm,Ax/*0*/)_(P(!xtA,-1)Ln=(xn-!!xn)*m;i(xn,Ay=xa;P(!ytcC,-1)n+=yN)n)//total length or -1
@@ -70,7 +69,7 @@ S A2(binZ,/*01*/Q(xtZC)
 S A2(binF,/*01*/Q(xtF)YF(x=of1(xR);x(binZ(x,of1(y))))YZC(binF(x,N(cF(y))))Yt(fir(N(binF(x,enl(y)))))YmMA(r2f(binF,x,y))ed1(y))
 S A2(bin,/*01*/XZC(binZ(x,y))XF(binF(x,y))Xm(_1(xx,N(bin(xy,y))))et1(y))
 A2(w1,/*01*/Q(xtr)Ii=xE;x=xx;SW(i,CR(0,Xt(e1(x,y))bin(x,y))CR(1,P(xtzZ||xtfF,dec(x,y))Xc(jc(xv,y))XC(jC(xV,xn,y))P(xK<2,cf(x,y))f1(x,y))
- CR(2,P(xtzZ||xtfF,enc(x,y))Xc(sc(xv,y))XC(sC(xV,xn,y))P(xK<2,cs(x,y))s1(x,y))CR(3,Xz(win(gl_(x),y))p1(x,y))CR(4,er1(y))CR(5,e1(x,y)))en1(y))
+ CR(2,XfF(en1(y))XzZ(enc(x,y))Xc(sc(xv,y))XC(sC(xV,xn,y))P(xK<2,cs(x,y))s1(x,y))CR(3,Xz(win(gl_(x),y))p1(x,y))CR(4,er1(y))CR(5,e1(x,y)))en1(y))
 A3(w2,/*010*/Q(xtr)Ii=xE;x=xx;SW(i,CR(0,y(e2(x,y,zR)))CR(1,(xK<2?lf2:f2)(x,y,z))CR(2,(xK<2?ls2:s2)(x,y,z))CR(3,(xK==1?ste:p2)(x,y,z))CR(4,y(r2(x,y,zR)))CR(5,y(l2(x,y,zR))))en1(y))
 AX(w8,/*01..1*/Q(xtr)Ay=*a;P(n==1,w1(x,y))P(n==2,Az=a[1];z(w2(x,y,z)))Ii=xE;x=xx;SW(i,CR(0,e8(x,a,n))CR(1,P(xK<2||n-xK==1,lf8(x,a,n))f8(x,a,n))
  CR(2,P(xK<2||n-xK==1,ls8(x,a,n))s8(x,a,n))CR(3,er8(a,n))CR(4,er8(a,n))CR(5,l8(x,a,n)))en8(a,n))
