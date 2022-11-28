@@ -1,6 +1,6 @@
 ngn/k is a simple fast vector programming language
 license: GNU AGPLv3 (v3 only) - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-build: make CC=clang-12 # or CC=gcc-10
+build: make CC=clang-11 # or CC=gcc-10
  (for unusual platforms or compilers, if that doesn't work, try "make k-libc" instead of "make")
 usage: rlwrap ./k repl.k
 try online: https://ngn.codeberg.page/k or https://ngn.bitbucket.io/k
