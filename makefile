@@ -3,7 +3,7 @@ M=mkdir -p $(@D)
 STRIP ?= strip
 
 0:;$(MAKE) k-dflt && $(MAKE) t #default target
-t:o/t;o/t;dy/a.sh;cd g;./a.k;cd -;aoc/21/a.sh;aoc/20/a.sh;aoc/19/a.sh;aoc/18/a.sh;aoc/17/a.sh;aoc/16/a.sh;aoc/15/a.sh;e/a.sh #test
+t:o/t;o/t;dy/a.sh;cd g;./a.k;cd -;for i in $$(seq 21 -1 15);do aoc/$$i/a.sh;done;e/a.sh #test
 c:;rm -rf o k libk.so #clean
 k:k-dflt
 w:k o/w/fs.h o/w/k.wasm o/w/index.html $(patsubst w/x/%.k,o/w/x/%.k,$(wildcard w/x/*.k))
