@@ -21,7 +21,7 @@
 #endif
 
 //_start()
-#if defined(libc)||defined(wasm)
+#if defined(libc)||defined(wasm)||defined(shared)
  ;
 #elif defined(__OpenBSD__)||defined(__FreeBSD__)
  V _start(Q*a){exit(main(*(I*)(V*)a,a+1));}
