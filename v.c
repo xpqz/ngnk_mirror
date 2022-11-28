@@ -39,3 +39,5 @@ A1(sqz,P(!xtA,x)Nn=xn;Ay=xx;Ct=yt;
  y=an(n,TT[t]);Iv=yw;I(v<3,T(&cLB,cLH,cLI)[v](xV,yV,n))E(i(n,yl=gl_(xa)))x(y))
 A1(cA,XA(x)Xt(aA1(x))Xm(et1(x))Nn=xN;Ay=aA(n);i(yn|!yn,ya=ii(x,i))x(0);I(!yn,yx=mkn(yx))y)
 L tru(Ax/*1*/)_(Lv=xtU?x!=au:xtt?gl_(x):xN;x(0);v)
+A1(imn,fir(N(asc(x))))
+A1(imx,fir(N(dsc(x))))

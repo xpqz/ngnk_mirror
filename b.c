@@ -27,7 +27,9 @@ S A cr(Ax/*0*/,I r)_(I o=xo;
  P(n==3&&(ytu||y==av)&&_tsSA(xy),Nr(xz,1);Nl(x,xy,1);I(!r,h(bp))OK)
  P(n>3&&y==CST,n--;I p[n];A*a=xA;i(n&~1,Nr(*++a,1);h(i&1?bj:bz)p[i]=nb;h(0))Nr(n&1?*++a:au,1);
   i(n&~1,I d=(i&1?nb-1:p[i+1])-p[i];I(i&1,Ij=(n&~1)-1;W(i<j&&d>255,d=p[j]-1-p[i];j-=2))P(d>255,ez0())b[p[i]]=d)I(!r,h(bp))OK)
- I(n==2&&y==FIR,Az=xy;P(ztA&&zn==2&&zx==REV,Nr(zy,1);h(bu+LAS-au)I(!r,h(bp))OK))
+ I(n==2&&y==FIR,Az=xy;I(ztA&&zn==2,P(zx==REV,Nr(zy,1);h(bu+LAS-au)I(!r,h(bp))OK)
+                                   P(zx==ASC,Nr(zy,1);h(bu+IMN-au)I(!r,h(bp))OK)
+                                   P(zx==DSC,Nr(zy,1);h(bu+IMX-au)I(!r,h(bp))OK)))
  I p=0;i(n-1,Az=xA[n-1-i];I(z==PLH,p=1;hc(PLH))E(Nr(z,1)))
  I(p,Nr(xx,1);h(bP)h(n-1))J(y==MKL,n--;P(n-(UC)n,o);h(bl)h(n))J(n==2&&ytu,h(bu+yv))J(n==3&&ytv,h(bv+yv))J(n>9,ez0();_(o))E(Nr(xx,1);h(ba)h(n-1))
  I(!r,h(bp))OK)
