@@ -83,7 +83,7 @@ A a2t(A,A,C),aA0(N),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),aV(C,N,O
  jc(C,A),jC(Q,N,A),kv(A*),l2f(A2,A,A),mf(I,N),pen(A,A1*),slc(A,N,N),sur(C,A,C),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
 V cyc(V*,N,N),dir(I,void(*)(V*,Q),V*),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),*memmem(OV*,N,OV*,N),*memmove(V*,OV*,N),
  *memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),repl(),tilV(V*,L,I);
-F gf(A);N strlen(Q),_N(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);Q qs(O L*),pID(Q);
+F gf(A),pf(Q*);N strlen(Q),_N(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);Q qs(O L*),pID(Q);
 I _K(A),qA(A,A),qf(F,F),js_eval(C*,I,C*,I),memcmp(OV*,OV*,N),mtc_(A,A),si(Q,I),strcmp(Q,Q),rnk(A),osf(Q,L);
 L cfm(OA*,I),gl_(A),gl(A),iw(A,I,L),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),fAI(A,I),fpI(A*,I),maxfZ(L,A),minfZ(L,A);
 EX I gn,gk[];EX C gp[32];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env,HEX;EX OC vc[],TS[],Tw[],TW[],TT[],TX[],Tk[];
