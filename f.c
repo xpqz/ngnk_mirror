@@ -32,7 +32,7 @@ A2(fnd,/*01*/
    V(f,T(&fB,fH,fI,fL)[xw])Yt(az(f(xV,xn,gl(y))))
    Az=aL(yn);Ii=yw;ye(T(&FB,FH,FI,FL)[i](xV,xn,f,yV,yn,zV);z))
   Az=cn[tl];zR;y(ytt?z:rsz(yN,z)))
- Xm(i1(xx,fnd(xy,y)))
+ Xm(i1(xx,N(fnd(xy,y))))
  Ik=urnk(x),l=urnk(y);P(k==l+1,y(az(fA(x,y))))P(k<=l,r2(QUE,x,y))er1(y))
 
 A2(que,/*01*/Xs(S O C s[][4]={"","j","hex"};Li=fI(s,LEN(s),xv);T(&des,js0,unh,ed1)[i<0?LEN(s):i](y))Xz(rnd(gl_(x),y))Xt(et1(y))fnd(x,y))
