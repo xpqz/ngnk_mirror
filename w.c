@@ -16,7 +16,7 @@ A e1f(A1 f,Ax)_(Xt(f(x))Xm(Ay=kv(&x);am(x,Nx(e1f(f,y))))Nn=xN;P(!n,re0(N(o1f(f,f
 S A2(e1,/*01*/Xu(e1f(v1[xv],y))Yt(x1(y))Ym(em(x,&y,1))Nm=yN;P(!m,re0(N(o1(x,fir(y)))))P(ytA&&yr==1,y=AZ(y);Au=oA;i(m,Az=x1(ya);B(!z,u=u(0);mrn(m-i-1,yA+i+1))uq(z))y(u))
                                                                                                            Au=oA;i(m,Az=x1(ii(y,i));B(!z,u=u(0))             uq(z))y(u))
   A l2f(A2 f,Ax,Ay/*f01*/)_(Xt(f(x,y))Xm(Az=N(l2f(f,xy,y));       am(_R(xx),z) )Nn=xN;P(!n,          re0(N(o2f(f,x,fir(y)))))Au=aA0(n);i(n,A w=ii(x,i),v=f(w,yR);mr(w); B(!v,u=u(0))uq(v))y(u))
-S A r2f(A2 f,Ax,Ay/*f01*/)_(Yt(f(x,y))Ym(Az=Ny(r2f(f,x,_R(yx)));y(am(_R(yx),z)))Nn=yN;P(!n,x=fir(xR);re0(N(x(o2f(f,x,y  )))))Au=aA0(n);i(n,A v=f(x,ii(y,i));            B(!v,u=u(0))uq(v))y(u))
+S A r2f(A2 f,Ax,Ay/*f01*/)_(Yt(f(x,y))Ym(Az=Ny(r2f(f,x,_R(yy)));y(am(_R(yx),z)))Nn=yN;P(!n,x=fir(xR);re0(N(x(o2f(f,x,y  )))))Au=aA0(n);i(n,A v=f(x,ii(y,i));            B(!v,u=u(0))uq(v))y(u))
 S A3(l2,/*001*/Xv(l2f(v2[xv],y,z))Yt(x2(y,z))Ym(x=prj(x,A(PLH,z),2);x(e1(x,yR)))Nn=yN;P(!n,y=fir(yR);re0(N(y(o2(x,y,z   )))))Au=aA0(n);i(n,A w=ii(y,i),v=x2(w,zR);mr(w);B(!v,u=u(0))uq(v))z(u))
   A3(r2,/*001*/Xv(r2f(v2[xv],y,z))Zt(x2(y,z))Zm(x=prj(x,A(yR,PLH),2);x(e1(x,z)))Nn=zN;P(!n,          re0(N(o2(x,y,fir(z )))))Au=aA0(n);i(n,A v=x2(y,ii(z,i));           B(!v,u=u(0))uq(v))z(u))
 S AX(l8,/*01..1*/Ab8;Mc(b,a,8*n);*b=PLH;x=prj(x,b,n);x(e1(x,*a)))
