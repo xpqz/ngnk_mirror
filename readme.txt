@@ -14,8 +14,8 @@ https://github.com/xpqz/ngnk_mirror            - continuous integration for osx
 https://github.com/traws0/ngnk-windows         - windows port
 https://github.com/nathyong/ngnk-nix           - nix package
 https://code.golf/rankings/holes/all/k/bytes   - code golf
-https://copy.sh/k/                             - aoc20 and aoc21 solutions
-https://github.com/chrispsn/aoc2017            - aoc17 solutions
+https://week.golf/                             - code golf
+https://k.miraheze.org/wiki/Advent_of_Code     - aoc solutions by multiple people
 https://github.com/xpqz/dyalogk                - dyalog competition solutions
 https://codeberg.org/CptJimKirk/kpl            - kpl, apl-like extensions for k
 https://github.com/SirBogman/codemirror-lang-k - codemirror lezer parser
