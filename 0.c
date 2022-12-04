@@ -20,75 +20,22 @@
  I main(In,Q*a)_(kinit();kargs(n,a);I r=0;I(n<2,repl())J(!bsl(a[1]),r=1;epr(0))Q(bsm(""));r)
 #endif
 
-//_start()
-#if defined(libc)||defined(wasm)||defined(shared)
- ;
-#elif defined(__OpenBSD__)||defined(__FreeBSD__)
- V _start(Q*a){exit(main(*(I*)(V*)a,a+1));}
-#elif defined(i386)
- asm(".globl _start;_start:pop %eax;push %esp;push %eax;call main;jmp exit");
-#else
- asm(".globl _start;_start:pop %rdi;mov %rsp,%rsi;and $-16,%rsp;call main;mov %rax,%rdi;jmp exit");
-#endif
-
-//syscall helper macros
-#if !defined(libc)&&!defined(wasm)
- #include<sys/syscall.h>
- #if defined(i386)
-  #define  h(x,a...) ".globl "#x";"#x":"a"mov $"M2(SYS_##x)",%eax;int $0x80;ret;"
-  #define h1(x,a...)  h(x,a"mov  4(%esp),%ebx;")
-  #define h2(x,a...) h1(x,a"mov  8(%esp),%ecx;")
-  #define h3(x,a...) h2(x,a"mov 12(%esp),%edx;")
-  #define h5(x)      ".globl "#x";"#x":mov %esp,%ebx;add $4,%ebx;mov $"M2(SYS_##x)",%eax;int $0x80;ret;"
-  #define h6 h5
- #else
-  #define h(x,a...) ".globl "#x";"#x":"a"movq $"M2(SYS_##x)",%rax;syscall;ret;"
-  #define h1 h
-  #define h2 h
-  #define h3 h
-  #define h4(x) h(x,"movq %rcx,%r10;")
-  #define h5 h4
-  #define h6 h4
- #endif
-#endif
-
 //pipe()
 #if defined(wasm)
  I pipe(Iv[2])_(-1)
-#elif defined(libc)
- ;
-#elif defined(__FreeBSD__)
- asm(h(pipe2));I pipe(Iv[2])_(pipe2(v,0))
-#else
- asm(h(pipe));
 #endif
 
 //directory iteration
 #if defined(wasm)
  V dir(If,void(*d)(V*,Q),V*x){}
-#elif defined(libc)
+#else
  #include<dirent.h>
  V dir(If,void(*d)(V*,Q),V*x){DIR*a=fdopendir(f);ST dirent*e;W((e=readdir(a)),d(x,e->d_name))closedir(a);} //thanks eightsixfivezero
-#else
- #if defined(__FreeBSD__)
-  #define SYS_getdents SYS_freebsd11_getdents
-  TD ST{UI d_fileno;UH d_reclen;C d_type,d_namlen,d_name[255+1];}DE;
- #else
-  TD ST{long d_ino;off_t d_off;UH d_reclen;C d_name[];}DE;
- #endif
- ssize_t getdents(I,C*,N);asm(h3(getdents));
- V dir(If,void(*d)(V*,Q),V*x){Cb[PG];Ik;W((k=getdents(f,b,SZ b))>0,Ii=0;W(i<k,DE*e=(V*)b+i;Qs=e->d_name;d(x,s);i+=e->d_reclen))}
 #endif
 
 //getcwd()
 #if defined(wasm)
  C*getcwd(C*s,Nn)_((V*)0)
-#elif defined(libc)
- ;
-#elif defined(__FreeBSD__)
- asm(h(__getcwd));C*__getcwd(C*,N);C*getcwd(C*s,Nn)_(__getcwd(s,n))
-#else
- asm(h(getcwd));
 #endif
 
 //other syscalls
@@ -127,11 +74,6 @@ I getdents(If,char*s,Nn)_(-1)I ftruncate(If,off_t o)_(-1)I wait4()_(-1)
  I setsockopt(If,I l,I s,OV*v,socklen_t n)_(-1)I connect(If,O ST sockaddr*s,socklen_t n)_(-1)I chdir(Qp)_(-1)
  I ftruncate(If,off_t o)_(-1)
  I wait4(I i,I*l,I o,ST rusage*u)_(-1)
-#elif defined(libc)
- ;
-#else
- asm(h3(read)h3(write)h3(open)h1(close)h2(fstat)h3(lseek)h2(munmap)h2(dup2)h3(socket)h5(setsockopt)h3(connect)
-     h(fork)h4(wait4)h3(execve)h1(exit)h2(gettimeofday)h6(mmap)h1(chdir)h2(ftruncate));
 #endif
 
 //mem and str functions
@@ -150,11 +92,6 @@ I getdents(If,char*s,Nn)_(-1)I ftruncate(If,off_t o)_(-1)I wait4()_(-1)
 #endif
 #if !defined(libc)||!defined(_GNU_SOURCE)
  C*strchrnul(Qs,Iv)_(W(1,P(*s==v,(V*)s)P(!*s,(V*)s)s++)(V*)s)
-#endif
-
-//mathematical functions
-#if (!defined(wasm)||defined(__wasi__))&&!defined(libc)
- F sin(Fv)_(NF)F cos(Fv)_(NF)F log(Fv)_(NF)F exp(Fv)_(NF)
 #endif
 
 //`js@

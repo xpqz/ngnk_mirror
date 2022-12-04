@@ -1,6 +1,5 @@
 #faster builds: export MAKEFLAGS=-j8
 M=mkdir -p $(@D)
-STRIP ?= strip
 
 0:;$(MAKE) k-dflt && $(MAKE) t #default target
 t:o/t;o/t;dy/a.sh;cd g;./a.k;cd -;for i in $$(seq 21 -1 15);do aoc/$$i/a.sh;done;e/a.sh #test
@@ -9,13 +8,12 @@ k:k-dflt
 w:k o/w/fs.h o/w/k.wasm o/w/index.html $(patsubst w/x/%.k,o/w/x/%.k,$(wildcard w/x/*.k))
 h:w o/w/http;cd o/w;./http
 
-k-dflt:; $(MAKE) a N=$@ R=k  O='-O3 -march=native -nostdlib -ffreestanding'                L=''
-k-libc:; $(MAKE) a N=$@ R=k  O='-O3 -march=native -Dlibc'                                  L='-lm'                          STRIP=true
-k-obsd:; $(MAKE) a N=$@ R=k  O='-fPIC -Dlibc=1 -DSYS_getcwd=304 -Dstrchrnul=strchr'        L='--static -fno-pie -lm -lc'    STRIP=true
-k-wasi:; $(MAKE) a N=$@ R=k  O='-O3 -target wasm32-wasi -nostdlib -ffreestanding -Dwasm -U__SIZEOF_INT128__ -I/usr/include' STRIP=true CC=clang
-libk.so:;$(MAKE) a N=$@ R=$@ O='-O3 -march=native -nostdlib -ffreestanding -fPIC -Dshared' L='-shared'                      STRIP=true
+k-dflt:; $(MAKE) a N=$@ R=k  O='-O3 -march=native -Dlibc'                                  L='-lm'
+k-obsd:; $(MAKE) a N=$@ R=k  O='-fPIC -Dlibc=1 -DSYS_getcwd=304 -Dstrchrnul=strchr'        L='--static -fno-pie -lm -lc'
+k-wasi:; $(MAKE) a N=$@ R=k  O='-O3 -target wasm32-wasi -nostdlib -ffreestanding -Dwasm -U__SIZEOF_INT128__ -I/usr/include' CC=clang
+libk.so:;$(MAKE) a N=$@ R=$@ O='-O3 -march=native -nostdlib -ffreestanding -fPIC -Dshared' L='-shared'
 o/$N/%.o:%.c *.h;$M;$(CC) @opts $O -o $@ -c $<
-o/$N/bin:$(patsubst %.c,o/$N/%.o,$(wildcard *.c));$(CC) $O -o $@ $^ @lopts $L;$(STRIP) -R .comment $@ -R '.note*'
+o/$N/bin:$(patsubst %.c,o/$N/%.o,$(wildcard *.c));$(CC) $O -o $@ $^ @lopts $L # ;$(STRIP) -R .comment $@ -R '.note*'
 a:o/$N/bin;cp o/$N/bin $R
 
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
@@ -37,4 +35,4 @@ o/w/http:w/http.c;$(CC) $< -o $@
 # o/32/%.o:%.c *.h;$M;$(CC) $(O_32) -o $@ -c $<
 # k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm
 
-.PHONY: 0 t c k w h a k-dflt k-libc k-obsd
+.PHONY: 0 t c k w h a k-dflt k-obsd

@@ -160,7 +160,6 @@ Special symbols:
                      s:`prng[];r:9?0;`prng s;r~9?0 -> 1
         `prng@0 use current time to set state
  `err@C throw error
-Special symbols available only in an interpreter built with "make k-libc":
  `sin@N trigonometry `sin 12.34 -> -0.22444212919135995
  `exp@N exponential  `exp 1 -> 2.7182818284590455
   `ln@N logarithm    `ln 2 -> 0.6931471805599453
