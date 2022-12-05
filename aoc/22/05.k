@@ -1,6 +1,9 @@
 #!/usr/bin/env k
-c:(^:)_'+|-1_c@\:&~^*|c:(i:*<#'x)#x:0:"i/05"
-(m;f;t):@[;0;-:]@[;1 2;+;-1]`I$@[;1 3 5]@+" "\'(1+i)_x /(-move;from-1;to-1)
-g:{`0:{*|x}'{[x;c;m;f;t]c[t],:x m#c f;c[f]:m_c f;c}[x]/[c;m;f;t]}
-g[|:] /part1
-g[::] /part2
+x:0:"i/05"
+e:*<#'x /index of empty line
+c:(^:)_'(+e#x)1+4*!9 /crates stacks as top-to-bottom strings (including digits)
+(m;f;t):0 -1 -1+`I$(+" "\'1_e_x)1 3 5 /(move;from;to)
+h:{(x_y;(x#y),z)} /move x items from the beginning of list y to the beginning of list z
+g:`0:*'c{[c;m;f;t]@[c;f,t;:;h[m;c f;c t]]}/
+g[1;{m}#f;{m}#t] /part1
+g[m;f;t]         /part2
