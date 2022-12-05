@@ -1,6 +1,6 @@
 #!/usr/bin/env k
 x:0:"i/05"
-e:*<#'x /index of empty line
+e:x?"" /index of empty line
 c:(^:)_'(+e#x)1+4*!9 /crates stacks as top-to-bottom strings (including digits)
 (m;f;t):0 -1 -1+`I$(+" "\'1_e_x)1 3 5 /(move;from;to)
 h:{(x_y;(x#y),z)} /move x items from the beginning of list y to the beginning of list z
