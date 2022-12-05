@@ -1,14 +1,14 @@
 #!/usr/bin/env k
 (a;b;c;d):`I$,/+'"-"\''+","\'0:"i/04"
-+/~((a<c)&b<d)|(c<a)&d<b /part1
-+/~(d<a)|b<c             /part2
++/1>(a-c)*b-d /part1
++/1>(a-d)*b-c /part2
 
 /
 
 /shorter but less intuitive
 x:`I$+'"-"\''+","\'0:"i/04"
-+/~|/&/'</1|:\x
-+/~|/>/{|y}\+x
++/1>*/-/x
++/1>*/-/{|y}\x
 
 /both parts with one shot (gitonthescene), using grade
 x:`I$"-"\''","\'0:"i/04"
