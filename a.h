@@ -1,5 +1,5 @@
 // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-#define DBG(a...)//a
+#define DBG(a...)a
 #include<unistd.h>
 #include"g.h"
 #define   _(a...) {return({a;});}
@@ -76,7 +76,7 @@ TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX
 #define AAL(f,b...) A f(Ax,Li      )_(b)
 #define  AQ(f,b...) A f(Qs         )_(b)
 A1 _R,aA1,asc,AZ,cA,cB,cC,cF,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,grp,hex,imx,imn,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,neg,not,nul,
- of0,of1,opn,out,prng,qpri,raz,rev,rs0,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
+ of0,of1,opn,out,prng,qkmp,qpri,raz,rev,rs0,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
 A2 _1,aA2,aM,w1,add,am,apd,cat,cat11,cst,dct,dex,dot,dvd,eql,exc,fil,fnd,gtn,hsh,ie,i1,ltn,mod,mnm,bng,mtc,mul,mxm,que,sub,und,v0c,v1c;A3 _2,aA3,w2,arf,arp,ars,cpl,r2,try;
 A4 ara,a4,d4;AX _8,w8,e8,f8,prj,run;AA a8,d8,ins,no8;AL aA,aB,aC,aF,aI,aL,aS,al,az,cls,rndF,tilL;ALA drp,room,rsz;AAL ii,io;AQ aCz,bsl,bsm,die,evs,pk,sym;
 A a2t(A,A,C),aA0(N),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),k8(A*,Q,OA*,I),k1(A*,Q,A),k2(A*,Q,A,A),
