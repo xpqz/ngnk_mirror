@@ -11,8 +11,10 @@ V tilV(V*p,Ln,I w){L*a=p,v=T(0x706050403020100ll,0x3000200010000ll,1ll<<32,0)[w]
 AL(tilL,P(n<0,n==(I)n?add(ai(n),N(tilL(-n))):ed0())P(n>1<<30,ez0())Ax=an(n,tZ(n-1));tilV(xV,n,xt-tB);x)
 A1(til,Xz(tilL(gl(x)))XZ(K1("{(*a)#'&'x#'1_a:|*\\|x,1}",x))XmM(x(_R(xx)))Xo(val(x))XS(K1("{x:\".\"/$x,`;`$(#x)_'(x~/:@[;!#x]')#$!.0#`}",x))et1(x))
 A1(whr,Xz(whr(enl(x)))XA(K1("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Xm(Ay=kv(&x);x(x1(Nx(whr(y)))))XM(et1(x))
- XZ(I w=xt-tB;Ln=0;i(xn,Lv=iw(x,w,i);n+=v;P(n<0||v<0,ed1(x)))Ct=tZ(xn-!!xn);P(t>tI,ez1(x))Ay=an(n,t);
-  xe(S4(Tw[t],{B*a=yV;i(xn,j(iw(x,w,i),*a++=i))},{H*a=yV;i(xn,j(iw(x,w,i),*a++=i))},{I*a=yV;i(xn,j(iw(x,w,i),*a++=i))},)y))et1(x))
+ XZ(Lm=xn,n=addfZ(0,x);P(n<0||minfZ(0,x)<0,ed1(x))Ct=tZ(m-!!m);P(t>tI,ez1(x))Ay=an(n,t);I w=xw;
+  xe(S4(t-tB,{B*r=yV;S4(w,i(m,j(xb,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},
+             {H*r=yV;S4(w,i(m,j(xb,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},
+             {I*r=yV;S4(w,i(m,j(xb,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},)y))et1(x))
 A1(rev,Xm(Ay=kv(&x);am(rev(x),rev(y)))XM(Ay=kv(&x);aM(x,e1f(rev,y)))Xt(x)P(xn<2,x)x=mut(x);Ii=0,j=xn-1,w=xw;W(i<j,S4(w,SWP(xb,xB[j]),SWP(xh,xH[j]),SWP(xi,xI[j]),SWP(xl,xL[j]))i++;j--)x)
 A1(typ,x(as(TS[xt])))A1(len,x(az(xN)))N _N(Ax/*0*/)_(XT(xn)Xm(_N(xy))XM(_N(_x(xy)))1)
 S A1(cSI,Q(xtS||xtI)Ct=tS^tI^xt;xr-1?x(aV(t,xn,xV)):AT(t,x))
