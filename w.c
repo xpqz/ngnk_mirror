@@ -1,8 +1,7 @@
 #include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A2(dec,/*01*/K2("0{z+x*y}/",x,y))
 S A2(enc,/*01*/Q(xtzZ)
- Xz(P(x==ai(2)&&ytz&&gl_(y)<0,x=rsz(64,xR);x(enc(x,y)))
-    P(gl_(x)<0,ed1(y))
+ Xz(P(gl_(x)<0,ed1(y))
     K("{$[0|/*y:x!|![-x;]\\y;@[y;0;-:0<];1_y]}",x,y))
  XZ(P(minfZ(0,x)<0,ed1(y))
     K2("{x!'|(,y),y{(-y)!x}\\|1_x}",x,y))
