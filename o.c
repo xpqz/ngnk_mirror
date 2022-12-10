@@ -15,4 +15,4 @@ A1(asc,Xt(opn(x))Xm(grdm(x,asc))XM(K1("{(!#x){x@<y x}/|.+x}",x))XS(asc(str(x)))X
  XA(Im=n/2;OA*v=xA;Ay=aI(n),z=aI(n-m);I*a=yV,*b=zV;tilV(a,n,2);ascA(v,a+m,n-m,b);ascA(v,a,m,a+n-m);mrg(v,a+n-m,a+n,b,b+n-m,a);x(z(y)))
  x=N(K1("{x-&/x}",x));Ay=aC(n),z=aI(n),u=aI(n);xe(ye(ascZ(xV,yV,zV,uV,n,xW)==zV?u(z):z(u))))
 A1(dsc,XMT(x=rev(asc(rev(x)));sub(ai(xN-1),x))Xm(grdm(x,dsc))Xz(cls(gl(x)))et1(x))
-A1(grp,Xz(K1("{@[&x;;:;1]'!x}",x))Xt(et1(x))Xm(Ay=kv(&x);y=Nx(grp(y));yy=x(i1(x,yy));y)K1("{$[#x;(x[(!0),*'g])!g@:<g:(&(!0),~x~':x i)_i:<x;x!0#,!0]}",x))
+A1(grp,Xz(K1("{$[x;@[&x;;:;1]'!x;0 0#0]}",x))Xt(et1(x))Xm(Ay=kv(&x);y=Nx(grp(y));yy=x(i1(x,yy));y)K1("{$[#x;(x[(!0),*'g])!g@:<g:(&(!0),~x~':x i)_i:<x;x!0#,!0]}",x))
