@@ -8,5 +8,5 @@ d:{$[~a r:   w+x;r /drop
      ~a r:-1+w+x;r
      ~a r: 1+w+x;r
      x]}/
-:r:{r:d s;a[r]:1;x+(#a)>r+w}/0 /part1
-{   r:d s;a[r]:1;x+~a s}/2+r   /part2
+:r:{p:d s;a[p]:1;x+(#a)>p+w}/0 /part1
+{   p:d s;a[p]:1;x+~a s}/2+r   /part2
