@@ -2,7 +2,7 @@
 M=mkdir -p $(@D)
 
 0:;$(MAKE) k-dflt && $(MAKE) t #default target
-t:o/t;o/t;dy/a.sh;cd g;./a.k;cd -;for i in $$(seq 21 -1 15);do aoc/$$i/a.sh;done;e/a.sh #test
+t:o/t;o/t;dy/a.sh;cd g;./a.k;cd -;for i in $$(seq 22 -1 15);do aoc/$$i/a.sh;done;e/a.sh #test
 c:;rm -rf o k libk.so #clean
 k:k-dflt
 w:k o/w/fs.h o/w/k.wasm o/w/index.html $(patsubst w/x/%.k,o/w/x/%.k,$(wildcard w/x/*.k))
