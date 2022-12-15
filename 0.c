@@ -14,6 +14,7 @@
 #include<sys/time.h>
 #undef __USE_EXTERN_INLINES
 #include<sys/stat.h>
+I pg=4096;//pagesize
 
 //__builtin_ia32_ldmxcsr(__builtin_ia32_stmxcsr()|1<<6|1<<15); //daz,ftz
 #ifndef shared
@@ -73,7 +74,8 @@ I getdents(If,char*s,Nn)_(-1)I ftruncate(If,off_t o)_(-1)I wait4()_(-1)
  I dup2(If,Iv)_(-1)I execve(Qp,C*O*a,C*O*e)_(-1)I fork()_(-1)I socket(Ii,Ij,Ik)_(-1)
  I setsockopt(If,I l,I s,OV*v,socklen_t n)_(-1)I connect(If,O ST sockaddr*s,socklen_t n)_(-1)I chdir(Qp)_(-1)
  I ftruncate(If,off_t o)_(-1)
- I wait4(I i,I*l,I o,ST rusage*u)_(-1)
+ I wait4(Ii,I*l,I o,ST rusage*u)_(-1)
+ long sysconf(Ii)_(i==_SC_PAGESIZE?4096:-1)
 #endif
 
 //mem and str functions
