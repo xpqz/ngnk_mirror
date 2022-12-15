@@ -11,17 +11,15 @@ d:+/abs s-b
 /   -2<&/-/x;4000000/|*x
 /   |/o'+',/,/:\:/,''2':'+(*x;-2!+/x;*|x)]}2#'0 4000001
 
-/part2 (intersection of 4 shifted outlines)
-/https://codeberg.org/ovs/aoc2022/src/branch/master/15.k
-l:_4e6
-D:1+d
-vi:D=+/abs s-
-v:{(,/'x)@\:&,/&/(~l<|/x;-1<&/x;vi x;+vi@+'x)}
-(f;c;g;e):D+/:t,-t:(-/s;+/s)
-(p;q):v'-2!((c-/:g;c+/:g);(f-/:e;-f+/:e))
-l/|p@\:*&&/~^q?'p
+//part2 (intersection of 4 shifted outlines)
+//https://codeberg.org/ovs/aoc2022/src/branch/master/15.k
+/l:_4e6
+/D:1+d
+/vi:D=+/abs s-
+/v:{(,/'x)@\:&,/&/(~l<|/x;-1<&/x;vi x;+vi@+'x)}
+/(f;c;g;e):D+/:t,-t:(-/s;+/s)
+/(p;q):v'-2!((c-/:g;c+/:g);(f-/:e;-f+/:e))
+/l/|p@\:*&&/~^q?'p
 
-sec:{x^x^y}
-D:1+d
-(p;q):*'sec/'(D;-D)+\:/:(P;Q):(+/s;-/s)
-4000000/|-2!(+;-).\:(p;q)
+/part2
+4000000/|-2!(+;-).\:(*{x^x^y}/(d+1;-d+1)+\:)'(+/s;-/s)
