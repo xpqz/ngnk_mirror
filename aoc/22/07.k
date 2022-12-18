@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x:0:"i/07"
 s:,0 /stack: current sizes of ancestors of current directory
 t:!0 /total sizes of already visited directories

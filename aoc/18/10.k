@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 (p;v):2 2#+{.x^"position=<,>velocity"}'0:"i/10"
 wh:{(|/x)-&/x}'
 n:1+|/'p-:&/'p:*|P:{r:v+x;$[|/wh[r]<wh[x];r;x]}\p

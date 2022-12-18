@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x:0:"i/19"
 p:{`$(&1,1_~x=_x)_x} /parse molecule
 r:{@[;0;*:]@p'" => "\x}'-2_x /replacements

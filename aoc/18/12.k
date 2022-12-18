@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x:0:"i/12"
 a:2!*|" "\*x /initial state
 (p;v):+2!" => "\'2_x /pattern;value

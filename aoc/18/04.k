@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x@:<x:0:"i/04"
 g:0           /current guard
 s:0           /minute when fallen asleep

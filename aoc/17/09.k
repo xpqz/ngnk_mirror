@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x:*0:"i/09"
 /  < > !
 t:(1 0 0 0  /state0 - normal

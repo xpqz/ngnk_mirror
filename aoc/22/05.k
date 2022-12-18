@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x:0:"i/05"
 e:x?"" /index of empty line
 c:(^:)_'(+e#x)1+4*!9 /crates stacks as top-to-bottom strings (including digits)

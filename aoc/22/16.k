@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 (v;r;h):``I`$+{x:" "\x^",";(x 1;5_-1_x 4;9_x)}'0:"i/16" /valve;rate;neighbours
 g:(1;_1e9;0)g|2*=#g:^h?\:v /graph
 g:{x(&/+)\:x}/g /shortest paths

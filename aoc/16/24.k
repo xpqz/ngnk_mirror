@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 \l ../../l/maths.k
 x:0:"i/24"           /input
 d,:-d:1,#*x          /directions

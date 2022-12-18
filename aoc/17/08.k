@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x:0:"i/08"
 c:(" "\"> < >= <= == !=")!(>;<;~<;~>;=;~=) /comparisons
 f:{y:" "\y /execute instruction (x:registers dict, y:instruction string)

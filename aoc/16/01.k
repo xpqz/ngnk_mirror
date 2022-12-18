@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x:", "\*0:"i/01"
 d:(0 1 0 -1;1 0 -1 0)@\:4!+\-1 1"R"=*'x /directions
 s:`I$1_'x                               /steps

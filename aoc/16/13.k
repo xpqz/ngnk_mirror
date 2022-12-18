@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 d:`I$*0:"i/13"                            /"designer's favourite number"
 f:{2!+/2\d+(x*3+x+2*y)+y*1+y}             /pseudo-random formula
 a:@[;-1+n*1+!n;:;1]@f/!2#n:50             /grid

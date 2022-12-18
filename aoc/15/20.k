@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 t:.*0:"i/20" /threshold
 
 /try with n houses, return the house number on success or 0 on failure

@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 h!:h:,/$!10
 r:{y@n!(!n:#y)-x}
 f:{(a;b):.h y

@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 s:{@[y;x;:;|y x]}   /swap
 r:{,/|(0,(#y)!x)_y} /rotate
 

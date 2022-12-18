@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 t:`I$*0:"i/03"
 
 /part1

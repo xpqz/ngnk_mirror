@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x@:3#>x:+/'1_'(&^x)_x:0N,`I$0:"i/01"
 *x  /part1
 +/x /part2

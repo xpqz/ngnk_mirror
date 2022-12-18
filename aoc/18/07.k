@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 e:-65+{*'(" "\x)1 7}'0:"i/07" /edges
 n:1+|//e                      /number of vertices
 g:(=n).[;;:;1]/e              /adjacency matrix

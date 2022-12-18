@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 X:","\*0:"i/16" /instructions
 a:`c$"a"+!16 /initial position
 f:{$["s"=*y;,/|(0,(#x)-.1_y)_x /apply instruction

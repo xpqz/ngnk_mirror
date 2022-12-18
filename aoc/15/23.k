@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 a:0:"i/23" /instructions
 f:{
  r::x

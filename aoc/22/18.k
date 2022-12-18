@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 x:+.'0:"i/18"       /(xs;ys;zs)
 x-:-1+&/'x          /translate origin; shift by 1 to make room for boundary
 n:2+|/'x            /shape of brick; 2+ for boundary

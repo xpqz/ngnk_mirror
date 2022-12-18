@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 N:2#n:300
 g:`I$*0:"i/11"       /grid serial number
 (X;Y):1+!N           /fuel cell coordinates

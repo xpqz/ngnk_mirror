@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 a:-97+*0:"i/11"
 iol:"iol"-98
 f:{{a[x]+:1+/iol=a x;$[26=a x;[a[x]:0;o x-1];]}@-1+#a} /smart increment

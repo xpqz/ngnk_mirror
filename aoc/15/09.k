@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 \l ../../l/maths.k
 (a;b;d):```I$+{(" "\x)0 2 4}'0:"i/09"
 n:#l:?a,b /l:locations
