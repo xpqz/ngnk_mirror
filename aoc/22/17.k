@@ -18,14 +18,14 @@ pr:{`0:(,""),".#@"a.[;;:;2]/+p+R t} /print
 m:{p+:x*c:&/~a./:+R[t]+p+x;c} /m[(di;dj)]: move by di,dj if possible; return true iff moved
 M:{m 0,X i;i+:1;i*:i<#X;m 1 0}(::)/ /move current piece to the bottom; arg and result are index in X
 F:{M[]
-   .[`a;;:;1]'+p+R t
-   t+:1;t*:t<#R
-   p::(-&/*R t),2
-   e:+/&\~|/'a
-   E:4+*p
-   h+:E-e
-   a::(#a)#(E#,&7),e_a
-   0}
+ .[`a;;:;1]'+p+R t
+ t+:1;t*:t<#R
+ p::(-&/*R t),2
+ e:+/&\~|/'a
+ E:4+*p
+ h+:E-e
+ a::(#a)#(E#,&7),e_a
+ 0}
 
 2022 F/0;
 h-/&\~|/'a
