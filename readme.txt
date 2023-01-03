@@ -18,6 +18,7 @@ https://k.miraheze.org/wiki/Advent_of_Code     - aoc solutions by multiple peopl
 https://github.com/xpqz/dyalogk                - dyalog competition solutions
 https://codeberg.org/CptJimKirk/kpl            - kpl, apl-like extensions for k
 https://github.com/SirBogman/codemirror-lang-k - codemirror lezer parser
+https://codeberg.org/suhr/kes                  - embedding example
 
 
 0.c main()                              k.h  embedding api
