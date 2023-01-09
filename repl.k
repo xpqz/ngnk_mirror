@@ -152,6 +152,7 @@ Special symbols:
    `k@x pretty-print `k("ab";2 3) -> "(\"ab\";2 3)"
    `p@C parse k
  `hex@C hexadecimal  `hex"ab" -> "6162"
+ `pri@i primes       `pri 20  ->  2 3 5 7 11 13 17 19
    `x@x fork-exec    `x(("/bin/wc";"-l");"a\nbc\nd\n") -> "3\n"
    `t[] current time (microseconds)
 `argv[] list of cmd line args
