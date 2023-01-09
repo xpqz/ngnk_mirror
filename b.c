@@ -5,8 +5,8 @@ S OC ds[]={                         1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1,
 #define h(a) {b[nb]=a;m[nb]=o;nb+=nb<255;}
 #define hc(a) N(lc(a,o));
 #define OK -1
-#define Nr(a...) {I r=cr(a);P(r-OK,r);}
-#define Nl(a...) {I r=cl(a);P(r-OK,r);}
+#define Nr(a...) {I r_=cr(a);P(r_-OK,r_);}
+#define Nl(a...) {I r_=cl(a);P(r_-OK,r_);}
 #define fl uA[3]
 S A u,cr(A,I);S UC*b,*m;S I nb,lu[8];
 SN I lc(Ax/*1*/,I o)_(Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,P(i-5>64,ez1(x))uq(x))h(bc+i-5)1)
