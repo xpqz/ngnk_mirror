@@ -1,4 +1,4 @@
-#include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A adm(Ax,Ay,Iv/*01v*/)_(XYmMA(e2f(v?mul:add,x,y))
  //I(!v,P(xtcC&&ytzZ,x=cB(xR);cC(N(x(adm(x,y,v)))))P(xtzZ&&ytcC,cC(N(adm(x,cB(y),v))))) //c+i -> c
  Ik=2*xtT+ytT;

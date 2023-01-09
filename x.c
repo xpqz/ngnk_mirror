@@ -1,4 +1,4 @@
-#include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 
 S A2 f;A1(ser,x(f(x,oC)))S A ff(Lv,Ay)_(cts(y,(V*)&v,8))S A2(fA,/*01*/y=ff(xn,y);i(xn|!xn,y=f(xa,y))y)
 S A2(f,/*01*/y=apc(y,xt);XmMA(fA(x,y))XS(y=ff(xn,y);i(xn,y=f(as(xi),y))y)Xs(Lv=xv;Qs=qs(&v);In=Sn(s)+1;y=apc(y,n);cts(y,s,n))XP(ff(x,y))XU(Q(xw==4);fA(x,apc(y,(xtr?xE:xv)<<3|xk)))

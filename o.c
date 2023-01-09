@@ -1,4 +1,4 @@
-#include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 I mtc_(Ax,Ay/*00*/)_(P(x==y,1)P(xtz&&ytz,gl_(x)==gl_(y))P(xts&&yts,xv==yv)P(xtZ&&ytZ&&xt-yt&&xn==yn,Ct=max(xt,yt);x=cT[t](xR);y=cT[t](yR);x(y(!MQ(xV,yV,xn*TW[xt]))))
  P(xt-yt||xtP||(xtr&&xE-yE)||xn-yn,0)P(!xtR,i(xn*xW,P(xc-yc,0))1)P(LH(tB,xt,tS)&&xt==yt&&xn==yn,!MQ(xV,yV,xn*TW[xt]))i(xn|!xn,P(!mtc_(xa,ya),0))1)
 A2(mtc,/*01*/y(ai(mtc_(x,y))))

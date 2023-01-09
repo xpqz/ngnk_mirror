@@ -1,5 +1,5 @@
 #!k
-`1:"ngn/k, (c) 2019-2022 ngn, GNU AGPLv3. type \\ for more info\n"
+`1:"ngn/k, (c) 2019-2023 ngn, GNU AGPLv3. type \\ for more info\n"
 \d repl
 `1:prompt:," " /use 0x0720 for emacs integration
 cmds:(,"a")!{`1:1:joinpath[dirname`argv 0]"LICENSE";}

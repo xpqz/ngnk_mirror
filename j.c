@@ -1,4 +1,4 @@
-#include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S O C JE[]="\"\\/\b\f\n\r\t",EJ[]="\"\\/bfnrt";S C*s;//34='"',44=',',48='0',92='\\',97='a'
 
 S A0 jx;S I w(Cc)_(c<33&&1ll<<c&0x100002600/*32\t\r\n*/)S C jw()_(Cc;W(w(c=*s),s++)c)

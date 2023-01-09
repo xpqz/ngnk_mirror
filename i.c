@@ -1,4 +1,4 @@
-// ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+// ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include<sys/socket.h>
 #include<sys/wait.h>
 #include<netinet/in.h>

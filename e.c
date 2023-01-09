@@ -1,4 +1,4 @@
-#include"a.h" // ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S C b[4096],*r=b;S I d;
 NI A err0(Qs)_(r=b;d=0;Nn=min(Sn(s),32);r=b;*r++='\'';Mc(r,s,n);r+=n;*r++=10;0)
 SN A err1(Ax,Qs)_(x(err0(s)))

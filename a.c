@@ -1,4 +1,4 @@
-#include"a.h"// ngn/k, (c) 2019-2022 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include"a.h"// ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A1(sam,x)V_;T_;I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xtx?x>>48&7:xtU?xk:0)
 A1(mkn,XmMA(e1f(mkn,x))Ay=_R(cn[xt]);Xt(x(y))x(rsz(xn,y)))
 A2(ie,/*00*/x==CAT?_R(ce[ce[yt]?yt:tA]):xtv&&LH(1,xv,10)?_R(ci[ytfF][T((C)4,0,0,1,1,2,2,3,3,2,4)[xv]]):mkn(fir(yR)))
