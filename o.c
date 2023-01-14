@@ -11,9 +11,9 @@ S I*ascZ(O UC*v,UC*g,I*a,I*b,In,I w)_(UI c[257];tilV(a,n,2);j(w,Ms(c,0,SZ c);i(n
 S A grdm(Ax/*1*/,A1 f)_(Ay=kv(&x);x(x1(Nx(f(y)))))
 
 S V mrg(Ax/*0*/,I*p,I*q,I*b,I*d,Ik){I*r=p-q+b;W(1,I(qA(xA[*p],xA[*b])<k,*r++=*p++;P(p==q))E(*r++=*b++;B(b==d)))Mc(r,p,q-p<<2);}//merge(k=1),mergeR(k=0)
-S V cis(Ax/*0*/,I*p,I*q,I*r){Nn=q-p;I*s=r;W(p<q,Iv=*p++;Ay=xA[v];I*t=r;W(t<s&&qA(xA[*t],y)<=0,t++)Mm(t+1,t,s-t<<2);*t=v;s++)}//copying_insertionsort
-S V cms(Ax/*0*/,I*p,I*q,I*r){Nn=q-p;P(n<=16,cis(x,p,q,r);)N h=n/2;I*s=p+h;cms(x,s,q,r+h);cms(x,p,s,s);mrg(x,s,s+h,r+h,r+n,1);}//copying_mergesort
-A1(ascA,Nn=xn,h=n/2;Ay=aI(n-h),z=aI(n);I*p=zI,*q=zI+n,*t=yI;tilV(p,n,2);I(n<=16,cis(x,p,q,p))E(cms(x,p+h,q,t);cms(x,p,p+h,q-h);mrg(x,t,t+n-h,q-h,q,0))x(y(z)))//mergesort
+S V cis(Ax/*0*/,I*p,Nn,I*r){i(n,Ij=0,k=i,v=p[i];Ay=xA[v];W(j<k,Im=j+k>>1;I(qA(y,xA[r[m]])<0,k=m)E(j=m+1))Mm(r+j+1,r+j,i-j<<2);r[j]=v)}//copying_insertionsort
+S V cms(Ax/*0*/,I*p,Nn,I*r){P(n<17,cis(x,p,n,r);)Nm=n/2;cms(x,p+m,n-m,r+m);cms(x,p,m,p+m);mrg(x,p+m,p+2*m,r+m,r+n,1);}//copying_mergesort
+A1(ascA,Nn=xn;Az=aI(n);I*p=zI;tilV(p,n,2);P(n<17,cis(x,p,n,p);x(z))Nm=n/2;Ay=aI(n-m);I*t=yI;cms(x,p+m,n-m,t);cms(x,p,m,p+n-m);mrg(x,t,t+n-m,p+n-m,p+n,0);x(y(z)))
 
 A1(asc,Xt(opn(x))Xm(grdm(x,asc))XM(K1("{(!#x){x@<y x}/|.+x}",x))XS(asc(str(x)))XF(asc(of1(x)))P(xn-(I)xn,ez1(x))XA(ascA(x))
  x=N(K1("{x-&/x}",x));Nn=xn;Ay=aC(n),z=aI(n),u=aI(n);xe(ye(ascZ(xV,yV,zV,uV,n,xW)==zV?u(z):z(u))))
