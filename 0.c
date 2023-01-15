@@ -40,18 +40,7 @@ I pg=4096;//pagesize
 #endif
 
 //other syscalls
-#if defined(__wasi__)
-#define WA(t,n,a) __attribute__((import_module("wasi_snapshot_preview1"),import_name(#n)))t n a;
-WA(__attribute__((noreturn))V,proc_exit,(N))WA(UH,fd_write,(I,V*,N,N*))WA(UH,fd_read,(I,V*,N,N*))WA(UH,fd_fdstat_set_flags,(I,UH))WA(UH,clock_time_get,(I,UL,UL*))WA(UH,args_sizes_get,(N*,N*))WA(UH,args_get,(C**,C*))
-I open(Qp,Iv,...)_(-1)I close(If)_(-1)I read(If,V*a,Nn)_(fd_read(f,(N[]){(N)a,n},1,&n)?-1:n)I write(If,OV*a,Nn)_(fd_write(f,(N[]){(N)a,n},1,&n)?-1:n)
-off_t lseek(If,off_t o,I w)_(-1)I fstat(If,ST stat*r)_(-1)V*mmap(V*a,Nn,I pr,I fl,If,off_t o)_((V*)(__builtin_wasm_memory_grow(0,n>>16)<<16))I munmap(If,In)_(-1)
-I gettimeofday(ST timeval*a,V*b)_(UL t;clock_time_get(0,-1,&t)?-1:(a->tv_sec=t/1e9,a->tv_usec=t%(L)1e9/1e3,0))
-V exit(I v){proc_exit(v);}V _start(){i(3,fd_fdstat_set_flags(i,0))N i,j;args_sizes_get(&i,&j);C*v[i],b[j];args_get(v,b);exit(main(i,(Q*)v));}
-I dup2(If,Iv)_(-1)I execve(Qp,char*O*a,char*O*e)_(-1)I fork()_(-1)I socket(Ii,Ij,Ik)_(-1)
-I setsockopt(If,I l,I s,OV*v,socklen_t n)_(-1)I connect(If,O ST sockaddr*s,socklen_t n)_(-1)I chdir(Qp)_(-1)
-I getdents(If,char*s,Nn)_(-1)I ftruncate(If,off_t o)_(-1)I wait4()_(-1)
-
-#elif defined(wasm)
+#if defined(wasm)
  I js_in(V*,N);V js_out(OV*,N),js_log(OV*),*js_alloc(N),js_time(I*,long*),js_exit(I);
  S ST{C*a,p[16];Nn;}s[8]={{.a=""},{.a=""},//s:storage,
   #include"o/w/fs.h"
@@ -97,6 +86,6 @@ I getdents(If,char*s,Nn)_(-1)I ftruncate(If,off_t o)_(-1)I wait4()_(-1)
 #endif
 
 //`js@
-#if !defined(wasm)||defined(__wasi__)
+#if !defined(wasm)
  I js_eval(C*s,Im,C*r,In)_(0)
 #endif
