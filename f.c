@@ -29,7 +29,7 @@ A2(fnd,/*01*/
  P(xtT&&!xtA&&!ytmMA,
   P(xtZ&&ytzZ||xt==TT[yt],
    P(xw<2&&xn>99&&yN>99,sdf(x,y))
-   V(f,T(&fB,fH,fI,fL)[xw])Yt(az(f(xV,xn,gl(y))))
+   TY(fB)*f=T(&fB,fH,fI,fL)[xw];Yt(az(f(xV,xn,gl(y))))
    Az=aL(yn);Ii=yw;ye(T(&FB,FH,FI,FL)[i](xV,xn,f,yV,yn,zV);z))
   Az=cn[tl];zR;y(ytt?z:rsz(yN,z)))
  Xm(i1(xx,N(fnd(xy,y))))
