@@ -21,11 +21,6 @@ I pg=4096;//pagesize
  I main(In,Q*a)_(kinit();kargs(n,a);I r=0;I(n<2,repl())J(!bsl(a[1]),r=1;epr(0))Q(bsm(""));r)
 #endif
 
-//pipe()
-#if defined(wasm)
- I pipe(Iv[2])_(-1)
-#endif
-
 //directory iteration
 #if defined(wasm)
  V dir(If,void(*d)(V*,Q),V*x){}
@@ -34,13 +29,10 @@ I pg=4096;//pagesize
  V dir(If,void(*d)(V*,Q),V*x){DIR*a=fdopendir(f);ST dirent*e;W((e=readdir(a)),d(x,e->d_name))closedir(a);} //thanks eightsixfivezero
 #endif
 
-//getcwd()
-#if defined(wasm)
- C*getcwd(C*s,Nn)_((V*)0)
-#endif
-
 //other syscalls
 #if defined(wasm)
+ I pipe(Iv[2])_(-1)
+ C*getcwd(C*s,Nn)_((V*)0)
  I js_in(V*,N);V js_out(OV*,N),js_log(OV*),*js_alloc(N),js_time(I*,long*),js_exit(I);
  S ST{C*a,p[16];Nn;}s[8]={{.a=""},{.a=""},//s:storage,
   #include"o/w/fs.h"
@@ -80,9 +72,9 @@ I pg=4096;//pagesize
  C*strchr(O C*s,Iv)_(W(1,P(*s==v,(V*)s)P(!*s++,(V*)0))(V*)0)
  C*strstr(O C*p,O C*q)_(MM(p,Sn(p),q,Sn(q)))
  I strcmp(Qp,Qq)_(W(*p&&*p==*q,p++;q++)*p-*q)
-#endif
-#if !defined(libc)||!defined(_GNU_SOURCE)
- C*strchrnul(Qs,Iv)_(W(1,P(*s==v,(V*)s)P(!*s,(V*)s)s++)(V*)s)
+ #if defined(_GNU_SOURCE)
+  C*strchrnul(Qs,Iv)_(W(1,P(*s==v,(V*)s)P(!*s,(V*)s)s++)(V*)s)
+ #endif
 #endif
 
 //`js@
