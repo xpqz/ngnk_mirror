@@ -21,7 +21,6 @@ I pg=4096;//pagesize
  I main(In,Q*a)_(kinit();kargs(n,a);I r=0;I(n<2,repl())J(!bsl(a[1]),r=1;epr(0))Q(bsm(""));r)
 #endif
 
-//other syscalls
 #if defined(wasm)
  I pipe(Iv[2])_(-1)
  C*getcwd(C*s,Nn)_((V*)0)
@@ -49,10 +48,6 @@ I pg=4096;//pagesize
  I ftruncate(If,off_t o)_(-1)
  I wait4(Ii,I*l,I o,ST rusage*u)_(-1)
  long sysconf(Ii)_(i==_SC_PAGESIZE?4096:-1)
-#endif
-
-//mem and str functions
-#if !defined(libc)
  V*memcpy (V*x,OV*y,Nn)_(C*p=x  ;Qq=y  ;i(n,*p++=*q++)x)
  V*memrcpy(V*x,OV*y,Nn)_(C*p=x+n;Qq=y+n;i(n,*--p=*--q)x)
  V*memmove(V*x,OV*y,Nn)_((y<x&&x<y+n?memrcpy:memcpy)(x,y,n))
@@ -64,12 +59,7 @@ I pg=4096;//pagesize
  C*strchr(O C*s,Iv)_(W(1,P(*s==v,(V*)s)P(!*s++,(V*)0))(V*)0)
  C*strstr(O C*p,O C*q)_(MM(p,Sn(p),q,Sn(q)))
  I strcmp(Qp,Qq)_(W(*p&&*p==*q,p++;q++)*p-*q)
- #if !defined(_GNU_SOURCE)
-  C*strchrnul(Qs,Iv)_(W(1,P(*s==v,(V*)s)P(!*s,(V*)s)s++)(V*)s)
- #endif
-#endif
-
-//`js@
-#if !defined(wasm)
+ C*strchrnul(Qs,Iv)_(W(1,P(*s==v,(V*)s)P(!*s,(V*)s)s++)(V*)s)
+#else
  I js_eval(C*s,Im,C*r,In)_(0)
 #endif
