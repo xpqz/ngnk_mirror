@@ -9,7 +9,6 @@ w:k o/w/fs.h o/w/k.wasm o/w/index.html $(patsubst w/x/%.k,o/w/x/%.k,$(wildcard w
 h:w o/w/http;cd o/w;./http
 
 k-dflt:; $(MAKE) a N=$@ R=k  O='-O3 -march=native -Dlibc'                                  L='-lm'
-k-obsd:; $(MAKE) a N=$@ R=k  O='-fPIC -Dlibc=1 -DSYS_getcwd=304 -Dstrchrnul=strchr'        L='--static -fno-pie -lm -lc'
 libk.so:;$(MAKE) a N=$@ R=$@ O='-O3 -march=native -nostdlib -ffreestanding -fPIC -Dshared' L='-shared'
 o/$N/%.o:%.c *.h;$M;$(CC) @opts $O -o $@ -c $<
 o/$N/bin:$(patsubst %.c,o/$N/%.o,$(wildcard *.c));$(CC) $O -o $@ $^ @lopts $L # ;$(STRIP) -R .comment $@ -R '.note*'
@@ -34,4 +33,4 @@ o/w/http:w/http.c;$(CC) $< -o $@
 # o/32/%.o:%.c *.h;$M;$(CC) $(O_32) -o $@ -c $<
 # k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm
 
-.PHONY: 0 t c k w h a k-dflt k-obsd
+.PHONY: 0 t c k w h a k-dflt
