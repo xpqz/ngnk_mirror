@@ -48,6 +48,12 @@ I pg=4096;//pagesize
  I ftruncate(If,off_t o)_(-1)
  I wait4(Ii,I*l,I o,ST rusage*u)_(-1)
  long sysconf(Ii)_(i==_SC_PAGESIZE?4096:-1)
+
+ #include<dirent.h>
+ DIR*fdopendir(If)_((V*)0)
+ ST dirent*readdir(DIR*x)_((V*)0)
+ I closedir(DIR*x)_(0)
+
  V*memcpy (V*x,OV*y,Nn)_(C*p=x  ;Qq=y  ;i(n,*p++=*q++)x)
  V*memrcpy(V*x,OV*y,Nn)_(C*p=x+n;Qq=y+n;i(n,*--p=*--q)x)
  V*memmove(V*x,OV*y,Nn)_((y<x&&x<y+n?memrcpy:memcpy)(x,y,n))
