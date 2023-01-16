@@ -14,7 +14,7 @@
 S UI addr(Q*p)_(Qs=*p;P(!*s,0x0100007f)UC v[4];i(4,I(i,P(*s-'.',ed0())s++)v[i]=pu(&s);P(v[i]>255,ed0()))*p=s;*(UI*)v)
 S I skt(UI h,UH p)_(If=socket(AF_INET,SOCK_STREAM,0);P(f<0,eo0())Iv=setsockopt(f,IPPROTO_TCP,TCP_NODELAY,(I[]){1},4);P(v<0,eo0())
  ST sockaddr_in a;a.sin_family=AF_INET;a.sin_addr.s_addr=h;a.sin_port=rot(p,8);P(connect(f,(ST sockaddr*)&a,SZ a)<0,eo0())f)
-I osf(Qs,L fl)_(P(!SC(s,':'),If=open(s,fl,0666);P(f<3/*fbsd*/,eo0())f)UI h=addr(&s);P(*s-':',ed0())s++;UL p=pu(&s);P(*s,ed0())skt(h,p))
+S I osf(Qs,L fl)_(P(!SC(s,':'),If=open(s,fl,0666);P(f<3/*fbsd*/,eo0())f)UI h=addr(&s);P(*s-':',ed0())s++;UL p=pu(&s);P(*s,ed0())skt(h,p))
 S I o(Ax/*1*/,I fl)_(Xz(gl(x))Xs(Lv=xv;P(!v,1)Qs=qs(&v);osf(s,fl))XC(x=str0(x);xe(osf(xV,fl)))et1(x))
 S V d(V*p,Qs){*(A*)p=apc(cts(*(A*)p,s,Sn(s)),10);}
 S A frd(If)_(Ax=oC;dir(f,d,&x);x)                                                                            //read dir
