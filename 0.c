@@ -64,7 +64,7 @@ I pg=4096;//pagesize
  C*strchr(O C*s,Iv)_(W(1,P(*s==v,(V*)s)P(!*s++,(V*)0))(V*)0)
  C*strstr(O C*p,O C*q)_(MM(p,Sn(p),q,Sn(q)))
  I strcmp(Qp,Qq)_(W(*p&&*p==*q,p++;q++)*p-*q)
- #if defined(_GNU_SOURCE)
+ #if !defined(_GNU_SOURCE)
   C*strchrnul(Qs,Iv)_(W(1,P(*s==v,(V*)s)P(!*s,(V*)s)s++)(V*)s)
  #endif
 #endif
