@@ -21,14 +21,6 @@ I pg=4096;//pagesize
  I main(In,Q*a)_(kinit();kargs(n,a);I r=0;I(n<2,repl())J(!bsl(a[1]),r=1;epr(0))Q(bsm(""));r)
 #endif
 
-//directory iteration
-#if defined(wasm)
- V dir(If,void(*d)(V*,Q),V*x){}
-#else
- #include<dirent.h>
- V dir(If,void(*d)(V*,Q),V*x){DIR*a=fdopendir(f);ST dirent*e;W((e=readdir(a)),d(x,e->d_name))closedir(a);} //thanks eightsixfivezero
-#endif
-
 //other syscalls
 #if defined(wasm)
  I pipe(Iv[2])_(-1)
