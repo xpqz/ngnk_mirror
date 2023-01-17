@@ -6,14 +6,14 @@
 #ifndef MAP_NORESERVE
  #define MAP_NORESERVE 0
 #endif
-S I nm;S ST{V*p;Ln;}m[8];S A mu(V*p,Nn)_(munmap(p,n);i(LEN(m),B(m[i].p==p,Mc(m+i,m+i+1,(--nm-i)*SZ m[0])));0)
+S I nm;S ST{V*p;Ln;}m[8];S A mu(V*p)_(Nn=0;i(LEN(m),B(m[i].p==p,munmap(p,m[i].n);Mc(m+i,m+i+1,(--nm-i)*SZ m[0])))0)
 S V*mm(V*p,Nn,If)_(p=mmap(p,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|(p?MAP_FIXED:0)|(f<0?MAP_ANON:0),f,0);
  P((L)p<pg,eo0();(V*)0)P(f>0,p)I(nm==LEN(m),die("MMAP"))*(C*)p=nm;m[nm++]=(TY(*m)){p,n};p)
-S A mx(Nn)_(V*p=mm(0,n,-1);P(!p,die("OOM"))*(C*)p=0;(A)(p+HD))A mf(If,Nn)_(V*p=mm(0,pg+n,-1);P(!p,0)Ax=(A)(p+pg);*(C*)p=1;x=AT(tC,AN(n,x));xR;P(!mm(p+pg,n,f),x(0))x)
+S A mx(Nn)_(V*p=mm(0,n,-1);P(!p,die("OOM"))*(C*)p=0;(A)(p+HD))A mf(If,Nn)_(V*p=mm(0,pg+n,-1);P(!p,0)Ax=(A)(p+pg);*(C*)p=1;xn=n;AT(tC,x);P(!mm(p+pg,n,f),mu(p))xR)
 
 S Az[SZ(N)==4?27:35];S I lck;S A mb(Cb,Ax)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)V mrn(Nn,OA*a){i(n,mr(a[i]))}V mRn(Nn,OA*a){i(n,_R(a[i]))}A1(mRa,i(xn,_R(xa))x)
 A1(m0,DBG(lck++);Q(x);XP(0)Q(xr>0);P(--xr,0)Cb=xU;P(!b,x=AT(tn,x))xX=z[b];z[b]=(A)xV;XR(mrn(xn|!xn,xA);x)x)
-A1(m1,DBG(lck--);P(!x,0)P(xt==tn,mu(xV-pg,xn+pg))DBG(Ms(xV,0xab,xZ);DBG(AN(-1,AT(0,x))));0)
+A1(m1,DBG(lck--);P(!x,0)P(xt==tn,mu(xV-pg))DBG(Ms(xV,0xab,xZ);DBG(AN(-1,AT(0,x))));0)
 A an(Nn,Ct)_(Q(!lck);Q(LH(tA,t,tn-1));Q(!TP(t));Cb=59-__builtin_clzll(HD|HD-1+n*TW[t]);P(n>1ull<<LEN(z)||b>LEN(z)-2,die("OOM"))
  Ax=z[b];Ii=b;W(!z[i],i++)I(i<LEN(z)-1,x=z[i];z[i]=xX)E(x=mb(b,mx(HD<<(i=max(b,24)))))I(b<i,xU=b;W(b<i--,z[i]=mb(i,(A)x+(HD<<i))))xr=1;AT(t,AN(n,x)))
 A1(mr,m1(m0(x)))A aV(Ct,Nn,OV*v)_(Ax=an(n,t);Mc(xV,v,n*TW[t]);x)A a2t(Ax,Ay,Ct/*11t*/)_(Az=an(2,t);zx=x;zy=y;z)
@@ -32,7 +32,7 @@ S AQ(bsv,K1("{`0:($!h),'\":\",'`k'. h:(&x=^`o`p`q`r`u`v`w`x?@'h)#h:``repl_.:0#`}
 S AQ(bst,Ln=s[-1]=='t'&&*s==':'?++s,pl(&s):1,t=now();Ax=N(cps(s));i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
 S C*skp(C*s)_(W(!MQ(s,"/\n",2),C*p=SS(s+1,"\n\\\n");s=p?p+3:s+Sn(s))s)S I ln(Qs)_(Ax=evs(s);P(x,x(out(x));1)epr(0))S AQ(bsf,bsv(0))
 S A lns(C*p,Nn)_(Q(n)P(p[n-1]-10,err0("eoleof"))p[n-1]=0;I(!MQ(p,"#!",2),p=SC0(p+2,10))C*v=p;W(p<v+n,C*q=p=skp(p);W(*q&&(*q-10||si(" }",q[1])<2),q++)*q=0;N(ln(p));p=q+1)au)
-AQ(bsl,If=open(s,O_RDONLY,0600);P(f<0,eo0())Ln=lseek(f,0,2);P(n<0,ei0())C*p=mm(0,n,f);close(f);P(!n,au)P(!p,0)Ax=lns(p,n);mu(p,n);x)
+AQ(bsl,If=open(s,O_RDONLY,0600);P(f<0,eo0())Ln=lseek(f,0,2);P(n<0,ei0())C*p=mm(0,n,f);close(f);P(!n,au)P(!p,0)Ax=lns(p,n);mu(p);x)
 S AQ(bsL,Nm=SZ gp;C p[m],q[m+3];Mc(p,gp,m);Ax=N(bsd(s));Nn=Sn(gp);Mc(q,gp,n);Mc(q+n,".k",3);bsl(q);Mc(gp,p,m);x)
 S AQ(bs0,en0())
 AQ(evs,P(*s-'\\',Ax=N(cps(s));x(run(x,0,0)))Cc=s[1],d=s[2];P(c=='c'&&d=='d'&&(!s[3]||s[3]==32),bscd(s+3+(s[3]==32)))
