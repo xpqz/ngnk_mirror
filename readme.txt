@@ -6,6 +6,7 @@ try online: https://ngn.codeberg.page/k
 
 related projects:
 https://github.com/gitonthescene/ngnk-mode                 - emacs mode
+https://github.com/gitonthescene/ngnk-libs                 - collection of libraries
 https://github.com/razetime/ngn-k-tutorial                 - tutorial (work in progress)
 https://xpqz.github.io/kbook/                              - book (work in progress)
 https://github.com/secwang/ngnkcart                        - searchable database of snippets
@@ -20,7 +21,6 @@ https://github.com/xpqz/dyalogk                            - dyalog competition 
 https://codeberg.org/CptJimKirk/kpl                        - kpl, apl-like extensions for k
 https://github.com/SirBogman/codemirror-lang-k             - codemirror lezer parser
 https://codeberg.org/suhr/kes                              - embedding example
-https://github.com/gitonthescene/ngnk-libs                 - collection of libraries
 
 
 0.c main()                              k.h  embedding api
