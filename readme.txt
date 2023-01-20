@@ -20,6 +20,7 @@ https://github.com/xpqz/dyalogk                            - dyalog competition 
 https://codeberg.org/CptJimKirk/kpl                        - kpl, apl-like extensions for k
 https://github.com/SirBogman/codemirror-lang-k             - codemirror lezer parser
 https://codeberg.org/suhr/kes                              - embedding example
+https://github.com/gitonthescene/ngnk-libs                 - collection of libraries
 
 
 0.c main()                              k.h  embedding api
