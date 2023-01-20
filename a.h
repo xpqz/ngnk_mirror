@@ -1,6 +1,7 @@
 // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define DBG(a...)//a
 #include<unistd.h>
+#include<string.h>
 #include"g.h"
 #define   _(a...) {return({a;});}
 #define W(x,a...) while(x){a;}
@@ -79,10 +80,9 @@ A2 _1,aA2,aM,w1,add,am,apd,cat,cat11,cst,dct,dex,dot,dvd,eql,exc,fil,fnd,gtn,hsh
 A4 ara,a4,d4;AX _8,w8,e8,f8,prj,run;AA a8,d8,ins,no8;AL aA,aB,aC,aF,aI,aL,aS,al,az,cls,rndF,tilL;ALA drp,room,rsz;AAL ii,io;AQ aCz,bsl,bsm,die,evs,pk,sym;
 A a2t(A,A,C),aA0(N),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),k8(A*,Q,OA*,I),k1(A*,Q,A),k2(A*,Q,A,A),
  jc(C,A),jC(Q,N,A),kv(A*),l2f(A2,A,A),mf(I,N),pen(A,A1*),slc(A,N,N),sur(C,A,C),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
-V cyc(V*,N,N),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memchr(OV*,I,N),*memcpy(V*,OV*,N),*memmem(OV*,N,OV*,N),*memmove(V*,OV*,N),
- *memset(V*,I,N),mrn(N,OA*),mRn(N,OA*),repl(),tilV(V*,L,I);
-F gf(A),pf(Q*);N strlen(Q),_N(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchr(Q,I),*strchrnul(Q,I),*strstr(Q,Q);Q qs(O L*),pID(Q);
-I _K(A),qA(A,A),qf(F,F),js_eval(C*,I,C*,I),memcmp(OV*,OV*,N),mtc_(A,A),si(Q,I),strcmp(Q,Q),rnk(A);
+V cyc(V*,N,N),eS(A,N),eQ(Q,N,N),exit(I),iW(A,I,L,L),kargs(I,Q*),kinit(),*memmem(OV*,N,OV*,N),mrn(N,OA*),mRn(N,OA*),repl(),tilV(V*,L,I);
+F gf(A),pf(Q*);N _N(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);Q qs(O L*),pID(Q);
+I _K(A),qA(A,A),qf(F,F),js_eval(C*,I,C*,I),mtc_(A,A),si(Q,I),rnk(A);
 L cfm(OA*,I),gl_(A),gl(A),iw(A,I,L),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),fAI(A,I),fpI(A*,I),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);
 EX I pg,gn,gk[];EX C gp[32];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env,HEX;EX OC vc[],TS[],Tw[],TW[],TT[],TX[],Tk[];
 
