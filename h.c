@@ -16,8 +16,15 @@ ALA(drp,/*n1*/XT(P(n==NL,rs0(x))P(-n<(UL)xn&&xr==1,I(xtA,mrn(-n,xA+xn+n))AN(xn+n
  Xm(Ay=kv(&x);am(Ny(drp(n,x)),Nx(drp(n,y))))XM(Ay=kv(&x);aM(x,Nx(e2f(und,az(n),y))))er1(x))
 S AAL(rmv,XT(P(!in(i,xn),x)Ay=an(xn-1,xt);Mc(yV,xV,i*xW);Mc(yV+i*xW,xV+i*xW+xW,(xn-i-1)*xW);I(xtA,I(!yn,yx=mkn(_R(xx)))y=sqz(mRa(y)))x(y))et1(x))
 S A2(cut,/*01*/Q(xtZ)Q(ytMT)K2("{y$[|/0<':x,#y;`err\"domain\";x+!'1_-':x,#y]}",x,y))
-A2(und,/*01*/Xz(drp(gl_(x),y))XU(flt(x,y,0))Xm(y=N(fnd(xx,y));yR;am(und(xx,y),und(xy,y)))P(xtZ&&ytMT,cut(x,y))P(xtMT&&ytz,rmv(xR,gl(y)))
- Ym(K2("{((!y)^x)#y}",x,y))YM(flp(N(und(x,flp(y)))))et1(y))
+A2(und,/*01*/
+ Xz(drp(gl_(x),y))
+ XU(flt(x,y,0))
+ Xm(y=N(fnd(xx,y));yR;am(und(xx,y),und(xy,y)))
+ P(xtZ&&ytMT,cut(x,y))
+ P(xtMT&&ytz,rmv(xR,gl(y)))
+ Ym(K2("{((!y)^x)#y}",x,y))
+ YM(flp(N(und(x,flp(y)))))
+ et1(y))
 A1(enl,Xi(aV(tZ(xv),1,&x))XU(aA1(x))XP(aV(TT[xt],1,&x))Xt(x(aV(TT[xt],1,xV)))Xm(Ay=kv(&x);aM(x,e1f(enl,y)))aA1(x))
 A2(cat11,
  P(xtT&&ytT,P(!yn,y(x))P(!xn,x(y))I(xtZ&&ytzZ,N(sup(&x,&y)))I(xt-yt,x=cA(x);y=cA(y))Nm=xn,n=yn,w=xW;x=room(m+n,x);Mc(xV+m*w,yV,n*w);I(ytA,yr-1?mRa(y):AZ(y))y(x))
