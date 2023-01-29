@@ -40,16 +40,8 @@
 #define Q(x) DBG(I(!(x),die(__FILE__":"M2(__LINE__)": "#x)))//assert
 #define Ab8 A b[8];
 #define Ms(a...) memset(a)
-#define Mm(a...) memmove(a)
 #define Mc(a...) memcpy(a)
-#define MQ(a...) memcmp(a)
-#define MC(a...) memchr(a)
 #define Sn(a...) strlen(a)
-#define SC(a...) strchr(a)
-#define SS(a...) strstr(a)
-#define SQ(a...) strcmp(a)
-#define MM(a...) memmem(a)
-#define SC0(a...) strchrnul(a)
 #define min(x,y) extr(x,y,<)
 #define max(x,y) extr(x,y,>)
 #define extr(x,y,c) ({TY(x) x_=(x),y_=(y);x_ c y_?x_:y_;})

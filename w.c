@@ -1,8 +1,8 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A2(dec,/*01*/K2("0{z+x*y}/",x,y))
 S A2(enc,/*01*/Xz(K2("{$[&/~*x:(x|-x)!|$[x>0;(-x)!;-x!]\\y;1_x;@[x;0;-:0<]]}",x,y))XZ(K2("{(x|-x)!'|(,y),y{$[y<0;-y!;(-y)!]x}\\-1_|x}",x,y))en1(y))
-S A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=MC(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)S A sc(Cc    ,Ax)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))
-S A sCC(C*s,Lm,C*p,Ln)_(P(!m,el0())Ax=oA;C*q;W((q=MM(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)S A sC(C*s,Lm,Ax)_(XC(x(sCC(s,m,xV,xn)))et1(x))
+S A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=memchr(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)S A sc(Cc    ,Ax)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))
+S A sCC(C*s,Lm,C*p,Ln)_(P(!m,el0())Ax=oA;C*q;W((q=memmem(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)S A sC(C*s,Lm,Ax)_(XC(x(sCC(s,m,xV,xn)))et1(x))
 S L jN(Lm,Ax/*0*/)_(P(!xtA,-1)Ln=(xn-!!xn)*m;i(xn,Ay=xa;P(!ytcC,-1)n+=yN)n)//total length or -1
 A jc(Cc,   Ax)_(XC(jc(c,  flp(flp(x))))Ln=jN(1,x);P(n<0,et1(x))Ay=aC(n);C*p=yV;i(xn,I(i,*p++=c        )Az=xa;I(ztc,*p++=zv)E(Mc(p,zV,zn);p+=zn))x(y))
 A jC(Qs,Nm,Ax)_(XC(jC(s,m,flp(flp(x))))Ln=jN(m,x);P(n<0,et1(x))Ay=aC(n);C*p=yV;i(xn,I(i,Mc(p,s,m);p+=m)Az=xa;I(ztc,*p++=zv)E(Mc(p,zV,zn);p+=zn))x(y))
@@ -38,7 +38,7 @@ S A3(ws,/*001*/Au=enl(zR);W(1,A w=y1(zR);B(!w,u=u(0))B(!tru(w))z=x1(z);P(!z,u(0)
 S A3(wf,/*001*/Au=0;W(1,A w=y1(zR);B(!w,z=z(0))B(!tru(w))z=x1(z);P(!z,0))z)
 S A nS(Ax,Lm,OA*a,Nn/*0m1n*/)_(P(n==1,ns(x,m,*a))m=max(0,m);Az=aA(n+m),*b=zV;zn=n;Mc(b,a,8*n);i(m,mRn(n,b);b[n]=Nz(x8(b,n));zn++;b++)sqz(z))
 S A wS(Ax,Ay,OA*a,Nn/*001n*/)_(P(n==1,ws(x,y,*a))Ab8;Mc(b,a,8*n);mRn(n,b);Az=sqz(aV(tA,n,b));
- W(1,Au=y1(ii(z,zn-1));B(!u,z=z(0))B(!tru(u))mRn(n-1,b+1);u=x8(b,n);B(!u,*b=au;z=z(0))Mm(b,b+1,8*n-8);b[n-1]=u;zq(uR))mrn(n,b);z)
+ W(1,Au=y1(ii(z,zn-1));B(!u,z=z(0))B(!tru(u))mRn(n-1,b+1);u=x8(b,n);B(!u,*b=au;z=z(0))memmove(b,b+1,8*n-8);b[n-1]=u;zq(uR))mrn(n,b);z)
 S A nF(Ax,Lm,OA*a,Nn/*0m1n*/)_(P(n==1,nf(x,m,*a))las(N(nS(x,m,a,n))))
 S A wF(Ax,Ay,OA*a,Nn/*001n*/)_(P(n==1,wf(x,y,*a))las(N(wS(x,y,a,n))))
 S A3(ls2,/*010*/Yz(ns(x,gl(y),zR))YU(y(ws(x,y,zR)))et1(y))

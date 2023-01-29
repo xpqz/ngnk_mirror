@@ -29,7 +29,7 @@ I pg=4096;//pagesize
   #include"o/w/fs.h"
  };S ST{C i;N o;}d[8]={{.i=1},{.i=1},{.i=1}};S O I ns=LEN(s),nd=LEN(d);//d:fd table
  #define FI P((UI)f>=nd||!d[f].i,EBADF)Ii=d[f].i;//validate fd "f" and get inode "i"
- I open(Qp,Iv,...)_(Im=Sn(p);P(m>=SZ s[0].p,ENAMETOOLONG)Ii=0;W(i<ns&&SQ(s[i].p,p),i++)
+ I open(Qp,Iv,...)_(Im=Sn(p);P(m>=SZ s[0].p,ENAMETOOLONG)Ii=0;W(i<ns&&strcmp(s[i].p,p),i++)
   I(i>=ns,P(O_CREAT&~v,ENOENT)i=0;W(i<ns&&s[i].a,i++)P(i>=ns,ENOSPC)s[i].a="";s[i].n=0;Mc(s[i].p,p,m))
   If=0;W(f<nd&&d[f].i,f++)P(f>=nd,EMFILE)d[f].i=i;d[f].o=0;f)
  I close(If)_(FI d[f].i=0;0)
@@ -63,7 +63,7 @@ I pg=4096;//pagesize
  I memcmp(OV*x,OV*y,Nn)_(Qs=x,t=y;i(n,Iv=*s++-*t++;P(v,v))0)
  N strlen(Qs)_(Qp=s;W(1,UL v=~*(UL*)(V*)p;v&=v>>1;v&=v>>2;v&=v>>4;v&=0x0101010101010101ll;B(v)p+=8)W(*p,p++)p-s)
  C*strchr(O C*s,Iv)_(W(1,P(*s==v,(V*)s)P(!*s++,(V*)0))(V*)0)
- C*strstr(O C*p,O C*q)_(MM(p,Sn(p),q,Sn(q)))
+ C*strstr(O C*p,O C*q)_(memmem(p,Sn(p),q,Sn(q)))
  I strcmp(Qp,Qq)_(W(*p&&*p==*q,p++;q++)*p-*q)
 #else
  I js_eval(C*s,Im,C*r,In)_(0)

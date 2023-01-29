@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-I si(Qs,Iv)_(SC0(s,v)-(C*)s)S Q pw(Qs)_(W(*s==32,s++)s)S I id(UC c)_(cAz(c)|((c|1)==0xd1)<<1)S I id1(Cc)_(id(c)|c09(c))Q pID(Qs)_(W(1,Ii=id1(*s);B(!i)s+=i)s)
+I si(Qs,Iv)_(strchrnul(s,v)-(C*)s)S Q pw(Qs)_(W(*s==32,s++)s)S I id(UC c)_(cAz(c)|((c|1)==0xd1)<<1)S I id1(Cc)_(id(c)|c09(c))Q pID(Qs)_(W(1,Ii=id1(*s);B(!i)s+=i)s)
 L pu(Q*p)_(Qs=*p;Lv=0;Cc=*s;W(c09(c),v=10*v+c-'0';c=*++s)*p=s;v)L pl(Q*p)_(Im=**p=='-';*p+=m;(1-2*m)*pu(p))S F p10(In)_(Fv=1;i(n,v*=10)v)
 S F pfu(Q*p)_(UL v=pu(p);Qs=*p;Cc=*s;P(c=='n'||c=='w',(*p)++;c=='n'?NF:WF)I e=0;
  I(c=='.',c=*++s;W(c09(c),I(v<(1ull<<63)/10,v=10*v+c-'0';e--)c=*++s))I(c=='e',s++;e+=pl(&s))*p=s;e<0?v/p10(-e):v*p10(e))

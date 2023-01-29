@@ -27,12 +27,12 @@ C tZ(Lv)_(v==(B)v?tB:v==(H)v?tH:v==(I)v?tI:tL)A kv(A*p)_(Ax=*p;Q(xn==2);P(xr>1,-
 ALA(room,P(xr==1&&n*xW<=xZ,AN(n,x))Ay=an(n,xt);Mc(yV,xV,xn*xW);I(ytR,I(xr==1,AZ(x))E(i(xn,_R(ya))))x(y))L gl_(Ax)_(XP(xv)*xL)L gl(Ax)_(Lv=gl_(x);x(0);v)F gf(Ax)_(Fv=*xF;x(0);v)
 
 S C s0[1<<16],*s1=s0+1;Q qs(O L*p)_(*p<0?s0-*p:(V*)p)
-AQ(sym,Nn=Sn(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,P(!SQ(p,s),as(s0-p))p+=Sn(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))Mc(s1,s,n);s1+=n;as(s0-s1+n))
+AQ(sym,Nn=Sn(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,P(!strcmp(p,s),as(s0-p))p+=Sn(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))Mc(s1,s,n);s1+=n;as(s0-s1+n))
 
 S AQ(cps,Ax=N(pk(s));cpl(str0(aCz(s)),x,oS))
-S C*skp(C*s)_(W(!MQ(s,"/\n",2),C*p=SS(s+1,"\n\\\n");s=p?p+3:s+Sn(s))s)
+S C*skp(C*s)_(W(!memcmp(s,"/\n",2),C*p=strstr(s+1,"\n\\\n");s=p?p+3:s+Sn(s))s)
 S I ln(Qs)_(Ax=evs(s);P(x,x(out(x));1)epr(0))
-S A lns(C*p,Nn)_(Q(n)P(p[n-1]-10,err0("eoleof"))p[n-1]=0;I(!MQ(p,"#!",2),p=SC0(p+2,10))C*v=p;W(p<v+n,C*q=p=skp(p);W(*q&&(*q-10||si(" }",q[1])<2),q++)*q=0;N(ln(p));p=q+1)au)
+S A lns(C*p,Nn)_(Q(n)P(p[n-1]-10,err0("eoleof"))p[n-1]=0;I(!memcmp(p,"#!",2),p=strchrnul(p+2,10))C*v=p;W(p<v+n,C*q=p=skp(p);W(*q&&(*q-10||si(" }",q[1])<2),q++)*q=0;N(ln(p));p=q+1)au)
 S AQ(bscd,P(!*s,Cb[256];getcwd(b,SZ b)?eo0():aCz(b))chdir(s)?eo0():au)
 S AQ(bsbs,exit(0);0)
 S AQ(bsd,P(!*s,aCz(gp))s+=*s=='.';Nn=Sn(s);P(n+2>SZ(gp),ez0())Mc(gp,s,n+1);au)
@@ -46,7 +46,7 @@ AQ(evs,P(*s-'\\',Ax=N(cps(s));x(run(x,0,0)))Cc=s[1],d=s[2];P(c=='c'&&d=='d'&&(!s
  P(!d||d==32||d==':',T(&bsL,bsl,bst,bsd,bsbs,bsf,bsv,bsm,bs0)[si("Lltd\\fvm",c)](s+2+(d==32)))K1("0x0a\\`x(,,\"/bin/sh\"),,:",aCz(s+1)))
 
 C gp[32];I gn,gk[256];A gv[256],cns,ce[tn],cn[tn],ci[2][5];Q*argv,*env;
-I rep()_(Cb[256],*s=b,*q;W(1,Ln=read(0,s,b-s+SZ b);P(n<0,0)s+=n;q=MC(s-n,10,n);P(q,C*p=b;W(q,*q=0;ln(p);p=q+1;q=MC(p,10,s-p))Mc(b,p,s-p);s+=b-p;1)P(b+SZ b<=s,die("LONGLINE")))1)
+I rep()_(Cb[256],*s=b,*q;W(1,Ln=read(0,s,b-s+SZ b);P(n<0,0)s+=n;q=memchr(s-n,10,n);P(q,C*p=b;W(q,*q=0;ln(p);p=q+1;q=memchr(p,10,s-p))Mc(b,p,s-p);s+=b-p;1)P(b+SZ b<=s,die("LONGLINE")))1)
 V repl(){W(rep())}L k(Qs)_(Ax=N(evs(s));mc();Xz(gl(x))x(0))V kf(Qs,L(*f)(L)){d8(A(sym(s),au,av,AT(tx,(A)f)),4);}
 V kinit(){S I l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);z[LEN(z)-1]=1;A b[32],*c=b;i(tS-tA+1,*c++=ce[tA+i]=an(0,tA+i))*c++=ce[tm]=am(oS,oA);_x(ce[tA])=oC;
  cn[tA]=ce[tC];*c++=cn[tB]=cn[tH]=cn[tI]=cn[tL]=cn[ti]=cn[tl]=al(NL);*c++=cn[tF]=cn[tf]=af(NF);cn[tC]=cn[tc]=ac(32);cn[tS]=cn[ts]=as(0);i(tn-to,cn[to+i]=au)
