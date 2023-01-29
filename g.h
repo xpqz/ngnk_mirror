@@ -560,7 +560,6 @@
 #define Az A z
 #define Au A u
 #define OA O A
-#define OC O C
 #define OV O V
 #define Qs Q s
 #define Qp Q p

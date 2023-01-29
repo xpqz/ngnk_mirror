@@ -14,7 +14,7 @@ d("_t@(x) (_t(x)==t@)";"ABHILFCSMmlfopqr")
 d("_t@(x) (_t0(x)==t@)";"iscuvwx")
 d("N@(r) N(r,@(0))";v)
 d("o@ _R(ce[t@])";"ABLFCS")
-d'(,"@$ @ $"),/:":"\'" "\"C:bcdt ILN:ijkmn CBHILF:v I:f A:xyzu O:ACV Q:spq";
+d'(,"@$ @ $"),/:":"\'" "\"C:bcdt ILN:ijkmn CBHILF:v I:f A:xyzu O:AV Q:spq";
 r,:{"#define _",x,"(x) ((A*)_V(x))[",y,"]"}'["xyz";"012"]
 r,:{"#define _t",x,"(x) (_t",(-1_x),"(x)||_t",(-1#x),"(x))"}'(1<#:')#U
 "g.h"0:r

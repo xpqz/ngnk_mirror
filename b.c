@@ -1,7 +1,7 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 enum{bu,bv=32,bs=64,bg=72,bd=80,ba=88,bP,bi,bx,bI,bX,bm,bM,bG,bS,bl,bL,bz,bj,bo,bp,bc};
-S OC di[]={                         1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1         };
-S OC ds[]={                         1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1   };
+S OCA di={                          1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1         };
+S OCA ds={                          1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1   };
 #define h(a) {b[nb]=a;m[nb]=o;nb+=nb<255;}
 #define hc(a) N(lc(a,o));
 #define OK -1
