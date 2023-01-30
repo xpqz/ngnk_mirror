@@ -1,5 +1,4 @@
-// ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-#include"a.h"
+#include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include<stdarg.h>
 #include<stdio.h>
 #include<fcntl.h>

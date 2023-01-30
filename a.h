@@ -1,8 +1,7 @@
-// ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-#define DBG(a...)//a
+#include<string.h> // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include<unistd.h>
-#include<string.h>
 #include"g.h"
+#define DBG(a...)//a
 #define   _(a...) {return({a;});}
 #define W(x,a...) while(x){a;}
 #define B(x,a...) I(x,a;break)
