@@ -11,7 +11,7 @@ K Kc(Cv)_(ac(v))     K KC(C*a,Nn)_(aV(tC,n,a))                   C cK(K x)_(xv) 
 K Ks(C*s)_(sym(s))   K KS(C**a,Nn)_(Ax=aS(n);i(n,xi=sym(a[i]))x)
 K Ki(Iv)_(az(v))     K KI(I*a,Nn)_(aV(tI,n,a))                   I iK(K x)_(xv)  V IK(I*a,K x){VK(tI,a,x);}
 K Kf(Fv)_(af(v))     K KF(F*a,Nn)_(aV(tF,n,a))                   F fK(K x)_(*xF) V FK(F*a,K x){VK(tF,a,x);}
-                     K KL(K*a,Nn)_(a?aV(tA,n,a):aA(n))           V LK(K*a,K x){VK(tA,a,x);}
+                     K KL(K*a,Nn)_(a?aV(tA,n,a):aA(n))                           V LK(K*a,K x){VK(tA,a,x);}
 K Kp(V*p)_(al((L)p))
 
 V KA(Qs,K x){x=x(d8(A(as(sym(s)),oA,av,x),4));if(x)mr(x);}
