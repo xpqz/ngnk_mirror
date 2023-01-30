@@ -13,7 +13,7 @@ S A mx(Nn)_(V*p=mm(n,0);P(!p,die("OOM"))(A)(p+HD))
 A mf(If,Nn)_(V*p=mm(pg+n,1);P(!p,eo0())Ax=(A)(p+pg);xn=n;AT(tC,x);P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,0)!=p+pg,mu(p);eo0())xR)
 
 S Az[SZ(N)==4?27:35];S I lck;
-S A mb(Cb,Ax)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)V mrn(Nn,OA*a){i(n,mr(a[i]))}V mRn(Nn,OA*a){i(n,_R(a[i]))}A1(mRa,i(xn,_R(xa))x)
+S A mb(Cb,Ax)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)V mrn(Nn,OA*a){i(n,mr(a[i]))}V mRn(Nn,OA*a){i(n,_R(a[i]))}A1(mRa,mRn(xn,xA);x)
 A1(m0,DBG(lck++);Q(x);XP(0)Q(xr>0);P(--xr,0)Cb=xU;P(!b,mu(xV-pg))xX=z[b];z[b]=(A)xV;XR(mrn(xn|!xn,xA);x)x)
 A1(m1,DBG(lck--;P(!x||!xU,0)Ms(xV,0xab,xZ);AN(-1,AT(0,x)));0)
 A an(Nn,Ct)_(Q(!lck);Q(LH(tA,t,tn-1));Q(!TP(t));Cb=59-__builtin_clzll(HD|HD-1+n*TW[t]);P(n>1ull<<LEN(z)||b>LEN(z)-2,die("OOM"))
@@ -30,7 +30,7 @@ AQ(sym,Nn=Sn(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,
 
 S AQ(cps,Ax=N(pk(s));cpl(str0(aCz(s)),x,oS))
 S C*skp(C*s)_(W(!memcmp(s,"/\n",2),C*p=strstr(s+1,"\n\\\n");s=p?p+3:s+Sn(s))s)
-S I ln(Qs)_(Ax=evs(s);P(x,x(out(x));1)epr(0))
+S I ln(Qs)_(Ax=evs(s);mc(s);P(x,x(out(x));1)epr(0))
 S A lns(C*p,Nn)_(Q(n)P(p[n-1]-10,err0("eoleof"))p[n-1]=0;I(!memcmp(p,"#!",2),p=strchrnul(p+2,10))C*v=p;W(p<v+n,C*q=p=skp(p);W(*q&&(*q-10||si(" }",q[1])<2),q++)*q=0;N(ln(p));p=q+1)au)
 S AQ(bscd,P(!*s,Cb[256];getcwd(b,SZ b)?eo0():aCz(b))chdir(s)?eo0():au)
 S AQ(bsbs,exit(0);0)
