@@ -12,7 +12,8 @@ S A u,cr(A,I);S UC*b,*m;S I nb,lu[8];
 SN I lc(Ax/*1*/,I o)_(Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,P(i-5>64,ez1(x))uq(x))h(bc+i-5)1)
 SN I ig(Lv)_(I(*gp,Qq=qs(&v);I(!strchr(q,'.'),C s[32];Nm=Sn(gp),n=Sn(q);P(m+n+2>=SZ s,-1)Mc(s,gp,m);s[m]='.';Mc(s+m+1,q,n+1);v=(I)sym(s)))
  Li=fI(gk,gn,v);P(i>=0,i)P(gn-(UC)gn,-1)gk[gn]=v;gv[gn]=0;gn++)
-SN I il(Iv)_(Li=fAI(fl,v);P(i>=0,lu[i]=nb;i)-1)
+SN I il(Iv)_(Li=fI(_V(fl),_n(fl),v);P(i>=0,lu[i]=nb;i)-1)
+S L fpI(A*p,Iv)_(Ax=*p;Nn=xn;Li=fI(xV,n,v);P(i<0,*p=apv(x,&v);n)i)
 S A cl(Ax,Ay/*00*/,I r)_(I o=xo;Q(xx==av||_t(xx)==tu)Iv=_v(xx);
  YsS(I(yts,P(xx==av&&_n(fl),Li=fpI(&fl,yv);P(i>15,ez0())lu[i]=nb;h(bs+i)I(r,h(bg+i))OK)Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))E(P(yn==1,o)y=jS(yR))
   Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
