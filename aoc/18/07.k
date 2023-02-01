@@ -8,11 +8,10 @@ g:(=n).[;;:;1]/e        /adjacency matrix
 
 /part2
 f:{(t;d):x /t:current time, d[i]:when will task i be done (or 0 if not started yet)
-   i:(1&#i)#i:&(~d)&1=+/g*(~d)|t<d /next task, if available (list of size 0 or 1)
-   u:5-/t<d /number of idle workers
-   $[(~u)|~#i
-     t:&/(t<)#d   /skip time till some task is completed
-     d[i]:t+61+i] /schedule task i
+   u:5-/t<d               /number of idle workers
+   a:&(~d)&1=+/g*(~d)|t<d /available tasks
+   a:(u&#a)#a             /at most u of them
+   $[a;d[a]:t+61+a        /schedule tasks
+       t:&/(t<)#d]        /skip time till some task is completed
    (t;d)}
-
 |/*|f/0,,&n
