@@ -19,10 +19,12 @@ S L fH(OV*p,Nn,Lv)_(O H*a=p,q=v;P(v-q||!n,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,
 I rnk(Ax/*0*/)_(XA(Iv=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)XmM(rnk(xy))xtT)//-1 for mixed rank
 I urnk(Ax/*0*/)_(XA(urnk(xx)+1)XmM(urnk(xy))xtT)//assuming unirank
 S A2(sdf,K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))//small-domain find
+S A2(sdfB,K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))
 A2(fnd,
  P(xtT&&!xtA&&!ytmMA,
   P(xt==TT[yt]||xtZ&&ytzZ,
-   P(xw<2&&xn>99&&yN>99,sdf(x,y))
+   P(!xw,sdfB(x,y))
+   P(xw==1&&xn>99&&yN>99,sdf(x,y))
    TY(fB)*f=T(&fB,fH,fI,fL)[xw];Yt(az(f(xV,xn,gl(y))))
    Nm=xn,n=yn;Az=aL(n);ye(S4(yw,i(n,zl=f(xV,m,yb)),i(n,zl=f(xV,m,yh)),i(n,zl=f(xV,m,yi)),i(n,zl=f(xV,m,yl)))z))
   Az=cn[tl];zR;y(ytt?z:rsz(yN,z)))
