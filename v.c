@@ -47,5 +47,5 @@ A1(sqz,P(!xtA,x)Nn=xn;Ay=xx;Ct=yt;
  y=an(n,TT[t]);Iv=yw;I(v<3,T(&cLB,cLH,cLI)[v](xV,yV,n))E(i(n,yl=gl_(xa)))x(y))
 A1(cA,XA(x)Xt(aA1(x))Xm(et1(x))Nn=xN;Ay=aA(n);i(yn|!yn,ya=ii(x,i))x(0);I(!yn,yx=mkn(yx))y)
 L tru(Ax/*1*/)_(Lv=xtU?x!=au:xtt?gl_(x):xN;x(0);v)
-A1(imn,XZC(Nn=xn;Lj=n?0:NL;S4(xw,{Bv=*xB;i(n,I(xb<v,v=xb;j=i))},{Hv=*xH;i(n,I(xh<v,v=xh;j=i))},{Iv=*xI;i(n,I(xi<v,v=xi;j=i))},{Lv=*xL;i(n,I(xl<v,v=xl;j=i))})x(az(j)))fir(N(asc(x))))
-A1(imx,XZC(Nn=xn;Lj=n?0:NL;S4(xw,{Bv=*xB;i(n,I(xb>v,v=xb;j=i))},{Hv=*xH;i(n,I(xh>v,v=xh;j=i))},{Iv=*xI;i(n,I(xi>v,v=xi;j=i))},{Lv=*xL;i(n,I(xl>v,v=xl;j=i))})x(az(j)))fir(N(dsc(x))))
+A1(imn,XZC(Nn=xn;Lj=n?0:NL;S4(xw,{Bv=*xB;i(n,I(xb<v,v=xb;j=i))},{Hv=*xH;i(n,I(xh<v,v=xh;j=i))},{Iv=*xI;i(n,I(xi<v,v=xi;j=i))},{Lv=*xL;i(n,I(xl<v,v=xl;j=i))})x(az(j)))XF(imn(of1(x)))fir(N(asc(x))))
+A1(imx,XZC(Nn=xn;Lj=n?0:NL;S4(xw,{Bv=*xB;i(n,I(xb>v,v=xb;j=i))},{Hv=*xH;i(n,I(xh>v,v=xh;j=i))},{Iv=*xI;i(n,I(xi>v,v=xi;j=i))},{Lv=*xL;i(n,I(xl>v,v=xl;j=i))})x(az(j)))XF(imx(of1(x)))fir(N(dsc(x))))
