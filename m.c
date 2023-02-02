@@ -30,7 +30,7 @@ AQ(sym,Nn=Sn(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;Mc(&v,s,n);as(v))Qp=s0+1;W(p<s1,
 
 S AQ(cps,Ax=N(pk(s));cpl(str0(aCz(s)),x,oS))
 S C*skp(C*s)_(W(!memcmp(s,"/\n",2),C*p=strstr(s+1,"\n\\\n");s=p?p+3:s+Sn(s))s)
-S I ln(Qs)_(Ax=evs(s);mc(s);P(x,x(out(x));1)epr(0))
+S I ln(Qs)_(Ax=evs(s);mc();P(x,x(out(x));1)epr(0))
 S A lns(C*p,Nn)_(Q(n)P(p[n-1]-10,err0("eoleof"))p[n-1]=0;I(!memcmp(p,"#!",2),p=strchrnul(p+2,10))C*v=p;W(p<v+n,C*q=p=skp(p);W(*q&&(*q-10||si(" }",q[1])<2),q++)*q=0;N(ln(p));p=q+1)au)
   AQ(bsl,Ax=N(u1c(aCz(s)));x(lns(xC,xn)))
 S AQ(bs0,en0())
