@@ -24,7 +24,7 @@ S A2(sdfB,Q(!xw)Q(ytT)L a[256];i(256,a[i]=NL)Li=xn-1;W(i>=0,a[(UC)xc]=i;i--)Nn=y
 A2(fnd,
  P(xtT&&!xtA&&!ytmMA,
   P(xt==TT[yt]||xtZ&&ytzZ,
-   P(!xw&xn>16&&ytT&&yn>256,sdfB(x,y))
+   P(!xw&&xn>16&&ytT&&yn>256,sdfB(x,y))
    P(xw==1&&xn>128&&yN>128,sdf(x,y))
    TY(fB)*f=T(&fB,fH,fI,fL)[xw];Yt(az(f(xV,xn,gl(y))))
    Nm=xn,n=yn;Az=aL(n);ye(S4(yw,i(n,zl=f(xV,m,yb)),i(n,zl=f(xV,m,yh)),i(n,zl=f(xV,m,yi)),i(n,zl=f(xV,m,yl)))z))
