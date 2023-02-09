@@ -19,7 +19,7 @@ S A2(cut,/*01*/Q(xtZ)Q(ytMT)K2("{y$[|/0<':x,#y;`err\"domain\";x+!'1_-':x,#y]}",x
 A2(und,/*01*/
  Xz(drp(gl_(x),y))
  XU(flt(x,y,0))
- Xm(y=N(fnd(xx,y));yR;am(und(xx,y),und(xy,y)))
+ Xm(Az=N(fnd(xx,yR));Zz(y(0);zR;am(und(xx,z),und(xy,z)))ZZ(z(0);K2("_/",x,y))en2(y,z))
  P(xtZ&&ytMT,cut(x,y))
  P(xtMT&&ytz,rmv(xR,gl(y)))
  Ym(K2("{((!y)^x)#y}",x,y))
