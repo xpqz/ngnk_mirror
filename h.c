@@ -56,7 +56,7 @@ S A insL(Ax,Li,Lj,Ay)_(
  P(xtZ&&ytZ&&xt-yt,N(sup(&x,&y));insL(x,i,j,y))
  P(xt-yt,insL(cA(x),i,j,cA(y)))
  Az=an(xn-j+i+yn,xt);Mc(zV,xV,i*xW);Mc(zV+i*xW,yV,yn*xW);Mc(zV+(i+yn)*xW,xV+j*xW,(xn-j)*xW);
- I(xtR,I(!zn,zx=oC)I(xr-1,mRn(i,xA);mRn(xn-j,xA+j))E(mrn(j-i,xA+i);AZ(x))I(yr-1,mRa(y))E(AZ(y)))
+ I(xtR,I(!zn,zx=oC)I(xr-1,mRn(i,xA);mRn(xn-j,xA+j))E(mrn(j-i,xA+i);AZ(x))I(yr-1,mRa(y))E(AZ(y))z=sqz(z))
  x(y(z)))
 A3(ins3,/*100*/Yz(Li=gl_(y);insL(x,i,i,zR))YZ(P(yn-2,el1(x))insL(x,gl_(ii(y,0)),gl_(ii(y,1)),zR))et1(x))
 AA(ins,/*10..0*/Ax=*a;P(n==3,ins3(x,a[1],a[2]))en1(x))
