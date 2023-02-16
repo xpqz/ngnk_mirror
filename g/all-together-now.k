@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!/../k
 / https://codegolf.stackexchange.com/questions/77608/all-together-now/251239#251239
 f:~/,/'='#:'\
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!/../k
 / https://codegolf.stackexchange.com/questions/77866/numbers-with-rotational-symmetry/251159
 f:{y~|x[>x]x?y}/$68910,
 

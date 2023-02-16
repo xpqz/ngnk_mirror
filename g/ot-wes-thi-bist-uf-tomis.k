@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!/../k
 / https://codegolf.stackexchange.com/questions/163141/ot-wes-thi-bist-uf-tomis
 f:{y^'x[<x]x?y}"UAEIOuaeio"
 

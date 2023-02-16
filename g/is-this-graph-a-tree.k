@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!/../k
 / https://codegolf.stackexchange.com/questions/251191/is-this-graph-a-tree
 f:{&//{|/'x*\:x}/x&~2-/3-/x}
 

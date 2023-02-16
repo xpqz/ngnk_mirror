@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../k
 / https://codegolf.stackexchange.com/questions/251101/a-challenge-for-rookies/251115#251115
 f:{".*R"a+\:a:,/|+|3,=8}
 

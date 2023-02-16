@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../k
 / https://codegolf.stackexchange.com/questions/5529/is-string-x-a-subsequence-of-string-y/251189
 f:~#*{(=/*'x;1)_'x}/
 

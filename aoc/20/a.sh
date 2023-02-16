@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 d="$(dirname "$0")"
 cd "$d"
 echo 'aoc20 tests'

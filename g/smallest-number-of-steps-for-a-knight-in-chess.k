@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!/../k
 / https://codegolf.stackexchange.com/questions/251050/smallest-number-of-steps-for-a-knight-in-chess
 f:8 8#{x&1+&/'x@&'4=*/4#i-\:'i:!8 8}/9*~(!64)=8/
 
