@@ -54,8 +54,14 @@ V kinit(){S I l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);z[LEN(z)-1]=1;A b[32],*c=b;i(tS
  *c++=ci[1][0]=af(0);*c++=ci[1][1]=af(1);*c++=ci[1][2]=af(WF);*c++=ci[1][3]=af(-WF);ci[1][4]=cn[tF];Q(c-b<=32);cns=aV(tA,c-b,b);}
 V kargs(In,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=MAX(0,n-2);Ax=n?aA(n):oA;i(n,xa=aCz(a[2+i]))gk[gn]='x';gv[gn++]=x;}
 
-A AT(UL t,Ax)_(Q(LH(0,t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)A AW(C w,Ax)_(Q(w<6);xE=w;x)A AK(C k,Ax)_(Q(k<9);xk=k;x)
-A AO(UC o,Ax)_(Xs(x&~(0xffll<<32)|(UL)o<<32)xB[-13]=o;x)A AN(Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)A1(AZ,AT(tB,x))
+A AT(UL t,Ax)_(Q(IN(t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)
+A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)
+A AW(C w,Ax)_(Q(w<6);xE=w;x)
+A AK(C k,Ax)_(Q(k<9);xk=k;x)
+A AO(UC o,Ax)_(Xs(x&~(0xffll<<32)|(UL)o<<32)xB[-13]=o;x)
+A AN(Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)
+A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)
+A1(AZ,AT(tB,x))
 
 SN I ow(Qs,Nn)_(write(1,s,n))SN V o8(Lv){Cb[16],*s=b;i(16,Cc=v>>4*(15-i)&15;*s++="0W"[9<c]+c)ow(b,16);}I os(Qs)_(ow(s,SL(s)))L ov_(Qs,Lv)_(os(s);o8(v);ow("\n",1);v)
 #define mms(a...) i(nreg,If=reg[i].f;V*p=reg[i].p,*q=f?p:p+reg[i].n;a)
