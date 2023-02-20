@@ -1,24 +1,23 @@
 #include<string.h> // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include<unistd.h>
 #include"g.h"
-#define DBG(a...)//a
-#define   _(a...) {return({a;});}
-#define W(x,a...) while(x){a;}
-#define B(x,a...) I(x,a;break)
-#define P(x,a...) I(x,_(a))
-#define I(x,a...) if(x){a;}
-#define T(x,a...) (TY(x)[]){x,a}
-#define   J(a...) else I(a)
-#define   E(a...) else{a;}
-#define   A(a...) (A[]){a}
-#define   i(a...) ij(i,a)
-#define   j(a...) ij(j,a)
-#define ij(i,n,a...) for(TY(n)n_=(n),i=0;i<n_;i++){a;}
-#define   SW(x,a...) switch(x){a}
-#define    C(x,a...) case x:{a;}break;
-#define C2(x,y,a...) case x:case y:{a;}break;
-#define   CR(x,a...) case x:return({a;});
-#define      D(a...) default:{a;}break;
+#define  DBG(a...)//a
+#define    _(a...) {return({a;});}
+#define  W(x,a...) while(x){a;}
+#define  B(x,a...) I(x,a;break)
+#define  P(x,a...) I(x,_(a))
+#define  I(x,a...) if(x){a;}
+#define  A(x,a...) (TY(x)[]){x,a}
+#define    J(a...) else I(a)
+#define    E(a...) else{a;}
+#define SW(x,a...) switch(x){a}
+#define  C(x,a...) case x:{a;}break;
+#define C2(x,a...) case x:C(a)
+#define CR(x,a...) case x:return({a;});
+#define    D(a...) default:{a;}break;
+#define    i(a...) IJ(i,a)
+#define    j(a...) IJ(j,a)
+#define IJ(i,n,a...) for(TY(n)n_=(n),i=0;i<n_;i++){a;}
 #define O const
 #define S static
 #define SZ sizeof
@@ -38,17 +37,17 @@
 #define EX extern
 #define Q(x) DBG(I(!(x),die(__FILE__":"M2(__LINE__)": "#x)))//assert
 #define Ab8 A b[8];
-#define Ms(a...) memset(a)
-#define Mc(a...) memcpy(a)
-#define Sn(a...) strlen(a)
-#define min(x,y) ({TY(x) x_=(x),y_=(y);x_<y_?x_:y_;})
-#define max(x,y) ({TY(x) x_=(x),y_=(y);x_>y_?x_:y_;})
-#define rot(x,y) ({TY(x) x_=(x);TY(y) y_=(y);y?x_<<y_|x_>>SZ(x)*8-y_:x;})
-#define in(i,n) ((i)<(UL)(n))
+#define MS memset
+#define MC memcpy
+#define SL strlen
+#define MIN(x,y) ({TY(x) x_=(x),y_=(y);x_<y_?x_:y_;})
+#define MAX(x,y) ({TY(x) x_=(x),y_=(y);x_>y_?x_:y_;})
+#define ROT(x,y) ({TY(x) x_=(x);TY(y) y_=(y);y?x_<<y_|x_>>SZ(x)*8-y_:x;})
+#define IN(i,n) ((i)<(UL)(n))
 #define LH(x,y,z) ((y)-(x)<=(UI)((z)-(x)))//between(low,high)
-#define c09(c) LH('0',c,'9')
-#define cAz(c) LH('a',(c)|32,'z')
-#define cA9(c) (cAz(c)||c09(c))
+#define C09(c) LH('0',c,'9')
+#define CAz(c) LH('a',(c)|32,'z')
+#define CA9(c) (CAz(c)||C09(c))
 #define S4(i,a,b,c,d) switch(i){case 0:a;break;case 1:b;break;case 2:c;break;default:d;break;}
 
 TD void V;TD char B,C;TD char unsigned UB,UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int UI;TD long long L;TD double F;TD size_t N;

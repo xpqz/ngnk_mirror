@@ -28,17 +28,17 @@ I pg=4096;//pagesize
   #include"o/w/fs.h"
  };S ST{C i;N o;}d[8]={{.i=1},{.i=1},{.i=1}};S O I ns=LEN(s),nd=LEN(d);//d:fd table
  #define FI P((UI)f>=nd||!d[f].i,EBADF)Ii=d[f].i;//validate fd "f" and get inode "i"
- I open(Qp,Iv,...)_(Im=Sn(p);P(m>=SZ s[0].p,ENAMETOOLONG)Ii=0;W(i<ns&&strcmp(s[i].p,p),i++)
-  I(i>=ns,P(O_CREAT&~v,ENOENT)i=0;W(i<ns&&s[i].a,i++)P(i>=ns,ENOSPC)s[i].a="";s[i].n=0;Mc(s[i].p,p,m))
+ I open(Qp,Iv,...)_(Im=SL(p);P(m>=SZ s[0].p,ENAMETOOLONG)Ii=0;W(i<ns&&strcmp(s[i].p,p),i++)
+  I(i>=ns,P(O_CREAT&~v,ENOENT)i=0;W(i<ns&&s[i].a,i++)P(i>=ns,ENOSPC)s[i].a="";s[i].n=0;MC(s[i].p,p,m))
   If=0;W(f<nd&&d[f].i,f++)P(f>=nd,EMFILE)d[f].i=i;d[f].o=0;f)
  I close(If)_(FI d[f].i=0;0)
- I read(If,V*a,Nn)_(FI P(i==1,js_in(a,n))I o=d[f].o;n=max(0,min(n,s[i].n-o));Mc(a,s[i].a+o,n);d[f].o+=n;n)
+ I read(If,V*a,Nn)_(FI P(i==1,js_in(a,n))I o=d[f].o;n=MAX(0,MIN(n,s[i].n-o));MC(a,s[i].a+o,n);d[f].o+=n;n)
  I write(If,OV*a,Nn)_(FI;P(i==1,js_out(a,n);n)
-  Im=d[f].o+n;I(m>s[i].n,C*b=js_alloc(m);Mc(b,s[i].a,n);s[i].a=b;s[i].n=m)Mc(s[i].a+d[f].o,a,n);n)
+  Im=d[f].o+n;I(m>s[i].n,C*b=js_alloc(m);MC(b,s[i].a,n);s[i].a=b;s[i].n=m)MC(s[i].a+d[f].o,a,n);n)
  off_t lseek(If,off_t o,I w)_(FI;o=w==SEEK_CUR?o+d[f].o:w==SEEK_END?o+s[i].n:w==SEEK_SET?o:-1;P(o<0,EINVAL)d[f].o=o)
  I fstat(If,ST stat*r)_(FI;In=s[i].n;
   *r=(TY(*r)){.st_ino=i,.st_mode=S_IFCHR,.st_nlink=1,.st_size=n,.st_blksize=512,.st_blocks=n+511>>9};0)
- V*mmap(V*a,Nn,I pr,I fl,If,off_t o)_(I(!a,a=js_alloc(n))P(f<0,a)P(f>=nd||!d[f].i,(V*)-1)Ii=d[f].i;Mc(a,s[i].a+o,n);a)
+ V*mmap(V*a,Nn,I pr,I fl,If,off_t o)_(I(!a,a=js_alloc(n))P(f<0,a)P(f>=nd||!d[f].i,(V*)-1)Ii=d[f].i;MC(a,s[i].a+o,n);a)
  I munmap(If,In)_(0)
  I gettimeofday(ST timeval*a,V*b)_(js_time((V*)&a->tv_sec,(V*)&a->tv_usec);0)
  V exit(Iv){js_exit(v);}
@@ -62,7 +62,7 @@ I pg=4096;//pagesize
  I memcmp(OV*x,OV*y,Nn)_(Qs=x,t=y;i(n,Iv=*s++-*t++;P(v,v))0)
  N strlen(Qs)_(Qp=s;W(1,UL v=~*(UL*)(V*)p;v&=v>>1;v&=v>>2;v&=v>>4;v&=0x0101010101010101ll;B(v)p+=8)W(*p,p++)p-s)
  C*strchr(O C*s,Iv)_(W(1,P(*s==v,(V*)s)P(!*s++,(V*)0))(V*)0)
- C*strstr(O C*p,O C*q)_(memmem(p,Sn(p),q,Sn(q)))
+ C*strstr(O C*p,O C*q)_(memmem(p,SL(p),q,SL(q)))
  I strcmp(Qp,Qq)_(W(*p&&*p==*q,p++;q++)*p-*q)
 #else
  I js_eval(C*s,Im,C*r,In)_(0)
