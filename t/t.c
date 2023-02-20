@@ -16,7 +16,7 @@
 #define i(x,a...) for(I i=0,n_=(x);i<n_;i++){a;}
 #define S static
 #define SZ sizeof
-#define pr(x...) {printf(x);fflush(stdout);}
+#define pr printf
 #define wr write
 #define cl close
 typedef char C;typedef int I;typedef long long L;
@@ -30,5 +30,5 @@ S I t(C*s,I n)_(wr(1,".",1);P(*s=='/'||*s==10,0)
  C o[256];L m=0;W(1,L k=read(p[2],o+m,SZ o-1-m);B(k<=0)m+=k;B(m<SZ o-1))
  cl(p[2]);m=nl(o,m);u+=3;kill(c,SIGKILL);P(s+n==u+m&&!strncmp(o,u,m),1)
  wr(1,"\nfail: ",6);wr(1,s,n);wr(1,o,m);wr(1,"\n",1);-1)
-I main()_(pr("unit tests\n");C*e,*s=mm("t/t.k",&e);I n=0,f=0;
+I main()_(setbuf(stdout,0);pr("unit tests\n");C*e,*s=mm("t/t.k",&e);I n=0,f=0;
  W(s<e,C*u=strchr(s,10)+1;I r=t(s,u-s);n+=!!r;f+=r<0;s=u)P(f,pr("\nfail %d/%d\n",f,n);1)pr("\n");0)
