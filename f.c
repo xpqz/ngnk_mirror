@@ -3,7 +3,7 @@
 // ","/"abcd",'"=0x",/:+"0123456789abcdef"@(16#16)\2/|+4 64#(n{(|(8#2)\30)@2/'3'0,x,0}\n=!2*n)@'n:256
 S UL a[]={0xd5a986ae75c9a33b,0x1016d8e3483a8f0f,0x81f9e6260eb8e5df,0xfa9b718d8d0769bf};//prng state
 UL r()_(Lv=a[1]<<17;a[2]^=a[0];a[3]^=a[1];a[1]^=a[2];a[0]^=a[3];a[2]^=v;a[3]=ROT(a[3],45);a[0]+a[3])//next 64 bits of randomness
-A1(prng,P(x==au,aV(tL,4,a))XZ(x=cL(rsz(4,x));MC(a,xV,SZ a);x(au))Xz(UL v=gl(x);I(!v,v=now())i(LEN(a),a[i]=v=v*6364136223846793005+1442695040888963407)au)et1(x))//knuth mmix
+A1(prng,P(x==au,aV(tL,4,a))XZ(x=cL(rsz(4,x));MC(a,xV,SZ a);x(au))Xz(UL v=gl(x);I(!v,v=now())i(L(a),a[i]=v=v*6364136223846793005+1442695040888963407)au)et1(x))//knuth mmix
 S UI rm(UL m)_((UI)r()*m>>32)//random mod m
 S A ro(UL n,UL m)_(Ct=m?tZ(m-1):tL;Ax=an(n,t);P(t==tB,i(n,xb=rm(m))x)P(t==tH,i(n,xh=rm(m))x)P(t==tI,i(n,xi=rm(m))x)i(n,xl=r())I(m,i(n,xl=(UL)xl%m))x)//roll
 S A de(UL n,UL m)_(P(n>m,el0())P(n<m,Ax=ro(n,0);i(n,UL k=m-n+i;xl%=k+1;j(i,B(xL[j]==xl,xl=k)))i(n,Ij=rm(i+1);SWP(xl,xL[j]))sqzZ(x))//deal
@@ -31,4 +31,4 @@ A2(fnd,
   Az=cn[tl];zR;y(ytt?z:rsz(yN,z)))
  Xm(i1(xx,N(fnd(xy,y))))
  Ik=urnk(x),l=urnk(y);P(k<=l,r2f(fnd,x,y))P(k==l+1,L r=NL;I(xtA,i(xn,B(mtc_(xa,y),r=i)))E(i(xN,Az=ii(x,i);Im=mtc_(z,y);z(0);B(m,r=i)))y(az(r)))er1(y))
-A2(que,Xs(S O C s[][4]={"","j","hex"};Li=fI(s,LEN(s),xv);A(&des,js0,unh,ed1)[i<0?LEN(s):i](y))Xz(rnd(gl_(x),y))Xt(et1(y))fnd(x,y))
+A2(que,Xs(S O C s[][4]={"","j","hex"};Li=fI(s,L(s),xv);A(&des,js0,unh,ed1)[i<0?L(s):i](y))Xz(rnd(gl_(x),y))Xt(et1(y))fnd(x,y))

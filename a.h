@@ -21,7 +21,7 @@
 #define O const
 #define S static
 #define SZ sizeof
-#define LEN(x) (SZ(x)/SZ((x)[0]))
+#define L(x) (SZ(x)/SZ((x)[0]))
 #define HD 32ll//header
 #define NI __attribute__((noinline))
 #define SN S NI
@@ -48,7 +48,7 @@
 #define C09(c) LH('0',c,'9')
 #define CAz(c) LH('a',(c)|32,'z')
 #define CA9(c) (CAz(c)||C09(c))
-#define S4(i,a,b,c,d) switch(i){case 0:a;break;case 1:b;break;case 2:c;break;default:d;break;}
+#define S4(i,a,b,c,d) SW(i,C(0,a)C(1,b)C(2,c)D(d))
 
 TD void V;TD char B,C;TD char unsigned UB,UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int UI;TD long long L;TD double F;TD size_t N;
 TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX(A,OA*,I),AL(L),ALA(L,A),AAL(A,L),AQ(Q);TD O C OCA[];
@@ -131,7 +131,7 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define WF __builtin_inf()
 #define NL (1ll<<63)
 #define WL (~NL)
-#define K(s,a...) ({S A f;k8(&f,s,A(a),LEN(A(a)));})
+#define K(s,a...) ({S A f;k8(&f,s,A(a),L(A(a)));})
 #define K1(s,x)   ({S A f;k1(&f,s,x);})
 #define K2(s,x,y) ({S A f;k2(&f,s,x,y);})
 
