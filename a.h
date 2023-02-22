@@ -3,17 +3,17 @@
 #include"g.h"
 #define  DBG(a...)//a
 #define    _(a...) {return({a;});}
+#define  A(x,a...) (TY(x)[]){x,a}
 #define  W(x,a...) while(x){a;}
 #define  B(x,a...) I(x,a;break)
 #define  P(x,a...) I(x,_(a))
 #define  I(x,a...) if(x){a;}
-#define  A(x,a...) (TY(x)[]){x,a}
 #define    J(a...) else I(a)
 #define    E(a...) else{a;}
 #define SW(x,a...) switch(x){a}
 #define  C(x,a...) case x:{a;}break;
 #define C2(x,a...) case x:C(a)
-#define CR(x,a...) case x:return({a;});
+#define CR(x,a...) case x:_(a)
 #define    D(a...) default:{a;}break;
 #define    i(a...) IJ(i,a)
 #define    j(a...) IJ(j,a)
