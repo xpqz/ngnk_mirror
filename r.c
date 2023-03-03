@@ -18,7 +18,7 @@ S UL s[][M]={{0xd5a986ae75c9a33b,0x9c57a73dcd5e41b7,0x3fe497b4dd1be68d,0x3f57adc
 S N nb;//buf
 A1(prng,P(x==au,aV(tL,4*M,s))XZ(P(xn-4*M,el1(x))MC(s,xV,SZ s);nb=0;x(au))Xz(UL v=gl(x);I(!v,v=now())i(4,j(M,s[i][j]=v=v*6364136223846793005+1442695040888963407/*knuth mmix*/))au)et1(x))
 S V h(I x,I y){i(M,s[x][i]^=s[y][i])}
-S UL r()_(S UL b[M];I(!nb,i(M,b[i]=s[1][i]<<17)h(2,0);h(3,1);h(1,2);h(0,3);i(M,s[2][i]^=b[i])i(M,s[3][i]=ROT(s[3][i],45))i(M,s[0][i]+s[3][i])nb=M)b[--nb])//random 64 bits
+S UL r()_(S UL b[M];I(!nb,nb=M;UL t[M];i(M,b[i]=s[0][i]+s[3][i])i(M,t[i]=s[1][i]<<17)h(2,0);h(3,1);h(1,2);h(0,3);i(M,s[2][i]^=t[i])i(M,s[3][i]=ROT(s[3][i],45)))b[--nb])//random 64 bits
 S UI ri(UL m)_((UI)r()*m>>32)//random int mod m
 S F rf()_(Lv=1023ll<<52|r()>>12;-1+*(F*)&v)//random float 0..1
 
@@ -39,4 +39,4 @@ S A de2(Nn,UL m)_(Ax=aL(n);L*a=xL,j=-1,q=m-n+1;Fv=exp(log(rf())/n);
 S A de(Nn,UL m)_(n>m?el0():n<m?de2(n,m):sh(n))//deal
 S A rd(Ln,Lm)_(m<0?ed0():n==NL?sh(m):n-(I)n?ez0():n<0?de(-n,m):ro(n,m))//roll or deal
 AL(rndF,Ax=aF(n);i(n,xf=rf())x)//random floats 0..1
-ALA(rnd,Xz(rd(n,gl(x)))Xc(cC(add(xv-'A'?ac('a'):x,Nx(rd(n,26)))))Xf(x(mul(x,Nx(rndF(n)))))XMT(x(x1(Nx(rd(n,xN)))))et1(x))
+ALA(rnd,Xz(rd(n,gl(x)))Xc(P((32|xv)=='a',cC(add(x,Nx(rd(n,26)))))AT(tC,N(ro(n+7>>3,0))))Xf(x(mul(x,Nx(rndF(n)))))XMT(x(x1(Nx(rd(n,xN)))))et1(x))
