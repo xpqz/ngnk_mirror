@@ -1,13 +1,24 @@
 #include<math.h> // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include"a.h"
 //prng: xoshiro256+ (public domain) http://vigna.di.unimi.it/xorshift/ seeded with the central column of rule30, little-endian:
-// ","/"abcd",'"=0x",/:+"0123456789abcdef"@(16#16)\2/|+4 64#(n{(|(8#2)\30)@2/'3'0,x,0}\n=!2*n)@'n:256
-#define M 1
-S UL a[][M]={{0xd5a986ae75c9a33b},{0x1016d8e3483a8f0f},{0x81f9e6260eb8e5df},{0xfa9b718d8d0769bf}};//prng state
-A1(prng,P(x==au,aV(tL,4*M,a))XZ(P(xn-4,el1(x))MC(a,xV,SZ a);x(au))Xz(UL v=gl(x);I(!v,v=now())i(4,j(M,a[i][j]=v=v*6364136223846793005+1442695040888963407/*knuth mmix*/))au)et1(x))
-S UL r()_(S UL v[M];S I n=0;//random 64 bits
- I(!n,i(M,v[i]=a[1][i]<<17)i(M,a[2][i]^=a[0][i])i(M,a[3][i]^=a[1][i])i(M,a[1][i]^=a[2][i])i(M,a[0][i]^=a[3][i])i(M,a[2][i]^=v[i])i(M,a[3][i]=ROT(a[3][i],45))i(M,a[0][i]+a[3][i])n=M)
- v[--n])
+//first column of s: "0x",/:+"0123456789abcdef"@(16#16)\2/|+4 64#(n{(|(8#2)\30)@2/'3':0,x,0}\n=!2*n)@'n:256
+//all columns:
+//  #include<stdio.h>
+//  #include<stdint.h>
+//  typedef uint64_t UL;static UL s[4]={..};
+//  UL next(){const UL r=s[0]+s[3],t=s[1]<<17;s[2]^=s[0];s[3]^=s[1];s[1]^=s[2];s[0]^=s[3];s[2]^=t;s[3]=s[3]<<45|s[3]>>19;return r;}
+//  void long_jump(){static const UL d[]={0x76e15d3efefdcbbf,0xc5004e441c522fb3,0x77710069854ee241,0x39109bb02acbe635};
+//   UL s0=0,s1=0,s2=0,s3=0;for(int i=0;i<sizeof d/sizeof*d;i++)for(int b=0;b<64;b++){if(d[i]&UINT64_C(1)<<b){s0^=s[0];s1^=s[1];s2^=s[2];s3^=s[3];}next();}
+//   s[0]=s0;s[1]=s1;s[2]=s2;s[3]=s3;}
+//  int main(){UL r[4][4]={};for(int i=0;i<4;i++){for(int j=0;j<4;j++){r[j][i]=s[j];}long_jump();}
+//   for(int i=0;i<4;i++){printf(" {0x%16llx,0x%16llx,0x%16llx,0x%16llx},\n",r[i][0],r[i][1],r[i][2],r[i][3]);}return 0;}
+#define M 4
+S UL s[][M]={{0xd5a986ae75c9a33b,0x9c57a73dcd5e41b7,0x3fe497b4dd1be68d,0x3f57adc392affdef},{0x1016d8e3483a8f0f,0xcb0c33c0e78feede,0x7b5dda788f9f577d,0xf1e01f806161118a},
+ {0x81f9e6260eb8e5df,0x5943e008d9222efa,0x8f514f6e6fb18ba4,0x6dacfe2135f9599e},{0xfa9b718d8d0769bf,0x4d46d3d50833e8c9,0x696678daaa7b4cc6,0x3cb5c708d53cc982}};//prng state
+S N nb;//buf
+A1(prng,P(x==au,aV(tL,4*M,s))XZ(P(xn-4*M,el1(x))MC(s,xV,SZ s);nb=0;x(au))Xz(UL v=gl(x);I(!v,v=now())i(4,j(M,s[i][j]=v=v*6364136223846793005+1442695040888963407/*knuth mmix*/))au)et1(x))
+S V h(I x,I y){i(M,s[x][i]^=s[y][i])}
+S UL r()_(S UL b[M];I(!nb,i(M,b[i]=s[1][i]<<17)h(2,0);h(3,1);h(1,2);h(0,3);i(M,s[2][i]^=b[i])i(M,s[3][i]=ROT(s[3][i],45))i(M,s[0][i]+s[3][i])nb=M)b[--nb])//random 64 bits
 S UI ri(UL m)_((UI)r()*m>>32)//random int mod m
 S F rf()_(Lv=1023ll<<52|r()>>12;-1+*(F*)&v)//random float 0..1
 
