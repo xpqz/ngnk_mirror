@@ -19,7 +19,7 @@ S A2(cut,/*01*/Q(xtZ)Q(ytMT)K2("{y$[|/0<':x,#y;`err\"domain\";x+!'1_-':x,#y]}",x
 A2(und,/*01*/
  Xz(drp(gl_(x),y))
  XU(flt(x,y,0))
- Xm(Az=N(fnd(xx,yR));Zz(y(0);zR;am(und(xx,z),und(xy,z)))ZZ(z(0);K2("_/",x,y))en2(y,z))
+ Xm(Az=N(fnd(xx,yR));Zz(y(0);y=Nz(und(xx,zR));z=Ny(und(xy,z));am(y,z))ZZ(z(0);K2("_/",x,y))en2(y,z))
  P(xtZ&&ytMT,cut(x,y))
  P(xtMT&&ytz,rmv(xR,gl(y)))
  Ym(K2("{((!y)^x)#y}",x,y))
@@ -44,7 +44,7 @@ A2(apd,/*11*/Q(xtMT);Nn=xN;P(!n,enl(x(y)))
 A apv(Ax/*1*/,OV*v )_(Q(xtT);     Nn=xn;x=room(n+1,x);MC(xV+n*xW,v,xW);x)
 A apc(Ax/*1*/,Cc   )_(Q(xtC||xtB);Nn=xn;x=room(n+1,x);xC[n]=c;x)
 A cts(Ax/*1*/,Qs,Nm)_(Q(xtC);     Nn=xn;x=room(n+m,x);MC(xV+n,s,m);x)
-S A insL(Ax,Li,Lj,Ay)_(
+S A insL(Ax,Li,Lj,Ay/*1ij1*/)_(
  YU(insL(x,i,j,Nx(y(y1(slc(x,i,j))))))
  Xmt(et2(x,y))
  Ymt(insL(x,i,j,enl(y)))
