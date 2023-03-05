@@ -2,7 +2,7 @@
 #define i4(w,n,a,b,c,d) S4(w,i(n,a),i(n,b),i(n,c),i(n,d))
 #define MINE(x,y) (x)=MIN(x,y)
 #define MAXE(x,y) (x)=MAX(x,y)
-A1(inv,x=mut(x);Nn=xn*xW;i(PD(n,xC),xc^=-1)x)
+NI A1(inv,x=mut(x);L*p=xL;i(xn*xW+31>>5<<2,*p++^=-1)x)
 
 S A3(___f,/*010*/Ni=!y;I(i,y=ii(z,0))Nn=zn;W(i<n,y=y(x2(y,ii(z,i++)));B(!y))y)
 S A3(dexf,/*010*/Au=las(zR);y?y(u):u)
