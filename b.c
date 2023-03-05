@@ -50,7 +50,7 @@ AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>2048,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=
    C(bx,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=  d4(x,y,av+*b++,*s) ;mr(*s);U(x,*s=y(0))U(*s=dot(x,y)))
    C(bI,Nn=*b++;Ax=*s++,y=*s++,z=*s;U(x=y(z(d8(A(x,y,av+n,z),4))),*s=0)s++)
    C(bX,Nn=*b++;Ax=*s++,y=*s++,z=*s;U(x=  z(d8(A(x,y,av+n,z),4)),*s=y(0))U(*s=x(dot(x,y))))
-   C2(bm,bM,Nn=*b++;A*v=(c==bm?l:gv)+n,x=*v;U(x,*s=ev1(*s))U(x=*v=x(v2[*b++](x,*s++)),*--s=0))
+   C2(bm,bM,Nn=*b++;A*v=(c==bm?l:gv)+n,x=*v;U(x,*s=ev1(*s))Ay=v2[*b++](x,*s++);U(y,*--s=0)*v=x(y))
    C(bG,Nn=*b++;Ax=*--s=gv[n];U(x,ev0())xR)
    C(bS,Nn=*b++;Ax=*s++,y=gv[n];gv[n]=y?y(x):x)
    C(bl,Nn=*b++;s+=n-1;*s=sqz(aV(tA,n,s-n+1)))
