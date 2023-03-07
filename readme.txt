@@ -31,10 +31,11 @@ a.c eval, apply, amend, drill: . @      w/   web ui
 h.c shape-related: x#y ,x x,y           x/   example for using libk.so
 o.c order and equivalence               o/   build output
 s.c string formatting: $x `k@x          l/   k libraries
-f.c find, random: x?y                   g/   https://codegolf.stackexchange.com/
-1.c arithmetic monadic verbs            e/   https://projecteuler.net/
-2.c arithmetic dyadic  verbs            dy/  https://problems.tryapl.org/
-3.c arithmetic       adverbs            aoc/ https://adventofcode.com/
+f.c find                                g/   https://codegolf.stackexchange.com/
+r.c random                              e/   https://projecteuler.net/
+1.c arithmetic monadic verbs            dy/  https://problems.tryapl.org/
+2.c arithmetic dyadic  verbs            aoc/ https://adventofcode.com/
+3.c arithmetic       adverbs
 4.c prime sieve
 i.c input/output
 v.c the rest of the verbs
