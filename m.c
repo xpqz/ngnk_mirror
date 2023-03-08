@@ -71,7 +71,7 @@ SN I ow(Qs,Nn)_(write(1,s,n))SN V o8(Lv){Cb[16],*s=b;i(16,Cc=v>>4*(15-i)&15;*s++
 SN V od(Lv){Cb[32];ow(b,sl(b,v)-b);}
 SN V osd(Qs,Lv){os(s);od(v);}
 SN A1(ox,o8(x);osd(" U",xU);Ct=_t1(x);os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);i(MIN(5,xZ/8),os(" ");o8(xl))os("\n");x)
-AQ(bsm,obs(xm=0)xys(I(!ytP,_m(y)++))rts(I(!xtP,xm++))
+AQ(bsm,obs(xm=0)xys(I(!ytP,ym++))rts(I(!xtP,xm++))
 // In=0;obs(ox(x);n++);osd("nObjs:",n)
 // os("mapped regions:\n");mms(os(f?"[f] ":"[x] ");o8((L)p);os("-");o8((L)q);osd(" N",q-p);os("\n"));os("\n");
  obs(I(!LH(tA,xt,tn-1)&&xr,os("!type:");ox(x)))
