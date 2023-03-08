@@ -18,6 +18,7 @@ S A cl(Ax,Ay/*00*/,I r)_(Q(xx==av||_t(xx)==tu)Iv=_v(xx),o=xo;
   Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
  YA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
   ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);P(i<0,hc(z)h(r?bX:bI)h(v)OK)h(r?bx:bi)h(i)h(v)OK)o)o)
+S I cv(Lv)_(Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')//does symbol value v end with a ":"?
 S A cr(Ax/*0*/,I r)_(I o=xo;
  XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))E(P(xn==1,I(r,hc(ii(x,0)))OK)x=jS(xR))Ii=ig(xv);P(i<0,ez0())h(bG)h(i)I(!r,h(bp))OK)
  P(!xtA||!xn,I(r,hc(x-PLH?xR:au))OK)
@@ -25,6 +26,7 @@ S A cr(Ax/*0*/,I r)_(I o=xo;
  P(y==PLH,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)
  P(n<2,I(r,hc(yR))OK)
  P(n==3&&(ytu||y==av)&&_tsSA(xy),Nr(xz,1);Nl(x,xy,1);I(!r,h(bp))OK)
+ P(n==3&&yts&&cv(yv)&&_tsSA(xy),Nr(xz,1);Nr(xy,1);Nr(cS(drp(-1,str(y))),1);h(ba)h(2)Az=aA1(au);Nl(z,xy,1);z(0);I(!r,h(bp))OK)
  P(n>3&&y==CST,n--;I p[n];A*a=xA;i(n&~1,Nr(*++a,1);h(i&1?bj:bz)p[i]=nb;h(0))Nr(n&1?*++a:au,1);
   i(n&~1,I d=(i&1?nb-1:p[i+1])-p[i];I(i&1,Ij=(n&~1)-1;W(i<j&&d>255,d=p[j]-1-p[i];j-=2))P(d>255,ez0())b[p[i]]=d)I(!r,h(bp))OK)
  I(n==2&&y==FIR,Az=xy;I(ztA&&zn==2,Q(REV+1==ASC)Q(ASC+1==DSC)Q(LAS+1==IMN)Q(IMN+1==IMX)P(zx-REV<3u,Nr(zy,1);h(bu+zx-REV+LAS-au)I(!r,h(bp))OK)))
