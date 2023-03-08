@@ -1,17 +1,13 @@
 #include<math.h> // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include"a.h"
-//prng: xoshiro256+ (public domain) http://vigna.di.unimi.it/xorshift/ seeded with the central column of rule30, little-endian:
-//first column of s: "0x",/:+"0123456789abcdef"@(16#16)\2/|+4 64#(n{(|(8#2)\30)@2/'3':0,x,0}\n=!2*n)@'n:256
-//all columns:
-//  #include<stdio.h>
-//  #include<stdint.h>
-//  typedef uint64_t UL;static UL s[4]={..};
-//  UL next(){const UL r=s[0]+s[3],t=s[1]<<17;s[2]^=s[0];s[3]^=s[1];s[1]^=s[2];s[0]^=s[3];s[2]^=t;s[3]=s[3]<<45|s[3]>>19;return r;}
-//  void long_jump(){static const UL d[]={0x76e15d3efefdcbbf,0xc5004e441c522fb3,0x77710069854ee241,0x39109bb02acbe635};
-//   UL s0=0,s1=0,s2=0,s3=0;for(int i=0;i<sizeof d/sizeof*d;i++)for(int b=0;b<64;b++){if(d[i]&UINT64_C(1)<<b){s0^=s[0];s1^=s[1];s2^=s[2];s3^=s[3];}next();}
-//   s[0]=s0;s[1]=s1;s[2]=s2;s[3]=s3;}
-//  int main(){UL r[4][4]={};for(int i=0;i<4;i++){for(int j=0;j<4;j++){r[j][i]=s[j];}long_jump();}
-//   for(int i=0;i<4;i++){printf(" {0x%16llx,0x%16llx,0x%16llx,0x%16llx},\n",r[i][0],r[i][1],r[i][2],r[i][3]);}return 0;}
+///prng: xoshiro256+ (public domain) http://vigna.di.unimi.it/xorshift/ seeded with the central column of rule30, little-endian:
+//s:2/|+4 64#(n{(|(8#2)\30)@2/'3':0,x,0}\n=!2*n)@'n:256
+//R:{,/|(0,(#y)!x)_y} /rotate
+//X:{2/~=/(64#2)\'(x;y)} /xor
+//f:{r:+/s 0 3;t:s[1]*(*/17#2);s[2]:X/s 2 0;s[3]:X/s 3 1;s[1]:X/s 1 2;s[0]:X/s 0 3;s[2]:X[s 2]t;s[3]:2/R[45]@(64#2)\s 3;r} /next
+//d:|'(64#2)\'256/'256!(0x76e15d3efefdcbbf;0xc5004e441c522fb3;0x77710069854ee241;0x39109bb02acbe635)
+//l:{r:s;t::&4;{$[x;t::t X's;];f[]}''d;s::t;r} /long jump
+//`0:{"{",(","/x),"},"}'{"0x",`hex@`c$(8#256)\x}''+l'!4
 #define M 4
 S UL s[][M]={{0xd5a986ae75c9a33b,0x9c57a73dcd5e41b7,0x3fe497b4dd1be68d,0x3f57adc392affdef},{0x1016d8e3483a8f0f,0xcb0c33c0e78feede,0x7b5dda788f9f577d,0xf1e01f806161118a},
  {0x81f9e6260eb8e5df,0x5943e008d9222efa,0x8f514f6e6fb18ba4,0x6dacfe2135f9599e},{0xfa9b718d8d0769bf,0x4d46d3d50833e8c9,0x696678daaa7b4cc6,0x3cb5c708d53cc982}};//prng state
