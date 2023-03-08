@@ -38,7 +38,7 @@ S A3(c3,/*000*/P(ADD<=x&&x<=MUL&&ytzZ&&ztzZ&&(ytt||ztt||yn==zn)&&MAX(xN,yN)<101,
 S A1(cf,XA(P(xx==MKL,i(xn,Ay=xa;YsSA(x))aA1(drp(1,x)))P(xn==2?c2(xx,xy):xn==3?c3(xx,xy,xz):0,qt(N(val(x))))P(!xn,x)Ay=rsz(xn,au);i(xn,ya=cf(xa);xa=au;P(!ya,die("CF")))AO(xo,x(y)))x)
 S I mxs(Ii,I s)_(I r=s;W(1,UC c=b[i++];Q(s>=0)r=MAX(r,s);P(!c,r)s+=(c-ba<L(ds)?ds[c-ba]:c>=bc||c-bg<8u||c-bd<8u?1:c-bs<8u||c-bv<32u?-1:0)+((c==bL)-(c==bl||c==ba||c==bP))*b[i];
  i+=(c-ba<L(di)?di[c-ba]:0)+(c==bj)*b[i];I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)
-S I shy(Ax/*0*/)_(!xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu)&&_tsSA(xy))
+S I shy(Ax/*0*/)_(!xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu||(_t(xx)==ts&&cv(_v(xx))))&&_tsSA(xy))
 A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,5,A(x,au,au,z,au));MS(lu,-1,SZ lu);y=Nu(cf(y));I s=shy(y),r=cr(y,1);y(0);I o=0;I(s,hc(au))h(bu)
  P(r-OK,ec0();eS(ux,r);u(0))P(_n(fl)>8||nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())i(8,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);AK(k,AT(to,u)))
 
