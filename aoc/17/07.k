@@ -7,4 +7,4 @@ x:0:"i/07"
 /r:result (only first item is important)
 /u:children's total weights
 /j:index of the odd one out or 0N
-r:!0;{$[^j:*&1=+/u=\:u:o'C:c@i:p?x;;r,:w[p?C@j]-u[j]-*u_j];w[i]+/u}t;*r
+r:!0;{$[^j:*&1=+/(!0),u=\:u:o'C:c@i:p?x;;r,:w[p?C@j]-u[j]-*u_j];w[i]+/u}t;*r
