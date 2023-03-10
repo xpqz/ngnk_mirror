@@ -1,12 +1,8 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A1(sam,x)V_;T_;I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xtx?x>>48&7:xtU?xk:0)
 A1(mkn,XmMA(e1f(mkn,x))Ay=_R(cn[xt]);Xt(x(y))x(rsz(xn,y)))
-A2(iex,/*01*/
- YmMA(r2f(iex,x,y))
- YT(rsz(yN,iex(x,fir(y))))
- Yc(ac("\0\1\x7f\x80 "[xtv&&xv-1<9u?A((C)0,0,1,1,2,2,3,3,2)[xv-1]:4]))
- P(xtv&&xv-1<9u,y(_R(ci[ytfF][A((C)0,0,1,1,2,2,3,3,2)[xv-1]])))
- mkn(fir(y)))
+A2(iex,/*01*/YmMA(r2f(iex,x,y))YT(rsz(yN,iex(x,fir(y))))
+ Ii=xtv&&xv<10u?"\4\0\0\1\1\2\2\3\3\2"[xv]:4;Yc(ac("\0\1\x7f\x80 "[i]))Yf(y(af(A(0.,1.,WF,-WF,NF)[i])))y(az(A(0ll,1,WL,-WL,NL)[i])))
 A2(ie,/*00*/P(x==CAT,_R(ce[ce[yt]?yt:tA]))iex(x,fir(yR)))
 AX(prj,XmMA(x8(a,n))Ik=MAX(n,xK);i(n,k-=a[i]!=PLH)x=(xtp?val:aA1)(xR);Ii=0,j=1;W(i<n&&j<xn,I(xA[j]==PLH,xA[j]=a[i++])j++)W(i<n,xq(a[i++]))P(xn>9,ez1(x))AT(tp,AK(k,x)))
 S A iM(Ax,Li,AAL*f)_(Q(xtM);Ay=xy,z=aA(yn);Q(ytA);j(zn|!zn,zA[j]=f(yA[j],i))am(_R(xx),sqz(z)))

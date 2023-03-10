@@ -45,13 +45,12 @@ S AQ(bsv,bsf(0))
 AQ(evs,P(*s-'\\',Ax=N(cps(s));x(run(x,0,0)))Cc=s[1],d=s[2];P(c=='c'&&d=='d'&&(!s[3]||s[3]==32),bscd(s+3+(s[3]==32)))
  P(!d||d==32||d==':',A(&bsL,bsl,bst,bsd,bsbs,bsf,bsv,bsm,bs0)[si("Lltd\\fvm",c)](s+2+(d==32)))K1("0x0a\\`x(,,\"/bin/sh\"),,:",aCz(s+1)))
 
-C gp[32];I gn,gk[256];A gv[256],cns,ce[tn],cn[tn],ci[2][5];Q*argv,*env;
+C gp[32];I gn,gk[256];A gv[256],cns,ce[tn],cn[tn];Q*argv,*env;
 I rep()_(Cb[256],*s=b,*q;W(1,Ln=read(0,s,b-s+SZ b);P(n<0,0)s+=n;q=memchr(s-n,10,n);P(q,C*p=b;W(q,*q=0;ln(p);p=q+1;q=memchr(p,10,s-p))MC(b,p,s-p);s+=b-p;1)P(b+SZ b<=s,die("LONGLINE")))1)
 V repl(){W(rep())}L k(Qs)_(Ax=N(evs(s));mc();Xz(gl(x))x(0))V kf(Qs,A2 f){d8(A(sym(s),au,av,AT(tx,(A)f)),4);}
 V kinit(){S I l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);z[L(z)-1]=1;A b[32],*c=b;i(tS-tA+1,*c++=ce[tA+i]=an(0,tA+i))*c++=ce[tm]=am(oS,oA);_x(ce[tA])=oC;
  cn[tA]=ce[tC];*c++=cn[tB]=cn[tH]=cn[tI]=cn[tL]=cn[ti]=cn[tl]=al(NL);*c++=cn[tF]=cn[tf]=af(NF);cn[tC]=cn[tc]=ac(32);cn[tS]=cn[ts]=as(0);i(tn-to,cn[to+i]=au)
-      ci[0][0]=ai(0);     ci[0][1]=ai(1);*c++=ci[0][2]=al(WL);*c++=ci[0][3]=al(-WL);ci[0][4]=cn[tL];
- *c++=ci[1][0]=af(0);*c++=ci[1][1]=af(1);*c++=ci[1][2]=af(WF);*c++=ci[1][3]=af(-WF);ci[1][4]=cn[tF];Q(c-b<=32);cns=aV(tA,c-b,b);}
+ Q(c-b<=32);cns=aV(tA,c-b,b);}
 V kargs(In,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=MAX(0,n-2);Ax=n?aA(n):oA;i(n,xa=aCz(a[2+i]))gk[gn]='x';gv[gn++]=x;}
 
 A AT(UL t,Ax)_(Q(IN(t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)
