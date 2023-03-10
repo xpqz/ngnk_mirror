@@ -9,6 +9,7 @@ https://github.com/gitonthescene/ngnk-mode                 - emacs mode
 https://github.com/gitonthescene/ngnk-libs                 - collection of libraries
 https://github.com/razetime/ngn-k-tutorial                 - tutorial (work in progress)
 https://xpqz.github.io/kbook/                              - book (work in progress)
+https://github.com/kidd/arraylangs-index                   - analysis of ngn/k AoC solutions
 https://github.com/secwang/ngnkcart                        - searchable database of snippets
 https://github.com/xpqz/ngnk_mirror                        - continuous integration for osx
 https://github.com/traws0/ngnk-windows                     - windows port
