@@ -25,8 +25,8 @@ S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,y(_2(x,y,a[1])))a++;n--;Cb=ytT||y==PLH||y==a
 L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)
 S A1(qa,Ay=oA;Q*p=argv;W(*p,yq(aCz(*p++)))y(y1(x)))S A1(qe,Ay=oS,z=oA;Q*e=env;W(*e,Qp=*e++,q=p+si(p,'=');yq(cS(aCm(p,q)));zq(aCz(q+!!*q)))y=am(y,z);x-au?x(x1(y)):y)
 S A1(qx,exit(xtz?gl(x):1);0)S A1(qj,XC(Cb[4096];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))XA(e1f(qj,x))et1(x))S A1(qp,XC(x=str0(x);x(pk(xV)))et1(x))S A1(qr,x(ai(xr)))S A1(qt,x(al(now())))
-A2(_1,/*01*/P(!xtt,i1(x,y))S O C s[][4]={"","k","j","p","t","x","hex","err","argv","env","exit","js","prng","sin","cos","exp","ln","r","pri"};
- Xs(Li=fI(s,L(s),xv);A(&ser,kst,js1,qp,qt,frk,hex,err,qa,qe,qx,qj,prng,ksin,kcos,kexp,klog,qr,qpri,ed1)[i<0?L(s):i](y))
+A2(_1,/*01*/P(!xtt,i1(x,y))S O C s[][4]={"","k","j","p","t","x","hex","err","argv","env","exit","js","prng","sin","cos","exp","ln","r","pri","de0","de1","de2"};
+ Xs(Li=fI(s,L(s),xv);A(&ser,kst,js1,qp,qt,frk,hex,err,qa,qe,qx,qj,prng,ksin,kcos,kexp,klog,qr,qpri,qde0,qde1,qde2,ed1)[i<0?L(s):i](y))
  Ik=xK;P(1<k,k==2&&!xtp?prj(x,A(y,PLH),2):prj(x,&y,1))Xo(run(x,&y,1))Xr(w1(x,y))Xx(((A1*)(x<<16>>16))(y))
  Xp(P(xn+k>9,er1(y))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&!j?j++,y:_R(xA[i+1]))I l=MAX(0,1-j);MC(b+m,&y,8*l);_8(xx,b,m+l))
  Xq(_1(xx,N(_1(xy,y))))P(1>k,er1(y))Xu(v1[xv](y))Xw(AK(0<xv&&xv<4&&yK==2?1:ytU?yK:1,AW(xv,aV(tr,1,&y))))et1(y))

@@ -34,6 +34,12 @@ S A de2(Nn,UL m)_(Ax=aL(n);L*a=xL,j=-1,q=m-n+1;Fv=exp(log(rf())/n);
    v=exp(log(rf())/n))
   *a++=j+=s+1;m-=s+1;n--;q-=s)
  F t=m-n;W(n>1,L s=0;Fv=rf(),q=t/m;W(q>v,s++;q*=--t/--m)*a++=j+=s+1;m--;n--)*a=j+m*rf()+1;i(xn,Ij=ri(i+1);SWP(xl,xL[j]))x)
+
+//tmp
+A1(qde0,P(!xtZ,et1(x))P(xN-2,el1(x))x=cL(x);Ln=-*xL,m=xL[1];x(0);P(n-(N)n||m-(L)m,ed0())de0(n,m))
+A1(qde1,P(!xtZ,et1(x))P(xN-2,el1(x))x=cL(x);Ln=-*xL,m=xL[1];x(0);P(n-(N)n||m-(L)m,ed0())de1(n,m))
+A1(qde2,P(!xtZ,et1(x))P(xN-2,el1(x))x=cL(x);Ln=-*xL,m=xL[1];x(0);P(n-(N)n||m-(L)m,ed0())de2(n,m))
+
 S A de(Nn,UL m)_(n>m?el0():n<m?de2(n,m):sh(n))//deal
 S A rd(Ln,Lm)_(m<0?ed0():n==NL?sh(m):n-(I)n?ez0():n<0?de(-n,m):ro(n,m))//roll or deal
 AL(rndF,Ax=aF(n);i(n,xf=rf())x)//random floats 0..1
