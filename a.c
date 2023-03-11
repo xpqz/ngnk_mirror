@@ -23,7 +23,7 @@ A2(i1,/*01*/Xt(y(xR))P(y==PLH||y==au,xR)P(xtm||xtM&&ytsS,i1(xy,N(fnd(xx,y))))Yzc
 S A3(i2,/*001*/Cb=ytT||y==PLH||y==au;x=Nz(i1(x,yR));P(!b,x(x1(z)))x(l2f(dot,x,aA1(z))))
 S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,y(_2(x,y,a[1])))a++;n--;Cb=ytT||y==PLH||y==au;x=i1(x,y);P(!n,x)P(!x,mrn(n,a);x)P(!b,x(i8(x,a,n)))x(l2f(dot,x,aV(tA,n,a))))
 L iw(Ax/*0*/,I w,Li)_(S4(w,_(xb),_(xh),_(xi),_(xl))0)
-S A1(qa,Ay=oA;Q*p=argv;W(*p,yq(aCz(*p++)))y(y1(x)))S A1(qe,Ay=oS,z=oA;Q*e=env;W(*e,Qp=*e++,q=p+si(p,'=');yq(cS(aCm(p,q)));zq(aCz(q+!!*q)))y=am(y,z);x-au?x(x1(y)):y)
+S A1(qa,Ay=oA;Q*p=argv;W(*p,yq(aCz(*p++)))y(y1(x)))S A1(qe,Ay=oS,z=oA;Q*e=env;W(*e,Qp=*e++,q=strchrnul(p,'=');yq(cS(aCm(p,q)));zq(aCz(q+!!*q)))y=am(y,z);x-au?x(x1(y)):y)
 S A1(qx,exit(xtz?gl(x):1);0)S A1(qj,XC(Cb[4096];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))XA(e1f(qj,x))et1(x))S A1(qp,XC(x=str0(x);x(pk(xV)))et1(x))S A1(qr,x(ai(xr)))S A1(qt,x(al(now())))
 A2(_1,/*01*/P(!xtt,i1(x,y))S O C s[][4]={"","k","j","p","t","x","hex","err","argv","env","exit","js","prng","sin","cos","exp","ln","r","pri"};
  Xs(Li=fI(s,L(s),xv);A(&ser,kst,js1,qp,qt,frk,hex,err,qa,qe,qx,qj,prng,ksin,kcos,kexp,klog,qr,qpri,ed1)[i<0?L(s):i](y))
