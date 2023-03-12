@@ -29,25 +29,35 @@ ALA(room,P(xr==1&&n*xW<=xZ,AN(n,x))Ay=an(n,xt);MC(yV,xV,xn*xW);I(ytR,I(xr==1,AZ(
 S C s0[1<<16],*s1=s0+1;Q qs(O L*p)_(*p<0?s0-*p:(V*)p)
 AQ(sym,Nn=SL(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;MC(&v,s,n);as(v))Qp=s0+1;W(p<s1,P(!strcmp(p,s),as(s0-p))p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;as(s0-s1+n))
 
-S I ln(Qs)_(Ax=evs(s);mc();P(x,x(out(x));1)epr(0))
-S A lns(C*p,Nn)_(C*e=p+n;P(!n||e[-1]-10,err0("eoleof"))e[-1]=0;I(*p=='#'&&p[1]=='!',p=strchrnul(p+2,10))
- W(p<e,W(*p=='/'&&p[1]==10,C*s=strstr(p+1,"\n\\\n");p=s?s+3:p+SL(p))C*q=p;W(*q,I(*q==10,C*v=q+1;W(*v==10,v++)B(*v-32&&*v-'}'))q++)*q=0;N(ln(p));p=q+1)au)
+S I ln(C*s)_(Ax=evC(s);mc();P(x,x(out(x));1)epr(0))
 S AQ(bs0,en0())
 S AQ(bsbs,exit(0);0)
 S AQ(bscd,P(!*s,Cb[256];getcwd(b,SZ b)?eo0():aCz(b))chdir(s)?eo0():au)
 S AQ(bsd,P(!*s,aCz(gp))s+=*s=='.';Nn=SL(s);P(n+2>SZ(gp),ez0())MC(gp,s,n+1);au)
-  AQ(bsl,Ax=N(u1c(aCz(s)));x(lns(xC,xn)))
+  AQ(bsl,Ax=N(u1c(aCz(s)));P(!xn,au)C*p=xC,*e=p+xn;P(e[-1]-10,x(err0("eoleof")))e[-1]=0;
+         I(*p=='#'&&p[1]=='!',p=strchrnul(p,10))
+         W(p<e,
+           W(*p=='/'&&p[1]==10,C*s=strstr(p+1,"\n\\\n");p=s?s+3:p+SL(p))
+           C*q=p;W(*q,I(*q==10,C*v=q+1;W(*v==10,v++)B(*v-32&&*v-'}'))q++)
+           *q=0;N(ln(p));p=q+1)
+         au)
 S AQ(bsf,K1("{`0:($!h),'\":\",'`k'. h:(&x=^`o`p`q`r`u`v`w`x?@'h)#h:``repl_.:0#`}",ai(!s)))
 S AQ(bsL,Nm=SZ gp;C p[m],q[m+3];MC(p,gp,m);Ax=N(bsd(s));Nn=SL(gp);MC(q,gp,n);MC(q+n,".k",3);bsl(q);MC(gp,p,m);x)
 S AQ(bst,Ln=s[-1]=='t'&&*s==':'?++s,pl(&s):1,t=now();Ax=N(pk(&s));x=cpl(aCz(s),x,oS);i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
 S AQ(bsv,bsf(0))
-A evS(C*s)_(
- P(*s-'\\',C*p=s;Ax=N(pk((V*)&p));*p=0;x=N(cpl(aCm(s,p+1),x,oS));x(run(x,0,0)))
- *strchrnul(s,10)=0;
- Cc=s[1],d=s[2];P(c=='c'&&d=='d'&&(!s[3]||s[3]==32),bscd(s+3+(s[3]==32)))
- P(!d||d==32||d==':',A(&bsL,bsl,bst,bsd,bsbs,bsf,bsv,bsm,bs0)[si("Lltd\\fvm",c)](s+2+(d==32)))
- K1("0x0a\\`x(,,\"/bin/sh\"),,:",aCz(s+1)))
-AQ(evs,Nn=SL(s)+1;C p[n];MC(p,s,n);evS(p))
+A evC(C*s)_(Au=au;
+ W(*s,
+  I(*s=='/'&&s[1]==10,C*p=strstr(s+1,"\n\\\n");s=p?p+3:s+SL(s))
+  J(*s=='\\',C*e=strchrnul(s,10),*q=e+!!*e;*e=0;
+   Cc=s[1],d=s[2];
+   u=c=='c'&&d=='d'&&(!s[3]||s[3]==32)?bscd(s+3+(s[3]==32))
+    :!d||d==32||d==':'?A(&bsL,bsl,bst,bsd,bsbs,bsf,bsv,bsm,bs0)[si("Lltd\\fvm",c)](s+2+(d==32))
+    :K1("0x0a\\`x(,,\"/bin/sh\"),,:",aCz(s+1));
+   s=q)
+  E(C*p=s;Ax=N(pk((V*)&p));*p=0;x=N(cpl(aCm(s,p+1),x,oS));u=x(run(x,0,0)))
+  P(u,u)u(0))
+ u)
+AQ(evs,Nn=SL(s)+1;C p[n];MC(p,s,n);evC(p))
 
 C gp[32];I gn,gk[256];A gv[256],cns,ce[tn],cn[tn];Q*argv,*env;
 I rep()_(Cb[256],*s=b,*q;
