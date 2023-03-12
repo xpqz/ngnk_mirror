@@ -29,11 +29,11 @@ S A pb(A,C);
 S A pt(C*v)_(Cc=*s;                                                                                 //parse term
  P(c=='`',s++;Ax=pS();x&&xn>1?enl(x):x)
  P(c=='"',p1(pC()))
- P(c=='[',s++;pb(aA1(PLH),']'))
- P(c=='(',s++;P(*s==')',s++;oA)Ax=N(pb(enl(MKL),')'));xn-2?x:las(x))
+ P(c=='[',s++;pb(PLH,']'))
+ P(c=='(',s++;P(*s==')',s++;oA)Ax=N(pb(MKL,')'));xn-2?x:las(x))
  P(c=='{',C k0=k;k=1;Q s1=s0,t=s0=s++;Ay;
-  I(*s-'[',y=au)E(s++;y=sqz(N(pb(oA,']')));P(!ytS,ep1(y))P(yN>8,s--;ez1(y)))
-  Az=pb(aA1(PLH),'}');P(!z,s0=s1;y(0))I(y==au,y=aS(k);i(3,yi='x'+i))
+  I(*s-'[',y=au)E(s++;y=sqz(N(pb(0,']')));P(!ytS,ep1(y))P(yN>8,s--;ez1(y)))
+  Az=pb(PLH,'}');P(!z,s0=s1;y(0))I(y==au,y=aS(k);i(3,yi='x'+i))
   Ax=N(cpl(aCn(t,s-t),z,y));s0=s1;k=k0;x)
  P(id0(c),Qp=s;Ax=pP();I(s-p==1&&c-'y'<2u,k=MAX(k,c-'w'))AO(p-s0,p1(x)))
  P(C09(c)&&s[1]==':',I u=s[2]==':';s+=2+u;Ii=20+c-'0';P(i>25,ep0())*v=1;Lt(tv-u)|i)
@@ -52,7 +52,7 @@ S A1(pm,                                                                        
  x)
 S A pT(C*v)_(Ax=N(pt(v));                                                                           //parse term and the adverbs or square brackets after it (v:verb?)
  W(1,Cc=*s;Ii=si("'/\\[",c);P(i>3,x)s++;
-     I(i>2,x=AO(s-1-s0,N(pb(aA1(x),']')));I(xn==2,I(xy==PLH,xy=au)E(xx=pm(xx)))*v=0)
+     I(i>2,x=AO(s-1-s0,N(pb(x,']')));I(xn==2,I(xy==PLH,xy=au)E(xx=pm(xx)))*v=0)
      E(I c=*s==':';s+=c;x=aA2(aw+i+3*c,x);*v=1))x)
 S A pe(Ax,C*v)_(s=pw(s);Cc=*s;I(c=='/'&&(s==s0||s[-1]==32||s[-1]==10),W((c=*++s)&&c-10))            //parse expression
  P(s>s0&&*s=='\\'&&s[-1]==32,s++;Ay=pe(0,v);P(!y,x?x(0):0);*v=0;y=aA2(OUT,y);I(x,y=aA2(pm(x),y))y)
@@ -60,8 +60,8 @@ S A pe(Ax,C*v)_(s=pw(s);Cc=*s;I(c=='/'&&(s==s0||s[-1]==32||s[-1]==10),W((c=*++s)
  P(!b,Az=pe(y,v);P(!x,z)Nx(z);*v?aA3(aw,x,z):AO(o,aA2(pm(x),z)))
  Az=pe(0,v);P(!z,y(x?x(0):0))P(z==PLH,*v=1;P(!x,y)Yu(ep1(x))AO(o,aA3(y,x,z)))
  *v&=y!=av;I(!x,y=pm(y))*v?aA3(aw,x?AO(o,aA3(y,x,PLH)):y,z):AO(o,x?aA3(y,x,z):aA2(pm(y),z)))
-S A pb(Ax,Cc)_(                                                                                     //parse body (sequence of ;-separated expressions)
+S A pb(Ax,Cc)_(x=x?aA1(x):oA;                                                                       //parse body (sequence of ;-separated expressions)
  W(1,Cv=0;Ay=Nx(pe(0,&v));P(y==PLH&&c==')',ep2(x,y))I(y==PLH&&c-']',y=au)
      xq(y);B(*s-';'&&*s-10)B(c==10&&*s==10)s++)
  P(c==10&&!*s,x)P(*s-c,ep1(x))s++;x)
-A pk(Q*p)_(s0=s=*p;Ax=pb(aA1(PLH),10);P(!x,eQ(s0,SL(s0),s-s0);0)*p=s;x)                             //parse a group of lines of k code
+A pk(Q*p)_(s0=s=*p;Ax=pb(PLH,10);P(!x,eQ(s0,SL(s0),s-s0);0)*p=s;x)                                  //parse a group of lines of k code
