@@ -56,7 +56,7 @@ S A pT(C*v)_(Ax=N(pt(v));                                                       
   E(I c=*s==':';s+=c;x=aA2(aw+i+3*c,x);*v=1))x)
 S A pe(Ax,C*v)_(s=pw(s);Cc=*s;                                                                      //parse expression
  I(c=='/'&&(s==s0||s[-1]==32||s[-1]==10),
-  I(s[1]==10,C*e=strstr(s+1,"\n\\\n");s=e?e+3:s+SL(s);au)
+  I(s[1]==10,C*e=strstr(s+1,"\n\\\n");s=e?e+3:s+SL(s))
   E(W((c=*++s)&&c-10)))
  P(s>s0&&*s=='\\'&&s[-1]==32,s++;Ay=pe(0,v);P(!y,x?x(0):0);*v=0;y=aA2(OUT,y);I(x,y=aA2(pm(x),y))y)
  UH o=s-s0;Cb=0;Ay=pT(&b);P(!y,x?x(0):0)P(y==PLH,x?x:y)
