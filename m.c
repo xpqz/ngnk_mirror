@@ -39,7 +39,6 @@ S AQ(bsL,Nm=SZ gp;C p[m],q[m+3];MC(p,gp,m);Ax=N(bsd(s));Nn=SL(gp);MC(q,gp,n);MC(
 S AQ(bst,Ln=s[-1]=='t'&&*s==':'?++s,pl(&s):1,t=now();Ax=N(pk(&s));x=cpl(aCz(s),x,oS);i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
 S AQ(bsv,bsf(0))
 S A evC1(C**p)_(C*s=*p;
- P(*s=='/'&&s[1]==10,C*e=strstr(s+1,"\n\\\n");*p=e?e+3:s+SL(s);au)
  P(*s=='\\',C*e=strchrnul(s,10),*q=e+!!*e,c=s[1],d=s[2];*e=0;
   Ax=c=='c'&&d=='d'&&(!s[3]||s[3]==32)?bscd(s+3+(s[3]==32))
    :!d||d==10||d==32||d==':'?A(&bsL,bsl,bst,bsd,bsbs,bsf,bsv,bsm,bs0)[si("Lltd\\fvm",c)](s+2+(d==32))

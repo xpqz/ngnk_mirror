@@ -52,9 +52,12 @@ S A1(pm,                                                                        
  x)
 S A pT(C*v)_(Ax=N(pt(v));                                                                           //parse term and the adverbs or square brackets after it (v:verb?)
  W(1,Cc=*s;Ii=si("'/\\[",c);P(i>3,x)s++;
-     I(i>2,x=AO(s-1-s0,N(pb(x,']')));I(xn==2,I(xy==PLH,xy=au)E(xx=pm(xx)))*v=0)
-     E(I c=*s==':';s+=c;x=aA2(aw+i+3*c,x);*v=1))x)
-S A pe(Ax,C*v)_(s=pw(s);Cc=*s;I(c=='/'&&(s==s0||s[-1]==32||s[-1]==10),W((c=*++s)&&c-10))            //parse expression
+  I(i>2,x=AO(s-1-s0,N(pb(x,']')));I(xn==2,I(xy==PLH,xy=au)E(xx=pm(xx)))*v=0)
+  E(I c=*s==':';s+=c;x=aA2(aw+i+3*c,x);*v=1))x)
+S A pe(Ax,C*v)_(s=pw(s);Cc=*s;                                                                      //parse expression
+ I(c=='/'&&(s==s0||s[-1]==32||s[-1]==10),
+  I(s[1]==10,C*e=strstr(s+1,"\n\\\n");s=e?e+3:s+SL(s);au)
+  E(W((c=*++s)&&c-10)))
  P(s>s0&&*s=='\\'&&s[-1]==32,s++;Ay=pe(0,v);P(!y,x?x(0):0);*v=0;y=aA2(OUT,y);I(x,y=aA2(pm(x),y))y)
  UH o=s-s0;Cb=0;Ay=pT(&b);P(!y,x?x(0):0)P(y==PLH,x?x:y)
  P(!b,Az=pe(y,v);P(!x,z)Nx(z);*v?aA3(aw,x,z):AO(o,aA2(pm(x),z)))
@@ -64,4 +67,4 @@ S A pb(Ax,Cc)_(x=x?aA1(x):oA;                                                   
  W(1,Cv=0;Ay=Nx(pe(0,&v));P(y==PLH&&c==')',ep2(x,y))I(y==PLH&&c-']',y=au)
      xq(y);B(*s-';'&&*s-10)B(c==10&&*s==10)s++)
  P(c==10&&!*s,x)P(*s-c,ep1(x))s++;x)
-A pk(Q*p)_(s0=s=*p;Ax=pb(PLH,10);*p=s-1;P(x,x)eQ(s0,SL(s0),s-s0);0)                                   //parse a group of lines of k code
+A pk(Q*p)_(s0=s=*p;Ax=pb(PLH,10);*p=s-1;P(x,x)eQ(s0,SL(s0),s-s0);0)                                 //parse a group of lines of k code
