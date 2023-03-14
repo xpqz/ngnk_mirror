@@ -15,7 +15,7 @@ A1(js0,XC(x=str0(x);s=xV;Ay=jx();I(y&&*s,y=y(0))P(!y,ep0();eS(x,s-xC);x(0))x(y))
 
 S V JX(A);S N nX(A);S UC t[256];S V it(){MS(t,5,32);t[127]=5;i(SZ JE,t[JE[i]]=1)}
 S N nC(Qp,Nn)_(I(!*t,it())Nm=2+n;i(n,m+=t[(UC)p[i]])m)
-S V JC(Qp,Nn){I(!*t,it())*s++=34;UC c;i(n,SW(t[c=*p++],C(0,*s++=c)C(1,*s++=92;*s++=EJ[si(JE,c)])D(MC(s,"\\u00",4);s+=4;*s++=HEX[c>>4];*s++=HEX[c&15])))*s++=34;}
+S V JC(Qp,Nn){I(!*t,it())*s++=34;UC c;i(n,SW(t[c=*p++],C(0,*s++=c)C(1,*s++=92;*s++=EJ[si(JE,c)])D(MC(s,"\\u00",4);s+=4;hexC(p-1,2,s);s+=2)))*s++=34;}
 S N nl(Lv)_(P(v==NL,4)Nn=v<0?(v=-v),2:1;UL m=10;W(m<=v&&n<19,n++;m*=10)n)
 S V Jl(Lv){s=v-NL?sl(s,v):MC(s,"null",4)+4;}
 S N nx(Ax/*0*/)_(Xi(nl(xv))Xl(nl(*xL))Xf(Fv=*xF;P(v==(L)v,nl(v))P(v!=v,4)Cb[32];sf(b,*(L*)&v)-b)Xc(Cc=xv;nC(&c,1))XC(nC(xC,xn))Xu(x-au?4:5)Xm(nx(xx)+nx(xy)-1-!_N(xx))
