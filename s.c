@@ -34,7 +34,8 @@ A1(str,Xzf(Ay=aC(24);TY(sf)*f=xtf?sf:sl;AN(f(yC,gl(x))-yC,y))Xs(Lv=xv;aCz(qs(&v)
 V hexC(Qs,Nn,C*r){S Qq="0123456789abcdef";i(n,Cc=*s++;*r++=q[(UC)c>>4];*r++=q[c&15])}
 A1(hex,XC(Ay=aC(2*xn);xe(hexC(xV,xn,yV);y))XmMA(e1f(hex,x))et1(x))
 SN V unh0(C*q){MS(q,-1,256);i(10,q['0'+i]=i)i(6,q['A'+i]=q['a'+i]=10+i)}
-A1(unh,XC(P(xn&1,el1(x))S C q[256];I(!*q,unh0(q))Cv=0;i(xn,v|=q[xc])P(v<0,ed1(x))Ay=aC(xn>>1);Qs=xV;xe(i(yn,yc=q[*s]<<4|q[s[1]];s+=2)y))XmMA(e1f(unh,x))et1(x))
+A unhC(Qs,Nn)_(P(n&1,el0())S C q[256];I(!*q,unh0(q))Cv=0;i(n,v|=q[s[i]])P(v<0,ed0())Ax=aC(n>>1);i(xn,xc=q[*s]<<4|q[s[1]];s+=2)x)
+A1(unh,XC(x(unhC(xV,xn)))XmMA(e1f(unh,x))et1(x))
 
 S A pre(Cc,Ax)_(cat(ac(c),x))
 S A1(par,apc(pre('(',x),')'))

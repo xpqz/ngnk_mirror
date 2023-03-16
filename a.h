@@ -69,7 +69,7 @@ A1 _R,aA1,asc,AZ,cA,cB,cC,cF,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,fr
 A2 _1,aA2,aM,w1,add,am,apd,cat,cat10,cat11,cst,dct,dex,dot,dvd,eql,exc,fil,fnd,gtn,hsh,ie,i1,ltn,mod,mnm,bng,mtc,mul,mxm,que,sub,und,v0c,v1c;A3 _2,aA3,w2,arf,arp,ars,cpl,r2,try;
 A4 ara,a4,d4;AX _8,w8,e8,f8,prj,run;AA a8,d8,ins,no8;AL aA,aB,aC,aF,aI,aL,aS,al,az,cls,rndF,tilL;ALA drp,room,rnd,rsz;AAL ii,io;AQ aCz,bsl,bsm,die,sym;
 A a2t(A,A,C),aA0(N),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),evC(C*,I),evs(Q,I),k1(A*,Q,A),k2(A*,Q,A,A),
- k8(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(I,N),pk(Q*),pen(A,A1*),slc(A,N,N),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
+ k8(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(I,N),pk(Q*),pen(A,A1*),slc(A,N,N),unhC(Q,N),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
 V cyc(V*,N,N),eS(A,N),eQ(Q,N,N),exit(I),hexC(Q,N,C*),kargs(I,Q*),kinit(),*memmem(OV*,N,OV*,N),mrn(N,OA*),mRn(N,OA*),repl(),tilV(V*,L,I);
 F gf(A),pf(Q*);N _N(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);Q qs(O L*),pID(Q);
 I _K(A),qA(A,A),qf(F,F),js_eval(C*,I,C*,I),mtc_(A,A),si(Q,I),rnk(A);
