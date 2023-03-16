@@ -29,10 +29,11 @@ o/w/http:w/http.c;$(CC) $< -o $@
 # o/32/%.o:%.c *.h;$M;$(CC) $(O_32) -o $@ -c $<
 # k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm
 
-t:tu td tg t22 t21 t20 t19 t18 t17 t16 t15 #tests
+t:tu td tg te t22 t21 t20 t19 t18 t17 t16 t15 #tests
 tu:o/t;o/t #unit
 td:;dy/a.sh #dyalog
 tg:;cd g;./a.k;cd - #codegolf
+te:;e/a.sh #projecteuler
 t22:;aoc/22/a.sh
 t21:;aoc/21/a.sh
 t20:;aoc/20/a.sh
@@ -43,4 +44,4 @@ t16:;aoc/16/a.sh
 t15:;aoc/15/a.sh
 
 c:;rm -rf o k libk.so #clean
-.PHONY: 0 t tu td tg t22 t21 t20 t19 t18 t17 t16 t15 c k w h a
+.PHONY: 0 t tu td tg te t22 t21 t20 t19 t18 t17 t16 t15 c k w h a
