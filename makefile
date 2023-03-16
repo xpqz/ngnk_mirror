@@ -1,11 +1,10 @@
 #faster builds: export MAKEFLAGS=-j8
 M=mkdir -p $(@D)
-
 0:;$(MAKE) k-dflt && $(MAKE) t #default target
-t:o/t;o/t;dy/a.sh;cd g;./a.k;cd -;for i in $$(seq 22 -1 15);do aoc/$$i/a.sh;done;e/a.sh #test
+
 c:;rm -rf o k libk.so #clean
-k:k-dflt
-w:k o/w/fs.h o/w/k.wasm o/w/index.html $(patsubst w/x/%.k,o/w/x/%.k,$(wildcard w/x/*.k))
+k:k-dflt #default
+w:k o/w/fs.h o/w/k.wasm o/w/index.html $(patsubst w/x/%.k,o/w/x/%.k,$(wildcard w/x/*.k)) #wasm
 h:w o/w/http;cd o/w;./http
 
 k-dflt:; $(MAKE) a N=$@ R=k  O='-O3 -march=native -Dlibc'                                  L='-lm'
@@ -33,4 +32,17 @@ o/w/http:w/http.c;$(CC) $< -o $@
 # o/32/%.o:%.c *.h;$M;$(CC) $(O_32) -o $@ -c $<
 # k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm
 
-.PHONY: 0 t c k w h a k-dflt
+t:tu td tg t22 t21 t20 t19 t18 t17 t16 t15 #tests
+tu:o/t;o/t #unit
+td:;dy/a.sh #dyalog
+tg:;cd g;./a.k;cd - #codegolf
+t22:;aoc/22/a.sh
+t21:;aoc/21/a.sh
+t20:;aoc/20/a.sh
+t19:;aoc/19/a.sh
+t18:;aoc/18/a.sh
+t17:;aoc/17/a.sh
+t16:;aoc/16/a.sh
+t15:;aoc/15/a.sh
+
+.PHONY: 0 t tu td tg t22 t21 t20 t19 t18 t17 t16 t15 c k w h a k-dflt

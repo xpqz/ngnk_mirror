@@ -107,7 +107,7 @@ p219:|/#'{(&~=':x)_x}@1_-/0<-:\-':           / https://problems.tryapl.org/psets
 p21X:{(-x)$y}                                / https://problems.tryapl.org/psets/2021.html?goto=P110
 
 
-t:{[q;f;a;e] `1:`k$[q[e;r:f a];.;(`fail;f;q;a;e;r)]} /assert
+t:{[q;f;a;e] $[q[e;r:f a];;`1:`k(`fail;f;q;a;e;r)]} /assert
 M:t[~];A:t{1e-6>x|-x-:y};D:t{~/_1000000*(x;y)} /A:approx equal,D:approx float deep-match
 
 M[p131].'((10;1 3 5 7 9 11 13 15 17 19);(1;,1);(0;!0));
@@ -236,4 +236,3 @@ M[p219].'((1 2 3 5 5 5 6 4 3;3);(1 2 3 4 4 4 4 4 5 4 3;4);(1 2;1));
 M[p21X.].'(((6;">");"     >")
            ((8;("K";"E";"Iverson"));("       K";"       E";" Iverson"))
            ((8;("Longer Phrase";"APL";"Parade"));("r Phrase";"     APL";"  Parade")));
-`1:,"\n"
