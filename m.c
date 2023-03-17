@@ -27,7 +27,7 @@ A1(mut,XP(x)P(xr==1,x)x=x(aV(xt,xn,xV));XR(mRa(x))x)C tZ(Lv)_(v==(B)v?tB:v==(H)v
 ALA(room,P(xr==1&&n*xW<=xZ,AN(n,x))Ay=an(n,xt);MC(yV,xV,xn*xW);I(ytR,I(xr==1,AZ(x))E(i(xn,_R(ya))))x(y))L gl_(Ax)_(XP(xv)*xL)L gl(Ax)_(Lv=gl_(x);x(0);v)F gf(Ax)_(Fv=*xF;x(0);v)
 A1(gZ,Lij x(0);add(az(i),tilL(j-i)))
 A AT(UL t,Ax)_(Q(IN(t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)A AW(C w,Ax)_(Q(w<6);xE=w;x)A AK(C k,Ax)_(Q(k<9);xk=k;x)
-A AO(UC o,Ax)_(Xs(x&~(0xffll<<32)|(UL)o<<32)xB[-13]=o;x)A AN(Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)A1(AZ,AT(tB,x))
+A AO(UC o,Ax)_(Xs(x&~(0xffll<<32)|(UL)o<<32)xB[-13]=o;x)A AN(Nn,Ax)_(xL[-1]=n;x)A1(AZ,AT(tB,x))
 
 S C s0[1<<16],*s1=s0+1;Q qs(O L*p)_(*p<0?s0-*p:(V*)p)
 AQ(sym,Nn=SL(s);P(n<4||(n==4&&!(s[3]&128)),Iv=0;MC(&v,s,n);as(v))Qp=s0+1;W(p<s1,P(!strcmp(p,s),as(s0-p))p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;as(s0-s1+n))
