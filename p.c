@@ -45,11 +45,7 @@ S A pt(C*v)_(Cc=*s;                                                             
  P(c>>7,Qp=s;Ax=pP();*v=1;AO(p-s0,p1(x)))
  Ii=si("'/\\",c);P(i<3,c=*++s;I h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,PLH)
  I u=*++s==':';s+=u;*v=1;Lt(tv-u)|i)
-S A1(pm,                                                                                            //monadify
- Xv(x^au^av)
- XA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x)
- Xs(Lv=xv;Qs=qs(&v);Nn;P(*s>>7&&s[(n=SL(s))-1]-':',Cb[8];MC(b,s,n);b[n]=':';b[n+1]=0;sym(b))x)
- x)
+S X1(pm,Rv(x^au^av)RA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x)Rs(Lv=xv;Qs=qs(&v);Nn;P(*s>>7&&s[(n=SL(s))-1]-':',Cb[8];MC(b,s,n);b[n]=':';b[n+1]=0;sym(b))x)R_(x)) //monadify
 S A pT(C*v)_(Ax=N(pt(v));                                                                           //parse term and the adverbs or square brackets after it (v:verb?)
  W(1,Cc=*s;Ii=si("'/\\[",c);P(i>3,x)s++;
   I(i>2,x=AO(s-1-s0,N(pb(x,']')));I(xn==2,I(xy==PLH,xy=au)E(xx=pm(xx)))*v=0)

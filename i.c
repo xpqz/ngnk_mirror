@@ -26,7 +26,7 @@ A1(opn,Xz(x)ai(N(o(x,O_RDWR|O_CREAT))))                                         
 AL(cls,close(n);au)                                                                                                                               // >i
 A1(u0c,spl(N(u1c(x))))                                                                                                                            // 0:x
 A1(u1c,Xz(frs(gl(x)))If=N(o(x,O_RDONLY));P(f<3,frs(f))Im=fm(f);x=(S_ISDIR(m)?frd:S_ISREG(m)?frm:frs)(f);close(f);x)                               // 1:x
-A2(v0c,YA(v0c(x,N(jc(10,y))))YC(v1c(x,apc(y,10)))et1(y))                                                                                          // x 0:y
+Y2(v0c,RA(v0c(x,N(jc(10,y))))RC(v1c(x,apc(y,10)))R_(et1(y)))                                                                                      // x 0:y
 A2(v1c,P(!ytC,et1(y))Xz(If=gl_(x);ye((f<3||!S_ISREG(fm(f))?fws:fwm)(f,yV,yn)))If=N(o(xR,O_RDWR|O_CREAT|O_TRUNC));Az=v1c(ai(f),y);f>2&&close(f);z) // x 1:y
 
 S A rda(If)_(Ax=aC(256-HD);L m=0,k;W((k=read(f,xV+m,xn-m))>0,m+=k;I(m+1000000>xn&&2*m>xn,Ay=aC(2*xn+HD);MC(yV,xV,m);x=x(y)))close(f);AN(m,x))

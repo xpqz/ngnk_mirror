@@ -47,7 +47,7 @@ A1(kl,kp(x,"AC","IFS","Mmqruvw"))
 A1(kr,kp(x,"","","qruvw"))
 A1(kw,kp(x,"AC","IFS","Mmpqw"))
 A1(kst,
- SW(xt,
+ X(
   Rc(kss(enl(x)))
   Rm(Ay=kv(&x);cat11(apc(kl(x),'!'),kr(y)))
   RM(pre('+',kst(flp(x))))
@@ -64,7 +64,7 @@ A1(kst,
   RE(Lij x(0);x=pre('!',str(az(j)));i?cat11(apc(str(az(i)),'_'),x):x)
   Rilf(str(x)))
  P(xn==1,pre(',',kr(fir(x))))
- SW(xt,
+ X(
   RA(P(!xn&&!(_t(xx)==tC&&!_n(xx)),cat11(aCz("0#,"),kst(x(_R(xx)))))par(jc(';',ek(x))))
   RC(kss(x))
   RZF_(xn?jc(32,e1f(str,x)):x(aCz(xtF?"0#0n":"!0")))

@@ -141,9 +141,11 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #undef h
 #define N(x,a...) ({A r_=(x);P(!r_,a;0)r_;})//error pass-through
 
-#define  X1(f,a...) A f(Ax   ){SW(xt,a)}
-#define  X2(f,a...) A f(Ax,Ay){SW(xt,a)}
-#define  Y2(f,a...) A f(Ax,Ay){SW(yt,a)}
+#define     X(a...) SW(xt,a)
+#define     Y(a...) SW(yt,a)
+#define  X1(f,a...) A f(Ax   ){X(a)}
+#define  X2(f,a...) A f(Ax,Ay){X(a)}
+#define  Y2(f,a...) A f(Ax,Ay){Y(a)}
 #define   R(x,a...) case x:_(a)
 #define  R2(x,a...) case x:R(a)
 #define  R3(x,a...) case x:R2(a)
@@ -197,15 +199,16 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define    RZ(a...) R5(tE,tB,tH,tI,tL,a)
 #define  RZC_(a...) R5(tB,tH,tI,tL,tC,a)
 #define  RZF_(a...) R5(tB,tH,tI,tL,tF,a)
+#define   RZC(a...) R6(tE,tB,tH,tI,tL,tC,a)
 #define   RZF(a...) R6(tE,tB,tH,tI,tL,tF,a)
 #define    RU(a...) R7(to,tp,tq,tr,tu,tv,tw,a)
 #define   RzZ(a...) R7(tE,tB,tH,tI,tL,ti,tl,a)
 #define    Rt(a...) R13(ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
 #define   RT_(a...) R8(tE,tB,tH,tI,tL,tF,tC,tS,a)
 #define    RT(a...) R9(tA,tE,tB,tH,tI,tL,tF,tC,tS,a)
+#define   RMT(a...) R10(tA,tE,tB,tH,tI,tL,tF,tC,tS,tM,a)
 
 #define ov(x) ov_(#x":",(L)(x))
 #define oo os("["__FILE__":"M2(__LINE__)"]");
 #define nop {asm volatile("fnop");}
 I os(Q);L ov_(Q,L);
-

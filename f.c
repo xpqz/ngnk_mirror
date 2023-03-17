@@ -9,6 +9,7 @@ S A2(fndB,Q(!xw)Q(ytT)L a[256];i(256,a[i]=NL)Li=xn-1;W(i>=0,a[(UC)xc]=i;i--)Nn=y
  S4(yw,i(n,zl=a[(UC)yc]),i(n,Hv=yh;zl=v==(C)v?a[(UC)v]:NL),i(n,Iv=yi;zl=v==(C)v?a[(UC)v]:NL),i(n,Lv=yl;zl=v==(C)v?a[(UC)v]:NL))y(z))
 S A2(fndH,K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))
 A2(fnd,
+ Xt(et1(y))
  P(xtT&&!xtA&&!ytmMA,
   P(xt==TT[yt]||xtZ&&ytzZ,
    P(!xw&&ytT,fndB(x,y))
@@ -18,4 +19,4 @@ A2(fnd,
   Az=cn[tl];zR;y(ytt?z:rsz(yN,z)))
  Xm(i1(xx,N(fnd(xy,y))))
  Ik=urnk(x),l=urnk(y);P(k<=l,r2f(fnd,x,y))P(k==l+1,L r=NL;I(xtA,i(xn,B(mtc_(xa,y),r=i)))E(i(xN,Az=ii(x,i);Im=mtc_(z,y);z(0);B(m,r=i)))y(az(r)))er1(y))
-A2(que,Xs(S O C s[][4]={"","j","hex"};Li=fI(s,L(s),xv);A(&des,js0,unh,ed1)[i<0?L(s):i](y))Xz(rnd(gl_(x),y))Xt(et1(y))fnd(x,y))
+X2(que,Rs(S O C s[][4]={"","j","hex"};Li=fI(s,L(s),xv);A(&des,js0,unh,ed1)[i<0?L(s):i](y))Rz(rnd(gl_(x),y))R_(fnd(x,y)))
