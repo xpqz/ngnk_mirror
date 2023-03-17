@@ -187,6 +187,7 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define   RcC(a...) R2(tc,tC,a)
 #define   RsS(a...) R2(ts,tS,a)
 #define   RmM(a...) R2(tm,tM,a)
+#define    Rz(a...) R2(ti,tl,a)
 #define   Rzc(a...) R3(ti,tl,tc,a)
 #define  Rilf(a...) R3(ti,tl,tf,a)
 #define  RmMA(a...) R3(tm,tM,tA,a)
