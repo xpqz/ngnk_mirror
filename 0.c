@@ -69,5 +69,5 @@ I pg=4096;//pagesize
 #endif
 
 #if !defined(__GNU_SOURCE)
- C*strchrnul(Qs,Iv)_(W(1,P(*s==v,(V*)s)P(!*s,(V*)s)s++)(V*)s)
+ C*strchrnul(Qs,Iv)_(C*p=strchr(s,v);p?p:(V*)s+SL(s))
 #endif
