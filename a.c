@@ -70,7 +70,7 @@ AA(a8,/*10..0*/Ax=*a,y=a[1];
 S A3(a3,/*100*/a8(A(x,y,z),3))
 A4(a4,/*1000*/a8(A(x,y,z,u),4))
 S A a5(Ax,Ay,Az,Au,A v/*10000*/)_(a8(A(x,y,z,u,v),5))
-S A3(d3,/*100*/Nm=yN;P(y==au||!m,z1(x))P(m==1,y=fir(yR);y(a3(x,y,z)))Au=prj(DOT,(A[]){PLH,drp(1,yR)},2);y=fir(y);y(u(a4(x,y,u,z))))
+S A3(d3,/*100*/Nm=yN;P(y==au||!m,z1(x))P(m==1,y=fir(yR);y(a3(x,y,z)))Au=prj(DOT,(A[]){PLH,drp(1,yR)},2);y=fir(yR);y(u(a4(x,y,u,z))))
 A4(d4,/*1000*/Nm=yN;P(y==au||!m,x(z2(x,uR)))P(m==1,y=fir(yR);y(a4(x,y,z,u)))A v=prj(DOT,(A[]){PLH,drp(1,yR)},2);y=fir(yR);A r=y(a5(x,y,v,z,u));mr(v);r)
 S AA(d8_,/*10..0*/Ax=*a,y=a[1],z=a[2];P(n==4,d4(x,y,z,a[3]))P(n==3,d3(x,y,z))en1(x))
 AA(d8,/*10..0*/Ax=*a;XsS(Iv=_v(xts?x:jS(x));Li=fI(gk,gn,v);I(i<0,gk[i=gn++]=v)A*p=gv+i;I(!*p,*p=au)Ab8;*b=*p;MC(b+1,a+1,n-1<<3);*p=au;*p=_R(N(d8_(b,n))))
