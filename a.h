@@ -13,7 +13,11 @@
 #define SW(x,a...) switch(x){a}
 #define  C(x,a...) case x:{a;}break;
 #define C2(x,a...) case x:C(a)
-#define CR(x,a...) case x:_(a)
+#define  R(x,a...) case x:_(a)
+#define R2(x,a...) case x:R(a)
+#define R3(x,a...) case x:R2(a)
+#define R4(x,a...) case x:R3(a)
+#define R5(x,a...) case x:R4(a)
 #define    D(a...) default:{a;}break;
 #define    i(a...) IJ(i,a)
 #define    j(a...) IJ(j,a)
@@ -49,6 +53,7 @@
 #define CAz(c) LH('a',(c)|32,'z')
 #define CA9(c) (CAz(c)||C09(c))
 #define S4(i,a,b,c,d) SW(i,C(0,a)C(1,b)C(2,c)D(d))
+#define Lij Li=*xL,j=xL[1];
 
 TD void V;TD char B,C;TD char unsigned UB,UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int UI;TD long long L;TD double F;TD size_t N;
 TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX(A,OA*,I),AL(L),ALA(L,A),AAL(A,L),AQ(Q);TD O C OCA[];
@@ -64,11 +69,11 @@ TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX
 #define ALA(f,b...) A f(Ln,Ax      )_(b)
 #define AAL(f,b...) A f(Ax,Li      )_(b)
 #define  AQ(f,b...) A f(Qs         )_(b)
-A1 _R,aA1,asc,AZ,cA,cB,cC,cF,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,grp,hex,imx,imn,inv,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,neg,not,nul,
- of0,of1,opn,out,prng,qkmp,qpri,raz,rev,rs0,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
+A1 _R,aA1,asc,AZ,cA,cB,cC,cF,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,gZ,grp,hex,imx,imn,inv,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,
+ neg,not,nul,of0,of1,opn,out,prng,qkmp,qpri,raz,rev,rs0,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
 A2 _1,aA2,aM,w1,add,am,apd,cat,cat10,cat11,cst,dct,dex,dot,dvd,eql,exc,fil,fnd,gtn,hsh,ie,i1,ltn,mod,mnm,bng,mtc,mul,mxm,que,sub,und,v0c,v1c;A3 _2,aA3,w2,arf,arp,ars,cpl,r2,try;
 A4 ara,a4,d4;AX _8,w8,e8,f8,prj,run;AA a8,d8,ins,no8;AL aA,aB,aC,aF,aI,aL,aS,al,az,cls,rndF,tilL;ALA drp,room,rnd,rsz;AAL ii,io;AQ aCz,bsl,bsm,die,sym;
-A a2t(A,A,C),aA0(N),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),evC(C*,I),evs(Q,I),k1(A*,Q,A),k2(A*,Q,A,A),
+A a2t(A,A,C),aA0(N),aE(L,L),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),evC(C*,I),evs(Q,I),k1(A*,Q,A),k2(A*,Q,A,A),
  k8(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(I,N),pk(Q*),pen(A,A1*),slc(A,N,N),unhC(Q,N),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A);
 V cyc(V*,N,N),eS(A,N),eQ(Q,N,N),exit(I),hexC(Q,N,C*),kargs(I,Q*),kinit(),*memmem(OV*,N,OV*,N),mrn(N,OA*),mRn(N,OA*),repl(),tilV(V*,L,I);
 F gf(A),pf(Q*);N _N(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);Q qs(O L*),pID(Q);
@@ -77,14 +82,14 @@ L cfm(OA*,I),gl_(A),gl(A),iw(A,I,L),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV
 EX I pg,gn,gk[];EX C gp[32];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env,HEX;EX OCA vc,TS,Tw,TW,TT,TX,Tk;
 
 //                 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
-//                   () ,3 ,4 ,5 ,6 ,d "" ,` +!  !  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
-enum              {tA=1,tB,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
-#define T_ OCA TS="?""A""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
-               TW={0, 8, 1, 2, 4, 8, 8, 1, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8},/*item size in bytes        */\
-               Tw={0, 4, 0, 1, 2, 3, 3, 0, 2, 4, 4, 3, 3, 3, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3},/*log2(size) or 4=reftypes  */\
-               TT={0,tA,tB,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
-               TX={0,tB,tB,tH,tI,tL,tF,tB,tI,tB,tB, 0, 0,tF,tB,tI,tB,tB,tB,tB,tB,tB,tB,tB},/*type for arith conformance*/\
-               Tk="0""L""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*types for k.h             */
+//                   () _! ,3 ,4 ,5 ,6 ,d "" ,` +!  !  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
+enum              {tA=1,tE,tB,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
+#define T_ OCA TS="?""A""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
+               TW={0, 8, 8, 1, 2, 4, 8, 8, 1, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8},/*item size in bytes        */\
+               Tw={0, 4, 3, 0, 1, 2, 3, 3, 0, 2, 4, 4, 3, 3, 3, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3},/*log2(size) or 4=reftypes  */\
+               TT={0,tA,tL,tB,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
+               TX={0,tB,tB,tB,tH,tI,tL,tF,tB,tI,tB,tB, 0, 0,tF,tB,tI,tB,tB,tB,tB,tB,tB,tB,tB},/*type for arith conformance*/\
+               Tk="0""L""I""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*types for k.h             */
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
 #define TU(t) ((t)>=to)
 
@@ -102,7 +107,7 @@ enum              {tA=1,tB,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu
 #define _tP(x) TP(_t(x))      // packed?
 #define _tR(x) (_w(x)==4)     // ref?
 #define _tT(x) (_t(x)<tM)     // list?
-#define _tZ(x) LH(tB,_t(x),tL)// intlist?
+#define _tZ(x) LH(tE,_t(x),tL)// intlist?
 #define _tt(x) (_t(x)>tm)     // atom?
 #define _tz(x) LH(ti,_t(x),tl)// intatom?
 #define _U(x) _C(x)[-16]      //bucket

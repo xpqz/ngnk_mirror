@@ -34,7 +34,7 @@ A1(cF,XfF(x)Xzc(af(gl(x)))Xt(fir(N(cF(enl(x)))))x=N(cL(x));Ay=aF(xn);xe(cLF(xV,y
 A1(cS,XsS(x)XC(x=str0(x);x(sym(xV)))Xc(as(xv))XmMA(e1f(cS,x))et1(x))
 A1(pI,Xc(pI(enl(x)))XC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tl])))Lv=pl(&s);x(*s?_R(cn[tl]):az(v)))XmMA(e1f(pI,x))et1(x))
 A1(pF,Xc(pF(enl(x)))XC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tf])))Fv=pf(&s);x(*s?_R(cn[tf]):af(v)))XmMA(e1f(pF,x))et1(x))
-A1*cT[]={[tA]=cA,cB,cH,cI,cL,cF,cC,cS};
+A1*cT[]={[tA]=cA,cL,cB,cH,cI,cL,cF,cC,cS};
 A1(csti,XF(sqzZ(cL(x)))Xf(az(gf(x)))XC(cB(x))P(xtc||xtu||xtv||xtw,ai(xv))XzZ(x)et1(x))
 A1(cstu,Xi(xv<22u?au+xv:ed0())et1(x))
 A1(cstv,Xi(xv<22u?av+xv:ed0())et1(x))

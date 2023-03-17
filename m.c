@@ -22,9 +22,10 @@ V mrn(Nn,OA*a){i(n,mr(a[i]))}V mRn(Nn,OA*a){i(n,_R(a[i]))}A1(mRa,mRn(xn,xA);x)A1
 A aV(Ct,Nn,OV*v)_(Ax=an(n,t);MC(xV,v,n*TW[t]);x)A aA0(Nn)_(Ax=AN(0,aA(n));xx=oC;x)A1(aA1,Ay=an(1,tA);yx=x;y)A2(aA2,/*11*/a2t(x,y,tA))A3(aA3,/*111*/Au=an(3,tA);ux=x;uy=y;uz=z;u)
 A a2t(Ax,Ay,Ct/*11t*/)_(Az=an(2,t);zx=x;zy=y;z)A2(aM,/*11*/Q(xtMT)Q(ytA)Q(xN==yN)a2t(x,y,tM))A2(am,/*11*/Q(xtMT)Q(ytMT)Q(xN==yN)a2t(x,y,tm))
 AL(aA,an(n,tA))AL(aB,an(n,tB))AL(aC,an(n,tC))AL(aI,an(n,tI))AL(aL,an(n,tL))AL(aF,an(n,tF))AL(aS,an(n,tS))A aCn(Qs,Nn)_(aV(tC,n,s))A aCm(Qp,Qq)_(aCn(p,q-p))AQ(aCz,aCn(s,SL(s)))
-AL(az,n-(I)n?al(n):ai(n))A al(Lv)_(aV(tl,1,&v))A af(Fv)_(aV(tf,1,&v))
+AL(az,n-(I)n?al(n):ai(n))A al(Lv)_(aV(tl,1,&v))A af(Fv)_(aV(tf,1,&v))A aE(Li,Lj)_(Q(i<=j)Ax=an(tE,2);*xL=i;xL[1]=j;x)
 A1(mut,XP(x)P(xr==1,x)x=x(aV(xt,xn,xV));XR(mRa(x))x)C tZ(Lv)_(v==(B)v?tB:v==(H)v?tH:v==(I)v?tI:tL)A kv(A*p)_(Ax=*p;Q(xn==2);P(xr>1,--xr;*p=_R(xx);_R(xy))*p=xx;AZ(x);x(xy))
 ALA(room,P(xr==1&&n*xW<=xZ,AN(n,x))Ay=an(n,xt);MC(yV,xV,xn*xW);I(ytR,I(xr==1,AZ(x))E(i(xn,_R(ya))))x(y))L gl_(Ax)_(XP(xv)*xL)L gl(Ax)_(Lv=gl_(x);x(0);v)F gf(Ax)_(Fv=*xF;x(0);v)
+A1(gZ,Lij x(0);add(az(i),tilL(j-i)))
 A AT(UL t,Ax)_(Q(IN(t,tn));P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)A AV(UL v,Ax)_(Q(v<32);x&~31ll|v)A AW(C w,Ax)_(Q(w<6);xE=w;x)A AK(C k,Ax)_(Q(k<9);xk=k;x)
 A AO(UC o,Ax)_(Xs(x&~(0xffll<<32)|(UL)o<<32)xB[-13]=o;x)A AN(Nn,Ax)_(Q(n<1ll<<48||n==-1);xL[-1]=n;x)A1(AZ,AT(tB,x))
 
