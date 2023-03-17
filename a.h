@@ -13,11 +13,6 @@
 #define SW(x,a...) switch(x){a}
 #define  C(x,a...) case x:{a;}break;
 #define C2(x,a...) case x:C(a)
-#define  R(x,a...) case x:_(a)
-#define R2(x,a...) case x:R(a)
-#define R3(x,a...) case x:R2(a)
-#define R4(x,a...) case x:R3(a)
-#define R5(x,a...) case x:R4(a)
 #define    D(a...) default:{a;}break;
 #define    i(a...) IJ(i,a)
 #define    j(a...) IJ(j,a)
@@ -32,7 +27,7 @@
 #define TD typedef
 #define TY __typeof__
 #define ST struct
-#define RE restrict
+#define RES restrict
 #define SWP(x,y) {TY(x)t_=x;x=y;y=t_;}
 #define LI(x) {Q(!((L)x&HD-1));x=__builtin_assume_aligned(x,HD);}//alignment
 #define PD(n,p) ((n)+HD/SZ(*p)-1&-HD/SZ(*p))//pad
@@ -146,7 +141,70 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #undef h
 #define N(x,a...) ({A r_=(x);P(!r_,a;0)r_;})//error pass-through
 
+#define  X1(f,a...) A f(Ax   ){SW(xt,a)}
+#define  X2(f,a...) A f(Ax,Ay){SW(xt,a)}
+#define  Y2(f,a...) A f(Ax,Ay){SW(yt,a)}
+#define   R(x,a...) case x:_(a)
+#define  R2(x,a...) case x:R(a)
+#define  R3(x,a...) case x:R2(a)
+#define  R4(x,a...) case x:R3(a)
+#define  R5(x,a...) case x:R4(a)
+#define  R6(x,a...) case x:R5(a)
+#define  R7(x,a...) case x:R6(a)
+#define  R8(x,a...) case x:R7(a)
+#define  R9(x,a...) case x:R8(a)
+#define R10(x,a...) case x:R9(a)
+#define R11(x,a...) case x:R10(a)
+#define R12(x,a...) case x:R11(a)
+#define R13(x,a...) case x:R12(a)
+#define    R_(a...) default:_(a)
+#define    RA(a...) R(tA,a)
+#define    RE(a...) R(tE,a)
+#define    RB(a...) R(tB,a)
+#define    RH(a...) R(tH,a)
+#define    RI(a...) R(tI,a)
+#define    RL(a...) R(tL,a)
+#define    RF(a...) R(tF,a)
+#define    RC(a...) R(tC,a)
+#define    RS(a...) R(tS,a)
+#define    RM(a...) R(tM,a)
+#define    Rm(a...) R(tm,a)
+#define    Ri(a...) R(ti,a)
+#define    Rl(a...) R(tl,a)
+#define    Rf(a...) R(tf,a)
+#define    Rc(a...) R(tc,a)
+#define    Rs(a...) R(ts,a)
+#define    Ro(a...) R(to,a)
+#define    Rp(a...) R(tp,a)
+#define    Rq(a...) R(tq,a)
+#define    Rr(a...) R(tr,a)
+#define    Ru(a...) R(tu,a)
+#define    Rv(a...) R(tv,a)
+#define    Rw(a...) R(tw,a)
+#define   RiI(a...) R2(ti,tI,a)
+#define   RlL(a...) R2(tl,tL,a)
+#define   RfF(a...) R2(tf,tF,a)
+#define   RcC(a...) R2(tc,tC,a)
+#define   RsS(a...) R2(ts,tS,a)
+#define   RmM(a...) R2(tm,tM,a)
+#define   Rzc(a...) R3(ti,tl,tc,a)
+#define  Rilf(a...) R3(ti,tl,tf,a)
+#define  RmMA(a...) R3(tm,tM,tA,a)
+#define  Ropq(a...) R3(to,tp,tq,a)
+#define  Ruvw(a...) R3(tu,tv,tw,a)
+#define   RZ_(a...) R4(tB,tH,tI,tL,a)
+#define    RZ(a...) R5(tE,tB,tH,tI,tL,a)
+#define  RZC_(a...) R5(tB,tH,tI,tL,tC,a)
+#define  RZF_(a...) R5(tB,tH,tI,tL,tF,a)
+#define   RZF(a...) R6(tE,tB,tH,tI,tL,tF,a)
+#define    RU(a...) R7(to,tp,tq,tr,tu,tv,tw,a)
+#define   RzZ(a...) R7(tE,tB,tH,tI,tL,ti,tl,a)
+#define    Rt(a...) R13(ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
+#define   RT_(a...) R8(tE,tB,tH,tI,tL,tF,tC,tS,a)
+#define    RT(a...) R9(tA,tE,tB,tH,tI,tL,tF,tC,tS,a)
+
 #define ov(x) ov_(#x":",(L)(x))
 #define oo os("["__FILE__":"M2(__LINE__)"]");
 #define nop {asm volatile("fnop");}
 I os(Q);L ov_(Q,L);
+
