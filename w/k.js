@@ -10,10 +10,13 @@ kc=x=>x.which+1000*(x.ctrlKey+10*(x.shiftKey+10*x.altKey)),
 hsh=x=>x.split``.reduce((x,y)=>0|(x<<5)-x+y.charCodeAt(0),0),
 hx8=x=>('0000000'+x.toString(16)).slice(-8),
 rdy=f=>['complete','interactive'].indexOf(doc.readyState)<0?doc.addEventListener('DOMContentLoaded',f):setTimeout(f,1),
-thr=(f,d)=>{let i,l=0,g=_=>{i=0;l=now();f()};return()=>i=i||setTimeout(g,max(1,l+d-now()))}
+thr=(f,d)=>{let i,l=0,g=_=>{i=0;l=now();f()};return()=>i=i||setTimeout(g,max(1,l+d-now()))},
+lz=x=>{let i=7,n,c,r=[],S=-(1<<31),R=(x,a,n)=>{for(let j=0;j<n;j++)r.push(x[a+j]);return n},h=_=>x[i++]|x[i++]<<8,C=_=>{if(c===15)do c+=x[i];while(x[i++]==255)},
+           d=n=>{while(i<n){let t=x[i++];c=t>>4;C();i+=R(x,i,c);if(i<n){c=t&15;let o=r.length-h();C();R(r,o,4+c)}}}
+       while(n=h()|h()<<16){n&S?i+=R(x,i,n&~S):d(i+n)};return new Uint8Array(r)}
 
 let app,heap,inp=''
-const kw=fetch`k.wasm`.then(x=>x.arrayBuffer()),
+const kw=fetch`k.wasm.lz4`.then(x=>x.arrayBuffer()),
 M=(p,n)=>U8(app.memory.buffer).subarray(p,p+n),
 g1=p=>new DataView(app.memory.buffer).getUint8(p),
 gb=p=>{let q=p;while(g1(q))q++;return M(p,q-p)},
@@ -23,7 +26,7 @@ S4=(p,a)=>a.forEach((x,i)=>s4(p+4*i,x)),
 ma=n=>{heap+=n;let m=app.memory,l=m.buffer.byteLength;heap>l&&m.grow((heap-l-1>>>16)+1);return heap-n},
 msn=s=>{s=t1(s);let p=ma(s.length);M(p,s.length).set(s);return[p,s.length]},
 ms=s=>msn(s)[0],
-wa=_=>kw.then(x=>WebAssembly.instantiate(x,{env})),
+wa=_=>kw.then(x=>WebAssembly.instantiate(lz(new Uint8Array(x)),{env})),
 env={sin:Math.sin,cos:Math.cos,log:Math.log,exp:Math.exp,
  js_in:(a,n)=>{const s=inp||prompt`stdin:\n`;inp='';return T1.encodeInto(s,M(a,n)).written},
  js_out:(a,n)=>(ap(t0(M(a,n))),n),
