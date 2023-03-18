@@ -12,3 +12,4 @@
 -Wno-pointer-to-int-cast
 -Wno-shift-op-parentheses
 -Wno-string-plus-int
+-Wno-unused-result
