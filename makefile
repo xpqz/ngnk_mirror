@@ -34,15 +34,15 @@ t:tu td tg te t22 t21 t20 t19 t18 t17 t16 t15 #tests
 tu:o/t;o/t #unit
 td:;dy/a.sh #dyalog
 tg:;cd g;./a.k;cd - #codegolf
-te:;e/a.sh #projecteuler
-t22:;aoc/22/a.sh
-t21:;aoc/21/a.sh
-t20:;aoc/20/a.sh
-t19:;aoc/19/a.sh
-t18:;aoc/18/a.sh
-t17:;aoc/17/a.sh
-t16:;aoc/16/a.sh
-t15:;aoc/15/a.sh
+te:;l/runparts.k e #projecteuler
+t22:;l/runparts.k aoc/22 #adventofcode
+t21:;l/runparts.k aoc/21
+t20:;l/runparts.k aoc/20
+t19:;l/runparts.k aoc/19
+t18:;l/runparts.k aoc/18
+t17:;l/runparts.k aoc/17
+t16:;l/runparts.k aoc/16
+t15:;l/runparts.k aoc/15
 
 c:;rm -rf o k libk.so #clean
 .PHONY: 0 t tu td tg te t22 t21 t20 t19 t18 t17 t16 t15 c k w h a
