@@ -30,11 +30,14 @@ o/w/http:w/http.c;$(CC) $< -o $@
 # o/32/%.o:%.c *.h;$M;$(CC) $(O_32) -o $@ -c $<
 # k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm
 
-t:tu td tg te t22 t21 t20 t19 t18 t17 t16 t15 #tests
+t:tu td tg te0 te1 te2 te3 t22 t21 t20 t19 t18 t17 t16 t15 #tests
 tu:o/t;o/t #unit
 td:;dy/a.sh #dyalog
 tg:;cd g;./a.k;cd - #codegolf
-te:;l/runparts.k e #projecteuler
+te0:;l/runparts.k e 01.k 26.k #projecteuler
+te1:;l/runparts.k e 26.k 51.k
+te2:;l/runparts.k e 51.k 76.k
+te3:;l/runparts.k e 76.k
 t22:;l/runparts.k aoc/22 #adventofcode
 t21:;l/runparts.k aoc/21
 t20:;l/runparts.k aoc/20
@@ -45,4 +48,4 @@ t16:;l/runparts.k aoc/16
 t15:;l/runparts.k aoc/15
 
 c:;rm -rf o k libk.so #clean
-.PHONY: 0 t tu td tg te t22 t21 t20 t19 t18 t17 t16 t15 c k w h a
+.PHONY: 0 t tu td tg te0 te1 te2 te3 t22 t21 t20 t19 t18 t17 t16 t15 c k w h a
