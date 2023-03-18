@@ -6,7 +6,7 @@ S L fH(OV*p,Nn,Lv)_(O H*a=p,q=v;P(v-q,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a
 I rnk(Ax/*0*/)_(XA(Iv=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)XmM(rnk(xy))xtT)//-1 for mixed rank
 I urnk(Ax/*0*/)_(XA(urnk(xx)+1)XmM(urnk(xy))xtT)//assuming unirank
 S A2(fndB,Q(!xw)Q(ytT)L a[256];i(256,a[i]=NL)Li=xn-1;W(i>=0,a[(UC)xc]=i;i--)Nn=yn;Az=aL(n);
- S4(yw,i(n,zl=a[(UC)yc]),i(n,Hv=yh;zl=v==(C)v?a[(UC)v]:NL),i(n,Iv=yi;zl=v==(C)v?a[(UC)v]:NL),i(n,Lv=yl;zl=v==(C)v?a[(UC)v]:NL))y(z))
+ ye(S4(yw,i(n,zl=a[(UC)yc]),i(n,Hv=yh;zl=v==(C)v?a[(UC)v]:NL),i(n,Iv=yi;zl=v==(C)v?a[(UC)v]:NL),i(n,Lv=yl;zl=v==(C)v?a[(UC)v]:NL))z))
 S A2(fndH,K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))
 A2(fnd,
  Xt(et1(y))
