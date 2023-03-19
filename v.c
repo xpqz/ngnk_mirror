@@ -20,7 +20,7 @@ X1(rev,Rm(Ay=kv(&x);am(rev(x),rev(y)))RM(Ay=kv(&x);aM(x,e1f(rev,y)))Rt(x)RE(rev(
  R_(P(xn<2,x)x=mut(x);Ii=0,j=xn-1,w=xw;W(i<j,S4(w,SWP(xb,xB[j]),SWP(xh,xH[j]),SWP(xi,xI[j]),SWP(xl,xL[j]))i++;j--)x))
 A1(typ,x(as(TS[xt])))A1(len,x(az(xN)))N _N(Ax/*0*/)_(XE(Lij j-i)XT(xn)Xm(_N(xy))XM(_N(_x(xy)))1)
 S A1(cSI,Q(xtS||xtI)Ct=tS^tI^xt;xr-1?x(aV(t,xn,xV)):AT(t,x))
-X1(unq,RM(en1(x))Rm(unq(val(x)))RE(x)RS(cSI(unq(cSI(x))))Rz(rndF(gl(x)))R_(et1(x))RBC(C a[256]={};Ay=an(0,xt);xe(i(xn,UC c=xc;I(!a[c],a[c]=1;y=apc(y,xc)))y))
+X1(unq,RM(en1(x))Rm(unq(val(x)))RE(x)RS(cSI(unq(cSI(x))))Rz(rndF(gl(x)))R_(et1(x))RBC(C a[256]={};Ay=an(0,xt);i(xn,UC c=xc;I(!a[c],a[c]=1;y=apc(y,xc)))x(y))
  R5(tA,tH,tI,tL,tF,P(xn<2,x)P(xn<<xw<pg&&!xtA,K1("{x@&(x?x)=!#x}",x))K1("{x@i@<i@:&@[;0;:;1]@~~':x@i:<x}",x)))
 Y2(fil,/*01*/RmMA(e2f(fil,x,y))Rt(YU(y==au?xR:y)fir(fil(x,enl(y))))R_(K2("{@[y;&^y;:;x]}",x,y)))
 A2(exc,/*01*/Xt(fil(x,y))P(xtmM||ytmM,en1(y))Yt(exc(x,enl(y)))P(!xn||!yn,y(xR))Ik=rnk(x);k>0&&k==rnk(y)?K2("{x@&^y?x}",x,y):K2("{x@&~(!0),x~\\:y}/",x,y))

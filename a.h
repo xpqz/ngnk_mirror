@@ -204,10 +204,12 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define   RZF(a...) R6(tE,tB,tH,tI,tL,tF,a)
 #define    RU(a...) R7(to,tp,tq,tr,tu,tv,tw,a)
 #define   RzZ(a...) R7(tE,tB,tH,tI,tL,ti,tl,a)
-#define    Rt(a...) R13(ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
-#define   RT_(a...) R8(tE,tB,tH,tI,tL,tF,tC,tS,a)
+#define  RT_E(a...) R8(tA,tB,tH,tI,tL,tF,tC,tS,a)
+#define  RT_A(a...) R8(tE,tB,tH,tI,tL,tF,tC,tS,a)
 #define    RT(a...) R9(tA,tE,tB,tH,tI,tL,tF,tC,tS,a)
 #define   RMT(a...) R10(tA,tE,tB,tH,tI,tL,tF,tC,tS,tM,a)
+#define  Rt_z(a...) R11(tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
+#define    Rt(a...) R13(ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
 
 #define ov(x) ov_(#x":",(L)(x))
 #define oo os("["__FILE__":"M2(__LINE__)"]");

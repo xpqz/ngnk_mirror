@@ -27,7 +27,7 @@ A2(und,/*01*/
  Ym(K2("{((!y)^x)#y}",x,y))
  YM(flp(N(und(x,flp(y)))))
  et1(y))
-X1(enl,Ri(aV(tZ(xv),1,&x))R2(tl,tf,Ct=TT[xt];xe(aV(t,1,xV)))R2(tc,ts,Ct=TT[xt];aV(t,1,&x))Rm(Ay=kv(&x);aM(x,e1f(enl,y)))R_(aA1(x)))
+X1(enl,Ri(aV(tZ(xv),1,&x))R2(tl,tf,Ct=TT[xt];x(aV(t,1,xV)))R2(tc,ts,Ct=TT[xt];aV(t,1,&x))Rm(Ay=kv(&x);aM(x,e1f(enl,y)))R_(aA1(x)))
 A2(cat10,P(xtT&&ytT,P(!yn,x)P(!xn,x(yR))P(xt-yt,P(xtZ&&ytZ,yR;N(sup(&x,&y));cat11(x,y))cat11(cA(x),cA(yR)))Nm=xn,n=yn,w=xW;x=room(m+n,x);MC(xV+m*w,yV,n*w);I(ytA,mRa(y))x)
  P(xtm&&ytm,a4(x,yx,av,yy))Xmt(cat10(enl(x),y))Ymt(apd(x,yR))
  P(xtM||ytM,P(xtT||ytT,x=N(cA(x));y=Nx(cA(yR));cat11(x,y))P(!xtM||!ytM,et1(x))P(!mtc_(xx,yx),ed1(x))Az=e2f(cat,xy,_R(yy));x(z?aM(_R(xx),z):0))Q(0);0)
