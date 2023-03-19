@@ -58,7 +58,7 @@ V repl(){W(rep())}
 L k(Qs)_(Ax=N(evs(s,0));mc();Xz(gl(x))x(0))
 V kf(Qs,A2 f){d8(A(sym(s),au,av,AT(tx,(A)f)),4);}
 V kinit(){S I l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);z[L(z)-1]=1;A b[32],*c=b;i(tS-tA+1,*c++=ce[tA+i]=an(0,tA+i))*c++=ce[tm]=am(oS,oA);_x(ce[tA])=oC;
- cn[tA]=ce[tC];*c++=cn[tB]=cn[tH]=cn[tI]=cn[tL]=cn[ti]=cn[tl]=al(NL);*c++=cn[tF]=cn[tf]=af(NF);cn[tC]=cn[tc]=ac(32);cn[tS]=cn[ts]=as(0);i(tn-to,cn[to+i]=au)
+ cn[tA]=ce[tC];*c++=cn[tE]=cn[tB]=cn[tH]=cn[tI]=cn[tL]=cn[ti]=cn[tl]=al(NL);*c++=cn[tF]=cn[tf]=af(NF);cn[tC]=cn[tc]=ac(32);cn[tS]=cn[ts]=as(0);i(tn-to,cn[to+i]=au)
  Q(c-b<=32);cns=aV(tA,c-b,b);}
 V kargs(In,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=MAX(0,n-2);Ax=n?aA(n):oA;i(n,xa=aCz(a[2+i]))gk[gn]='x';gv[gn++]=x;}
 

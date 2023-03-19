@@ -35,7 +35,6 @@
 #define M2(x) M1(x)
 #define EX extern
 #define Q(x) DBG(I(!(x),die(__FILE__":"M2(__LINE__)": "#x)))//assert
-#define Ab8 A b[8];
 #define MS memset
 #define MC memcpy
 #define SL strlen
@@ -48,6 +47,7 @@
 #define CAz(c) LH('a',(c)|32,'z')
 #define CA9(c) (CAz(c)||C09(c))
 #define S4(i,a,b,c,d) SW(i,C(0,a)C(1,b)C(2,c)D(d))
+#define Ab8 A b[8];
 #define Lij Li=*xL,j=xL[1];
 
 TD void V;TD char B,C;TD char unsigned UB,UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int UI;TD long long L;TD double F;TD size_t N;
@@ -143,9 +143,9 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 
 #define     X(a...) SW(xt,a)
 #define     Y(a...) SW(yt,a)
-#define  X1(f,a...) A f(Ax   ){X(a)}
-#define  X2(f,a...) A f(Ax,Ay){X(a)}
-#define  Y2(f,a...) A f(Ax,Ay){Y(a)}
+#define  X1(f,a...) A1(f,X(a)0)
+#define  X2(f,a...) A2(f,X(a)0)
+#define  Y2(f,a...) A2(f,Y(a)0)
 #define   R(x,a...) case x:_(a)
 #define  R2(x,a...) case x:R(a)
 #define  R3(x,a...) case x:R2(a)
@@ -183,6 +183,7 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define    Ru(a...) R(tu,a)
 #define    Rv(a...) R(tv,a)
 #define    Rw(a...) R(tw,a)
+#define    Rx(a...) R(tx,a)
 #define   RiI(a...) R2(ti,tI,a)
 #define   RlL(a...) R2(tl,tL,a)
 #define   RfF(a...) R2(tf,tF,a)
@@ -190,6 +191,7 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define   RsS(a...) R2(ts,tS,a)
 #define   RmM(a...) R2(tm,tM,a)
 #define    Rz(a...) R2(ti,tl,a)
+#define   Ric(a...) R2(ti,tc,a)
 #define   Rzc(a...) R3(ti,tl,tc,a)
 #define   RBC(a...) R2(tB,tC,a)
 #define  Rilf(a...) R3(ti,tl,tf,a)

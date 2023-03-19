@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-NI I mtc_(Ax,Ay/*00*/)_(P(x==y,1)P(xt==yt&&((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)&1<<xt),xv==yv)P(xtz&&ytz,gl_(x)==gl_(y))
+NI I mtc_(Ax,Ay/*00*/)_(P(x==y,1)P(xt==yt&&((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)&1<<xt),xv==yv)P(xtz&&ytz,gl_(x)==gl_(y))XE(x=gZ(xR);x(mtc_(x,y)))YE(mtc_(y,x))
  P(xtZ&&ytZ&&xt-yt&&xn==yn,Ct=MAX(xt,yt);x=cT[t](xR);y=cT[t](yR);x(y(!memcmp(xV,yV,xn*xW))))P(xt-yt||xtP||(xtr&&xE-yE)||xn-yn,0)
  P(!xtR||(LH(tB,xt,tS)&&xt==yt&&xn==yn),!memcmp(xV,yV,xn*xW))i(xn|!xn,P(!mtc_(xa,ya),0))1)
 A2(mtc,/*01*/y(ai(mtc_(x,y))))
@@ -17,7 +17,7 @@ S V mrg(Ax/*0*/,I*p,I*q,I*b,I*d,Ik){I*r=p-q+b;W(1,I(qA(xA[*p],xA[*b])<k,*r++=*p+
 S V cis(Ax/*0*/,I*p,Nn,I*r){i(n,Ij=0,k=i,v=p[i];Ay=xA[v];W(j<k,Im=j+k>>1;I(qA(y,xA[r[m]])<0,k=m)E(j=m+1))memmove(r+j+1,r+j,i-j<<2);r[j]=v)}//copying_insertionsort
 S V cms(Ax/*0*/,I*p,Nn,I*r){P(n<17,cis(x,p,n,r);)Nm=n/2;cms(x,p+m,n-m,r+m);cms(x,p,m,p+m);mrg(x,p+m,p+2*m,r+m,r+n,1);}//copying_mergesort
 A1(ascA,Nn=xn;Az=aI(n);I*p=zI;tilV(p,n,2);P(n<17,cis(x,p,n,p);x(z))Nm=n/2;Ay=aI(n-m);I*t=yI;cms(x,p+m,n-m,t);cms(x,p,m,p+n-m);mrg(x,t,t+n-m,p+n-m,p+n,0);x(y(z)))
-X1(asc,Rt(opn(x))Rm(grdm(x,asc))RM(K1("{(!#x){x@<y x}/|.+x}",x))RS(asc(str(x)))RF(asc(of1(x)))RA(P(xn-(I)xn,ez1(x))ascA(x))
+X1(asc,Rt(opn(x))Rm(grdm(x,asc))RM(K1("{(!#x){x@<y x}/|.+x}",x))RS(asc(str(x)))RF(asc(of1(x)))RA(P(xn-(I)xn,ez1(x))ascA(x))RE(Lij x(0);aE(0,j-i))
  R_(P(xn-(I)xn,ez1(x))x=N(K1("{x-&/x}",x));Nn=xn;Ay=aC(n),z=aI(n),u=aI(n);xe(ye(ascZ(xV,yV,zV,uV,n,xW)==zV?u(z):z(u)))))
 X1(dsc,RMT(x=rev(asc(rev(x)));sub(ai(xN-1),x))Rm(grdm(x,dsc))Rz(cls(gl(x)))R_(et1(x)))
 X1(grp,RMT(K1("{$[#x;(x[(!0),*'g])!g@:<g:(&(!0),~x~':x i)_i:<x;x!0#,!0]}",x))Rm(Ay=kv(&x);y=Nx(grp(y));yy=x(i1(x,yy));y)Rz(K1("{$[x;@[&x;;:;1]'!x;0 0#0]}",x))R_(et1(x)))

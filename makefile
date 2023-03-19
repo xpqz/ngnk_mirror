@@ -50,4 +50,4 @@ t16:;l/runparts.k aoc/16
 t15:;l/runparts.k aoc/15
 
 c:;rm -rf o k libk.so #clean
-.PHONY: 0 t tu td tg te te0 te1 te2 te3 ta t22 t21 t20 t19 t18 t17 t16 t15 c k w h a
+.PHONY: 0 c k w h a t tu td tg te te0 te1 te2 te3 ta t22 t21 t20 t19 t18 t17 t16 t15
