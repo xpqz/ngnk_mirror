@@ -31,23 +31,23 @@ o/w/http:w/http.c;$(CC) $< -o $@
 # k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm
 
 t:tu td tg te ta #all tests
-tu:o/t;o/t #unit
-td:;dy/a.sh #dyalog
-tg:;cd g;./a.k #codegolf
+tu:k o/t;o/t #unit
+td:k;dy/a.sh #dyalog
+tg:k;cd g;./a.k #codegolf
 te:te0 te1 te2 te3 #projecteuler
-te0:;l/runparts.k e 01.k 26.k
-te1:;l/runparts.k e 26.k 51.k
-te2:;l/runparts.k e 51.k 76.k
-te3:;l/runparts.k e 76.k
+te0:k;l/runparts.k e 01.k 26.k
+te1:k;l/runparts.k e 26.k 51.k
+te2:k;l/runparts.k e 51.k 76.k
+te3:k;l/runparts.k e 76.k
 ta:t22 t21 t20 t19 t18 t17 t16 t15 #adventofcode
-t22:;l/runparts.k aoc/22
-t21:;l/runparts.k aoc/21
-t20:;l/runparts.k aoc/20
-t19:;l/runparts.k aoc/19
-t18:;l/runparts.k aoc/18
-t17:;l/runparts.k aoc/17
-t16:;l/runparts.k aoc/16
-t15:;l/runparts.k aoc/15
+t22:k;l/runparts.k aoc/22
+t21:k;l/runparts.k aoc/21
+t20:k;l/runparts.k aoc/20
+t19:k;l/runparts.k aoc/19
+t18:k;l/runparts.k aoc/18
+t17:k;l/runparts.k aoc/17
+t16:k;l/runparts.k aoc/16
+t15:k;l/runparts.k aoc/15
 
 c:;rm -rf o k libk.so #clean
 .PHONY: 0 c k w h a t tu td tg te te0 te1 te2 te3 ta t22 t21 t20 t19 t18 t17 t16 t15

@@ -57,7 +57,7 @@ S AX(s8,/*01..1*/Ay=*a;P(n==1,s1(x,y))P(n==2,Az=a[1];z(s2(x,y,z)))Lm=cfm(a+1,n-1
  Az=aA0(m);Ab8;i(m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);P(!y,mrn(n,a);z(0))zq(yR))mrn(n,a);y(z))
 S A3(p2,/*010*/Zt(er1(y))Zm(y=N(p2(x,y,zy));am(_R(zx),y))P(!zN,y(zR))P(xtv&&xv<11&&ytzc&&ztZC,arp(x,y,z))Au=aA0(zN);i(zN,A v=ii(z,i),r=x2(v,y);y=v;B(!r,u=u(0))uq(r))y(u))
 S A2(p1,/*01*/y(p2(x,ie(x,y),y)))
-S A stn(Ax,Ln,Ay/*0n0*/)_(P(n<0||n-(I)n,ed0())P(!ytT,et0())Lm=MAX(0,yn-n+1);Az=aA0(m);P(!m,mr(zx);zx=mkn(rsz(n,fir(yR)));z)i(m,zq(Nz(x1(slc(y,i,i+n)))))z)
+S A stn(Ax,Ln,Ay/*0n0*/)_(P(n<0||n-(I)n,ed0())P(!ytT,et0())YE(y=gZ(y);y(stn(x,n,y)))Lm=MAX(0,yn-n+1);Az=aA0(m);P(!m,mr(zx);zx=mkn(rsz(n,fir(yR)));z)i(m,zq(Nz(x1(slc(y,i,i+n)))))z)
 S A3(ste,/*010*/Yz(stn(x,gl(y),z))et1(y))S ALA(win,x(stn(au,n,x)))
 S A2 binF;
 S A2(binZ,/*01*/Q(xtZC)Y(RF(x=cF(xR);x(binF(x,y)))Rt(YU(ed1(y))fir(N(binZ(x,enl(y)))))RmMA(r2f(binZ,x,y))R_(et1(y))

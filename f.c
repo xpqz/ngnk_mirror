@@ -8,15 +8,18 @@ I urnk(Ax/*0*/)_(XA(urnk(xx)+1)XmM(urnk(xy))xtT)//assuming unirank
 S A2(fndB,Q(!xw)Q(ytT)L a[256];i(256,a[i]=NL)Li=xn-1;W(i>=0,a[(UC)xc]=i;i--)Nn=yn;Az=aL(n);
  ye(S4(yw,i(n,zl=a[(UC)yc]),i(n,Hv=yh;zl=v==(C)v?a[(UC)v]:NL),i(n,Iv=yi;zl=v==(C)v?a[(UC)v]:NL),i(n,Lv=yl;zl=v==(C)v?a[(UC)v]:NL))z))
 S A2(fndH,K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))
-A2(fnd,
- Xt(et1(y))
- P(xtT&&!xtA&&!ytmMA,
+A2(fnd_,/*01*/Ik=urnk(x),l=urnk(y);P(k<l+1,r2f(fnd,x,y))P(k>l+1,er1(y))
+ X(RA(i(xn,P(mtc_(xa,y),y(az(i))))y(az(NL)))
+   R_(i(xN,Az=ii(x,i);Im=mtc_(z,y);z(0);P(m,y(az(i))))y(az(NL))))0)
+X2(fnd,/*01*/Rt(et1(y))Rm(i1(xx,N(fnd(xy,y))))R_(fnd_(x,y))
+ RT_A(
+  P(ytmMA,fnd_(x,y))
   P(xt==TT[yt]||xtZ&&ytzZ,
+   XE(Yz(Lij;UL d=gl(y)-i;az(d<j-i?d:NL))x=gZ(xR);x(fnd(x,y)))
+   YE(fnd(x,gZ(y)))
    P(!xw&&ytT,fndB(x,y))
    P(xw==1&&xn>128&&yN>128,fndH(x,y))
    TY(fB)*f=A(&fB,fH,fI,fL)[xw];Yt(az(f(xV,xn,gl(y))))
    Nm=xn,n=yn;Az=aL(n);ye(S4(yw,i(n,zl=f(xV,m,yb)),i(n,zl=f(xV,m,yh)),i(n,zl=f(xV,m,yi)),i(n,zl=f(xV,m,yl)))z))
-  Az=cn[tl];zR;y(ytt?z:rsz(yN,z)))
- Xm(i1(xx,N(fnd(xy,y))))
- Ik=urnk(x),l=urnk(y);P(k<=l,r2f(fnd,x,y))P(k==l+1,L r=NL;I(xtA,i(xn,B(mtc_(xa,y),r=i)))E(i(xN,Az=ii(x,i);Im=mtc_(z,y);z(0);B(m,r=i)))y(az(r)))er1(y))
-X2(que,Rs(S O C s[][4]={"","j","hex"};Li=fI(s,L(s),xv);A(&des,js0,unh,ed1)[i<0?L(s):i](y))Rz(rnd(gl_(x),y))R_(fnd(x,y)))
+  Az=cn[tl];zR;y(ytt?z:rsz(yN,z))))
+X2(que,/*01*/Rs(S O C s[][4]={"","j","hex"};Li=fI(s,L(s),xv);A(&des,js0,unh,ed1)[i<0?L(s):i](y))Rz(rnd(gl_(x),y))R_(fnd(x,y)))

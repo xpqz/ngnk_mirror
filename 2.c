@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S A adm(Ax,Ay,Iv/*01v*/)_(XYmMA(e2f(v?mul:add,x,y))YE(P(!v&&xtz,Lv=gl_(x),i=*yL,j=yL[1];aE(i+v,j+v))adm(x,gZ(y),v))XE(y(adm(y,gZ(xR),v)))
+S A adm(Ax,Ay,Iv/*01v*/)_(XYmMA(e2f(v?mul:add,x,y))YE(P(!v&&xtz,Lv=gl_(x),i=*yL,j=yL[1];y(0);aE(i+v,j+v))adm(x,gZ(y),v))XE(x=gZ(xR);y(adm(y,x,v)))
  Ik=2*xtT+ytT;P(!k,P(xti&&yti,az(v?xv*(L)yv:xv+(L)yv))P(xtzc&&ytzc,Lm=gl_(x),n=gl(y);az(v?m*n:m+n))x=Ny(cF(xR));y=Nx(cF(y));F a=gf(x),b=gf(y);af(v?a*b:a+b))
  P(k==2,y(adm(y,xR,v)))P(k==3&&xn-yn,el1(y))
  P(xtfF||ytF,P(!xtfF,x=Ny(cF(xR));x(adm(x,y,v)))P(!ytF,adm(x,Ny(cF(y)),v))
@@ -27,12 +27,13 @@ Y2(mod,RmMA(e2f(mod,x,y))Rzc(fir(N(mod(x,enl(y)))))RC(mod(x,cB(y)))RE(mod(x,gZ(y
   P(m<0,m=-m;Az=an(yn,yt);S4(yw,i(zn,Cv=yb;zb=v<0?-1-~v/m:v/m),i(zn,Hv=yh;zh=v<0?-1-~v/m:v/m),i(zn,Iv=yi;zi=v<0?-1-~v/m:v/m),i(zn,Lv=yl;zl=v<0?-1-~v/m:v/m))y(z))
   P(m&m-1,Az=an(yn,tZ(m));I wy=yw;S4(zw,i(zn,zb=(iw(y,wy,i)%m+m)%m),i(zn,zh=(iw(y,wy,i)%m+m)%m),i(zn,zi=(iw(y,wy,i)%m+m)%m),i(zn,zl=(iw(y,wy,i)%m+m)%m))y(z))
   m--;I t=tZ(m),w=t-tB;y=mut(N(cT[t](y)));i(3-w,m|=m<<(8<<w+i))L*p=yV;i((yn<<w)+31>>5,j(4,*p++&=m))y))
-S ALA(ext/*n1*/,XMT(x)rsz(n,xtm?enl(x):x))
+S ALA(ext/*n1*/,X(RE(ext(n,gZ(x)))RMT_E(x)R_(rsz(n,xtm?enl(x):x)))0)
 A2(dct,/*01*/P(rnk(x)<0,ed1(y))x=ext(yN,xR);y=ext(xN,y);(xN-yN?el2:am)(x,y))
 X2(bng,Rzc(mod(x,y))R_(dct(x,y)))
 S C tZx(Ax)_(Ct=TX[xt];P(t,t)Xl(tZ(gl_(x)))tZ(xv))
 C sup(A*p,A*q)_(Ax=*p,y=*q;Ct=MAX(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
-S A mmm(Ax,Ay,A2 f)_(XYmMA(e2f(f,x,y))P(xtfF||ytfF,x=of1(Ny(cF(xR)));y=of1(Nx(cF(y)));of0(N(x(f(x,y)))))
+S A mmm(Ax,Ay,A2 f)_(XYmMA(e2f(f,x,y))YE(mmm(x,gZ(y),f))XE(y(mmm(y,xR,f)))
+ P(xtfF||ytfF,x=of1(Ny(cF(xR)));y=of1(Nx(cF(y)));of0(N(x(f(x,y)))))
  Ik=xtT<<1|ytT;P(!k,P(xtzc&&ytzc,Lv=gl_(x),w=gl(y);az(f==mnm?MIN(v,w):MAX(v,w)))et1(y))P(k==2,y(f(y,xR)))P(k==3&&xn-yn,el1(y))
  xR;N(sup(&x,&y));Ct=TT[k?MIN(xt,yt):MAX(xt,yt)];Nn=k-1?xn:yn;Az=yt==t&&yr==1?y:an(n,t);
  I(k==1,Lv=gl_(x);I(f==mnm,S4(zw,i(n,zb=MIN( v,yb)),i(n,zh=MIN( v,yh)),i(n,zi=MIN( v,yi)),i(n,zl=MIN( v,yl))))
@@ -43,7 +44,7 @@ A2(ltn,P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA|1<<tS),e2f(ltn,x,y))
  Ik=xtT<<1|ytT;P(!k,P(xtzc&&ytzc,ai(gl_(x)<gl(y)))P(xtzfc&&ytzfc,x=Ny(cF(xR));y=Nx(cF(y));ai(qf(gf(x),gf(y))<0))P(xts&&yts,y(ai(qA(x,y)<0)))et1(y))
  P(k==3&&xn-yn,el1(y))xR;N(sup(&x,&y));XfF(x=of1(x);x(ltn(x,of1(y))))P(k==2,y=az(gl(y)-1);not(N(y(ltn(y,x)))))Nn=k-1?xn:yn;Az=aB(n);
  I(k==1,Lv=gl_(x);S4(yw,i(n,zb=v<yb),i(n,zb=v<yh),i(n,zb=v<yi),i(n,zb=v<yl)))E(Q(k==3);S4(xw,i(n,zb=xb<yb),i(n,zb=xh<yh),i(n,zb=xi<yi),i(n,zb=xl<yl)))x(y(z)))
-A2(eql,XYmMA(e2f(eql,x,y))P(xtsS-ytsS,et1(y))P(xtsS,x=AT(xt+ti-ts,mut(xR));x(eql(x,AT(yt+ti-ts,mut(y)))))
+A2(eql,XYmMA(e2f(eql,x,y))YE(eql(x,gZ(y)))XE(y(eql(y,xR)))P(xtsS-ytsS,et1(y))P(xtsS,x=AT(xt+ti-ts,mut(xR));x(eql(x,AT(yt+ti-ts,mut(y)))))
  Ik=xtT<<1|ytT;P(!k,P(xtzc&&ytzc,ai(gl_(x)==gl(y)))P(xtf||ytf,x=Ny(cF(xR));y=Nx(cF(y));ai(gl(x)==gl(y)))et1(y))P(k==2,y(eql(y,xR)))P(k==3&&xn-yn,el1(y))
  xR;N(sup(&x,&y));Ct=TT[k?MIN(xt,yt):MAX(xt,yt)];I w=Tw[t];Nn=k-1?xn:yn;Az=aB(n);
  I(k==1,S4(w,{Cv=xv;i(n,zb=v==yb)},{Hv=xv;i(n,zb=v==yh)},{Iv=xv;i(n,zb=v==yi)},{Lv=gl_(x);i(n,zb=v==yl)}))
