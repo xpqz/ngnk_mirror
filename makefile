@@ -7,7 +7,6 @@ o/$N/%.o:%.c *.h;$M;$(CC) @opts $O -o $@ -c $<
 o/$N/bin:$(patsubst %.c,o/$N/%.o,$(wildcard *.c));$(CC) $O -o $@ $^ @lopts $L # ;$(STRIP) -R .comment $@ -R '.note*'
 a:o/$N/bin;cp o/$N/bin $R
 
-o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
 o/asm/%.s:%.c *.h;$M;$(CC) -O3 @opts -march=native -nostdlib -ffreestanding -c $< -o $@ -S -masm=intel
 
 #/usr/lib/llvm-17/bin/wasm-ld must be on $PATH
@@ -32,6 +31,7 @@ o/w/http:w/http.c;$(CC) $< -o $@
 
 t:tu td tg te ta #all tests
 tu:k o/t;o/t #unit
+o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
 td:k;dy/a.sh #dyalog
 tg:k;cd g;./a.k #codegolf
 te:te0 te1 te2 te3 #projecteuler

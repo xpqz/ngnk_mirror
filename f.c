@@ -3,15 +3,15 @@ S L fB(OV*p,Nn,Lv)_(O B*a=p,q=v;P(v-q,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a
 S L fH(OV*p,Nn,Lv)_(O H*a=p,q=v;P(v-q,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
   L fI(OV*p,Nn,Lv)_(O I*a=p,q=v;P(v-q,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
   L fL(OV*p,Nn,Lv)_(O L*a=p,q=v;P(v-q,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
-I rnk(Ax/*0*/)_(XA(Iv=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)XmM(rnk(xy))xtT)//-1 for mixed rank
-I urnk(Ax/*0*/)_(XA(urnk(xx)+1)XmM(urnk(xy))xtT)//assuming unirank
+I rnk(Ax/*0*/)_(X(RA(Iv=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)RmM(rnk(xy))RT_A(1)R_(0))0)//-1 for mixed rank
+I urnk(Ax/*0*/)_(X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))0)//assuming unirank
 S A2(fndB,Q(!xw)Q(ytT)L a[256];i(256,a[i]=NL)Li=xn-1;W(i>=0,a[(UC)xc]=i;i--)Nn=yn;Az=aL(n);
  ye(S4(yw,i(n,zl=a[(UC)yc]),i(n,Hv=yh;zl=v==(C)v?a[(UC)v]:NL),i(n,Iv=yi;zl=v==(C)v?a[(UC)v]:NL),i(n,Lv=yl;zl=v==(C)v?a[(UC)v]:NL))z))
 S A2(fndH,K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))
 A2(fnd_,/*01*/Ik=urnk(x),l=urnk(y);P(k<l+1,r2f(fnd,x,y))P(k>l+1,er1(y))
  X(RA(i(xn,P(mtc_(xa,y),y(az(i))))y(az(NL)))
    R_(i(xN,Az=ii(x,i);Im=mtc_(z,y);z(0);P(m,y(az(i))))y(az(NL))))0)
-X2(fnd,/*01*/Rt(et1(y))Rm(i1(xx,N(fnd(xy,y))))R_(fnd_(x,y))
+X2(fnd,/*01*/Rt(et1(y))Rm(i1(xx,N(fnd(xy,y))))RM(en1(y))R_(fnd_(x,y))
  RT_A(
   P(ytmMA,fnd_(x,y))
   P(xt==TT[yt]||xtZ&&ytzZ,
