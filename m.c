@@ -51,7 +51,7 @@ S A evC1(C**p)_(C*s=*p;P(*s=='\\',++*p;bs_(p))Ax=pk((V*)p);C*e=*p;*p+=!!*e;N(x);
 A evC(C*s,I b)_(W(*s,Ax=evC1(&s);I(b,I(x,x(out(x)))E(s=strchrnul(s,10);s+=!!*s;epr(0)))E(N(x);P(!*s,x)x(0))mc())au)
 A evs(Qs,I b)_(Nn=SL(s)+1;C p[n];MC(p,s,n);evC(p,b))
 I rep()_(S Cb[256];C*s=b,*q;
- W(1,Ln=read(0,s,b-s+SZ b);P(n<0,0)s+=n;q=memchr(s-n,10,n);
+ W(1,Ln=read(0,s,b-s+SZ b);P(n<=0,0)s+=n;q=memchr(s-n,10,n);
      P(q,C*p=b;W(q,*q=0; evC(p,1);p=q+1;q=memchr(p,10,s-p))MC(b,p,s-p);s+=b-p;1)
      P(b+SZ b<=s,die("LONGLINE")))1)
 V repl(){W(rep())}
