@@ -234,4 +234,29 @@ M[p21X.].'(((6;">");"     >")
            ((8;("K";"E";"Iverson"));("       K";"       E";" Iverson"))
            ((8;("Longer Phrase";"APL";"Parade"));("r Phrase";"     APL";"  Parade")));
 
+p231:{x=|\x}#
+p232:{a:x~*x;b:y~*y;$[a&b;x~y;a;o[,x;y];b;0;(&-1+#x),x~/:(#x)':y]}
+p233:{x 27!y+x?z}" ",`c$"A"+!26
+p234:{(*<x)-*>x:(x;y)}
+p235:{|+/'~:\>/(&/#'x)#'x:(x;y)}
+p236:{x[1]\'x[0]\y}
+/p237:{}
+/p238:{}
+p239:{$[(*x)~**x;,/|'0N 2#x;o'x]}
+p23X:{$[x;(y@!x),," "/(x-:1)_y:" "\y;()]}
+M[p231].'(2#,1+!10;(2 1 4 3 6 5 8 7 10 9;2 4 6 8 10);(1000 2500 1333 1969 3141 2345 3141 4291.9 4291.8 4292;1000 2500 3141 3141 4291.9 4292)
+ (1 3 7 3 5 8 5 8 1 6 1 8 1 10 8 4 3 4 1 4;1 3 7 8 8 8 10));
+M[p232.].'(($`abra`abracadabra;0 0 0 1 0 0 0 0 0 0 1);($`issi`Mississippi;0 0 0 0 1 0 0 1 0 0 0);(("bb";"bbb bbb");0 1 1 0 0 1 1)
+ ((,42;42);0);(42 42;1);((,42;,42);,1);($(`are`aquatic;`ducks`are`aquatic`avians);0 0 1 0));
+M[p233.].'(((4;h);"LIPPSD SVPHW");((-4;h);"DAHHKWSKNH O");((0;h);h:"HELLO WORLDS");((-10;"");""));
+M[p234.].'(((1 2 3;1 2 3);0);((1 2 3;1 0 9);1);((14 2 11;14 2 12);-1));
+M[p235.].'(((6 6 4 2 1;6 5 5);2 1);((,6;,5);0 1);((4 0 -1;3 1 -2);1 2));
+M[p236.].'(((" =";"language=APL dialect=Dyalog");(("language";"APL");("dialect";"Dyalog")));((";:";"duck:donald");,("duck";"donald"))
+ (("/:";"name:Morten/name:Brian/name:Adám");(("name";"Morten");("name";"Brian");("name";"Adám"))));
+M[p239].'((1+!10;2 1 4 3 6 5 8 7 10 9);(1+!9;2 1 4 3 6 5 8 7 9);(1+4 2#!8;(2 1;4 3;6 5;8 7));(1+4 3#!12;(2 1 3;5 4 6;8 7 9;11 10 12))
+ (1+3 3 3#!27;((2 1 3;5 4 6;8 7 9);(11 10 12;14 13 15;17 16 18);(20 19 21;23 22 24;26 25 27)))
+ ((`donald`duck`wrote;`some`good`APL);(`duck`donald`wrote;`good`some`APL)));
+M[p23X.].'(((1;"this is a sample");,"this is a sample");((2;"this is a sample");("this";"is a sample"));((4;"this is a sample");("this";"is";,"a";"sample"))
+ ((13;"  this  is  a  sample  ");("";"";"this";"";"is";"";,"a";"";"sample";"";"";"";""));((0;"this is a sample");());((4;"");("";"";"";"")));
+
 `exit R
