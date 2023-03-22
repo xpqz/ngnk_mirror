@@ -1,25 +1,35 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+I rnk(Ax/*0*/)_(X(RA(Iv=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)RmM(rnk(xy))RT_A(1)R_(0))0)//-1 for mixed rank
+I urnk(Ax/*0*/)_(X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))0)//assuming unirank
 S L fB(OV*p,Nn,Lv)_(O B*a=p,q=v;P(v-q,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
 S L fH(OV*p,Nn,Lv)_(O H*a=p,q=v;P(v-q,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
   L fI(OV*p,Nn,Lv)_(O I*a=p,q=v;P(v-q,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
   L fL(OV*p,Nn,Lv)_(O L*a=p,q=v;P(v-q,NL)Ii=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
-I rnk(Ax/*0*/)_(X(RA(Iv=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)RmM(rnk(xy))RT_A(1)R_(0))0)//-1 for mixed rank
-I urnk(Ax/*0*/)_(X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))0)//assuming unirank
-S A2(fndB,Q(!xw)Q(ytT)L a[256];i(256,a[i]=NL)Li=xn-1;W(i>=0,a[(UC)xc]=i;i--)Nn=yn;Az=aL(n);
- ye(S4(yw,i(n,zl=a[(UC)yc]),i(n,Hv=yh;zl=v==(C)v?a[(UC)v]:NL),i(n,Iv=yi;zl=v==(C)v?a[(UC)v]:NL),i(n,Lv=yl;zl=v==(C)v?a[(UC)v]:NL))z))
+S A1(fndN,/*1*/Ay=_R(cn[tl]);x(xtt?y:rsz(xN,y)))
+S L*t;
+S A fndBx(Ax/*1*/)_(Q(t)X(RmMA(e1f(fndBx,x))Rzc(Lv=gl(x);az(v==(C)v?t[(UC)v]:NL))RE(fndBx(gZ(x)))R_(fndN(x))
+ RZC_(Nm=xn;Az=aL(m);xe(S4(xw,i(m,zl=t[(UC)xc]),
+  i(m,Hv=xh;zl=v==(C)v?t[(UC)v]:NL),
+  i(m,Iv=xi;zl=v==(C)v?t[(UC)v]:NL),
+  i(m,Lv=xl;zl=v==(C)v?t[(UC)v]:NL))z)))0)
+S A fndB(UC*a,Nn,Ax/*1*/)_(Q(xtT)Lv[256];i(256,v[i]=NL)Li=n-1;W(i>=0,v[a[i]]=i;i--)t=v;x=fndBx(x);DBG(t=0);x)
 S A2(fndH,K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))
 A2(fnd_,/*01*/Ik=urnk(x),l=urnk(y);P(k<l+1,r2f(fnd,x,y))P(k>l+1,er1(y))
  X(RA(i(xn,P(mtc_(xa,y),y(az(i))))y(az(NL)))
    R_(i(xN,Az=ii(x,i);Im=mtc_(z,y);z(0);P(m,y(az(i))))y(az(NL))))0)
-X2(fnd,/*01*/Rt(et1(y))Rm(i1(xx,N(fnd(xy,y))))RM(en1(y))R_(fnd_(x,y))
- RT_A(
-  P(ytmMA,fnd_(x,y))
+X2(fnd,/*01*/
+ R_(et1(y))
+ Rm(i1(xx,N(fnd(xy,y))))
+ RM(en1(y))
+ RA(fnd_(x,y))
+ RE(x=gZ(xR);x(fnd(x,y)))
+ RBC(fndB(xV,xn,y))
+ R5(tH,tI,tL,tF,tS,
+  YmMA(fnd_(x,y))
+  YE(fnd(x,gZ(y)))
   P(xt==TT[yt]||xtZ&&ytzZ,
-   XE(Yz(Lij;UL d=gl(y)-i;az(d<j-i?d:NL))x=gZ(xR);x(fnd(x,y)))
-   YE(fnd(x,gZ(y)))
-   P(!xw&&ytT,fndB(x,y))
    P(xw==1&&xn>128&&yN>128,fndH(x,y))
    TY(fB)*f=A(&fB,fH,fI,fL)[xw];Yt(az(f(xV,xn,gl(y))))
    Nm=xn,n=yn;Az=aL(n);ye(S4(yw,i(n,zl=f(xV,m,yb)),i(n,zl=f(xV,m,yh)),i(n,zl=f(xV,m,yi)),i(n,zl=f(xV,m,yl)))z))
-  Az=cn[tl];zR;y(ytt?z:rsz(yN,z))))
+  fndN(y)))
 X2(que,/*01*/Rs(S O C s[][4]={"","j","hex"};Li=fI(s,L(s),xv);A(&des,js0,unh,ed1)[i<0?L(s):i](y))Rz(rnd(gl_(x),y))R_(fnd(x,y)))
