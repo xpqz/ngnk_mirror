@@ -12,7 +12,7 @@ S A fndBx(Ax/*1*/)_(Q(t)X(RmMA(e1f(fndBx,x))Rzc(Lv=gl(x);az(v==(C)v?t[(UC)v]:NL)
   i(m,Hv=xh;zl=v==(C)v?t[(UC)v]:NL),
   i(m,Iv=xi;zl=v==(C)v?t[(UC)v]:NL),
   i(m,Lv=xl;zl=v==(C)v?t[(UC)v]:NL))z)))0)
-S A fndB(UC*a,Nn,Ax/*1*/)_(Q(xtT)Lv[256];i(256,v[i]=NL)Li=n-1;W(i>=0,v[a[i]]=i;i--)t=v;x=fndBx(x);DBG(t=0);x)
+S A fndB(UC*a,Nn,Ax/*1*/)_(Lv[256];i(256,v[i]=NL)Li=n-1;W(i>=0,v[a[i]]=i;i--)t=v;x=fndBx(x);DBG(t=0);x)
 S A2(fndH,K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))
 A2(fndA,/*01*/Ik=urnk(x),l=urnk(y);P(k<l+1,r2f(fnd,x,y))P(k>l+1,er1(y))
  X(RA(i(xn,P(mtc_(xa,y),y(az(i))))y(az(NL)))

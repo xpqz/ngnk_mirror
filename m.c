@@ -47,7 +47,7 @@ S A bs_(C**p)_(C*s=*p,*e=strchrnul(s,10),c=*s,d=s[1];*p=e+!!*e;*e=0;
  K1("0x0a\\`x(,,\"/bin/sh\"),,:",aCz(s)))
 
 C gp[32];I gn,gk[256];A gv[256],cns,ce[tn],cn[tn];Q*argv,*env;
-S A evC1(C**p)_(C*s=*p;P(*s=='\\',++*p;bs_(p))Ax=pk((V*)p);C*e=*p;*p+=!!*e;N(x);x=N(cpl(aCm(s,e),x,oS));x(run(x,0,0)))
+S A evC1(C**p)_(C*s=*p;P(*s=='\\',++*p;bs_(p))Ax=pk((V*)p);C*e=*p;N(x);x=N(cpl(aCm(s,e),x,oS));x(run(x,0,0)))
 A evC(C*s,I b)_(W(*s,Ax=evC1(&s);I(b,I(x,x(out(x)))E(s=strchrnul(s,10);s+=!!*s;epr(0)))E(N(x);P(!*s,x)x(0))mc())au)
 A evs(Qs,I b)_(Nn=SL(s)+1;C p[n];MC(p,s,n);evC(p,b))
 I rep()_(S Cb[256];C*s=b,*q;
