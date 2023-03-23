@@ -61,7 +61,7 @@ AA(a8,/*10..0*/Ax=*a,y=a[1];X(
   I(ytZC&&n==4,Az=a[2],u=a[3];P(xtZ&&ztv&&utzZ&&(0xcf&1<<zv),ara(x,y,z,u))P(xtC&&z==av&&utcC,cC(N(ara(x,y,z,u)))))Yt(et1(x))mRn(n-1,a+1);f8(AP1,a,n))
  Rm(Az=Nx(fnd(xx,yR));ZT(z(0);mRn(n-1,a+1);f8(AP1,a,n))x=mut(x);I(ztl,z=mut(z);i(zN,I(zl==NL,zl=xN;xx=apd(xx,ztt?yR:ii(y,i));xy=apd(xy,ie(a[2],xy)))))
   Ab8;*b=xy;b[1]=z;MC(b+2,a+2,n-2<<3);xy=au;xy=Nx(z(a8(b,n)));x)
- RM(Ab8;i(n,Ax=a[i];b[i]=xtM?flp(xR):xR;Q(b[i]))flp(N(x(e8(AP1,b,n)))))
+ RM(Ab8;YsS(*b=flp(x);MC(b+1,a+1,n-1<<3);flp(N(a8(b,n))))i(n,Ax=a[i];b[i]=xtM?flp(xR):xR;Q(b[i]))flp(N(x(e8(AP1,b,n)))))
  RU(mRn(n-1,a+1);x(x8(a+1,n-1)))
  R_(et1(x)))0)
 S A3(a3,/*100*/a8(A(x,y,z),3))
