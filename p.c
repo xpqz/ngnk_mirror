@@ -63,4 +63,4 @@ S A pb(Ax,Cc)_(x=x?aA1(x):oA;                                                   
  W(1,Cv=0;Ay=Nx(pe(0,&v));P(y==PLH&&c==')',ep2(x,y))I(y==PLH&&c-']',y=au)
      xq(y);B(*s-';'&&*s-10)B(c==10&&*s==10)s++)
  P(c==10&&!*s,x)P(*s-c,ep1(x))s++;x)
-A pk(Q*p)_(s0=s=*p;Ax=pb(PLH,10);*p=s;P(x,xn==2?las(x):x)eQ(s0,SL(s0),s-s0);0)                      //parse a group of lines of k code
+A pk(Q*p,Cc)_(s0=s=*p;Ax=pb(PLH,c);*p=s;P(x,xn==2?las(x):x)eQ(s0,SL(s0),s-s0);0)                    //parse either a group of lines (c='\n') or till '\0' (c='\0')
