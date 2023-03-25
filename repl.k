@@ -4,8 +4,8 @@
 `1:prompt:," " /use 0x0720 for emacs integration
 atmost:{$[x<#y;((x-2)#y),"..";y]}
 fmt:{
- lines:`I$."\\tput lines"
- cols:`I$."\\tput cols"
+ lines:*`I$."\\tput lines"
+ cols:*`I$."\\tput cols"
  $[x~(::);""
    (~`A~@x)|2>#x;(atmost[cols]`k x),"\n"
    (lines-3)<#x;"(",("\n "/(atmost[cols-1]`k@)'(lines-3)#x),"\n ..)\n"
