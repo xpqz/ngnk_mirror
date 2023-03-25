@@ -2,10 +2,16 @@
 `1:"ngn/k, (c) 2019-2023 ngn, GNU AGPLv3. type \\ for more info\n"
 \d repl
 `1:prompt:," " /use 0x0720 for emacs integration
+lines:25
+cols:80
+atmost:{$[x<#y;((x-2)#y),"..";y]}
+fmt:{$[x~(::);""
+       (~`A~@x)|2>#x;(atmost[cols]`k x),"\n"
+       (lines-3)<#x;"(",("\n "/(atmost[cols-1]`k@)'(lines-3)#x),"\n ..)\n"
+                    "(",("\n "/(atmost[cols-2]`k@)'x),")\n"]}
 cmds:(,"a")!{`1:1:joinpath[dirname`argv 0]"LICENSE";}
 dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
 joinpath:{$[x~,".";y;"/"~*|x;x,y;x,"/",y]}
-fmt:{$[x~(::);"";(`A~@x)&1<#x;"(",("\n "/`k'x),")\n";`k[x],"\n"]}
 line0:{c:{0x07~*-2#*x}{(l;r):x;(1:1;r,,(-2_l))}/(x;());"\n"/(*|c),,*c}
 line1:{$[#x;;:0];x:-1_x;$[(3>#x)&("\\"=*x)&~^(!cmds)?x 1;cmds[x 1]x 1;.[`1:fmt@.:;,x;{`0:`err[]}]];`1:prompt;1}
 line:line1@line0@
