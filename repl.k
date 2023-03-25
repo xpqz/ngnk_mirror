@@ -3,13 +3,12 @@
 \d repl
 `1:prompt:," " /use 0x0720 for emacs integration
 atmost:{$[x<#y;((x-2)#y),"..";y]}
-fmt:{
- lines:*`I$."\\tput lines"
- cols:*`I$."\\tput cols"
- $[x~(::);""
-   (~`A~@x)|2>#x;(atmost[cols]`k x),"\n"
-   (lines-3)<#x;"(",("\n "/(atmost[cols-1]`k@)'(lines-3)#x),"\n ..)\n"
-                "(",("\n "/(atmost[cols-2]`k@)'x),")\n"]}
+lines:{*`I$."\\tput lines"}
+cols:{*`I$."\\tput cols"}
+fmt:{$[x~(::);""
+       (~`A~@x)|2>#x;(atmost[cols[]]`k x),"\n"
+       (l:lines[])<2+#x;"(",("\n "/(atmost[cols[]-3]`k@)'(l-3)#x),"\n ..)\n"
+                        "(",("\n "/(atmost[cols[]-2]`k@)'x),")\n"]}
 cmds:(,"a")!{`1:1:joinpath[dirname`argv 0]"LICENSE";}
 dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
 joinpath:{$[x~,".";y;"/"~*|x;x,y;x,"/",y]}
