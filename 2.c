@@ -40,7 +40,7 @@ S A mmm(Ax,Ay,A2 f)_(XYmMA(e2f(f,x,y))YE(mmm(x,gZ(y),f))XE(y(mmm(y,xR,f)))
                   E(       S4(zw,i(n,zb=MAX( v,yb)),i(n,zh=MAX( v,yh)),i(n,zi=MAX( v,yi)),i(n,zl=MAX( v,yl)))))
  E(Q(k==3);       I(f==mnm,S4(zw,i(n,zb=MIN(xb,yb)),i(n,zh=MIN(xh,yh)),i(n,zi=MIN(xi,yi)),i(n,zl=MIN(xl,yl))))
                   E(       S4(zw,i(n,zb=MAX(xb,yb)),i(n,zh=MAX(xh,yh)),i(n,zi=MAX(xi,yi)),i(n,zl=MAX(xl,yl)))))x(y-z?y(z):z))
-A2(ltn,P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA|1<<tS),e2f(ltn,x,y))
+A2(ltn,P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA|1<<tS),e2f(ltn,x,y))YE(ltn(x,gZ(y)))XE(x=gZ(xR);x(ltn(x,y)))
  Ik=xtT<<1|ytT;P(!k,P(xtzc&&ytzc,ai(gl_(x)<gl(y)))P(xtzfc&&ytzfc,x=Ny(cF(xR));y=Nx(cF(y));ai(qf(gf(x),gf(y))<0))P(xts&&yts,y(ai(qA(x,y)<0)))et1(y))
  P(k==3&&xn-yn,el1(y))xR;N(sup(&x,&y));XfF(x=of1(x);x(ltn(x,of1(y))))P(k==2,y=az(gl(y)-1);not(N(y(ltn(y,x)))))Nn=k-1?xn:yn;Az=aB(n);
  I(k==1,Lv=gl_(x);S4(yw,i(n,zb=v<yb),i(n,zb=v<yh),i(n,zb=v<yi),i(n,zb=v<yl)))E(Q(k==3);S4(xw,i(n,zb=xb<yb),i(n,zb=xh<yh),i(n,zb=xi<yi),i(n,zb=xl<yl)))x(y(z)))
