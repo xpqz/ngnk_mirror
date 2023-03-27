@@ -2,13 +2,13 @@
 `1:"ngn/k, (c) 2019-2023 ngn, GNU AGPLv3. type \\ for more info\n"
 \d repl
 `1:prompt:," " /use 0x0720 for emacs integration
-atmost:{$[x<#y;((x-2)#y),"..";y]}
+k:{$[x<#y;y:((x-2)#y);];y:`k y;$[x<#y;((x-2)#y),"..";y]}
 lines:{*`I$."\\tput lines"}
 cols:{*`I$."\\tput cols"}
 fmt:{$[x~(::);""
-       (~`A~@x)|2>#x;(atmost[cols[]]`k x),"\n"
-       (l:lines[])<2+#x;"(",("\n "/(atmost[cols[]-3]`k@)'(l-3)#x),"\n ..)\n"
-                        "(",("\n "/(atmost[cols[]-2]`k@)'x),")\n"]}
+       (~`A~@x)|2>#x;(k[cols[]]x),"\n"
+       (l:lines[])<2+#x;"(",("\n "/k[cols[]-3]'(l-3)#x),"\n ..)\n"
+                        "(",("\n "/k[cols[]-2]'x),")\n"]}
 cmds:(,"a")!{`1:1:joinpath[dirname`argv 0]"LICENSE";}
 dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
 joinpath:{$[x~,".";y;"/"~*|x;x,y;x,"/",y]}
