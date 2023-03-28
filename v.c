@@ -12,7 +12,7 @@ V tilV(V*p,Ln,I w){L*a=p,v=A(0x706050403020100ll,0x3000200010000ll,1ll<<32,0)[w]
 AL(tilL,P(n<0,n==(I)n?add(ai(n),N(tilL(-n))):ed0())P(n>1<<30,ez0())Ax=an(n,tZ(n-1));tilV(xV,n,xt-tB);x)
 X1(til,
  Rz(tilL(gl(x)))
-// Rz(Ln=gl(x);n<0?aE(n,0):aE(0,n))
+// Rz(Ln=gl(x);aE(MIN(0,n),MAX(0,n)))
  RZ(K1("{(*a)#'&'x#'1_a:|*\\|x,1}",x))RmM(x(_R(xx)))Ro(val(x))RS(K1("{x:\".\"/$x,`;`$(#x)_'(x~/:@[;!#x]')#$!.0#`}",x))R_(et1(x)))
 X1(whr,Rz(whr(enl(x)))RA(K1("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Rm(Ay=kv(&x);x(x1(Nx(whr(y)))))RM(et1(x))R_(et1(x))RE(whr(gZ(x)))
  RZ_(Lm=xn,n=addfZ(0,x);P(n<0||minfZ(0,x)<0,ed1(x))Ct=tZ(m-!!m);P(t>tI,ez1(x))Ay=an(n,t);I w=xw;

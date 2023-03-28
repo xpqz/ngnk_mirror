@@ -78,7 +78,7 @@ L cfm(OA*,I),gl_(A),gl(A),iw(A,I,L),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV
 EX I pg,gn,gk[];EX C gp[32];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env,HEX;EX OCA vc,TS,Tw,TW,TT,TX,Tk;
 
 //                 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
-//                   () _! ,3 ,4 ,5 ,6 ,d "" ,` +!  !  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
+//                   () !n ,3 ,4 ,5 ,6 ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
 enum              {tA=1,tE,tB,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
 #define T_ OCA TS="?""A""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
                TW={0, 8, 8, 1, 2, 4, 8, 8, 1, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8},/*item size in bytes        */\
