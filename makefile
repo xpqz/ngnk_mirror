@@ -34,11 +34,7 @@ tu:k o/t;o/t #unit
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
 td:k;cd dy;./a.k #dyalog
 tg:k;cd g;./a.k #codegolf
-te:te0 te1 te2 te3 #projecteuler
-te0:k;l/runparts.k e 01.k 26.k
-te1:k;l/runparts.k e 26.k 51.k
-te2:k;l/runparts.k e 51.k 76.k
-te3:k;l/runparts.k e 76.k
+te:k;l/runparts.k e
 ta:t22 t21 t20 t19 t18 t17 t16 t15 #adventofcode
 t22:k;l/runparts.k aoc/22
 t21:k;l/runparts.k aoc/21
