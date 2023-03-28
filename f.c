@@ -11,7 +11,7 @@ S A1(fHN,Q(xtH)Hv=0;i(xn,v|=xb)P(!(v>>15&1),x)Ay=aL(xn);xe(i(xn,yl=xh<0?NL:xh)y)
 S A1(fIN,Q(xtI)Iv=0;i(xn,v|=xb)P(!(v>>31&1),x)Ay=aL(xn);xe(i(xn,yl=xi<0?NL:xi)y))
 S L t[256];
 S X1(fndBx,RmMA(e1f(fndBx,x))Rzc(Lv=gl(x);az(v==(C)v?t[(UC)v]:NL))RE(fndBx(gZ(x)))R_(fN(x))
- RZC_(Nm=xn;Az=aL(m);xe(S4(xw,i(m,zl=t[(UC)xc]),i(m,Hv=xh;zl=v==(C)v?t[(UC)v]:NL),i(m,Iv=xi;zl=v==(C)v?t[(UC)v]:NL),i(m,Lv=xl;zl=v==(C)v?t[(UC)v]:NL))z)))
+ RZC_E(Nm=xn;Az=aL(m);xe(S4(xw,i(m,zl=t[(UC)xc]),i(m,Hv=xh;zl=v==(C)v?t[(UC)v]:NL),i(m,Iv=xi;zl=v==(C)v?t[(UC)v]:NL),i(m,Lv=xl;zl=v==(C)v?t[(UC)v]:NL))z)))
 S A fndB(UC*a,Nn,Ax/*1*/)_(i(256,t[i]=NL)Li=n-1;W(i>=0,t[a[i]]=i;i--)fndBx(x))
 S A2(fndH,K2("{a:&/x;b:1+|/x;@[(b-a)#0N;|x-a;:;|!#x]y-a}",x,y))
 A2(fndA,/*01*/Ik=urnk(x),l=urnk(y);P(k<l+1,r2f(fnd,x,y))P(k>l+1,er1(y))
