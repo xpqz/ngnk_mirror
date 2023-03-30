@@ -20,4 +20,10 @@ A1(ascA,Nn=xn;Az=aI(n);I*p=zI;tilV(p,n,2);P(n<17,cis(x,p,n,p);x(z))Nm=n/2;Ay=aI(
 X1(asc,Rt(opn(x))Rm(grdm(x,asc))RM(K1("{(!#x){x@<y x}/|.+x}",x))RS(asc(str(x)))RF(asc(of1(x)))RA(P(xn-(I)xn,ez1(x))ascA(x))RE(Lij x(0);aE(0,j-i))
  R_(P(xn-(I)xn,ez1(x))x=N(K1("{x-&/x}",x));Nn=xn;Ay=aC(n),z=aI(n),u=aI(n);xe(ye(ascZ(xV,yV,zV,uV,n,xW)==zV?u(z):z(u)))))
 X1(dsc,RMT(x=rev(asc(rev(x)));sub(ai(xN-1),x))Rm(grdm(x,dsc))Rz(cls(gl(x)))R_(et1(x)))
-X1(grp,RMT(K1("{$[#x;(x[(!0),*'g])!g@:<g:(&(!0),~x~':x i)_i:<x;x!0#,!0]}",x))Rm(Ay=kv(&x);y=Nx(grp(y));yy=x(i1(x,yy));y)Rz(K1("=/:/2#,!:",x))R_(et1(x)))
+X1(grp,Rz(K1("=/:/2#,!:",x))R8(tA,tE,tH,tI,tL,tF,tS,tM,K1("{$[#x;(x[*'g])!g@:<g:(&~x~':x i)_i:<x;x!0#,!0]}",x))Rm(Ay=kv(&x);y=Nx(grp(y));yy=x(i1(x,yy));y)R_(et1(x))
+ RBC(
+  A r[256]={};UC b[256];UI nb=0;
+  UI c[256]={};i(xn,UC v=xb;I(!c[v]++,b[nb++]=v))
+  Az=aA(nb);i(nb,za=r[b[i]]=aI(c[b[i]]))I(!nb,*zA=oB)
+  MS(c,0,SZ c);i(xn,UC v=xb;_I(r[v])[c[v]++]=i)
+  x(am(aV(xt,nb,b),z))))
