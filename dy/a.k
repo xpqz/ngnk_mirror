@@ -1,5 +1,7 @@
 #!../k
 / https://github.com/xpqz/dyalogk  https://problems.tryapl.org/
+\l ../l/maths.k
+\l ../l/dt.k
 T:{[c;ae]a:-1_ae;e:*|ae;$[c[e;r:f. a];;[R::1;`0:("FAIL";"  FUNC ",`k f;"   CMP ",`k c;"  ARGS ",`k a;"   EXP ",`k e;"   RES ",`k r;"")]]}
 R:0;M:T[~]';A:T[{&/1e-6>,//x|-x-:y}]';D:T[{~/_1e6*(x;y)}]' /R:exit code,M:matching,A:approx equal,D:approx float deep-match
 pi:3.14159265359;AZ:`c$"A"+!26
@@ -143,7 +145,7 @@ rot:{@[x;(2!)#!#x;|:]} /flip pairs at odd indices
 6;f:{x[1]\'x[0]\y}                       ;M((" =";"language=APL dialect=Dyalog";(("language";"APL");("dialect";"Dyalog")));(";:";"duck:donald";,("duck";"donald"))
                                             ("/:";"name:Morten/name:Brian/name:Adám";(("name";"Morten");("name";"Brian");("name";"Adám"))));
 /7;f:{}                                   ;M((1.2;6 5);(3.5;7 2);(1%3;1 3));
-/8;f:{}                                   ;M((1962 10 31;2023 1 1;2023 2 4);(1961 2 23;1961 2 23;1961 2 23));
+8;f:{dt[-1]c+&/(2 lcm/':4#23 28 33)!'-/(u;c):1 dt'(x;y)};M((1962 10 31;2023 1 1;2023 2 4);(1961 2 23;1961 2 23;1961 2 23));
 9;f:{$[(*x)~**x;,/|'0N 2#x;o'x]}         ;M((1+!10;2 1 4 3 6 5 8 7 10 9);(1+!9;2 1 4 3 6 5 8 7 9);(1+4 2#!8;(2 1;4 3;6 5;8 7));(1+4 3#!12;(2 1 3;5 4 6;8 7 9;11 10 12))
                                             (1+3 3 3#!27;((2 1 3;5 4 6;8 7 9);(11 10 12;14 13 15;17 16 18);(20 19 21;23 22 24;26 25 27)))
                                             ((`donald`duck`wrote;`some`good`APL);(`duck`donald`wrote;`good`some`APL)));
