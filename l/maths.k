@@ -9,3 +9,4 @@ isp:{p:2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 /is x prime?
  $[x<62;~^p?x;+/~p!'x;0;&/(1=a)|/x=1+(s-1)q\a:(x!*)/((-1+#d)(q:x!*/2#,:)\2 7 61)@&d:(s:*&b)_b:|2\x-1]}
 mmu:(+/*)\: /matrix multiplication
 inv:{y!*|{x-y*(-*y)!*x}/[1<**:;y,0;x,1]} /multiplicative inverse of x modulo y (extended Euclidean algorithm)
+det:**(1<#:){$[a j:*>a:t|-t:*x;@[(1_x_'j)-(1_x@'j)*\:%/(t_j;t@j);0;*;t[j]*1-2*2!j];0]}/ /determinant
