@@ -39,7 +39,7 @@ S AQ(bsd,P(!*s,aCz(gp))s+=*s=='.';Nn=SL(s);P(n+2>SZ(gp),ez0())MC(gp,s,n+1);au)
   AQ(bsl,Ax=N(u1c(aCz(s)));P(!xn,x(au))C*p=xC,*e=p+xn;P(e[-1]-10,x(err0("eoleof")))e[-1]=0;I(*p=='#'&&p[1]=='!',p=strchrnul(p,10);p+=!!*p)evs(p,1);au)
 S AQ(bsf,K1("{`0:($!h),'\":\",'`k'. h:(&x=^`o`p`q`r`u`v`w`x?@'h)#h:``repl_.:0#`}",ai(!s)))
 S AQ(bsL,Nm=SZ gp;C p[m],q[m+3];MC(p,gp,m);Ax=N(bsd(s));Nn=SL(gp);MC(q,gp,n);MC(q+n,".k",3);bsl(q);MC(gp,p,m);x)
-S AQ(bst,Ln=s[-1]=='t'&&*s==':'?++s,pl(&s):1,t=now();Ax=N(pk(&s,10));x=cpl(aCz(s),x,oS);i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
+S AQ(bst,Ln=s[-1]=='t'&&*s==':'?++s,pl(&s):1;Qp=s;Ax=N(pk(&p,10));x=N(cpl(aCm(s,p),x,oS));L t=now();i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
 S AQ(bsv,bsf(0))
 S A bs_(C**p)_(C*s=*p,*e=strchrnul(s,10),c=*s,d=s[1];*p=e+!!*e;*e=0;
  P(c=='c'&&d=='d'&&(!s[2]||s[2]==32),bscd(s+2+(s[2]==32)))
