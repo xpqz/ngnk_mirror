@@ -5,7 +5,8 @@ R:,/{$[x~"@";*y;x~"$";y 1;x~"%";_*y;x]}\:;d:{r,:"#define ",/:x[0]R/:+a@'!#'a:1_x
 v:"xyzu";t:"ABHILFC";T:t,"ESMmilfscopqruvwx";U:T,"UPRtTzZ",$`cC`lL`fF`sS`zZ`mM`mt`MT`zf`ZF`zc`ZC`zfc`ZFC`mMA`sSA
 /@:arg[0],$:arg[1],%:lower(arg[0])
 d("@$ _$(@)";v;"EKkmNnoRrtUVvWwXxyZz",t,(_t),"t",'U)
-d("@$(a...) _$(@,a)";v;"qe128")
+d("@$(a...) _$(@,a)";v;"q128")
+d("M@(a...) M_(@,a)";v)
 d("@$(a...) P(%t$,a)";"XYZ";U)
 d("@(a) ({A r_=(a);mr(@);r_;})";v)
 d("_@(x) ((@*)_V(x))";t)

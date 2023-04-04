@@ -113,7 +113,7 @@ enum              {tA=1,tE,tB,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr
 #define _W(x) TW[_t(x)]       //item size in bytes
 #define _X(x) _A(x)[-3]       //next
 #define _Z(x) ((HD<<_U(x))-HD)//capacity
-#define _e(x,a...) ({DBG(A t_=)m0(x);TY(({a;}))r_=({a;});DBG(x=0;m1(t_));r_;})//two-phase free()
+#define M_(x,a...) {DBG(A t_=)m0(x);a;DBG(x=0;m1(t_));}//two-phase free()
 #define XYmMA(a...) P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA),a)
 
 #define Lt(t) (L)t<<56
