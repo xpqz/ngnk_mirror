@@ -1,8 +1,8 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define c_(T,R,p) SN V c##T##R(OV*RES v,V*RES w,Nn)_(O T*RES a=v;R*RES r=w;i(PD(n,p),r[i]=a[i]))
 c_(B,H,r)c_(H,B,a)c_(B,I,r)c_(I,B,a)c_(L,B,a)c_(H,I,r)c_(I,H,a)c_(H,L,r)c_(L,H,a)c_(I,L,r)c_(L,I,a)
-SN V cLF(OV*RES v,V*RES w,Nn)_(O L*RES a=v;F*RES r=w;i(PD(n,a),r[i]=a[i]==NL?NF:a[i]))
-SN V cFL(OV*RES v,V*RES w,Nn)_(O F*RES a=v;L*RES r=w;i(PD(n,a),r[i]=a[i]==NF?NL:a[i]))
+SN V cLF(OV*RES v,V*RES w,Nn)_(O L*RES a=v;F*RES r=w;i(n+3&~3,r[i]=a[i]==NL?NF:a[i]))
+SN V cFL(OV*RES v,V*RES w,Nn)_(O F*RES a=v;L*RES r=w;i(n+3&~3,r[i]=a[i]==NF?NL:a[i]))
 X1(flp,Rm(Ay=kv(&x);YA(I(yn>1,Ln=cfm(yA,yn);P(n<0,x(el1(y)))i(yn,Az=ya;I(ztt,y=mut(y);ya=rsz(n,z))))aM(x,y))YT(aM(x,e1f(enl,y)))en2(x,y))RM(Ay=kv(&x);am(x,y))Rt(enl(enl(x)))R_(enl(x))
  RA(Nm=xn;Ln=cfm(xA,m|!m);P(n==-1,enl(x))P(n<0,el1(x))Ct=_t(xx);I(t<tM,i(m,Ay=xa;B(yt-t,t=0)))E(t=0)Ay=aA(n);
   P(!t,i(n|!n,Az=aA(m);j(m,zA[j]=ii(xA[j],i))I(!zn,zx=mkn(zx))ya=sqz(z))x(0);I(!yn,yx=mkn(yx))y)
