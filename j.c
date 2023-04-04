@@ -20,9 +20,8 @@ S N nl(Lv)_(P(v==NL,4)Nn=v<0?(v=-v),2:1;UL m=10;W(m<=v&&n<19,n++;m*=10)n)
 S V Jl(Lv){s=v-NL?sl(s,v):MC(s,"null",4)+4;}
 S N nx(Ax/*0*/)_(X(Ri(nl(xv))Rl(nl(*xL))Rc(Cc=xv;nC(&c,1))RC(nC(xC,xn))Rf(Fv=*xF;P(v==(L)v,nl(v))P(v!=v,4)Cb[32];sf(b,*(L*)&v)-b)Rm(nx(xx)+nx(xy)-1-!_N(xx))Ru(x-au?4:5))
  XMT(Nn=xN,m=1+n+!n;i(n,m+=nX(ii(x,i)))m)nX(str(xR)))
-S V Jx(Ax/*0*/){X(C(ti,s=sl(s,xv))C(tl,Jl(*xL))C(tc,Cc=xv;JC(&c,1))C(tC,JC(xC,xn))C(tm,*s++='{';i(xN,I(i,*s++=44)JX(ii(xx,i));*s++=':';JX(ii(xy,i)))*s++='}')
- C(tf,Fv=*xF;s=v==(L)v?sl(s,v):v!=v?MC(s,"null",4)+4:sf(s,*(L*)&v))C(tu,Nn=x-au?4:5;MC(s,x-au?"true":"false",n);s+=n)
- D(I(xtMT,*s++='[';i(xN,I(i,*s++=44)JX(ii(x,i)))*s++=']')E(JX(str(xR)))))}
+S A Jx(Ax/*0*/){X(Rm(*s++='{';i(xN,I(i,*s++=44)JX(ii(xx,i));*s++=':';JX(ii(xy,i)))*s++='}';x)Rf(Fv=*xF;s=v==(L)v?sl(s,v):v!=v?MC(s,"null",4)+4:sf(s,*(L*)&v);x)Ri(s=sl(s,xv);x)
+ Rl(Jl(*xL);x)Rc(Cc=xv;JC(&c,1);x)RC(JC(xC,xn);x)Ru(Nn=x-au?4:5;MC(s,x-au?"true":"false",n);s+=n;x)R_(I(xtMT,*s++='[';i(xN,I(i,*s++=44)JX(ii(x,i)))*s++=']')E(JX(str(xR)))x))}
 S N nX(Ax/*1*/)_(Nn=nx(x);x(0);n)
 S V JX(Ax/*1*/){Jx(x);x(0);}
 A1(js1,Ay=aC(nx(x));s=yC;JX(x);Q(s==yC+yn);y)
