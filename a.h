@@ -50,7 +50,7 @@
 #define Ab8 A b[8];
 #define Lij Li=*xL,j=xL[1];
 
-TD void V;TD char B,C;TD char unsigned UB,UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int UI;TD long long L;TD double F;TD size_t N;
+TD void V;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int UI;TD long long L;TD double F;TD size_t N;
 TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX(A,OA*,I),AL(L),ALA(L,A),AAL(A,L),AQ(Q);TD O C OCA[];
 
 #define  A0(f,b...) A f(           )_(b)
@@ -64,10 +64,10 @@ TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX
 #define ALA(f,b...) A f(Ln,Ax      )_(b)
 #define AAL(f,b...) A f(Ax,Li      )_(b)
 #define  AQ(f,b...) A f(Qs         )_(b)
-A1 _R,aA1,asc,AZ,cA,cB,cC,cF,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,gZ,grp,hex,imx,imn,inv,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,
+A1 _R,aA1,asc,AZ,cA,cG,cC,cF,cH,cI,cL,cS,csti,des,dsc,enl,epr,err,fir,flp,flr,frk,gZ,grp,hex,imx,imn,inv,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,
  neg,not,nul,of0,of1,opn,out,prng,qkmp,qpri,raz,rev,rs0,ser,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,unh,unq,val,whr;
 A2 _1,aA2,aM,add,am,apd,cat,cat10,cat11,cst,dct,dex,dot,dvd,eql,exc,fil,fnd,gtn,hsh,ie,i1,ltn,mod,mnm,bng,mtc,mul,mxm,que,sub,und,v0c,v1c;A3 _2,aA3,arf,arp,ars,cpl,r2,try;
-A4 ara,a4,d4;AX _8,e8,f8,prj,run;AA a8,d8,ins,no8;AL aA,aB,aC,aF,aI,aL,aS,al,az,cls,rndF,tilL;ALA drp,room,rnd,rsz;AAL ii,io;AQ aCz,bsl,bsm,die,sym;
+A4 ara,a4,d4;AX _8,e8,f8,prj,run;AA a8,d8,ins,no8;AL aA,aG,aC,aF,aI,aL,aS,al,az,cls,rndF,tilL;ALA drp,room,rnd,rsz;AAL ii,io;AQ aCz,bsl,bsm,die,sym;
 A a2t(A,A,C),aA0(N),aE(L,L),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),evC(C*,I),evs(Q,I),k1(A*,Q,A),k2(A*,Q,A,A),
  k8(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(I,N),pk(Q*,C),pen(A,A1*),slc(A,N,N),unhC(Q,N),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A),
  w1(I,A,A),w2(I,A,A,A),w8(I,A,OA*,N);
@@ -79,12 +79,12 @@ EX I pg,gn,gk[];EX C gp[32];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX
 
 //                 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
 //                   () !n ,3 ,4 ,5 ,6 ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
-enum              {tA=1,tE,tB,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
+enum              {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
 #define T_ OCA TS="?""A""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
                TW={0, 8, 8, 1, 2, 4, 8, 8, 1, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8},/*item size in bytes        */\
                Tw={0, 4, 3, 0, 1, 2, 3, 3, 0, 2, 4, 4, 3, 3, 3, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3},/*log2(size) or 4=reftypes  */\
-               TT={0,tA,tL,tB,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
-               TX={0,tB,tB,tB,tH,tI,tL,tF,tB,tI,tB,tB, 0, 0,tF,tB,tI,tB,tB,tB,tB,tB,tB,tB,tB},/*type for arith conformance*/\
+               TT={0,tA,tL,tG,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
+               TX={0,tG,tG,tG,tH,tI,tL,tF,tG,tI,tG,tG, 0, 0,tF,tG,tI,tG,tG,tG,tG,tG,tG,tG,tG},/*type for arith conformance*/\
                Tk="0""L""I""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*types for k.h             */
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
 #define TU(t) ((t)>=to)
@@ -93,7 +93,7 @@ enum              {tA=1,tE,tB,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr
 #define _k(x) _C(x)[-13]      //arity(for funcs)                         | tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
 #define _m(x) ((I*)_V(x))[-7] //shadow refcount                          |  tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
 #define _n(x) _L(x)[-1]       //length                                   |  tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
-#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_B(x)[-13])//srcoffset |  ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
+#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_G(x)[-13])//srcoffset |  ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
 #define _q(x,y) (x=apd(x,y))  //append                                   |  ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
 #define _r(x) ((I*)_V(x))[-3] //refcount
 #define _t(x) ({A x_=(x);Ct=_t0(x_);t?t:_t1(x_);})//type
@@ -163,7 +163,7 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define    R_(a...) default:_(a)
 #define    RA(a...) R(tA,a)
 #define    RE(a...) R(tE,a)
-#define    RB(a...) R(tB,a)
+#define    RG(a...) R(tG,a)
 #define    RH(a...) R(tH,a)
 #define    RI(a...) R(tI,a)
 #define    RL(a...) R(tL,a)
@@ -194,25 +194,25 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define    Rz(a...) R2(ti,tl,a)
 #define   Ric(a...) R2(ti,tc,a)
 #define   Rzc(a...) R3(ti,tl,tc,a)
-#define   RBC(a...) R2(tB,tC,a)
+#define   RGC(a...) R2(tG,tC,a)
 #define  Rilf(a...) R3(ti,tl,tf,a)
 #define  RmMA(a...) R3(tm,tM,tA,a)
 #define  Ropq(a...) R3(to,tp,tq,a)
 #define  Ruvw(a...) R3(tu,tv,tw,a)
-#define  RZ_E(a...) R4(tB,tH,tI,tL,a)
-#define    RZ(a...) R5(tE,tB,tH,tI,tL,a)
-#define RZC_E(a...) R5(tB,tH,tI,tL,tC,a)
-#define RZF_E(a...) R5(tB,tH,tI,tL,tF,a)
-#define   RZC(a...) R6(tE,tB,tH,tI,tL,tC,a)
-#define   RZF(a...) R6(tE,tB,tH,tI,tL,tF,a)
+#define  RZ_E(a...) R4(tG,tH,tI,tL,a)
+#define    RZ(a...) R5(tE,tG,tH,tI,tL,a)
+#define RZC_E(a...) R5(tG,tH,tI,tL,tC,a)
+#define RZF_E(a...) R5(tG,tH,tI,tL,tF,a)
+#define   RZC(a...) R6(tE,tG,tH,tI,tL,tC,a)
+#define   RZF(a...) R6(tE,tG,tH,tI,tL,tF,a)
 #define    RU(a...) R7(to,tp,tq,tr,tu,tv,tw,a)
-#define   RzZ(a...) R7(tE,tB,tH,tI,tL,ti,tl,a)
-#define RT_AE(a...) R7(tB,tH,tI,tL,tF,tC,tS,a)
-#define  RT_A(a...) R8(tE,tB,tH,tI,tL,tF,tC,tS,a)
-#define  RT_E(a...) R8(tA,tB,tH,tI,tL,tF,tC,tS,a)
-#define    RT(a...) R9(tA,tE,tB,tH,tI,tL,tF,tC,tS,a)
-#define RMT_E(a...) R9(tA,tB,tH,tI,tL,tF,tC,tS,tM,a)
-#define   RMT(a...) R10(tA,tE,tB,tH,tI,tL,tF,tC,tS,tM,a)
+#define   RzZ(a...) R7(tE,tG,tH,tI,tL,ti,tl,a)
+#define RT_AE(a...) R7(tG,tH,tI,tL,tF,tC,tS,a)
+#define  RT_A(a...) R8(tE,tG,tH,tI,tL,tF,tC,tS,a)
+#define  RT_E(a...) R8(tA,tG,tH,tI,tL,tF,tC,tS,a)
+#define    RT(a...) R9(tA,tE,tG,tH,tI,tL,tF,tC,tS,a)
+#define RMT_E(a...) R9(tA,tG,tH,tI,tL,tF,tC,tS,tM,a)
+#define   RMT(a...) R10(tA,tE,tG,tH,tI,tL,tF,tC,tS,tM,a)
 #define  Rt_z(a...) R11(tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
 #define    Rt(a...) R13(ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
 

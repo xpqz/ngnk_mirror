@@ -15,7 +15,7 @@ S F pfu(Q*p)_(UL v=pu(p);Qs=*p;Cc=*s;P(c=='n'||c=='w',(*p)++;c=='n'?NF:WF)I e=0;
  S F t[309];I(!*t,*t=1;i(308,t[i+1]=10*t[i]))
  *p=s;e<0?v/t[-e]:v*t[e])
 F pf(Q*p)_(Im=**p=='-';(*p)+=m;Fv=(1-2*m)*pfu(p);(*p)+=**p=='f';v)                                  //parse float
-S A0(pZ,Qp=s;W(*p-'0'<2u,p++)P(*p=='b',Ax=aB(p-s);i(xn,xb=*s++&1)s++;x)                             //parse ints
+S A0(pZ,Qp=s;W(*p-'0'<2u,p++)P(*p=='b',Ax=aG(p-s);i(xn,xg=*s++&1)s++;x)                             //parse ints
  Ax=oL;W(1,Lv=pl(&s);I(!v&&*s=='N',v=NL;s++)x=apv(x,&v);Qp=pw(s);B(p==s||!num(p))s=p)sqzZ(x))
 S A0(pF,Ax=oF;W(1,x=apv(x,A(pf(&s)));Qp=pw(s);B(p==s||!num(p))s=p)x)                                //parse floats
 S A0(pC,Ax=oC;Cc=*++s;W(c&&c-'"',I(c=='\\',c=*++s;Ii=si("tnr0",c);I(i<4,c="\t\n\r"[i]))             //parse quoted string

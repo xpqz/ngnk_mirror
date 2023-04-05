@@ -19,9 +19,9 @@ S UL r()_(I(nb<4,r4())b[--nb])//random 64 bits
 S UI ri(UL m)_((UI)r()*m>>32)//random int mod m
 S F rf()_(Lv=1023ll<<52|(r()&-1ull>>12);-1+*(F*)&v)//random float 0..1
 
-S A sh(Nn)_(Ax=an(n,tZ(n));S4(xw,i(n,Ij=ri(i+1);xb=xB[j];xB[j]=i),i(n,Ij=ri(i+1);xh=xH[j];xH[j]=i),i(n,Ij=ri(i+1);xi=xI[j];xI[j]=i),ez1(x))x)//shuffle
+S A sh(Nn)_(Ax=an(n,tZ(n));S4(xw,i(n,Ij=ri(i+1);xg=xG[j];xG[j]=i),i(n,Ij=ri(i+1);xh=xH[j];xH[j]=i),i(n,Ij=ri(i+1);xi=xI[j];xI[j]=i),ez1(x))x)//shuffle
 S A ro0(Nn)_(Ax=aL(n);i(n+3>>2,r4();MC(xV+(i<<5),b,32))x)
-S A ro(Nn,UL m)_(P(!m,ro0(n))Ct=tZ(m-1);Ax=an(n,t);S4(t-tB,i(n,xb=ri(m)),i(n,xh=ri(m)),i(n,xi=ri(m)),i(n,xl=r())I(m,i(n,xl%=m)))x)//roll
+S A ro(Nn,UL m)_(P(!m,ro0(n))Ct=tZ(m-1);Ax=an(n,t);S4(t-tG,i(n,xg=ri(m)),i(n,xh=ri(m)),i(n,xi=ri(m)),i(n,xl=r())I(m,i(n,xl%=m)))x)//roll
 //S A de0(Nn,UL m)_(Ax=aL(n);i(n,xl=r()%(m-n+i+1);j(i,B(xl==xL[j],xl=m-n+i)))i(n,Ij=ri(i+1);SWP(xl,xL[j]))cT[tZ(m)](x))
 S A de1(Nn,UL m)_(Ax=aL(n),y=aL(m+63>>6);MS(yV,0,8*yn);i(n,UL v=r()%(m-n+i+1);I(yL[v/64]>>v%64&1,xl=m-n+i)E(xl=v;yL[v/64]|=1ll<<v%64))y(0);i(n,Ij=ri(i+1);SWP(xl,xL[j]))cT[tZ(m)](x))
 S A de2(Nn,UL m)_(Ax=aL(n);L*a=xL,j=-1,q=m-n+1;Fv=exp(log(rf())/n);
