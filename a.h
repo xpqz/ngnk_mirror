@@ -40,7 +40,6 @@
 #define SL strlen
 #define MIN(x,y) ({TY(x) x_=(x),y_=(y);x_<y_?x_:y_;})
 #define MAX(x,y) ({TY(x) x_=(x),y_=(y);x_>y_?x_:y_;})
-#define ROT(x,y) ({TY(x) x_=(x);TY(y) y_=(y);y?x_<<y_|x_>>SZ(x)*8-y_:x;})
 #define IN(i,n) ((i)<(UL)(n))
 #define LH(x,y,z) ((y)-(x)<=(UI)((z)-(x)))//between(low,high)
 #define C09(c) LH('0',c,'9')

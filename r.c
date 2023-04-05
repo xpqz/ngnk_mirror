@@ -14,7 +14,7 @@ S UL s[][M]={{0xd5a986ae75c9a33b,0x9c57a73dcd5e41b7,0x3fe497b4dd1be68d,0x3f57adc
 S UL b[M];S N nb;//buf
 A1(prng,P(x==au,aV(tL,4*M,s))XZ(P(xn-4*M,el1(x))MC(s,xV,SZ s);nb=0;x(au))Xz(UL v=gl(x);I(!v,v=now())i(4,j(M,s[i][j]=v=v*6364136223846793005+1442695040888963407/*knuth mmix*/))au)et1(x))
 S V h(I x,I y){i(M,s[x][i]^=s[y][i])}
-S V r4(){nb=M;UL t[M];i(M,b[i]=s[0][i]+s[3][i])i(M,t[i]=s[1][i]<<17)h(2,0);h(3,1);h(1,2);h(0,3);i(M,s[2][i]^=t[i])i(M,s[3][i]=ROT(s[3][i],45))}//next 4*64 bits
+S V r4(){nb=M;UL t[M];i(M,b[i]=s[0][i]+s[3][i])i(M,t[i]=s[1][i]<<17)h(2,0);h(3,1);h(1,2);h(0,3);i(M,s[2][i]^=t[i])i(M,s[3][i]=(s[3][i]<<45|s[3][i]>>19))}//next 4*64 bits
 S UL r()_(I(nb<4,r4())b[--nb])//random 64 bits
 S UI ri(UL m)_((UI)r()*m>>32)//random int mod m
 S F rf()_(Lv=1023ll<<52|(r()&-1ull>>12);-1+*(F*)&v)//random float 0..1
