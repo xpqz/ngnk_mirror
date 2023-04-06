@@ -6,7 +6,7 @@
  #define MAP_NORESERVE 0
 #endif
 S ST{V*p;Ln;UC f;}reg[128];S UC nreg,npnd,pnd[L(reg)];
-S V mc(){I(npnd,i(npnd,Ij=pnd[i];munmap(reg[j].p,reg[j].n);Q(reg[j].f);reg[j].p=0)npnd=0;Ij=0;i(nreg,I(reg[i].p,MC(reg+j,reg+i,SZ*reg);j++))nreg=j)}
+S V mc(){P(!npnd)i(npnd,Ij=pnd[i];munmap(reg[j].p,reg[j].n);Q(reg[j].f);reg[j].p=0)npnd=0;Ij=0;i(nreg,I(reg[i].p,MC(reg+j,reg+i,SZ*reg);j++))nreg=j;}
 S A mu(V*p)_(i(nreg,P(reg[i].p==p,pnd[npnd++]=i;0))die("UNMAP"))
 S V*mm(Nn,If)_(V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_ANON,-1,0);P((L)p<pg,(V*)0)I(nreg==L(reg),mc();I(nreg==L(reg),die("MMAP")))reg[nreg++]=(TY(*reg)){p,n,f};p)
 S A mx(Nn)_(V*p=mm(n,0);P(!p,die("OOM"))(A)(p+HD))
