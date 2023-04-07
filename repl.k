@@ -72,8 +72,8 @@ special:  var:y     set    a:1;a -> 1
           var::y    global a:1;{a::2}[];a -> 2
           (v;..):y  unpack (b;(c;d)):(2 3;4 5);c -> 4
           :x        return {:x+1;2}[3] -> 4
-          $[x;y;..] cond   $[0;`a;"\0";`b;`;`c;();`d;`e] -> `e
-          o[..]     recur  {$[x<2;x;+/o'x-1 2]}9 -> 34
+          :[x;y;..] cond   :[0;`a;"\0";`b;`;`c;();`d;`e] -> `e
+          o[..]     recur  {:[x<2;x;+/o'x-1 2]}9 -> 34
           [..]      progn  [0;1;2;3] -> 3
 
 ::  self      ::12 -> 12
@@ -182,8 +182,8 @@ Adverbs:   ' / \ ': /: \:
  x F\ seeded \  10+\1 2 3 -> 11 13 16
  i f/ n-do      5(2*)/1 -> 32
  i f\ n-dos     5(2*)\1 -> 1 2 4 8 16 32
- f f/ while     (1<){$[2!x;1+3*x;-2!x]}/3 -> 1
- f f\ whiles    (1<){$[2!x;1+3*x;-2!x]}\3 -> 3 10 5 16 8 4 2 1
+ f f/ while     (1<){:[2!x;1+3*x;-2!x]}/3 -> 1
+ f f\ whiles    (1<){:[2!x;1+3*x;-2!x]}\3 -> 3 10 5 16 8 4 2 1
    f/ converge  {1+1.0%x}/1 -> 1.618033988749895
    f\ converges (-2!)\100 -> 100 50 25 12 6 3 1 0
    C/ join      "ra"/("ab";"cadab";"") -> "abracadabra"
@@ -198,23 +198,23 @@ x F/: eachright 1 2*/:3 4 -> (3 6;4 8)
 x F\: eachleft  1 2*\:3 4 -> (3 4;6 8)
 --------------------------------------------------------------------------------
 \h
-: SET      RETURN    '  each|slide|bin
-+ add      flip      /  fold|join |dec|comment
-- subtract negate    \  scan|split|enc|trace
-* multiply first     ': eachprior
-% divide   sqrt      /: eachright
-! mod|dict enum|key  \: eachleft
-& min|and  where
-| max|or   reverse   /
-< less     ascend    multiline comment
-> more     descend   \
-= equal    group
-~ match    not       0: lines i/o
-, concat   enlist    1: bytes i/o
-^ without  null
-# reshape  length
+: SET      RETURN    :[c;t;f]     COND
++ add      flip
+- subtract negate    '  each|slide|bin
+* multiply first     /  fold|join |dec|comment
+% divide   sqrt      \  scan|split|enc|trace
+! mod|dict enum|key  ': eachprior
+& min|and  where     /: eachright
+| max|or   reverse   \: eachleft
+< less     ascend
+> more     descend   /
+= equal    group     multiline comment
+~ match    not       \
+, concat   enlist
+^ without  null      0: lines i/o
+# reshape  length    1: bytes i/o
 _ drop|cut floor
-$ cast     string    $[c;t;f]     COND
+$ cast     string
 ? find|rnd uniq      ?[a;i;b]     splice
 @ apply(1) type      @[x;i;[f;]y] amend
 . apply(n) eval      .[x;i;[f;]y] drill
