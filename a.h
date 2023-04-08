@@ -35,9 +35,9 @@
 #define M2(x) M1(x)
 #define EX extern
 #define Q(x) DBG(I(!(x),die(__FILE__":"M2(__LINE__)": "#x)))//assert
-#define MS memset
-#define MC memcpy
-#define SL strlen
+#define MS __builtin_memset
+#define MC __builtin_memcpy
+#define SL __builtin_strlen
 #define MIN(x,y) ({TY(x) x_=(x),y_=(y);x_<y_?x_:y_;})
 #define MAX(x,y) ({TY(x) x_=(x),y_=(y);x_>y_?x_:y_;})
 #define IN(i,n) ((i)<(UL)(n))
@@ -211,6 +211,7 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define  RT_E(a...) R8(tA,tG,tH,tI,tL,tF,tC,tS,a)
 #define    RT(a...) R9(tA,tE,tG,tH,tI,tL,tF,tC,tS,a)
 #define RMT_E(a...) R9(tA,tG,tH,tI,tL,tF,tC,tS,tM,a)
+#define RMT_C(a...) R9(tA,tE,tG,tH,tI,tL,tF,tS,tM,a)
 #define   RMT(a...) R10(tA,tE,tG,tH,tI,tL,tF,tC,tS,tM,a)
 #define  Rt_z(a...) R11(tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
 #define    Rt(a...) R13(ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
