@@ -8,7 +8,7 @@ S A3(___f,/*010*/Ni=!y;I(i,y=ii(z,0))Nn=zn;W(i<n,y=y(x2(y,ii(z,i++)));B(!y))y)
 S A3(dexf,/*010*/Au=las(zR);y?y(u):u)
 L minfZ(Lv,Ax/*0*/)_(i4(xw,xn,MINE(v,xg),MINE(v,xh),MINE(v,xi),MINE(v,xl))v)
 L maxfZ(Lv,Ax/*0*/)_(i4(xw,xn,MAXE(v,xg),MAXE(v,xh),MAXE(v,xi),MAXE(v,xl))v)
-S A3(mmmf,/*010*/Ii=xv==7;P((y&&ytf)||ztF,y=of1(y?cF(y):af(i?-WF:WF));z=of1(cF(zR));of0(N(z(mmmf(x,y,z)))))Lv=y?gl(y):i?-WL:WL;
+S A3(mmmf,/*010*/Ii=xv==7;P((y&&ytf)||ztF,y=of1(y?cF(y):aV(tf,1,A((L)i<<63|WFL)));z=of1(cF(zR));of0(N(z(mmmf(x,y,z)))))Lv=y?gl(y):i?-WL:WL;
  L l=-1ll<<8*zW-1,h=~l;Nn=zn;P((i?v>=h:v<=l)||!n,az(v))v=v<l?l:v>h?h:v;az(i?maxfZ(v,z):minfZ(v,z)))
 L addfZ(Lv,Ax/*0*/)_(i4(xw,xn,v+=xg,v+=xh,v+=xi,v+=xl)v)
 L mulfZ(Lv,Ax/*0*/)_(i4(xw,xn,v*=xg,v*=xh,v*=xi,v*=xl)v)

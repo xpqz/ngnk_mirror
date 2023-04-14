@@ -3,9 +3,10 @@ NI I mtc_(Ax,Ay/*00*/)_(P(x==y,1)P(xt==yt&&((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw
  P(xtZ&&ytZ&&xt-yt&&xn==yn,Ct=MAX(xt,yt);x=cT[t](xR);y=cT[t](yR);x(y(!memcmp(xV,yV,xn*xW))))P(xt-yt||xtP||(xtr&&xE-yE)||xn-yn,0)
  P(!xtR||(LH(tG,xt,tS)&&xt==yt&&xn==yn),!memcmp(xV,yV,xn*xW))i(xn|!xn,P(!mtc_(xa,ya),0))1)
 A2(mtc,/*01*/y(ai(mtc_(x,y))))
-S O UL o=(-1ull>>12)-1;S L t(Lv)_(v^(UL)(v>>63)>>1)
-S L o1(Lv)_(t(v)+o)A1(of1,Q(xtfF);Ay=an(xn,xt+tl-tf);Mx(i(xn+3&~3,yl=o1(xl)))y)
-S L o0(Lv)_(t(v-o))A1(of0,Q(xtlL);Ay=an(xn,xt-tl+tf);Mx(i(xn+3&~3,yl=o0(xl)))y)
+S O UL o=(-1ull>>12)-1;S L t(Lv)_(v^(UL)(v>>63)>>1);S A of_(A,I);
+S L o0(Lv)_(t(v-o))S V of0LL(O L*a,L*r,Nn){i(n+3&~3,r[i]=o0(a[i]))}A1(of0,Q(xtlL);of_(x,0))
+S L o1(Lv)_(t(v)+o)S V of1LL(O L*a,L*r,Nn){i(n+3&~3,r[i]=o1(a[i]))}A1(of1,Q(xtfF);of_(x,1))
+S A of_(Ax,If)_(Nn=xn;Ct=xt+(tf-tl)*(1-2*f);Ay=xr-1?an(n,t):AT(t,xR);Mx((f?of1LL:of0LL)(xV,yV,n))y)
 S I ql(Li,Lj)_(i<j?-1:i>j)
 I qf(F u,Fv)_(ql(o1(*(L*)&u),o1(*(L*)&v)))
 I qA(Ax,Ay/*00*/)_(P(mtc_(x,y),0)P(xtf&&ytf,qf(*xF,*yF))P(xtzc&&ytf,qf(gl_(x),*yF))P(xtf&&ytzc,qf(*xF,gl_(y)))

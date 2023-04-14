@@ -129,8 +129,8 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
               aw=Lt(tw)};
 #define NFL 0x7ff8000000000000ll
 #define WFL 0x7ff0000000000000ll
-#define NF (*(F*)(L[]){NFL})
-#define WF __builtin_inf()
+#define NF (*(F*)A(NFL))
+#define WF (*(F*)A(WFL))
 #define NL (1ll<<63)
 #define WL (~NL)
 #define K(s,a...) ({S A f;k8(&f,s,A(a),L(A(a)));})
