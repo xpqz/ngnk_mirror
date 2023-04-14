@@ -2,7 +2,7 @@
 #define c_(T,R,p) SN V c##T##R(OV*RES v,V*RES w,Nn)_(O T*RES a=v;R*RES r=w;i(PD(n,p),r[i]=a[i]))
 c_(G,H,r)c_(H,G,a)c_(G,I,r)c_(I,G,a)c_(L,G,a)c_(H,I,r)c_(I,H,a)c_(H,L,r)c_(L,H,a)c_(I,L,r)c_(L,I,a)
 SN V cLF(OV*RES v,V*RES w,Nn)_(O L*RES a=v;F*RES r=w;i(n+3&~3,r[i]=a[i]==NL?NF:a[i]))
-SN V cFL(OV*RES v,V*RES w,Nn)_(O F*RES a=v;L*RES r=w;i(n+3&~3,r[i]=a[i]==NF?NL:a[i]))
+SN V cFL(OV*RES v,V*RES w,Nn)_(O F*RES a=v;L*RES r=w;i(n+3&~3,r[i]=a[i]!=a[i]?NL:a[i]))
 X1(flp,Rt(enl(enl(x)))R_(enl(x))RM(Ay=kv(&x);am(x,y))
  Rm(Ay=kv(&x);Y(RA(I(yn>1,Ln=cfm(yA,yn);P(n<0,x(el1(y)))i(yn,Az=ya;I(ztt,y=mut(y);ya=rsz(n,z))))aM(x,y))RT_A(aM(x,e1f(enl,y)))R_(en2(x,y)))0)
  RA(Nm=xn;Ln=cfm(xA,m|!m);P(n==-1,enl(x))P(n<0,el1(x))Ct=_t(xx);I(t<tM,i(m,Ay=xa;B(yt-t,t=0)))E(t=0)Ay=aA(n);
@@ -32,8 +32,8 @@ X1(cI,RmMA(e1f(cI,x))RI(x)Rzc(ai(gl(x)))RfF(cI(N(cL(x))))R4(tG,tH,tL,tC,Ay=aI(xn
 X1(cL,RmMA(e1f(cL,x))RlL(x)Ric(al(xv))RF(Ay=aL(xn);Mx(cFL(xV,yV,yn))y)Rf(al(gf(x)))RE(cL(gZ(x)))R_(x=N(cI(x));Ay=aL(xn);Mx(cIL(xV,yV,yn))y))
 X1(cF,RmMA(e1f(cF,x))RfF(x)Rzc(af(gl(x)))R_(x=N(cL(x));Ay=aF(xn);Mx(cLF(xV,yV,yn))y))
 X1(cS,RmMA(e1f(cS,x))RsS(x)RC(x=str0(x);x(sym(xV)))Rc(as(xv))R_(et1(x)))
-X1(pI,RmMA(e1f(pI,x))Rc(pI(enl(x)))RC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tl])))Lv=pl(&s);x(*s?_R(cn[tl]):az(v)))R_(et1(x)))
-X1(pF,RmMA(e1f(pF,x))Rc(pF(enl(x)))RC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tf])))Fv=pf(&s);x(*s?_R(cn[tf]):af(v)))R_(et1(x)))
+X1(pI,RmMA(e1f(pI,x))Rc(pI(enl(x)))RC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tl])))Lv=pl(&s);x(*s?_R(cn[tl]):az(v)      ))R_(et1(x)))
+X1(pF,RmMA(e1f(pF,x))Rc(pF(enl(x)))RC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tf])))Lv=pf(&s);x(*s?_R(cn[tf]):aV(tf,1,&v)))R_(et1(x)))
 A1*cT[]={[tA]=cA,cL,cG,cH,cI,cL,cF,cC,cS};
 X1(csti,RmMA(e1f(csti,x))RF(sqzZ(cL(x)))Rf(az(gf(x)))RC(cG(x))Rc(ai(xv))Ruvw(ai(xv))RzZ(x)R_(et1(x)))
 Y2(cstz,RmMA(e2f(cstz,x,y))RC(K2("{y@(!x)+(x<0)*#y}",x,y))Rc(cst(x,enl(y)))R_(et1(y)))

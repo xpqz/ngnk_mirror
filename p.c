@@ -9,12 +9,12 @@ S Q pw(Qs)_(W(*s==32,s++)s)                                                     
 Q pID(Qs)_(W(1,Ii=id1(*s);B(!i)s+=i)s)                                                              //parse identifier
 L pu(Q*p)_(Qs=*p;Lv=0;Cc=*s;W(C09(c),v=10*v+c-'0';c=*++s)*p=s;v)                                    //parse long int unsigned
 L pl(Q*p)_(Im=**p=='-';*p+=m;(1-2*m)*pu(p))                                                         //parse long int
-S F pfu(Q*p)_(UL v=pu(p);Qs=*p;Cc=*s;P(c=='n'||c=='w',(*p)++;c=='n'?NF:WF)I e=0;                    //parse float unsigned
+S L pfu(Q*p)_(UL v=pu(p);Qs=*p;Cc=*s;P(c=='w',(*p)++;WFL)P(c=='n',(*p)++;v^NFL)I e=0;               //parse float unsigned
  I(c=='.',c=*++s;W(C09(c),I(v<(1ull<<63)/10,v=10*v+c-'0';e--)c=*++s))
- I(c=='e',s++;e+=pl(&s);P(e<-308,0)P(e>308,WF))
+ I(c=='e',s++;e+=pl(&s);P(e<-308,0)P(e>308,WFL))
  S F t[309];I(!*t,*t=1;i(308,t[i+1]=10*t[i]))
- *p=s;e<0?v/t[-e]:v*t[e])
-F pf(Q*p)_(Im=**p=='-';(*p)+=m;Fv=(1-2*m)*pfu(p);(*p)+=**p=='f';v)                                  //parse float
+ *p=s;*(L*)A(e<0?v/t[-e]:v*t[e]))
+L pf(Q*p)_(Im=**p=='-';(*p)+=m;Lv=(UL)m<<63|pfu(p);(*p)+=**p=='f';v)                                //parse float
 S A0(pZ,Qp=s;W(*p-'0'<2u,p++)P(*p=='b',Ax=aG(p-s);i(xn,xg=*s++&1)s++;x)                             //parse ints
  Ax=oL;W(1,Lv=pl(&s);I(!v&&*s=='N',v=NL;s++)x=apv(x,&v);Qp=pw(s);B(p==s||!num(p))s=p)sqzZ(x))
 S A0(pF,Ax=oF;W(1,x=apv(x,A(pf(&s)));Qp=pw(s);B(p==s||!num(p))s=p)x)                                //parse floats

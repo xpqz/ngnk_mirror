@@ -71,9 +71,9 @@ A a2t(A,A,C),aA0(N),aE(L,L),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),
  k8(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(I,N),pk(Q*,C),pen(A,A1*),slc(A,N,N),unhC(Q,N),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A),
  w1(I,A,A),w2(I,A,A,A),w8(I,A,OA*,N);
 V cyc(V*,N,N),eS(A,N),eQ(Q,N,N),exit(I),hexC(Q,N,C*),kargs(I,Q*),kinit(),*memmem(OV*,N,OV*,N),mrn(N,OA*),mRn(N,OA*),repl(),tilV(V*,L,L,I);
-F gf(A),pf(Q*);N _N(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);Q qs(O L*),pID(Q);
+F gf(A);N _N(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);Q qs(O L*),pID(Q);
 I _K(A),qA(A,A),qf(F,F),js_eval(C*,I,C*,I),mtc_(A,A),si(Q,I),rnk(A);
-L cfm(OA*,I),gl_(A),gl(A),iw(A,I,L),now(),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);
+L cfm(OA*,I),gl_(A),gl(A),iw(A,I,L),now(),pf(Q*),pl(Q*),pu(Q*),tru(A),fI(OV*,N,L),fL(OV*,N,L),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);
 EX I pg,gn,gk[];EX C gp[32];EX A gv[],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env,HEX;EX OCA vc,TS,Tw,TW,TT,TX,Tk;
 
 //                 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
@@ -127,7 +127,9 @@ enum              {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr
 enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,FLR,STR,UNQ,TYP,VAL,U0C,U1C,LAS,IMN,IMX,OUT,
               av=Lt(tv),ADD,SUB,MUL,DVD,MOD,MNM,MXM,LTN,GTN,EQL,MTC,CAT,EXC,RSH,UND,CST,QUE,AP1,DOT,V0C,V1C,V2C,V3C,MKL,PLH,
               aw=Lt(tw)};
-#define NF (*(F*)(L[]){0x7ff8000000000000ll})
+#define NFL 0x7ff8000000000000ll
+#define WFL 0x7ff0000000000000ll
+#define NF (*(F*)(L[]){NFL})
 #define WF __builtin_inf()
 #define NL (1ll<<63)
 #define WL (~NL)
