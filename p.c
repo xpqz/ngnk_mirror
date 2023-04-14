@@ -20,7 +20,6 @@ S A0(pZ,Qp=s;W(*p-'0'<2u,p++)P(*p=='b',Ax=aG(p-s);i(xn,xg=*s++&1)s++;x)         
 S A0(pF,Ax=oF;W(1,x=apv(x,A(pf(&s)));Qp=pw(s);B(p==s||!num(p))s=p)x)                                //parse floats
 S A0(pC,Ax=oC;Cc=*++s;W(c&&c-'"',I(c=='\\',c=*++s;Ii=si("tnr0",c);I(i<4,c="\t\n\r"[i]))             //parse quoted string
  x=apc(x,c);c=*++s)P(!c,ep1(x))c=*++s;x)
-S C ph()_(Cc=*s;C09(c)?c-'0':c-'a'<6u?c+10-'a':16)                                                  //parse hex digit
 S A0(p0x,Qp=s;W(CA9(*p),p++)Ax=N(unhC(s,p-s));s=p;x)                                                //parse 0x string
 S A0(ps,Qp=s;Cc=*s;I(id0(c),s=pID(s))J(c>>7,W(*++s<-64)s+=*s==':')aCm(p,s))                         //parse symbol
 S A0(pS,Ax=oS;W(1,Ay=*s-'"'?ps():Nx(pC());y=str0(y);xq(y(sym(yV)));Qp=pw(s);P(*p-'`',x)s=p+1)0)     //parse symbols
