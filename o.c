@@ -22,11 +22,11 @@ X1(asc,Rt(opn(x))Rm(grdm(x,asc))RM(K1("{(!#x){x@<y x}/|.+x}",x))RS(asc(str(x)))R
  R_(P(xn-(I)xn,ez1(x))x=N(K1("{x-&/x}",x));Nn=xn;Ay=aC(n),z=aI(n),u=aI(n);Mx(My(u=ascZ(xV,yV,zV,uV,n,xW)==zV?u(z):z(u)))u))
 X1(dsc,RMT(x=rev(asc(rev(x)));sub(ai(xN-1),x))Rm(grdm(x,dsc))Rz(cls(gl(x)))R_(et1(x)))
 X1(grp,Rz(K1("=/:/2#,!:",x))R8(tA,tE,tH,tI,tL,tF,tS,tM,K1("{$[#x;(x[*'g])!g@:<g:(&~x~':x i)_i:<x;x!0#,!0]}",x))Rm(Ay=kv(&x);y=Nx(grp(y));yy=x(i1(x,yy));y)R_(et1(x))
- RGC(
-  A r[256]={};UC b[256];UI nb=0;
-  UI c[256]={};i(xn,UC v=xg;I(!c[v]++,b[nb++]=v))
-  Az=aA(nb);i(nb,za=r[b[i]]=aI(c[b[i]]))I(!nb,*zA=oG)
-  MS(c,0,SZ c);i(xn,UC v=xg;_I(r[v])[c[v]++]=i)
+ RGC(//a:`i$`c$100000000?256  \t:10 =a  1550ms
+  UC b[256],p[256];N c[256]={},nb=0,n=xn;i(n,UC v=xg;I(!c[v]++,b[nb++]=v))
+  i(nb,p[b[i]]=i)
+  Az=aA(nb);i(nb,za=aI(c[b[i]]))
+  MS(c,0,SZ c);I(!n,*zA=oG)i(n,UC v=xg;_I(zA[p[v]])[c[v]++]=i)
   x(am(aV(xt,nb,b),z))))
 S A1(cSI,Q(xtS||xtI)Ct=tS^tI^xt;xr-1?x(aV(t,xn,xV)):AT(t,x))
 X1(unq,RM(en1(x))Rm(unq(val(x)))RE(x)RS(cSI(unq(cSI(x))))Rz(rndF(gl(x)))R_(et1(x))RGC(G a[256]={};G r[256];Nn=0;Ct=xt;Mx(i(xn,UC v=xg;I(!a[v],a[v]=1;r[n++]=v)))aV(t,n,r))
