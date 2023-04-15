@@ -59,8 +59,9 @@ S A3(p2,/*010*/Zt(er1(y))Zm(y=N(p2(x,y,zy));am(_R(zx),y))P(!zN,y(zR))P(xtv&&xv<1
 S A2(p1,/*01*/y(p2(x,ie(x,y),y)))
 S A stn(Ax,Ln,Ay/*0n0*/)_(P(n<0||n-(I)n,ed0())P(!ytT,et0())YE(y=gZ(yR);y(stn(x,n,y)))Lm=MAX(0,yn-n+1);Az=aA0(m);P(!m,mr(zx);zx=mkn(rsz(n,fir(yR)));z)i(m,zq(Nz(x1(slc(y,i,i+n)))))z)
 S A3(ste,/*010*/Yz(stn(x,gl(y),z))et1(y))S ALA(win,x(stn(au,n,x)))
+S AX(cas,/*01..1*/Q(xtZ)K2("{(++y)[x]@'!#x}",x,aV(tA,n,a)))
 A w1(Ii,Ax,Ay/*01*/){SW(i,R(0,Xt(e1(x,y))bin(x,y))R(1,P(xtzZ||xtfF,dec(x,y))Xc(jc(xv,y))XC(jC(xV,xn,y))P(xK<2,cf(x,y))f1(x,y))
  R(2,XfF(en1(y))XzZ(enc(x,y))Xc(sc(xv,y))XC(sC(xV,xn,y))P(xK<2,cs(x,y))s1(x,y))R(3,Xz(win(gl_(x),y))p1(x,y))R(4,er1(y))R_(e1(x,y)))}
-A w2(Ii,Ax,Ay,Az/*010*/){SW(i,R(0,y(e2(x,y,zR)))R(1,(xK<2?lf2:f2)(x,y,z))R(2,(xK<2?ls2:s2)(x,y,z))R(3,(xK==1?ste:p2)(x,y,z))R(4,y(r2(x,y,zR)))R_(y(l2(x,y,zR))))}
+A w2(Ii,Ax,Ay,Az/*010*/){SW(i,R(0,XZ(cas(x,A(y,zR),2))y(e2(x,y,zR)))R(1,(xK<2?lf2:f2)(x,y,z))R(2,(xK<2?ls2:s2)(x,y,z))R(3,(xK==1?ste:p2)(x,y,z))R(4,y(r2(x,y,zR)))R_(y(l2(x,y,zR))))}
 A w8(Ii,Ax,OA*a,Nn/*0,1..1*/){Ay=*a;P(n==1,w1(i,x,y))P(n==2,Az=a[1];z(w2(i,x,y,z)))
- SW(i,R(0,e8(x,a,n))R(1,P(xK<2||n-xK==1,lf8(x,a,n))f8(x,a,n))R(2,P(xK<2||n-xK==1,ls8(x,a,n))s8(x,a,n))R(3,er8(a,n))R(4,er8(a,n))R_(l8(x,a,n)))}
+ SW(i,R(0,XZ(cas(x,a,n))e8(x,a,n))R(1,P(xK<2||n-xK==1,lf8(x,a,n))f8(x,a,n))R(2,P(xK<2||n-xK==1,ls8(x,a,n))s8(x,a,n))R(3,er8(a,n))R(4,er8(a,n))R_(l8(x,a,n)))}
