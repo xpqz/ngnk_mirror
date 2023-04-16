@@ -1,8 +1,8 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S A1(sam,x)V_;T_;I _K(Ax/*0*/)_(xtu||xtw?1:xtv?2:xtx?x>>48&7:xtU?xk:0)
+S A1(sam,x)V_;T_;I _K(Ax/*0*/)_(X(R2(tu,tw,1)Rv(2)Rx(x>>48&7)R4(to,tp,tq,tr,xk))0)
 X1(mkn,RmMA(e1f(mkn,x))Rt(x(_R(cn[xt])))R_(x(rsz(xN,_R(cn[xt])))))
 A1(iei,/*0*/xtv&&xv<10u?"\4\0\0\1\1\2\2\3\3\2"[xv]:4)
-Y2(iex,/*01*/ RmMA(r2f(iex,x,y))RT_A(rsz(yN,iex(x,fir(y))))Rs(as(0))Rc(ac("\0\1\x7f\x80 "[iei(x)]))Rf(y(af(A(0.,1.,WF,-WF,NF)[iei(x)])))R_(y(az(A(0ll,1,WL,-WL,NL)[iei(x)]))))
+Y2(iex,/*01*/RmMA(r2f(iex,x,y))RT_A(rsz(yN,iex(x,fir(y))))Rs(as(0))Rc(ac("\0\1\x7f\x80 "[iei(x)]))Rf(y(af(A(0.,1.,WF,-WF,NF)[iei(x)])))R_(y(az(A(0ll,1,WL,-WL,NL)[iei(x)]))))
 A2(ie,/*00*/P(x==CAT,_R(ce[ce[yt]?yt:tA]))iex(x,fir(yR)))
 AX(prj,XmMA(x8(a,n))Ik=MAX(n,xK);i(n,k-=a[i]!=PLH)x=(xtp?val:aA1)(xR);Ii=0,j=1;W(i<n&&j<xn,I(xA[j]==PLH,xA[j]=a[i++])j++)W(i<n,xq(a[i++]))P(xn>9,ez1(x))AT(tp,AK(k,x)))
 S A iM(Ax,Li,AAL*f)_(Q(xtM);Ay=xy,z=aA(yn);Q(ytA);j(zn|!zn,zA[j]=f(yA[j],i))am(_R(xx),sqz(z)))
