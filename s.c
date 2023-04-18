@@ -2,9 +2,9 @@
 #define Mh(x,y) (MC(x,y,L(y)-1)+L(y)-1)
 S Qq="0001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849"
      "5051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899";
-S C*S8(C*s,UI v)_(i(4,MC(s+6-2*i,q+v%100*2,2);v/=100)s+8) S C*s8(C*s,UI v)_(Cb[8],*p=b+6;W(1,MC(p,q+v%100*2,2);v/=100;B(!v)p-=2)p+=*p=='0';In=b+8-p;MC(s,p,n)+n)
-S C*S16(C*s,UL v)_(S8(S8(s,v/(UI)1e8),v%(UI)1e8))         S C*s16(C*s,UL v)_(v<(UI)1e8?s8(s,v):S8(s8(s,v/(UI)1e8),v%(UI)1e8))
-S C*su(C*s,UL v)_(v<(UL)1e16?s16(s,v):S16(s8(s,v/(UL)1e16),v%(UL)1e16))C*sl(C*s,Lv)_(I(v<0,P(v==NL,Mh(s,"0N"))v=-v;*s++='-')su(s,v))
+S C*S_8(C*s,UI v)_(i(4,MC(s+6-2*i,q+v%100*2,2);v/=100)s+8) S C*s_8(C*s,UI v)_(Cb[8],*p=b+6;W(1,MC(p,q+v%100*2,2);v/=100;B(!v)p-=2)p+=*p=='0';In=b+8-p;MC(s,p,n)+n)
+S C*S16(C*s,UL v)_(S_8(S_8(s,v/(UI)1e8),v%(UI)1e8))        S C*s16(C*s,UL v)_(v<(UI)1e8?s_8(s,v):S_8(s_8(s,v/(UI)1e8),v%(UI)1e8))
+S C*su(C*s,UL v)_(v<(UL)1e16?s16(s,v):S16(s_8(s,v/(UL)1e16),v%(UL)1e16))C*sl(C*s,Lv)_(I(v<0,P(v==NL,Mh(s,"0N"))v=-v;*s++='-')su(s,v))
 // github.com/ulfjack/ryu (apache2|boost license)
 #if defined(__SIZEOF_INT128__)
  S UL msh(UL m,O UL*a,Ii)_(__uint128_t g=m;((g**a>>64)+g*a[1])>>(i-64))S UL msha(UL m,O UL*a,Ii,UL*v,UL*w,I sh)_(*v=msh(m+2,a,i);*w=msh(m-1-sh,a,i);msh(m,a,i))

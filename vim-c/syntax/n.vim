@@ -13,7 +13,7 @@ M n_comment "//[^\r\n]*\|/\*\_.\{-}\*/"                                         
 R n_h s="#" sk="\\\n" e="\r\|\n" c=n_comment                                       |H n_h preproc
 M n_string /'\\\=.'\|"\([^\\"]\|\\.\)*"/ contains=n_e                              |H n_string string
 M n_e "\\\(x\x\x\|.\)" contained                                                   |H n_e special
-K n_k TD S S4 SN NI O ST EX CA __attribute__ asm enum do struct union for
+K n_k TD S S4 S8 SN NI O ST EX CA __attribute__ asm enum do struct union for
    \ if else extern switch case default break continue return goto                 |H n_k statement
 K n_t A0 A1 A2 A3 A4 AA AX AL ALA AAL AQ X1 X2 Y2 nextgroup=n_vv                   |H n_t normal
 K n_r return continue                                                              |H n_r n_d_rr
