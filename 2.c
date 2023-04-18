@@ -54,15 +54,14 @@ A2(ltn,P((1<<xt|1<<yt)&(1<<tm|1<<tM|1<<tA|1<<tS),e2f(ltn,x,y))YE(ltn(x,gZ(y)))XE
  x(y(z)))
 A2(gtn,y(ltn(y,xR)))
 
-SN V eqlzG(Lv,O V*RES a,G*RES r,Nn){O G*p=a;G w=v;i(n+31&~31,r[i]=w==p[i])}
-SN V eqlzH(Lv,O V*RES a,G*RES r,Nn){O H*p=a;H w=v;i(n+15&~15,r[i]=w==p[i])}
-SN V eqlzI(Lv,O V*RES a,G*RES r,Nn){O I*p=a;I w=v;i(n+ 7&~ 7,r[i]=w==p[i])}
-SN V eqlzL(Lv,O V*RES a,G*RES r,Nn){O L*p=a;L w=v;i(n+ 3&~ 3,r[i]=w==p[i])}
-S A eqlvV(Lv,Ax/*1*/)_(I w=xw;P(tG+w<tZ(v),whr(len(x)))Nn=xn;Ay=aG(n);G*r=yG;Mx(A(&eqlzG,eqlzH,eqlzI,eqlzL)[w](v,xV,yG,n));y)
-S X1(eqlz,RmMA(e1f(eqlz,x))RE(Li=*xL,n=xL[1]-i,v=l-i;x=whr(len(x));Q(xtG)I(IN(v,n),xG[v]=1)x)Rzc(ai(l==gl(x)))Rf(ai(*(L*)A((F)l)==gl(x)))RF(eqlvV(*(L*)A((F)l),x))
- RZC_E(eqlvV(l,x))R_(et1(x)))
-S Y2(eqlZ,RmMA(e2f(eql,x,y))RE(eql(x,gZ(y)))Rt(y(eql(y,xR)))
- R_(P(xn-yn,el1(y))xR;N(sup(&x,&y));Ct=TT[MIN(xt,yt)];Nn=xn;Az=aG(n);S4(Tw[t],i(n,zg=xg==yg),i(n,zg=xh==yh),i(n,zg=xi==yi),i(n,zg=xl==yl))x(y(z))))
+SN V eqlzG(Lv,O V*RES a,G*RES r,Nn){O G*p=a;G w=v;i(n+31&~31,r[i]=w==p[i])}SN V eqlG(O V*RES a,O V*RES b,G*RES r,Nn){O G*p=a,*q=b;i(n+31&~31,r[i]=p[i]==q[i])}
+SN V eqlzH(Lv,O V*RES a,G*RES r,Nn){O H*p=a;H w=v;i(n+15&~15,r[i]=w==p[i])}SN V eqlH(O V*RES a,O V*RES b,G*RES r,Nn){O H*p=a,*q=b;i(n+15&~15,r[i]=p[i]==q[i])}
+SN V eqlzI(Lv,O V*RES a,G*RES r,Nn){O I*p=a;I w=v;i(n+ 7&~ 7,r[i]=w==p[i])}SN V eqlI(O V*RES a,O V*RES b,G*RES r,Nn){O I*p=a,*q=b;i(n+ 7&~ 7,r[i]=p[i]==q[i])}
+SN V eqlzL(Lv,O V*RES a,G*RES r,Nn){O L*p=a;L w=v;i(n+ 3&~ 3,r[i]=w==p[i])}SN V eqlL(O V*RES a,O V*RES b,G*RES r,Nn){O L*p=a,*q=b;i(n+ 3&~ 3,r[i]=p[i]==q[i])}
+S A eqlv(Lv,Ax/*1*/)_(I w=xw;P(tG+w<tZ(v),whr(len(x)))Nn=xn;Ay=aG(n);G*r=yG;Mx(A(&eqlzG,eqlzH,eqlzI,eqlzL)[w](v,xV,yG,n));y)
+S A2(eqlV,P(xn-yn,el1(y))I w=xw;P(w<yw,x=cT[tG+yw](xR);x(eqlV(x,y)))y=cT[tG+w](y);Nn=xn;Az=aG(n);My(A(&eqlG,eqlH,eqlI,eqlL)[w](xV,yV,zV,n))z)
+S X1(eqlz,RmMA(e1f(eqlz,x))RE(Li=*xL,n=xL[1]-i,v=l-i;x=whr(len(x));Q(xtG)I(IN(v,n),xG[v]=1)x)Rzc(ai(l==gl(x)))Rf(ai(*(L*)A((F)l)==gl(x)))RF(eqlv(*(L*)A((F)l),x))RZC_E(eqlv(l,x))R_(et1(x)))
+S Y2(eqlZ,RmMA(e2f(eql,x,y))RE(eql(x,gZ(y)))Rt(y(eql(y,xR)))RZC_E(eqlV(x,y))R_(et1(y)))
 S Y2(eqls,RmMA(e2f(eqls,x,y))RsS(x=AT(xt+ti-ts,mut(xR));x(eql(x,AT(yt+ti-ts,mut(y)))))R_(et1(y)))
 S Y2(eqlf,RmMA(e2f(eqlf,x,y))R_(x=Ny(cF(xR));y=Nx(cF(y));x=AT(xt+tl-tf,mut(x));y=AT(yt+tl-tf,mut(y));x(eql(x,y))))
 X2(eql,RmMA(e2f(eql,x,y))RE(x=gZ(xR);x(eql(x,y)))RsS(eqls(x,y))RfF(eqlf(x,y))Rzc(l=gl_(x);eqlz(y))RZC_E(eqlZ(x,y))R_(et1(y)))
