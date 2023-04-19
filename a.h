@@ -1,7 +1,7 @@
 #include<string.h> // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include<unistd.h>
 #include"g.h"
-#define  DBG(a...)a
+#define  DBG(a...)//a
 #define    _(a...) {return({a;});}
 #define  A(x,a...) (TY(x)[]){x,a}
 #define  W(x,a...) while(x){a;}
