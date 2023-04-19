@@ -46,58 +46,46 @@ S Y2(mmmZ,RmMA(e2f(mmm,x,y))RE(mmm(x,gZ(y)))RC(mmm(x,cG(y)))RfF(x=of1(Ny(cF(xR))
 S X2(mmm,RmMA(e2f(mmm,x,y))RE(y(mmm(y,xR)))RfF(x=of1(Ny(cF(xR)));y=of1(Nx(cF(y)));of0(N(x(mmm(x,y)))))Rzc(L o=l;l=gl_(x);y=mmmz(y);l=o;y)RZC_E(mmmZ(x,y))R_(et1(y)))
 A2(mnm,f=0;mmm(x,y))A2(mxm,f=-1;mmm(x,y))
 
-SN V ltng(Lv,O V*RES a,V*RES b,Nn){G w=v;O G32*p=a;G32*r=b;i(n+31>>5,j(32,r[i][j]=w<p[i][j]))}
-SN V ltnh(Lv,O V*RES a,V*RES b,Nn){H w=v;O H16*p=a;G16*r=b;i(n+15>>4,j(16,r[i][j]=w<p[i][j]))}
-SN V ltni(Lv,O V*RES a,V*RES b,Nn){I w=v;O I8 *p=a;G8 *r=b;i(n+ 7>>3,j( 8,r[i][j]=w<p[i][j]))}
-SN V ltnl(Lv,O V*RES a,V*RES b,Nn){L w=v;O L4 *p=a;G4 *r=b;i(n+ 3>>2,j( 4,r[i][j]=w<p[i][j]))}
-SN V ltnG(O V*RES a,O V*RES b,V*RES c,Nn){O G32*p=a,*q=b;G32*r=c;i(n+31>>5,j(32,r[i][j]=p[i][j]<q[i][j]))}
-SN V ltnH(O V*RES a,O V*RES b,V*RES c,Nn){O H16*p=a,*q=b;G16*r=c;i(n+15>>4,j(16,r[i][j]=p[i][j]<q[i][j]))}
-SN V ltnI(O V*RES a,O V*RES b,V*RES c,Nn){O I8 *p=a,*q=b;G8 *r=c;i(n+ 7>>3,j( 8,r[i][j]=p[i][j]<q[i][j]))}
-SN V ltnL(O V*RES a,O V*RES b,V*RES c,Nn){O L4 *p=a,*q=b;G4 *r=c;i(n+ 3>>2,j( 4,r[i][j]=p[i][j]<q[i][j]))}
-X2(ltn,
- R4(tm,tM,tA,tS,e2f(ltn,x,y))
- RE(x=gZ(xR);x(ltn(x,y)))
- Rt(
-  Y(
-   R4(tm,tM,tA,tS,e2f(ltn,x,y))
-   RE(ltn(x,gZ(y)))
-   Rt(
-    P(xtzc&&ytzc,ai(gl_(x)<gl(y)))
-    P(xtzfc&&ytzfc,x=Ny(cF(xR));y=Nx(cF(y));ai(qf(gf(x),gf(y))<0))
-    P(xts&&yts,y(ai(qA(x,y)<0)))
-    et1(y)
-   )
-  )
-  xR;N(sup(&x,&y));
-  XfF(x=of1(x);x(ltn(x,of1(y))))
-  Nn=yn;Az=aG(n);Lv=gl(x);My(A(&ltng,ltnh,ltni,ltnl)[yw](v,yV,zV,n));z)
- R_(
-  Y(
-   R4(tm,tM,tA,tS,e2f(ltn,x,y))
-   RE(ltn(x,gZ(y)))
-  )
-  xR;N(sup(&x,&y));
-  XfF(x=of1(x);x(ltn(x,of1(y))))
-  P(ytt,y=az(gl(y)-1);not(N(y(ltn(y,x)))))
-  Nn=yn;Az=aG(n);
-  P(xn-yn,el1(y))
-  Mx(My(A(&ltnG,ltnH,ltnI,ltnL)[yw](xV,yV,zV,n)));
-  z
- )
-)
-A2(gtn,y(ltn(y,xR)))
-
+SN V ltng(Lv,O V*RES a,V*RES b,Nn){G w=v;O G32*p=a;G32*r=b;i(n+31>>5,j(32,r[i][j]=w< p[i][j]))}
+SN V ltnh(Lv,O V*RES a,V*RES b,Nn){H w=v;O H16*p=a;G16*r=b;i(n+15>>4,j(16,r[i][j]=w< p[i][j]))}
+SN V ltni(Lv,O V*RES a,V*RES b,Nn){I w=v;O I8 *p=a;G8 *r=b;i(n+ 7>>3,j( 8,r[i][j]=w< p[i][j]))}
+SN V ltnl(Lv,O V*RES a,V*RES b,Nn){L w=v;O L4 *p=a;G4 *r=b;i(n+ 3>>2,j( 4,r[i][j]=w< p[i][j]))}
+SN V gtng(Lv,O V*RES a,V*RES b,Nn){G w=v;O G32*p=a;G32*r=b;i(n+31>>5,j(32,r[i][j]=w> p[i][j]))}
+SN V gtnh(Lv,O V*RES a,V*RES b,Nn){H w=v;O H16*p=a;G16*r=b;i(n+15>>4,j(16,r[i][j]=w> p[i][j]))}
+SN V gtni(Lv,O V*RES a,V*RES b,Nn){I w=v;O I8 *p=a;G8 *r=b;i(n+ 7>>3,j( 8,r[i][j]=w> p[i][j]))}
+SN V gtnl(Lv,O V*RES a,V*RES b,Nn){L w=v;O L4 *p=a;G4 *r=b;i(n+ 3>>2,j( 4,r[i][j]=w> p[i][j]))}
 SN V eqlg(Lv,O V*RES a,V*RES b,Nn){G w=v;O G32*p=a;G32*r=b;i(n+31>>5,j(32,r[i][j]=w==p[i][j]))}
 SN V eqlh(Lv,O V*RES a,V*RES b,Nn){H w=v;O H16*p=a;G16*r=b;i(n+15>>4,j(16,r[i][j]=w==p[i][j]))}
 SN V eqli(Lv,O V*RES a,V*RES b,Nn){I w=v;O I8 *p=a;G8 *r=b;i(n+ 7>>3,j( 8,r[i][j]=w==p[i][j]))}
 SN V eqll(Lv,O V*RES a,V*RES b,Nn){L w=v;O L4 *p=a;G4 *r=b;i(n+ 3>>2,j( 4,r[i][j]=w==p[i][j]))}
+SN V ltnG(O V*RES a,O V*RES b,V*RES c,Nn){O G32*p=a,*q=b;G32*r=c;i(n+31>>5,j(32,r[i][j]=p[i][j]< q[i][j]))}
+SN V ltnH(O V*RES a,O V*RES b,V*RES c,Nn){O H16*p=a,*q=b;G16*r=c;i(n+15>>4,j(16,r[i][j]=p[i][j]< q[i][j]))}
+SN V ltnI(O V*RES a,O V*RES b,V*RES c,Nn){O I8 *p=a,*q=b;G8 *r=c;i(n+ 7>>3,j( 8,r[i][j]=p[i][j]< q[i][j]))}
+SN V ltnL(O V*RES a,O V*RES b,V*RES c,Nn){O L4 *p=a,*q=b;G4 *r=c;i(n+ 3>>2,j( 4,r[i][j]=p[i][j]< q[i][j]))}
 SN V eqlG(O V*RES a,O V*RES b,V*RES c,Nn){O G32*p=a,*q=b;G32*r=c;i(n+31>>5,j(32,r[i][j]=p[i][j]==q[i][j]))}
 SN V eqlH(O V*RES a,O V*RES b,V*RES c,Nn){O H16*p=a,*q=b;G16*r=c;i(n+15>>4,j(16,r[i][j]=p[i][j]==q[i][j]))}
 SN V eqlI(O V*RES a,O V*RES b,V*RES c,Nn){O I8 *p=a,*q=b;G8 *r=c;i(n+ 7>>3,j( 8,r[i][j]=p[i][j]==q[i][j]))}
 SN V eqlL(O V*RES a,O V*RES b,V*RES c,Nn){O L4 *p=a,*q=b;G4 *r=c;i(n+ 3>>2,j( 4,r[i][j]=p[i][j]==q[i][j]))}
-S A eqlv(Lv,Ax/*1*/)_(I w=xw;P(tG+w<tZ(v),whr(len(x)))Nn=xn;Ay=aG(n);Mx(A(&eqlg,eqlh,eqli,eqll)[w](v,xV,yG,n));y)
+S A ltnv(Lv,Ax/*1*/)_(I w=xw;P(tG+w<tZ(v),rsz(x(xn),ai(v<0)))Nn=xn;Ay=aG(n);Mx(A(&ltng,ltnh,ltni,ltnl)[w](v,xV,yG,n));y)
+S A gtnv(Lv,Ax/*1*/)_(I w=xw;P(tG+w<tZ(v),rsz(x(xn),ai(v>0)))Nn=xn;Ay=aG(n);Mx(A(&gtng,gtnh,gtni,gtnl)[w](v,xV,yG,n));y)
+S A eqlv(Lv,Ax/*1*/)_(I w=xw;P(tG+w<tZ(v),whr(len(x)))       Nn=xn;Ay=aG(n);Mx(A(&eqlg,eqlh,eqli,eqll)[w](v,xV,yG,n));y)
+S A2(ltnV,P(xn-yn,el1(y))I w=xw;P(w<yw,x=cT[tG+yw](xR);x(ltnV(x,y)))I(yw<w,y=cT[tG+w](y))Nn=xn;Az=aG(n);My(A(&ltnG,ltnH,ltnI,ltnL)[w](xV,yV,zV,n))z)
 S A2(eqlV,P(xn-yn,el1(y))I w=xw;P(w<yw,x=cT[tG+yw](xR);x(eqlV(x,y)))I(yw<w,y=cT[tG+w](y))Nn=xn;Az=aG(n);My(A(&eqlG,eqlH,eqlI,eqlL)[w](xV,yV,zV,n))z)
+S A2(ltnx,SW(xtT<<1|ytT,R(0,ai(gl_(x)< gl(y)))R(1,ltnv(gl_(x),y))R(2,gtnv(gl(y),xR))R_(ltnV(x,y)))0)
 S A2(eqlx,SW(xtT<<1|ytT,R(0,ai(gl_(x)==gl(y)))R(1,eqlv(gl_(x),y))R(2,eqlv(gl(y),xR))R_(eqlV(x,y)))0)
+A2(ltn,Ct=xt,u=yt;Lv=1<<t|1<<u;
+ P(v&(1<<tm|1<<tM|1<<tA),e2f(ltn,x,y))
+ P(v&1<<tS,e2f(ltn,x,y))
+ P(v&1<<ts,v^1<<ts?et1(y):ai(qA(x,y)<0))
+ P(t==tE,x=gZ(xR);x(ltn(x,y)))
+ P(u==tE,ltn(x,gZ(y)))
+ P(v&(1<<tf|1<<tF),
+  P(t-tf&&t-tF,x=Ny(cF(xR));x(ltn(x,y)))
+  P(u-tf&&u-tF,ltn(x,N(cF(y))))
+  x=of1(xR);y=of1(y);x(ltnx(x,y)))
+ P(!(v&~(1<<tG|1<<tH|1<<tI|1<<tL|1<<tC|1<<ti|1<<tl|1<<tc)),ltnx(x,y))
+ et1(y))
+A2(gtn,y(ltn(y,xR)))
 A2(eql,Ct=xt,u=yt;Lv=1<<t|1<<u;
  P(v&(1<<tm|1<<tM|1<<tA),e2f(eql,x,y))
  P(v&1<<tS,e2f(eql,x,y)) //todo
