@@ -11,5 +11,6 @@
 -Wno-pointer-sign
 -Wno-pointer-to-int-cast
 -Wno-shift-op-parentheses
+-Wno-parentheses
 -Wno-string-plus-int
 -Wno-unused-result
