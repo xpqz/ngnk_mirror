@@ -42,6 +42,7 @@ S A3(cmpp,/*010*/I o=x-LTN,w=zw;Nn=zn;Au=aG(n);Lv=gl(y),p=iw(z,w,0);*uG=!o?p<v:o
       i4(w,m,uG[j]=zG[j]==zG[j-1];j--,uG[j]=zH[j]==zH[j-1];j--,uG[j]=zI[j]==zI[j-1];j--,uG[j]=zL[j]==zL[j-1];j--),)u)
 A3(arp,/*010*/Q(xtv)Q(xv<11)Q(ytzc)Q(ztZC)ZE(z=gZ(zR);z(arp(x,y,z)))A(&dexp,___p,___p,___p,___p,modp,mnmp,mxmp,cmpp,cmpp,cmpp)[xv](x,y,z))
 
+S C tZx(Ax)_(Ct=TX[xt];t?t:tZ(gl_(x)))C sup(A*p,A*q)_(Ax=*p,y=*q;Ct=MAX(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
 S A4(dexa,/*1000*/uR;Ny(sup(&x,&u));x=mut(x);Nn=yn;I wx=xw,wy=yw,wu=utt?-1:uw;Lv=wu<0?gl_(u):0;
   Mu(I(utt,i4(wx,n,xG[iw(y,wy,i)]=v ,xH[iw(y,wy,i)]=v ,xI[iw(y,wy,i)]=v ,xL[iw(y,wy,i)]=v ))
      E(    i4(wx,n,xG[iw(y,wy,i)]=ug,xH[iw(y,wy,i)]=uh,xI[iw(y,wy,i)]=ui,xL[iw(y,wy,i)]=ul)))x)

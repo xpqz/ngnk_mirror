@@ -33,16 +33,22 @@ Y2(mod,RmMA(e2f(mod,x,y))Rzc(fir(N(mod(x,enl(y)))))RC(mod(x,cG(y)))RE(mod(x,gZ(y
   m--;I t=tZ(m),w=t-tG;y=mut(N(cT[t](y)));i(3-w,m|=m<<(8<<w+i))L*p=yV;i((yn<<w)+31>>5,j(4,*p++&=m))y))
 X2(bng,RMT(ytm||rnk(x)<0?ed1(y):ytt?bng(x,rsz(xN,y)):xN-yN?el1(y):am(xR,y))Rs(x=rsz(yN,x);x(bng(x,y)))Rzc(mod(x,y))R_(et1(y)))
 
-S A2 mmm;S L l,f;//l:left arg's value, f:function(0=mnm,-1=mxm,1=ltn,2=gtn,3=eql)
-S C tZx(Ax)_(Ct=TX[xt];t?t:tZ(gl_(x)))C sup(A*p,A*q)_(Ax=*p,y=*q;Ct=MAX(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
+S L f;//0=mnm,-1=mxm,1=ltn,2=gtn,3=eql
 
-S X1(mmmz,RmMA(e1f(mmmz,x))RE(mmmz(gZ(x)))RC(mmmz(cG(x)))RfF(Ay=of1(Nx(cF(az(l))));x=of1(Ny(cF(x)));of0(N(y(mmm(y,x)))))Rzc(az(f^MIN(f^l,f^gl(x))))R_(et1(x))
- RZ_E(Ct=tZ(l);I(xt<t,x=cT[t](x))E(t=xt)Nn=xn;Ay=xr==1?x:an(n,t);C w=t-tG;n+=31>>w;Lv=f^l;
-  S4(w,i(n&~31,yg=f^MIN(v,f^xg)),i(n&~15,yh=f^MIN(v,f^xh)),i(n&~7,yi=f^MIN(v,f^xi)),i(n&~3,yl=f^MIN(v,f^xl)))x-y?x(y):y))
-S Y2(mmmZ,RmMA(e2f(mmm,x,y))RE(mmm(x,gZ(y)))RC(mmm(x,cG(y)))RfF(x=of1(Ny(cF(xR)));y=of1(Nx(cF(y)));of0(N(x(mmm(x,y)))))Rzc(y(mmm(y,xR)))R_(et1(y))
- RZ_E(P(xn-yn,el1(y))C w=xw;P(w<yw,x=cT[tG+yw](xR);x(mmmZ(x,y)))y=cT[tG+w](y);Nn=yn;Az=yr==1?y:an(n,tG+w);n+=31>>w;Lv=f^l;
+S A mmmz(If,Lv,Ax)_(X(RC(mmmz(f,v,cG(x)))Rzc(az(f^MIN(f^v,f^gl(x))))R_(et1(x))
+ RZ_E(Ct=tZ(v);I(xt<t,x=cT[t](x))E(t=xt)Nn=xn;Ay=xr==1?x:an(n,t);C w=t-tG;n+=31>>w;v^=f;
+  S4(w,i(n&~31,yg=f^MIN(v,f^xg)),i(n&~15,yh=f^MIN(v,f^xh)),i(n&~7,yi=f^MIN(v,f^xi)),i(n&~3,yl=f^MIN(v,f^xl)))x-y?x(y):y))0)
+S Y2(mmmZ,RC(mmm(x,cG(y)))Rzc(y(mmm(y,xR)))R_(et1(y))
+ RZ_E(P(xn-yn,el1(y))C w=xw;P(w<yw,x=cT[tG+yw](xR);x(mmmZ(x,y)))y=cT[tG+w](y);Nn=yn;Az=yr==1?y:an(n,tG+w);n+=31>>w;
   S4(w,i(n&~31,zg=f^MIN(f^xg,f^yg)),i(n&~15,zh=f^MIN(f^xh,f^yh)),i(n&~7,zi=f^MIN(f^xi,f^yi)),i(n&~3,zl=f^MIN(f^xl,f^yl)))y-z?y(z):z))
-S X2(mmm,RmMA(e2f(mmm,x,y))RE(y(mmm(y,xR)))RfF(x=of1(Ny(cF(xR)));y=of1(Nx(cF(y)));of0(N(x(mmm(x,y)))))Rzc(L o=l;l=gl_(x);y=mmmz(y);l=o;y)RZC_E(mmmZ(x,y))R_(et1(y)))
+S A mmmx(Ax,Ay/*01*/,I f1){SW(xtT<<1|ytT,R(0,Lv=gl_(x),w=gl(y);az(f1==0?MIN(v,w):MAX(v,w)))R(1,mmmz(f,gl_(x),y))R(2,mmmz(f,gl(y),xR))R_(mmmZ(x,y)))}
+A2(mmm,Ct=xt,u=yt;Lv=1<<t|1<<u;
+ P(!(v&~(1<<tG|1<<tH|1<<tI|1<<tL|1<<tC|1<<ti|1<<tl|1<<tc)),mmmx(x,y,f))
+ P(v&(1<<tm|1<<tM|1<<tA),e2f(mmm,x,y))
+ P(t==tE,x=gZ(xR);x(mmm(x,y)))
+ P(u==tE,mmm(x,gZ(y)))
+ P(v&(1<<tf|1<<tF),P(t-tf&&t-tF,x=Ny(cF(xR));x(mmm(x,y)))P(u-tf&&u-tF,mmm(x,N(cF(y))))x=of1(xR);y=of1(y);x(of0(Nx(mmm(x,y)))))
+ et1(y))
 A2(mnm,I o=f;f= 0;x=mmm(x,y);f=o;x)
 A2(mxm,I o=f;f=-1;x=mmm(x,y);f=o;x)
 
