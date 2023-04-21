@@ -7,6 +7,7 @@ license: GNU AGPLv3 (v3 only) - https://codeberg.org/ngn/k/raw/branch/master/LIC
 community projects:
 https://github.com/gitonthescene/ngnk-mode                 - emacs mode
 https://github.com/gitonthescene/ngnk-libs                 - collection of libraries
+https://github.com/chrispsn/ngn-k-unparser                 - unparser
 https://github.com/razetime/ngn-k-tutorial                 - tutorial (work in progress)
 https://xpqz.github.io/kbook/                              - book (work in progress)
 https://github.com/kidd/arraylangs-index                   - analysis of ngn/k AoC solutions
