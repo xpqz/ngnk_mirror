@@ -4,7 +4,7 @@ build: make CC=clang-11 # or CC=gcc-10 or other
 use: rlwrap ./k repl.k
 license: GNU AGPLv3 (v3 only) - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 
-community projects:
+community:
 https://github.com/gitonthescene/ngnk-mode                 - emacs mode
 https://github.com/gitonthescene/ngnk-libs                 - collection of libraries
 https://github.com/chrispsn/ngn-k-unparser                 - unparser
