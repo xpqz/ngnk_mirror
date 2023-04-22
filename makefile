@@ -1,4 +1,4 @@
-#faster builds: export MAKEFLAGS=-j8
+MAKEFLAGS=-j8
 M=mkdir -p $(@D)
 0:;$(MAKE) k && $(MAKE) t #default target
 k:;$(MAKE) a N=$@ R=k O='-O3 -march=native' L='-lm'
