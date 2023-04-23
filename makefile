@@ -1,4 +1,4 @@
-MAKEFLAGS=-j8
+MAKEFLAGS=-j
 M=mkdir -p $(@D)
 0:;$(MAKE) k && $(MAKE) t #default target
 k:;$(MAKE) a N=$@ R=k O='-O3 -march=native' L='-lm'
@@ -32,18 +32,28 @@ o/w/http:w/http.c;$(CC) $< -o $@
 t:tu td tg te ta #all tests
 tu:k o/t;o/t #unit
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
-td:k;cd dy;./a.k #dyalog
-tg:k;cd g;./a.k #codegolf
-te:k;l/runparts.k e
+td:k;cd dy;./a.k;echo td done #dyalog
+tg:k;cd g;./a.k echo tg done #codegolf
+te:te0 te1 te2 te3 #projecteuler
+te0:k;l/runparts.k e 01.k 10.k ;echo te0 done
+te1:k;l/runparts.k e 10.k 10.k ;echo te1 done
+te2:k;l/runparts.k e 20.k 20.k ;echo te2 done
+te3:k;l/runparts.k e 30.k 30.k ;echo te3 done
+te4:k;l/runparts.k e 40.k 40.k ;echo te4 done
+te5:k;l/runparts.k e 50.k 50.k ;echo te5 done
+te6:k;l/runparts.k e 60.k 60.k ;echo te6 done
+te7:k;l/runparts.k e 70.k 70.k ;echo te7 done
+te8:k;l/runparts.k e 80.k 80.k ;echo te8 done
+te9:k;l/runparts.k e 90.k      ;echo te9 done
 ta:t22 t21 t20 t19 t18 t17 t16 t15 #adventofcode
-t22:k;l/runparts.k aoc/22
-t21:k;l/runparts.k aoc/21
-t20:k;l/runparts.k aoc/20
-t19:k;l/runparts.k aoc/19
-t18:k;l/runparts.k aoc/18
-t17:k;l/runparts.k aoc/17
-t16:k;l/runparts.k aoc/16
-t15:k;l/runparts.k aoc/15
+t22:k;l/runparts.k aoc/22 ;echo t22 done
+t21:k;l/runparts.k aoc/21 ;echo t21 done
+t20:k;l/runparts.k aoc/20 ;echo t20 done
+t19:k;l/runparts.k aoc/19 ;echo t19 done
+t18:k;l/runparts.k aoc/18 ;echo t18 done
+t17:k;l/runparts.k aoc/17 ;echo t17 done
+t16:k;l/runparts.k aoc/16 ;echo t16 done
+t15:k;l/runparts.k aoc/15 ;echo t15 done
 
 c:;rm -rf o k libk.so #clean
 .PHONY: 0 c k w h a t tu td tg te te0 te1 te2 te3 ta t22 t21 t20 t19 t18 t17 t16 t15
