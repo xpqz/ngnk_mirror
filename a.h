@@ -1,7 +1,7 @@
 #include<string.h> // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include<unistd.h>
 #include"g.h"
-#define  DBG(a...)a
+#define  DBG(a...)//a
 #define    _(a...) {return({a;});}
 #define  A(x,a...) (TY(x)[]){x,a}
 #define  W(x,a...) while(x){a;}
@@ -30,7 +30,6 @@
 #define RES restrict
 #define SWP(x,y) {TY(x)t_=x;x=y;y=t_;}
 #define LI(x) {Q(!((L)x&HD-1));x=__builtin_assume_aligned(x,HD);}//alignment
-#define PD(n,p) ((n)+HD/SZ(*p)-1&-HD/SZ(*p))//pad
 #define M1(x) #x
 #define M2(x) M1(x)
 #define EX extern
