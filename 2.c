@@ -22,15 +22,15 @@ S A admzZ(L a,Ay,If)_(Nn=yn,i=0;I w=MAX(tZ(a)-tG,yw);y=cT[tG+w](y);Az=yr-1?an(n,
                   {L*b=yL-i*(y!=z);W(i<n,zl=a*b[i];i++)})
      B(i>=n)w++;I(y-z,y=wdn(y,i,n,n-i);z=wdn(z,0,i,n))E(y=z=wdn(z,0,n,n)))
  y-z?y(z):z)
-S A dvdFF(Ax,Ay,If)_(P(xn-yn,el1(y))Az=yr==1?y:aF(xn);i(xn,zf=xf/yf)y-z?y(z):z)
+S A dvdFF(Ax,Ay,If)_(P(xn-yn,el1(y))Az=yr-1?aF(xn):y;i(xn,zf=xf/yf)y-z?y(z):z)
 S A modzZ(Lm,Ay,If)_(P(!m,y)
  P(m<0,m=-m;Az=an(yn,yt);S4(yw,i(zn,Cv=yg;zg=v<0?-1-~v/m:v/m),i(zn,Hv=yh;zh=v<0?-1-~v/m:v/m),i(zn,Iv=yi;zi=v<0?-1-~v/m:v/m),i(zn,Lv=yl;zl=v<0?-1-~v/m:v/m))y(z))
  P(m&m-1,Az=an(yn,tZ(m));I wy=yw;S4(zw,i(zn,zg=(iw(y,wy,i)%m+m)%m),i(zn,zh=(iw(y,wy,i)%m+m)%m),i(zn,zi=(iw(y,wy,i)%m+m)%m),i(zn,zl=(iw(y,wy,i)%m+m)%m))y(z))
  m--;I t=tZ(m),w=t-tG;y=mut(N(cT[t](y)));i(3-w,m|=m<<(8<<w+i))L*p=yV;i((yn<<w)+31>>5,j(4,*p++&=m))y)
 S A modzf(Ln,Ay,If)_(P(!n,y)P(n<0,en1(y))K2("{y-x*(-x)!_y}",az(n),y))
-S A mmmzZ(Lv,Ay,If)_(Ct=tZ(v),u=tG+yw;I(u<t||u-yt,y=cT[t](y))E(t=u)Nn=yn;Az=yr==1?y:an(n,t);C w=t-tG;n+=31>>w;Lm=-(f==7);v^=m;
+S A mmmzZ(Lv,Ay,If)_(Ct=tZ(v),u=tG+yw;I(u<t||u-yt,y=cT[t](y))E(t=u)Nn=yn;Az=yr-1?an(n,t):y;C w=t-tG;n+=31>>w;Lm=-(f==7);v^=m;
  S4(w,i(n&~31,zg=m^MIN(v,m^yg)),i(n&~15,zh=m^MIN(v,m^yh)),i(n&~7,zi=m^MIN(v,m^yi)),i(n&~3,zl=m^MIN(v,m^yl)))y-z?y(z):z)
-S A mmmZZ(Ax,Ay,If)_(P(xn-yn,el1(y))C w=xw;P(w<yw,x=cT[tG+yw](xR);x(mmmZZ(x,y,f)))y=cT[tG+w](y);Nn=yn;Az=yr==1?y:an(n,tG+w);n+=31>>w;Lm=-(f==7);
+S A mmmZZ(Ax,Ay,If)_(P(xn-yn,el1(y))C w=xw;P(w<yw,x=cT[tG+yw](xR);x(mmmZZ(x,y,f)))y=cT[tG+w](y);Nn=yn;Az=yr-1?an(n,tG+w):y;n+=31>>w;Lm=-(f==7);
  S4(w,i(n&~31,zg=m^MIN(m^xg,m^yg)),i(n&~15,zh=m^MIN(m^xh,m^yh)),i(n&~7,zi=m^MIN(m^xi,m^yi)),i(n&~3,zl=m^MIN(m^xl,m^yl)))y-z?y(z):z)
 
 TD G G4[4],G8[8],G16[16],G32[32];TD H H16[16];TD I I8[8];TD L L4[4];
@@ -50,24 +50,20 @@ SN V ltnG(O V*RES a,O V*RES b,V*RES c,Nn){O G32*p=a,*q=b;G32*r=c;i(n+31>>5,j(32,
 SN V ltnH(O V*RES a,O V*RES b,V*RES c,Nn){O H16*p=a,*q=b;G16*r=c;i(n+15>>4,j(16,r[i][j]=p[i][j]< q[i][j]))}
 SN V ltnI(O V*RES a,O V*RES b,V*RES c,Nn){O I8 *p=a,*q=b;G8 *r=c;i(n+ 7>>3,j( 8,r[i][j]=p[i][j]< q[i][j]))}
 SN V ltnL(O V*RES a,O V*RES b,V*RES c,Nn){O L4 *p=a,*q=b;G4 *r=c;i(n+ 3>>2,j( 4,r[i][j]=p[i][j]< q[i][j]))}
-SN V gtnG(O V*RES a,O V*RES b,V*RES c,Nn)_(ltnG(b,a,c,n))
-SN V gtnH(O V*RES a,O V*RES b,V*RES c,Nn)_(ltnH(b,a,c,n))
-SN V gtnI(O V*RES a,O V*RES b,V*RES c,Nn)_(ltnI(b,a,c,n))
-SN V gtnL(O V*RES a,O V*RES b,V*RES c,Nn)_(ltnL(b,a,c,n))
 SN V eqlG(O V*RES a,O V*RES b,V*RES c,Nn){O G32*p=a,*q=b;G32*r=c;i(n+31>>5,j(32,r[i][j]=p[i][j]==q[i][j]))}
 SN V eqlH(O V*RES a,O V*RES b,V*RES c,Nn){O H16*p=a,*q=b;G16*r=c;i(n+15>>4,j(16,r[i][j]=p[i][j]==q[i][j]))}
 SN V eqlI(O V*RES a,O V*RES b,V*RES c,Nn){O I8 *p=a,*q=b;G8 *r=c;i(n+ 7>>3,j( 8,r[i][j]=p[i][j]==q[i][j]))}
 SN V eqlL(O V*RES a,O V*RES b,V*RES c,Nn){O L4 *p=a,*q=b;G4 *r=c;i(n+ 3>>2,j( 4,r[i][j]=p[i][j]==q[i][j]))}
-S A cmpZZ(Ax,Ay,If)_(P(xn-yn,el1(y))I w=xw;P(w<yw,x=cT[tG+yw](xR);x(cmpZZ(x,y,f)))I(yw<w,y=cT[tG+w](y))
- Nn=xn;Az=aG(n);My(A(&ltnG,ltnH,ltnI,ltnL,gtnG,gtnH,gtnI,gtnL,eqlG,eqlH,eqlI,eqlL)[f-8<<2|w](xV,yV,zV,n))z)
+S A cmpZZ(Ax,Ay,If)_(P(xn-yn,el1(y))I w=xw;P(w<yw,x=cT[tG+yw](xR);x(cmpZZ(x,y,f)))I(yw<w,y=cT[tG+w](y))V*a=xV,*b=yV;I(f==9,SWP(a,b))
+ Nn=xn;Az=aG(n);My(A(&ltnG,ltnH,ltnI,ltnL,eqlG,eqlH,eqlI,eqlL)[(f==10)<<2|w](a,b,zV,n))z)
 S A cmpzZ(Lv,Ay,If)_(I w=yw;P(tG+w<tZ(v),y(rsz(yn,ai(f==8?v<0:f==9?v>0:0))))
  Nn=yn;Az=aG(n);My(A(&ltng,ltnh,ltni,ltnl,gtng,gtnh,gtni,gtnl,eqlg,eqlh,eqli,eqll)[f-8<<2|w](v,yV,zG,n))z)
 
 S A admfF(Fv,Ay,If)_(Az=yr-1?aF(yn):y;Nn=zn+3&~3;I(f==3,i(n,zf=v*yf))E(i(n,zf=v+yf))y-z?y(z):z)
-S A dvdfF(Fv,Ay,If)_(Az=yr==1?y:aF(yn);i(yn,zf=v/yf)y-z?y(z):z)
+S A dvdfF(Fv,Ay,If)_(Az=yr-1?aF(yn):y;i(yn,zf=v/yf)y-z?y(z):z)
 S A dvdFf(Ax,Fv,If)_(Az=aF(xn);i(xn,zf=xf/v)z)
 S A dvdzZ(Lv,Ay,If)_(dvdfF(v,cF(y),f))
-S A dvdZZ(Ax,Ay,If)_(x=Ny(cF(xR));y=Nx(cF(y));x(dvdFF(x,y,f)))
+S A dvdZZ(Ax,Ay,If)_(x=cF(xR);x(dvdFF(x,cF(y),f)))
 S A arizz(L a,L b,If)_(P(f==4,af((F)a/b))az(f==1?a+b:f==3?a*b:f==5?(!a?b:a<0?(b<0?-1-~b/-a:b/-a):(b%a+a)%a):f==6?MIN(a,b):f==7?MAX(a,b):f==8?a<b:f==9?a>b:f==10?a==b:0))
 S A arizZ(Lv,Ay,If)_(A(&admzZ,0,admzZ,dvdzZ,modzZ,mmmzZ,mmmzZ,cmpzZ,cmpzZ,cmpzZ)[f-1](v,y,f))
 S A ariZZ(Ax,Ay,If)_(A(&admZZ,0,admZZ,dvdZZ,0    ,mmmZZ,mmmZZ,cmpZZ,cmpZZ,cmpZZ)[f-1](x,y,f))
