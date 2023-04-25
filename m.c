@@ -42,7 +42,7 @@ S AQ(bst,Ln=s[-1]=='t'&&*s==':'?++s,pl(&s):1;Qp=s;Ax=N(pk(&p,10));x=N(cpl(aCm(s,
 S AQ(bsv,bsf(0))
 S A bs_(C**p)_(C*s=*p,*e=strchrnul(s,10),c=*s,d=s[1];*p=e+!!*e;*e=0;
  P(c=='c'&&d=='d'&&(!s[2]||s[2]==32),bscd(s+2+(s[2]==32)))
- P(!d||d==10||d==32||d==':',A(&bsL,bsl,bst,bsd,bsbs,bsf,bsv,bsm,bs0)[si("Lltd\\fvm",c)](s+1+(d==32)))
+ P(!d||d==10||d==32||d==':',G(&bsL,bsl,bst,bsd,bsbs,bsf,bsv,bsm,bs0)[si("Lltd\\fvm",c)](s+1+(d==32)))
  K1("0x0a\\`x(,,\"/bin/sh\"),,:",aCz(s)))
 
 C gp[32];I gn,gk[256];A gv[256],cns,ce[tn],cn[tn];Q*argv,*env;

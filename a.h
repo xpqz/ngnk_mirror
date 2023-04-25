@@ -4,6 +4,7 @@
 #define  DBG(a...)//a
 #define    _(a...) {return({a;});}
 #define  A(x,a...) (TY(x)[]){x,a}
+#define  G(x,a...) ({S O TY(x)arr[]={x,a};arr;})
 #define  W(x,a...) while(x){a;}
 #define  B(x,a...) I(x,a;break)
 #define  P(x,a...) I(x,_(a))
