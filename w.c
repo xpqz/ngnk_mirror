@@ -10,7 +10,7 @@ A jC(Qs,Nm,Ax)_(XC(jC(s,m,flp(flp(x))))Ln=jN(m,x);P(n<0,et1(x))Ay=aC(n);C*p=yV;i
 S A1(re0,rs0(enl(x)))
 S I arf2(A2 f)_(P(f==ari,1)(SZ(V*)-8?fI:fL)(v2+1,10,(L)f)!=NL)
 S A o1f(A1 f,Ax/*f1*/)_(f==til?x:f==whr?x:f(x))
-S A o2f(A2 f,Ax,Ay/*f01*/)_(f==bng?y(ai(0)):arf2(f)||f==hsh?f(x,y):y(oC))
+S A o2f(A2 f,Ax,Ay/*f01*/)_(f==bng?y(ai(0)):arf2(f)||f==hsh||f==und?f(x,y):y(oC))
 S A2(o1,/*01*/ xtu?o1f(v1[xv],y):y(oC))
 S A3(o2,/*001*/xtv?o2f(v2[xv],y,z):z(oC))
 S AX(em,/*01..1*/Az=oS;Ik=0;i(n,Ay=a[i];I(ytm,k++;z=cat10(z,yx)))I(k>1,z=unq(z))Ab8;i(n,Ay=b[i]=a[i];I(ytm,Au=kv(&y);uq(ie(x,u));b[i]=u(u1(y(fil(ai(yn),fnd(y,zR)))))))AX e8;x=Nz(e8(x,b,n));am(z,x))
