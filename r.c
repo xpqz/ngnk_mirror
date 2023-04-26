@@ -24,7 +24,7 @@ S A rt(Nn,Ct)_(Ax=an(n,t);i((n<<Tw[t])+31>>5,r4();MC(xV+(i<<5),b,32))x)//roll n 
 S A ro(Nn,UL m)_(P(!(m&m-1),P(!m,rt(n,tL))Ct=tZ(m-1);Ax=rt(n,t);Lv=(m-1)*G(0x101010101010101ll,0x1000100010001ll,1ll<<32|1,1)[Tw[t]];L*p=xL;i((n<<Tw[t])+31>>5,j(4,*p++&=v))x)
  Ct=tZ(m-1);Ax=an(n,t);S4(t-tG,i(n,xg=ri(m)),i(n,xh=ri(m)),i(n,xi=ri(m)),i(n,xl=r())I(m,i(n,xl%=m)))x)//roll
 //S A de0(Nn,UL m)_(Ax=aL(n);i(n,xl=r()%(m-n+i+1);j(i,B(xl==xL[j],xl=m-n+i)))i(n,Ij=ri(i+1);SWP(xl,xL[j]))cT[tZ(m)](x))
-S A de1(Nn,UL m)_(Ax=aL(n),y=aL(m+63>>6);MS(yV,0,8*yn);i(n,UL v=r()%(m-n+i+1);I(yL[v/64]>>v%64&1,xl=m-n+i)E(xl=v;yL[v/64]|=1ll<<v%64))y(0);i(n,Ij=ri(i+1);SWP(xl,xL[j]))cT[tZ(m)](x))
+S A de1(Nn,UL m)_(Ax=aL(n),y=aC(m+7>>3);MS(yV,0,yn);My(i(n,UL t=r()%(m-n+1+i);I(yC[t>>3]&1<<(t&7),t=m-n+1+i)yC[t>>3]|=1<<(t&7);xl=t))i(n,Ij=r()%(i+1);SWP(xl,xL[j]))cT[tZ(m)](x))
 S A de2(Nn,UL m)_(Ax=aL(n);L*a=xL,j=-1,q=m-n+1;Fv=exp(log(rf())/n);
  W(n>1&&13*n<m,L s;
   W(1,F X;
