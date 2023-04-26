@@ -83,7 +83,7 @@ SN A arif(Ax,Ay,If)_(Ct=xt,u=yt;
 S C f;//0=dex,1=add,2=sub,3=mul,4=dvd,5=mod,6=mnm,7=mxm,8=ltn,9=gtn,10=eql
 A2(ari,Ct=xt,u=yt;Lv=1<<t|1<<u;
  P(!(v&~(1<<tG|1<<tH|1<<tI|1<<tL|1<<tC|1<<ti|1<<tl|1<<tc)),ariz(x,y,f))
- P(v&(1<<tm|1<<tM|1<<tA),e2f(f==1?add:ari,x,y))
+ P(v&(1<<tm|1<<tM|1<<tA),e2(av+f,x,y))
  P(t==tE,x=gZ(xR);x(ari(x,y)))
  P(u==tE,ari(x,gZ(y)))
  P(v&(1<<tf|1<<tF),arif(x,y,f))
