@@ -67,7 +67,7 @@ S A dvdZZ(Ax,Ay,If)_(x=cF(xR);x(dvdFF(x,cF(y),f)))
 S A arizz(L a,L b,If)_(P(f==4,af((F)a/b))az(f==1?a+b:f==3?a*b:f==5?(!a?b:a<0?(b<0?-1-~b/-a:b/-a):(b%a+a)%a):f==6?MIN(a,b):f==7?MAX(a,b):f==8?a<b:f==9?a>b:f==10?a==b:0))
 S A arizZ(Lv,Ay,If)_(A(&admzZ,0,admzZ,dvdzZ,modzZ,mmmzZ,mmmzZ,cmpzZ,cmpzZ,cmpzZ)[f-1](v,y,f))
 S A ariZZ(Ax,Ay,If)_(A(&admZZ,0,admZZ,dvdZZ,0    ,mmmZZ,mmmZZ,cmpZZ,cmpZZ,cmpZZ)[f-1](x,y,f))
-SN A ariz(Ax,Ay,If){SW(xtT<<1|ytT,R(0,arizz(gl_(x),gl(y),f))R(1,arizZ(gl_(x),y,f))R(2,arizZ(gl(y),xR,f-8<2u?f^8^9:f))R_(ariZZ(x,y,f)))}
+SN A ariz(Ax,Ay,If){SW(xtT<<1|ytT,R(0,arizz(gl_(x),gl(y),f))R(1,arizZ(gl_(x),y,f))R(2,P(f==4,ari(x,cF(y)))arizZ(gl(y),xR,f-8<2u?f^8^9:f))R_(ariZZ(x,y,f)))}
 SN A arif(Ax,Ay,If)_(Ct=xt,u=yt;
  P(f==5,xtz?modzf(gl(x),y,f):et1(y))
  P(t-tf&&t-tF,x=Ny(cF(xR));x(ari(x,y)))
