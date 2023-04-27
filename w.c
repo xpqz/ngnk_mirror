@@ -9,7 +9,7 @@ A jC(Qs,Nm,Ax)_(XC(jC(s,m,flp(flp(x))))Ln=jN(m,x);P(n<0,et1(x))Ay=aC(n);C*p=yV;i
 
 S A1(re0,rs0(enl(x)))
 S I arf2(A2 f)_(f==ari||(SZ(V*)-8?fI:fL)(v2+1,10,(L)f)!=NL)
-S A o1f(A1 f,Ax/*f1*/)_(f==whr?x:f(x))
+S A o1f(A1 f,Ax/*f1*/)_(f==whr?x(aI(0)):f(x))
 S A o2f(A2 f,Ax,Ay/*f01*/)_(f(x,y))
 S A2(o1,/*01*/ xtu?o1f(v1[xv],y):y(oC))
 S A3(o2,/*001*/xtv?o2f(v2[xv],y,z):z(oC))
