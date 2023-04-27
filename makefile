@@ -34,7 +34,7 @@ tu:k o/t;o/t #unit
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
 td:k;cd dy;./a.k;echo td done #dyalog
 tg:k;cd g;./a.k echo tg done #codegolf
-te:te0 te1 te2 te3 #projecteuler
+te:te0 te1 te2 te3 te4 te5 te6 te7 te8 #te9 #projecteuler
 te0:k;l/runparts.k e 01.k 10.k ;echo te0 done
 te1:k;l/runparts.k e 10.k 10.k ;echo te1 done
 te2:k;l/runparts.k e 20.k 20.k ;echo te2 done
