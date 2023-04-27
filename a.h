@@ -30,7 +30,6 @@
 #define ST struct
 #define RES restrict
 #define SWP(x,y) {TY(x)t_=x;x=y;y=t_;}
-#define LI(x) {Q(!((L)x&HD-1));x=__builtin_assume_aligned(x,HD);}//alignment
 #define M1(x) #x
 #define M2(x) M1(x)
 #define EX extern
