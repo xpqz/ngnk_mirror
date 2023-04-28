@@ -17,16 +17,17 @@ SN I ig(Lv)_(                                                                   
 S I cc(Ax/*1*/,I o)_(                                                                               //append "load constant" instruction
  Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,P(bc+i-5>255,ez1(x))uq(x))h(bc+i-5)1)
 S A cl(Ax,Ay/*00*/,I r)_(Q(xx==av||_t(xx)==tu)Iv=_v(xx),o=xo;                                       //compile lvalue
- YsS(I(yts,P(xx==av&&_n(fl),Li=il(yv);I(i<0,i=_n(fl);P(i>15,ez0())Iv=yv;fl=apv(fl,&v);lu[i]=nb)
-                            h(bs+i)I(r,h(bg+i))OK)
-           Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
-     E(P(yn==1,o)y=jS(yR))
-     Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
- YA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;
-    P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
-    ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);P(i<0,Nc(z)h(r?bX:bI)h(v)OK)
-        h(r?bx:bi)h(i)h(v)OK)
-    o)o)
+ Y(
+  RsS(I(yts,P(xx==av&&_n(fl),Li=il(yv);I(i<0,i=_n(fl);P(i>15,ez0())Iv=yv;fl=apv(fl,&v);lu[i]=nb)
+                             h(bs+i)I(r,h(bg+i))OK)
+            Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
+      E(P(yn==1,o)y=jS(yR))
+      Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
+  RA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;
+     P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
+     ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);P(i<0,Nc(z)h(r?bX:bI)h(v)OK)
+         h(r?bx:bi)h(i)h(v)OK)
+     o))o)
 S I cv(Lv)_(Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')                                                      //does symbol v end with a ":"?
 S A cr(Ax/*0*/,I r)_(I o=xo;                                                                        //compile rvalue
  XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))
