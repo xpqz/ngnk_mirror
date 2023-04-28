@@ -9,7 +9,7 @@ S A iM(Ax,Li,AAL*f)_(Q(xtM);Ay=xy,z=aA(yn);Q(ytA);j(zn|!zn,zA[j]=f(yA[j],i))am(_
 AAL(ii,/*0*/X(RA(_R(xa))RC(ac(xc))RG(ai(xg))RH(ai(xh))RI(ai(xi))RL(al(xl))RF(af(xf))RS(as(xi))Rm(ii(xy,i))RM(iM(x,i,ii))RE(az(*xL+i))R_(xR))0)
 AAL(io,/*0*/X(RE(IN(i,xL[1]-*xL)?az(*xL+i):_R(cn[tl]))RT_E(IN(i,xn)?ii(x,i):xn?mkn(ii(x,0)):xtA?_R(xx):_R(cn[xt]))Rt(xR)Rm(io(xy,i))RM(iM(x,i,io)))0)
 A1(fir,x(io(x,0)))A1(las,x(io(x,xN-1)))
-SN I o(O UI*a,Nm,Nn)_(i(n,P(a[i]>=m,1))0)
+SN I o(O UI*a,Nm,Nn)_(UI v=0;i(n,v=MAX(v,a[i]))v>=m)
 SN V iG(V*RES a,Nm,O UI*RES b,V*RES c,Nn){G*p=a;G*r=c;i(n,r[i]=p[b[i]])}
 SN V iH(V*RES a,Nm,O UI*RES b,V*RES c,Nn){H*p=a;H*r=c;i(n,r[i]=p[b[i]])}
 SN V iI(V*RES a,Nm,O UI*RES b,V*RES c,Nn){I*p=a;I*r=c;i(n,r[i]=p[b[i]])}
