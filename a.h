@@ -53,11 +53,11 @@ TD void V;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short 
 TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX(A,OA*,I),AL(L),ALA(L,A),AAL(A,L),AQ(Q);TD O C OCA[];
 
 #define  A0(f,b...) A f(           )_(b)
-#define  A1(f,b...) A f(Ax         )_(b)
-#define  A2(f,b...) A f(Ax,Ay      )_(b)
+#define  A1(f,b...) A f(Ax         )_(b)/*1*/
+#define  A2(f,b...) A f(Ax,Ay      )_(b)/*01*/
 #define  A3(f,b...) A f(Ax,Ay,Az   )_(b)
 #define  A4(f,b...) A f(Ax,Ay,Az,Au)_(b)
-#define  AX(f,b...) A f(Ax,OA*a,In )_(b)//doesn't consume x
+#define  AX(f,b...) A f(Ax,OA*a,In )_(b)/*0,1..1,n*/
 #define  AA(f,b...) A f(   OA*a,In )_(b)
 #define  AL(f,b...) A f(Ln         )_(b)
 #define ALA(f,b...) A f(Ln,Ax      )_(b)
