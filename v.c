@@ -46,7 +46,7 @@ X1(pF,RmMA(e1f(pF,x))Rc(pF(enl(x)))RC(x=str0(x);Qs=xV;P(!*s,x(_R(cn[tf])))Lv=pf(
 A1*cT[]={[tA]=cA,cL,cG,cH,cI,cL,cF,cC,cS};
 X1(csti,RmMA(e1f(csti,x))RF(sqzZ(cL(x)))Rf(az(gf(x)))RC(cG(x))Rc(ai(xv))Ruvw(ai(xv))RzZ(x)R_(et1(x)))
 Y2(cstz,RmMA(e2f(cstz,x,y))RC(K2("{y@(!x)+(x<0)*#y}",x,y))Rc(cst(x,enl(y)))R_(et1(y)))
-X2(cst,Rs(Iv=xv;P(v-(C)v,ed1(y))G(&csti,cF,cC,cS,pI,pF,ed1)[si("ifcsIF",v+'s'*!v)](y))RS(e2f(cst,x,y))Rz(cstz(x,y))R_(et1(y)))
+X2(cst,Rs(Iv=xv;P(v-(C)v,ed1(y))G(&csti,cF,cC,cS,pI,pF,ed1)[si("ifcsIF",v+'s'*!v)](y))Rz(cstz(x,y))R_(et1(y)))
 X1(sqzZ,RH(i(xn,P(xh-(G)xh,x))cG(x))RI(i(xn,P(xi-(H)xi,x))sqzZ(cH(x)))RL(i(xn,P(xl-(I)xl,x))sqzZ(cI(x)))R_(x))
 A1(sqz,P(!xtA,x)Nn=xn;Ay=xx;Ct=yt;P(ytMT||ytU,x)
  I(ytz,P(!n,x(oG))I l=0;i(n,Ay=xa;I(ytl,l=1)E(P(!yti,x)))I(l,t=tL)E(I a=0;i(n,Ay=xa;a=MIN(a,MIN(yv,~yv)))t=tZ(a)))E(i(n,P(t-_t(xa),x)))
