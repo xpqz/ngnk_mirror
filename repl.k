@@ -161,7 +161,7 @@ Special symbols:
  `pri@i primes       `pri 20  ->  2 3 5 7 11 13 17 19
    `x@x fork-exec    `x(("/bin/wc";"-l");"a\nbc\nd\n") -> "3\n"
    `t[] current time (microseconds)
-`argv[] list of cmd line args
+`argv[] list of cmd line args (also in global variable x)
  `env[] dict of env variables
 `prng[] `prng@I get/set pseudo-random number generator internal state
                      s:`prng[];r:9?0;`prng s;r~9?0 -> 1
@@ -170,6 +170,7 @@ Special symbols:
  `sin@N trigonometry `sin 12.34 -> -0.22444212919135995
  `exp@N exponential  `exp 1 -> 2.7182818284590455
   `ln@N logarithm    `ln 2 -> 0.6931471805599453
+`exit@i exit
 --------------------------------------------------------------------------------
 \'
 Adverbs:   ' / \ ': /: \:
