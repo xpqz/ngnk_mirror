@@ -8,7 +8,7 @@ S OCA ds={                           1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1
 #define Nl(a...) {I r_=cl(a);P(r_-OK,r_);}                                                          //compile lvalue; return on error
 #define OK -1
 #define fl uA[3]                                                                                    //names of locals
-S A u,cr(A,I);S UC*b,*m;S I nb,lu[8];                                                               //compiler state (b,nb:bytecode, m:sourcemap, lu:last usages of locals)
+S A u,cr(A,I);S UC*b,*m;S I nb,lu[16];                                                              //compiler state (b,nb:bytecode, m:sourcemap, lu:last usages of locals)
 SN I il(Iv)_(Li=fI(_V(fl),_n(fl),v);P(i>=0,lu[i]=nb;i)-1)                                           //index of a local  variable
 SN I ig(Lv)_(                                                                                       //index of a global variable
  I(*gp,Qs=qs(&v);I(!strchr(s,'.'),Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)
@@ -63,7 +63,7 @@ S A1(cf,XA(P(xx==MKL,i(xn,Ay=xa;YsSA(x))aA1(drp(1,x)))                          
            Ay=rsz(xn,au);i(xn,ya=cf(xa);xa=au;P(!ya,die("CF")))AO(xo,x(y)))x)
 S I mxs(Ii,I s)_(I r=s;                                                                             //max stack
  W(1,UC c=b[i++];Q(s>=0)r=MAX(r,s);P(!c,r)
-     s+=(c-ba<L(ds)?ds[c-ba]:c>=bc||c-bg<8u||c-bd<8u?1:c-bs<8u||c-bv<32u?-1:0)+
+     s+=(c-ba<L(ds)?ds[c-ba]:c>=bc||c-bg<16u||c-bd<16u?1:c-bs<16u||c-bv<32u?-1:0)+
         ((c==bL)-(c==bl||c==ba||c==bP))*b[i];
      i+=(c-ba<L(di)?di[c-ba]:0)+(c==bj)*b[i];
      I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)
@@ -72,7 +72,7 @@ S I shy(Ax/*0*/)_(                                                              
 A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,5,A(x,au,au,z,au));           //compile
  MS(lu,-1,SZ lu);y=Nu(cf(y));I s=shy(y),r=cr(y,1);y(0);I o=0;I(s,Nc(au))h(bu)
  P(r-OK,ec0();eS(ux,r);u(0))P(_n(fl)>16||nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
- i(8,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);AK(k,AT(to,u)))
+ i(16,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);AK(k,AT(to,u)))
 
 #define U(x,a...) I(!(x),a;goto l)
 AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>2048,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=_n(xA[3]);          //virtual machine
