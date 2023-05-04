@@ -1,7 +1,7 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-enum{bu,bv=32,bs=64,bg=72,bd=80,ba=88,bP,bi,bx,bI,bX,bm,bM,bG,bS,bl,bL,bz,bj,bo,bp,bc};             //opcodes
-S OCA di={                          1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1         };             //extra bytes after opcode
-S OCA ds={                          1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1   };             //stack size delta
+enum{bu,bv=32,bs=64,bg=80,bd=96,ba=112,bP,bi,bx,bI,bX,bm,bM,bG,bS,bl,bL,bz,bj,bo,bp,bc};            //opcodes
+S OCA di={                           1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1         };            //extra bytes after opcode
+S OCA ds={                           1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1   };            //stack size delta
 #define h(a) {b[nb]=a;m[nb]=o;nb+=nb<255;}                                                          //append byte
 #define Nc(a) N(cc(a,o));                                                                           //append "load constant" instruction; return on error
 #define Nr(a...) {I r_=cr(a);P(r_-OK,r_);}                                                          //compile rvalue; return on error
@@ -71,7 +71,7 @@ S I shy(Ax/*0*/)_(                                                              
  !xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu||(_t(xx)==ts&&cv(_v(xx))))&&_tsSA(xy))
 A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,5,A(x,au,au,z,au));           //compile
  MS(lu,-1,SZ lu);y=Nu(cf(y));I s=shy(y),r=cr(y,1);y(0);I o=0;I(s,Nc(au))h(bu)
- P(r-OK,ec0();eS(ux,r);u(0))P(_n(fl)>8||nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
+ P(r-OK,ec0();eS(ux,r);u(0))P(_n(fl)>16||nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
  i(8,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);AK(k,AT(to,u)))
 
 #define U(x,a...) I(!(x),a;goto l)
@@ -95,7 +95,7 @@ AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>2048,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=
    C(bp,mr(*s++))                                                                                   // * pop
    C(bj,b+=*b+1)                                                                                    // * jump
    D(Q(0))))
-  J(c>=bs,A*v=l+c%8,x=*v;
+  J(c>=bs,A*v=l+c%16,x=*v;
    I(c>=bd,*--s=x;*v=0)                                                                             // * delete local
    J(c>=bg,U(*--s=x)xR)                                                                             // * get local
    E(Q(c>=bs)Ay=*s++;*v=x?x(y):y))                                                                  // * set local
