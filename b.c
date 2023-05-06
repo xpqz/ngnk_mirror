@@ -11,8 +11,9 @@ S OCA ds={                           1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1
 S A u,cr(A,I);S UC*b,*m;S I nb,lu[16];                                                              //compiler state (b,nb:bytecode, m:sourcemap, lu:last usages of locals)
 SN I il(Iv)_(Li=fI(_V(fl),_n(fl),v);P(i>=0,lu[i]=nb;i)-1)                                           //index of a local  variable
 SN I ig(Lv)_(                                                                                       //index of a global variable
- I(*gp,Qs=qs(&v);I(!strchr(s,'.'),Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)
-                                  gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0))
+ I(*gp,Qs=qs(&v);
+  I(!strchr(s,'.')&&id0(*s),
+   Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0))
  Li=fI(gk,gn,v);P(i>=0,i)P(gn-(UC)gn,-1)gk[gn]=v;gv[gn]=0;gn++)
 S I cc(Ax/*1*/,I o)_(                                                                               //append "load constant" instruction
  Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,P(bc+i-5>255,ez1(x))uq(x))h(bc+i-5)1)

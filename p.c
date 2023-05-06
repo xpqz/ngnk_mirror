@@ -1,7 +1,7 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S Qs,s0;S I k;                                                                                      //parser state (s:current pointer, s0:start of source, k:implicit arg counter)
 I si(Qs,Iv)_(strchrnul(s,v)-(C*)s)                                                                  //find char (string index)
-S I id0(UC c)_(CAz(c)|((c|1)==0xd1)<<1)                                                             //is identifier start char?
+I id0(UC c)_(CAz(c)|((c|1)==0xd1)<<1)                                                             //is identifier start char?
 S I id1(Cc)_(id0(c)|C09(c))                                                                         //is identifier char?
 S I num(Qs)_(C09(s[*s=='-']))                                                                       //is number?
 S A1(p1,x&&xn==1?fir(x):x)                                                                          //if x is a singleton list, return its only item; otherwise return x
