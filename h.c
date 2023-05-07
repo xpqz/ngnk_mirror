@@ -1,6 +1,6 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 A1(rs0,rsz(0,x))
-SN A flt(Ax,Ay,Cb/*01b*/)_(P(xK-1,er1(y))Ym(K("{(!y)[i]!(.y)i:&z~/:x@.y}",xR,y,ai(b)))
+SN A flt(Ax,Ay,B b/*01b*/)_(P(xK-1,er1(y))Ym(K("{(!y)[i]!(.y)i:&z~/:x@.y}",xR,y,ai(b)))
  x=Ny(x1(yR));x=xN?Ny(cL(x)):x(oG);P(!xtt&&xN-yN,el1(x(y)))Az=rs0(yR);i(yN,Ln=gl(ii(x,i));B(b&&n-(UI)n,z=ed1(z))j(b?n:!n,zq(ii(y,i))))x(y(z)))
 V cyc(V*a,Nm,Nn){Q(m);W(2*m<=n,MC(a+m,a,m);m*=2)I(n>m,MC(a+m,a,n-m))}
 ALA(rsz,/*n1*/X(Rt(rsz(n,enl(x)))RM(Ay=kv(&x),z=az(n);aM(x,Nx(z(r2(RSH,z,y)))))Rm(Ay=kv(&x);x=Ny(rsz(n,x));y=Nx(rsz(n,y));am(x,y))

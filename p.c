@@ -1,12 +1,12 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S Qs,s0;S I k;                                                                                      //parser state (s:current pointer, s0:start of source, k:implicit arg counter)
-I si(Qs,Iv)_(strchrnul(s,v)-(C*)s)                                                                  //find char (string index)
-I id0(UC c)_(CAz(c)|((c|1)==0xd1)<<1)                                                             //is identifier start char?
-S I id1(Cc)_(id0(c)|C09(c))                                                                         //is identifier char?
-S I num(Qs)_(C09(s[*s=='-']))                                                                       //is number?
+I si(Qs,Cv)_(strchrnul(s,v)-(C*)s)                                                                  //find char (string index)
+B id0(UC c)_(CAz(c)|(c|1)==0xd1)                                                                    //is identifier start char?
+S B id1(Cc)_(id0(c)|C09(c))                                                                         //is identifier char?
+S B num(Qs)_(C09(s[*s=='-']))                                                                       //is number?
 S A1(p1,x&&xn==1?fir(x):x)                                                                          //if x is a singleton list, return its only item; otherwise return x
 S Q pw(Qs)_(W(*s==32,s++)s)                                                                         //skip whitespace
-Q pID(Qs)_(W(1,Ii=id1(*s);B(!i)s+=i)s)                                                              //parse identifier
+Q pID(Qs)_(W(id1(*s),s+=G(1,1,1,1,1,1,2,3)[(UC)*s>>5])s)                                            //parse identifier
 L pu(Q*p)_(Qs=*p;Lv=0;Cc=*s;W(C09(c),v=10*v+c-'0';c=*++s)*p=s;v)                                    //parse long int unsigned
 L pl(Q*p)_(Im=**p=='-';*p+=m;(1-2*m)*pu(p))                                                         //parse long int
 S L pfu(Q*p)_(UL v=pu(p);Qs=*p;Cc=*s;P(c=='w',(*p)++;WFL)P(c=='n',(*p)++;v^NFL)I e=0;               //parse float unsigned

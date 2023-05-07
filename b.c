@@ -29,7 +29,7 @@ S A cl(Ax,Ay/*00*/,I r)_(Q(xx==av||_t(xx)==tu)Iv=_v(xx),o=xo;                   
      ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);P(i<0,Nc(z)h(r?bX:bI)h(v)OK)
          h(r?bx:bi)h(i)h(v)OK)
      o))o)
-S I cv(Lv)_(Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')                                                      //does symbol v end with a ":"?
+S B cv(Lv)_(Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')                                                      //does symbol v end with a ":"?
 S A cr(Ax/*0*/,I r)_(I o=xo;                                                                        //compile rvalue
  XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))
      E(P(xn==1,I(r,Nc(ii(x,0)))OK)x=jS(xR))

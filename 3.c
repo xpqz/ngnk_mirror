@@ -49,7 +49,7 @@ S A4(dexa,/*1000*/uR;Ny(sup(&x,&u));x=mut(x);Nn=yn;I wx=xw,wy=yw,wu=utt?-1:uw;Lv
 S A4(adma,/*1000*/yR;uR;x=cL(x);u=cL(u);x=mut(x);I(!ytL,y=cI(y))Nn=yn;
  I(utt,Lv=gl(u);My(I(zv==1,I(ytL,i(n,xL[yl]+=v ))E(i(n,xL[yi]+=v )))E(I(ytL,i(n,xL[yl]*=v ))E(i(n,xL[yi]*=v )))))
  E(Mu(          My(I(zv==1,I(ytL,i(n,xL[yl]+=ul))E(i(n,xL[yi]+=ul)))E(I(ytL,i(n,xL[yl]*=ul))E(i(n,xL[yi]*=ul))))))x)
-S A4(mmma,/*1000*/yR;uR;I d=utT;I(!d,u=enl(u))Ny(sup(&x,&u));x=mut(x);I(!ytL,y=cI(y))Nn=yn;
+S A4(mmma,/*1000*/yR;uR;B d=utT;I(!d,u=enl(u))Ny(sup(&x,&u));x=mut(x);I(!ytL,y=cI(y))Nn=yn;
  My(Mu(I(zv==6,I(ytL,i4(xw,n,MINE(xG[yl],uG[d*i]),MINE(xH[yl],uH[d*i]),MINE(xI[yl],uI[d*i]),MINE(xL[yl],uL[d*i])))
                E(    i4(xw,n,MINE(xG[yi],uG[d*i]),MINE(xH[yi],uH[d*i]),MINE(xI[yi],uI[d*i]),MINE(xL[yi],uL[d*i]))))
        E(      I(ytL,i4(xw,n,MAXE(xG[yl],uG[d*i]),MAXE(xH[yl],uH[d*i]),MAXE(xI[yl],uI[d*i]),MAXE(xL[yl],uL[d*i])))
