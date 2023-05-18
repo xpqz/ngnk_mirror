@@ -17,7 +17,9 @@ I pg=4096;//pagesize
 
 //__builtin_ia32_ldmxcsr(__builtin_ia32_stmxcsr()|1<<6|1<<15); //daz,ftz
 #ifndef shared
+#ifndef ldstatic
  I main(In,Q*a)_(kinit();kargs(n,a);I r=0;I(n<2,repl())J(!bsl(a[1]),r=1;epr(0))Q(bsm(""));r)
+#endif
 #endif
 
 #if defined(wasm)

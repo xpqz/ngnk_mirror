@@ -3,11 +3,11 @@ M=mkdir -p $(@D)
 0:;$(MAKE) k && $(MAKE) t #default target
 k:;$(MAKE) a N=$@ R=k O='-O3 -march=native' L='-lm'
 libk.so:;$(MAKE) a N=$@ R=$@ O='-O3 -march=native -nostdlib -ffreestanding -fPIC -Dshared' L='-shared'
-libk.a:;$(MAKE) b N=$@ R=$@ O='-O3 -march=native -ffreestanding -lm'
+libk.a:;$(MAKE) b N=$@ R=$@ O='-O3 -march=native -ffreestanding -lm -Dldstatic'
 o/$N/%.o:%.c *.h;$M;$(CC) @opts $O -o $@ -c $<
 o/$N/bin:$(patsubst %.c,o/$N/%.o,$(wildcard *.c));$(CC) $O -o $@ $^ @lopts $L # ;$(STRIP) -R .comment $@ -R '.note*'
 a:o/$N/bin;cp o/$N/bin $R
-b:;ar rcs o/$R/libk.a o/$N/*.o && cp o/$N/libk.a $R
+b:$(patsubst %.c,o/$N/%.o,$(wildcard *.c));ar rcs o/$R/libk.a o/$N/*.o && cp o/$N/libk.a $R
 
 o/asm/%.s:%.c *.h;$M;$(CC) -O3 @opts -march=native -nostdlib -ffreestanding -c $< -o $@ -S -masm=intel
 
@@ -30,7 +30,6 @@ o/w/http:w/http.c;$(CC) $< -o $@
 # O_32=@opts -m32
 # o/32/%.o:%.c *.h;$M;$(CC) $(O_32) -o $@ -c $<
 # k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm
-
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
 
 t:tu td tg te ta                          #all tests
@@ -51,5 +50,5 @@ t20:k;l/runparts.k aoc/20  ;echo t20 done
 t21:k;l/runparts.k aoc/21  ;echo t21 done
 t22:k;l/runparts.k aoc/22  ;echo t22 done
 
-c:;rm -rf o k libk.so #clean
+c:;rm -rf o k libk.so libk.a #clean
 .PHONY: 0 c k w h a t tu td tg te te0 te1 te2 ta t15 t16 t17 t18 t19 t20 t21 t22
