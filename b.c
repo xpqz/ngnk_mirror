@@ -8,7 +8,7 @@ S OCA ds={                           1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1
 #define Nl(a...) {I r_=cl(a);P(r_-OK,r_);}                                                          //compile lvalue; return on error
 #define OK -1
 S A u,cr(A,I);S UC*b,*m;S I nb,nl,l[16],lu[16];                                                     //b,nb:bytecode, m:sourcemap, l,nl:locals symbols, lu:last usages of locals
-SN I il(Iv)_(Li=fI(l,nl,v);P(i>=0,lu[i]=nb;i)-1)                                                    //index of a local  variable
+SN I il(Iv)_(Li=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                                                     //index of a local  variable
 SN I ig(Lv)_(                                                                                       //index of a global variable
  I(*gp,Qs=qs(&v);
   I(!strchr(s,'.')&&id0(*s),
@@ -69,38 +69,38 @@ S I mxs(Ii,I s)_(I r=s;                                                         
      I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)
 S I shy(Ax/*0*/)_(                                                                                  //set result to :: if last statement in ast is assignment
  !xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu||(_t(xx)==ts&&cv(_v(xx))))&&_tsSA(xy))
-A3(cpl,/*src,ast,loc 111*/Q(ztS)Q(zn<=8)                                                            //compile
- UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=nl=zn;u=aV(tA,5,A(x,au,au,au,au));MC(l,zV,4*k);z(0);
+A3(cpl,/*src,ast,loc 111*/Q(ztS)Q(zn<=8)u=aV(tA,5,A(x,au,au,au,au));                                //compile
+ UC b0[256],m0[256];b=b0;m=m0;nb=1;I(z,nl=zn;MC(l,zV,4*nl);z(0))E(nl=0)Ik=nl;
  MS(lu,-1,SZ lu);y=Nu(cf(y));I s=shy(y),r=cr(y,1);y(0);I o=0;I(s,Nc(au))h(bu)
  P(r-OK,ec0();eS(ux,r);u(0))P(nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
  i(16,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);
- uA[3]=aV(tS,nl,l);DBG(nl=-1;MS(l,-1,L(l)));AK(k,AT(to,u)))
+ uA[3]=aV(tS,nl,l);AK(k,AT(to,u)))
 
 #define U(x,a...) I(!(x),a;goto l)
 AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>2048,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=_n(xA[3]);          //virtual machine
- A t[ns+nl],*s=t+ns,*l=s;MS(t,0,SZ t);MC(l,a,8*n);
- W((c=*b++),
-  I(c>=bc,*--s=_R(xA[c-bc+5]))                                                                      // * load constant
-  J(c>=ba,SW(c,
-   C2(ba,bP,Nn=*b++;Ax=*s,*p=s+1;s+=n;U(*s=x((c==ba?_8:prj)(x,p,n))))                               // * apply or project
-   C(bi,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=y(d4(x,y,av+*b++,*s));mr(*s);U(x,*s=0)s++)
-   C(bx,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=  d4(x,y,av+*b++,*s) ;mr(*s);U(x,*s=y(0))U(*s=dot(x,y)))
-   C(bI,Nn=*b++;Ax=*s++,y=*s++,z=*s;U(x=y(z(d8(A(x,y,av+n,z),4))),*s=0)s++)
-   C(bX,Nn=*b++;Ax=*s++,y=*s++,z=*s;U(x=  z(d8(A(x,y,av+n,z),4)),*s=y(0))U(*s=x(dot(x,y))))
-   C2(bm,bM,Nn=*b++;A*v=(c==bm?l:gv)+n,x=*v;U(x,*s=ev1(*s))Ay=v2[*b++](x,*s++);U(y,*--s=0)*v=x(y))  // * modified assignment
-   C(bG,Nn=*b++;Ax=*--s=gv[n];U(x,ev0())xR)                                                         // * get global
-   C(bS,Nn=*b++;Ax=*s++,y=gv[n];gv[n]=y?y(x):x)                                                     // * set global
-   C(bl,Nn=*b++;s+=n-1;*s=sqz(aV(tA,n,s-n+1)))                                                      // * create list
-   C(bL,Nn=*b++;Ax=*s;U(xtt||xN==n,*s=el1(x))i(n,*--s=ii(x,n-1-i)))                                 // * destruct list
-   C(bz,Nn=*b++;b+=n*!tru(*s++))                                                                    // * branch if zero
-   C(bo,*--s=xR)                                                                                    // * recur
-   C(bp,mr(*s++))                                                                                   // * pop
-   C(bj,b+=*b+1)                                                                                    // * jump
-   D(Q(0))))
-  J(c>=bs,A*v=l+c%16,x=*v;
-   I(c>=bd,*--s=x;*v=0)                                                                             // * delete local
-   J(c>=bg,U(*--s=x)xR)                                                                             // * get local
-   E(Q(c>=bs)Ay=*s++;*v=x?x(y):y))                                                                  // * set local
-  J(c>=bv,Ax=*s++;U(*s=x(v2[c-bv](x,*s))))                                                          // * apply dyadic  verb
-  E(U(*s=v1[c](*s))))                                                                               // * apply monadic verb
+ A t[ns+nl],*s=t+ns,*l=s;MS(t,0,SZ t);MC(l,a,8*n);                                                  //
+ W((c=*b++),                                                                                        //   MEANING    |BYTES |         STACK           |         EFFECT
+  I(c>=bc,*--s=_R(xA[c-bc+5]))                                                                      //load constant |bc+n  |.. -> .. consts[n]       |
+  J(c>=ba,SW(c,                                                                                     //              |      |                         |
+   C2(ba,bP,Nn=*b++;Ax=*s,*p=s+1;s+=n;U(*s=x((c==ba?_8:prj)(x,p,n))))                               //apply|project |ba,n  |.. z y x f -> .. f[x;y;z]|
+   C(bi,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=y(d4(x,y,av+*b++,*s));mr(*s);U(x,*s=0)s++)          //              |      |                         |
+   C(bx,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=  d4(x,y,av+*b++,*s) ;mr(*s);U(x,*s=y(0))U(*s=dot(x,y)))//          |      |                         |
+   C(bI,Nn=*b++;Ax=*s++,y=*s++,z=*s;U(x=y(z(d8(A(x,y,av+n,z),4))),*s=0)s++)                         //              |      |                         |
+   C(bX,Nn=*b++;Ax=*s++,y=*s++,z=*s;U(x=  z(d8(A(x,y,av+n,z),4)),*s=y(0))U(*s=x(dot(x,y))))         //              |      |                         |
+   C2(bm,bM,Nn=*b++;A*p=(c==bm?l:gv)+n,x=*p;U(x,*s=ev1(*s))Ay=v2[*b++](x,*s++);U(y,*--s=0)*p=x(y))  //modified asgn |bm,n,v|.. x -> ..               |vars[n]:dyads[v][vars[n];x]
+   C(bG,Nn=*b++;Ax=*--s=gv[n];U(x,ev0())xR)                                                         //get global    |bG,n  |.. -> .. globals[n]      |
+   C(bS,Nn=*b++;Ax=*s++,y=gv[n];gv[n]=y?y(x):x)                                                     //set global    |bS,n  |.. x -> ..               |globals[n]:x
+   C(bl,Nn=*b++;s+=n-1;*s=sqz(aV(tA,n,s-n+1)))                                                      //create list   |bl,n  |.. z y x -> .. (x;y;z)   |
+   C(bL,Nn=*b++;Ax=*s;U(xtt||xN==n,*s=el1(x))i(n,*--s=ii(x,n-1-i)))                                 //destruct list |bL,n  |.. x -> .. x[0] x[1] x[2]|
+   C(bj,b+=*b+1)                                                                                    //jump          |bj,n  |.. x -> ..               |PC:n
+   C(bz,Nn=*b++;b+=n*!tru(*s++))                                                                    //branch        |bz,n  |.. x -> ..               |if x is falsy, PC+:n
+   C(bo,*--s=xR)                                                                                    //recur         |bo    |.. -> .. o               |o is the current lambda
+   C(bp,mr(*s++))                                                                                   //pop           |bp    |.. x -> ..               |
+   D(Q(0))))                                                                                        //              |      |                         |
+  J(c>=bs,A*v=l+c%16,x=*v;                                                                          //              |      |                         |
+   I(c>=bd,*--s=x;*v=0)                                                                             //delete local  |bd+n  |.. -> ..                 |locals[n]:NULL (freed)
+   J(c>=bg,U(*--s=x)xR)                                                                             //get local     |bg+n  |.. -> .. locals[n]       |
+   E(Q(c>=bs)Ay=*s++;*v=x?x(y):y))                                                                  //set local     |bs+n  |.. x -> ..               |locals[n]:x
+  J(c>=bv,Ax=*s++;U(*s=x(v2[c-bv](x,*s))))                                                          //dyadic  verb  |bv+n  |.. y x -> dyads[n][x;y]  |
+  E(U(*s=v1[c](*s))))                                                                               //monadic verb  |bu+n  |.. x -> monads[n][x]     |
  l:I(!*s,eS(xx,(UC)_C(xz)[(C*)b-1-_C(xy)]))i(t+ns+nl-s-1,Ax=s[i+1];I(x,mr(x)))d--;/*Q(s==l-1)*/*s)
