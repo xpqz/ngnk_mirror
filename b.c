@@ -7,9 +7,8 @@ S OCA ds={                           1, 1,-2,-1,-3,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1
 #define Nr(a...) {I r_=cr(a);P(r_-OK,r_);}                                                          //compile rvalue; return on error
 #define Nl(a...) {I r_=cl(a);P(r_-OK,r_);}                                                          //compile lvalue; return on error
 #define OK -1
-#define fl uA[3]                                                                                    //names of locals
-S A u,cr(A,I);S UC*b,*m;S I nb,lu[16];                                                              //compiler state (b,nb:bytecode, m:sourcemap, lu:last usages of locals)
-SN I il(Iv)_(Li=fI(_V(fl),_n(fl),v);P(i>=0,lu[i]=nb;i)-1)                                           //index of a local  variable
+S A u,cr(A,I);S UC*b,*m;S I nb,nl,l[16],lu[16];                                                     //b,nb:bytecode, m:sourcemap, l,nl:locals symbols, lu:last usages of locals
+SN I il(Iv)_(Li=fI(l,nl,v);P(i>=0,lu[i]=nb;i)-1)                                                    //index of a local  variable
 SN I ig(Lv)_(                                                                                       //index of a global variable
  I(*gp,Qs=qs(&v);
   I(!strchr(s,'.')&&id0(*s),
@@ -19,7 +18,7 @@ S I cc(Ax/*1*/,I o)_(                                                           
  Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,P(bc+i-5>255,ez1(x))uq(x))h(bc+i-5)1)
 S A cl(Ax,Ay/*00*/,I r)_(Q(xx==av||_t(xx)==tu)Iv=_v(xx),o=xo;                                       //compile lvalue
  Y(
-  RsS(I(yts,P(xx==av&&_n(fl),Li=il(yv);I(i<0,i=_n(fl);P(i>15,ez0())Iv=yv;fl=apv(fl,&v);lu[i]=nb)
+  RsS(I(yts,P(xx==av&&nl,Li=il(yv);I(i<0,i=nl;P(i>15,ez0())Iv=yv;l[nl++]=v;lu[i]=nb)
                              h(bs+i)I(r,h(bg+i))OK)
             Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
       E(P(yn==1,o)y=jS(yR))
@@ -70,10 +69,12 @@ S I mxs(Ii,I s)_(I r=s;                                                         
      I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)
 S I shy(Ax/*0*/)_(                                                                                  //set result to :: if last statement in ast is assignment
  !xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu||(_t(xx)==ts&&cv(_v(xx))))&&_tsSA(xy))
-A3(cpl,/*src,ast,loc*/UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=zn;u=aV(tA,5,A(x,au,au,z,au));           //compile
+A3(cpl,/*src,ast,loc 111*/Q(ztS)Q(zn<=8)                                                            //compile
+ UC b0[256],m0[256];b=b0;m=m0;nb=1;Ik=nl=zn;u=aV(tA,5,A(x,au,au,au,au));MC(l,zV,4*k);z(0);
  MS(lu,-1,SZ lu);y=Nu(cf(y));I s=shy(y),r=cr(y,1);y(0);I o=0;I(s,Nc(au))h(bu)
- P(r-OK,ec0();eS(ux,r);u(0))P(_n(fl)>16||nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
- i(16,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);AK(k,AT(to,u)))
+ P(r-OK,ec0();eS(ux,r);u(0))P(nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
+ i(16,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);
+ uA[3]=aV(tS,nl,l);DBG(nl=-1;MS(l,-1,L(l)));AK(k,AT(to,u)))
 
 #define U(x,a...) I(!(x),a;goto l)
 AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>2048,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=_n(xA[3]);          //virtual machine
