@@ -17,17 +17,15 @@ SN I ig(Lv)_(                                                                   
 S I cc(Ax/*1*/,I o)_(                                                                               //append "load constant" instruction
  Ay=u;Nn=yn,i=5;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,P(bc+i-5>255,ez1(x))uq(x))h(bc+i-5)1)
 S A cl(Ax,Ay/*00*/,I r)_(Q(xx==av||_t(xx)==tu)Iv=_v(xx),o=xo;                                       //compile lvalue
- Y(
-  RsS(I(yts,P(xx==av&&nl,Li=il(yv);I(i<0,i=nl;P(i>15,ez0())Iv=yv;l[nl++]=v;lu[i]=nb)
-                             h(bs+i)I(r,h(bg+i))OK)
-            Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
-      E(P(yn==1,o)y=jS(yR))
-      Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
-  RA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;
-     P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
-     ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);P(i<0,Nc(z)h(r?bX:bI)h(v)OK)
-         h(r?bx:bi)h(i)h(v)OK)
-     o))o)
+ Y(RsS(I(yts,P(xx==av&&nl,Li=il(yv);I(i<0,i=nl;P(i>15,ez0())Iv=yv;l[nl++]=v;lu[i]=nb)
+                              h(bs+i)I(r,h(bg+i))OK)
+             Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
+       E(P(yn==1,o)y=jS(yR))
+       Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
+   RA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;
+      P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
+      ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);P(i<0,Nc(z)h(r?bX:bI)h(v)OK)
+          h(r?bx:bi)h(i)h(v)OK)o))o)
 S B cv(Lv)_(Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')                                                      //does symbol v end with a ":"?
 S A cr(Ax/*0*/,I r)_(I o=xo;                                                                        //compile rvalue
  XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))
@@ -69,7 +67,7 @@ S I mxs(Ii,I s)_(I r=s;                                                         
      I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)
 S I shy(Ax/*0*/)_(                                                                                  //set result to :: if last statement in ast is assignment
  !xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu||(_t(xx)==ts&&cv(_v(xx))))&&_tsSA(xy))
-A3(cpl,/*src,ast,loc 111*/Q(ztS)Q(zn<=8)u=aV(tA,5,A(x,au,au,au,au));                                //compile
+A3(cpl,/*src,ast,loc 111*/u=aV(tA,5,A(x,au,au,au,au));                                              //compile
  UC b0[256],m0[256];b=b0;m=m0;nb=1;I(z,nl=zn;MC(l,zV,4*nl);z(0))E(nl=0)Ik=nl;
  MS(lu,-1,SZ lu);y=Nu(cf(y));I s=shy(y),r=cr(y,1);y(0);I o=0;I(s,Nc(au))h(bu)
  P(r-OK,ec0();eS(ux,r);u(0))P(nb>=255||bc-4+un>255,eS(ux,0);u(0);ez0())
@@ -83,7 +81,7 @@ AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>2048,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=
   I(c>=bc,*--s=_R(xA[c-bc+5]))                                                                      //load constant |bc+n  |.. -> .. consts[n]       |
   J(c>=ba,SW(c,                                                                                     //              |      |                         |
    C2(ba,bP,Nn=*b++;Ax=*s,*p=s+1;s+=n;U(*s=x((c==ba?_8:prj)(x,p,n))))                               //apply|project |ba,n  |.. z y x f -> .. f[x;y;z]|
-   C(bi,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=y(d4(x,y,av+*b++,*s));mr(*s);U(x,*s=0)s++)          //              |      |                         |
+   C(bi,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=y(d4(x,y,av+*b++,*s));mr(*s);U(x,*s=0)s++)          //              |bi,n,v|                         |
    C(bx,Nn=*b++;Ax=l[n],y=*s++;I(!x,x=au)x=l[n]=  d4(x,y,av+*b++,*s) ;mr(*s);U(x,*s=y(0))U(*s=dot(x,y)))//          |      |                         |
    C(bI,Nn=*b++;Ax=*s++,y=*s++,z=*s;U(x=y(z(d8(A(x,y,av+n,z),4))),*s=0)s++)                         //              |      |                         |
    C(bX,Nn=*b++;Ax=*s++,y=*s++,z=*s;U(x=  z(d8(A(x,y,av+n,z),4)),*s=y(0))U(*s=x(dot(x,y))))         //              |      |                         |
