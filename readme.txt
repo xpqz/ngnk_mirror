@@ -5,7 +5,7 @@ use: rlwrap ./k repl.k
 license: GNU AGPLv3 (v3 only) - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 
 community:
-https://matrix.to/#/#aplfarm-k:matrix.org                  - chat
+https://matrix.to/#/#ngnk:matrix.org                       - chat
 https://github.com/gitonthescene/ngnk-mode                 - emacs mode
 https://github.com/gitonthescene/ngnk-libs                 - collection of libraries
 https://github.com/chrispsn/ngn-k-unparser                 - unparser
