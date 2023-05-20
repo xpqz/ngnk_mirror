@@ -88,8 +88,8 @@ AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>2048,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=
    C(bS,A*p=gv+*b++,x=*s++,y=*p;*p=y?y(x):x)                                                        //set global   |bS,g  |.. x -> ..               |globals[g]:x
    C(bl,Nn=*b++;s+=n-1;*s=sqz(aV(tA,n,s-n+1)))                                                      //make list    |bl,n  |.. z y x -> .. (x;y;z)   |
    C(bL,Nn=*b++;Ax=*s;U(xtt||xN==n,*s=el1(x))i(n,*--s=ii(x,n-1-i)))                                 //break list   |bL,n  |.. x -> .. x[0] x[1] x[2]|
-   C(bj,b+=*b++)                                                                                    //jump         |bj,a  |.. x -> ..               |PC+:a
-   C(bz,b+=*b++*!tru(*s++))                                                                         //branch       |bz,a  |.. x -> ..               |if x is falsy, PC+:a
+   C(bj,Nn=*b++;b+=n)                                                                               //jump         |bj,a  |.. x -> ..               |PC+:a
+   C(bz,Nn=*b++;b+=n*!tru(*s++))                                                                    //branch       |bz,a  |.. x -> ..               |if x is falsy, PC+:a
    C(bo,*--s=xR)                                                                                    //recur        |bo    |.. -> .. o               |o is the current lambda
    C(bp,mr(*s++))))                                                                                 //pop          |bp    |.. x -> ..               |
   J(c>=bs,A*v=l+c%16,x=*v;                                                                          //             |      |                         |
