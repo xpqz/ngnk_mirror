@@ -1,7 +1,7 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 enum{bu,bv=32,bs=64,bg=80,bd=96,ba=112,bP,bx,bX,bm,bM,bG,bS,bl,bL,bz,bj,bo,bp,bc};                  //opcodes
-S O C di[256]={                 [ba]=1, 1, 2, 1, 2, 2, 1, 1, 1, 1, 1, 1         };                  //extra bytes after opcode
-S O C ds[256]={                 [ba]=1, 1,-1,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1   };                  //stack size delta
+S O C di[256]={                 [ba]=1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1         };                  //extra bytes after opcode
+S O C ds[256]={                 [ba]=1, 1,-1,-1,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1   };                  //stack size delta
 #define h(a) {b[nb]=a;m[nb]=o;nb+=nb<255;}                                                          //append byte
 #define Nc(a) N(cc(a,o));                                                                           //append "load constant" instruction; return on error
 #define Nr(a...) {I r_=cr(a);P(r_-OK,r_);}                                                          //compile rvalue; return on error
@@ -10,10 +10,9 @@ S O C ds[256]={                 [ba]=1, 1,-1,-2,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1   
 S A u,cr(A,B);                                                                                      //u:lambda object (src;bytecode;map;locals;constants..)
 S UC*b,*m;S I nb,nl,l[16],lu[16];                                                                   //b,nb:bytecode, m:sourcemap, l,nl:locals symbols, lu:last usages of locals
 SN I il(Iv)_(Li=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                                                     //index of a local  variable
-SN I ig(Lv)_(                                                                                       //index of a global variable
- I(*gp,Qs=qs(&v);
-  I(!strchr(s,'.')&&id0(*s),
-   Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0))
+SN I ig(Lv)_(Qs;                                                                                    //index of a global variable
+ I(*gp&&!strchr(s=qs(&v),'.')&&id0(*s),
+  Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0)
  Li=fI(gk,gn,v);P(i>=0,i)P(gn-(UC)gn,-1)gk[gn]=v;gv[gn]=0;gn++)
 S I cc(Ax/*1*/,I o)_(                                                                               //append a "load constant" instruction
  Ay=u;Nn=yn,i=4;W(i<n,B(mtc_(x,ya),x=x(0))i++)I(x,P(bc+i-4>255,ez1(x))uq(x))h(bc+i-4)1)
@@ -26,8 +25,8 @@ S A cl(Ax,Ay/*00*/,B r){Q(xx==av||_t(xx)==tu)Iv=_v(xx),o=xo;                    
        Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
    RA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;
       P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
-      ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);P(i<0,Nc(z)h(bX)h(v)I(!r,h(bp))OK)
-          h(bx)h(i)h(v)I(!r,h(bp))OK)o))}
+      ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)
+       Ii=il(zv);I(i>=0,h(bx))E(i=ig(zv);P(i<0,o)h(bX))h(i)h(v)I(!r,h(bp))OK)o))}
 S B cv(Lv)_(Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')                                                      //does symbol v end with a ":"?
 S A cr(Ax/*0*/,B r)_(I o=xo;                                                                        //compile rvalue (x:tree,r:wantResult?)
  XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))                           // x.y.z    variable (possibly qualified)
@@ -83,9 +82,8 @@ AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>2048,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=
   I(c>=bc,*--s=_R(xA[c-bc+4]))                                                                      //load constant|bc+i  |.. -> .. consts[i]       |
   J(c>=ba,SW(c,D(Q(0))                                                                              //             |      |                         |
    C2(ba,bP,UC n=*b++;Ax=*s,*p=s+1;s+=n;U(*s=x((c==ba?_8:prj)(x,p,n))))                             //apply|project|ba,n  |.. z y x f -> .. f[x;y;z]|
-   C(bx,A*p=l+*b++,x=*p,y=*s++;x=*p=d4(x?x:au,y,av+*b++,*s);mr(*s);U(x,*s=y(0))U(*s=dot(x,y)))      //             |bx,l,d|.. x -> .. r             |r:locals[l]:dyads[d][locals[l];x]
-   C(bX,Ax=*s++,y=*s++,z=*s;U(x=z(d8(A(x,y,av+*b++,z),4)),*s=y(0))U(*s=x(dot(x,y))))                //             |bX,d  |.. x -> .. r             |r:.[x;y;dyads[d];z]
-   C2(bm,bM,A*p=(c==bm?l:gv)+*b++,x=*p;U(x,*s=ev1(*s))Ay=v2[*b++](x,*s++);U(y,*--s=0)*p=x(y))       //modified asgn|bm,l,d|.. x -> ..               |locals[l]:dyads[d][locals[l];x]
+   C2(bm,bM,A*p=(c-bm?gv:l)+*b++,x=*p;U(x,*s=ev1(*s))Ay=v2[*b++](x,*s++);U(y,*--s=0)*p=x(y))        //modified asgn|bm,l,d|.. x -> .. r             |r:locals[l]:dyads[d][locals[l];x]
+   C2(bx,bX,A*p=(c-bx?gv:l)+*b++,x=*p,y=*s++;x=*p=d4(x?x:au,y,av+*b++,*s);mr(*s);U(x,*s=y(0))U(*s=dot(x,y)))//     |bx,l,d|.. x -> .. r             |
    C(bG,Ax=*--s=gv[*b++];U(x,ev0())xR)                                                              //get global   |bG,g  |.. -> .. globals[g]      |
    C(bS,A*p=gv+*b++,x=*s++,y=*p;*p=y?y(x):x)                                                        //set global   |bS,g  |.. x -> ..               |globals[g]:x
    C(bl,UC n=*b++;s+=n-1;*s=sqz(aV(tA,n,s-n+1)))                                                    //make list    |bl,n  |.. z y x -> .. (x;y;z)   |
