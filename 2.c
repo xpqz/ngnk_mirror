@@ -59,6 +59,7 @@ S A cmpZZ(Ax,Ay,If)_(P(xn-yn,el1(y))I w=xw;P(w<yw,x=cT[tG+yw](xR);x(cmpZZ(x,y,f)
 S A cmpzZ(Lv,Ay,If)_(I w=yw;P(tG+w<tZ(v),y(rsz(yn,ai(f==8?v<0:f==9?v>0:0))))
  Nn=yn;Az=aG(n);My(A(&ltng,ltnh,ltni,ltnl,gtng,gtnh,gtni,gtnl,eqlg,eqlh,eqli,eqll)[f-8<<2|w](v,yV,zG,n))z)
 
+S A addzE(Lv,Ax)_(Lij x(0);aE(i+v,j+v))
 S A admfF(Fv,Ay,If)_(Az=yr-1?aF(yn):y;Nn=zn+3&~3;I(f==3,i(n,zf=v*yf))E(i(n,zf=v+yf))y-z?y(z):z)
 S A dvdfF(Fv,Ay,If)_(Az=yr-1?aF(yn):y;i(yn,zf=v/yf)y-z?y(z):z)
 S A dvdFf(Ax,Fv,If)_(Az=aF(xn);i(xn,zf=xf/v)z)
@@ -84,8 +85,8 @@ S C f;//0=dex,1=add,2=sub,3=mul,4=dvd,5=mod,6=mnm,7=mxm,8=ltn,9=gtn,10=eql
 A2(ari,Ct=xt,u=yt;Lv=1<<t|1<<u;
  P(!(v&~(1<<tG|1<<tH|1<<tI|1<<tL|1<<tC|1<<ti|1<<tl|1<<tc)),ariz(x,y,f))
  P(v&(1<<tm|1<<tM|1<<tA),e2(av+f,x,y))
- P(t==tE,x=gZ(xR);x(ari(x,y)))
- P(u==tE,ari(x,gZ(y)))
+ P(t==tE,P(f==1&&ytzc,addzE(gl(y),xR))x=gZ(xR);x(ari(x,y)))
+ P(u==tE,P(f==1&&xtzc,addzE(gl_(x),y))ari(x,gZ(y)))
  P(v&(1<<tf|1<<tF),arif(x,y,f))
  I(f-8<3u,
   P(v&1<<tS,P(f==10&&!(v&~(1<<ts|1<<tS)),ariz(x,y,f))e2f(ari,x,y))
