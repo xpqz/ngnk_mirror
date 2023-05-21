@@ -95,4 +95,4 @@ A2(ari,Ct=xt,u=yt;Lv=1<<t|1<<u;
 
 #define h(s,i) A2(s,I o=f;f=i;x=ari(x,y);f=o;x)
 h(add,1)h(mul,3)h(dvd,4)h(mod,5)h(mnm,6)h(mxm,7)h(ltn,8)h(gtn,9)h(eql,10)
-A2(dex,y)A2(sub,add(x,N(neg(y))))X2(bng,RMT(ytm||rnk(x)<0?ed1(y):ytt?bng(x,rsz(xN,y)):xN-yN?el1(y):am(xR,y))Rs(x=rsz(yN,x);x(bng(x,y)))Rzc(mod(x,y))R_(et1(y)))
+A2(dex,y)A2(sub,add(x,N(neg(y))))X2(exc,RMT(ytm||rnk(x)<0?ed1(y):ytt?exc(x,rsz(xN,y)):xN-yN?el1(y):am(xR,y))Rs(x=rsz(yN,x);x(exc(x,y)))Rzc(mod(x,y))R_(et1(y)))
