@@ -1,7 +1,7 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-enum{bu,bv=32,bs=64,bg=80,bd=96,ba=112,bP,bx,bX,bm,bM,bG,bS,bl,bL,bz,bj,bo,bp,bc};                  //opcodes
-S O C di[256]={                 [ba]=1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1         };                  //extra bytes after opcode
-S O C ds[256]={                 [ba]=1, 1,-1,-1,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1   };                  //stack size delta
+enum{bu,bv=32,bs=64,bg=80,bd=96,ba=112,bP,bm,bM,bx,bX,by,bY,bG,bS,bl,bL,bz,bj,bo,bp,bc};            //opcodes
+S O C di[256]={                 [ba]=1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1         };            //extra bytes after opcode
+S O C ds[256]={                 [ba]=1, 1,-1,-1,-1,-1,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1   };            //stack size delta
 #define h(a) {b[nb]=a;m[nb]=o;nb+=nb<255;}                                                          //append byte
 #define Nc(a) N(cc(a,o));                                                                           //append "load constant" instruction; return on error
 #define Nr(a...) {I r_=cr(a);P(r_-OK,r_);}                                                          //compile rvalue; return on error
@@ -26,7 +26,7 @@ S A cl(Ax,Ay/*00*/,B r){Q(xx==av||_t(xx)==tu)Iv=_v(xx),o=xo;                    
    RA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;
       P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
       ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)
-       Ii=il(zv);I(i>=0,h(bx))E(i=ig(zv);P(i<0,o)h(bX))h(i)h(v)I(!r,h(bp))OK)o))}
+       Ii=il(zv);I(i>=0,h(r?bx:by))E(i=ig(zv);P(i<0,o)h(r?bX:bY))h(i)h(v)OK)o))}
 S B cv(Lv)_(Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')                                                      //does symbol v end with a ":"?
 S A cr(Ax/*0*/,B r)_(I o=xo;                                                                        //compile rvalue (x:tree,r:wantResult?)
  XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bp))OK)P(xv=='o',I(r,h(bo))OK))                           // x.y.z    variable (possibly qualified)
@@ -36,9 +36,9 @@ S A cr(Ax/*0*/,B r)_(I o=xo;                                                    
  Nn=xn;Ay=xx;                                                                                       //
  P(y==PLH,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
  P(n<2,I(r,Nc(yR))OK)                                                                               //          quote
- P(n==3&&(ytu||y==av)&&_tsSA(xy),Nr(xz,1);Nl(x,xy,1);I(!r,h(bp))OK)                                 // x+:y     modified assignment
+ P(n==3&&(ytu||y==av)&&_tsSA(xy),Nr(xz,1);Nl(x,xy,r);OK)                                            // x+:y     modified assignment
  P(n==3&&yts&&cv(yv)&&_tsSA(xy),Nr(xz,1);Nr(xy,1);Nr(cS(drp(-1,str(y))),1);h(ba)h(2)Az=aA1(au);     // x√:y     modified assignment (unicode verbs)
-  Nl(z,xy,1);z(0);I(!r,h(bp))OK)                                                                    //
+  Nl(z,xy,r);z(0);OK)                                                                               //
  P(n>3&&(y==av||y==CST),n--;I p[n];A*a=xA;i(n&~1,Nr(*++a,1);h(i&1?bj:bz)p[i]=nb;h(0))               // $[x;y;z] cond
   Nr(n&1?*++a:au,1);                                                                                //
   i(n&~1,I d=(i&1?nb-1:p[i+1])-p[i];I(i&1,Ij=(n&~1)-1;W(i<j&&d>255,d=p[j]-1-p[i];j-=2))             //
@@ -71,7 +71,7 @@ S B shy(Ax/*0*/)_(                                                              
  !xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu||(_t(xx)==ts&&cv(_v(xx))))&&_tsSA(xy))
 A3(cpl,/*111*/UC b0[256],m0[256];b=b0;m=m0;nb=1;MS(lu,-1,SZ lu);                                    //compile(x:src,y:ast,z:locals)
  I(z,nl=zn;MC(l,zV,4*nl);z(0))E(nl=0)Ik=nl;u=aA(4);ux=x;uy=uz=uA[3]=au;
- y=Nu(cf(y));B s=shy(y);I r=cr(y,1);y(0);P(r-OK,ec0();eS(ux,r);u(0))I o=0;I(s,Nu(cc(au,o)))h(bu)
+ y=Nu(cf(y));B s=shy(y);I r=cr(y,!s);y(0);P(r-OK,ec0();eS(ux,r);u(0))I o=0;I(s,Nu(cc(au,o)))h(bu)
  P(nb>=255||un>255-bc+4,eS(ux,0);u(0);ez0())i(nl,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))
  *b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);uA[3]=aV(tS,nl,l);AK(k,AT(to,u)))
 
@@ -79,23 +79,27 @@ A3(cpl,/*111*/UC b0[256],m0[256];b=b0;m=m0;nb=1;MS(lu,-1,SZ lu);                
 AX(run,Q(xto)P(n-xk,er8(a,n))S I d;P(++d>2048,es8(a,n))UC*b=_V(xy),c,ns=*b++,nl=_n(xA[3]);          //virtual machine
  A t[ns+nl],*s=t+ns,*l=s;MS(t,0,SZ t);MC(l,a,8*n);                                                  //
  W((c=*b++),                                                                                        //             |BYTES |          STACK          |         EFFECT
-  I(c>=bc,*--s=_R(xA[c-bc+4]))                                                                      //load constant|bc+i  |.. -> .. consts[i]       |
+  I(c>=bc,*--s=_R(xA[c-bc+4]))                                                                      //load constant|bc+i  |.. -> .. constants[i]    |
   J(c>=ba,SW(c,D(Q(0))                                                                              //             |      |                         |
-   C2(ba,bP,UC n=*b++;Ax=*s,*p=s+1;s+=n;U(*s=x((c==ba?_8:prj)(x,p,n))))                             //apply|project|ba,n  |.. z y x f -> .. f[x;y;z]|
-   C2(bm,bM,A*p=(c-bm?gv:l)+*b++,x=*p;U(x,*s=ev1(*s))Ay=v2[*b++](x,*s++);U(y,*--s=0)*p=x(y))        //modified asgn|bm,l,d|.. x -> .. r             |r:locals[l]:dyads[d][locals[l];x]
-   C2(bx,bX,A*p=(c-bx?gv:l)+*b++,x=*p,y=*s++;x=*p=d4(x?x:au,y,av+*b++,*s);mr(*s);U(x,*s=y(0))U(*s=dot(x,y)))//     |bx,l,d|.. x -> .. r             |
-   C(bG,Ax=*--s=gv[*b++];U(x,ev0())xR)                                                              //get global   |bG,g  |.. -> .. globals[g]      |
-   C(bS,A*p=gv+*b++,x=*s++,y=*p;*p=y?y(x):x)                                                        //set global   |bS,g  |.. x -> ..               |globals[g]:x
-   C(bl,UC n=*b++;s+=n-1;*s=sqz(aV(tA,n,s-n+1)))                                                    //make list    |bl,n  |.. z y x -> .. (x;y;z)   |
-   C(bL,UC n=*b++;Ax=*s;U(xtt||xN==n,*s=el1(x))i(n,*--s=ii(x,n-1-i)))                               //break list   |bL,n  |.. x -> .. x[0] x[1] x[2]|
+   C2(ba,bP,UC n=*b++;Ax=*s,*p=s+1;s+=n;U(*s=x((c==ba?_8:prj)(x,p,n))))                             //apply|project|ba,n  |.. z y x -> .. x[y;z]    |
+   C2(bm,bM,A*p=(c-bm?gv:l)+*b++,x=*p;U(x,*s=ev1(*s))                                               //modified asgn|bm,i,d|.. x -> ..               |vars[i]:dyads[d][vars[i];x]
+    Ay=v2[*b++](x,*s++);U(y,*--s=0)*p=x(y))                                                         //             |      |                         |
+   C2(bx,bX,A*p=(c-bx?gv:l)+*b++,x=*p;U(x,*s=ev1(*s))                                               //indexed  asgn|bx,i,d|.. z y -> .. r           |r:vars[i]:.[vars[i];y;dyads[d];z]
+    Ay=*s++;x=*p=d4(x,y,av+*b++,*s);mr(*s);U(x,*s=y(0))U(*s=dot(x,y)))                              //             |      |                         |
+   C2(by,bY,A*p=(c-by?gv:l)+*b++,x=*p;U(x,*s=ev1(*s))                                               //indexed  asgn|by,i,d|.. z y -> ..             |vars[i]:.[vars[i];y;dyads[d];z]
+    Ay=*s++;x=*p=d4(x,y,av+*b++,*s);y(0);mr(*s++);U(x,*--s=0))                                      //             |      |                         |
+   C(bG,Ax=*--s=gv[*b++];U(x,ev0())xR)                                                              //get global   |bG,i  |.. -> .. globals[i]      |
+   C(bS,A*p=gv+*b++,x=*s++,y=*p;*p=y?y(x):x)                                                        //set global   |bS,i  |.. x -> ..               |globals[i]:x
+   C(bl,UC n=*b++;s+=n-1;*s=sqz(aV(tA,n,s-n+1)))                                                    //make list    |bl,n  |.. y x -> .. (x;y)       |
+   C(bL,UC n=*b++;Ax=*s;U(xtt||xN==n,*s=el1(x))i(n,*--s=ii(x,n-1-i)))                               //break list   |bL,n  |.. x -> .. x[0] x[1]     |
    C(bj,UC n=*b++;b+=n)                                                                             //jump         |bj,n  |.. x -> ..               |PC+:n
    C(bz,UC n=*b++;b+=n*!tru(*s++))                                                                  //branch       |bz,n  |.. x -> ..               |if x is falsy, PC+:n
    C(bo,*--s=xR)                                                                                    //recur        |bo    |.. -> .. o               |o is the current lambda
    C(bp,mr(*s++))))                                                                                 //pop          |bp    |.. x -> ..               |
   J(c>=bs,A*v=l+c%16,x=*v;                                                                          //             |      |                         |
-   I(c>=bd,*--s=x;*v=0)                                                                             //delete local |bd+l  |.. -> .. locals[l]       |locals[l]:NULL (freed)
-   J(c>=bg,U(*--s=x)xR)                                                                             //get local    |bg+l  |.. -> .. locals[l]       |
-   E(Q(c>=bs)Ay=*s++;*v=x?x(y):y))                                                                  //set local    |bs+l  |.. x -> ..               |locals[l]:x
+   I(c>=bd,*--s=x;*v=0)                                                                             //delete local |bd+i  |.. -> .. locals[i]       |locals[i]:NULL (freed)
+   J(c>=bg,U(*--s=x)xR)                                                                             //get local    |bg+i  |.. -> .. locals[i]       |
+   E(Q(c>=bs)Ay=*s++;*v=x?x(y):y))                                                                  //set local    |bs+i  |.. x -> ..               |locals[i]:x
   J(c>=bv,Ax=*s++;U(*s=x(v2[c-bv](x,*s))))                                                          //dyadic  verb |bv+d  |.. y x -> dyads[d][x;y]  |
   E(U(*s=v1[c](*s))))                                                                               //monadic verb |bu+m  |.. x -> monads[m][x]     |
  l:I(!*s,eS(xx,(UC)_C(xz)[(C*)b-1-_C(xy)]))i(t+ns+nl-s-1,Ax=s[i+1];I(x,mr(x)))d--;*s)
