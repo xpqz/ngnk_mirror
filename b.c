@@ -23,8 +23,8 @@ S A cl(Ax,Ay/*00*/,B r){Q(xx==av||_t(xx)==tu)Iv=_v(xx),o=xo;                    
              Ii=il(yv);P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
        E(P(yn==1,o)y=jS(yR))
        Ii=ig(yv);P(i<0,ez0())h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
-   RA(In=yn-1;P(n-(UC)n||n<1,o)Az=yx;
-      P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))OK)
+   RA(In=yn-1;P(n>8u,o)Az=yx;
+      P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(!r,h(bp))E(P(xx-av,o))OK)
       ZsS(I(ztS,z=jS(zR))i(n,Nr(yA[n-i],1))h(bl)h(n)
        Ii=il(zv);I(i>=0,h(r?bx:by))E(i=ig(zv);P(i<0,o)h(r?bX:bY))h(i)h(v)OK)o))}
 S B cv(Lv)_(Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')                                                      //does symbol v end with a ":"?
