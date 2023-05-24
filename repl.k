@@ -220,5 +220,5 @@ $ cast     string
 @ apply(1) type      @[x;i;[f;]y] amend
 . apply(n) eval      .[x;i;[f;]y] drill
 grammar:  E:E;e|e e:nve|te| t:n|v v:tA|V n:t[E]|(E)|{E}|N
-limits: 16 locals/args, 64 consts, 256 bytecode
+limits: 8 args, 16 locals, 256 bytecode, 2048 stack
 \
