@@ -49,17 +49,15 @@ A apv(Ax/*1*/,OV*v )_(Q(xtT);     Nn=xn;x=room(n+1,x);MC(xV+n*xW,v,xW);x)
 A apc(Ax/*1*/,Cc   )_(Q(xtC||xtG);Nn=xn;x=room(n+1,x);xC[n]=c;x)
 A cts(Ax/*1*/,Qs,Nm)_(Q(xtC);     Nn=xn;x=room(n+m,x);MC(xV+n,s,m);x)
 S A insL(Ax,Li,Lj,Ay/*1ij0*/)_(
- YU(insL(x,i,j,Nx(y1(slc(x,i,j)))))
  P(!IN(i,j+1)||!IN(j,xN+1),ei1(x))
  Az=an(xn-j+i+yn,xt);MC(zV,xV,i*xW);MC(zV+i*xW,yV,yn*xW);MC(zV+(i+yn)*xW,xV+j*xW,(xn-j)*xW);
  I(xtR,I(!zn,zx=oC)I(xr-1,mRn(i,xA);mRn(xn-j,xA+j))E(mrn(j-i,xA+i);AZ(x))I(yr-1,mRa(y))E(AZ(y))z=sqz(z))
  x(z))
 A3(ins3,/*100*/
  Xmt(et1(x))
- I(!ztU,
-  Zmt(z=enl(zR);z(ins3(x,y,z)))
-  XM(P(!ztM,et1(x))P(!mtc_(xx,zx),ed1(x))y=prj(QUE,A((A)PLH,yR,PLH),3);Au=Nx(y(e2(y,xy,_R(zy))));x(aM(_R(xx),u)))
-  P(xtZ&&ztZ&&xt-zt,zR;N(sup(&x,&z));z(ins3(x,y,z)))
-  P(xt-zt,z=cA(zR);z(ins3(cA(x),y,z))))
+ Zmt(z=enl(zR);z(ins3(x,y,z)))
+ XM(P(!ztM,et1(x))P(!mtc_(xx,zx),ed1(x))y=prj(QUE,A((A)PLH,yR,PLH),3);Au=Nx(y(e2(y,xy,_R(zy))));x(aM(_R(xx),u)))
+ P(xtZ&&ztZ&&xt-zt,zR;N(sup(&x,&z));z(ins3(x,y,z)))
+ P(xt-zt,z=cA(zR);z(ins3(cA(x),y,z)))
  Y(Rz(Li=gl_(y);insL(x,i,i,z))RZ(P(yn-2,el1(x))insL(x,gl_(ii(y,0)),gl_(ii(y,1)),z))R_(et1(x)))0)
 AA(ins,/*10..0*/P(n==3,ins3(*a,a[1],a[2]))en1(*a))
