@@ -59,7 +59,6 @@ S A pe(Ax,C*v)_(s=pw(s);Cc=*s;                                                  
  Az=pe(0,v);P(!z,y(x?x(0):0))P(z==PLH,*v=1;P(!x,y)Yu(ep1(x))AO(o,aA3(y,x,z)))
  *v&=y!=av;I(!x,y=pm(y))*v?aA3(aw,x?AO(o,aA3(y,x,PLH)):y,z):AO(o,x?aA3(y,x,z):aA2(pm(y),z)))
 S A pb(Ax,Cc)_(x=x?aA1(x):oA;                                                                       //parse body (sequence of ;-separated expressions)
- W(1,Cv=0;Ay=Nx(pe(0,&v));P(y==PLH&&c==')',ep2(x,y))I(y==PLH&&c-']',y=au)
-     xq(y);B(*s-';'&&*s-10)B(c==10&&*s==10)s++)
+ W(1,Cv=0;Ay=Nx(pe(0,&v));xq(c-']'&&y==PLH?au:y);P(y==PLH&&c==')',ep1(x))B(*s-';'&&*s-10)B(c==10&&*s==10)s++)
  P(c==10&&!*s,x)P(*s-c,ep1(x))s++;x)
 A pk(Q*p,Cc)_(s0=s=*p;Ax=pb(PLH,c);*p=s;P(x,xn==2?las(x):x)eQ(s0,SL(s0),s-s0);0)                    //parse either a group of lines (c='\n') or till '\0' (c='\0')
