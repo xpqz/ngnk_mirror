@@ -45,6 +45,5 @@ i.c input/output
 v.c other verbs
 w.c other adverbs
 j.c json: `j@x `j?x
-x.c serialization: `@x `?x
 e.c error handling
 k.c embedding api

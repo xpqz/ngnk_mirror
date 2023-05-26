@@ -66,7 +66,7 @@ x can be a file descriptor (int) or symbol or string such as
 --------------------------------------------------------------------------------
 \+
 Verbs:    : + - * % ! & | < > = ~ , ^ # _ $ ? @ . 0: 1:
-notation: [c]har [i]nt [n]umber(int|float) [s]ymbol [a]tom [d]ict
+notation: [c]har [i]nt [n]umber(int|float|char) [s]ymbol [a]tom [d]ict
           [f]unc(monad) [F]unc(dyad) [xyz]any
 special:  var:y     set    a:1;a -> 1
           var::y    global a:1;{a::2}[];a -> 2
@@ -76,8 +76,8 @@ special:  var:y     set    a:1;a -> 1
           o[..]     recur  {:[x<2;x;+/o'x-1 2]}9 -> 34
           [..]      progn  [0;1;2;3] -> 3
 
-::  self      ::12 -> 12
- :  right     1 :2 -> 2   "abc":'"d" -> "ddd"
+::  self      f:(::);f 12 -> 12
+ :  right     f:(:);f[1;2] -> 2   "abc":'"d" -> "ddd"
  +x flip      +("ab";"cd") -> ("ac";"bd")
 N+N add       1 2+3 -> 4 5
  -N negate    - 1 2 -> -1 -2
@@ -152,8 +152,6 @@ x.y apply(n)  {x*y+1}. 2 3 -> 8   (`a`b`c;`d`e`f). 1 0 -> `d
 --------------------------------------------------------------------------------
 \`
 Special symbols:
-    `@x serialize    ` 7 8 9 -> 0x020300000000000000070809
-    `?C deserialize  `?0x020300000000000000070809 -> 7 8 9
    `j?C parse json   `j?"{\"a\":1,\"b\":[true,\"c\"]}" -> `a`b!(1.0;(1;,"c"))
    `k@x pretty-print `k("ab";2 3) -> "(\"ab\";2 3)"
    `p@C parse k
