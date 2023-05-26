@@ -37,12 +37,12 @@ S A1(qx,exit(xtz?gl(x):1);0)
 S X1(qjs,RC(Cb[4096];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))RA(e1f(qjs,x))R_(et1(x)))
 S X1(qp,RC(x=str0(x);Qs=xC;x(pk(&s,0)))R_(et1(x)))
 S A1(qt,x(al(now())))
-S A1(qfb,P(!xtC,et1(x))P(!xn==8,el1(x))x=rev(x);x(aV(tf,1,xV)))//float from bits
+S A1(qfb,P(!xtC,et1(x))P(xn-8,el1(x))x=rev(x);x(aV(tf,1,xV)))//float from bits
 A2(_1,/*01*/P(!xtt,i1(x,y))Ik=xK;P(1<k,k==2&&!xtp?prj(x,A(y,PLH),2):prj(x,&y,1))
  X(Ro(run(x,&y,1))Rr(w1(xE,xx,y))Rx(((A1*)(x<<16>>16))(y))Rq(_1(xx,N(_1(xy,y))))Ru(v1[xv](y))Rw(AK(0<xv&&xv<4&&yK==2?1:ytU?yK:1,AW(xv,aV(tr,1,&y))))R_(et1(y))
   Rp(P(xn+k>9,er1(y))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&!j?j++,y:_R(xA[i+1]))I l=MAX(0,1-j);MC(b+m,&y,8*l);_8(xx,b,m+l))
-  Rs(S O C s[][4]={"","k","j","p","t","x","hex","err","argv","env","exit","js","pri","prng","sin","cos","exp","ln","fb"};
-   Li=fI(s,L(s),xv);G(&ser,kst,js1,qp,qt,frk,hex,err,qa,qe,qx,qjs,qpri,prng,ksin,kcos,kexp,klog,qfb,ed1)[i<0?L(s):i](y)))0)
+  Rs(S O C s[][4]={"k","j","p","t","x","hex","err","argv","env","exit","js","pri","prng","sin","cos","exp","ln","fb"};
+   Li=fI(s,L(s),xv);G(&kst,js1,qp,qt,frk,hex,err,qa,qe,qx,qjs,qpri,prng,ksin,kcos,kexp,klog,qfb,ed1)[i<0?L(s):i](y)))0)
 A3(_2,/*001*/P(!xtt,i2(x,y,z))A a[]={y,z};Ik=xK;P(2<k,yR;prj(x,a,2))
  X(Rv(v2[xv](y,z))Ro(yR;run(x,a,2))Rr(z(w2(xE,xx,yR,z)))Rw(xv?en1(x):AK(zK,AT(tq,aA2(yR,z))))Rq(_1(xx,N(_2(xy,y,z))))Rx(P(2>k,er1(z))((A2*)(x<<16>>16))(yR,z))R_(et1(z))
   Rp(P(xn+k>9,er1(z))yR;Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==PLH&&j<2?a[j++]:_R(xA[i+1]))I l=MAX(0,2-j);MC(b+m,a+j,8*l);_8(xx,b,m+l)))0)
