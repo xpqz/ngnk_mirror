@@ -134,7 +134,7 @@ enum              {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr
            AA*v8[]={no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,ins, a8, d8,no8,no8,no8,no8,no8,no8};\
            OCA vc ={':','+','-','*','%','!','&','|','<','>','=','~',',','^','#','_','$','?','@','.','0','1','2','3','4','5',0};
 enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,FLR,STR,UNQ,TYP,VAL,U0C,U1C,LAS,IMN,IMX,OUT,
-              av=Lt(tv),ADD,SUB,MUL,DVD,EXC,MNM,MXM,LTN,GTN,EQL,MTC,CAT,CRT,RSH,UND,CST,QUE,AP1,DOT,V0C,V1C,V2C,V3C,MKL,PLH,
+              av=Lt(tv),ADD,SUB,MUL,DVD,EXC,MNM,MXM,LTN,GTN,EQL,MTC,CAT,CRT,RSH,UND,CST,QUE,AP1,DOT,V0C,V1C,V2C,V3C,MKL,GAP,
               aw=Lt(tw)};
 #define NFL 0x7ff8000000000000ll
 #define WFL 0x7ff0000000000000ll

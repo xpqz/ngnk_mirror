@@ -56,9 +56,9 @@ S A cr(Ax/*0*/,B r)_(I o=xo;                                                    
  XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bP))OK)P(xv=='o',I(r,h(bo))OK))                           // x.y      variable (possibly qualified)
      E(P(xn==1,I(r,cc(ii(x,0),o))OK)x=jS(xR))                                                       //
      Ii=ig(xv);P(i<0,ez0())h(bG)h(i)I(!r,h(bP))OK)                                                  //
- P(!xtA||!xn,I(r,cc(x-PLH?xR:au,o))OK)                                                              // ()       constant
+ P(!xtA||!xn,I(r,cc(x-GAP?xR:au,o))OK)                                                              // ()       constant
  Nn=xn;Ay=xx;                                                                                       //
- P(y==PLH,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
+ P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
  P(n<2,I(r,cc(yR,o))OK)                                                                             // `a`b     quoted
  P(n==3&&(ytu||y==av)&&_tsSA(xy),Nr(xz,1);Nl(x,xy,r);OK)                                            // x+:y     modified assignment
  P(n==3&&yts&&cv(yv)&&_tsSA(xy),Nr(xz,1);Nr(xy,1);Nr(cS(drp(-1,str(y))),1);h(ba)h(2)Az=aA1(au);     // x⊕:y     modified assignment (unicode verbs)
@@ -69,7 +69,7 @@ S A cr(Ax/*0*/,B r)_(I o=xo;                                                    
    P(d>255,ez0())b[p[i]]=d)                                                                         //
   I(!r,h(bP))OK)                                                                                    //
  I(n==2&&y==FIR,Az=xy;I(ztA&&zn==2,P(zx-REV<3u,Nr(zy,1);h(bu+zx-REV+LAS-au)I(!r,h(bP))OK)))         // *|x      recognized idioms
- I p=0;i(n-1,Az=xA[n-1-i];I(z==PLH,p=1;cc(PLH,o))E(Nr(z,1)))                                        //
+ I p=0;i(n-1,Az=xA[n-1-i];I(z==GAP,p=1;cc(GAP,o))E(Nr(z,1)))                                        //
  I(p,Nr(xx,1);h(bp)h(n-1))                                                                          // x[y;]    projection
  J(y==MKL,n--;P(n>255,o);h(bl)h(n))                                                                 // (x;y)    list
  J(n==2&&ytu,h(bu+yv))                                                                              // +x       monad
@@ -82,7 +82,7 @@ S A2(c2,/*00*/P(xtw&&!ytsSA,1)/*P(x==TIL&&ytZ&&yn<4,i(yn,P(!IN(gl(ii(y,i)),101),
 S A3(c3,/*000*/P(ADD<=x&&x<=MUL&&ytzZ&&ztzZ&&(ytt||ztt||yn==zn)&&MAX(xN,yN)<101,1)0)                //constant folding
 S A1(cf,P(!xtA||!xn,x)P(xx==MKL,i(xn,Ay=xa;YsSA(x))qt(N(drp(1,x))))P(xn==2?c2(xx,xy):xn==3?c3(xx,xy,xz):0,qt(N(val(x))))Ay=rsz(xn,au);i(xn,ya=cf(xa);xa=au;P(!ya,die("CF")))AO(xo,x(y)))
 S I mxs(Ii,I s)_(I r=s;W(1,UC c=MIN(bc,b[i++]);r=MAX(r,s);P(!c,r)s+=ds[c]+ks[c]*b[i];i+=di[c]+(c==bj)*b[i];I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)//max stack
-S B shy(Ax/*0*/)_(!xtA?0:xn&&xx==PLH?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu||(_t(xx)==ts&&cv(_v(xx))))&&_tsSA(xy))//is last expr an assignment?
+S B shy(Ax/*0*/)_(!xtA?0:xn&&xx==GAP?shy(xA[xn-1]):xn==3&&(xx==av||_t(xx)==tu||(_t(xx)==ts&&cv(_v(xx))))&&_tsSA(xy))//is last expr an assignment?
 A3(cpl,/*111*/nb=1;MS(lu,-1,SZ lu);I(z,nl=zn;MC(l,zV,CO*nl);z(0))E(nl=0)                             //compile(x:src,y:ast,z:locals)
  Ik=nl;u=aA(CO);ux=x;uy=uz=uA[3]=au;y=Nu(cf(y));B s=shy(y);I r=cr(y,!s);y(0);P(r-OK,ec0();eS(ux,r);u(0))I o=0;I(s,Nu(cc(au,o)))h(bu)P(nb>=255||un>255-bc+CO,eS(ux,0);u(0);ez0())
  i(nl,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);uA[3]=aV(tS,nl,l);AK(k,AT(to,u)))
