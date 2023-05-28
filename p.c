@@ -20,7 +20,7 @@ S A0(pC,Ax=oC;Cc=*++s;W(c&&c-'"',I(c=='\\',c=*++s;Ii=si("tnr0",c);I(i<4,c="\t\n\
 S A0(p0x,Qp=s;W(CA9(*p),p++)Ax=N(unhC(s,p-s));s=p;x)                                                //parse 0x string
 S A0(ps,Qp=s;Cc=*s;I(id0(c),s=pID(s))J(c>>7,W(*++s<-64)s+=*s==':')aCm(p,s))                         //parse symbol
 S A0(pS,Ax=oS;W(1,Ay=*s-'"'?ps():Nx(pC());y=str0(y);xq(y(sym(yV)));Qp=pw(s);P(*p-'`',x)s=p+1)0)     //parse symbols
-S A0(pP,Ax=oS;W(1,Ay=str0(ps());y(xq(sym(yV)));P(*s-'.'||!id0(s[1]),x)++s)0)                        //parse dot-separated path of identifiers
+S A0(pP,Ax=oS;W(1,Ay=str0(ps());y(xq(sym(yV)));P(*s-'.'||!id0(s[1]),jS(x))++s)0)                    //parse dot-separated path of identifiers
 S A pt(C*v)_(Cc=*s;                                                                                 //parse term
  P(c=='`',s++;Ax=pS();x&&xn>1?enl(x):x)
  P(c=='"',p1(pC()))
@@ -30,14 +30,14 @@ S A pt(C*v)_(Cc=*s;                                                             
   I(*s-'[',y=au)E(s++;y=sqz(N(pb(0,']')));P(!ytS,ep1(y))P(yN>8,s--;ez1(y)))
   Az=pb(GAP,'}');P(!z,s0=s1;y(0))I(y==au,y=aS(k);i(3,yi='x'+i))
   Ax=N(cpl(aCn(t,s-t),z,y));s0=s1;k=k0;x)
- P(id0(c),Qp=s;Ax=pP();I(s-p==1&&c-'y'<2u,k=MAX(k,c-'w'))AO(p-s0,p1(x)))
+ P(id0(c),Qp=s;Ax=pP();I(s-p==1&&c-'y'<2u,k=MAX(k,c-'w'))AO(p-s0,x))
  P(C09(c)&&s[1]==':',I u=s[2]==':';s+=2+u;Ii=20+c-'0';P(i>25,ep0())*v=1;Lt(tv-u)|i)
  P(c=='0'&&s[1]=='x',s+=2;p1(p0x()))
  P(num(s)&&(c-'-'||s==s0||(!id1(s[-1])&&!strchr(")]}\"",s[-1]))),L d=0;Qp=s;c=*p;
   W(1,p+=*p==32;B(!num(p))p+=*p=='-';c=*p;B(!CA9(c))
       W(CA9(c)||c=='.'||c==':',d|=!!strchr(".nwef",c);c=*++p))
   p1(d?pF():pZ()))
- P(c>>7,Qp=s;Ax=pP();*v=1;AO(p-s0,p1(x)))
+ P(c>>7,Qp=s;Ax=pP();*v=1;AO(p-s0,x))
  Ii=si("'/\\",c);P(i<3,c=*++s;I h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,GAP)
  I u=*++s==':';s+=u;*v=1;Lt(tv-u)|i)
 S X1(pm,Rv(x^au^av)RA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x)Rs(Lv=xv;Qs=qs(&v);Nn;P(*s>>7&&s[(n=SL(s))-1]-':',Cb[8];MC(b,s,n);b[n]=':';b[n+1]=0;sym(b))x)R_(x)) //monadify

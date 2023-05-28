@@ -40,7 +40,7 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
 #define OK -1                                                                                       //returned by cl() and cr() on success
 S A u;S UC b[256],m[256],lu[16];S I nb,nl,l[16],cr(A,B);                                            //u:lambda(src;b:bytes;m:map;l:locals;consts..)  lu:last usages
 S B cd(Lv)_(Qs=qs(&v);!!strchr(s,'.'))                                                              //symbol contains '.'?
-SN I il(Iv)_(Li=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                                                     //index of a local  variable (returns -1 if not found)
+SN I il(Iv)_(P(cd(v),-1)Li=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                                          //index of a local  variable (returns -1 if not found)
 SN UC ig(Lv)_(Qs;                                                                                   //index of a global variable (allocates a new slot if not found)
  I(*gp&&!cd(v)&&id0(*s),Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0)//prepend \d prefix
  Li=fI(gk,gn,v);P(i>=0,i)P(gn>=L(gv),0)gk[gn]=v;gv[gn]=0;gn++)
@@ -48,17 +48,15 @@ S B cm(Ax/*0*/){X(Rv(!xv)Ru(1)Rs(Lv=xv;Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')R_(0))}
 S V cc(Ax/*1*/,I o){Nn=un,i=CO;W(i<n&&!mtc_(x,ua),i++)i<n?x(0):uq(x);h(i+bc-CO);}                   //append a "load constant" instruction
 S I cl(Ax,Ay/*00*/,B r){Q(cm(xx))Iv=_v(xx),o=xo;                                                    //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
  Y(R_(o)
-   RS(P(yn==1,o)cl(x,jS(yR),o))
    Rs(I(!cd(yv),Ii=il(yv);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)Iv=yv;l[nl++]=v;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
       UC i=ig(yv);h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
    RA(In=yn-1;P(n>8u,o)Az=yx;P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(r,P(xx-av,o))E(h(bP))OK)
-      I(ztS,z=jS(zR))
-      ZsS(i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);I(i>=0,h(r?by:bx))E(i=ig(zv);h(r?bY:bX))h(i)h(v)OK)
-      o))}
+      Zs(i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);I(i>=0,h(r?by:bx))E(i=ig(zv);h(r?bY:bX))h(i)h(v)OK)o))}
 S I cr(Ax/*0*/,B r)_(I o=xo;                                                                        //compile rvalue (x:tree,r:wantResult)
- XsS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bP))OK)P(xv=='o',I(r,h(bo))OK))                           // x.y      variable (possibly qualified)
-     E(P(xn==1,I(r,cc(ii(x,0),o))OK)x=jS(xR))                                                       //
-     h(bG)h(ig(xv))I(!r,h(bP))OK)                                                                   //
+ XS(I(xts,Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bP))OK)P(xv=='o',I(r,h(bo))OK))                            // x.y      variable (possibly qualified)
+    E(P(xn==1,I(r,cc(ii(x,0),o))OK)x=jS(xR))                                                        //
+    h(bG)h(ig(xv))I(!r,h(bP))OK)                                                                    //
+ Xs(Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bP))OK)P(xv=='o',I(r,h(bo))OK)h(bG)h(ig(xv))I(!r,h(bP))OK)       // x.y      variable (possibly qualified)
  P(!xtA||!xn,I(r,cc(x-GAP?xR:au,o))OK)                                                              // ()       constant
  Nn=xn;Ay=xx;                                                                                       //
  P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
