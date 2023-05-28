@@ -40,7 +40,7 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
 #define OK -1                                                                                       //returned by cl() and cr() on success
 S A u;S UC b[256],m[256],lu[16];S I nb,nl,l[16],cr(A,B);                                            //u:lambda(src;b:bytes;m:map;l:locals;consts..)  lu:last usages
 S B cd(Lv)_(Qs=qs(&v);!!strchr(s,'.'))                                                              //symbol contains '.'?
-SN I il(Iv)_(P(cd(v),-1)Li=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                                          //index of a local  variable (returns -1 if not found)
+SN I il(Iv)_(Li=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                                                     //index of a local  variable (returns -1 if not found)
 SN UC ig(Lv)_(Qs=qs(&v);                                                                            //index of a global variable (allocates a new slot if not found)
  I(*gp&&!cd(v)&&id0(*s),Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0)//prepend \d prefix
  Li=fI(gk,gn,v);P(i>=0,i)P(gn>=L(gv),0)gk[gn]=v;gv[gn]=0;gn++)
@@ -48,12 +48,14 @@ S B cm(Ax/*0*/){X(Rv(!xv)Ru(1)Rs(Lv=xv;Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')R_(0))}
 S V cc(Ax/*1*/,I o){Nn=un,i=CO;W(i<n&&!mtc_(x,ua),i++)i<n?x(0):uq(x);h(i+bc-CO);}                   //append a "load constant" instruction
 S I cl(Ax,Ay/*00*/,B r){Q(cm(xx))Iv=_v(xx),o=xo;                                                    //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
  Y(R_(o)
-   Rs(I(!cd(yv),Ii=il(yv);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)Iv=yv;l[nl++]=v;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
-      UC i=ig(yv);h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
+   Rs(I w=yv;I(!cd(w),Ii=il(w);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)l[nl++]=w;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
+      UC i=ig(w);h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
+   RS(die("NYI"))
    RA(In=yn-1;P(!n||n>8u,o)Az=yx;P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(r,P(xx-av,o))E(h(bP))OK)
-      Zs(i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);I(i>=0,h(r?by:bx))E(i=ig(zv);h(r?bY:bX))h(i)h(v)OK)o))}
+      Zs(i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=cd(zv)?-1:il(zv);I(i>=0,h(r?by:bx))E(i=ig(zv);h(r?bY:bX))h(i)h(v)OK)o))}
 S I cr(Ax/*0*/,B r)_(I o=xo;                                                                        //compile rvalue (x:tree,r:wantResult)
- Xs(Ii=il(xv);I(i>=0,h(bg+i))J(xv-'o',h(bG)h(ig(xv)))E(h(bo))I(!r,h(bP))OK)                         // x.y      variable (possibly qualified)
+ Xs(Iv=xv,i=cd(v)?-1:il(v);I(i>=0,h(bg+i))J(v-'o',h(bG)h(ig(v)))E(h(bo))I(!r,h(bP))OK)              // x.y      variable (possibly qualified)
+ XS(die("NYI"))
  P(!xtA||!xn,I(r,cc(x-GAP?xR:au,o))OK)                                                              // 0        constant
  Nn=xn;Ay=xx;                                                                                       //
  P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
@@ -69,7 +71,7 @@ S I cr(Ax/*0*/,B r)_(I o=xo;                                                    
  J(n==3&&ytv,I(!p&&!_tsSA(xy),Q(b[nb-1]>=bc);Ii=b[nb-1]-bc;b[nb-1]=bV;h(i)h(yv))E(h(bv+yv)))        // x+y      dyad
  E(P(n>9,o)Nr(xx,1)h(ba)h(n-1))                                                                     // x[y]     application
  I(!r,h(bP))OK)
-A1(qte,/*1*/xts||xtA?aA1(x):x)                                                                      //quote
+A1(qte,/*1*/xtsSA?aA1(x):x)                                                                         //quote
 S A2(c2,/*00*/P(xtw&&!ytsSA,1)/*P(x==TIL&&ytZ&&yn<4,i(yn,P(!IN(gl(ii(y,i)),101),0))1)*/0)           //constant folding
 S A3(c3,/*000*/P(ADD<=x&&x<=MUL&&ytzZ&&ztzZ&&(ytt||ztt||yn==zn)&&MAX(xN,yN)<101,1)0)                //constant folding
 S A1(cf,P(!xtA||!xn,x)P(xx==MKL,i(xn,Ay=xa;YsSA(x))qte(N(drp(1,x))))P(xn==2?c2(xx,xy):xn==3?c3(xx,xy,xz):0,qte(N(val(x))))Ay=rsz(xn,au);i(xn,ya=cf(xa);xa=au;P(!ya,die("CF")))AO(xo,x(y)))
@@ -78,3 +80,14 @@ S B shy(Ax/*0*/)_(!xtA?0:xn&&xx==GAP?shy(xA[xn-1]):xn==3&&cm(xx)&&_tsSA(xy))    
 A3(cpl,/*111*/nb=1;MS(lu,-1,SZ lu);Ik=0;I(z,k=zn;MC(l,zV,CO*k);z(0))nl=k;u=aA(CO);y=Nx(cf(y));ux=x;uy=uz=uA[3]=au;B s=shy(y);I r=cr(y,!s);y(0);P(r-OK,ec0();eS(ux,r);u(0))
  I o=0;I(s,cc(au,o))P(un>255||nb>L(b)-2||nl>L(l)-2||gn>L(gv)-2,ez0();eS(ux,0);u(0))h(bu)P(nb>=255||un>255-bc+CO,eS(ux,0);u(0);ez0())
  i(nl,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);uA[3]=aV(tS,nl,l);AK(k,AT(to,u)))
+
+//┌────┬───────────┐
+//│CODE│    AST    │
+//│    │ old   new │
+//├────┼─────┬─────┤
+//│a   │`a   │,`a  │
+//│a.b │`a`b │`a`b │
+//│`a  │,`a  │`a   │
+//│,`a │,,`a │,,`a │
+//│`a`b│,`a`b│,`a`b│
+//└────┴─────┴─────┘
