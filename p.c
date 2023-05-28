@@ -22,7 +22,7 @@ S A0(ps,Qp=s;Cc=*s;I(id0(c),s=pID(s))J(c>>7,W(*++s<-64)s+=*s==':')aCm(p,s))     
 S A0(pS,Ax=oS;W(1,Ay=*s-'"'?ps():Nx(pC());y=str0(y);xq(y(sym(yV)));Qp=pw(s);P(*p-'`',x)s=p+1)0)     //parse symbols
 S A0(pP,Ax=oS;W(1,Ay=str0(ps());y(xq(sym(yV)));P(*s-'.'||!id0(s[1]),jS(x))++s)0)                    //parse dot-separated path of identifiers
 S A pt(C*v)_(Cc=*s;                                                                                 //parse term
- P(c=='`',s++;Ax=pS();x&&xn>1?enl(x):x)
+ P(c=='`',s++;Ax=N(pS());qte(xn>1?x:fir(x)))
  P(c=='"',p1(pC()))
  P(c=='[',s++;pb(GAP,']'))
  P(c=='(',s++;P(*s==')',s++;oA)Ax=N(pb(MKL,')'));xn-2?x:las(x))
