@@ -50,10 +50,10 @@ S I cl(Ax,Ay/*00*/,B r){Q(cm(xx))Iv=_v(xx),o=xo;                                
  Y(R_(o)
    Rs(I(!cd(yv),Ii=il(yv);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)Iv=yv;l[nl++]=v;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
       UC i=ig(yv);h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
-   RA(In=yn-1;P(n>8u,o)Az=yx;P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(r,P(xx-av,o))E(h(bP))OK)
+   RA(In=yn-1;P(!n||n>8u,o)Az=yx;P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(r,P(xx-av,o))E(h(bP))OK)
       Zs(i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=il(zv);I(i>=0,h(r?by:bx))E(i=ig(zv);h(r?bY:bX))h(i)h(v)OK)o))}
 S I cr(Ax/*0*/,B r)_(I o=xo;                                                                        //compile rvalue (x:tree,r:wantResult)
- Xs(Ii=il(xv);P(i>=0,h(bg+i)I(!r,h(bP))OK)P(xv=='o',I(r,h(bo))OK)h(bG)h(ig(xv))I(!r,h(bP))OK)       // x.y      variable (possibly qualified)
+ Xs(Ii=il(xv);I(i>=0,h(bg+i))J(xv-'o',h(bG)h(ig(xv)))E(h(bo))I(!r,h(bP))OK)                         // x.y      variable (possibly qualified)
  P(!xtA||!xn,I(r,cc(x-GAP?xR:au,o))OK)                                                              // 0        constant
  Nn=xn;Ay=xx;                                                                                       //
  P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
@@ -63,8 +63,7 @@ S I cr(Ax/*0*/,B r)_(I o=xo;                                                    
  P(n>3&&(y==av||y==CST),n--;I p[n];A*a=xA;i(n&~1,Nr(*++a,1);h(i&1?bj:bz)p[i]=nb;h(0))               // :[x;y;z] cond
   Nr(n&1?*++a:au,1);i(n&~1,I d=(i&1?nb-1:p[i+1])-p[i];I(i&1,Ij=(n&~1)-1;W(i<j&&d>255,d=p[j]-1-p[i];j-=2))P(d>255,o)b[p[i]]=d)I(!r,h(bP))OK)
  I(n==2&&y==FIR,Az=xy;I(ztA&&zn==2,P(zx-REV<3u,Nr(zy,1);h(bu+zx-REV+LAS-au)I(!r,h(bP))OK)))         // *|x      recognized idioms
- I p=0;i(n-1,Az=xA[n-1-i];I(z-GAP,Nr(z,1))E(p=1;cc(GAP,o)))                                         //
- I(p,Nr(xx,1);h(bp)h(n-1))                                                                          // x[y;]    projection
+ I p=0;i(n-1,Az=xA[n-1-i];I(z-GAP,Nr(z,1))E(p=1;cc(GAP,o)))I(p,Nr(xx,1);h(bp)h(n-1))                // x[y;]    projection
  J(y==MKL,n--;P(n>255u,o)h(bl)h(n))                                                                 // (x;y)    list
  J(n==2&&ytu,h(bu+yv))                                                                              // +x       monad
  J(n==3&&ytv,I(!p&&!_tsSA(xy),Q(b[nb-1]>=bc);Ii=b[nb-1]-bc;b[nb-1]=bV;h(i)h(yv))E(h(bv+yv)))        // x+y      dyad
