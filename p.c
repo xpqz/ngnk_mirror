@@ -1,11 +1,8 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S Qs,s0;S I k;                                                                                      //parser state (s:current pointer, s0:start of source, k:implicit arg counter)
+S Qs,s0;S I k;S A pb(A,C);                                                                          //parser state (s:current pointer, s0:start of source, k:implicit arg counter)
 I si(Qs,Cv)_(strchrnul(s,v)-(C*)s)                                                                  //find char (string index)
-B id0(UC c)_(CAz(c)|(c|1)==0xd1)                                                                    //is identifier start char?
-S B id1(Cc)_(id0(c)|C09(c))                                                                         //is identifier char?
-S B num(Qs)_(C09(s[*s=='-']))                                                                       //is number?
-S A1(p1,x&&xn==1?fir(x):x)                                                                          //if x is a singleton list, return its only item; otherwise return x
-S Q pw(Qs)_(W(*s==32,s++)s)                                                                         //skip whitespace
+B id0(UC c)_(CAz(c)|(c|1)==0xd1)S B id1(Cc)_(id0(c)|C09(c))S B num(Qs)_(C09(s[*s=='-']))            //is identifier start char? is identifier char? is number start?
+S Q pw(Qs)_(W(*s==32,s++)s)S A1(p1,x&&xn==1?fir(x):x)                                               //skip whitespace; singleton list to atom
 Q pID(Qs)_(W(id1(*s),s+=G(1,1,1,1,1,1,2,3)[(UC)*s>>5])s)                                            //parse identifier
 L pu(Q*p)_(Qs=*p;Lv=0;Cc=*s;W(C09(c),v=10*v+c-'0';c=*++s)*p=s;v)                                    //parse long int unsigned
 L pl(Q*p)_(Im=**p=='-';*p+=m;(1-2*m)*pu(p))                                                         //parse long int
@@ -24,7 +21,6 @@ S A0(p0x,Qp=s;W(CA9(*p),p++)Ax=N(unhC(s,p-s));s=p;x)                            
 S A0(ps,Qp=s;Cc=*s;I(id0(c),s=pID(s))J(c>>7,W(*++s<-64)s+=*s==':')aCm(p,s))                         //parse symbol
 S A0(pS,Ax=oS;W(1,Ay=*s-'"'?ps():Nx(pC());y=str0(y);xq(y(sym(yV)));Qp=pw(s);P(*p-'`',x)s=p+1)0)     //parse symbols
 S A0(pP,Ax=oS;W(1,Ay=str0(ps());y(xq(sym(yV)));P(*s-'.'||!id0(s[1]),x)++s)0)                        //parse dot-separated path of identifiers
-S A pb(A,C);
 S A pt(C*v)_(Cc=*s;                                                                                 //parse term
  P(c=='`',s++;Ax=pS();x&&xn>1?enl(x):x)
  P(c=='"',p1(pC()))
