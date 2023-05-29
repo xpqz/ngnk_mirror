@@ -33,7 +33,7 @@ o/w/http:w/http.c;$(CC) $< -o $@
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
 
 t:tu td tg te ta                          #all tests
-tu:k o/t;o/t                              #unit
+tu:k o/t;o/t               ;echo tu  done #unit
 td:k;cd dy;./a.k           ;echo td  done #dyalog
 tg:k;cd g;./a.k            ;echo tg  done #codegolf
 te:te0 te1 te2                            #projecteuler
