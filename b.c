@@ -40,8 +40,7 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
 #define OK -1                                                                                       //returned by cl() and cr() on success
 S A u;S UC b[256],m[256],lu[16];S I nb,nl,l[16],cr(A,B);                                            //u:lambda(src;b:bytes;m:map;l:locals;consts..)  lu:last usages
 SN I il(Iv)_(Li=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                                                     //index of a local  variable (returns -1 if not found)
-UC ig(Ax)_(Q(xtS&&xn)Lv=_v(jS(xR));Qs=qs(&v);                                                       //index of a global variable (allocates a new slot if not found)
- I(xn==1&&*gp&&id0(*s),Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0)//prepend \d prefix
+UC ig(Ax)_(Q(xtS&&xn)Lv=_v(jS(xR));Qs=qs(&v);I(xn==1&&gp&&id0(*s),v=_v(jS(cat(as(gp),xR))))         //index of a global variable (allocates a new slot if not found)
  Li=fI(gk,gn,v);P(i>=0,i)P(gn>=L(gv),0)gk[gn]=v;gv[gn]=0;gn++)
 S B cm(Ax/*0*/){X(Rv(!xv)Ru(1)RS(P(xn-1,0)Lv=*xI;Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')R_(0))}          //is x a valid modifier? i.e. :: or primitive monad or symbol ending with ":"
 S V cc(Ax/*1*/,I o){Nn=un,i=CO;W(i<n&&!mtc_(x,ua),i++)i<n?x(0):uq(x);h(i+bc-CO);}                   //append a "load constant" instruction
