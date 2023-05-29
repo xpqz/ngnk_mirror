@@ -39,7 +39,6 @@ S AQ(bscd,P(!*s,Cb[256];getcwd(b,SZ b)?eo0():aCz(b))chdir(s)?eo0():au)
 S AQ(bsd,P(!*s,as(gp))s+=*s=='.';gp=sq(s);au)
   AQ(bsl,Ax=N(u1c(aCz(s)));P(!xn,x(au))C*p=xC,*e=p+xn;P(e[-1]-10,x(err0("eoleof")))e[-1]=0;I(*p=='#'&&p[1]=='!',p=strchrnul(p,10);p+=!!*p)evs(p,1);au)
 S AQ(bsf,K1("{`0:($!h),'\":\",'`k'. h:(&x=^`o`p`q`r`u`v`w`x?@'h)#h:``repl_.:0#`}",ai(!s)))
-//S AQ(bsL,Nm=SZ oldgp;C p[m],q[m+3];MC(p,oldgp,m);Ax=N(bsd(s));Nn=SL(oldgp);MC(q,oldgp,n);MC(q+n,".k",3);bsl(q);MC(oldgp,p,m);x)
 S AQ(bst,Ln=s[-1]=='t'&&*s==':'?++s,pl(&s):1;Qp=s;Ax=N(pk(&p,10));x=N(cpl(aCm(s,p),x,0));L t=now();i(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))
 S AQ(bsv,bsf(0))
 S A bs_(C**p)_(C*s=*p,*e=strchrnul(s,10),c=*s,d=s[1];*p=e+!!*e;*e=0;
@@ -47,7 +46,7 @@ S A bs_(C**p)_(C*s=*p,*e=strchrnul(s,10),c=*s,d=s[1];*p=e+!!*e;*e=0;
  P(!d||d==10||d==32||d==':',G(&bsl,bst,bsd,bsbs,bsf,bsv,bsm,bs0)[si("ltd\\fvm",c)](s+1+(d==32)))
  K1("0x0a\\`x(,,\"/bin/sh\"),,:",aCz(s)))
 
-L gp;I gn,gk[];A gv[],cns,ce[tn],cn[tn];Q*argv,*env;
+N gn;L gp,gk[];A gv[],cns,ce[tn],cn[tn];Q*argv,*env;
 S A evC1(C**p)_(C*s=*p;P(*s=='\\',++*p;bs_(p))Ax=pk((V*)p,10);C*e=*p;N(x);x=N(cpl(aCm(s,e),x,0));x(run(x,0,0)))
 A evC(C*s,I b)_(W(*s,Ax=evC1(&s);I(b,I(x,x(out(x)))E(s=strchrnul(s,10);s+=!!*s;epr(0)))E(N(x);P(!*s,x)x(0))mc())au)
 A evs(Qs,I b)_(Nn=SL(s)+1;C p[n];MC(p,s,n);evC(p,b))
