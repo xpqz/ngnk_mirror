@@ -39,24 +39,20 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
 #define Nl(a...) {I r_=cl(a);P(r_-OK,r_);}                                                          //compile lvalue; return on error
 #define OK -1                                                                                       //returned by cl() and cr() on success
 S A u;S UC b[256],m[256],lu[16];S I nb,nl,l[16],cr(A,B);                                            //u:lambda(src;b:bytes;m:map;l:locals;consts..)  lu:last usages
-S B cd(Lv)_(Qs=qs(&v);!!strchr(s,'.'))                                                              //symbol contains '.'?
 SN I il(Iv)_(Li=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                                                     //index of a local  variable (returns -1 if not found)
-SN UC ig(Lv)_(Qs=qs(&v);                                                                            //index of a global variable (allocates a new slot if not found)
- I(*gp&&!cd(v)&&id0(*s),Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0)//prepend \d prefix
- Li=fI(gk,gn,v);P(i>=0,i)P(gn>=L(gv),0)gk[gn]=v;gv[gn]=0;gn++)
-SN UC igS(Ax)_(Q(xtS)x=jS(xR);Lv=xv;Qs=qs(&v);                                                      //index of a global variable (allocates a new slot if not found)
- I(*gp&&!cd(v)&&id0(*s),Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0)//prepend \d prefix
+UC ig(Ax)_(Q(xtS&&xn)Lv=_v(jS(xR));Qs=qs(&v);                                                       //index of a global variable (allocates a new slot if not found)
+ I(xn==1&&*gp&&id0(*s),Nm=SL(gp),n=SL(s);P(m+n+3>SZ gp,-1)gp[m]='.';MC(gp+m+1,s,n+1);v=(I)sym(gp);gp[m]=0)//prepend \d prefix
  Li=fI(gk,gn,v);P(i>=0,i)P(gn>=L(gv),0)gk[gn]=v;gv[gn]=0;gn++)
 S B cm(Ax/*0*/){X(Rv(!xv)Ru(1)RS(P(xn-1,0)Lv=*xI;Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')R_(0))}          //is x a valid modifier? i.e. :: or primitive monad or symbol ending with ":"
 S V cc(Ax/*1*/,I o){Nn=un,i=CO;W(i<n&&!mtc_(x,ua),i++)i<n?x(0):uq(x);h(i+bc-CO);}                   //append a "load constant" instruction
 S I cl(Ax,Ay/*00*/,B r){Q(cm(xx))Iv=_v(xx),o=xo;                                                    //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
  Y(R_(o)
    RS(I(yn==1,I w=*yI,i=il(w);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)l[nl++]=w;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
-      UC i=igS(y);h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
+      UC i=ig(y);h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
    RA(In=yn-1;P(!n||n>8u,o)Az=yx;P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(r,P(xx-av,o))E(h(bP))OK)
-      ZS(i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=zn-1?-1:il(*zI);I(i>=0,h(r?by:bx))E(i=igS(z);h(r?bY:bX))h(i)h(v)OK)o))}
+      ZS(i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=zn-1?-1:il(*zI);I(i>=0,h(r?by:bx))E(i=ig(z);h(r?bY:bX))h(i)h(v)OK)o))}
 S I cr(Ax/*0*/,B r)_(I o=xo;                                                                        //compile rvalue (x:tree,r:wantResult)
- XS(Ii=xn-1?-1:il(*xI);I(i>=0,h(bg+i))J(xn==1&&*xI=='o',h(bo))E(h(bG)(h(igS(x))))I(!r,h(bP))OK)     // x.y      variable (possibly qualified)
+ XS(Ii=xn-1?-1:il(*xI);I(i>=0,h(bg+i))J(xn==1&&*xI=='o',h(bo))E(h(bG)(h(ig(x))))I(!r,h(bP))OK)      // x.y      variable (possibly qualified)
  P(!xtA||!xn,I(r,cc(x-GAP?xR:au,o))OK)                                                              // 0        constant
  Nn=xn;Ay=xx;                                                                                       //
  P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
