@@ -79,13 +79,10 @@ A3 _2,aA3,arf,arp,ars,cpl,e2,r2,try;A4 ara,a4,d4;AX _8,e8,f8,prj,run;AA a8,d8,in
 A a2t(A,A,C),aA0(N),aE(L,L),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),evC(C*,I),evs(Q,I),k1(A*,Q,A),k2(A*,Q,A,A),
  k8(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(I,N),pk(Q*,C),pen(A,A1*),slc(A,N,N),unhC(Q,N),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A),
  w1(I,A,A),w2(I,A,A,A),w8(I,A,OA*,N);
+B id0(UC),mtc_(A,A),tru(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);F gf(A);I _K(A),qA(A,A),qf(F,F),js_eval(C*,I,C*,I),si(Q,C),rnk(A);
+L cfm(OA*,I),gl_(A),gl(A),gkk(A),iw(A,I,L),now(),pf(Q*),pl(Q*),pu(Q*),fI(OV*,N,L),fL(OV*,N,L),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);N _N(A);Q qs(O L*),pID(Q);UC ig(A);
 V cyc(V*,N,N),eS(A,N),eQ(Q,N,N),exit(I),hexC(Q,N,C*),kargs(I,Q*),kinit(),*memmem(OV*,N,OV*,N),mrn(N,OA*),mRn(N,OA*),repl(),tilV(V*,L,L,I);
-F gf(A);N _N(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);Q qs(O L*),pID(Q);
-B id0(UC),mtc_(A,A),tru(A);
-UC ig(A);
-I _K(A),qA(A,A),qf(F,F),js_eval(C*,I,C*,I),si(Q,C),rnk(A);
-L cfm(OA*,I),gl_(A),gl(A),gkk(A),iw(A,I,L),now(),pf(Q*),pl(Q*),pu(Q*),fI(OV*,N,L),fL(OV*,N,L),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);
-EX I pg;EX N gn;EX L gp,gk[256];EX A gv[256],cns,ce[],cn[],ci[2][5];EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX Q*argv,*env,HEX;EX OCA vc,TS,Tw,TW,TT,TX,Tk;
+EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,ce[],cn[],ci[2][5];EX I pg;EX L gp,gk[256];EX N gn;EX OCA vc,TS,Tw,TW,TT,TX,Tk;EX Q*argv,*env,HEX;
 
 //                 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
 //                   () !n ,3 ,4 ,5 ,6 ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
