@@ -44,7 +44,7 @@ L gkk(Ax/*0*/)_(Xs((UI)xv)Q(xtS&&xn)(L)_v(jS(drp(-1,xR)))<<32|(UI)_v(ii(x,xn-1))
 UC ig(Ax)_(Q(xtS&&xn)Lk=gkk(x);I(!(k>>32)&&id0((C)k),k|=(L)gp<<32)                                  //index of a global variable (allocates a new slot if not found)
  Li=fL(gk,gn,k);P(i>=0,i)P(gn>=L(gv),0)gk[gn]=k;gv[gn]=0;gn++)
 S B cm(Ax/*0*/){X(Rv(!xv)Ru(1)RS(P(xn-1,0)Lv=*xI;Qs=qs(&v);Nn=SL(s);n&&s[n-1]==':')R_(0))}          //is x a valid modifier? i.e. :: or primitive monad or symbol ending with ":"
-S V cc(Ax/*1*/,I o){Nn=un,i=CO;W(i<n&&!mtc_(x,ua),i++)i<n?x(0):uq(x);h(i+bc-CO);}                   //append a "load constant" instruction
+S V cc(Ax/*0*/,I o){Nn=un,i=CO;W(i<n&&!mtc_(x,ua),i++)I(i>=n,uq(xR))h(i+bc-CO)}                     //append a "load constant" instruction
 S I cl(Ax,Ay/*00*/,B r){Q(cm(xx))Iv=_v(xx),o=xo;                                                    //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
  Y(R_(o)
    RS(I(yn==1,I w=*yI,i=il(w);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)l[nl++]=w;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
@@ -53,10 +53,10 @@ S I cl(Ax,Ay/*00*/,B r){Q(cm(xx))Iv=_v(xx),o=xo;                                
       ZS(i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=zn-1?-1:il(*zI);I(i>=0,h(r?by:bx))E(i=ig(z);h(r?bY:bX))h(i)h(v)OK)o))}
 S I cr(Ax/*0*/,B r)_(I o=xo;                                                                        //compile rvalue (x:tree,r:wantResult)
  XS(Ii=xn-1?-1:il(*xI);I(i>=0,h(bg+i))J(xn==1&&*xI=='o',h(bo))E(h(bG)(h(ig(x))))I(!r,h(bP))OK)      // x.y      variable (possibly qualified)
- P(!xtA||!xn,I(r,cc(x-GAP?xR:au,o))OK)                                                              // 0        constant
+ P(!xtA||!xn,I(r,cc(x-GAP?x:au,o))OK)                                                               // 0        constant
  Nn=xn;Ay=xx;                                                                                       //
  P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
- P(n==1,I(r,cc(yR,o))OK)                                                                            // `a       quoted
+ P(n==1,I(r,cc(y,o))OK)                                                                             // `a       quoted
  P(n==3&&cm(y)&&_tsSA(xy),YS(Nr(xz,1);Nr(xy,1);Nr(enl(cS(drp(-1,str(ii(y,0))))),1);h(ba)h(2)Az=aA1(au);Nl(z,xy,r);z(0);OK)Nr(xz,1);Nl(x,xy,r);OK)// x[y]+:z     assignment
  P(n>3&&(y==av||y==CST),n--;I p[n];A*a=xA;i(n&~1,Nr(*++a,1);h(i&1?bj:bz)p[i]=nb;h(0))               // :[x;y;z] cond
   Nr(n&1?*++a:au,1);i(n&~1,I d=(i&1?nb-1:p[i+1])-p[i];I(i&1,Ij=(n&~1)-1;W(i<j&&d>255,d=p[j]-1-p[i];j-=2))P(d>255,o)b[p[i]]=d)I(!r,h(bP))OK)
