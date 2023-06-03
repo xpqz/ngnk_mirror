@@ -52,7 +52,7 @@ S I cl(Ax,Ay/*00*/,B r){Q(cm(xx))Iv=_v(xx),o=xo;                                
    RA(In=yn-1;P(!n||n>8u,o)Az=yx;P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(r,P(xx-av,o))E(h(bP))OK)
       ZS(i(n,Nr(yA[n-i],1))h(bl)h(n)Ii=zn-1?-1:il(*zI);I(i>=0,h(r?by:bx))E(i=ig(z);h(r?bY:bX))h(i)h(v)OK)o))}
 S I cr(Ax/*0*/,B r)_(I o=xo;                                                                        //compile rvalue (x:tree,r:wantResult)
- XS(Ii=xn-1?-1:il(*xI);I(i>=0,h(bg+i))J(xn==1&&*xI=='o',h(bo))E(h(bG)(h(ig(x))))I(!r,h(bP))OK)      // x.y      variable (possibly qualified)
+ XS(Ii=xn-1?-1:il(*xI);I(i>=0,h(bg+i))J(xn==1&&*xI=='o',h(bo))E(h(bG)h(ig(x)))I(!r,h(bP))OK)        // x.y      variable (possibly qualified)
  P(!xtA||!xn,I(r,cc(x-GAP?x:au,o))OK)                                                               // 0        constant
  Nn=xn;Ay=xx;                                                                                       //
  P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
