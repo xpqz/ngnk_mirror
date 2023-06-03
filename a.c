@@ -50,7 +50,7 @@ AX(_8,/*01..1*/Q(n)P(n==1,x1(*a))P(n==2&&!xtp,Ay=*a;y(x2(y,a[1])))P(!xtt,i8(x,a,
  X(Ro(run(x,a,n))Rv(x=v8[xv](a,n);mrn(n-1,a+1);x)Rr(w8(xE,xx,a,n))Rq(_1(xx,N(_8(xy,a,n))))R_(et8(a,n))
   Rp(P(xn+xK>9,er8(a,n))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==GAP&&j<n?a[j++]:_R(xA[i+1]))I l=MAX(0,n-j);MC(b+m,a+j,8*l);_8(xx,b,m+l)))0)
 A1(jS,cS(jc('.',str(x))))//join symbols with "."
-X1(val,RA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez1(x))x=mut(x);Ay=_8(xx,&xy,xn-1);AN(1,x);x(y))RE(gZ(x))RZ_E(x)RC(x=str0(x);x(evC(xV,0)))Rc(val(enl(x)))Rs(val(enl(x)))
+X1(val,RA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez1(x))x=mut(x);Ay=_8(xx,&xy,xn-1);AN(1,x);x(y))RE(gZ(x))RZ_E(x)RC(x=str0(x);x(evs(xV,0)))Rc(val(enl(x)))Rs(val(enl(x)))
  RS(P(!xn,x(0);Ax=oS,y=oA;i(gn,I(gv[i],Lk=gk[i];xq(k-(I)k?jS(aV(tS,2,A((I)(k>>32),k))):as(k));yq(_R(gv[i]))))am(x,y))Li=fL(gk,gn,gkk(x));i<0||!gv[i]?ev0():_R(gv[i]))
  RmM(x(_R(xy)))Ropq(AT(tA,mut(x)))Rr(cat10(AT(tA,mut(x)),aw+xE))Ruvw(ai(xv))R_(et1(x)))
 A2(dot,/*01*/Ym(et1(y))Nn=yN;P(!n,y(xR))P(n>8,ez1(y))y=mRa(N(cA(y)));y(x8(yA,n)))
