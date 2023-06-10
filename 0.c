@@ -49,6 +49,7 @@ I pg=4096;//pagesize
  I ftruncate(If,off_t o)_(-1)
  I wait4(Ii,I*l,I o,ST rusage*u)_(-1)
  long sysconf(Ii)_(i==_SC_PAGESIZE?4096:-1)
+ V*dlopen(Qs,Ii)_((V*)0)V*dlsym(V*p,Qs)_((V*)0)I dlclose(V*p)_(0)C*dlerror()_("wasm")
 
  #include<dirent.h>
  DIR*fdopendir(If)_((V*)0)
