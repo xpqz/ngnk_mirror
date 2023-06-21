@@ -1,10 +1,10 @@
 #!k
 \d repl
-`1:"ngn/k, (c) 2019-2023 ngn, GNU AGPLv3. type \\ for more info\n"
-`1:prompt:," " /use 0x0720 for emacs integration
+banner:"ngn/k, (c) 2019-2023 ngn, GNU AGPLv3. type \\ for more info\n"
+prompt:," " /use 0x0720 for emacs integration
 lines:cols:999
 upd:{(lines;cols)::`I$"\n"\`x(("/usr/bin/tput";"-S");"lines\ncols\n")}
-lim:{(x&#y)#y}
+lim:{(x<#y)(x#)/y}
 dd:{(x<#y)(,[;".."](x-2)#)/y}
 fmt:{upd[];$[x~(::);"";(1<#x)&|/`m`M`A=@x;mMA x;(dd[cols]`k@lim[cols]x),"\n"]}
 mMA:{t:@x;n:lines-2;d:n<(`M=t)+#x
@@ -12,7 +12,7 @@ mMA:{t:@x;n:lines-2;d:n<(`M=t)+#x
  (P;q):((,"!/+(";,")");(("+![";" +(");")]");(,,"(";,")"))`m`M`A?t
  x:$[`m=t;tbl[P;q]@+(!x;.x)
      `M=t;tbl[P;q](,!x),+lim[cols;.x]
-          lst[P;q]lim[cols]'x]
+          lst[P;q]@lim[cols]'x]
  x:d(,[;,".."](n-1)#)/x
  x:@[;-1+#x;,;q]P[!#x],'x
  "\n"/x,,""}
@@ -21,13 +21,16 @@ tbl:{[P;q;x]w:cols-2+#*P;s:`k''x;{"( ",x," )"}'(((-1+#x)#w),w-#q)dd'" ; "/'cell'
 cell:{$[|/`i`d=@y;-x;x]$z}
 cmds:(,"a")!{`1:1:joinpath[dirname`argv 0]"LICENSE";}
 dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
+basename:{*|"/"\x}
 joinpath:{$[x~,".";y;"/"~*|x;x,y;x,"/",y]}
 line0:{c:{0x07~*-2#*x}{(l;r):x;(1:1;r,,(-2_l))}/(x;());"\n"/(*|c),,*c}
 line1:{$[#x;;:0];x:-1_x;$[(3>#x)&("\\"=*x)&~^(!cmds)?x 1;cmds[x 1]x 1;.[`1:fmt@.:;,x;{`0:`err[]}]];`1:prompt;1}
 line:line1@line0@
-{cmds::@[cmds;x[1]1;:;{y;`0:x}2_x]}'{(&x~\:80#"-")_x:(1+*&x~\:,"/")_-1_x}@0:`argv 1;
+$["repl.k"~basename`argv 1;{cmds::@[cmds;x[1]1;:;{y;`0:x}2_x]}'{(&x~\:80#"-")_x:(1+*&x~\:,"/")_-1_x}@0:`argv 1;];
+run:{`1:banner,prompt;{line@1:`}::/`;}
 \d .
-$["kw"~`argv 0;;{repl.line@1:`}::/`];
+
+$[(~"kw"~`argv 0)&~"--non-interactive"~*x;repl.run[];]
 
 /
 --------------------------------------------------------------------------------
