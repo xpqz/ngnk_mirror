@@ -9,19 +9,21 @@ dd:{(x<#y)(,[;".."](x-2)#)/y}
 fmt:{upd[];$[x~(::);"";(1<#x)&|/`m`M`A=@x;mMA x;(dd[cols]`k@lim[cols]x),"\n"]}
 mMA:{t:@x;n:lines-2;d:n<(`M=t)+#x
  x:d(n#)/x
- (P;q):((,"!/+(";,")");(("+![";" +(");")]");(,,"(";,")"))`m`M`A?t
- x:$[`m=t;tbl[P;q]@+(!x;.x)
-     `M=t;tbl[P;q](,!x),+lim[cols;.x]
-          lst[P;q]@lim[cols]'x]
+ (P;q):((,"!/+(";,")");(("+![";" +(");")]");(,,"(";,")"))i:`m`M`A?t
+ x:(dct;tbl;lst)[i][P;q;x]
  x:d(,[;,".."](n-1)#)/x
  x:@[;-1+#x;,;q]P[!#x],'x
  "\n"/x,,""}
-lst:{[P;q;x]w:cols-  #*P;                      (((-1+#x)#w),w-#q)dd'`k'x}
-tbl:{[P;q;x]w:cols-2+#*P;s:`k''x;{"( ",x," )"}'(((-1+#x)#w),w-#q)dd'" ; "/'cell'[|/#''s]'[x;s]}
+dct:{[P;q;x]w:cols-#*P;k:(|/#'k)$k:`k'!x;par'(((-1+#x)#w-3),w-3+#q)dd'k,'";",/:`k'.x}
+tbl:{[P;q;x]h:`k'!x;d:`k''.x;W:(#'h)|/'#''d;w:cols-#*P
+     r:$[`S~@!x;dd[w]" "," "/;par@dd[w-2]@";"/]W$'h
+     (,r),par'dd[w-2]'";"/'+@[W;&~^`i`d?_@'.x;-:]$'d}
+lst:{[P;q;x]w:cols-#*P;(((-1+#x)#w),w-#q)dd'`k'lim[cols]'x}
 cell:{$[|/`i`d=@y;-x;x]$z}
+par:{"(",x,")"}
 cmds:(,"a")!{`1:1:joinpath[dirname`argv 0]"LICENSE";}
-dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
 basename:{*|"/"\x}
+dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
 joinpath:{$[x~,".";y;"/"~*|x;x,y;x,"/",y]}
 line0:{c:{0x07~*-2#*x}{(l;r):x;(1:1;r,,(-2_l))}/(x;());"\n"/(*|c),,*c}
 line1:{$[#x;;:0];x:-1_x;$[(3>#x)&("\\"=*x)&~^(!cmds)?x 1;cmds[x 1]x 1;.[`1:fmt@.:;,x;{`0:`err[]}]];`1:prompt;1}
