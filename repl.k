@@ -6,7 +6,8 @@ lines:cols:999
 upd:{(lines;cols)::`I$"\n"\`x(("/usr/bin/tput";"-S");"lines\ncols\n")}
 lim:{(x<#y)(x#)/y}
 dd:{(x<#y)(,[;".."](x-2)#)/y}
-fmt:{upd[];$[x~(::);"";(1<#x)&|/`m`M`A=@x;mMA x;(dd[cols]`k@lim[cols]x),"\n"]}
+fmt:{upd[];$[(::)~x;"";(1<#x)&|/`m`M`A=@x;mMA x;(dd[cols]`k@lim[cols]x),"\n"]}
+fmtx:{$[(::)~x;"";`k[x],"\n"]}
 mMA:{t:@x;n:lines-2;d:n<(`M=t)+#x
  x:d(n#)/x
  (P;q):((,"!/+(";,")");(("+![";" +(");")]");(,,"(";,")"))i:`m`M`A?t
@@ -15,9 +16,9 @@ mMA:{t:@x;n:lines-2;d:n<(`M=t)+#x
  x:@[;-1+#x;,;q]P[!#x],'x
  "\n"/x,,""}
 dct:{[P;q;x]w:cols-#*P;k:(|/#'k)$k:`k'!x;par'(((-1+#x)#w-3),w-3+#q)dd'k,'";",/:`k'.x}
-tbl:{[P;q;x]h:`k'!x;d:`k''.x;W:(#'h)|/'#''d;w:cols-#*P
-     r:$[`S~@!x;dd[w]" "," "/;par@dd[w-2]@";"/]W$'h
-     (,r),par'dd[w-2]'";"/'+@[W;&~^`i`d?_@'.x;-:]$'d}
+tbl:{[P;q;x]w:cols-#*P;h:`k'!x;d:`k''.x;W:(#'h)|/'#''d
+ r:,$[`S~@!x;dd[w]" "," "/;par@dd[w-2]@";"/]W$'h
+ r,par'dd[w-2]'";"/'+@[W;&~^`i`d?_@'.x;-:]$'d}
 lst:{[P;q;x]w:cols-#*P;(((-1+#x)#w),w-#q)dd'`k'lim[cols]'x}
 cell:{$[|/`i`d=@y;-x;x]$z}
 par:{"(",x,")"}
@@ -26,7 +27,7 @@ basename:{*|"/"\x}
 dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
 joinpath:{$[x~,".";y;"/"~*|x;x,y;x,"/",y]}
 line0:{c:{0x07~*-2#*x}{(l;r):x;(1:1;r,,(-2_l))}/(x;());"\n"/(*|c),,*c}
-line1:{$[#x;;:0];x:-1_x;$[(3>#x)&("\\"=*x)&~^(!cmds)?x 1;cmds[x 1]x 1;.[`1:fmt@.:;,x;{`0:`err[]}]];`1:prompt;1}
+line1:{$[#x;;:0];x:-1_x;$[(3>#x)&("\\"=*x)&~^(!cmds)?x 1;cmds[x 1]x 1;.[`1:(fmt;fmtx)[" "~*x]@.:;,x;{`0:`err[]}]];`1:prompt;1}
 line:line1@line0@
 $["repl.k"~basename`argv 1;{cmds::@[cmds;x[1]1;:;{y;`0:x}2_x]}'{(&x~\:80#"-")_x:(1+*&x~\:,"/")_-1_x}@0:`argv 1;];
 run:{`1:banner,prompt;{line@1:`}::/`;}
