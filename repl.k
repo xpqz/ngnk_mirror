@@ -2,26 +2,25 @@
 \d repl
 banner:"ngn/k, (c) 2019-2023 ngn, GNU AGPLv3. type \\ for more info\n"
 prompt:," " /use 0x0720 for emacs integration
+(opn;sem;cls):"(;)"
+/(opn;sem;cls):("( ";" ; ";" )") /uncomment this line for extra spacing
 lines:cols:999
 upd:{(lines;cols)::`I$"\n"\`x(("/usr/bin/tput";"-S");"lines\ncols\n")}
 lim:{(x<#y)(x#)/y}
 dd:{(x<#y)(,[;".."](x-2)#)/y}
 fmt:{upd[];$[(::)~x;"";(1<#x)&|/`m`M`A=@x;mMA x;(dd[cols]`k@lim[cols]x),"\n"]}
 fmtx:{$[(::)~x;"";`k[x],"\n"]}
-mMA:{t:@x;n:lines-2;d:n<(`M=t)+#x
- x:d(n#)/x
- (P;q):((,"!/+(";,")");(("+![";" +(");")]");(,,"(";,")"))i:`m`M`A?t
- x:(dct;tbl;lst)[i][P;q;x]
- x:d(,[;,".."](n-1)#)/x
- x:@[;-1+#x;,;q]P[!#x],'x
- "\n"/x,,""}
-dct:{[P;q;x]w:cols-#*P;k:(|/#'k)$k:`k'!x;par'(((-1+#x)#w-3),w-3+#q)dd'k,'";",/:`k'.x}
-tbl:{[P;q;x]w:cols-#*P;h:`k'!x;d:`k''.x;W:(#'h)|/'#''d
- r:,$[`S~@!x;dd[w]" "," "/;par@dd[w-2]@";"/]W$'h
- r,par'dd[w-2]'";"/'+@[W;&~^`i`d?_@'.x;-:]$'d}
-lst:{[P;q;x]w:cols-#*P;(((-1+#x)#w),w-#q)dd'`k'lim[cols]'x}
+mMA:{(P;f;q):((,"!/+(";dct;,")");(("+![";" +(");tbl;")]");(,,"(";lst;,")"))`m`M`A?t:@x
+ w:cols-#*P;u:w-#q;h:lines-2
+ x:$[h<(`M=t)+#x;,[;,".."](h-1)#f[w;u;h#x];f[w;u;x]]
+ ,[;"\n"]@"\n"/@[;-1+#x;,;q]P[!#x],'x}
+lst:{[w;u;x](((-1+#x)#w),u)dd'`k'lim[cols]'x}
+dct:{[w;u;x]k:(|/#'k)$k:`k'!x;par'(((-1+#x)#w-3),u-3)dd'sem/'+(k;`k'.x)}
+tbl:{[w;u;x]h:`k'!x;d:`k''.x;W:(#'h)|/'#''d
+ r:,$[`S~@!x;dd[w](""opn),(""sem)/;par@dd[w-2]@sem/]W$'h
+ r,par'dd[w-2]'sem/'+@[W;&~^`i`d?_@'.x;-:]$'d}
 cell:{$[|/`i`d=@y;-x;x]$z}
-par:{"(",x,")"}
+par:{opn,x,cls}
 cmds:(,"a")!{`1:1:joinpath[dirname`argv 0]"LICENSE";}
 basename:{*|"/"\x}
 dirname:{$[#x:"/"/-1_"/"\x;x;,"."]}
