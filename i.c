@@ -31,7 +31,7 @@ A1(u2c,en1(x))                                                                  
 Y2(v0c,RA(v0c(x,N(jc(10,y))))RC(v1c(x,apc(y,10)))R_(et1(y)))                                                                                         // x 0:y
 A2(v1c,P(!ytC,et1(y))Xz(If=gl_(x);My(x=(f<3||!S_ISREG(fm(f))?fws:fwm)(f,yV,yn))x)If=N(o(xR,O_RDWR|O_CREAT|O_TRUNC));Az=v1c(ai(f),y);f>2&&close(f);z) // x 1:y
 A2(v2c,P(!xts||!ytA,et1(y))P(yn-2,el1(y))P(!_ts(yx)||!_ti(yy),et1(y))Lv=xv,w=_v(yx);Ik=_v(yy);y(0);P(!k||k>8u,ed0())                                 // x 2:y
- V*f=dlsym(dlopen(qs(&v),RTLD_LAZY),qs(&w));C*e=dlerror();P(!f||e,os(e);eo0())ax(f,k))
+ V*f=dlsym(dlopen(qs(&v),RTLD_LAZY),qs(&w));C*e=dlerror();P(!f||e,os(e);os("\n");eo0())ax(f,k))
 
 S A rda(If)_(Ax=aC(256-HD);L m=0,k;W((k=read(f,xV+m,xn-m))>0,m+=k;I(m+1000000>xn&&2*m>xn,Ay=aC(2*xn+HD);MC(yV,xV,m);x=x(y)))close(f);AN(m,x))
 S I lC(Ax)_(XA(i(xn,P(_t(xa)-tC,0))1)0)//list of strings?
