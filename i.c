@@ -23,6 +23,7 @@ S A frm(If)_(Ln=lseek(f,0,SEEK_END);n<0?eo0():n?mf(f,n):oC)                     
 S A fws(If,Qs,Nn)_(W(n>0,Lk=write(f,s,n);P(k<0,eo0())P(!k,au)s+=k;n-=k)au)                                                                           // write stream
 S A fwm(If,Qs,Nn)_(ftruncate(f,n);V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_SHARED,f,0);MC(p,s,n);munmap(p,n);au)                                        // write through mmap
 S I fm(If)_(ST stat s;fstat(f,&s)<0?0:s.st_mode)                                                                                                     // get file mode
+SN A dle()_(C*e=dlerror();I(e,os(e);os("\n"))eo0())
 A1(opn,Xz(x)ai(N(o(x,O_RDWR|O_CREAT))))                                                                                                              // <s
 AL(cls,close(n);au)                                                                                                                                  // >i
 A1(u0c,spl(N(u1c(x))))                                                                                                                               // 0:x
@@ -31,11 +32,10 @@ A1(u2c,en1(x))                                                                  
 Y2(v0c,RA(v0c(x,N(jc(10,y))))RC(v1c(x,apc(y,10)))R_(et1(y)))                                                                                         // x 0:y
 A2(v1c,P(!ytC,et1(y))Xz(If=gl_(x);My(x=(f<3||!S_ISREG(fm(f))?fws:fwm)(f,yV,yn))x)If=N(o(xR,O_RDWR|O_CREAT|O_TRUNC));Az=v1c(ai(f),y);f>2&&close(f);z) // x 1:y
 A2(v2c,P(!xts||!ytA,et1(y))P(yn-2,el1(y))P(!_ts(yx)||!_ti(yy),et1(y))Lv=xv,w=_v(yx);Ik=_v(yy);y(0);P(!k||k>8u,ed0())                                 // x 2:y
- V*f=dlsym(dlopen(qs(&v),RTLD_LAZY),qs(&w));C*e=dlerror();P(!f||e,os(e);os("\n");eo0())ax(f,k))
+ V*l=dlopen(qs(&v),RTLD_LAZY);P(!l,dle())V*f=dlsym(l,qs(&w));P(!f,dle())ax(f,k))
 
 S A rda(If)_(Ax=aC(256-HD);L m=0,k;W((k=read(f,xV+m,xn-m))>0,m+=k;I(m+1000000>xn&&2*m>xn,Ay=aC(2*xn+HD);MC(yV,xV,m);x=x(y)))close(f);AN(m,x))
 S I lC(Ax)_(XA(i(xn,P(_t(xa)-tC,0))1)0)//list of strings?
 A1(frk,P(!xtA||xn-2,et1(x))Ay=kv(&x);P(!lC(x)||!ytC,ed2(x,y))x=Ny(e1f(str0,x));Q a[xn+1];i(xn,a[i]=_V(xa))a[xn]=0;I p[4];pipe(p);pipe(p+2);I pid=fork();
  P(!pid,dup2(*p,0);dup2(p[3],1);i(4,close(p[i]))exit(execve(*a,(C**)a,(C*O*)env));0)close(*p);close(p[3]);N(v1c(ai(p[1]),x(y)));close(p[1]);Ax=rda(p[2]);wait4(pid,0,0,0);x)
 L now()_(ST timeval t;gettimeofday(&t,0);1000000ll*t.tv_sec+t.tv_usec)
-
