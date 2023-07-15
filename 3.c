@@ -4,7 +4,7 @@
 #define MAXE(x,y) (x)=MAX(x,y)
 NI A1(inv,x=mut(x);L*p=xL;i(xn*xW+31>>5<<2,*p++^=-1)x)
 
-S A3(___f,/*010*/Ni=!y;I(i,y=ii(z,0))Nn=zn;W(i<n,y=y(x2(y,ii(z,i++)));B(!y))y)
+S A3(___f,/*010*/Ni=!y;I(i,y=io(z,0))Nn=zn;W(i<n,y=y(x2(y,ii(z,i++)));B(!y))y)
 S A3(dexf,/*010*/Au=las(zR);y?y(u):u)
 L minfZ(Lv,Ax/*0*/)_(i4(xw,xn,MINE(v,xg),MINE(v,xh),MINE(v,xi),MINE(v,xl))v)
 L maxfZ(Lv,Ax/*0*/)_(i4(xw,xn,MAXE(v,xg),MAXE(v,xh),MAXE(v,xi),MAXE(v,xl))v)
