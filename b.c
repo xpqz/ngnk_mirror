@@ -34,11 +34,12 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
   D(*--s=_R(xA[c-bc+CO]))))                                                                         //const     |bc+i  |.. -> .. consts[i]     |
  l:d--;Au=*s;MS(l+nl,0,s-l-nl+1<<3);i(L(l),Ax=l[i];I(x,mr(x)))I(!u,eS(xx,(UC)_C(xz)[(C*)b-1-_C(xy)]))u)
 
-#define h(a) {b[nb]=a;m[nb]=o;nb+=nb<255;}                                                          //append byte
+#define h(a) {b[nb]=a;m[nb]=o;nb+=nb<MB-1;}                                                         //append byte
 #define Nr(a...) {I r_=cr(a);P(r_-OK,r_);}                                                          //compile rvalue; return on error
 #define Nl(a...) {I r_=cl(a);P(r_-OK,r_);}                                                          //compile lvalue; return on error
 #define OK -1                                                                                       //returned by cl() and cr() on success
-S A u;S UC b[256],m[256],lu[16];S I nb,nl,l[16],cr(A,B);                                            //u:lambda(src;b:bytes;m:map;l:locals;consts..)  lu:last usages
+#define MB 256                                                                                      //max bytecode size
+S A u;S UC b[MB],m[MB],lu[16];S I nb,nl,l[16],cr(A,B);                                              //u:lambda(src;b:bytes;m:map;l:locals;consts..)  lu:last usages
 SN I il(Iv)_(Li=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                                                     //index of a local  variable (returns -1 if not found)
 L gkk(Ax/*0*/)_(Xs((UI)xv)Q(xtS&&xn)(L)_v(jS(drp(-1,xR)))<<32|(UI)_v(ii(x,xn-1)))
 UC ig(Ax)_(Lk=gkk(x),l=(I)k;I(!(k>>32)&&id0(*qs(&l)),k|=(L)gp<<32)                                  //index of a global variable (allocates a new slot if not found)
@@ -74,5 +75,5 @@ S A1(cf,P(!xtA||!xn,x)P(xx==MKL,i(xn,Ay=xa;YSA(x))qte(N(drp(1,x))))P(xn==2?c2(xx
 S I mxs(Ii,I s)_(I r=s;W(1,UC c=MIN(bc,b[i++]);r=MAX(r,s);P(!c,r)s+=ds[c]+ks[c]*b[i];i+=di[c]+(c==bj)*b[i];I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)//max stack
 S B shy(Ax/*0*/)_(!xtA?0:xn&&xx==GAP?shy(xA[xn-1]):xn==3&&cm(xx)&&_tSA(xy))                        //is last expr an assignment?
 A3(cpl,/*111*/nb=1;MS(lu,-1,SZ lu);Ik=0;I(z,k=zn;MC(l,zV,CO*k);z(0))nl=k;u=aA(CO);y=Nx(cf(y));ux=x;uy=uz=uA[3]=au;B s=shy(y);I r=cr(y,!s);y(0);P(r-OK,ec0();eS(ux,r);u(0))
- I o=0;I(s,cc(au,o))P(un>255||nb>L(b)-2||nl>L(l)-2||gn>L(gv)-2,ez0();eS(ux,0);u(0))h(bu)P(nb>=255||un>255-bc+CO,eS(ux,0);u(0);ez0())
+ I o=0;I(s,cc(au,o))P(un>255||nb>MB-2||nl>L(l)-2||gn>L(gv)-2,ez0();eS(ux,0);u(0))h(bu)P(nb>MB-2||un>255-bc+CO,eS(ux,0);u(0);ez0())
  i(nl,Ij=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);uA[3]=aV(tS,nl,l);AK(k,AT(to,u)))
