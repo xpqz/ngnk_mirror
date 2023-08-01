@@ -10,7 +10,7 @@ S V mc(){P(!npnd)i(npnd,Ij=pnd[i];munmap(reg[j].p,reg[j].n);Q(reg[j].f);reg[j].p
 S A mu(V*p)_(i(nreg,P(reg[i].p==p,pnd[npnd++]=i;0))die("UNMAP"))
 S V*mm(Nn,If)_(V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_ANON,-1,0);P((L)p<pg,(V*)0)I(nreg==L(reg),mc();I(nreg==L(reg),die("MMAP")))reg[nreg++]=(TY(*reg)){p,n,f};p)
 S A mx(Nn)_(V*p=mm(n,0);P(!p,die("OOM"))(A)(p+HD))
-A mf(If,Nn)_(V*p=mm(pg+n,1);P(!p,eo0())Ax=(A)(p+pg);xn=n;AT(tC,x);P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,0)!=p+pg,mu(p);eo0())xR)
+A mf(If,Ni,Nn)_(V*p=mm(pg+n,1);P(!p,eo0())Ax=(A)(p+pg);xn=n;AT(tC,x);P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
 
 S Az[SZ(N)==4?27:35]={[L(z)-1]=1};DBG(S I lck;)
 S A mb(Cb,Ax)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)
