@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S A2(dec,/*01*/K2("0{z+x*y}/",x,y))
+S A2(dec,/*01*/K2("{{z+x*y}/[0**y;x;y]}",x,y))
 S X2(enc,/*01*/Rz(K2("{$[&/~*x:(x|-x)!|$[x>0;(-x)!;-x!]\\y;1_x;@[x;0;-:0<]]}",x,y))RZ(K2("{(x|-x)!'|(,y),y{$[y<0;-y!;(-y)!]x}\\-1_|x}",x,y))R_(en1(y)))
 S A scC(Cc    ,C*p,Ln)_(           Ax=oA;C*q;W((q=memchr(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)S A sc(Cc    ,Ax)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))
 S A sCC(C*s,Lm,C*p,Ln)_(P(!m,el0())Ax=oA;C*q;W((q=memmem(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)S A sC(C*s,Lm,Ax)_(XC(x(sCC(s,m,xV,xn)))et1(x))
