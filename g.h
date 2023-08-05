@@ -648,6 +648,7 @@
 #define RMT_C(a...) R9(tM,tA,tE,tG,tH,tI,tL,tF,tS,a)
 #define RMT_E(a...) R9(tM,tA,tG,tH,tI,tL,tF,tC,tS,a)
 #define Ropq(a...) R3(to,tp,tq,a)
+#define Ropqr(a...) R4(to,tp,tq,tr,a)
 #define RsS(a...) R2(ts,tS,a)
 #define Rt(a...) R13(ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,a)
 #define RT(a...) R9(tA,tE,tG,tH,tI,tL,tF,tC,tS,a)

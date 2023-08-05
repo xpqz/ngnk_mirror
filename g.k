@@ -30,7 +30,7 @@ r,:"R@(a...) R(t@,a)"e/:"AEGHILFCSMmilfcsopqruvwx"
 
 p!:p:`c$,/"aA"+\:!26 /pseudotype expansions
 p["TUZtz"]:$`AEGHILFCS`opqruvw`EGHIL`ilfcsopqruvwx`il
-R:" "\"cC fF GC ic iI ilf lL mM mMA MT MT_C MT_E opq sS t T T_A T_AE T_E t_z U uvw z Z zc ZC ZC_E Z_E ZF ZF_E zZ"
+R:" "\"cC fF GC ic iI ilf lL mM mMA MT MT_C MT_E opq opqr sS t T T_A T_AE T_E t_z U uvw z Z zc ZC ZC_E Z_E ZF ZF_E zZ"
 r,:{X:?^/,/'p@"_"\x;"R",x,"(a...) R",($#X),"(",(","/"t",'X),",a)"}'R
 
 "g.h"0:h,"#define ",/:r
