@@ -1,6 +1,6 @@
-#!/../k
+#!../k
 / https://codegolf.stackexchange.com/questions/77608/all-together-now/251239#251239
-f:~/,/'='#:'\
+f:~/,/'='^:\
 
 \l 0.k
 t[,"3"]1
