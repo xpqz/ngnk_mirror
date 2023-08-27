@@ -1,11 +1,11 @@
 ngn/k is a simple fast vector programming language
-try: https://ngn.codeberg.page/k
-build: make CC=clang-11 # or CC=gcc-10 or other
-use: rlwrap ./k repl.k
+try:     https://ngn.codeberg.page/k
+build:   make CC=clang-11     # or CC=gcc-10 or other
+use:     rlfe ./k repl.k      # or rlwrap instead of rlfe
+chat:    https://matrix.to/#/#ngnk:matrix.org
 license: GNU AGPLv3 (v3 only) - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 
 community:
-https://matrix.to/#/#ngnk:matrix.org                       - chat
 https://github.com/gitonthescene/ngnk-mode                 - emacs mode
 https://github.com/gitonthescene/ngnk-libs                 - collection of libraries
 https://github.com/chrispsn/ngn-k-unparser                 - unparser
