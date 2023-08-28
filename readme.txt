@@ -31,6 +31,7 @@ community:
     collection of libraries            https://github.com/gitonthescene/ngnk-libs
     unparser                           https://github.com/chrispsn/ngn-k-unparser
     codemirror lezer parser            https://github.com/SirBogman/codemirror-lang-k
+    various utils                      https://arlyle.codeberg.page/k/
     kpl, apl-like extensions for k     https://codeberg.org/CptJimKirk/kpl
 
 source:
