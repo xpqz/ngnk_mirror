@@ -6,26 +6,32 @@ chat:    https://matrix.to/#/#ngnk:matrix.org
 license: GNU AGPLv3 (v3 only) - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 
 community:
-https://github.com/gitonthescene/ngnk-mode                      - emacs mode
-https://github.com/gitonthescene/ngnk-libs                      - collection of libraries
-https://github.com/gitonthescene/ngnk-libs/tree/master/tutorial - tutorial
-https://github.com/chrispsn/ngn-k-unparser                      - unparser
-https://github.com/razetime/ngn-k-tutorial                      - tutorial (work in progress)
-https://xpqz.github.io/kbook/                                   - book (work in progress)
-https://github.com/kidd/arraylangs-index                        - analysis of ngn/k AoC solutions
-https://github.com/secwang/ngnkcart                             - searchable database of snippets
-https://github.com/xpqz/ngnk_mirror                             - continuous integration for osx
-https://github.com/traws0/ngnk-windows                          - windows port
-https://github.com/nathyong/ngnk-nix                            - nix package
-https://code.golf/rankings/holes/all/k/bytes                    - code golf
-https://week.golf/                                              - code golf
-https://codegolf.stackexchange.com/search?tab=newest&q=ngn      - code golf
-https://k.miraheze.org/wiki/Advent_of_Code                      - aoc solutions by multiple people
-https://github.com/xpqz/dyalogk                                 - dyalog competition solutions
-https://codeberg.org/CptJimKirk/kpl                             - kpl, apl-like extensions for k
-https://github.com/SirBogman/codemirror-lang-k                  - codemirror lezer parser
-https://codeberg.org/suhr/kes                                   - embedding example
-https://crates.io/crates/ngnk                                   - rust bindings
+  learn:
+    book     (work in progress)        https://xpqz.github.io/kbook/
+    tutorial (work in progress)        https://github.com/gitonthescene/ngnk-libs/tree/master/tutorial
+    tutorial (work in progress)        https://github.com/razetime/ngn-k-tutorial
+    embedding example                  https://codeberg.org/suhr/kes
+    searchable database of snippets    https://github.com/secwang/ngnkcart
+  edit:
+    vim mode (in this repo)            ./vim-k
+    emacs mode                         https://github.com/gitonthescene/ngnk-mode
+  fun:
+    code golf                          https://code.golf/rankings/holes/all/k/bytes
+    code golf                          https://week.golf/
+    code golf                          https://codegolf.stackexchange.com/search?tab=newest&q=ngn
+    aoc solutions by multiple people   https://k.miraheze.org/wiki/Advent_of_Code
+    analysis of ngn/k AoC solutions    https://github.com/kidd/arraylangs-index
+    dyalog competition solutions       https://github.com/xpqz/dyalogk
+  interop:
+    windows port                       https://github.com/traws0/ngnk-windows
+    rust bindings                      https://crates.io/crates/ngnk
+    continuous integration for osx     https://github.com/xpqz/ngnk_mirror
+    nix package                        https://github.com/nathyong/ngnk-nix
+  more:
+    collection of libraries            https://github.com/gitonthescene/ngnk-libs
+    unparser                           https://github.com/chrispsn/ngn-k-unparser
+    codemirror lezer parser            https://github.com/SirBogman/codemirror-lang-k
+    kpl, apl-like extensions for k     https://codeberg.org/CptJimKirk/kpl
 
 source:
 0.c main()                       k.h  embedding api
