@@ -21,12 +21,14 @@ sy match  k_g  /:/                                                              
 sy region k_ar matchgroup=k_a start=/(/                 end=/)/ nextgroup=@k_vw contains=@k_k,k_aj,k_ae |hi link k_a       nontext
 sy region k_br matchgroup=k_b start=/\[/                end=/]/ nextgroup=@k_vw contains=@k_k,k_bj,k_be |hi link k_b       k_a
 sy region k_cr matchgroup=k_c start=/{\(\[[^\]]*\]\)\=/ end=/}/ nextgroup=@k_vw contains=@k_k,k_cj,k_ce |hi link k_c       special
+sy region k_dr matchgroup=k_d start=/[\$:]\[/           end=/]/ nextgroup=@k_vw contains=@k_k,k_dj,k_be |hi link k_d       conditional
 sy match  k_ae /[]}]/                                                           contained               |hi link k_ae      k_e
 sy match  k_be /[})]/                                                           contained               |hi link k_be      k_e
 sy match  k_ce /[)]]/                                                           contained               |hi link k_ce      k_e
 sy match  k_aj /;/                                                              contained               |hi link k_aj      k_a
 sy match  k_bj /;/                                                              contained               |hi link k_bj      k_b
 sy match  k_cj /;/                                                                                      |hi link k_cj      k_c
+sy match  k_dj /;/                                                                                      |hi link k_dj      k_d
 sy match  k_t  / \\/                                                                                    |hi link k_t       k_u
 sy match  k_comment /^#!.*/                                                                             |hi link k_comment comment
 sy match  k_comment /^\/.*/
@@ -34,5 +36,5 @@ sy match  k_comment / \+\/.*/
 sy region k_comment matchgroup=k_comment start=/^\/$/   end=/^\\$/
 sy region k_comment matchgroup=k_comment start=/^\\\\$/ end=/^\%$/
 sy cluster k_vw contains=k_v,k_w
-sy cluster k_k  contains=k_e,k_s,k_u,k_w,k_c0,k_i,k_x,k_comment,k_n,k_string,k_g,k_ar,k_br,k_cr,k_t
+sy cluster k_k  contains=k_e,k_s,k_u,k_w,k_c0,k_i,k_x,k_comment,k_n,k_string,k_g,k_ar,k_br,k_cr,k_dr,k_t
 let b:current_syntax='k'
