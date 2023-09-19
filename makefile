@@ -1,7 +1,7 @@
 MAKE:=$(MAKE) MAKEFLAGS=-j8
 M=mkdir -p $(@D)
 0:;$(MAKE) k && $(MAKE) t #default target
-k:;$(MAKE) a N=$@ R=k O='-O3 -march=native' L='-lm -ldl'
+k:;$(MAKE) a N=$@ R=k O='-O3 -march=native -Wl,-E' L='-lm -ldl'
 libk.so:;$(MAKE) a N=$@ R=$@ O='-fPIC -Dshared -lm' L='-lm -ldl -shared'
 libk.a:;$(MAKE) b N=$@ R=$@ O='-O3 -march=native -ffreestanding -lm -ldl -Dldstatic'
 o/$N/%.o:%.c *.h;$M;$(CC) @opts $O -o $@ -c $<
