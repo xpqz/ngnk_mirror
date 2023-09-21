@@ -14,7 +14,7 @@ SN V cLF(OV*RES a,V*RES b,Nn)_(O L*p=a;F*r=b;i(n+ 3& -4,r[i]=p[i]==NL  ?NF:p[i])
 SN V cFL(OV*RES a,V*RES b,Nn)_(O F*p=a;L*r=b;i(n+ 3& -4,r[i]=p[i]!=p[i]?NL:p[i]))
 X1(flp,Rt(enl(enl(x)))R_(enl(x))RM(Ay=kv(&x);am(x,y))
  Rm(Ay=kv(&x);Y(RA(I(yn>1,Ln=cfm(yA,yn);P(n<0,x(el1(y)))i(yn,Az=ya;I(ztt,y=mut(y);ya=rsz(n,z))))aM(x,y))RT_A(aM(x,e1f(enl,y)))R_(en2(x,y)))0)
- RA(Nm=xn;Ln=cfm(xA,m|!m);P(n==-1,enl(x))P(n<0,el1(x))Ct=_t(xx);I(t<tM,i(m,Ay=xa;B(yt-t,t=0)))E(t=0)Ay=aA(n);
+ RA(Nm=xn;Ln=cfm(xA,m|!m);P(n==-1,enl(x))P(n<0,el1(x))Ct=_t(xx);I(t<tM&&t-tE,i(m,Ay=xa;B(yt-t,t=0)))E(t=0)Ay=aA(n);
   P(!t,i(n|!n,Az=aA(m);j(m,zA[j]=ii(xA[j],i))I(!zn,zx=mkn(zx))ya=sqz(z))x(0);I(!yn,yx=mkn(yx))y)
   I w=Tw[t];j(n|!n,Az=yA[j]=an(m,t);S4(w,i(m,zg=_G(xa)[j]),i(m,zh=_H(xa)[j]),i(m,zi=_I(xa)[j]),i(m|!m,zl=_L(xa)[j])I(w==4,I(!m,zx=mkn(_R(zx)))yA[j]=sqz(mRa(z)))))
   x(0);I(!n,yx=mkn(yx))y))
