@@ -1,7 +1,7 @@
 ngn/k is a simple fast vector programming language
 try:     https://ngn.codeberg.page/k
-build:   make CC=clang-11     # or CC=gcc-10 or other
-use:     rlfe ./k repl.k      # or rlwrap instead of rlfe
+build:   make CC=clang-11   # or CC=gcc-10 or other
+use:     rlfe -h ~/.k_history ./k repl.k
 chat:    https://matrix.to/#/#ngnk:matrix.org
 license: GNU AGPLv3 (v3 only) - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 
