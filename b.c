@@ -58,7 +58,9 @@ S I cr(Ax/*0*/,B r)_(I o=xo;                                                    
  Nn=xn;Ay=xx;                                                                                       //
  P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
  P(n==1,I(r,cc(y,o))OK)                                                                             // `a       quoted
- P(n==3&&cm(y)&&_tsSA(xy),YS(Nr(xz,1);Nr(xy,1);Nr(enl(cS(drp(-1,str(ii(y,0))))),1);h(ba)h(2)Az=aA1(au);Nl(z,xy,r);z(0);OK)Nr(xz,1);Nl(x,xy,r);OK)// x[y]+:z     assignment
+ P(n==3&&cm(y)&&_tsSA(xy),
+  YS(Nr(xz,1);Nr(xy,1);Az=enl(cS(drp(-1,str(ii(y,0)))));Nr(z,1);mr(z);h(ba)h(2)z=aA1(au);Nl(z,xy,r);z(0);OK)
+  Nr(xz,1);Nl(x,xy,r);OK)// x[y]+:z     assignment
  P(n>3&&(y==av||y==CST),n--;I p[n];A*a=xA;i(n&~1,Nr(*++a,1);h(i&1?bj:bz)p[i]=nb;h(0))               // :[x;y;z] cond
   Nr(n&1?*++a:au,1);i(n&~1,I d=(i&1?nb-1:p[i+1])-p[i];I(i&1,Ij=(n&~1)-1;W(i<j&&d>255,d=p[j]-1-p[i];j-=2))P(d>255,o)b[p[i]]=d)I(!r,h(bP))OK)
  I(n==2&&y==FIR,Az=xy;I(ztA&&zn==2,P(zx-REV<3u,Nr(zy,1);h(bu+zx-REV+LAS-au)I(!r,h(bP))OK)))         // *|x      recognized idioms
