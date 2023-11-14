@@ -85,8 +85,10 @@ hgr=_=>{if(g)return;doc.body.appendChild(cnv=doc.createElement('canvas'));g=cnv.
  onresize();g.font='0.05px monospace';iid=setInterval(tick,tickPeriod);raf()
  onkeydown=onkeyup=e=>g&&K('k'+e.type[3]+'@'+e.keyCode)
  onkeypress=e=>{if(g){let c=e.charCode;K('kx@'+c);(c===10||c===13)&&K('kr@10');c===8&&K('kb@8')}}
+ cnv.oncontextmenu=_=>!1
  cnv.onmousedown=cnv.onmouseup=cnv.onmousemove=
-  e=>{const r=cnv.getBoundingClientRect();K('m'+e.type[5]+'@'+[e.clientX-r.x,e.clientY-r.y])}},
+  e=>{const r=cnv.getBoundingClientRect(),x=(e.clientX-r.x)/r.width,y=(e.clientY-r.y)/r.height
+   K('m'+e.type[5]+'@`xy`buttons!('+x+' '+y+';'+e.buttons+')')}},
 txt=_=>{if(!g)return;cnv.parentNode.removeChild(cnv);clearInterval(iid);clearTimeout(tid);cancelAnimationFrame(aid)
  cnv=g=iid=tid=aid=null}
 
