@@ -15,16 +15,19 @@ c:{"g.fillStyle='",($x),"';"}           /set colour
 w:{"g.fillText(",(","/(,`j x),$y),");"} /write text
 q:{"g.fillRect(",(","/$(B*x),2#b),");"} /draw box
 
+/mousedown event handler
 md:{$[~tick;:tick
+      2=x`buttons; /todo: toggle flag
+      1-x`buttons;0
       -1~G[i::(2+D)/1+I::_x[`xy]%B]; [W::0;tick::(::)]
       -2~G[i];G::cnt@@[G;i;:;0]]}
 
 d:{$[0>i:G[(2+D)/1+x];(c`green;q x);(c`blue;q x;c`white;w[(~i)_$i;B*u+x])]}
 draw:{cc:d'+!D;m:"you ",("lost";"won")W
-       `js@,//("g.clearRect(0,0,1,1);";d'+!D)
-       $[tick;:tick;~W;`js@,//(c`red;q I)]
-        b:(c`white),/:w["X"]'+B*u+-1+(2+D)\&-1=G
-        `js@,//(b;c`white;w[m;1%4 2])}
+      `js@,//("g.clearRect(0,0,1,1);";d'+!D)
+      $[tick;:tick;~W;`js@,//(c`red;q I)]
+       b:(c`white),/:w["X"]'+B*u+-1+(2+D)\&-1=G
+       `js@,//(b;c`white;w[m;1%4 2])}
 
 `js"tickPeriod=150"; /how often tick[] will be called
 `js"hgr()";          /enter graphics mode
