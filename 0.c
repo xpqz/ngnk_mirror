@@ -68,7 +68,7 @@ I pg=4096;//pagesize
  C*strstr(O C*p,O C*q)_(memmem(p,SL(p),q,SL(q)))
  I strcmp(Q p,Q q)_(W(*p&&*p==*q,p++;q++)*p-*q)
 #else
- I js_eval(C*s,I m,C*r,I n)_(0)
+ U js_eval(C*s,U m,C*r,U n)_(0)
 #endif
 
 #if !defined(__GNU_SOURCE)

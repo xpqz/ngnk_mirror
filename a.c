@@ -34,7 +34,7 @@ L iw(A x/*0*/,I w,L i)_(S4(w,_(xg),_(xh),_(xi),_(xl))0)
 S A1(qa,A y=oA;Q*p=argv;W(*p,yq(aCz(*p++)))y(y1(x)))
 S A1(qe,A y=oS,z=oA;Q*e=env;W(*e,Q p=*e++,q=strchrnul(p,'=');yq(cS(aCm(p,q)));zq(aCz(q+!!*q)))y=am(y,z);x-au?x(x1(y)):y)
 S A1(qx,exit(xtz?gl(x):1);0)
-S X1(qjs,RC(C b[4096];I n=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))RA(e1f(qjs,x))R_(et1(x)))
+S X1(qjs,RC(C b[4096];U n=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))RA(e1f(qjs,x))R_(et1(x)))
 S X1(qp,RC(x=str0(x);Q s=xC;x(pk(&s,0)))R_(et1(x)))
 S A1(qt,x(al(now())))
 S A1(qfb,P(!xtC,et1(x))P(xn-8,el1(x))x=rev(x);x(aV(tf,1,xV)))//float from bits
