@@ -1,17 +1,19 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S Qs,s0;S I k;S A pb(A,C);                                                                          //parser state (s:current pointer, s0:start of source, k:implicit arg counter)
-I si(Qs,Cv)_(strchrnul(s,v)-(C*)s)                                                                  //find char (string index)
-B id0(UC c)_(CAz(c)|(c|1)==0xd1)S B id1(Cc)_(id0(c)|C09(c))S B num(Qs)_(C09(s[*s=='-']))            //is identifier start char? is identifier char? is number start?
+S Qs,s0;S U k;S A pb(A,C);                                                                          //parser state (s:current pointer, s0:start of source, k:implicit arg counter)
+U si(Qs,Cv)_(strchrnul(s,v)-(C*)s)                                                                  //find char (string index)
+B id0(UC c)_(CAz(c)|(c|1)==0xd1)                                                                    //is identifier start char?
+S B id1(Cc)_(id0(c)|C09(c))                                                                         //is identifier char?
+S B num(Qs)_(C09(s[*s=='-']))                                                                       //is number start?
 S Q pw(Qs)_(W(*s==32,s++)s)S A1(p1,x&&xn==1?fir(x):x)                                               //skip whitespace; singleton list to atom
 Q pID(Qs)_(W(id1(*s),s+=G(1,1,1,1,1,1,2,3)[(UC)*s>>5])s)                                            //parse identifier
-L pu(Q*p)_(Qs=*p;Lv=0;Cc=*s;W(C09(c),v=10*v+c-'0';c=*++s)*p=s;v)                                    //parse long int unsigned
+W pu(Q*p)_(Qs=*p;Lv=0;Cc=*s;W(C09(c),v=10*v+c-'0';c=*++s)*p=s;v)                                    //parse long int unsigned
 L pl(Q*p)_(Im=**p=='-';*p+=m;(1-2*m)*pu(p))                                                         //parse long int
-S L pfu(Q*p)_(W v=pu(p);Qs=*p;Cc=*s;P(c=='w',(*p)++;WFL)P(c=='n',(*p)++;v^NFL)I e=0;               //parse float unsigned
+S W pfu(Q*p)_(W v=pu(p);Qs=*p;Cc=*s;P(c=='w',(*p)++;WFL)P(c=='n',(*p)++;v^NFL)I e=0;                //parse float unsigned
  I(c=='.',c=*++s;W(C09(c),I(v<(1ull<<63)/10,v=10*v+c-'0';e--)c=*++s))
  I(c=='e',s++;e+=pl(&s);P(e<-308,0)P(e>308,WFL))
  S F t[309];I(!*t,*t=1;i(308,t[i+1]=10*t[i]))
  *p=s;*(L*)A(e<0?v/t[-e]:v*t[e]))
-L pf(Q*p)_(Im=**p=='-';(*p)+=m;Lv=(W)m<<63|pfu(p);(*p)+=**p=='f';v)                                //parse float
+W pf(Q*p)_(Im=**p=='-';(*p)+=m;Lv=(W)m<<63|pfu(p);(*p)+=**p=='f';v)                                 //parse float
 S A0(pZ,Qp=s;W(*p-'0'<2u,p++)P(*p=='b',Ax=aG(p-s);i(xn,xg=*s++&1)s++;x)                             //parse ints
  Ax=oL;W(1,Lv=pl(&s);I(!v&&*s=='N',v=NL;s++)x=apv(x,&v);Qp=pw(s);B(p==s||!num(p))s=p)sqzZ(x))
 S A0(pF,Ax=oF;W(1,x=apv(x,A(pf(&s)));Qp=pw(s);B(p==s||!num(p))s=p)x)                                //parse floats
