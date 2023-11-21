@@ -119,11 +119,11 @@ enum                    {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp
 //header bytes: Ut.orrrr....nnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
 #define _E(x) _C(x)[-14]      //adverb(for tr)
 #define _k(x) _C(x)[-13]      //arity(for funcs)
-#define _m(x) ((I*)_V(x))[-7] //shadow refcount
+#define _m(x) ((U*)_V(x))[-7] //shadow refcount
+#define _r(x) ((U*)_V(x))[-2] //refcount
 #define _n(x) ((U*)_V(x))[-1] //length
 #define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_G(x)[-13])//srcoffset
 #define _q(x,y) (x=apd(x,y))  //append
-#define _r(x) ((I*)_V(x))[-3] //refcount
 #define _t(x) ({A x_=(x);C t=_t0(x_);t?t:_t1(x_);})//type
 #define _t0(x) ((x)>>56)      //type(tag)
 #define _t1(x) _C(x)[-15]     //type(hdr)
