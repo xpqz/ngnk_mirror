@@ -90,8 +90,8 @@ V cyc(V*,U,U),eS(A,U),eQ(Q,U,U),exit(I),hexC(Q,U,C*),kargs(I,Q*),kinit(),*memmem
 B id0(UC),mtc_(A,A),tru(A);
 C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);
 UC ig(A);
-I _K(A),qA(A,A),qf(F,F),rnk(A);
-U si(Q,C),_N(A),js_eval(C*,U,C*,U);
+I qA(A,A),qf(F,F),rnk(A);
+U _K(A),si(Q,C),_N(A),js_eval(C*,U,C*,U);
 L cfm(O A*,I),gl_(A),gl(A),gkk(A),iw(A,I,L),now(),pl(Q*),fI(O V*,U,L),fL(O V*,U,L),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);
 Q qs(O L*),pID(Q);
 W pf(Q*),pu(Q*);
