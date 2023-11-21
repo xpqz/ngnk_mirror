@@ -544,34 +544,6 @@
 #define oF _R(ce[tF])
 #define oC _R(ce[tC])
 #define oS _R(ce[tS])
-#define Cc C c
-#define Cd C d
-#define Ct C t
-#define Ii I i
-#define Ij I j
-#define Ik I k
-#define Im I m
-#define In I n
-#define Li L i
-#define Lj L j
-#define Lk L k
-#define Lm L m
-#define Ln L n
-#define Ni N i
-#define Nj N j
-#define Nk N k
-#define Nm N m
-#define Nn N n
-#define If I f
-#define Ax A x
-#define Ay A y
-#define Az A z
-#define Au A u
-#define OA O A
-#define OV O V
-#define Qs Q s
-#define Qp Q p
-#define Qq Q q
 #define _x(x) ((A*)_V(x))[0]
 #define _y(x) ((A*)_V(x))[1]
 #define _z(x) ((A*)_V(x))[2]
