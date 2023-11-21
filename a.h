@@ -61,7 +61,7 @@
 #define FN(x,a...) TY(x NOP(a))
 
 TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
-TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(O A*,U),AX(A,O A*,U),AQ(Q);
+TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(O A*,U),AX(A,O A*,U);
 
 #define A0(f,b...) A f(               )_(b)
 #define A1(f,b...) A f(A x            )_(b)/*1*/
@@ -70,7 +70,6 @@ TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(O A*,U),AX
 #define A4(f,b...) A f(A x,A y,A z,A u)_(b)
 #define AX(f,b...) A f(A x,O A*a,U n  )_(b)/*0,1..1,n*/
 #define AA(f,b...) A f(    O A*a,U n  )_(b)
-#define AQ(f,b...) A f(Q s            )_(b)
 A1 _R,aA1,asc,AZ,cA,cG,cC,cF,cH,cI,cL,cS,csti,dsc,enl,epr,err,fir,flp,flr,frk,gZ,grp,hex,imx,imn,inv,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,
  neg,not,nul,of0,of1,opn,out,prng,qkmp,qpri,qte,raz,rev,rs0,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,u2c,unh,unq,val,whr;
 A2 _1,aA2,aM,add,am,apd,ari,bin,cat,cat10,cat11,cst,dex,dot,dvd,eql,exc,crt,fil,fnd,gtn,hsh,ie,i1,ltn,mod,mnm,mtc,mul,mxm,que,sub,und,v0c,v1c,v2c;
