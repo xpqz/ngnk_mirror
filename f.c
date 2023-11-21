@@ -1,10 +1,10 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 I rnk(A x/*0*/){X(RA(I v=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)RmM(rnk(xy))RT_A(1)R_(0))}//-1 for mixed rank
 S U urnk(A x/*0*/){X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))}//assuming unirank
-S L fG(OV*p,U n,L v)_(O G*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
-S L fH(OV*p,U n,L v)_(O H*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
-  L fI(OV*p,U n,L v)_(O I*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
-  L fL(OV*p,U n,L v)_(O L*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+S L fG(O V*p,U n,L v)_(O G*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+S L fH(O V*p,U n,L v)_(O H*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+  L fI(O V*p,U n,L v)_(O I*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+  L fL(O V*p,U n,L v)_(O L*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
 S A1(fN,A y=_R(cn[tl]);x(xtt?y:rsz(xN,y)))
 //S A1(fBN,Q(xtG)G v=0;i(xn,v|=xg)P(!(v>> 7&1),x)A y=aL(xn);Mx(i(xn,yl=xg<0?NL:xg))y)
 //S A1(fHN,Q(xtH)H v=0;i(xn,v|=xg)P(!(v>>15&1),x)A y=aL(xn);Mx(i(xn,yl=xh<0?NL:xh))y)

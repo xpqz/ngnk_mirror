@@ -17,13 +17,13 @@ S A mb(C b,A x)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)
 A an(U n,C t)_(Q(!lck);Q(LH(tA,t,tn-1));Q(!TP(t));C b=59-__builtin_clzll(HD|HD-1+n*TW[t]);P(n>1ull<<L(z)||b>L(z)-2,die("OOM"))
  A x=z[b];I i=b;W(!z[i],i++)I(i<L(z)-1,x=z[i];z[i]=xX)E(x=mb(b,mx(HD<<(i=MAX(b,24)))))I(b<i,xU=b;W(b<i--,z[i]=mb(i,(A)x+(HD<<i))))xr=1;AT(t,AN(n,x)))
 A1(m0,DBG(lck++);Q(x);XP(0)Q(xr>0);P(--xr,0)C b=xU;P(!b,mu(xV-pg))xX=z[b];z[b]=(A)xV;XR(mrn(xn|!xn,xA);x)x)DBG(A1(m1,lck--;P(!x||!xU,0)MS(xV,0xab,xZ);AN(-1,AT(0,x));0))
-V mrn(U n,OA*a){i(n,mr(a[i]))}
-V mRn(U n,OA*a){i(n,_R(a[i]))}
+V mrn(U n,O A*a){i(n,mr(a[i]))}
+V mRn(U n,O A*a){i(n,_R(a[i]))}
 A1(mRa,mRn(xn,xA);x)
 A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)
 A1(mr,DBG(m1)(m0(x)))
 
-A aV(C t,U n,OV*v)_(A x=an(n,t);MC(xV,v,n*TW[t]);x)
+A aV(C t,U n,O V*v)_(A x=an(n,t);MC(xV,v,n*TW[t]);x)
 A aA0(U n)_(A x=AN(0,aA(n));xx=oC;x)
 A1(aA1,A y=an(1,tA);yx=x;y)
 A2(aA2,/*11*/a2t(x,y,tA))

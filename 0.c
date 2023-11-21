@@ -25,7 +25,7 @@ I pg=4096;//pagesize
 #if defined(wasm)
  I pipe(I v[2])_(-1)
  C*getcwd(C*s,N n)_((V*)0)
- I js_in(V*,N);V js_out(OV*,N),js_log(OV*),*js_alloc(N),js_time(I*,long*),js_exit(I);
+ I js_in(V*,N);V js_out(O V*,N),js_log(O V*),*js_alloc(N),js_time(I*,long*),js_exit(I);
  S ST{C*a,p[16];N n;}s[8]={{.a=""},{.a=""},//s:storage,
   #include"o/w/fs.h"
  };S ST{C i;N o;}d[8]={{.i=1},{.i=1},{.i=1}};S O I ns=L(s),nd=L(d);//d:fd table
@@ -35,7 +35,7 @@ I pg=4096;//pagesize
   I f=0;W(f<nd&&d[f].i,f++)P(f>=nd,EMFILE)d[f].i=i;d[f].o=0;f)
  I close(I f)_(FI d[f].i=0;0)
  I read(I f,V*a,N n)_(FI P(i==1,js_in(a,n))I o=d[f].o;n=MAX(0,MIN(n,s[i].n-o));MC(a,s[i].a+o,n);d[f].o+=n;n)
- I write(I f,OV*a,N n)_(FI;P(i==1,js_out(a,n);n)
+ I write(I f,O V*a,N n)_(FI;P(i==1,js_out(a,n);n)
   I m=d[f].o+n;I(m>s[i].n,C*b=js_alloc(m);MC(b,s[i].a,n);s[i].a=b;s[i].n=m)MC(s[i].a+d[f].o,a,n);n)
  off_t lseek(I f,off_t o,I w)_(FI;o=w==SEEK_CUR?o+d[f].o:w==SEEK_END?o+s[i].n:w==SEEK_SET?o:-1;P(o<0,EINVAL)d[f].o=o)
  I fstat(I f,ST stat*r)_(FI;I n=s[i].n;
@@ -45,7 +45,7 @@ I pg=4096;//pagesize
  I gettimeofday(ST timeval*a,V*b)_(js_time((V*)&a->tv_sec,(V*)&a->tv_usec);0)
  V exit(I v){js_exit(v);}
  I dup2(I f,I v)_(-1)I execve(Q p,C*O*a,C*O*e)_(-1)I fork()_(-1)I socket(I i,I j,I k)_(-1)
- I setsockopt(I f,I l,I s,OV*v,socklen_t n)_(-1)I connect(I f,O ST sockaddr*s,socklen_t n)_(-1)I chdir(Q p)_(-1)
+ I setsockopt(I f,I l,I s,O V*v,socklen_t n)_(-1)I connect(I f,O ST sockaddr*s,socklen_t n)_(-1)I chdir(Q p)_(-1)
  I ftruncate(I f,off_t o)_(-1)
  I wait4(I i,I*l,I o,ST rusage*u)_(-1)
  long sysconf(I i)_(i==_SC_PAGESIZE?4096:-1)
@@ -56,13 +56,13 @@ I pg=4096;//pagesize
  ST dirent*readdir(DIR*x)_((V*)0)
  I closedir(DIR*x)_(0)
 
- V*memcpy (V*x,OV*y,N n)_(C*p=x  ;Q q=y  ;i(n,*p++=*q++)x)
- V*memrcpy(V*x,OV*y,N n)_(C*p=x+n;Q q=y+n;i(n,*--p=*--q)x)
- V*memmove(V*x,OV*y,N n)_((y<x&&x<y+n?memrcpy:memcpy)(x,y,n))
+ V*memcpy (V*x,O V*y,N n)_(C*p=x  ;Q q=y  ;i(n,*p++=*q++)x)
+ V*memrcpy(V*x,O V*y,N n)_(C*p=x+n;Q q=y+n;i(n,*--p=*--q)x)
+ V*memmove(V*x,O V*y,N n)_((y<x&&x<y+n?memrcpy:memcpy)(x,y,n))
  V*memset(V*x,I v,N n)_(C*p=x;i(n,*p++=v);x)
- V*memchr(OV*x,I v,N n)_(Q s=x;i(n,P(s[i]==v,(V*)(s+i)))(V*)0)
- V*memmem(OV*x,N m,OV*y,N n)_(Q p=x,q=y;i((L)m-(L)n+1,P(!memcmp(p+i,q,n),(V*)(p+i)))(V*)0)
- I memcmp(OV*x,OV*y,N n)_(Q s=x,t=y;i(n,I v=*s++-*t++;P(v,v))0)
+ V*memchr(O V*x,I v,N n)_(Q s=x;i(n,P(s[i]==v,(V*)(s+i)))(V*)0)
+ V*memmem(O V*x,N m,O V*y,N n)_(Q p=x,q=y;i((L)m-(L)n+1,P(!memcmp(p+i,q,n),(V*)(p+i)))(V*)0)
+ I memcmp(O V*x,O V*y,N n)_(Q s=x,t=y;i(n,I v=*s++-*t++;P(v,v))0)
  N strlen(Q s)_(Q p=s;W(1,W v=~*(W*)(V*)p;v&=v>>1;v&=v>>2;v&=v>>4;v&=0x0101010101010101ll;B(v)p+=8)W(*p,p++)p-s)
  C*strchr(O C*s,I v)_(W(1,P(*s==v,(V*)s)P(!*s++,(V*)0))(V*)0)
  C*strstr(O C*p,O C*q)_(memmem(p,SL(p),q,SL(q)))

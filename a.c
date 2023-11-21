@@ -77,5 +77,5 @@ AA(d8,/*10..0*/A x=*a;XsS(L k=gkk(x);x(0);L i=fL(gk,gn,k);I(i<0,gk[i=gn++]=k)A*p
 SN A ki(A*p,Q s)_(*p=evs(s,0);I(!*p,die(s))cns=apd(cns,*p))
 A k1(A*p,Q s,A x)_(I(!*p,ki(p,s))_1(*p,x))
 A k2(A*p,Q s,A x,A y)_(I(!*p,ki(p,s))_2(*p,x,y))
-A k8(A*p,Q s,OA*a,U n)_(I(!*p,ki(p,s))n?_8(*p,a,n):*p)
+A k8(A*p,Q s,O A*a,U n)_(I(!*p,ki(p,s))n?_8(*p,a,n):*p)
 AA(no8,/*10..0*/en1(*a))

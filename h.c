@@ -3,7 +3,8 @@ A1(rs0,rsz(0,x))
 SN A flt(A x,A y,B b/*01b*/)_(P(xK-1,er1(y))Ym(K("{(!y)[i]!(.y)i:&z~/:x@.y}",xR,y,ai(b)))
  x=Ny(x1(yR));x=xN?Ny(cL(x)):x(oG);P(!xtt&&xN-yN,el1(x(y)))A z=rs0(yR);i(yN,L n=gl(ii(x,i));B(b&&n-(U)n,z=ed1(z))j(b?n:!n,zq(ii(y,i))))x(y(z)))
 V cyc(V*a,U m,U n){Q(m);W(2*m<=n,MC(a+m,a,m);m*=2)I(n>m,MC(a+m,a,n-m))}
-A rsz(L n,A x)_(/*n1*/X(Rt(rsz(n,enl(x)))RM(A y=kv(&x),z=az(n);aM(x,Nx(z(r2(RSH,z,y)))))Rm(A y=kv(&x);x=Ny(rsz(n,x));y=Nx(rsz(n,y));am(x,y))
+A rsz(L n,A x/*1*/)_(
+ X(Rt(rsz(n,enl(x)))RM(A y=kv(&x),z=az(n);aM(x,Nx(z(r2(RSH,z,y)))))Rm(A y=kv(&x);x=Ny(rsz(n,x));y=Nx(rsz(n,y));am(x,y))
  RE(Lij P(n>j-i||n<i-j,rsz(n,gZ(x)))x(0);n>=0?aE(i,i+n):aE(j+n,j))
  R_(P(n==NL,x)P(!xn,rsz(n,enl(fir(x))))
     I r=n<0;n*=1-2*r;A y=an(n,xt);N w=xW,m=xn*w,k=n%xn*w,l=n*w;I(!r,MC(yV,xV,MIN(m,l)))J(l<=m,MC(yV,xV+m-l,l))E(MC(yV,xV+m-k,k);MC(yV+k,xV,m-k))cyc(yV,m,l);
@@ -45,7 +46,7 @@ A2(apd,/*11*/Q(xtMT);U n=xN;P(!n,enl(x(y)))
  XM(P(!ytm||!mtc_(xx,yx),apd(Ny(cA(x)),y))x=mut(x);A z=xy=mut(xy);i(zn|!zn,_q(za,ii(yy,i)))I(!zn,zx=mkn(zx))y(x))
  P(!xtA&&(!ytt||xt-TT[yt]),apd(Ny(cA(x)),y))
  L v=xtA?(L)y:gl(y);apv(x,&v))
-A apv(A x/*1*/,OV*v   )_(Q(xtT);     U n=xn;x=room(n+1,x);MC(xV+n*xW,v,xW);x)
+A apv(A x/*1*/,O V*v  )_(Q(xtT);     U n=xn;x=room(n+1,x);MC(xV+n*xW,v,xW);x)
 A apc(A x/*1*/,C c    )_(Q(xtC||xtG);U n=xn;x=room(n+1,x);xC[n]=c;x)
 A cts(A x/*1*/,Q s,U m)_(Q(xtC);     U n=xn;x=room(n+m,x);MC(xV+n,s,m);x)
 S A insL(A x,L i,L j,A y/*1ij0*/)_(
