@@ -8,7 +8,7 @@ A rsz(L n,A x)_(/*n1*/X(Rt(rsz(n,enl(x)))RM(Ay=kv(&x),z=az(n);aM(x,Nx(z(r2(RSH,z
  R_(P(n==NL,x)P(!xn,rsz(n,enl(fir(x))))
     I r=n<0;n*=1-2*r;Ay=an(n,xt);N w=xW,m=xn*w,k=n%xn*w,l=n*w;I(!r,MC(yV,xV,MIN(m,l)))J(l<=m,MC(yV,xV+m-l,l))E(MC(yV,xV+m-k,k);MC(yV+k,xV,m-k))cyc(yV,m,l);
     I(!n&&ytA,yx=mkn(_R(xx)))x(ytA?sqz(mRa(y)):y)))0)
-A slc(A x/*0*/,U i,U j)_(Q(xtT&&i<=j&&i<=xN)Nn=j-i;XE(Iv=*xL;aE(v+i,v+j))Ay=an(n,xt);MC(yV,xV+i*xW,n*xW);XA(P(!n,yx=mkn(_R(xx));y)sqz(mRa(y)))y)
+A slc(A x/*0*/,U i,U j)_(Q(xtT&&i<=j&&i<=xN)Nn=j-i;XE(I v=*xL;aE(v+i,v+j))Ay=an(n,xt);MC(yV,xV+i*xW,n*xW);XA(P(!n,yx=mkn(_R(xx));y)sqz(mRa(y)))y)
 S A chp(L n,A x/*1*/)_(P(n<0,ed1(x))Lm=(xn+n-1)/n;Ay=aA(m);i(m|!m,ya=slc(x,n*i,MIN(xn,n*i+n)))x(0);I(!m,yx=mkn(yx))y)
 S A2(rsh,/*01*/XE(x=gZ(xR);x(rsh(x,y)))YE(rsh(x,gZ(y)))YmM(en1(y))Yt(rsh(x,enl(y)))Q(xtZ);N r=xn;P(!r,fir(y))P(r>256,ez1(y))x=Ny(cL(xR));L s[r];MC(s,xV,r<<3);x(0);
  I(r==2,P(*s==NL,chp(s[1],y))P(s[1]==NL,K2("{$[(0<x)&~x!#y;(x;(-x)!#y)#y;((-x)!(#y)*!x)_y]}",az(*s),y)))P(r==1&&*s==NL,y)I(!yn,y=enl(fir(y)))
@@ -44,7 +44,7 @@ A2(apd,/*11*/Q(xtMT);Nn=xN;P(!n,enl(x(y)))
  P(xtZ&&ytz,N(sup(&x,&y));apd(x,y))
  XM(P(!ytm||!mtc_(xx,yx),apd(Ny(cA(x)),y))x=mut(x);Az=xy=mut(xy);i(zn|!zn,_q(za,ii(yy,i)))I(!zn,zx=mkn(zx))y(x))
  P(!xtA&&(!ytt||xt-TT[yt]),apd(Ny(cA(x)),y))
- Lv=xtA?(L)y:gl(y);apv(x,&v))
+ L v=xtA?(L)y:gl(y);apv(x,&v))
 A apv(Ax/*1*/,OV*v  )_(Q(xtT);     Nn=xn;x=room(n+1,x);MC(xV+n*xW,v,xW);x)
 A apc(Ax/*1*/,Cc    )_(Q(xtC||xtG);Nn=xn;x=room(n+1,x);xC[n]=c;x)
 A cts(Ax/*1*/,Qs,U m)_(Q(xtC);     Nn=xn;x=room(n+m,x);MC(xV+n,s,m);x)

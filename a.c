@@ -9,32 +9,32 @@ S A iM(Ax,Li,FN(A,A,L)*f)_(Q(xtM);Ay=xy,z=aA(yn);Q(ytA);j(zn|!zn,zA[j]=f(yA[j],i
 A ii(A x/*0*/,L i)_(X(RA(_R(xa))RC(ac(xc))RG(ai(xg))RH(ai(xh))RI(ai(xi))RL(al(xl))RF(af(xf))RS(as(xi))Rm(ii(xy,i))RM(iM(x,i,ii))RE(az(*xL+i))R_(xR))0)
 A io(A x/*0*/,L i)_(X(RE(IN(i,xL[1]-*xL)?az(*xL+i):_R(cn[tl]))RT_E(IN(i,xn)?ii(x,i):xn?mkn(ii(x,0)):xtA?_R(xx):_R(cn[xt]))Rt(xR)Rm(io(xy,i))RM(iM(x,i,io)))0)
 A1(fir,x(io(x,0)))A1(las,x(io(x,xN-1)))
-SN I o(O U*a,Nm,Nn)_(U v=0;i(n,v=MAX(v,a[i]))v>=m)
-SN V iG(V*RES a,Nm,O U*RES b,V*RES c,Nn){G*p=a;G*r=c;i(n,r[i]=p[b[i]])}
-SN V iH(V*RES a,Nm,O U*RES b,V*RES c,Nn){H*p=a;H*r=c;i(n,r[i]=p[b[i]])}
-SN V iI(V*RES a,Nm,O U*RES b,V*RES c,Nn){I*p=a;I*r=c;i(n,r[i]=p[b[i]])}
-SN V iC(V*RES a,Nm,O U*RES b,V*RES c,Nn){C*p=a;C*r=c;i(n+31&-32,r[i]=b[i]<m?p[b[i]]:32)}
-SN V iS(V*RES a,Nm,O U*RES b,V*RES c,Nn){I*p=a;I*r=c;i(n+7&-8,r[i]=b[i]<m?p[b[i]]: 0)}
-SN V jG(V*RES a,Nm,O U*RES b,V*RES c,Nn){G*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
-SN V jH(V*RES a,Nm,O U*RES b,V*RES c,Nn){H*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
-SN V jI(V*RES a,Nm,O U*RES b,V*RES c,Nn){I*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
-SN V jv(V*RES a,Nm,O U*RES b,V*RES c,Nn,Lv){L*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:v)}
-SN V jL(V*RES a,Nm,O U*RES b,V*RES c,Nn){jv(a,m,b,c,n,NL);}
-SN V jF(V*RES a,Nm,O U*RES b,V*RES c,Nn){jv(a,m,b,c,n,NFL);}
+SN I o(O U*a,U m,U n)_(U v=0;i(n,v=MAX(v,a[i]))v>=m)
+SN V iG(V*RES a,U m,O U*RES b,V*RES c,U n){G*p=a;G*r=c;i(n,r[i]=p[b[i]])}
+SN V iH(V*RES a,U m,O U*RES b,V*RES c,U n){H*p=a;H*r=c;i(n,r[i]=p[b[i]])}
+SN V iI(V*RES a,U m,O U*RES b,V*RES c,U n){I*p=a;I*r=c;i(n,r[i]=p[b[i]])}
+SN V iC(V*RES a,U m,O U*RES b,V*RES c,U n){C*p=a;C*r=c;i(n+31&-32,r[i]=b[i]<m?p[b[i]]:32)}
+SN V iS(V*RES a,U m,O U*RES b,V*RES c,U n){I*p=a;I*r=c;i(n+7&-8,r[i]=b[i]<m?p[b[i]]: 0)}
+SN V jG(V*RES a,U m,O U*RES b,V*RES c,U n){G*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
+SN V jH(V*RES a,U m,O U*RES b,V*RES c,U n){H*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
+SN V jI(V*RES a,U m,O U*RES b,V*RES c,U n){I*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
+SN V jv(V*RES a,U m,O U*RES b,V*RES c,U n,L v){L*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:v)}
+SN V jL(V*RES a,U m,O U*RES b,V*RES c,U n){jv(a,m,b,c,n,NL);}
+SN V jF(V*RES a,U m,O U*RES b,V*RES c,U n){jv(a,m,b,c,n,NFL);}
 A2(i1,/*01*/P(y==GAP||y==au,xR)
  X(Rt(y(xR))RE(x=gZ(xR);x(i1(x,y)))Rm(i1(xy,N(fnd(xx,y))))
   RM(Y(RsS(x=flp(xR);x(i1(x,y)))RA(r2(AP1,x,y))RmM(Az=kv(&y);am(y,Ny(i1(x,z))))R_(I d=ytmt;y=N(l2f(i1,xy,y));(d?am:aM)(_R(xx),y)))0))
  Y(Rzc(io(x,gl(y)))RmM(Az=kv(&y);am(y,Ny(i1(x,z))))RA(r2(AP1,x,y))RE(Li=*yL,j=yL[1];P(0<=i&&i<j&&j<xN,y(0);slc(x,i,j))i1(x,gZ(y)))R3(tG,tH,tC,i1(x,cI(y)))R_(et1(y))
-  RL(Nm=xn;Az=aI(yn);My(i(yn+3&-4,Lv=yl;zi=v|-(v!=(I)v)))i1(x,z))
+  RL(Nm=xn;Az=aI(yn);My(i(yn+3&-4,L v=yl;zi=v|-(v!=(I)v)))i1(x,z))
   RI(Nn=yn;XA(Az=aA(n);i(n|!n,za=io(x,yi))y(0);I(!zn,zx=mkn(zx))sqz(z))
    Ct=xt;Ik=t-tG<3u&&o(yV,xn,yn);Az=an(n,k?tL:t);My(G(&iG,iH,iI,jL,jF,iC,iS,jG,jH,jI)[7*k+t-tG](xV,xn,yV,zV,n))z))0)
-S A3(i2,/*001*/Cb=ytT||y==GAP||y==au;x=Nz(i1(x,yR));P(!b,x(x1(z)))x(l2f(dot,x,aA1(z))))
-S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,y(_2(x,y,a[1])))a++;n--;Cb=ytT||y==GAP||y==au;x=i1(x,y);P(!x,mrn(n,a);x)P(!b,x(i8(x,a,n)))x(l2f(dot,x,aV(tA,n,a))))
+S A3(i2,/*001*/C b=ytT||y==GAP||y==au;x=Nz(i1(x,yR));P(!b,x(x1(z)))x(l2f(dot,x,aA1(z))))
+S AX(i8,Ay=*a;P(n==1,i1(x,y))P(n==2,y(_2(x,y,a[1])))a++;n--;C b=ytT||y==GAP||y==au;x=i1(x,y);P(!x,mrn(n,a);x)P(!b,x(i8(x,a,n)))x(l2f(dot,x,aV(tA,n,a))))
 L iw(Ax/*0*/,I w,Li)_(S4(w,_(xg),_(xh),_(xi),_(xl))0)
 S A1(qa,Ay=oA;Q*p=argv;W(*p,yq(aCz(*p++)))y(y1(x)))
 S A1(qe,Ay=oS,z=oA;Q*e=env;W(*e,Qp=*e++,q=strchrnul(p,'=');yq(cS(aCm(p,q)));zq(aCz(q+!!*q)))y=am(y,z);x-au?x(x1(y)):y)
 S A1(qx,exit(xtz?gl(x):1);0)
-S X1(qjs,RC(Cb[4096];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))RA(e1f(qjs,x))R_(et1(x)))
+S X1(qjs,RC(C b[4096];In=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))RA(e1f(qjs,x))R_(et1(x)))
 S X1(qp,RC(x=str0(x);Qs=xC;x(pk(&s,0)))R_(et1(x)))
 S A1(qt,x(al(now())))
 S A1(qfb,P(!xtC,et1(x))P(xn-8,el1(x))x=rev(x);x(aV(tf,1,xV)))//float from bits

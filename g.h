@@ -544,7 +544,6 @@
 #define oF _R(ce[tF])
 #define oC _R(ce[tC])
 #define oS _R(ce[tS])
-#define Cb C b
 #define Cc C c
 #define Cd C d
 #define Ct C t
@@ -563,12 +562,6 @@
 #define Nk N k
 #define Nm N m
 #define Nn N n
-#define Gv G v
-#define Hv H v
-#define Iv I v
-#define Lv L v
-#define Fv F v
-#define Cv C v
 #define If I f
 #define Ax A x
 #define Ay A y
