@@ -44,8 +44,8 @@ SN I il(I v)_(L i=fI(l,nl,v);P(i<0,-1)lu[i]=nb;i)                               
 L gkk(A x/*0*/)_(Xs((U)xv)Q(xtS&&xn)(L)_v(jS(drp(-1,xR)))<<32|(U)_v(ii(x,xn-1)))
 UC ig(A x)_(L k=gkk(x),l=(I)k;I(!(k>>32)&&id0(*qs(&l)),k|=(L)gp<<32)                                //index of a global variable (allocates a new slot if not found)
  L i=fL(gk,gn,k);P(i>=0,i)P(gn>=L(gv),0)gk[gn]=k;gv[gn]=0;gn++)
-S B cm(A x/*0*/){X(Rv(!xv)Ru(1)RS(P(xn-1,0)L v=*xI;Q s=qs(&v);N n=SL(s);n&&s[n-1]==':')R_(0))}      //is x a valid modifier? i.e. :: or primitive monad or symbol ending with ":"
-S V cc(A x/*0*/,I o){N n=un,i=CO;W(i<n&&!mtc_(x,ua),i++)I(i>=n,uq(xR))h(i+bc-CO)}                   //append a "load constant" instruction
+S B cm(A x/*0*/){X(Rv(!xv)Ru(1)RS(P(xn-1,0)L v=*xI;Q s=qs(&v);U n=SL(s);n&&s[n-1]==':')R_(0))}      //is x a valid modifier? i.e. :: or primitive monad or symbol ending with ":"
+S V cc(A x/*0*/,I o){U n=un,i=CO;W(i<n&&!mtc_(x,ua),i++)I(i>=n,uq(xR))h(i+bc-CO)}                   //append a "load constant" instruction
 S I cl(A x,A y/*00*/,B r){Q(cm(xx))I v=_v(xx),o=xo;                                                 //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
  Y(R_(o)
    RS(I(yn==1,I w=*yI,i=il(w);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)l[nl++]=w;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
@@ -55,7 +55,7 @@ S I cl(A x,A y/*00*/,B r){Q(cm(xx))I v=_v(xx),o=xo;                             
 S I cr(A x/*0*/,B r)_(I o=xo;                                                                       //compile rvalue (x:tree,r:wantResult)
  XS(I i=xn-1?-1:il(*xI);I(i>=0,h(bg+i))J(xn==1&&*xI=='o',h(bo))E(h(bG)h(ig(x)))I(!r,h(bP))OK)       // x.y      variable (possibly qualified)
  P(!xtA||!xn,I(r,cc(x-GAP?x:au,o))OK)                                                               // 0        constant
- N n=xn;A y=xx;                                                                                     //
+ U n=xn;A y=xx;                                                                                     //
  P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
  P(n==1,I(r,cc(y,o))OK)                                                                             // `a       quoted
  P(n==3&&cm(y)&&_tsSA(xy),

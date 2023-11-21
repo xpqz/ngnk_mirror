@@ -1,10 +1,10 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 I rnk(A x/*0*/){X(RA(I v=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)RmM(rnk(xy))RT_A(1)R_(0))}//-1 for mixed rank
-I urnk(A x/*0*/){X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))}//assuming unirank
-S L fG(OV*p,N n,L v)_(O G*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
-S L fH(OV*p,N n,L v)_(O H*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
-  L fI(OV*p,N n,L v)_(O I*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
-  L fL(OV*p,N n,L v)_(O L*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+S U urnk(A x/*0*/){X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))}//assuming unirank
+S L fG(OV*p,U n,L v)_(O G*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+S L fH(OV*p,U n,L v)_(O H*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+  L fI(OV*p,U n,L v)_(O I*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
+  L fL(OV*p,U n,L v)_(O L*a=p,q=v;P(v-q,NL)I i=0,g=HD/SZ(*a),f=0;W(i<n&&!f,j(g,f|=a[i++]==q))i-=g;j(g,B(a[i]==q)i++)i<n?i:NL)
 S A1(fN,A y=_R(cn[tl]);x(xtt?y:rsz(xN,y)))
 //S A1(fBN,Q(xtG)G v=0;i(xn,v|=xg)P(!(v>> 7&1),x)A y=aL(xn);Mx(i(xn,yl=xg<0?NL:xg))y)
 //S A1(fHN,Q(xtH)H v=0;i(xn,v|=xg)P(!(v>>15&1),x)A y=aL(xn);Mx(i(xn,yl=xh<0?NL:xh))y)
@@ -13,7 +13,7 @@ S L t[256];
 S X1(fndGx,RmMA(e1f(fndGx,x))Rzc(L v=gl(x);az(v==(C)v?t[(UC)v]:NL))RE(fndGx(gZ(x)))R_(fN(x))
  RZC_E(N m=xn;A y=aL(m);Mx(S4(xw,i(m,yl=t[(UC)xc]),i(m,H v=xh;yl=v==(C)v?t[(UC)v]:NL),i(m,I v=xi;yl=v==(C)v?t[(UC)v]:NL),i(m,L v=xl;yl=v==(C)v?t[(UC)v]:NL)))sqzZ(y)))
 X2(fnd,R_(et1(y))Rm(i1(xx,N(fnd(xy,y))))RM(en1(y))RE(x=gZ(xR);x(fnd(x,y)))
- RA(I k=urnk(x),l=urnk(y);P(k<l+1,r2f(fnd,x,y))P(k>l+1,er1(y))
+ RA(U k=urnk(x),l=urnk(y);P(k<l+1,r2f(fnd,x,y))P(k>l+1,er1(y))
   X(RA(i(xn,P(mtc_(xa,y),y(az(i))))y(az(NL)))
     R_(i(xN,A z=ii(x,i);I m=mtc_(z,y);z(0);P(m,y(az(i))))y(az(NL))))0)
  RGC(UC*a=xV;N n=xn;i(256,t[i]=NL)i(n,t[a[n-1-i]]=n-1-i)fndGx(y))

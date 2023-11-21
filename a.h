@@ -80,19 +80,20 @@ AX _8,e8,f8,prj,run;
 AA a8,d8,ins,no8;
 FN(A,U)aA,aG,aC,aF,aI,aL,aS;
 FN(A,L)al,az,cls,rndF;
-FN(A,L,A)drp,room,rnd,rsz;
+FN(A,L,A)drp,rnd,rsz;
+FN(A,U,A)room;
 FN(A,A,L)ii,io;
 FN(A,Q)aCz,bsl,bsm,die,sym;
 A a2t(A,A,C),aA0(U),aE(L,L),af(F),aCm(Q,Q),aCn(Q,U),apc(A,C),apv(A,OV*),an(U,C),aV(C,U,OV*),cts(A,Q,U),e1f(A1,A),e2f(A2,A,A),err0(Q),evs(Q,B),k1(A*,Q,A),k2(A*,Q,A,A),
  k8(A*,Q,OA*,U),jc(C,A),jC(Q,U,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(U,U,U),pk(Q*,C),pen(A,A1*),slc(A,U,U),unhC(Q,U),wdn(A,U,U,U),AT(W,A),AV(W,A),AW(C,A),AK(C,A),AO(UC,A),AN(U,A),
  w1(U,A,A),w2(U,A,A,A),w8(U,A,OA*,U);
-V cyc(V*,U,U),eS(A,U),eQ(Q,U,U),exit(I),hexC(Q,U,C*),kargs(I,Q*),kinit(),*memmem(OV*,N,OV*,N),mrn(U,OA*),mRn(U,OA*),repl(),tilV(V*,L,L,I);
+V cyc(V*,U,U),eS(A,U),eQ(Q,U,U),exit(I),hexC(Q,U,C*),kargs(I,Q*),kinit(),*memmem(OV*,N,OV*,N),mrn(U,OA*),mRn(U,OA*),repl(),tilV(V*,L,L,U);
 B id0(UC),mtc_(A,A),tru(A);
 C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);
 UC ig(A);
 I _K(A),qA(A,A),qf(F,F),js_eval(C*,I,C*,I),rnk(A);
 U si(Q,C),_N(A);
-L cfm(OA*,I),gl_(A),gl(A),gkk(A),iw(A,I,L),now(),pl(Q*),fI(OV*,N,L),fL(OV*,N,L),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);
+L cfm(OA*,I),gl_(A),gl(A),gkk(A),iw(A,I,L),now(),pl(Q*),fI(OV*,U,L),fL(OV*,U,L),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);
 Q qs(O L*),pID(Q);
 W pf(Q*),pu(Q*);
 F gf(A);
@@ -110,12 +111,19 @@ enum              {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
 #define TU(t) ((t)>=to)
 
-#define _E(x) _C(x)[-14]      //adverb(for tr)                           | header bytes: Ut.orrrrnnnnnnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
-#define _k(x) _C(x)[-13]      //arity(for funcs)                         | tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
-#define _m(x) ((I*)_V(x))[-7] //shadow refcount                          |  tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
-#define _n(x) _L(x)[-1]       //length                                   |  tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
-#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_G(x)[-13])//srcoffset |  ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
-#define _q(x,y) (x=apd(x,y))  //append                                   |  ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
+//tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
+// tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
+// tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
+// ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
+// ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
+
+//header bytes: Ut.orrrr....nnnn (U=bucket,t=type,o=srcoffset(or:w=adverb,k=arity),r=refcount,n=length)
+#define _E(x) _C(x)[-14]      //adverb(for tr)
+#define _k(x) _C(x)[-13]      //arity(for funcs)
+#define _m(x) ((I*)_V(x))[-7] //shadow refcount
+#define _n(x) ((U*)_V(x))[-1] //length
+#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:(UC)_G(x)[-13])//srcoffset
+#define _q(x,y) (x=apd(x,y))  //append
 #define _r(x) ((I*)_V(x))[-3] //refcount
 #define _t(x) ({A x_=(x);C t=_t0(x_);t?t:_t1(x_);})//type
 #define _t0(x) ((x)>>56)      //type(tag)
