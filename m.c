@@ -12,7 +12,7 @@ S V*mm(U n,U f)_(V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP
 S A mx(U n)_(V*p=mm(n,0);P(!p,die("OOM"))(A)(p+HD))
 A mf(U f,U i,U n)_(V*p=mm(pg+n,1);P(!p,eo0())A x=(A)(p+pg);xn=n;AT(tC,x);P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
 
-S A z[SZ(N)==4?27:35]={[L(z)-1]=1};DBG(S I lck;)
+S A z[SZ(N)==4?27:31]={[L(z)-1]=1};DBG(S I lck;)
 S A mb(C b,A x)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)
 A an(U n,C t)_(Q(!lck);Q(LH(tA,t,tn-1));Q(!TP(t));C b=59-__builtin_clzll(HD|HD-1+n*TW[t]);P(n>1ull<<L(z)||b>L(z)-2,die("OOM"))
  A x=z[b];I i=b;W(!z[i],i++)I(i<L(z)-1,x=z[i];z[i]=xX)E(x=mb(b,mx(HD<<(i=MAX(b,24)))))I(b<i,xU=b;W(b<i--,z[i]=mb(i,(A)x+(HD<<i))))xr=1;AT(t,AN(n,x)))
