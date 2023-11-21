@@ -39,6 +39,7 @@
 #define ST struct
 #define RES restrict
 #define SWP(x,y) {TY(x)t_=x;x=y;y=t_;}
+#define NOP
 #define M1(x) #x
 #define M2(x) M1(x)
 #define EX extern
@@ -48,8 +49,8 @@
 #define SL __builtin_strlen
 #define MIN(x,y) ({TY(x) x_=(x),y_=(y);x_<y_?x_:y_;})
 #define MAX(x,y) ({TY(x) x_=(x),y_=(y);x_>y_?x_:y_;})
-#define IN(i,n) ((i)<(UL)(n))
-#define LH(x,y,z) ((y)-(x)<=(UI)((z)-(x)))//between(low,high)
+#define IN(i,n) ((i)<(W)(n))
+#define LH(x,y,z) ((y)-(x)<=(U)((z)-(x)))//between(low,high)
 #define C09(c) LH('0',c,'9')
 #define CAz(c) LH('a',(c)|32,'z')
 #define CA9(c) (CAz(c)||C09(c))
@@ -58,8 +59,8 @@
 #define Ab8 A b[8];
 #define Lij Li=*xL,j=xL[1];
 
-TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int UI;TD long long L;TD double F;TD size_t N;
-TD unsigned long long UL,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX(A,OA*,I),AL(L),ALA(L,A),AAL(A,L),AQ(Q);TD O C OCA[];
+TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
+TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(OA*,I),AX(A,OA*,I),AL(L),ALA(L,A),AAL(A,L),AQ(Q);TD O C OCA[];
 
 #define  A0(f,b...) A f(           )_(b)
 #define  A1(f,b...) A f(Ax         )_(b)/*1*/
@@ -77,7 +78,7 @@ A1 _R,aA1,asc,AZ,cA,cG,cC,cF,cH,cI,cL,cS,csti,dsc,enl,epr,err,fir,flp,flr,frk,gZ
 A2 _1,aA2,aM,add,am,apd,ari,bin,cat,cat10,cat11,cst,dex,dot,dvd,eql,exc,crt,fil,fnd,gtn,hsh,ie,i1,ltn,mod,mnm,mtc,mul,mxm,que,sub,und,v0c,v1c,v2c;
 A3 _2,aA3,arf,arp,ars,cpl,e2,r2,try;A4 ara,a4,d4;AX _8,e8,f8,prj,run;AA a8,d8,ins,no8;AL aA,aG,aC,aF,aI,aL,aS,al,az,cls,rndF;ALA drp,room,rnd,rsz;AAL ii,io;AQ aCz,bsl,bsm,die,sym;
 A a2t(A,A,C),aA0(N),aE(L,L),af(F),aCm(Q,Q),aCn(Q,N),apc(A,C),apv(A,OV*),an(N,C),aV(C,N,OV*),cts(A,Q,N),e1f(A1,A),e2f(A2,A,A),err0(Q),evs(Q,B),k1(A*,Q,A),k2(A*,Q,A,A),
- k8(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(I,N,N),pk(Q*,C),pen(A,A1*),slc(A,N,N),unhC(Q,N),wdn(A,N,N,N),AT(UL,A),AV(UL,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A),
+ k8(A*,Q,OA*,I),jc(C,A),jC(Q,N,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(I,N,N),pk(Q*,C),pen(A,A1*),slc(A,N,N),unhC(Q,N),wdn(A,N,N,N),AT(W,A),AV(W,A),AW(C,A),AK(C,A),AO(UC,A),AN(N,A),
  w1(I,A,A),w2(I,A,A,A),w8(I,A,OA*,N);
 B id0(UC),mtc_(A,A),tru(A);C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);F gf(A);I _K(A),qA(A,A),qf(F,F),js_eval(C*,I,C*,I),si(Q,C),rnk(A);
 L cfm(OA*,I),gl_(A),gl(A),gkk(A),iw(A,I,L),now(),pf(Q*),pl(Q*),pu(Q*),fI(OV*,N,L),fL(OV*,N,L),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);N _N(A);Q qs(O L*),pID(Q);UC ig(A);
@@ -123,10 +124,10 @@ enum              {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr
 #define M_(x,a...) {DBG(A t_=)m0(x);a;DBG(x=0;m1(t_));}//two-phase free()
 
 #define Lt(t) (L)t<<56
-#define ac(v) (Lt(tc)|(UI)(C)(v))
-#define ai(v) (Lt(ti)|(UI)(v))
-#define as(v) (Lt(ts)|(UI)(v))
-#define ax(v,k) (Lt(tx)|(UL)(k)<<48|(UL)(v)<<16>>16)
+#define ac(v) (Lt(tc)|(U)(C)(v))
+#define ai(v) (Lt(ti)|(U)(v))
+#define as(v) (Lt(ts)|(U)(v))
+#define ax(v,k) (Lt(tx)|(W)(k)<<48|(W)(v)<<16>>16)
 #define V_ A1*v1[]={sam,flp,neg,fir,sqr,til,whr,rev,asc,dsc,grp,not,enl,nul,len,flr,str,unq,typ,val,u0c,u1c,u2c,las,imn,imx,out};\
            A2*v2[]={dex,add,sub,mul,dvd,exc,mnm,mxm,ltn,gtn,eql,mtc,cat,crt,hsh,und,cst,que, _1,dot,v0c,v1c,v2c,dex,dex,dex,dex};\
            AA*v8[]={no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,ins, a8, d8,no8,no8,no8,no8,no8,no8,no8};\

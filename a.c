@@ -9,18 +9,18 @@ S A iM(Ax,Li,AAL*f)_(Q(xtM);Ay=xy,z=aA(yn);Q(ytA);j(zn|!zn,zA[j]=f(yA[j],i))am(_
 AAL(ii,/*0*/X(RA(_R(xa))RC(ac(xc))RG(ai(xg))RH(ai(xh))RI(ai(xi))RL(al(xl))RF(af(xf))RS(as(xi))Rm(ii(xy,i))RM(iM(x,i,ii))RE(az(*xL+i))R_(xR))0)
 AAL(io,/*0*/X(RE(IN(i,xL[1]-*xL)?az(*xL+i):_R(cn[tl]))RT_E(IN(i,xn)?ii(x,i):xn?mkn(ii(x,0)):xtA?_R(xx):_R(cn[xt]))Rt(xR)Rm(io(xy,i))RM(iM(x,i,io)))0)
 A1(fir,x(io(x,0)))A1(las,x(io(x,xN-1)))
-SN I o(O UI*a,Nm,Nn)_(UI v=0;i(n,v=MAX(v,a[i]))v>=m)
-SN V iG(V*RES a,Nm,O UI*RES b,V*RES c,Nn){G*p=a;G*r=c;i(n,r[i]=p[b[i]])}
-SN V iH(V*RES a,Nm,O UI*RES b,V*RES c,Nn){H*p=a;H*r=c;i(n,r[i]=p[b[i]])}
-SN V iI(V*RES a,Nm,O UI*RES b,V*RES c,Nn){I*p=a;I*r=c;i(n,r[i]=p[b[i]])}
-SN V iC(V*RES a,Nm,O UI*RES b,V*RES c,Nn){C*p=a;C*r=c;i(n+31&-32,r[i]=b[i]<m?p[b[i]]:32)}
-SN V iS(V*RES a,Nm,O UI*RES b,V*RES c,Nn){I*p=a;I*r=c;i(n+7&-8,r[i]=b[i]<m?p[b[i]]: 0)}
-SN V jG(V*RES a,Nm,O UI*RES b,V*RES c,Nn){G*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
-SN V jH(V*RES a,Nm,O UI*RES b,V*RES c,Nn){H*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
-SN V jI(V*RES a,Nm,O UI*RES b,V*RES c,Nn){I*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
-SN V jv(V*RES a,Nm,O UI*RES b,V*RES c,Nn,Lv){L*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:v)}
-SN V jL(V*RES a,Nm,O UI*RES b,V*RES c,Nn){jv(a,m,b,c,n,NL);}
-SN V jF(V*RES a,Nm,O UI*RES b,V*RES c,Nn){jv(a,m,b,c,n,NFL);}
+SN I o(O U*a,Nm,Nn)_(U v=0;i(n,v=MAX(v,a[i]))v>=m)
+SN V iG(V*RES a,Nm,O U*RES b,V*RES c,Nn){G*p=a;G*r=c;i(n,r[i]=p[b[i]])}
+SN V iH(V*RES a,Nm,O U*RES b,V*RES c,Nn){H*p=a;H*r=c;i(n,r[i]=p[b[i]])}
+SN V iI(V*RES a,Nm,O U*RES b,V*RES c,Nn){I*p=a;I*r=c;i(n,r[i]=p[b[i]])}
+SN V iC(V*RES a,Nm,O U*RES b,V*RES c,Nn){C*p=a;C*r=c;i(n+31&-32,r[i]=b[i]<m?p[b[i]]:32)}
+SN V iS(V*RES a,Nm,O U*RES b,V*RES c,Nn){I*p=a;I*r=c;i(n+7&-8,r[i]=b[i]<m?p[b[i]]: 0)}
+SN V jG(V*RES a,Nm,O U*RES b,V*RES c,Nn){G*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
+SN V jH(V*RES a,Nm,O U*RES b,V*RES c,Nn){H*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
+SN V jI(V*RES a,Nm,O U*RES b,V*RES c,Nn){I*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
+SN V jv(V*RES a,Nm,O U*RES b,V*RES c,Nn,Lv){L*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:v)}
+SN V jL(V*RES a,Nm,O U*RES b,V*RES c,Nn){jv(a,m,b,c,n,NL);}
+SN V jF(V*RES a,Nm,O U*RES b,V*RES c,Nn){jv(a,m,b,c,n,NFL);}
 A2(i1,/*01*/P(y==GAP||y==au,xR)
  X(Rt(y(xR))RE(x=gZ(xR);x(i1(x,y)))Rm(i1(xy,N(fnd(xx,y))))
   RM(Y(RsS(x=flp(xR);x(i1(x,y)))RA(r2(AP1,x,y))RmM(Az=kv(&y);am(y,Ny(i1(x,z))))R_(I d=ytmt;y=N(l2f(i1,xy,y));(d?am:aM)(_R(xx),y)))0))
@@ -51,7 +51,7 @@ AX(_8,/*01..1*/Q(n)P(n==1,x1(*a))P(n==2&&!xtp,Ay=*a;y(x2(y,a[1])))P(!xtt,i8(x,a,
   Rp(P(xn+xK>9,er8(a,n))Im=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==GAP&&j<n?a[j++]:_R(xA[i+1]))I l=MAX(0,n-j);MC(b+m,a+j,8*l);_8(xx,b,m+l)))0)
 A1(jS,cS(jc('.',str(x))))//join symbols with "."
 X1(val,RA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez1(x))x=mut(x);Ay=_8(xx,&xy,xn-1);AN(1,x);x(y))RE(gZ(x))RZ_E(x)RC(x=str0(x);x(evs(xV,0)))Rc(val(enl(x)))Rs(val(enl(x)))
- RS(P(!xn,x(0);Ax=oS,y=oA;i(gn,I(gv[i],Lk=gk[i];xq(k-(UI)k?jS(aV(tS,2,A((I)(k>>32),k))):as(k));yq(_R(gv[i]))))am(x,y))Li=fL(gk,gn,gkk(x));i<0||!gv[i]?ev0():_R(gv[i]))
+ RS(P(!xn,x(0);Ax=oS,y=oA;i(gn,I(gv[i],Lk=gk[i];xq(k-(U)k?jS(aV(tS,2,A((I)(k>>32),k))):as(k));yq(_R(gv[i]))))am(x,y))Li=fL(gk,gn,gkk(x));i<0||!gv[i]?ev0():_R(gv[i]))
  RmM(x(_R(xy)))Ropq(AT(tA,mut(x)))Rr(cat10(AT(tA,mut(x)),aw+xE))Ruvw(ai(xv))R_(et1(x)))
 A2(dot,/*01*/Ym(et1(y))Nn=yN;P(!n,y(xR))P(n>8,ez1(y))y=mRa(N(cA(y)));y(x8(yA,n)))
 S I knd(Ax/*0*/)_(Xz(ti)XZ(tI)xt)

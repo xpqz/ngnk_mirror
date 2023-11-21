@@ -29,7 +29,7 @@ I pg=4096;//pagesize
  S ST{C*a,p[16];Nn;}s[8]={{.a=""},{.a=""},//s:storage,
   #include"o/w/fs.h"
  };S ST{C i;N o;}d[8]={{.i=1},{.i=1},{.i=1}};S O I ns=L(s),nd=L(d);//d:fd table
- #define FI P((UI)f>=nd||!d[f].i,EBADF)Ii=d[f].i;//validate fd "f" and get inode "i"
+ #define FI P((U)f>=nd||!d[f].i,EBADF)Ii=d[f].i;//validate fd "f" and get inode "i"
  I open(Qp,Iv,...)_(Im=SL(p);P(m>=SZ s[0].p,ENAMETOOLONG)Ii=0;W(i<ns&&strcmp(s[i].p,p),i++)
   I(i>=ns,P(O_CREAT&~v,ENOENT)i=0;W(i<ns&&s[i].a,i++)P(i>=ns,ENOSPC)s[i].a="";s[i].n=0;MC(s[i].p,p,m))
   If=0;W(f<nd&&d[f].i,f++)P(f>=nd,EMFILE)d[f].i=i;d[f].o=0;f)
@@ -63,7 +63,7 @@ I pg=4096;//pagesize
  V*memchr(OV*x,Iv,Nn)_(Qs=x;i(n,P(s[i]==v,(V*)(s+i)))(V*)0)
  V*memmem(OV*x,Nm,OV*y,Nn)_(Qp=x,q=y;i((L)m-(L)n+1,P(!memcmp(p+i,q,n),(V*)(p+i)))(V*)0)
  I memcmp(OV*x,OV*y,Nn)_(Qs=x,t=y;i(n,Iv=*s++-*t++;P(v,v))0)
- N strlen(Qs)_(Qp=s;W(1,UL v=~*(UL*)(V*)p;v&=v>>1;v&=v>>2;v&=v>>4;v&=0x0101010101010101ll;B(v)p+=8)W(*p,p++)p-s)
+ N strlen(Qs)_(Qp=s;W(1,W v=~*(W*)(V*)p;v&=v>>1;v&=v>>2;v&=v>>4;v&=0x0101010101010101ll;B(v)p+=8)W(*p,p++)p-s)
  C*strchr(O C*s,Iv)_(W(1,P(*s==v,(V*)s)P(!*s++,(V*)0))(V*)0)
  C*strstr(O C*p,O C*q)_(memmem(p,SL(p),q,SL(q)))
  I strcmp(Qp,Qq)_(W(*p&&*p==*q,p++;q++)*p-*q)

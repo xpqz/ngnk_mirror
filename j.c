@@ -16,7 +16,7 @@ X1(js0,RC(Nn=xn;x=room(n+4,x);MS(xC+n,0,4);s=xV;Ay=jx();Cc=jw();I(y&&c,y=y(0))I(
 S V JX(A);S N nX(A);S UC t[256];SN V it(){MS(t,5,32);t[127]=5;i(L(je),t[je[i]]=1)}
 S N nC(Qp,Nn)_(Nm=2+n;i(n,m+=t[(UC)p[i]])m)
 S V JC(Qp,Nn){*s++='"';UC c;i(n,SW(t[c=*p++],C(0,*s++=c)C(1,*s++='\\';*s++=ej[si(je,c)])D(MC(s,"\\u00",4);s+=4;hexC(p-1,2,s);s+=2)))*s++='"';}
-S N nl(Lv)_(P(v==NL,4)Nn=v<0?(v=-v),2:1;UL m=10;W(m<=v&&n<19,n++;m*=10)n)
+S N nl(Lv)_(P(v==NL,4)Nn=v<0?(v=-v),2:1;W m=10;W(m<=v&&n<19,n++;m*=10)n)
 S V Jl(Lv){s=v-NL?sl(s,v):MC(s,"null",4)+4;}
 S N nx(Ax/*0*/){X(Ri(nl(xv))Rl(nl(*xL))Rc(Cc=xv;nC(&c,1))Rf(Fv=*xF;P(v==(L)v,nl(v))P(v!=v,4)Cb[32];sf(b,*(L*)&v)-b)Rm(nx(xx)+nx(xy)-1-!_N(xx))Ru(4+!!xv)RC(nC(xC,xn))
  RMT_C(Nn=xN,m=1+n+!n;i(n,m+=nX(ii(x,i)))m)R_(nX(str(xR))))}
