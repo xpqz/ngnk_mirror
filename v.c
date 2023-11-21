@@ -30,13 +30,15 @@ X1(whr,Rz(whr(enl(x)))RA(K1("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Rm
              {I*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},))y))
 X1(rev,Rm(Ay=kv(&x);am(rev(x),rev(y)))RM(Ay=kv(&x);aM(x,e1f(rev,y)))Rt(x)RE(rev(gZ(x)))
  R_(P(xn<2,x)x=mut(x);Nn=xn;I w=xw;S4(w,i(n>>1,SWP(xg,xG[n-1-i])),i(n>>1,SWP(xh,xH[n-1-i])),i(n>>1,SWP(xi,xI[n-1-i])),i(n>>1,SWP(xl,xL[n-1-i])))x))
-A1(typ,x(as(TS[xt])))A1(len,x(az(xN)))N _N(Ax/*0*/){X(RE(Lij j-i)RT_E(xn)Rm(_N(xy))RM(_N(_x(xy)))R_(1))}
+A1(typ,x(as(TS[xt])))
+A1(len,x(az(xN)))
+U _N(Ax/*0*/){X(RE(Lij j-i)RT_E(xn)Rm(_N(xy))RM(_N(_x(xy)))R_(1))}
 Y2(fil,RmMA(e2f(fil,x,y))Rt(YU(y-au?y:xR)fir(fil(x,enl(y))))R_(K2("{@[y;&^y;:;x]}",x,y)))
 X2(crt,Rt(fil(x,y))R_(en1(y))
  RT(Iv=rnk(y);P(!v,crt(x,enl(y)))
   P(v>0&&rnk(x)==v,I(xtE&&ytE,Lij L k=*yL,l=yL[1];P(k<=i,y(0);aE(MAX(i,l),MAX(j,l)))P(j<=l,y(0);aE(i,MIN(j,k))))K2("{x@&^y?x}",x,y))
   K2("{x@&~(!0),x~\\:y}/",x,y)))
-A wdn(Ax,Ni,Nj,Nn)_(Ct=xt;Q(xtZC);Ay=an(n,t+1);Mx(G(&cGH,cHI,cIL,cLF,0,cGH)[t-tG](xV+TW[t]*i,yV,j-i))y)
+A wdn(A x,U i,U j,U n)_(Ct=xt;Q(xtZC);Ay=an(n,t+1);Mx(G(&cGH,cHI,cIL,cLF,0,cGH)[t-tG](xV+TW[t]*i,yV,j-i))y)
 X1(cA,RA(x)Rt(aA1(x))Rm(et1(x))R_(Nn=xN;Ay=aA(n);i(n|!n,ya=ii(x,i))x(0);I(!n,yx=mkn(yx))y))
 X1(cC,RmMA(e1f(cC,x))RcC(x)RG(AT(tC,mut(x)))Rz(ac(gl(x)))RE(cC(gZ(x)))R_(cC(N(cG(x)))))
 X1(cG,RmMA(e1f(cG,x))RG(x)Rt(cI(x))RC(AT(tG,mut(x)))R_(x=N(cI(x));Ay=aG(xn);Mx(cIG(xV,yV,yn))y))

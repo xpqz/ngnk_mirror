@@ -28,7 +28,7 @@ S A fwm(If,Qs,Nn)_(ftruncate(f,n);V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_SHARED,f
 S X2(fw,Rz(If=gl_(x);My(x=(f<3||!S_ISREG(fm(f))?fws:fwm)(f,yV,yn))x)R_(If=N(o(xR,O_RDWR|O_CREAT|O_TRUNC));Az=v1c(ai(f),y);f>2&&close(f);z))             // write
 SN A dle()_(C*e=dlerror();I(e,os(e);os("\n"))eo0())
 A1(opn,Xz(x)ai(N(o(x,O_RDWR|O_CREAT))))                                                                                                                 // <s
-AL(cls,close(n);au)                                                                                                                                     // >i
+A cls(L n)_(close(n);au)                                                                                                                                     // >i
 A1(u0c,spl(N(u1c(x))))                                                                                                                                  // 0:x
 X1(u1c,RA(P(xn-2,el1(x))P(!_tZ(xy),et1(x))P(_n(xy)-2,el1(x))Ay=kv(&x);Ni=gl(ii(y,0)),n=gl(ii(y,1));fr(x,i,n))R_(fr(x,0,-1)))                            // 1:x
 A1(u2c,en1(x))                                                                                                                                          // 2:x

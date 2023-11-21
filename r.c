@@ -37,5 +37,5 @@ S A de2(Nn,W m)_(Ax=aL(n);L*a=xL,j=-1,q=m-n+1;Fv=exp(log(rf())/n);
  F t=m-n;W(n>1,L s=0;Fv=rf(),q=t/m;W(q>v,s++;q*=--t/--m)*a++=j+=s+1;m--;n--)*a=j+m*rf()+1;i(xn,Ij=ri(i+1);SWP(xl,xL[j]))x)
 S A de(Nn,W m)_(n>m?el0():n==m?sh(n):m<10000000?de1(n,m):de2(n,m))//deal
 S A rd(Ln,Lm)_(m<0?(n<0?ed0():rt(n,tZ(m))):n==NL?sh(m):n-(I)n?ez0():n<0?de(-n,m):ro(n,m))//roll or deal
-AL(rndF,P(n<0,ed0())Ax=aF(n);i(n,xf=rf())x)//random floats 0..1
-ALA(rnd,X(Rz(rd(n,gl(x)))Rc(P((32|xv)=='a',cC(add(x,Nx(rd(n,26)))))rt(n,tC))Rf(x(mul(x,Nx(rndF(n)))))RMT(x(x1(Nx(rd(n,xN)))))R_(et1(x)))0)
+A rndF(L n)_(P(n<0,ed0())Ax=aF(n);i(n,xf=rf())x)//random floats 0..1
+A rnd(L n,A x)_(X(Rz(rd(n,gl(x)))Rc(P((32|xv)=='a',cC(add(x,Nx(rd(n,26)))))rt(n,tC))Rf(x(mul(x,Nx(rndF(n)))))RMT(x(x1(Nx(rd(n,xN)))))R_(et1(x)))0)
