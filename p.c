@@ -14,15 +14,15 @@ S W pfu(Q*p)_(W v=pu(p);Q s=*p;C c=*s;P(c=='w',(*p)++;WFL)P(c=='n',(*p)++;v^NFL)
  S F t[309];I(!*t,*t=1;i(308,t[i+1]=10*t[i]))
  *p=s;*(L*)A(e<0?v/t[-e]:v*t[e]))
 W pf(Q*p)_(I m=**p=='-';(*p)+=m;L v=(W)m<<63|pfu(p);(*p)+=**p=='f';v)                               //parse float
-S A0(pZ,Q p=s;W(*p-'0'<2u,p++)P(*p=='b',A x=aG(p-s);i(xn,xg=*s++&1)s++;x)                            //parse ints
+S A0(pZ,Q p=s;W(*p-'0'<2u,p++)P(*p=='b',A x=aG(p-s);i(xn,xg=*s++&1)s++;x)                           //parse ints
  A x=oL;W(1,L v=pl(&s);I(!v&&*s=='N',v=NL;s++)x=apv(x,&v);Q p=pw(s);B(p==s||!num(p))s=p)sqzZ(x))
-S A0(pF,A x=oF;W(1,x=apv(x,A(pf(&s)));Q p=pw(s);B(p==s||!num(p))s=p)x)                               //parse floats
-S A0(pC,A x=oC;C c=*++s;W(c&&c-'"',I(c=='\\',c=*++s;I i=si("tnr0",c);I(i<4,c="\t\n\r"[i]))           //parse quoted string
+S A0(pF,A x=oF;W(1,x=apv(x,A(pf(&s)));Q p=pw(s);B(p==s||!num(p))s=p)x)                              //parse floats
+S A0(pC,A x=oC;C c=*++s;W(c&&c-'"',I(c=='\\',c=*++s;I i=si("tnr0",c);I(i<4,c="\t\n\r"[i]))          //parse quoted string
  x=apc(x,c);c=*++s)P(!c,ep1(x))c=*++s;x)
-S A0(p0x,Q p=s;W(CA9(*p),p++)A x=N(unhC(s,p-s));s=p;x)                                               //parse 0x string
+S A0(p0x,Q p=s;W(CA9(*p),p++)A x=N(unhC(s,p-s));s=p;x)                                              //parse 0x string
 S A0(ps,Q p=s;C c=*s;I(id0(c),s=pID(s))J(c>>7,W(*++s<-64)s+=*s==':')aCm(p,s))                       //parse symbol
-S A0(pS,A x=oS;W(1,A y=*s-'"'?ps():Nx(pC());y=str0(y);xq(y(sym(yV)));Q p=pw(s);P(*p-'`',x)s=p+1)0)    //parse symbols
-S A0(pP,A x=oS;W(1,A y=str0(ps());y(xq(sym(yV)));P(*s-'.'||!id0(s[1]),x)++s)0)                        //parse dot-separated path of identifiers
+S A0(pS,A x=oS;W(1,A y=*s-'"'?ps():Nx(pC());y=str0(y);xq(y(sym(yV)));Q p=pw(s);P(*p-'`',x)s=p+1)0)  //parse symbols
+S A0(pP,A x=oS;W(1,A y=str0(ps());y(xq(sym(yV)));P(*s-'.'||!id0(s[1]),x)++s)0)                      //parse dot-separated path of identifiers
 S A pt(C*v)_(C c=*s;                                                                                //parse term
  P(c=='`',s++;A x=N(pS());qte(p1(x)))
  P(c=='"',p1(pC()))
@@ -39,11 +39,11 @@ S A pt(C*v)_(C c=*s;                                                            
  I i=si("'/\\",c);P(i<3,c=*++s;I h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,GAP)
  I u=*++s==':';s+=u;*v=1;Lt(tv-u)|i)
 S X1(pm,Rv(x^au^av)RA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x)Rs(L v=xv;Q s=qs(&v);N n;P(*s>>7&&s[(n=SL(s))-1]-':',C b[8];MC(b,s,n);b[n]=':';b[n+1]=0;sym(b))x)R_(x)) //monadify
-S A pT(C*v)_(A x=N(pt(v));                                                                           //parse term and the adverbs or square brackets after it (v:verb?)
+S A pT(C*v)_(A x=N(pt(v));                                                                          //parse term and the adverbs or square brackets after it (v:verb?)
  W(1,C c=*s;I i=si("'/\\[",c);P(i>3,x)s++;
   I(i>2,x=AO(s-1-s0,N(pb(x,']')));I(xn==2,I(xy==GAP,xy=au)E(xx=pm(xx)))*v=0)
   E(I c=*s==':';s+=c;x=aA2(aw+i+3*c,x);*v=1))x)
-S A pe(A x,C*v)_(s=pw(s);C c=*s;                                                                     //parse expression
+S A pe(A x,C*v)_(s=pw(s);C c=*s;                                                                    //parse expression
  I(c=='/'&&(s==s0||s[-1]==32||s[-1]==10),
   I(s[1]==10,C*e=strstr(s+1,"\n\\\n");s=e?e+3:s+SL(s))
   E(W((c=*++s)&&c-10)))
@@ -52,7 +52,7 @@ S A pe(A x,C*v)_(s=pw(s);C c=*s;                                                
  P(!b,A z=pe(y,v);P(!x,z)Nx(z);*v?aA3(aw,x,z):AO(o,aA2(pm(x),z)))
  A z=pe(0,v);P(!z,y(x?x(0):0))P(z==GAP,*v=1;P(!x,y)Yu(ep1(x))AO(o,aA3(y,x,z)))
  *v&=y!=av;I(!x,y=pm(y))*v?aA3(aw,x?AO(o,aA3(y,x,GAP)):y,z):AO(o,x?aA3(y,x,z):aA2(pm(y),z)))
-S A pb(A x,C c)_(x=x?aA1(x):oA;                                                                      //parse body (sequence of ;-separated expressions)
+S A pb(A x,C c)_(x=x?aA1(x):oA;                                                                     //parse body (sequence of ;-separated expressions)
  W(1,C v=0;A y=Nx(pe(0,&v));xq(c-']'&&y==GAP?au:y);P(y==GAP&&c==')',ep1(x))B(*s-';'&&*s-10)B(c==10&&*s==10)s++)
  P(c==10&&!*s,x)P(*s-c,ep1(x))s++;x)
-A pk(Q*p,C c)_(s0=s=*p;A x=pb(GAP,c);*p=s;P(x,xn==2?las(x):x)eQ(s0,SL(s0),s-s0);0)                   //parse either a group of lines (c='\n') or till '\0' (c='\0')
+A pk(Q*p,C c)_(s0=s=*p;A x=pb(GAP,c);*p=s;P(x,xn==2?las(x):x)eQ(s0,SL(s0),s-s0);0)                  //parse either a group of lines (c='\n') or till '\0' (c='\0')

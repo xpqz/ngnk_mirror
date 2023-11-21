@@ -15,9 +15,9 @@ A e1f(A1 f,A x){X(Rt(f(x))Rm(A y=kv(&x);am(x,Nx(e1f(f,y))))
  RA(N n=xn;P(!n,o1f(f,x))x=mut(x);i(n,P(!(xa=f(xa)),xa=au;x(0)))sqz(x))
  RE(Lij x(0);L n=j-i,i0=i;P(!n,o1f(f,x))A y=aA(n);i(n,P(!(ya=f(ai(i0+i))),mrn(i,yA);0))sqz(y))
  RZ_E(N n=xn;P(!n,o1f(f,x))A y=aA(n);S4(xt-tG,i(n,P(!(ya=f(ai(xg))),mrn(i,yA);x(0))),
-                                             i(n,P(!(ya=f(ai(xh))),mrn(i,yA);x(0))),
-                                             i(n,P(!(ya=f(ai(xi))),mrn(i,yA);x(0))),
-                                             i(n,P(!(ya=f(az(xl))),mrn(i,yA);x(0))))sqz(x(y)))
+                                              i(n,P(!(ya=f(ai(xh))),mrn(i,yA);x(0))),
+                                              i(n,P(!(ya=f(ai(xi))),mrn(i,yA);x(0))),
+                                              i(n,P(!(ya=f(az(xl))),mrn(i,yA);x(0))))sqz(x(y)))
  R_(N n=xN;P(!n,o1f(f,x))A y=aA0(n);i(n,A z=f(ii(x,i));B(!z,y=y(0))yq(z))x(y)))}
 S A2(e1,/*01*/Xu(e1f(v1[xv],y))Y(Rt(x1(y))Rm(em(x,&y,1))
  RA(N n=yn;P(!n,o1(x,y))y=mut(y);  i(n,;P(!(ya=x1(ya)),ya=au;y(0)))sqz(y))

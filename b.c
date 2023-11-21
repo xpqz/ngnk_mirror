@@ -18,7 +18,7 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
   C16(bg,A*p=l+c%16,x=*p;U(*--s=x)xR)                                                               //get local |bg+i  |.. -> .. locals[i]     |
   C16(bd,A*p=l+c%16,x=*p;U(*--s=x)*p=0)                                                             //del local |bd+i  |.. -> .. locals[i]     |locals[i]:NULL (freed)
   C2(ba,bp,UC n=*b++;A x=*s;s+=n;U(*s=x((c==ba?_8:prj)(x,s-n+1,n))))                                //apply|proj|ba,n  |.. z y x -> .. x[y;z]  |
-  C6(bm,bM,bx,bX,by,bY,A*p=(c&1?gv:l)+*b++,x=*p;U(x,*s=ev1(*s))A y=*s++;                             //          |      |                       |
+  C6(bm,bM,bx,bX,by,bY,A*p=(c&1?gv:l)+*b++,x=*p;U(x,*s=ev1(*s))A y=*s++;                            //          |      |                       |
    I(c==bm||c==bM,y=v2[*b++](x,y);U(y,*--s=0)*p=x(y))                                               //mod asgn  |bm,i,d|.. x -> ..             |vars[i]:dyads[d][vars[i];x]
    E(x=*p=d4(x,y,av+*b++,*s);mr(*s);I(c==bx||c==bX,mr(y);U(x,*s=0)s++)                              //ind asgn  |bx,i,d|.. z y -> ..           |vars[i]:  .[vars[i];y;dyads[d];z]
                                     E(U(x,*s=y(0))U(*s=dot(x,y)))))                                 //ind asgn  |by,i,d|.. z y -> .. r         |vars[i]:r:.[vars[i];y;dyads[d];z]
@@ -46,7 +46,7 @@ UC ig(A x)_(L k=gkk(x),l=(I)k;I(!(k>>32)&&id0(*qs(&l)),k|=(L)gp<<32)            
  L i=fL(gk,gn,k);P(i>=0,i)P(gn>=L(gv),0)gk[gn]=k;gv[gn]=0;gn++)
 S B cm(A x/*0*/){X(Rv(!xv)Ru(1)RS(P(xn-1,0)L v=*xI;Q s=qs(&v);N n=SL(s);n&&s[n-1]==':')R_(0))}      //is x a valid modifier? i.e. :: or primitive monad or symbol ending with ":"
 S V cc(A x/*0*/,I o){N n=un,i=CO;W(i<n&&!mtc_(x,ua),i++)I(i>=n,uq(xR))h(i+bc-CO)}                   //append a "load constant" instruction
-S I cl(A x,A y/*00*/,B r){Q(cm(xx))I v=_v(xx),o=xo;                                                  //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
+S I cl(A x,A y/*00*/,B r){Q(cm(xx))I v=_v(xx),o=xo;                                                 //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
  Y(R_(o)
    RS(I(yn==1,I w=*yI,i=il(w);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)l[nl++]=w;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
       UC i=ig(y);h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
@@ -63,8 +63,8 @@ S I cr(A x/*0*/,B r)_(I o=xo;                                                   
   Nr(xz,1);Nl(x,xy,r);OK)// x[y]+:z     assignment
  P(n>3&&(y==av||y==CST),n--;I p[n];A*a=xA;i(n&~1,Nr(*++a,1);h(i&1?bj:bz)p[i]=nb;h(0))               // :[x;y;z] cond
   Nr(n&1?*++a:au,1);i(n&~1,I d=(i&1?nb-1:p[i+1])-p[i];I(i&1,I j=(n&~1)-1;W(i<j&&d>255,d=p[j]-1-p[i];j-=2))P(d>255,o)b[p[i]]=d)I(!r,h(bP))OK)
- I(n==2&&y==FIR,A z=xy;I(ztA&&zn==2,P(zx-REV<3u,Nr(zy,1);h(bu+zx-REV+LAS-au)I(!r,h(bP))OK)))         // *|x      recognized idioms
- I p=0;i(n-1,A z=xA[n-1-i];I(z-GAP,Nr(z,1))E(p=1;cc(GAP,o)))I(p,Nr(xx,1);h(bp)h(n-1))                // x[y;]    projection
+ I(n==2&&y==FIR,A z=xy;I(ztA&&zn==2,P(zx-REV<3u,Nr(zy,1);h(bu+zx-REV+LAS-au)I(!r,h(bP))OK)))        // *|x      recognized idioms
+ I p=0;i(n-1,A z=xA[n-1-i];I(z-GAP,Nr(z,1))E(p=1;cc(GAP,o)))I(p,Nr(xx,1);h(bp)h(n-1))               // x[y;]    projection
  J(y==MKL,n--;P(n>255u,o)h(bl)h(n))                                                                 // (x;y)    list
  J(n==2&&ytu,h(bu+yv))                                                                              // +x       monad
  J(n==3&&ytv,I(!p&&!_tSA(xy),Q(b[nb-1]>=bc);I i=b[nb-1]-bc;b[nb-1]=bV;h(i)h(yv))E(h(bv+yv)))        // x+y      dyad
