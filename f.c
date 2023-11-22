@@ -22,13 +22,13 @@ S X1(fndGx,
  R_(fN(x))
  RZC_E(
   U m=xn;A y=aL(m);
-  Mx(S4(xw,
+  S4(xw,
    i(m,yl=t[(UC)xc]),
    i(m,H v=xh;yl=v==(C)v?t[(UC)v]:NL),
    i(m,I v=xi;yl=v==(C)v?t[(UC)v]:NL),
    i(m,L v=xl;yl=v==(C)v?t[(UC)v]:NL)
-  ))
-  sqzZ(y)
+  )
+  x(0);sqzZ(y)
  )
 )
 X2(fnd,
