@@ -99,9 +99,9 @@ EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,ce[],cn[],ci[2][5];EX I 
 //                       0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
 //                         () !n ,3 ,4 ,5 ,6 ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
 enum                    {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
-#define T_ TY(O C[]) TS="?""A""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
+#define T_ TY(O C[]) TS="0""A""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
                      TW={0, 8, 8, 1, 2, 4, 8, 8, 1, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8},/*item size in bytes        */\
-                     Tw={0, 4, 3, 0, 1, 2, 3, 3, 0, 2, 4, 4, 3, 3, 3, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3},/*log2(size) or 4=reftypes  */\
+                     Tw={0, 7, 6, 3, 4, 5, 6, 6, 3, 5, 7, 7, 6, 6, 6, 6, 6, 7, 7, 7, 7, 6, 6, 6, 6},/*log2(size) or 7=reftypes  */\
                      TT={0,tA,tL,tG,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
                      TX={0,tG,tG,tG,tH,tI,tL,tF,tG,tI,tG,tG, 0, 0,tF,tG,tI,tG,tG,tG,tG,tG,tG,tG,tG},/*type for arith conformance*/\
                      Tk="0""L""I""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*types for k.h             */
@@ -135,7 +135,7 @@ enum                    {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp
 #define _U(x) _C(x)[-16]      //bucket
 #define _v(x) (I)(x)          //value
 #define _V(x) (V*)(x)         //ptr to data
-#define _w(x) Tw[_t(x)]       //log2(item size in bytes)
+#define _w(x) (Tw[_t(x)]-3)   //log2(item size in bytes)
 #define _W(x) TW[_t(x)]       //item size in bytes
 #define _X(x) _A(x)[-3]       //next
 #define _Z(x) ((HD<<_U(x))-HD)//capacity
