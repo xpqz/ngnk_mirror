@@ -61,7 +61,7 @@ A1(AZ,AT(tG,x))
 
 S C s0[1<<16],*s1=s0+1;
 Q qs(O L*p)_(*p<0?s0-*p:(V*)p)
-S I sq(Q s)_(U n=SL(s);P(n<4||(n==4&&!(s[3]&128)),I v=0;MC(&v,s,n);v)Q p=s0+1;W(p<s1,P(!strcmp(p,s),s0-p)p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;s0-s1+n)
+I sq(Q s)_(U n=SL(s);P(n<4||(n==4&&!(s[3]&128)),I v=0;MC(&v,s,n);v)Q p=s0+1;W(p<s1,P(!strcmp(p,s),s0-p)p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;s0-s1+n)
 A sym(Q s)_(as(sq(s)))
 
 S A bs0(Q s)_(en0())

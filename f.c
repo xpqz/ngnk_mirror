@@ -2,7 +2,7 @@
 I rnk(A x/*0*/){X(RA(I v=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)RmM(rnk(xy))RT_A(1)R_(0))}//-1 for mixed rank
 S U urnk(A x/*0*/){X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))}//assuming unirank
 
-S U fG(O G*a,U n,G v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
+  U fG(O G*a,U n,G v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
 S U fH(O H*a,U n,H v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
   U fI(O I*a,U n,I v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
   U fL(O L*a,U n,L v)_(U i=0;W(i<n&&a[i]!=v,i++)i)

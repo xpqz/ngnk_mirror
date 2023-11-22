@@ -7,25 +7,32 @@ S B num(Q s)_(C09(s[*s=='-']))                                                  
 S Q pw(Q s)_(W(*s==32,s++)s)                                                                        //skip whitespace
 S A1(p1,x&&xn==1?fir(x):x)                                                                          //singleton list to atom
 Q pID(Q s)_(W(id1(*s),s+=G(1,1,1,1,1,1,2,3)[(UC)*s>>5])s)                                           //parse identifier
-W pu(Q*p)_(Q s=*p;W v=0;C c=*s;W(C09(c),v=10*v+c-'0';c=*++s)*p=s;v)                                 //parse long int unsigned
-L pl(Q*p)_(B m=**p=='-';*p+=m;(1-2*m)*pu(p))                                                        //parse long int
-S W pfu(Q*p)_(W v=pu(p);Q s=*p;C c=*s;P(c=='w',(*p)++;WFL)P(c=='n',(*p)++;v^NFL)I e=0;              //parse float unsigned
+W pu(Q*p)_(Q s=*p;W v=0;C c=*s;W(C09(c),v=10*v+c-'0';c=*++s)*p=s;v)                                 //parse unsigned long
+L pl(Q*p)_(B m=**p=='-';*p+=m;(1-2*m)*pu(p))                                                        //parse long
+S L plN(Q*p)_(L v=pl(p);!v&&**p=='N'?(*p)++,NL:v)                                                   //parse long (with support for nulls)
+S L pfu(Q*p)_(L v=pu(p);Q s=*p;C c=*s;P(c=='w',(*p)++;WFL)P(c=='n',(*p)++;v^NFL)I e=0;              //parse float unsigned
  I(c=='.',c=*++s;W(C09(c),I(v<(1ull<<63)/10,v=10*v+c-'0';e--)c=*++s))
  I(c=='e',s++;e+=pl(&s);P(e<-308,0)P(e>308,WFL))
  S F t[309];I(!*t,*t=1;i(308,t[i+1]=10*t[i]))
  *p=s;*(L*)A(e<0?v/t[-e]:v*t[e]))
-W pf(Q*p)_(B m=**p=='-';(*p)+=m;W v=(W)m<<63|pfu(p);(*p)+=**p=='f';v)                               //parse float
-S A0(pZ,Q p=s;W(*p-'0'<2u,p++)P(*p=='b',A x=aG(p-s);i(xn,xg=*s++&1)s++;x)                           //parse ints
- A x=oL;W(1,L v=pl(&s);I(!v&&*s=='N',v=NL;s++)x=apv(x,&v);Q p=pw(s);B(p==s||!num(p))s=p)sqzZ(x))
-S A0(pF,A x=oF;W(1,x=apv(x,A(pf(&s)));Q p=pw(s);B(p==s||!num(p))s=p)x)                              //parse floats
-S A0(pC,A x=oC;C c=*++s;W(c&&c-'"',I(c=='\\',c=*++s;I i=si("tnr0",c);I(i<4,c="\t\n\r"[i]))          //parse "string"
- x=apc(x,c);c=*++s)P(!c,ep1(x))c=*++s;x)
+L pf(Q*p)_(B m=**p=='-';(*p)+=m;L v=(L)m<<63|pfu(p);(*p)+=**p=='f';v)                               //parse float
+S A pV(C t,TY(pl)*f)_(L a[1<<9];U n=0;                                                              //parse ints or floats
+ W(1,L v=f(&s);P(n>=L(a),ez0())a[n++]=v;Q p=pw(s);B(p==s||!num(p))s=p)aV(t,n,a))
+S A0(pZ,Q p=s;W(*p-'0'<2u,p++)P(*p=='b',A x=aG(p-s);i(xn,xg=*s++&1)s++;x)sqzZ(N(pV(tL,plN))))       //parse ints
+S A0(pF,pV(tF,pf))                                                                                  //parse floats
+S A0(pC,C a[1<<9];U n=0;C c=*++s;                                                                   //parse "string"
+ W(c&&c-'"'&&n<L(a),I(c=='\\',c=*++s;U i=fG("tnr0",4,c);I(i<4,c="\t\n\r"[i]))a[n++]=c;c=*++s)
+ P(!c,ep0())P(n>=L(a),ez0())s++;aV(tC,n,a))
 S A0(p0x,Q p=s;W(CA9(*p),p++)A x=N(unhC(s,p-s));s=p;x)                                              //parse 0x string
 S A0(ps,Q p=s;C c=*s;I(id0(c),s=pID(s))J(c>>7,W(*++s<-64)s+=*s==':')aCm(p,s))                       //parse symbol
-S A0(pS,A x=oS;W(1,A y=*s-'"'?ps():Nx(pC());y=str0(y);xq(y(sym(yV)));Q p=pw(s);P(*p-'`',x)s=p+1)0)  //parse symbols
-S A0(pP,A x=oS;W(1,A y=str0(ps());y(xq(sym(yV)));P(*s-'.'||!id0(s[1]),x)++s)0)                      //parse dot-separated path of identifiers
+S A0(pS,I a[256];U n=0;                                                                             //parse symbols
+ W(1,P(n>=L(a),ez0())A y=*++s-'"'?ps():N(pC());y=str0(y);a[n++]=sq(yC);y(0);Q p=pw(s);B(*p-'`')s=p)
+ aV(tS,n,a))
+S A0(pP,I a[8];U n=0;                                                                               //parse dot-separated path of identifiers
+ W(1,P(n>=L(a),ez0())A y=str0(ps());a[n++]=sq(yV);y(0);B(*s-'.'||!id0(s[1]))++s)
+ aV(tS,n,a))
 S A pt(C*v)_(C c=*s;                                                                                //parse term
- P(c=='`',s++;A x=N(pS());qte(p1(x)))
+ P(c=='`',qte(p1(N(pS()))))
  P(c=='"',p1(pC()))
  P(c=='[',s++;pb(GAP,']'))
  P(c=='(',s++;P(*s==')',s++;oA)A x=N(pb(MKL,')'));xn-2?x:las(x))
@@ -37,11 +44,11 @@ S A pt(C*v)_(C c=*s;                                                            
  P(num(s)&&(c-'-'||s==s0||(!id1(s[-1])&&!strchr(")]}\"",s[-1]))),
   L d=0;Q p=s;c=*p;W(1,p=pw(p);B(!num(p))p+=*p=='-';c=*p;B(!CA9(c))W(CA9(c)||c=='.'||c==':',d|=!!strchr(".nwef",c);c=*++p))p1(d?pF():pZ()))
  P(c>>7,Q p=s;A x=pP();*v=1;AO(p-s0,x))
- I i=si("'/\\",c);P(i<3,c=*++s;I h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,GAP)
+ U i=si("'/\\",c);P(i<3,c=*++s;I h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,GAP)
  I u=*++s==':';s+=u;*v=1;Lt(tv-u)|i)
 S X1(pm,Rv(x^au^av)RA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x)Rs(L v=xv;Q s=qs(&v);N n;P(*s>>7&&s[(n=SL(s))-1]-':',C b[8];MC(b,s,n);b[n]=':';b[n+1]=0;sym(b))x)R_(x)) //monadify
 S A pT(C*v)_(A x=N(pt(v));                                                                          //parse term and the adverbs or square brackets after it (v:verb?)
- W(1,C c=*s;I i=si("'/\\[",c);P(i>3,x)s++;
+ W(1,C c=*s;U i=si("'/\\[",c);P(i>3,x)s++;
   I(i>2,x=AO(s-1-s0,N(pb(x,']')));I(xn==2,I(xy==GAP,xy=au)E(xx=pm(xx)))*v=0)
   E(I c=*s==':';s+=c;x=aA2(aw+i+3*c,x);*v=1))x)
 S A pe(A x,C*v)_(s=pw(s);C c=*s;                                                                    //parse expression

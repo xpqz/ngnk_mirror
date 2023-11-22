@@ -88,11 +88,11 @@ V cyc(V*,U,U),eS(A,U),eQ(Q,U,U),exit(I),hexC(Q,U,C*),kargs(I,Q*),kinit(),*memmem
 B id0(UC),mtc_(A,A),tru(A);
 C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);
 UC ig(A);
-I qA(A,A),qf(F,F),rnk(A);
-U _K(A),si(Q,C),_N(A),js_eval(C*,U,C*,U),fI(O I*,U,I),fL(O L*,U,L);
-L cfm(O A*,I),gl_(A),gl(A),gkk(A),iw(A,I,L),now(),pl(Q*),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A);
+I qA(A,A),qf(F,F),rnk(A),sq(Q);
+U _K(A),si(Q,C),_N(A),js_eval(C*,U,C*,U),fG(O G*,U,G),fI(O I*,U,I),fL(O L*,U,L);
+L cfm(O A*,I),gl_(A),gl(A),gkk(A),iw(A,I,L),now(),pl(Q*),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A),pf(Q*);
 Q qs(O L*),pID(Q);
-W pf(Q*),pu(Q*);
+W pu(Q*);
 F gf(A);
 EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,ce[],cn[],ci[2][5];EX I pg;EX L gp,gk[256];EX U gn;EX TY(O C[])vc,TS,Tw,TW,TT,TX,Tk;EX Q*argv,*env,HEX;
 

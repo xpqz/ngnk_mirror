@@ -540,8 +540,6 @@
 #define Nu(r) N(r,u(0))
 #define oA _R(ce[tA])
 #define oG _R(ce[tG])
-#define oL _R(ce[tL])
-#define oF _R(ce[tF])
 #define oC _R(ce[tC])
 #define oS _R(ce[tS])
 #define _x(x) ((A*)_V(x))[0]
