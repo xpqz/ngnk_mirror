@@ -58,9 +58,17 @@ X2(fnd,
 X2(que,Rs(S O C s[][4]={"j","k","hex"};A(&js0,val,unh,ed1)[fI((V*)s,L(s),xv)](y))Rz(rnd(gl_(x),y))R_(fnd(x,y)))
 
 S A2 binF;
-S Y2(binZ,RF(x=cF(xR);x(binF(x,y)))Rt(YU(ed1(y))fir(N(binZ(x,enl(y)))))RmMA(r2f(binZ,x,y))R_(et1(y))
- RZC(P(xn-(I)xn,ez1(y))I wx=xw,wy=yw;P(!wx,wy?K2("{@[x'`c$127&y;&-128>y;:;-1]}",x,y):K2("{(-1+\\@[&256;128+x;+;1])128+y}",x,y))A z=an(yn,tZ(xn-1));I wz=zw,k[2];
+S Y2(binZ,
+ R_(et1(y))
+ RF(x=cF(xR);x(binF(x,y)))
+ Rt(YU(ed1(y))fir(N(binZ(x,enl(y)))))
+ RmMA(r2f(binZ,x,y))
+ RE(binZ(x,gZ(y)))
+ RZC_E(
+  XE(x=gZ(xR);x(binZ(x,y)))
+  P(xn-(I)xn,ez1(y))U wx=xw,wy=yw;P(!wx,wy?K2("{@[x'`c$127&y;&-128>y;:;-1]}",x,y):K2("{(-1+\\@[&256;128+x;+;1])128+y}",x,y))A z=an(yn,tZ(xn-1));I wz=zw,k[2];
   i(yn,L v;S4(wy,v=yg,v=yh,v=yi,v=yl)*k=-1;k[1]=xn;S4(wx,,W(*k+1<k[1],I i=*k+k[1]>>1;k[v<xh]=i),W(*k+1<k[1],I i=*k+k[1]>>1;k[v<xi]=i),W(*k+1<k[1],I i=*k+k[1]>>1;k[v<xl]=i))
        S4(wz,zg=*k,zh=*k,zi=*k,zl=*k))y(z)))
+
 S Y2(binF,RF(x=of1(xR);x(binZ(x,of1(y))))RZC(binF(x,N(cF(y))))Rt(YU(ed1(y))fir(N(binF(x,enl(y)))))RmMA(r2f(binF,x,y))R_(ed1(y)))
 X2(bin,RZC(binZ(x,y))RF(binF(x,y))Rm(_1(xx,N(bin(xy,y))))R_(et1(y)))
