@@ -70,7 +70,7 @@ TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(O A*,U),AX
 #define A4(f,b...) A f(A x,A y,A z,A u)_(b)
 #define AX(f,b...) A f(A x,O A*a,U n  )_(b)/*0,1..1,n*/
 #define AA(f,b...) A f(    O A*a,U n  )_(b)
-A1 _R,aA1,asc,AZ,cA,cG,cC,cF,cH,cI,cL,cS,csti,dsc,enl,epr,err,fir,flp,flr,frk,gZ,grp,hex,imx,imn,inv,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,
+A1 _R,aA1,asc,AZ,cA,cG,cC,cF,cH,cI,cL,cS,csti,dsc,enl,epr,err,fir,flp,flr,frk,gZ,gg,grp,hex,imx,imn,inv,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,
  neg,not,nul,of0,of1,opn,out,prng,qkmp,qpri,qte,raz,rev,rs0,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,u2c,unh,unq,val,whr;
 A2 _1,aA2,aM,add,am,apd,ari,bin,cat,cat10,cat11,cst,dex,dot,dvd,eql,exc,crt,fil,fnd,gtn,hsh,ie,i1,ltn,mod,mnm,mtc,mul,mxm,que,sub,und,v0c,v1c,v2c;
 A3 _2,aA3,arf,arp,ars,cpl,e2,r2,try;
@@ -83,18 +83,18 @@ TD A ALA(L,A);ALA drp,rnd,rsz;
 TD A AQ(Q);AQ aCz,bsl,bsm,die,sym;
 A room(U,A),ii(A,U),io(A,L),a2t(A,A,C),aA0(U),aE(L,L),af(F),aCm(Q,Q),aCn(Q,U),apc(A,C),apv(A,O V*),an(U,C),aV(C,U,O V*),cts(A,Q,U),e1f(A1,A),e2f(A2,A,A),err0(Q),evs(Q,B),
  k1(A*,Q,A),k2(A*,Q,A,A),k8(A*,Q,O A*,U),jc(C,A),jC(Q,U,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(U,U,U),pk(Q*,C),pen(A,A1*),slc(A,U,U),unhC(Q,U),wdn(A,U,U,U),
- AT(W,A),AV(W,A),AW(C,A),AK(C,A),AO(UC,A),AN(U,A),w1(U,A,A),w2(U,A,A,A),w8(U,A,O A*,U);
+ AT(W,A),AV(W,A),AW(C,A),AK(C,A),AO(UC,A),AN(U,A),w1(U,A,A),w2(U,A,A,A),w8(U,A,O A*,U),gns(U),*gp(A);
 V cyc(V*,U,U),eS(A,U),eQ(Q,U,U),exit(I),hexC(Q,U,C*),kargs(I,Q*),kinit(),*memmem(O V*,N,O V*,N),mrn(U,O A*),mRn(U,O A*),repl(),tilV(V*,L,L,U);
 B id0(UC),mtc_(A,A),tru(A);
 C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);
-UC ig(A);
+UC gi(A);
 I qA(A,A),qf(F,F),rnk(A),sq(Q);
 U _K(A),si(Q,C),_N(A),js_eval(C*,U,C*,U),fG(O G*,U,G),fI(O I*,U,I),fL(O L*,U,L);
-L cfm(O A*,I),gl_(A),gl(A),gkk(A),iw(A,I,L),now(),pl(Q*),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A),pf(Q*);
+L cfm(O A*,I),gl_(A),gl(A),iw(A,I,L),now(),pl(Q*),maxfZ(L,A),minfZ(L,A),addfZ(L,A),mulfZ(L,A),pf(Q*);
 Q qs(O L*),pID(Q);
 W pu(Q*);
 F gf(A);
-EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,ce[],cn[],ci[2][5];EX I pg;EX L gp,gk[256];EX U gn;EX TY(O C[])vc,TS,Tw,TW,TT,TX,Tk;EX Q*argv,*env,HEX;
+EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,ce[],cn[],ci[2][5];EX I pg;EX TY(O C[])vc,TS,Tw,TW,TT,TX,Tk;EX Q*argv,*env,HEX;
 
 //                       0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
 //                         () !n ,3 ,4 ,5 ,6 ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:

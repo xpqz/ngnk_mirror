@@ -40,20 +40,17 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
 #define OK -1                                                                                       //returned by cl() and cr() on success
 #define MB 256                                                                                      //max bytecode size
 S A u;S UC b[MB],m[MB],lu[16];S I nb,nl,l[16],cr(A,B);                                              //u:lambda(src;b:bytes;m:map;l:locals;consts..)  lu:last usages
-SN I il(I v)_(U i=fI(l,nl,v);P(i==nl,-1)lu[i]=nb;i)                                               //index of a local  variable (returns -1 if not found)
-L gkk(A x/*0*/)_(Xs((U)xv)Q(xtS&&xn)(L)_v(jS(drp(-1,xR)))<<32|(U)_v(ii(x,xn-1)))
-UC ig(A x)_(L k=gkk(x),l=(I)k;I(!(k>>32)&&id0(*qs(&l)),k|=(L)gp<<32)                                //index of a global variable (allocates a new slot if not found)
- U i=fL(gk,gn,k);P(i<gn,i)P(gn>=L(gv),0)gk[gn]=k;gv[gn]=0;gn++)
+SN I li(I v)_(U i=fI(l,nl,v);P(i==nl,-1)lu[i]=nb;i)                                                 //index of a local variable (returns -1 if not found)
 S B cm(A x/*0*/){X(Rv(!xv)Ru(1)RS(P(xn-1,0)L v=*xI;Q s=qs(&v);U n=SL(s);n&&s[n-1]==':')R_(0))}      //is x a valid modifier? i.e. :: or primitive monad or symbol ending with ":"
 S V cc(A x/*0*/,I o){U n=un,i=CO;W(i<n&&!mtc_(x,ua),i++)I(i>=n,uq(xR))h(i+bc-CO)}                   //append a "load constant" instruction
 S I cl(A x,A y/*00*/,B r){Q(cm(xx))I v=_v(xx),o=xo;                                                 //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
  Y(R_(o)
-   RS(I(yn==1,I w=*yI,i=il(w);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)l[nl++]=w;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
-      UC i=ig(y);h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
+   RS(I(yn==1,I w=*yI,i=li(w);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)l[nl++]=w;lu[i]=nb)h(bs+i)I(r,h(bg+i))OK)P(i>=0,h(bm)h(i)h(v)I(r,h(bg+i))OK))
+      UC i=gi(y);h(v?bM:bS)h(i)I(v,h(v))I(r,h(bG)h(i))OK)
    RA(I n=yn-1;P(!n||n>8u,o)A z=yx;P(z==MKL&&(xx==av||_t(xx)==tu),h(bL)h(n)i(n,Nl(x,yA[i+1],0))I(r,P(xx-av,o))E(h(bP))OK)
-      ZS(i(n,Nr(yA[n-i],1))h(bl)h(n)I i=zn-1?-1:il(*zI);I(i>=0,h(r?by:bx))E(i=ig(z);h(r?bY:bX))h(i)h(v)OK)o))}
+      ZS(i(n,Nr(yA[n-i],1))h(bl)h(n)I i=zn-1?-1:li(*zI);I(i>=0,h(r?by:bx))E(i=gi(z);h(r?bY:bX))h(i)h(v)OK)o))}
 S I cr(A x/*0*/,B r)_(I o=xo;                                                                       //compile rvalue (x:tree,r:wantResult)
- XS(I i=xn-1?-1:il(*xI);I(i>=0,h(bg+i))J(xn==1&&*xI=='o',h(bo))E(h(bG)h(ig(x)))I(!r,h(bP))OK)       // x.y      variable (possibly qualified)
+ XS(I i=xn-1?-1:li(*xI);I(i>=0,h(bg+i))J(xn==1&&*xI=='o',h(bo))E(h(bG)h(gi(x)))I(!r,h(bP))OK)       // x.y      variable (possibly qualified)
  P(!xtA||!xn,I(r,cc(x-GAP?x:au,o))OK)                                                               // 0        constant
  U n=xn;A y=xx;                                                                                     //
  P(y==GAP,i(n-1,Nr(xA[i+1],i==n-2&&r))OK)                                                           // [x;y]    block
@@ -77,5 +74,5 @@ S A1(cf,P(!xtA||!xn,x)P(xx==MKL,i(xn,A y=xa;YSA(x))qte(N(drp(1,x))))P(xn==2?c2(x
 S I mxs(I i,I s)_(I r=s;W(1,UC c=MIN(bc,b[i++]);r=MAX(r,s);P(!c,r)s+=ds[c]+ks[c]*b[i];i+=di[c]+(c==bj)*b[i];I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)//max stack
 S B shy(A x/*0*/)_(!xtA?0:xn&&xx==GAP?shy(xA[xn-1]):xn==3&&cm(xx)&&_tSA(xy))                        //is last expr an assignment?
 A3(cpl,/*111*/nb=1;MS(lu,-1,SZ lu);I k=0;I(z,k=zn;MC(l,zV,CO*k);z(0))nl=k;u=aA(CO);y=Nx(cf(y));ux=x;uy=uz=uA[3]=au;B s=shy(y);I r=cr(y,!s);y(0);P(r-OK,ec0();eS(ux,r);u(0))
- I o=0;I(s,cc(au,o))P(un>255||nb>MB-2||nl>L(l)-2||gn>L(gv)-2,ez0();eS(ux,0);u(0))h(bu)P(nb>MB-2||un>255-bc+CO,eS(ux,0);u(0);ez0())
+ I o=0;I(s,cc(au,o))P(un>255||nb>MB-2||nl>L(l)-2,ez0();eS(ux,0);u(0))h(bu)P(nb>MB-2||un>255-bc+CO,eS(ux,0);u(0);ez0())
  i(nl,I j=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);uA[3]=aV(tS,nl,l);AK(k,AT(to,u)))
