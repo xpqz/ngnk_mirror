@@ -100,7 +100,7 @@ EX A1*v1[],*cT[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,ce[],cn[],ci[2][5];EX I 
 //                         () !n ,3 ,4 ,5 ,6 ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
 enum                    {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
 #define T_ TY(O C[]) TS="0""A""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
-                     TW={0, 8, 8, 1, 2, 4, 8, 8, 1, 4, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8},/*item size in bytes        */\
+                     TW={0,64,64, 8,16,32,64,64, 8,32,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64},/*item size in bits         */\
                      Tw={0, 7, 6, 3, 4, 5, 6, 6, 3, 5, 7, 7, 6, 6, 6, 6, 6, 7, 7, 7, 7, 6, 6, 6, 6},/*log2(size) or 7=reftypes  */\
                      TT={0,tA,tL,tG,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
                      TX={0,tG,tG,tG,tH,tI,tL,tF,tG,tI,tG,tG, 0, 0,tF,tG,tI,tG,tG,tG,tG,tG,tG,tG,tG},/*type for arith conformance*/\
@@ -136,7 +136,7 @@ enum                    {tA=1,tE,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp
 #define _v(x) (I)(x)          //value
 #define _V(x) (V*)(x)         //ptr to data
 #define _w(x) (Tw[_t(x)]-3)   //log2(item size in bytes)
-#define _W(x) TW[_t(x)]       //item size in bytes
+#define _W(x) (TW[_t(x)]>>3)  //item size in bytes
 #define _X(x) _A(x)[-3]       //next
 #define _Z(x) ((HD<<_U(x))-HD)//capacity
 #define M_(x,a...) {DBG(A t_=)m0(x);a;DBG(x=0;m1(t_));}//two-phase free()
