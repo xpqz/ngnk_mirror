@@ -12,7 +12,9 @@ SN V cLH(O V*RES a,V*RES b,U n)_(O L*p=a;H*r=b;i(n+ 3& -4,r[i]=p[i]))
 SN V cLI(O V*RES a,V*RES b,U n)_(O L*p=a;I*r=b;i(n+ 3& -4,r[i]=p[i]))
 SN V cLF(O V*RES a,V*RES b,U n)_(O L*p=a;F*r=b;i(n+ 3& -4,r[i]=p[i]==NL  ?NF:p[i]))
 SN V cFL(O V*RES a,V*RES b,U n)_(O F*p=a;L*r=b;i(n+ 3& -4,r[i]=p[i]!=p[i]?NL:p[i]))
-X1(flp,Rt(enl(enl(x)))R_(enl(x))RM(A y=kv(&x);am(x,y))
+SN V cBG(O V*RES a,V*RES b,U n)_(O G*p=a;G*r=b;i(n,r[i]=p[i>>3]>>(i&7)&1))
+SN V cGB(O V*RES a,V*RES b,U n)_(O G*p=a;G*r=b;i(n,r[i>>3]|=(p[i]&1)<<(i&7)))
+X1(flp,Rt(enl(enl(x)))R_(enl(x))RM(A y=kv(&x);am(x,y))RB(en1(x))
  Rm(A y=kv(&x);Y(RA(I(yn>1,L n=cfm(yA,yn);P(n<0,x(el1(y)))i(yn,A z=ya;I(ztt,y=mut(y);ya=rsz(n,z))))aM(x,y))RT_A(aM(x,e1f(enl,y)))R_(en2(x,y)))0)
  RA(U m=xn;L n=cfm(xA,m|!m);P(n==-1,enl(x))P(n<0,el1(x))C t=_t(xx);I(t<tM&&t-tE,i(m,A y=xa;B(yt-t,t=0)))E(t=0)A y=aA(n);
   P(!t,i(n|!n,A z=aA(m);j(m,zA[j]=ii(xA[j],i))I(!zn,zx=mkn(zx))ya=sqz(z))x(0);I(!yn,yx=mkn(yx))y)
@@ -22,12 +24,12 @@ V tilV(V*p,L v,L n,U w){L*a=p,k=G(0x101010101010101ll,0x1000100010001ll,1ll<<32|
  i((n-1>>3-w)+4&-4,a[i]=v;v+=d)}
 A1(gZ,Lij x(0);P(i<0,x=az(i);x(add(x,gZ(aE(0,j-i)))))C t=MAX(tZ(i),tZ(j-1));x=an(j-i,t);tilV(xV,i,j-i,t-tG);x)
 X1(til,RA(K1("{x@'!#'x}",x))Ril(L n=gl(x);n*=n!=-n;aE(MIN(0,n),MAX(0,n)))REGHIL(K1("{(*a)#'&'x#'1_a:|*\\|x,1}",x))RmM(x(_R(xx)))Ro(val(x))R_(et1(x))RS(gns(_v(jS(x))))Rs(gns(xv)))
-X1(whr,Ril(whr(enl(x)))RA(K1("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Rm(A y=kv(&x);x(x1(Nx(whr(y)))))RE(whr(gZ(x)))R_(et1(x))
+X1(whr,Ril(whr(enl(x)))RA(K1("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Rm(A y=kv(&x);x(x1(Nx(whr(y)))))RE(whr(gZ(x)))R_(et1(x))RB(en1(x))
  RGHIL(L m=xn,n=addfZ(0,x);P(n<0||minfZ(0,x)<0,ed1(x))C t=tZ(m-!!m);P(t>tI,ez1(x))A y=an(n,t);I w=xw;
   Mx(S4(t-tG,{G*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},
              {H*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},
              {I*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},))y))
-X1(rev,Rm(A y=kv(&x);am(rev(x),rev(y)))RM(A y=kv(&x);aM(x,e1f(rev,y)))Rt(x)RE(rev(gZ(x)))
+X1(rev,Rm(A y=kv(&x);am(rev(x),rev(y)))RM(A y=kv(&x);aM(x,e1f(rev,y)))Rt(x)RE(rev(gZ(x)))RB(en1(x))
  R_(P(xn<2,x)x=mut(x);U n=xn;I w=xw;S4(w,i(n>>1,SWP(xg,xG[n-1-i])),i(n>>1,SWP(xh,xH[n-1-i])),i(n>>1,SWP(xi,xI[n-1-i])),i(n>>1,SWP(xl,xL[n-1-i])))x))
 A1(typ,x(as(TS[xt])))
 A1(len,x(az(xN)))
