@@ -4,7 +4,7 @@ h:("// ngn/k, (c) 2019-2023 ngn, license: GNU AGPLv3 - https://codeberg.org/ngn/
 
 v:"xyzu" /variable names
 t:"AGHILFC" /some types
-T:t,"ESMmilfscopqruvwx" /all types
+T:t,"BESMmilfscopqruvwx" /all types
 U:T,"UPRtTzZ",$`cC`lL`fF`sS`zZ`mM`mt`MT`zf`ZF`zc`ZC`zfc`ZFC`mMA`sSA`SA /types and pseudotypes
 
 c:{+x@'!#'x} /cartesian product
@@ -29,7 +29,8 @@ r,:"R@(a...) R(t@,a)"e/:"AEGHILFCSMmilfcsopqruvwx"
 
 p!:p:`c$,/"aA"+\:!26 /pseudotype expansions
 p["TtU"]:$`AEGHILFCS`ilfcsopqruvwx`opqruvwx
-R:" "\"cC fF GC ic iI ilf lL mM mMA MT MT_C MT_E opq opqr sS t T T_A T_AE T_E U uvw il EGHIL ilc EGHILC GHILC GHIL EGHILF GHILF ilEGHIL"
+R:$`BGHILF`cC`EGHIL`EGHILC`EGHILF`fF`GC`GHIL`GHILC`GHILF`ic`iI`il`ilc`ilEGHIL`ilf`lL`mM`mMA`MT`opq`opqr`sS`t`T`U`uvw
+R,:" "\"MT_C MT_E T_A T_AE T_E"
 r,:{X:?^/,/'p@"_"\x;"R",x,"(a...) R",($#X),"(",(","/"t",'X),",a)"}'R
 
 "g.h"0:h,"#define ",/:r
