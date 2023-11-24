@@ -1,6 +1,6 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A2(dec,/*01*/yN?K2("0{z+x*y}/",x,y):K1("0^*:",y))
-S X2(enc,/*01*/Rz(K2("{$[&/~*x:(x|-x)!|$[x>0;(-x)!;-x!]\\y;1_x;@[x;0;-:0<]]}",x,y))RZ(K2("{(x|-x)!'|(,y),y{$[y<0;-y!;(-y)!]x}\\-1_|x}",x,y))R_(en1(y)))
+S X2(enc,/*01*/Ril(K2("{$[&/~*x:(x|-x)!|$[x>0;(-x)!;-x!]\\y;1_x;@[x;0;-:0<]]}",x,y))REGHIL(K2("{(x|-x)!'|(,y),y{$[y<0;-y!;(-y)!]x}\\-1_|x}",x,y))R_(en1(y)))
 S A scC(C c    ,C*p,U n)_(           A x=oA;C*q;W((q=memchr(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)
 S A sCC(C*s,L m,C*p,U n)_(P(!m,el0())A x=oA;C*q;W((q=memmem(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)
 S A sc(C c    ,A x)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))
@@ -14,10 +14,10 @@ S AX(em,/*01..1*/A z=oS;I k=0;i(n,A y=a[i];I(ytm,k++;z=cat10(z,yx)))I(k>1,z=unq(
 A e1f(A1 f,A x){X(Rt(f(x))Rm(A y=kv(&x);am(x,Nx(e1f(f,y))))
  RA(N n=xn;P(!n,o1f(f,x))x=mut(x);i(n,P(!(xa=f(xa)),xa=au;x(0)))sqz(x))
  RE(Lij x(0);L n=j-i,i0=i;P(!n,o1f(f,x))A y=aA(n);i(n,P(!(ya=f(ai(i0+i))),mrn(i,yA);0))sqz(y))
- RZ_E(N n=xn;P(!n,o1f(f,x))A y=aA(n);S4(xt-tG,i(n,P(!(ya=f(ai(xg))),mrn(i,yA);x(0))),
-                                              i(n,P(!(ya=f(ai(xh))),mrn(i,yA);x(0))),
-                                              i(n,P(!(ya=f(ai(xi))),mrn(i,yA);x(0))),
-                                              i(n,P(!(ya=f(az(xl))),mrn(i,yA);x(0))))sqz(x(y)))
+ RGHIL(N n=xn;P(!n,o1f(f,x))A y=aA(n);S4(xt-tG,i(n,P(!(ya=f(ai(xg))),mrn(i,yA);x(0))),
+                                               i(n,P(!(ya=f(ai(xh))),mrn(i,yA);x(0))),
+                                               i(n,P(!(ya=f(ai(xi))),mrn(i,yA);x(0))),
+                                               i(n,P(!(ya=f(az(xl))),mrn(i,yA);x(0))))sqz(x(y)))
  R_(N n=xN;P(!n,o1f(f,x))A y=aA0(n);i(n,A z=f(ii(x,i));B(!z,y=y(0))yq(z))x(y)))}
 S A2(e1,/*01*/Xu(e1f(v1[xv],y))Y(Rt(x1(y))Rm(em(x,&y,1))
  RA(N n=yn;P(!n,o1(x,y))y=mut(y);  i(n,;P(!(ya=x1(ya)),ya=au;y(0)))sqz(y))
@@ -50,8 +50,8 @@ S A wS(A x,A y,O A*a,N n/*001n*/)_(P(n==1,ws(x,y,*a))Ab8;MC(b,a,8*n);mRn(n,b);A 
  W(1,A u=y1(ii(z,zn-1));B(!u,z=z(0))B(!tru(u))mRn(n-1,b+1);u=x8(b,n);B(!u,*b=au;z=z(0))memmove(b,b+1,8*n-8);b[n-1]=u;zq(uR))mrn(n,b);z)
 S A nF(A x,L m,O A*a,N n/*0m1n*/)_(P(n==1,nf(x,m,*a))las(N(nS(x,m,a,n))))
 S A wF(A x,A y,O A*a,N n/*001n*/)_(P(n==1,wf(x,y,*a))las(N(wS(x,y,a,n))))
-S A3(ls2,/*010*/Y(Rz(ns(x,gl(y),zR))RU(y(ws(x,y,zR)))R_(et1(y)))0)
-S A3(lf2,/*010*/Y(Rz(nf(x,gl(y),zR))RU(y(wf(x,y,zR)))R_(et1(y)))0)
+S A3(ls2,/*010*/Y(Ril(ns(x,gl(y),zR))RU(y(ws(x,y,zR)))R_(et1(y)))0)
+S A3(lf2,/*010*/Y(Ril(nf(x,gl(y),zR))RU(y(wf(x,y,zR)))R_(et1(y)))0)
 S AX(ls8,/*01..1*/A y=*a;P(n==2,A z=a[1];z(ls2(x,y,z)))Yz(nS(x,gl(y),a+1,n-1))YU(y(wS(x,y,a+1,n-1)))et8(a,n))
 S AX(lf8,/*01..1*/A y=*a;P(n==2,A z=a[1];z(lf2(x,y,z)))Yz(nF(x,gl(y),a+1,n-1))YU(y(wF(x,y,a+1,n-1)))et8(a,n))
 X1(raz,RA(N n=0;i(xn,n+=_N(xa))A y=xx;y=ytT&&!ytA?AN(0,an(n,ytE?tG:yt)):aA0(n);i(xn,y=Nx(cat10(y,xa)))x(y))Rm(raz(val(x)))R_(x))

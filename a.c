@@ -24,7 +24,7 @@ SN V jF(V*RES a,U m,O U*RES b,V*RES c,U n){jv(a,m,b,c,n,NFL);}
 A2(i1,/*01*/P(y==GAP||y==au,xR)
  X(Rt(y(xR))RE(x=gZ(xR);x(i1(x,y)))Rm(i1(xy,N(fnd(xx,y))))
   RM(Y(RsS(x=flp(xR);x(i1(x,y)))RA(r2(AP1,x,y))RmM(A z=kv(&y);am(y,Ny(i1(x,z))))R_(I d=ytmt;y=N(l2f(i1,xy,y));(d?am:aM)(_R(xx),y)))0))
- Y(Rzc(io(x,gl(y)))RmM(A z=kv(&y);am(y,Ny(i1(x,z))))RA(r2(AP1,x,y))RE(L i=*yL,j=yL[1];P(0<=i&&i<j&&j<xN,y(0);slc(x,i,j))i1(x,gZ(y)))R3(tG,tH,tC,i1(x,cI(y)))R_(et1(y))
+ Y(Rilc(io(x,gl(y)))RmM(A z=kv(&y);am(y,Ny(i1(x,z))))RA(r2(AP1,x,y))RE(L i=*yL,j=yL[1];P(0<=i&&i<j&&j<xN,y(0);slc(x,i,j))i1(x,gZ(y)))R3(tG,tH,tC,i1(x,cI(y)))R_(et1(y))
   RL(N m=xn;A z=aI(yn);My(i(yn+3&-4,L v=yl;zi=v|-(v!=(I)v)))i1(x,z))
   RI(N n=yn;XA(A z=aA(n);i(n|!n,za=io(x,yi))y(0);I(!zn,zx=mkn(zx))sqz(z))
    C t=xt;I k=t-tG<3u&&maxfU(yV,yn)>=xn;A z=an(n,k?tL:t);My(G(&iG,iH,iI,jL,jF,iC,iS,jG,jH,jI)[7*k+t-tG](xV,xn,yV,zV,n))z))0)
@@ -50,7 +50,7 @@ AX(_8,/*01..1*/Q(n)P(n==1,x1(*a))P(n==2&&!xtp,A y=*a;y(x2(y,a[1])))P(!xtt,i8(x,a
  X(Ro(run(x,a,n))Rv(x=v8[xv](a,n);mrn(n-1,a+1);x)Rr(w8(xE,xx,a,n))Rq(_1(xx,N(_8(xy,a,n))))R_(et8(a,n))
   Rp(P(xn+xK>9,er8(a,n))I m=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==GAP&&j<n?a[j++]:_R(xA[i+1]))I l=MAX(0,n-j);MC(b+m,a+j,8*l);_8(xx,b,m+l)))0)
 A1(jS,cS(jc('.',str(x))))//join symbols with "."
-X1(val,RA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez1(x))x=mut(x);A y=_8(xx,&xy,xn-1);AN(1,x);x(y))RE(gZ(x))RZ_E(x)RC(x=str0(x);x(evs(xV,0)))Rc(val(enl(x)))RsS(gg(x))
+X1(val,RA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez1(x))x=mut(x);A y=_8(xx,&xy,xn-1);AN(1,x);x(y))RE(gZ(x))RGHIL(x)RC(x=str0(x);x(evs(xV,0)))Rc(val(enl(x)))RsS(gg(x))
  RmM(x(_R(xy)))Ropq(AT(tA,mut(x)))Rr(cat10(AT(tA,mut(x)),aw+xE))Ruvw(ai(xv))R_(et1(x)))
 A2(dot,/*01*/Ym(et1(y))N n=yN;P(!n,y(xR))P(n>8,ez1(y))y=mRa(N(cA(y)));y(x8(yA,n)))
 S I knd(A x/*0*/)_(Xz(ti)XZ(tI)xt)
