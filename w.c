@@ -1,11 +1,11 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A2(dec,/*01*/yN?K2("0{z+x*y}/",x,y):K1("0^*:",y))
 S X2(enc,/*01*/Rz(K2("{$[&/~*x:(x|-x)!|$[x>0;(-x)!;-x!]\\y;1_x;@[x;0;-:0<]]}",x,y))RZ(K2("{(x|-x)!'|(,y),y{$[y<0;-y!;(-y)!]x}\\-1_|x}",x,y))R_(en1(y)))
-S A scC(C c    ,C*p,L n)_(           A x=oA;C*q;W((q=memchr(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)
-S A sCC(C*s,L m,C*p,L n)_(P(!m,el0())A x=oA;C*q;W((q=memmem(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)
+S A scC(C c    ,C*p,U n)_(           A x=oA;C*q;W((q=memchr(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)
+S A sCC(C*s,L m,C*p,U n)_(P(!m,el0())A x=oA;C*q;W((q=memmem(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)
 S A sc(C c    ,A x)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))
 S A sC(C*s,L m,A x)_(XC(x(sCC(s,m,xV,xn)))et1(x))
-S L jN(L m,A x/*0*/)_(P(!xtA,-1)L n=(xn-!!xn)*m;i(xn,A y=xa;P(!ytcC,-1)n+=yN)n)//total length or -1
+S L jN(U m,A x/*0*/)_(P(!xtA,-1)L n=(xn-!!xn)*m;i(xn,A y=xa;P(!ytcC,-1)n+=yN)n)//total length or -1
 A jc(C c,    A x)_(XC(jc(c,  flp(flp(x))))L n=jN(1,x);P(n<0,et1(x))A y=aC(n);C*p=yV;i(xn,I(i,*p++=c        )A z=xa;I(ztc,*p++=zv)E(MC(p,zV,zn);p+=zn))x(y))
 A jC(Q s,U m,A x)_(XC(jC(s,m,flp(flp(x))))L n=jN(m,x);P(n<0,et1(x))A y=aC(n);C*p=yV;i(xn,I(i,MC(p,s,m);p+=m)A z=xa;I(ztc,*p++=zv)E(MC(p,zV,zn);p+=zn))x(y))
 S A1(re0,x?rs0(enl(x)):0) S A o1f(A1 f,A x/*f1*/)_(re0(f==whr?x(aI(0)):f(fir(x)))) S A2(o1,/*01*/ xtu?o1f(v1[xv],y):y(oA))
