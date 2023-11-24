@@ -48,7 +48,7 @@ X1(cF,RmMA(e1f(cF,x))RfF(x)Rzc(af(gl(x)))R_(x=N(cL(x));A y=aF(xn);Mx(cLF(xV,yV,y
 X1(cS,RmMA(e1f(cS,x))RsS(x)RC(x=str0(x);x(sym(xV)))Rc(as(xv))R_(et1(x)))
 X1(pI,RmMA(e1f(pI,x))Rc(pI(enl(x)))RC(x=str0(x);Q s=xV;P(!*s,x(_R(cn[tl])))L v=pl(&s);x(*s?_R(cn[tl]):az(v)      ))R_(et1(x)))
 X1(pF,RmMA(e1f(pF,x))Rc(pF(enl(x)))RC(x=str0(x);Q s=xV;P(!*s,x(_R(cn[tf])))L v=pf(&s);x(*s?_R(cn[tf]):aV(tf,1,&v)))R_(et1(x)))
-A1*cT[]={[tA]=cA,cL,cG,cH,cI,cL,cF,cC,cS};
+A1*cT[]={[tA]=cA,[tE]=cL,[tG]=cG,cH,cI,cL,[tF]=cF,[tC]=cC,[tS]=cS};
 X1(csti,RmMA(e1f(csti,x))RF(sqzZ(cL(x)))Rf(az(gf(x)))RC(cG(x))Rc(ai(xv))Ruvw(ai(xv))RzZ(x)R_(et1(x)))
 Y2(cstz,RmMA(e2f(cstz,x,y))RC(K2("{y@(!x)+(x<0)*#y}",x,y))Rc(cst(x,enl(y)))R_(et1(y)))
 X2(cst,Rs(I v=xv;P(v-(C)v,ed1(y))G(&csti,cF,cC,cS,pI,pF,ed1)[si("ifcsIF",v+'s'*!v)](y))Rz(cstz(x,y))R_(et1(y)))
