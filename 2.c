@@ -87,6 +87,8 @@ A2(ari,C t=xt,u=yt;L v=1<<t|1<<u;
  P(v&(1<<tm|1<<tM|1<<tA),e2(av+f,x,y))
  P(t==tE,P(f==1&&ytzc,addzE(gl(y),xR))x=gZ(xR);x(ari(x,y)))
  P(u==tE,P(f==1&&xtzc,addzE(gl_(x),y))ari(x,gZ(y)))
+ P(t==tB,x=cG(xR);x(ari(x,y)))
+ P(u==tB,ari(x,cG(y)))
  P(v&(1<<tf|1<<tF),arif(x,y,f))
  I(f-8<3u,
   P(v&1<<tS,P(f==10&&!(v&~(1<<ts|1<<tS)),ariz(x,y,f))e2f(ari,x,y))

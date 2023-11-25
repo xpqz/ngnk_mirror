@@ -16,10 +16,11 @@ S A1(fN,A y=_R(cn[tl]);x(xtt?y:rsz(xN,y)))
 
 S L t[256];
 S X1(fndGx,
+ R_(fN(x))
  RmMA(e1f(fndGx,x))
  Rilc(L v=gl(x);az(v==(C)v?t[(UC)v]:NL))
  RE(fndGx(gZ(x)))
- R_(fN(x))
+ RB(fndGx(cG(x)))
  RGHILC(
   U m=xn;A y=aL(m);
   S4(xw,
@@ -40,6 +41,7 @@ X2(fnd,
   X(RA(i(xn,P(mtc_(xa,y),y(az(i))))y(az(NL)))
     R_(i(xN,A z=ii(x,i);I m=mtc_(z,y);z(0);P(m,y(az(i))))y(az(NL))))0)
  RGC(i(256,t[i]=NL)UC*a=xV;U n=xn;i(n,t[a[n-1-i]]=n-1-i)fndGx(y))
+ RB(x=cG(xR);x(fnd(x,y)))
  R5(tH,tI,tL,tF,tS,
   YmMA(r2f(fnd,x,y))
   YE(fnd(x,gZ(y)))

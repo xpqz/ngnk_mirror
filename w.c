@@ -1,6 +1,6 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S A2(dec,/*01*/yN?K2("0{z+x*y}/",x,y):K1("0^*:",y))
-S X2(enc,/*01*/Ril(K2("{$[&/~*x:(x|-x)!|$[x>0;(-x)!;-x!]\\y;1_x;@[x;0;-:0<]]}",x,y))REGHIL(K2("{(x|-x)!'|(,y),y{$[y<0;-y!;(-y)!]x}\\-1_|x}",x,y))R_(en1(y)))
+S X2(enc,/*01*/Ril(K2("{$[&/~*x:(x|-x)!|$[x>0;(-x)!;-x!]\\y;1_x;@[x;0;-:0<]]}",x,y))REBGHIL(K2("{(x|-x)!'|(,y),y{$[y<0;-y!;(-y)!]x}\\-1_|x}",x,y))R_(en1(y)))
 S A scC(C c    ,C*p,U n)_(           A x=oA;C*q;W((q=memchr(p,c,n  )),xq(aCm(p,q));n-=q-p+1;p=q+1)I(n||c-10&&xn,xq(aCn(p,n)))x)
 S A sCC(C*s,L m,C*p,U n)_(P(!m,el0())A x=oA;C*q;W((q=memmem(p,n,s,m)),xq(aCm(p,q));n-=q+m-p;p=q+m)I(n||      xn,xq(aCn(p,n)))x)
 S A sc(C c    ,A x)_(XC(x(scC(c,  xV,xn)))et1(x))A1(spl,sc(10,x))

@@ -29,7 +29,7 @@ r,:"R@(a...) R(t@,a)"e/:"AEBGHILFCSMmilfcsopqruvwx"
 
 p!:p:`c$,/"aA"+\:!26 /pseudotype expansions
 p["TtU"]:$`AEBGHILFCS`ilfcsopqruvwx`opqruvwx
-R:$`BGHILF`cC`EGHIL`EGHILC`EGHILF`fF`GC`GHIL`GHILC`GHILF`ic`iI`il`ilc`ilEGHIL`ilf`lL`mM`mMA`MT`opq`opqr`sS`t`T`U`uvw
+R:$`BGHILF`cC`EGHIL`BGHIL`EBGHIL`EGHILC`EGHILF`fF`GC`GHIL`GHILC`GHILF`ic`iI`il`ilc`ilEBGHIL`ilEGHIL`ilf`lL`mM`mMA`MT`opq`opqr`sS`t`T`U`uvw
 R,:" "\"MT_C MT_E T_A T_AE T_E"
 r,:{X:?^/,/'p@"_"\x;"R",x,"(a...) R",($#X),"(",(","/"t",'X),",a)"}'R
 
