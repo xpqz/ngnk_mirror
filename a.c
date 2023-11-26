@@ -7,7 +7,7 @@ A2(ie,/*00*/P(x==CAT,_R(ce[ce[yt]?yt:tA]))iex(x,fir(yR)))
 AX(prj,XmMA(x8(a,n))I k=MAX(n,xK);i(n,k-=a[i]!=GAP)x=(xtp?val:aA1)(xR);I i=0,j=1;W(i<n&&j<xn,I(xA[j]==GAP,xA[j]=a[i++])j++)W(i<n,xq(a[i++]))P(xn>9,ez1(x))AT(tp,AK(k,x)))
 S A iM(A x,L i)_(Q(xtM);A y=xy,z=aA(yn);Q(ytA);j(zn|!zn,zA[j]=io(yA[j],i))am(_R(xx),sqz(z)))
 A ii(A x/*0*/,U i)_(X(RA(_R(xa))RC(ac(xc))RG(ai(xg))RH(ai(xh))RI(ai(xi))RL(al(xl))RF(af(xf))RS(as(xi))Rm(ii(xy,i))RM(iM(x,i))RE(az(*xL+i))RB(ai(xG[i>>3]>>(i&7)&1))R_(xR))0)
-A io(A x/*0*/,L i)_(X(RE(IN(i,xL[1]-*xL)?az(*xL+i):_R(cn[tl]))RT_E(IN(i,xn)?ii(x,i):xn?mkn(ii(x,0)):xtA?_R(xx):_R(cn[xt]))Rt(xR)Rm(io(xy,i))RM(iM(x,i)))0)
+A io(A x/*0*/,L i)_(X(RE(i<(W)(xL[1]-*xL)?az(*xL+i):_R(cn[tl]))RT_E(i<(W)xn?ii(x,i):xn?mkn(ii(x,0)):xtA?_R(xx):_R(cn[xt]))Rt(xR)Rm(io(xy,i))RM(iM(x,i)))0)
 A1(fir,x(io(x,0)))A1(las,x(io(x,xN-1)))
 SN U maxfU(O U*a,U n)_(U v=0;i(n,v=MAX(v,a[i]))v)
 SN V iG(V*RES a,U m,O U*RES b,V*RES c,U n){G*p=a;G*r=c;i(n,r[i]=p[b[i]])}
@@ -63,7 +63,7 @@ S A set(A x,L i,A y/*1i1*/)_(Q(xr==1);
 AA(a8,/*10..0*/A x=*a,y=a[1];X(
  RE(Ab8;*b=gZ(x);MC(b+1,a+1,n-1<<3);a8(b,n))
  RT_E(P(y==au,mRn(n-2,a+2);Ab8;*b=a[2];b[1]=x;MC(b+2,a+3,n-3<<3);e8(AP1,b,n-1))
-  Yzc(L i=gl_(y);P(!IN(i,xn),ei1(x))x=mut(x);Ab8;*b=ii(x,i);MC(b+1,a+3,n-3<<3);mRn(n-3,b+1);A z=a[2];set(x,i,Nx(z8(b,n-2))))
+  Yzc(L i=gl_(y);P(i>=xn,ei1(x))x=mut(x);Ab8;*b=ii(x,i);MC(b+1,a+3,n-3<<3);mRn(n-3,b+1);A z=a[2];set(x,i,Nx(z8(b,n-2))))
   I(ytZC&&n==4,A z=a[2],u=a[3];P(xtZ&&ztv&&utzZ&&(0xcf&1<<zv),ara(x,y,z,u))P(xtC&&z==av&&utcC,cC(N(ara(x,y,z,u)))))Yt(et1(x))mRn(n-1,a+1);f8(AP1,a,n))
  Rm(A z=Nx(fnd(xx,yR));ZT(z(0);mRn(n-1,a+1);f8(AP1,a,n))x=mut(x);I(ztl,z=mut(z);i(zN,I(zl==NL,zl=xN;xx=apd(xx,ztt?yR:ii(y,i));xy=apd(xy,ie(a[2],xy)))))
   Ab8;*b=xy;b[1]=z;MC(b+2,a+2,n-2<<3);xy=au;xy=Nx(z(a8(b,n)));x)

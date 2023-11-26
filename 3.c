@@ -72,7 +72,7 @@ S A4(mmma,/*1000*/yR;uR;B d=utT;I(!d,u=enl(u))Ny(sup(&x,&u));x=mut(x);I(!ytL,y=c
        E(      I(ytL,i4(xw,n,MAXE(xG[yl],uG[d*i]),MAXE(xH[yl],uH[d*i]),MAXE(xI[yl],uI[d*i]),MAXE(xL[yl],uL[d*i])))
                E(    i4(xw,n,MAXE(xG[yi],uG[d*i]),MAXE(xH[yi],uH[d*i]),MAXE(xI[yi],uI[d*i]),MAXE(xL[yi],uL[d*i]))))))x)
 S A4(suba,/*1000*/u=neg(uR);u(adma(x,y,ADD,u)))
-S I ina(A x/*0*/,U n)_(S4(xw,P(n-(G)n,1)i(xn,P(!IN(xg,n),0)),P(n-(H)n,1)i(xn,P(!IN(xh,n),0)),P(n-(I)n,1)i(xn,P(!IN(xi,n),0)),i(xn,P(!IN(xl,n),0)))1)
+S B ina(A x/*0*/,U n)_(S4(xw,P(n-(G)n,1)i(xn,P(xg>=n,0)),P(n-(H)n,1)i(xn,P(xh>=n,0)),P(n-(I)n,1)i(xn,P(xi>=n,0)),i(xn,P(xl>=n,0)))1)
 A4(ara,/*1000*/Q(xtZC)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ||utcC)
  XE(ara(gZ(x),y,z,u))
  XB(ara(cG(x),y,z,u))
