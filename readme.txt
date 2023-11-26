@@ -43,10 +43,11 @@ a.c eval, apply, amend: . @      w/   web ui
 h.c shape-related: x#y ,x x,y    x/   example for using libk.so
 o.c order and equivalence        o/   build output
 s.c to string: $x `k@x           l/   k libraries
-f.c find                         g/   https://codegolf.stackexchange.com/
-r.c random                       e/   https://projecteuler.net/
-1.c arithmetic monadic verbs     dy/  https://problems.tryapl.org/
-2.c arithmetic dyadic  verbs     aoc/ https://adventofcode.com/
+c.c conversion and coercion      g/   https://codegolf.stackexchange.com/
+f.c find                         e/   https://projecteuler.net/
+r.c random                       dy/  https://problems.tryapl.org/
+1.c arithmetic monadic verbs     aoc/ https://adventofcode.com/
+2.c arithmetic dyadic  verbs
 3.c arithmetic       adverbs
 4.c prime sieve
 i.c input/output
