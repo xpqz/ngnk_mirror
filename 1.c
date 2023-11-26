@@ -4,11 +4,7 @@ X1(neg,RE(neg(gZ(x)))Rilc(az(-gl(x)))Rf(af(-gf(x)))RC(neg(cG(x)))RmMA(e1f(neg,x)
  RGHILF(U n=xn;I(xw<3&&minfZ(0,x)==-1<<(8<<xw)-1,x=cT[tH+xw](x))A y=xr>1?an(n,xt):x,z=x-y?x:au;n=((n<<xw)+31&~31)>>xw;
   Mz(X(C(tG,i(n,yg=-xg))C(tH,i(n,yh=-xh))C(tI,i(n,yi=-xi))C(tL,i(n,yl=-xl))D(i(n,yf=-xf))))y))
 X1(not,RmMA(e1f(not,x))RU(x(ai(x==au)))
- RB(
-  ov(x);ov(*xL);
-  x=mut(x);
-  ov(x);ov(*xL);
-  W*a=xV;i((xn+255&-256)>>6,*a++^=-1)x)R_(eql(xtsS?as(0):ai(0),x)))
+ RB(x=mut(x);W*a=xV;i((xn+255&-256)>>6,*a++^=-1)x)R_(eql(xtsS?as(0):ai(0),x)))
 X1(nul,RmMA(e1f(nul,x))RU(x(ai(x==au)))RB(whr(len(x)))RF(A y=aG(xn);Mx(i(xn,yg=xf!=xf))y)Rf(x(ai(*xF!=*xF)))R_(eql(cn[xt],x)))
 X1(flr,RmMA(e1f(flr,x))RcC(K1("{`c$x+32*~\"A[\"'x}",x))RsS(cS(flr(str(x))))RilEBGHIL(x)RfF(A y=an(xn,xt+tl-tf);Mx(i(yn,yl=xf<0?(L)xf-(xf<(L)xf):(L)xf))y)R_(et1(x)))
 

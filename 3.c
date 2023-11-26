@@ -58,7 +58,8 @@ A3(arp,/*010*/Q(xtv)Q(xv<11)Q(ytzc)Q(ztZC)
  ZB(z=cB(zR);z(arp(x,y,z)))
  A(&dexp,___p,___p,___p,___p,modp,mnmp,mxmp,cmpp,cmpp,cmpp)[xv](x,y,z))
 
-S C tZx(A x)_(C t=TX[xt];t?t:tZ(gl_(x)))C sup(A*p,A*q)_(A x=*p,y=*q;C t=MAX(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
+S C tZx(A x)_(C t=TX[xt];t?t:tZ(gl_(x)))
+C sup(A*p,A*q)_(A x=*p,y=*q;C t=MAX(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
 S A4(dexa,/*1000*/uR;Ny(sup(&x,&u));x=mut(x);U n=yn;I wx=xw,wy=yw,wu=utt?-1:uw;L v=wu<0?gl_(u):0;
   Mu(I(utt,i4(wx,n,xG[iw(y,wy,i)]=v ,xH[iw(y,wy,i)]=v ,xI[iw(y,wy,i)]=v ,xL[iw(y,wy,i)]=v ))
      E(    i4(wx,n,xG[iw(y,wy,i)]=ug,xH[iw(y,wy,i)]=uh,xI[iw(y,wy,i)]=ui,xL[iw(y,wy,i)]=ul)))x)
