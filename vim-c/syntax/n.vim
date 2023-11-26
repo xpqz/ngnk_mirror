@@ -15,9 +15,9 @@ M n_string /'\\\=.'\|"\([^\\"]\|\\.\)*"/ contains=n_e                           
 M n_e "\\\(x\x\x\|.\)" contained                                                         |H n_e special
 K n_k TD S SN NI O ST EX CA __attribute__ asm enum do struct union for
    \ if else extern switch case default break continue return goto                       |H n_k statement
-K n_t A0 A1 A2 A3 A4 AA AX AL ALA AAL AQ X1 X2 Y2 nextgroup=n_vv                         |H n_t normal
+K n_t A0 A1 A2 A3 A4 AA AX X1 X2 Y2 nextgroup=n_vv                                       |H n_t normal
 K n_r return continue                                                                    |H n_r n_d_rr
-R n_aa g=n_a s="("                                 e=")" c=@n_x,n_a |M n_a "," contained |H n_a nontext
+R n_aa g=n_a s="("                                 e=")" c=@n_x,n_a |M n_a "," contained |H n_a normal
 R n_bb g=n_b s="\["                                e="]" c=@n_x,n_b |M n_b "," contained |H n_b n_a
 R n_cc g=n_c s="{"                                 e="}" c=@n_x,n_c |M n_c "," contained |H n_c n_a
 R n_pp g=n_p s="\v<(P|[XYZ]\w{,4}|R\w*)\("         e=")" c=@n_x,n_p |M n_p "," contained |H n_p function
