@@ -2,7 +2,7 @@
 #include<string.h>
 #include<unistd.h>
 #include"g.h"
-#define  DBG(a...)//a
+#define  DBG(a...)a
 #define    _(a...) {return({a;});}
 #define  A(x,a...) (TY(x)[]){x,a}
 #define  G(x,a...) ({S O TY(x)arr[]={x,a};arr;})

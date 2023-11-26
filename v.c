@@ -13,7 +13,7 @@ SN V cIL(V*RES a,O V*RES b,U n)_(I*r=a;O L*p=b;i(n+ 3& -4,r[i]=p[i]))
 SN V cFL(V*RES a,O V*RES b,U n)_(F*r=a;O L*p=b;i(n+ 3& -4,r[i]=p[i]==NL  ?NF:p[i]))
 SN V cLF(V*RES a,O V*RES b,U n)_(L*r=a;O F*p=b;i(n+ 3& -4,r[i]=p[i]!=p[i]?NL:p[i]))
 SN V cGB(V*RES a,O V*RES b,U n)_(G*r=a;O G*p=b;i(n,r[i]=p[i>>3]>>(i&7)&1))
-SN V cBG(V*RES a,O V*RES b,U n)_(G*r=a;O G*p=b;MS(r,0,n+7>>3);i(n,r[i>>3]|=(p[i]&1)<<(i&7)))
+SN V cBG(V*RES a,O V*RES b,U n)_(G*r=a;O G*p=b;MS(r,0,n+63>>6<<3);i(n,r[i>>3]|=(p[i]&1)<<(i&7)))
 X1(flp,Rt(enl(enl(x)))R_(enl(x))RM(A y=kv(&x);am(x,y))RB(flp(cG(x)))
  Rm(A y=kv(&x);Y(RA(I(yn>1,L n=cfm(yA,yn);P(n<0,x(el1(y)))i(yn,A z=ya;I(ztt,y=mut(y);ya=rsz(n,z))))aM(x,y))RT_A(aM(x,e1f(enl,y)))R_(en2(x,y)))0)
  RA(U m=xn;L n=cfm(xA,m|!m);P(n==-1,enl(x))P(n<0,el1(x))C t=_t(xx);I(t<tM&&t-tE,i(m,A y=xa;B(yt-t,t=0)))E(t=0)A y=aA(n);
