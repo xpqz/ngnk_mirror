@@ -1,7 +1,14 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-NI B mtc_(A x,A y/*00*/)_(P(x==y,1)P(xt==yt&&((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)&1<<xt),xv==yv)P(xtz&&ytz,gl_(x)==gl_(y))XE(x=gZ(xR);x(mtc_(x,y)))YE(mtc_(y,x))
- P(xtZ&&ytZ&&xt-yt&&xn==yn,C t=MAX(xt,yt);x=cT[t](xR);y=cT[t](yR);x(y(!memcmp(xV,yV,xn*xW))))P(xt-yt||xtP||(xtr&&xE-yE)||xn-yn,0)
- P(!xtR||(LH(tG,xt,tS)&&xt==yt&&xn==yn),!memcmp(xV,yV,xn*xW))i(xn|!xn,P(!mtc_(xa,ya),0))1)
+NI B mtc_(A x,A y/*00*/)_(
+ P(x==y,1)
+ P(xt==yt&&((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)&1<<xt),xv==yv)
+ P(xtz&&ytz,gl_(x)==gl_(y))
+ XE(x=gZ(xR);x(mtc_(x,y)))
+ YE(mtc_(y,x))
+ P(xtZ&&ytZ&&xt-yt&&xn==yn,C t=MAX(xt,yt);x=cT[t](xR);y=cT[t](yR);x(y(!memcmp(xV,yV,xn*xW))))
+ P(xt-yt||xtP||(xtr&&xE-yE)||xn-yn,0)
+ P(!xtR||(LH(tB,xt,tS)&&xt==yt&&xn==yn),!memcmp(xV,yV,(W)xn*TW[xt]+7>>3))
+ i(xn|!xn,P(!mtc_(xa,ya),0))1)
 A2(mtc,/*01*/y(ai(mtc_(x,y))))
 S O W o=(-1ull>>12)-1;S L t(L v)_(v^(W)(v>>63)>>1);S A of_(A,I);
 S L o0(L v)_(t(v-o))S V of0LL(O L*a,L*r,N n){i(n+3&~3,r[i]=o0(a[i]))}A1(of0,Q(xtlL);of_(x,0))
