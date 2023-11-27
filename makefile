@@ -1,4 +1,3 @@
-CC=clang-18
 MAKE:=$(MAKE) MAKEFLAGS=-j8
 M=mkdir -p $(@D)
 0:;$(MAKE) k && $(MAKE) t #default target
