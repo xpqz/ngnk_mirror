@@ -53,13 +53,13 @@ AX(_8,/*01..1*/Q(n)P(n==1,x1(*a))P(n==2&&!xtp,A y=*a;y(x2(y,a[1])))P(!xtt,i8(x,a
 A1(jS,cS(jc('.',str(x))))//join symbols with "."
 X1(val,RA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez1(x))x=mut(x);A y=_8(xx,&xy,xn-1);AN(1,x);x(y))RmM(x(_R(xy)))RE(gZ(x))RC(x=str0(x);x(evs(xV,0)))Rc(val(enl(x)))RsS(gg(x))
  Ropq(AT(tA,mut(x)))Rr(cat10(AT(tA,mut(x)),aw+xE))Ruvw(ai(xv))R_(x))
-A2(dot,/*01*/Ym(et1(y))U n=yN;P(!n,y(xR))P(n>8,ez1(y))y=mRa(N(cA(y)));y(x8(yA,n)))
+A2(dot,/*01*/Ym(et1(y))U n=yN;P(!n,y(xR))P(n>8,ez1(y))y=mRa(N(blw(y)));y(x8(yA,n)))
 S I knd(A x/*0*/)_(X(Ril(ti)REBGHIL(tI)R_(xt))0)
 S A set(A x,L i,A y/*1i1*/)_(Q(xr==1);
  X(RA(A z=xa;xa=z(y);ytt&&!ytU?sqz(x):x)
    RM(A z=kv(&x);z=mut(z);Q(ztA);I(ytT&&yN-zn,x(el2(y,z)))I j=i;i(zn,za=set(mut(za),j,ii(y,i));P(!za,za=au;x(y(z(0)))))y(aM(x,z)))
    RB(set(cG(x),i,y))
-   R_(P(knd(x)-knd(y)-tC+tc,set(cA(x),i,y))I(xtZ,N(sup(&x,&y)))C w=xw;!w?xg=yv:w==1?xh=yv:w==2?xi=yv:(xl=gl(y));x))0)
+   R_(P(knd(x)-knd(y)-tC+tc,set(blw(x),i,y))I(xtZ,N(sup(&x,&y)))C w=xw;!w?xg=yv:w==1?xh=yv:w==2?xi=yv:(xl=gl(y));x))0)
 AA(a8,/*10..0*/A x=*a,y=a[1];X(
  RE(Ab8;*b=gZ(x);MC(b+1,a+1,n-1<<3);a8(b,n))
  RT_E(P(y==au,mRn(n-2,a+2);Ab8;*b=a[2];b[1]=x;MC(b+2,a+3,n-3<<3);e8(AP1,b,n-1))
