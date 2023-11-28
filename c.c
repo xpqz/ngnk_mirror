@@ -1,11 +1,12 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define AL(x) __builtin_assume_aligned(x,32)
-#define  h(x,y,z) S V c##x##y(V*RES a,O V*RES b,U n){x*r=AL(a);O y*p=AL(b);i(n+((1<<z)-1)>>z,j(1<<z,*r++=*p++))}
+#define abn V*RES a,O V*RES b,U n
+#define h(x,y,z) S V c##x##y(abn){x*r=AL(a);O y*p=AL(b);i(n+((1<<z)-1)>>z,j(1<<z,*r++=*p++))}
 h(H,G,4)h(H,I,3)h(I,H,3)h(G,I,3)h(I,G,3)h(H,L,2)h(L,I,2)h(I,L,2)h(G,L,2)
-S V cFL(V*RES a,O V*RES b,U n){F*r=a;O L*p=b;i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
-S V cLF(V*RES a,O V*RES b,U n){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
-S V cGB(V*RES a,O V*RES b,U n){G*r=AL(a);O W*p=AL(b);i(n+63>>6,W v=*p++;j(64,*r++=!!(v&1<<j)))}
-S V cBG(V*RES a,O V*RES b,U n){W*r=AL(a);O G*p=AL(b);i(n+63>>6,W v=0;j(64,v|=(*p++&1ull)<<j)*r++=v)}
+S V cFL(abn){F*r=AL(a);O L*p=AL(b);i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
+S V cLF(abn){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
+S V cGB(abn){G*r=AL(a);O W*p=AL(b);i(n+63>>6,W v=*p++;j(64,*r++=!!(v&1<<j)))}
+S V cBG(abn){W*r=AL(a);O G*p=AL(b);i(n+63>>6,W v=0;j(64,v|=(*p++&1ull)<<j)*r++=v)}
 S A tfx(C t,TY(cBG)*f,A x/*1*/)_(A y=an(xn,t);Mx(f(yV,xV,yn));y)
 X1(cB,RmMA(e1f(cB,x))RB(x)Ril(ai(gl(x)&1))RG(tfx(tB,cBG,x))R_(en1(x)))
 X1(cC,RmMA(e1f(cC,x))RcC(x)Ril(ac(gl(x)))RG(AT(tC,mut(x)))RE(cC(gZ(x)))R_(cC(N(cG(x)))))
