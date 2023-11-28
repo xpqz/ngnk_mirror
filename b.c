@@ -68,7 +68,7 @@ S I cr(A x/*0*/,B r)_(I o=xo;                                                   
  E(P(n>9,o)Nr(xx,1)h(ba)h(n-1))                                                                     // x[y]     application
  I(!r,h(bP))OK)
 A1(qte,/*1*/xtS||xtA?aA1(x):x)                                                                      //quote
-S A2(c2,/*00*/P(xtw&&!ytSA,1)/*P(x==TIL&&ytZ&&yn<4,i(yn,P(gl(ii(y,i))>100u,0))1)*/0)            //constant folding
+S A2(c2,/*00*/P(xtw&&!ytSA,1)/*P(x==TIL&&ytZ&&yn<4,i(yn,P(gl(ii(y,i))>100u,0))1)*/0)                //constant folding
 S A3(c3,/*000*/P(ADD<=x&&x<=MUL&&ytzZ&&ztzZ&&(ytt||ztt||yn==zn)&&MAX(xN,yN)<101,1)0)                //constant folding
 S A1(cf,P(!xtA||!xn,x)P(xx==MKL,i(xn,A y=xa;YSA(x))qte(N(drp(1,x))))P(xn==2?c2(xx,xy):xn==3?c3(xx,xy,xz):0,qte(N(val(x))))A y=rsz(xn,au);i(xn,ya=cf(xa);xa=au;P(!ya,die("CF")))AO(xo,x(y)))
 S I mxs(I i,I s)_(I r=s;W(1,UC c=MIN(bc,b[i++]);r=MAX(r,s);P(!c,r)s+=ds[c]+ks[c]*b[i];i+=di[c]+(c==bj)*b[i];I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)//max stack

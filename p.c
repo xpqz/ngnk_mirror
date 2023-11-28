@@ -49,7 +49,12 @@ S A pt(C*v)_(C c=*s;                                                            
  P(c>>7,Q p=s;A x=pP();*v=1;AO(p-s0,x))
  U i=si("'/\\",c);P(i<3,c=*++s;I h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,GAP)
  I u=*++s==':';s+=u;*v=1;Lt(tv-u)|i)
-S X1(pm,Rv(x^au^av)RA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x)Rs(L v=xv;Q s=qs(&v);N n;P(*s>>7&&s[(n=SL(s))-1]-':',C b[8];MC(b,s,n);b[n]=':';b[n+1]=0;sym(b))x)R_(x)) //monadify
+S X1(pm,                                                                                            //monadify
+ Rv(x^au^av)
+ RA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x)
+ Rs(L v=xv;Q s=qs(&v);U n;P(*s>>7&&s[(n=SL(s))-1]-':',C b[8];MC(b,s,n);b[n]=':';b[n+1]=0;sym(b))x)
+ RS(xn==1?enl(pm(fir(x))):x)
+ R_(x))
 S A pT(C*v)_(A x=N(pt(v));                                                                          //parse term and the adverbs or square brackets after it (v:verb?)
  W(1,C c=*s;U i=si("'/\\[",c);P(i>3,x)s++;
   I(i>2,x=AO(s-1-s0,N(pb(x,']')));I(xn==2,I(xy==GAP,xy=au)E(xx=pm(xx)))*v=0)
