@@ -17,13 +17,12 @@ S A addZZ(A x,A y,U f)_(U w=MAX(xw,yw);P(xw-w,x=cT[tG+w](xR);x(addZZ(x,y,f)))y=c
  P(w<3&&ovf(zV,xV,yV,n,w),z(0);y=cT[tG+w+1](y);x=cT[tG+w+1](xR);x(addZZ(x,y,f)))y(z))
 
 S V mulLL(abcn)_(rxy(L)i(n+3>>2,j(4,*r++=*x++**y++)))
-S A mulZZ(A x,A y,U f)_(B ox=0;U n=yn,i=0,w=MAX(xw,yw);P(xw-w,x=cT[tG+w](xR);x(mulZZ(x,y,f)))y=cT[tG+w](y);A z=an(n,yt);
- W(1,S4(w,{G*a=xG-i;G*b=yG-i*(y!=z);W(i<n,I v=a[i]*(I)b[i];B(v-(G)v)zg=v;i++)},
-          {H*a=xH-i;H*b=yH-i*(y!=z);W(i<n,I v=a[i]*(I)b[i];B(v-(H)v)zh=v;i++)},
-          {I*a=xI-i;I*b=yI-i*(y!=z);W(i<n,L v=a[i]*(L)b[i];B(v-(I)v)zi=v;i++)},
-          {L*a=xL-i;L*b=yL-i*(y!=z);W(i<n,zl=a[i]*b[i];i++)})
-     B(i>=n)w++;x=wdn(ox?x:xR,i,n,n-i);ox=1;I(y-z,y=wdn(y,i,n,n-i);z=wdn(z,0,i,n))E(y=z=wdn(z,0,n,n)))
- I(ox,x(0))y(z))
+S A mulZZ(A x,A y,U f)_(U n=yn,i=0,w=MAX(xw,yw);P(xw-w,x=cT[tG+w](xR);x(mulZZ(x,y,f)))y=cT[tG+w](y);A z=an(n,yt);
+ S4(w,{G*a=xG-i;G*b=yG-i*(y!=z);W(i<n,I v=a[i]*(I)b[i];B(v-(G)v)zg=v;i++)},
+      {H*a=xH-i;H*b=yH-i*(y!=z);W(i<n,I v=a[i]*(I)b[i];B(v-(H)v)zh=v;i++)},
+      {I*a=xI-i;I*b=yI-i*(y!=z);W(i<n,L v=a[i]*(L)b[i];B(v-(I)v)zi=v;i++)},
+      {L*a=xL-i;L*b=yL-i*(y!=z);W(i<n,zl=a[i]*b[i];i++)})
+ P(i<n,z(0);y=cT[tG+w+1](y);x=cT[tG+w+1](xR);x(mulZZ(x,y,f)))y(z))
 
 S A addzZ(L a,A y,U f)_(U n=yn,i=0,w=MAX(tZ(a)-tG,yw);y=cT[tG+w](y);A z=an(n,yt);
  S4(w,{W(i<n,I v=a+yg;B(v-(G)v)zg=v;i++)},{W(i<n,I v=a+yh;B(v-(H)v)zh=v;i++)},{W(i<n,L v=a+yi;B(v-(I)v)zi=v;i++)},{W(i<n,zl=a+yl;i++)})
