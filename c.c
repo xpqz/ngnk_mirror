@@ -1,15 +1,12 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define AL(x) __builtin_assume_aligned(x,32)
 #define  h(x,y,z) S V c##x##y(V*RES a,O V*RES b,U n){x*r=AL(a);O y*p=AL(b);i(n+((1<<z)-1)>>z,j(1<<z,*r++=*p++))}
-#define h1(x,y,z) S V c##x##y(V*RES a,O V*RES b,U n){x*r=a    ;O y*p=b    ;i(n+((1<<z)-1)>>z,j(1<<z,*r++=*p++))}//no alignment because of wdn()
-h1(H,G,4)h(H,I,3)h1(I,H,3)h(G,I,3)h(I,G,3)h(H,L,2)h1(L,I,2)h(I,L,2)h(G,L,2)
-S V cFL(V*RES a,O V*RES b,U n){F*r=a;O L*p=b;i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}//no alignment because of wdn()
+h(H,G,4)h(H,I,3)h(I,H,3)h(G,I,3)h(I,G,3)h(H,L,2)h(L,I,2)h(I,L,2)h(G,L,2)
+S V cFL(V*RES a,O V*RES b,U n){F*r=a;O L*p=b;i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
 S V cLF(V*RES a,O V*RES b,U n){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
 S V cGB(V*RES a,O V*RES b,U n){G*r=AL(a);O W*p=AL(b);i(n+63>>6,W v=*p++;j(64,*r++=!!(v&1<<j)))}
 S V cBG(V*RES a,O V*RES b,U n){W*r=AL(a);O G*p=AL(b);i(n+63>>6,W v=0;j(64,v|=(*p++&1ull)<<j)*r++=v)}
 S A tfx(C t,TY(cBG)*f,A x/*1*/)_(A y=an(xn,t);Mx(f(yV,xV,yn));y)
-#undef h
-#undef h1
 X1(cB,RmMA(e1f(cB,x))RB(x)Ril(ai(gl(x)&1))RG(tfx(tB,cBG,x))R_(en1(x)))
 X1(cC,RmMA(e1f(cC,x))RcC(x)Ril(ac(gl(x)))RG(AT(tC,mut(x)))RE(cC(gZ(x)))R_(cC(N(cG(x)))))
 X1(cG,RmMA(e1f(cG,x))RG(x)Rt(cI(x))RC(AT(tG,mut(x)))RB(tfx(tG,cGB,x))R_(tfx(tG,cGI,N(cI(x)))))
@@ -31,4 +28,3 @@ A1(sqz,P(!xtA,x)U n=xn;A y=xx;C t=yt;P(ytMT||ytU,x)
  y=an(n,TT[t]);I v=yw;I(v<3,G(&cGL,cHL,cIL)[v](yV,xV,n))E(i(n,yl=gl_(xa)))x(y))
 X1(blw,RA(x)Rt(aA1(x))Rm(et1(x))R_(U n=xN;A y=aA(n);i(n|!n,ya=ii(x,i))x(0);I(!n,yx=mkn(yx))y))
 A1(gZ,Lij x(0);P(i<0,x=az(i);x(add(x,gZ(aE(0,j-i)))))C t=MAX(tZ(i),tZ(j-1));x=an(j-i,t);tilV(xV,i,j-i,t-tG);x)
-A wdn(A x,U i,U j,U n)_(C t=xt;Q(xtZC);A y=an(n,t+1);Mx(G(&cHG,cIH,cLI,cFL,0,cHG)[t-tG](yV,xV+((W)i*TW[t]>>3),j-i))y)
