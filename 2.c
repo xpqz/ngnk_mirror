@@ -1,44 +1,49 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define AL(x) __builtin_assume_aligned(x,32)
-SN V aFF(F*RES r,O F*RES x,O F*RES y,U n)_(r=AL(r);x=AL(x);y=AL(y);i(n+3>>2,j(4,*r++=*x+++*y++)))
-SN V mFF(F*RES r,O F*RES x,O F*RES y,U n)_(r=AL(r);x=AL(x);y=AL(y);i(n+3>>2,j(4,*r++=*x++**y++)))
-SN A admFF(A x,A y,U f)_(P(xn-yn,el1(y))A z=yr-1?aF(yn):y;(f==3?mFF:aFF)(zV,xV,yV,zn);y-z?y(z):z)
-
 #define abcn O V*RES a,O V*RES b,V*RES c,U n
 #define xyr(T) O T*x=AL(a),*y=AL(b);T*r=AL(c);
-SN V aLL(abcn){xyr(L)i(n+ 3>>2,j( 4,*r++=*x+++*y++))}
-SN V aII(abcn){xyr(I)i(n+ 7>>3,j( 8,*r++=*x+++*y++))}
-SN V aHH(abcn){xyr(H)i(n+15>>4,j(16,*r++=*x+++*y++))}
-SN V aGG(abcn){xyr(G)i(n+31>>5,j(32,*r++=*x+++*y++))}
-SN B oZZ(O W*x,O W*y,O W*r,U n,U w)_(x=AL(x);y=AL(y);r=AL(r);W t[4]={};i(((W)n<<w)+31>>5,j(4,t[j]|=(*r^*x)&(*r^*y);r++;x++;y++))
+SN V aFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ + *y++))}
+SN V mFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ * *y++))}
+SN V dFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ / *y++))}
+SN A amdFF(A x,A y,U f)_(U n=yn;A z=yr-1?aF(n):y;G(&aFF,0,mFF,dFF)[f-1](xV,yV,zV,n+3>>2);y-z?y(z):z)
+
+SN V aLL(abcn){xyr(L)i(n,j( 4,*r++=*x++ + *y++))}
+SN V aII(abcn){xyr(I)i(n,j( 8,*r++=*x++ + *y++))}
+SN V aHH(abcn){xyr(H)i(n,j(16,*r++=*x++ + *y++))}
+SN V aGG(abcn){xyr(G)i(n,j(32,*r++=*x++ + *y++))}
+SN B oZZ(O W*x,O W*y,O W*r,U n,U w)_(x=AL(x);y=AL(y);r=AL(r);
+ W t[4]={};i(((W)n<<w)+31>>5,j(4,t[j]|=(*r^*x)&(*r^*y);r++;x++;y++))
  !!((t[0]|t[1]|t[2]|t[3])&G(0x8080808080808080ll,0x8000800080008000ll,0x8000000080000000ll)[w]))
-S A addZZ(A x,A y,U f)_(U w=MAX(xw,yw);P(xw-w,x=cT[tG+w](xR);x(addZZ(x,y,f)))y=cT[tG+w](y);U n=yn;A z=an(n,yt);G(&aGG,aHH,aII,aLL)[w](xV,yV,zV,n);
+S A addZZ(A x,A y,U f)_(U w=MAX(xw,yw);P(xw-w,x=cT[tG+w](xR);x(addZZ(x,y,f)))y=cT[tG+w](y);U n=yn;A z=an(n,yt);
+ G(&aGG,aHH,aII,aLL)[w](xV,yV,zV,n+(31>>w)>>5-w);
  P(w<3&&oZZ(xV,yV,zV,n,w),z(0);y=cT[tG+w+1](y);x=cT[tG+w+1](xR);x(addZZ(x,y,f)))y(z))
 
-S V mulLL(abcn)_(xyr(L)i(n+3>>2,j(4,*r++=*x++**y++)))
 S A mulZZ(A x,A y,U f)_(U n=yn,i=0,w=MAX(xw,yw);P(xw-w,x=cT[tG+w](xR);x(mulZZ(x,y,f)))y=cT[tG+w](y);A z=an(n,yt);
- S4(w,{G*a=xG;G*b=yG;W(i<n,I v=a[i]*(I)b[i];B(v-(G)v)zg=v;i++)},
-      {H*a=xH;H*b=yH;W(i<n,I v=a[i]*(I)b[i];B(v-(H)v)zh=v;i++)},
-      {I*a=xI;I*b=yI;W(i<n,L v=a[i]*(L)b[i];B(v-(I)v)zi=v;i++)},
-      {L*a=xL;L*b=yL;W(i<n,zl=a[i]*b[i];i++)})
- P(i<n,z(0);y=cT[tG+w+1](y);x=cT[tG+w+1](xR);x(mulZZ(x,y,f)))y(z))
+ S4(w,W(i<n,I v=(I)xg*yg;B(v-(G)v)zg=v;i++),
+      W(i<n,I v=(I)xh*yh;B(v-(H)v)zh=v;i++),
+      W(i<n,L v=(L)xi*yi;B(v-(I)v)zi=v;i++),
+      W(i<n,zl=xl*yl;i++))
+ P(i<n,z(0);x=cT[tG+w+1](xR);x(mulZZ(x,cT[tG+w+1](y),f)))y(z))
 
 #define vbcn L v,V*RES b,V*RES c,U n
 #define vyr(T) O T*y=AL(b);T*r=AL(c);
-SN V alL(vbcn){vyr(L)i(n+ 3>>2,j( 4,*r++=v+*y++))}
-SN V aiI(vbcn){vyr(I)i(n+ 7>>3,j( 8,*r++=v+*y++))}
-SN V ahH(vbcn){vyr(H)i(n+15>>4,j(16,*r++=v+*y++))}
-SN V agG(vbcn){vyr(G)i(n+31>>5,j(32,*r++=v+*y++))}
-SN B ozZ(L v,O W*y,O W*r,U n,U w)_(r=AL(r);y=AL(y);W t[4]={};i(((W)n<<w)+31>>5,j(4,t[j]|=(*r^v)&(*r^*y);r++;y++))
+SN V alL(vbcn){vyr(L)i(n,j( 4,*r++=v+*y++))}
+SN V aiI(vbcn){vyr(I)i(n,j( 8,*r++=v+*y++))}
+SN V ahH(vbcn){vyr(H)i(n,j(16,*r++=v+*y++))}
+SN V agG(vbcn){vyr(G)i(n,j(32,*r++=v+*y++))}
+SN B ozZ(L v,O W*y,O W*r,U n,U w)_(r=AL(r);y=AL(y);i(3-w,v|=v<<(8<<w+i))
+ W t[4]={};i(((W)n<<w)+31>>5,j(4,t[j]|=(*r^v)&(*r^*y);r++;y++))
  !!((t[0]|t[1]|t[2]|t[3])&G(0x8080808080808080ll,0x8000800080008000ll,0x8000000080000000ll)[w]))
-S A addzZ(L v,A y,U f)_(U n=yn,w=MAX(tZ(v)-tG,yw);y=cT[tG+w](y);A z=an(n,yt);G(&agG,ahH,aiI,alL)[w](v,yV,zV,n);
+S A addzZ(L v,A y,U f)_(U n=yn,w=MAX(tZ(v)-tG,yw);y=cT[tG+w](y);A z=an(n,yt);G(&agG,ahH,aiI,alL)[w](v,yV,zV,n+(31>>w)>>5-w);
  P(w<3&&ozZ(v,yV,zV,n,w),z(0);y=cT[tG+w+1](y);addzZ(v,y,f))y(z))
 
 S A mulzZ(L a,A y,U f)_(U n=yn,i=0,w=MAX(tZ(a)-tG,yw);y=cT[tG+w](y);A z=an(n,yt);
- S4(w,{W(i<n,I v=a*yg;B(v-(G)v)zg=v;i++)},{W(i<n,I v=a*yh;B(v-(H)v)zh=v;i++)},{W(i<n,L v=a*yi;B(v-(I)v)zi=v;i++)},{W(i<n,zl=a*yl;i++)})
+ S4(w,{W(i<n,I v=a*yg;B(v-(G)v)zg=v;i++)},
+      {W(i<n,I v=a*yh;B(v-(H)v)zh=v;i++)},
+      {W(i<n,L v=a*yi;B(v-(I)v)zi=v;i++)},
+      {W(i<n,zl=a*yl;i++)})
  i<n?mulzZ(a,cT[tG+w+1](z(y)),f):y(z))
 
-S A dvdFF(A x,A y,U f)_(P(xn-yn,el1(y))A z=yr-1?aF(xn):y;i(xn,zf=xf/yf)y-z?y(z):z)
 S A modzZ(L m,A y,U f)_(P(!m,y)
  P(m<0,m=-m;A z=an(yn,yt);S4(yw,i(zn,C v=yg;zg=v<0?-1-~v/m:v/m),i(zn,H v=yh;zh=v<0?-1-~v/m:v/m),i(zn,I v=yi;zi=v<0?-1-~v/m:v/m),i(zn,L v=yl;zl=v<0?-1-~v/m:v/m))y(z))
  P(m&m-1,A z=an(yn,tZ(m));U wy=yw;S4(zw,i(zn,zg=(iw(y,wy,i)%m+m)%m),i(zn,zh=(iw(y,wy,i)%m+m)%m),i(zn,zi=(iw(y,wy,i)%m+m)%m),i(zn,zl=(iw(y,wy,i)%m+m)%m))y(z))
@@ -76,11 +81,13 @@ S A cmpzZ(L v,A y,U f)_(U w=yw;P(tG+w<tZ(v),y(rsz(yn,ai(f==8?v<0:f==9?v>0:0))))
  U n=yn;A z=aG(n);My(A(&ltng,ltnh,ltni,ltnl,gtng,gtnh,gtni,gtnl,eqlg,eqlh,eqli,eqll)[f-8<<2|w](v,yV,zG,n))z)
 
 S A addzE(L v,A x)_(Lij x(0);aE(i+v,j+v))
-S A admfF(F v,A y,U f)_(A z=yr-1?aF(yn):y;U n=zn+3&~3;I(f==3,i(n,zf=v*yf))E(i(n,zf=v+yf))y-z?y(z):z)
-S A dvdfF(F v,A y,U f)_(A z=yr-1?aF(yn):y;i(yn,zf=v/yf)y-z?y(z):z)
+S A addfF(F v,A y,U f)_(A z=yr-1?aF(yn):y;U n=zn+3&-4;i(n,zf=v+yf)y-z?y(z):z)
+S A mulfF(F v,A y,U f)_(A z=yr-1?aF(yn):y;U n=zn+3&-4;i(n,zf=v*yf)y-z?y(z):z)
+S A admfF(F v,A y,U f)_((f==3?mulfF:addfF)(v,y,f))
+S A dvdfF(F v,A y,U f)_(A z=yr-1?aF(yn):y;U n=zn+3&-4;i(n,zf=v/yf)y-z?y(z):z)
 S A dvdFf(A x,F v,U f)_(A z=aF(xn);i(xn,zf=xf/v)z)
 S A dvdzZ(L v,A y,U f)_(dvdfF(v,cF(y),f))
-S A dvdZZ(A x,A y,U f)_(x=cF(xR);x(dvdFF(x,cF(y),f)))
+S A dvdZZ(A x,A y,U f)_(x=cF(xR);x(amdFF(x,cF(y),f)))
 S A arizz(L a,L b,U f)_(P(f==4,af((F)a/b))az(f==1?a+b:f==3?a*b:f==5?(!a?b:a<0?(b<0?-1-~b/-a:b/-a):(b%a+a)%a):f==6?MIN(a,b):f==7?MAX(a,b):f==8?a<b:f==9?a>b:f==10?a==b:0))
 S A arizZ(L v,A y,U f)_(A(&addzZ,0,mulzZ,dvdzZ,modzZ,mmmzZ,mmmzZ,cmpzZ,cmpzZ,cmpzZ)[f-1](v,y,f))
 S A ariZZ(A x,A y,U f)_(P(xn-yn,el1(y))A(&addZZ,0,mulZZ,dvdZZ,0,mmmZZ,mmmZZ,cmpZZ,cmpZZ,cmpZZ)[f-1](x,y,f))
@@ -93,7 +100,7 @@ SN A arif(A x,A y,U f)_(C t=xt,u=yt;
   R(0,F a=*xF,b=gf(y);af(f==1?a+b:f==3?a*b:a/b))
   R(1,f<4?admfF(*xF,y,f):dvdfF(*xF,y,f))
   R(2,f<4?admfF(gf(y),xR,f):dvdFf(x,gf(y),f))
-  R_(f<4?admFF(x,y,f):dvdFF(x,y,f)))0)
+  R_(xn-yn?el1(y):amdFF(x,y,f)))0)
  P(f==10,ariz(x,y,f))
  x=of1(xR);y=ari(x,of1(y));x(f<8&&y?of0(y):y))
 
