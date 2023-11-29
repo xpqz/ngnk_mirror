@@ -5,7 +5,7 @@
 SN V aFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ + *y++))}
 SN V mFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ * *y++))}
 SN V dFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ / *y++))}
-SN A amdFF(A x,A y,U f)_(U n=yn;A z=yr-1?aF(n):y;G(&aFF,0,mFF,dFF)[f-1](xV,yV,zV,n+3>>2);y-z?y(z):z)
+SN A amdFF(A x,A y,U f)_(U n=xn;P(n-yn,el1(y))A z=yr-1?aF(n):y;G(&aFF,0,mFF,dFF)[f-1](xV,yV,zV,n+3>>2);y-z?y(z):z)
 
 SN V aLL(abcn){xyr(L)i(n,j( 4,*r++=*x++ + *y++))}
 SN V aII(abcn){xyr(I)i(n,j( 8,*r++=*x++ + *y++))}
@@ -100,7 +100,7 @@ SN A arif(A x,A y,U f)_(C t=xt,u=yt;
   R(0,F a=*xF,b=gf(y);af(f==1?a+b:f==3?a*b:a/b))
   R(1,f<4?admfF(*xF,y,f):dvdfF(*xF,y,f))
   R(2,f<4?admfF(gf(y),xR,f):dvdFf(x,gf(y),f))
-  R_(xn-yn?el1(y):amdFF(x,y,f)))0)
+  R_(amdFF(x,y,f)))0)
  P(f==10,ariz(x,y,f))
  x=of1(xR);y=ari(x,of1(y));x(f<8&&y?of0(y):y))
 
