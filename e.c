@@ -2,10 +2,9 @@
 S C b[4096],*r=b;S I d;
 NI A err0(Q s)_(r=b;d=0;N n=MIN(SL(s),32);r=b;*r++='\'';MC(r,s,n);r+=n;*r++=10;0)
 SN A err1(A x,Q s)_(x(err0(s)))
-SN A err2(A x,A y,Q s)_(y(err1(x,s)))
-SN A err8(O A*a,I n,Q s)_(mrn(n,a);err0(s))
+SN A err8(O A*a,U n,Q s)_(mrn(n,a);err0(s))
 NI V eQ(Q s,U n,U i){I(++d>=5,I(d==5,MC(r," ..\n",4);r+=4)return)
- Q p=s+i,q=p,t=p;I h=64;W(p>s&&p>t-h&&p[-1]&&p[-1]-10,p--)W(q<s+n&&q<=t+h&&*q&&*q-10,q++)
+ Q p=s+i,q=p,t=p;U h=64;W(p>s&&p>t-h&&p[-1]&&p[-1]-10,p--)W(q<s+n&&q<=t+h&&*q&&*q-10,q++)
  *r++=32;MC(r,p,q-p);I(p<=t-h,*r=r[1]='.')I(q>t+h,r[q-p-2]=r[q-p-1]='.')r+=q-p;*r++=10;
  MS(r,32,t-p+1);r+=t-p+1;*r++='^';*r++=10;}
 NI V eS(A x/*0*/,U i)_(eQ(xV,xn,i))
@@ -17,6 +16,5 @@ NI A die(Q s)_(I n=SL(s);C v[n+1];MC(v,s,n);v[n]=10;write(1,"'",1);write(2,v,n+1
 #define h(t,m)\
  NI A0(e##t##0,err0(    #m))\
  NI A1(e##t##1,err1(x,  #m))\
- NI A2(e##t##2,err2(x,y,#m))\
  NI AA(e##t##8,err8(a,n,#m))
 ERR

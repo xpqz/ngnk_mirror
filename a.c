@@ -57,7 +57,7 @@ A2(dot,/*01*/Ym(et1(y))U n=yN;P(!n,y(xR))P(n>8,ez1(y))y=mRa(N(blw(y)));y(x8(yA,n
 S I knd(A x/*0*/)_(X(Ril(ti)REBGHIL(tI)R_(xt))0)
 S A set(A x,L i,A y/*1i1*/)_(Q(xr==1);
  X(RA(A z=xa;xa=z(y);ytt&&!ytU?sqz(x):x)
-   RM(A z=kv(&x);z=mut(z);Q(ztA);I(ytT&&yN-zn,x(el2(y,z)))I j=i;i(zn,za=set(mut(za),j,ii(y,i));P(!za,za=au;x(y(z(0)))))y(aM(x,z)))
+   RM(A z=kv(&x);z=mut(z);Q(ztA);I(ytT&&yN-zn,x(y(el1(z))))I j=i;i(zn,za=set(mut(za),j,ii(y,i));P(!za,za=au;x(y(z(0)))))y(aM(x,z)))
    RB(set(cG(x),i,y))
    R_(P(knd(x)-knd(y)-tC+tc,set(blw(x),i,y))I(xtZ,N(sup(&x,&y)))C w=xw;!w?xg=yv:w==1?xh=yv:w==2?xi=yv:(xl=gl(y));x))0)
 AA(a8,/*10..0*/A x=*a,y=a[1];X(
