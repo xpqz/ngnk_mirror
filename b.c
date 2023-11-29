@@ -18,14 +18,14 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
   C16(bg,A*p=l+c%16,x=*p;U(*--s=x)xR)                                                               //get local |bg+i  |.. -> .. locals[i]     |
   C16(bd,A*p=l+c%16,x=*p;U(*--s=x)*p=0)                                                             //del local |bd+i  |.. -> .. locals[i]     |locals[i]:NULL (freed)
   C2(ba,bp,UC n=*b++;A x=*s;s+=n;U(*s=x((c==ba?_8:prj)(x,s-n+1,n))))                                //apply|proj|ba,n  |.. z y x -> .. x[y;z]  |
-  C6(bm,bM,bx,bX,by,bY,A*p=(c&1?gv:l)+*b++,x=*p;U(x,*s=ev1(*s))A y=*s++;                            //          |      |                       |
+  C6(bm,bM,bx,bX,by,bY,A*p=(c&1?gv:l)+*b++,x=*p;U(x,*s=ev(*s))A y=*s++;                             //          |      |                       |
    I(c==bm||c==bM,y=v2[*b++](x,y);U(y,*--s=0)*p=x(y))                                               //mod asgn  |bm,i,d|.. x -> ..             |vars[i]:dyads[d][vars[i];x]
    E(x=*p=d4(x,y,av+*b++,*s);mr(*s);I(c==bx||c==bX,mr(y);U(x,*s=0)s++)                              //ind asgn  |bx,i,d|.. z y -> ..           |vars[i]:  .[vars[i];y;dyads[d];z]
                                     E(U(x,*s=y(0))U(*s=dot(x,y)))))                                 //ind asgn  |by,i,d|.. z y -> .. r         |vars[i]:r:.[vars[i];y;dyads[d];z]
   C(bG,A x=*--s=gv[*b++];U(x,ev0())xR)                                                              //get global|bG,i  |.. -> .. globals[i]    |
   C(bS,A*p=gv+*b++,x=*s++,y=*p;*p=y?y(x):x)                                                         //set global|bS,i  |.. x -> ..             |globals[i]:x
   C(bl,UC n=*b++;s+=n-1;*s=sqz(aV(tA,n,s-n+1)))                                                     //list      |bl,n  |.. y x -> .. (x;y)     |
-  C(bL,UC n=*b++;A x=*s;U(xtt||xN==n,*s=el1(x))i(n,*--s=ii(x,n-1-i)))                               //unlist    |bL,n  |.. x -> .. x[0] x[1]   |
+  C(bL,UC n=*b++;A x=*s;U(xtt||xN==n,*s=el(x))i(n,*--s=ii(x,n-1-i)))                                //unlist    |bL,n  |.. x -> .. x[0] x[1]   |
   C(bj,UC n=*b++;b+=n)                                                                              //jump      |bj,n  |.. x -> ..             |PC+:n
   C(bz,UC n=*b++;b+=n*!tru(*s++))                                                                   //branch    |bz,n  |.. x -> ..             |if x is falsy, PC+:n
   C(bo,*--s=xR)                                                                                     //recur     |bo    |.. -> .. o             |o is the current lambda
