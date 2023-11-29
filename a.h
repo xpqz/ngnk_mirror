@@ -108,38 +108,38 @@ enum                    {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
 #define TU(t) ((t)>=to)
 
-//tagged ptr bits (t=type,v=value,o=srcoffset,x=ptr):
+//tagged value bits (t=type,v=value,o=srcoffset,x=ptr):
 // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
 // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
 // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
 // ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
 
 //header bytes: ....mmmm XXXXXXXX UtEo.... rrrrnnnn
-#define _m(x) ((U*)_V(x))[-7] //shadow refcount(only for debugging)
-#define _X(x) _A(x)[-3]       //ptr to next chunk in bucket
-#define _U(x) _C(x)[-16]      //log2(bucket size in bytes)
-#define _E(x) _C(x)[-14]      //adverb(for tr)
-#define _k(x) _C(x)[-13]      //arity(for funcs)
+#define _m(x) ((U*)_V(x))[-7]   //shadow refcount(only for debugging)
+#define _X(x) _A(x)[-3]         //ptr to next chunk in bucket
+#define _U(x) ((UC*)_V(x))[-16] //log2(bucket size in bytes)
+#define _E(x) ((UC*)_V(x))[-14] //adverb(for tr)
+#define _k(x) ((UC*)_V(x))[-13] //arity(for funcs)
 #define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:((UC*)_V(x))[-13])//srcoffset(for symbol lists)
-#define _r(x) ((U*)_V(x))[-2] //refcount
-#define _n(x) ((U*)_V(x))[-1] //length
-#define _v(x) (I)(x)          //value
-#define _V(x) (V*)(x)         //ptr to data
+#define _r(x) ((U*)_V(x))[-2]   //refcount
+#define _n(x) ((U*)_V(x))[-1]   //length
+#define _v(x) (I)(x)            //value
+#define _V(x) (V*)(x)           //ptr to data
 
-#define _t0(x) ((x)>>56)      //type(tag)
-#define _t1(x) _C(x)[-15]     //type(hdr)
+#define _t0(x) ((x)>>56)        //type(tag)
+#define _t1(x) _C(x)[-15]       //type(hdr)
 #define _t(x) ({A x_=(x);C t=_t0(x_);t?t:_t1(x_);})//type
-#define _tU(x) TU(_t(x))      // func?
-#define _tP(x) TP(_t(x))      // packed?
-#define _tR(x) (_w(x)==4)     // ref?
-#define _tT(x) (_t(x)<tM)     // list?
-#define _tZ(x) LH(tE,_t(x),tL)// intlist?
-#define _tt(x) (_t(x)>tm)     // atom?
-#define _tz(x) LH(ti,_t(x),tl)// intatom?
-#define _w(x) (Tw[_t(x)]-3)   //log2(item size in bytes)
-#define _W(x) (TW[_t(x)]>>3)  //item size in bytes
-#define _Z(x) ((HD<<_U(x))-HD)//capacity in bytes
-#define _q(x,y) (x=apd(x,y))  //append
+#define _tU(x) TU(_t(x))        // func?
+#define _tP(x) TP(_t(x))        // packed?
+#define _tR(x) (_w(x)==4)       // ref?
+#define _tT(x) (_t(x)<tM)       // list?
+#define _tZ(x) LH(tE,_t(x),tL)  // intlist?
+#define _tt(x) (_t(x)>tm)       // atom?
+#define _tz(x) LH(ti,_t(x),tl)  // intatom?
+#define _w(x) (Tw[_t(x)]-3)     //log2(type width in bytes)
+#define _W(x) (TW[_t(x)]>>3)    //type width in bytes
+#define _Z(x) ((HD<<_U(x))-HD)  //chunk capacity in bytes
+#define _q(x,y) (x=apd(x,y))    //append
 #define M_(x,a...) {DBG(A t_=)m0(x);a;DBG(x=0;m1(t_));}//two-phase free()
 
 #define Lt(t) (W)t<<56
