@@ -40,7 +40,7 @@ te:te0 te1 te2                            #projecteuler
 te0:k;l/runparts.k e  1 50 ;echo te0 done
 te1:k;l/runparts.k e 50 90 ;echo te1 done
 te2:k;l/runparts.k e 90    ;echo te2 done
-ta:t15 t16 t17 t18 t19 t20 t21 t22        #adventofcode
+ta:t15 t16 t17 t18 t19 t20 t21 t22 t23    #adventofcode
 t15:k;l/runparts.k aoc/15  ;echo t15 done
 t16:k;l/runparts.k aoc/16  ;echo t16 done
 t17:k;l/runparts.k aoc/17  ;echo t17 done
@@ -49,6 +49,7 @@ t19:k;l/runparts.k aoc/19  ;echo t19 done
 t20:k;l/runparts.k aoc/20  ;echo t20 done
 t21:k;l/runparts.k aoc/21  ;echo t21 done
 t22:k;l/runparts.k aoc/22  ;echo t22 done
+t23:k;l/runparts.k aoc/23  ;echo t23 done
 
 c:;rm -rf o k libk.so libk.a #clean
-.PHONY: 0 c k w h a t tu td tg te te0 te1 te2 ta t15 t16 t17 t18 t19 t20 t21 t22
+.PHONY: 0 c k w h a t tu td tg te te0 te1 te2 ta t15 t16 t17 t18 t19 t20 t21 t22 t23
