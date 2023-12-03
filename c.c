@@ -25,7 +25,7 @@ NI X1(cI,RmMA(e1f(cI,x))RE(cI(gZ(x)))RI(x) Rilc(ai(gl(x)))  RfF(cI(N(cL(x))))R4(
 NI X1(cL,RmMA(e1f(cL,x))RE(cL(gZ(x)))RL(x) Rilc(al(gl(x)))  Rf(al(gf(x)))RF(cTT(tL,x))                R_(cTT(tL,N(cI(x)))))
 NI X1(cF,RmMA(e1f(cF,x))             RfF(x)Rilc(af(gl(x)))                                            R_(cTT(tF,N(cL(x)))))
 NI X1(cS,RmMA(e1f(cS,x))             RsS(x)RC(x=str0(x);x(sym(xV)))Rc(as(xv))                         R_(et(x)))
-A1*cT[]={[tB]=cB,cG,cH,cI,cL,cF,cC,cS};
+A2(cT,(xv-tB<8u);G(&cB,cG,cH,cI,cL,cF,cC,cS)[xv-tB](y))
 S X1(csti,RmMA(e1f(csti,x))RF(sqzZ(cL(x)))Rf(az(gf(x)))RC(cG(x))Rc(ai(xv))Ruvw(ai(xv))RilEGHIL(x)R_(et(x)))
 S X1(prsI,RmMA(e1f(prsI,x))Rc(prsI(enl(x)))RC(x=str0(x);Q s=xV;P(!*s,x(_R(cn[tl])))L v=pl(&s);x(*s?_R(cn[tl]):az(v)      ))R_(et(x)))
 S X1(prsF,RmMA(e1f(prsF,x))Rc(prsF(enl(x)))RC(x=str0(x);Q s=xV;P(!*s,x(_R(cn[tf])))L v=pf(&s);x(*s?_R(cn[tf]):aV(tf,1,&v)))R_(et(x)))

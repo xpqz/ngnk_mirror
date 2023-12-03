@@ -6,7 +6,7 @@ NI B mtc_(A x,A y/*00*/)_(
  P(xtz&&ytz,gl_(x)==gl_(y))
  XE(x=gZ(xR);x(mtc_(x,y)))
  YE(mtc_(y,x))
- P(xtZ&&ytZ&&xt-yt&&xn==yn,C t=MAX(xt,yt);x=cT[t](xR);y=cT[t](yR);x(y(!memcmp(xV,yV,xn*xW))))
+ P(xtZ&&ytZ&&xt-yt&&xn==yn,C t=MAX(xt,yt);x=cT(t,xR);y=cT(t,yR);x(y(!memcmp(xV,yV,xn*xW))))
  P(xt-yt||xtP||(xtr&&xE-yE)||xn-yn,0)
  P(!xtR||(LH(tB,xt,tS)&&xt==yt&&xn==yn),!memcmp(xV,yV,(W)xn*TW[xt]+7>>3))
  i(xn|!xn,P(!mtc_(xa,ya),0))1)
@@ -33,7 +33,7 @@ S V cis(A x/*0*/,I*p,N n,I*r){i(n,I j=0,k=i,v=p[i];A y=xA[v];W(j<k,I m=j+k>>1;I(
 S V cms(A x/*0*/,I*p,N n,I*r){P(n<17,cis(x,p,n,r);)N m=n/2;cms(x,p+m,n-m,r+m);cms(x,p,m,p+m);mrg(x,p+m,p+2*m,r+m,r+n,1);}//copying_mergesort
 A1(ascA,N n=xn;A z=aI(n);I*p=zI;tilV(p,0,n,2);P(n<17,cis(x,p,n,p);x(z))N m=n/2;A y=aI(n-m);I*t=yI;cms(x,p+m,n-m,t);cms(x,p,m,p+n-m);mrg(x,t,t+n-m,p+n-m,p+n,0);x(y(z)))
 X1(asc,Rt(opn(x))Rm(grdm(x,asc))RM(K1("{(!#x){x@<y x}/|.+x}",x))RS(asc(str(x)))RF(asc(of1(x)))RA(P(xn-(I)xn,ez(x))ascA(x))RE(Lij x(0);aE(0,j-i))
- RGC(P(xn-(I)xn,ez(x))N n=xn;I c[257]={},*c129=c+129;i(n,c129[xg]++)i(256,c[i+1]+=c[i])A y=aI(n);I*c128=c+128;Mx(i(n,yI[c128[xg]++]=i))cT[tZ(n-1)](y))
+ RGC(P(xn-(I)xn,ez(x))N n=xn;I c[257]={},*c129=c+129;i(n,c129[xg]++)i(256,c[i+1]+=c[i])A y=aI(n);I*c128=c+128;Mx(i(n,yI[c128[xg]++]=i))cT(tZ(n-1),y))
  R_(P(xn-(I)xn,ez(x))x=N(K1("{x-&/x}",x));N n=xn;A y=aC(n),z=aI(n),u=aI(n);Mx(My(u=ascZ(xV,yV,zV,uV,n,xW)==zV?u(z):z(u)))u))
 X1(dsc,RMT(x=rev(asc(rev(x)));sub(ai(xN-1),x))Rm(grdm(x,dsc))Ril(cls(gl(x)))R_(et(x)))
 X1(grp,Ril(K1("=/:/2#,!:",x))Rm(A y=kv(&x);y=Nx(grp(y));yy=x(i1(x,yy));y)R_(et(x))

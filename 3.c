@@ -31,7 +31,7 @@ S A3(___s,/*010*/U i=!y;A u;I(i,y=ii(z,0);u=enl(yR))E(yR;u=oG)U n=zn;W(i<n,y=y(x
 S A3(dexs,/*010*/y?y(zR):zR)
 S A3(adms,/*010*/L w=y?gl(y):x==MUL;U n=zn;I b=1;L v=w;C t=tG+zw;A u=an(n,t);
  I(x==ADD,i4(zw,n,ug=v+=zg;B(v-(G)v,b=0),uh=v+=zh;B(v-(H)v,b=0),ui=v+=zi;B(v-(I)v,b=0),ul=v+=zl))
- E(       i4(zw,n,ug=v*=zg;B(v-(G)v,b=0),uh=v*=zh;B(v-(H)v,b=0),ui=v*=zi;B(v-(I)v,b=0),ul=v*=zl))P(b,u)z=cT[t+1](u(zR));z(adms(x,az(w),z)))
+ E(       i4(zw,n,ug=v*=zg;B(v-(G)v,b=0),uh=v*=zh;B(v-(H)v,b=0),ui=v*=zi;B(v-(I)v,b=0),ul=v*=zl))P(b,u)z=cT(t+1,u(zR));z(adms(x,az(w),z)))
 S A3(subs,/*010*/y=neg(y?y:mul(ai(2),ii(z,0)));neg(adms(ADD,y,z)))
 S A3(mxms,/*010*/P((!y||ytz)&&ztZ,L v=y?gl(y):-WL,l=-1ll<<8*zW-1,h=~l;U n=zn;I(v<=l||h<=v,P(v>=0,rsz(n,az(v)))v=v<0?l:h)
                                   A u=an(n,zt);i4(zw,n,ug=MAXE(v,zg),uh=MAXE(v,zh),ui=MAXE(v,zi),ul=MAXE(v,zl))u)___s(x,y,z))
@@ -59,7 +59,7 @@ A3(arp,/*010*/Q(xtv)Q(xv<11)Q(ytzc)Q(ztZC)
  A(&dexp,___p,___p,___p,___p,modp,mnmp,mxmp,cmpp,cmpp,cmpp)[xv](x,y,z))
 
 S C tZx(A x)_(C t=TX[xt];t?t:tZ(gl_(x)))
-C sup(A*p,A*q)_(A x=*p,y=*q;C t=MAX(tZx(x),tZx(y));*p=x=Ny(cT[t](x));*q=y=Nx(cT[t](y));t)
+C sup(A*p,A*q)_(A x=*p,y=*q;C t=MAX(tZx(x),tZx(y));*p=x=Ny(cT(t,x));*q=y=Nx(cT(t,y));t)
 S A4(dexa,/*1000*/uR;Ny(sup(&x,&u));x=mut(x);U n=yn;I wx=xw,wy=yw,wu=utt?-1:uw;L v=wu<0?gl_(u):0;
   Mu(I(utt,i4(wx,n,xG[iw(y,wy,i)]=v ,xH[iw(y,wy,i)]=v ,xI[iw(y,wy,i)]=v ,xL[iw(y,wy,i)]=v ))
      E(    i4(wx,n,xG[iw(y,wy,i)]=ug,xH[iw(y,wy,i)]=uh,xI[iw(y,wy,i)]=ui,xL[iw(y,wy,i)]=ul)))x)
