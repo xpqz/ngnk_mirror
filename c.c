@@ -8,15 +8,13 @@ S V cLF(abn){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
 S V cGB(abn){G*r=AL(a);O W*p=AL(b);i(n+63>>6,W v=*p++;j(64,*r++=!!(v&1<<j)))}
 S V cBG(abn){W*r=AL(a);O G*p=AL(b);i(n+63>>6,W v=0;j(64,v|=(*p++&1ull)<<j)*r++=v)}
 S O TY(&cBG)a[][8]={
-// tB, tG, tH, tI, tL, tF, tC, tS
- {  0,cBG,  0,  0,  0,  0,cBG,  0},//tB
- {cGB,  0,cGH,cGI,cGL,  0,  0,  0},//tG
- {  0,cHG,  0,cHI,cHL,  0,cHG,  0},//tH
- {  0,cIG,cIH,  0,cIL,  0,cIG,  0},//tI
- {  0,  0,  0,cLI,  0,cLF,  0,  0},//tL
- {  0,  0,  0,  0,cFL,  0,  0,  0},//tF
- {  0,  0,  0,  0,  0,  0,  0,  0},//tC
- {  0,  0,  0,  0,  0,  0,  0,  0},//tS
+// tB, tG, tH, tI, tL, tF, tC
+ {  0,cBG,  0,  0,  0,  0,cBG},//tB
+ {cGB,  0,cGH,cGI,cGL,  0,  0},//tG
+ {  0,cHG,  0,cHI,cHL,  0,cHG},//tH
+ {  0,cIG,cIH,  0,cIL,  0,cIG},//tI
+ {  0,  0,  0,cLI,  0,cLF,  0},//tL
+ {  0,  0,  0,  0,cFL,  0,  0},//tF
 };
 SN A cTT(C t,A x/*1*/)_(A y=an(xn,t);Mx(a[t-tB][xt-tB](yV,xV,yn));y)
 NI X1(cB,RmMA(e1f(cB,x))             RB(x) Rilc(ai(gl(x)&1))RG(cTT(tB,x))                             R_(en(x)))
