@@ -2,20 +2,31 @@
 #define AL(x) __builtin_assume_aligned(x,32)
 #define abn V*RES a,O V*RES b,U n
 #define h(x,y,z) S V c##x##y(abn){x*r=AL(a);O y*p=AL(b);i(n+((1<<z)-1)>>z,j(1<<z,*r++=*p++))}
-h(H,G,4)h(H,I,3)h(I,H,3)h(G,I,3)h(I,G,3)h(H,L,2)h(L,I,2)h(I,L,2)h(G,L,2)
+h(H,G,4)h(G,H,4)h(H,I,3)h(I,H,3)h(G,I,3)h(I,G,3)h(H,L,2)h(L,I,2)h(I,L,2)h(G,L,2)
 S V cFL(abn){F*r=AL(a);O L*p=AL(b);i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
 S V cLF(abn){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
 S V cGB(abn){G*r=AL(a);O W*p=AL(b);i(n+63>>6,W v=*p++;j(64,*r++=!!(v&1<<j)))}
 S V cBG(abn){W*r=AL(a);O G*p=AL(b);i(n+63>>6,W v=0;j(64,v|=(*p++&1ull)<<j)*r++=v)}
-SN A cTT(C t,A x/*1*/,TY(cBG)*f)_(A y=an(xn,t);Mx(f(yV,xV,yn));y)
-NI X1(cB,RmMA(e1f(cB,x))             RB(x) Rilc(ai(gl(x)&1))RG(cTT(tB,x,cBG))                                                        R_(en(x)))
-NI X1(cC,RmMA(e1f(cC,x))RE(cC(gZ(x)))RC(x) Rilc(ac(gl(x)))  RG(AT(tC,mut(x)))                                                        R_(cC(N(cG(x)))))
-NI X1(cG,RmMA(e1f(cG,x))             RG(x) Rt(cI(x))        RC(AT(tG,mut(x)))RB(cTT(tG,x,cGB))                                       R_(cTT(tG,N(cI(x)),cGI)))
-NI X1(cH,RmMA(e1f(cH,x))             RH(x) Rt(cI(x))        RGC(cTT(tH,x,cHG))                                                       R_(cTT(tH,N(cI(x)),cHI)))
-NI X1(cI,RmMA(e1f(cI,x))RE(cI(gZ(x)))RI(x) Rilc(ai(gl(x)))  RfF(cI(N(cL(x))))R4(tG,tH,tL,tC,cTT(tI,x,G(&cIG,cIH,0,cIL,0,cIG)[xt-tG]))R_(et(x)))
-NI X1(cL,RmMA(e1f(cL,x))RE(cL(gZ(x)))RL(x) Rilc(al(gl(x)))  Rf(al(gf(x)))RF(cTT(tL,x,cLF))                                           R_(cTT(tL,N(cI(x)),cLI)))
-NI X1(cF,RmMA(e1f(cF,x))             RfF(x)Rilc(af(gl(x)))                                                                           R_(cTT(tF,N(cL(x)),cFL)))
-NI X1(cS,RmMA(e1f(cS,x))             RsS(x)RC(x=str0(x);x(sym(xV)))Rc(as(xv))                                                        R_(et(x)))
+S O TY(&cBG)a[][8]={
+// tB, tG, tH, tI, tL, tF, tC, tS
+ {  0,cBG,  0,  0,  0,  0,cBG,  0},//tB
+ {cGB,  0,cGH,cGI,cGL,  0,  0,  0},//tG
+ {  0,cHG,  0,cHI,cHL,  0,cHG,  0},//tH
+ {  0,cIG,cIH,  0,cIL,  0,cIG,  0},//tI
+ {  0,  0,  0,cLI,  0,cLF,  0,  0},//tL
+ {  0,  0,  0,  0,cFL,  0,  0,  0},//tF
+ {  0,  0,  0,  0,  0,  0,  0,  0},//tC
+ {  0,  0,  0,  0,  0,  0,  0,  0},//tS
+};
+SN A cTT(C t,A x/*1*/)_(A y=an(xn,t);Mx(a[t-tB][xt-tB](yV,xV,yn));y)
+NI X1(cB,RmMA(e1f(cB,x))             RB(x) Rilc(ai(gl(x)&1))RG(cTT(tB,x))                             R_(en(x)))
+NI X1(cC,RmMA(e1f(cC,x))RE(cC(gZ(x)))RC(x) Rilc(ac(gl(x)))  RG(AT(tC,mut(x)))                         R_(cC(N(cG(x)))))
+NI X1(cG,RmMA(e1f(cG,x))             RG(x) Rt(cI(x))        RC(AT(tG,mut(x)))RB(cTT(tG,x))            R_(cTT(tG,N(cI(x)))))
+NI X1(cH,RmMA(e1f(cH,x))             RH(x) Rt(cI(x))        RGC(cTT(tH,x))                            R_(cTT(tH,N(cI(x)))))
+NI X1(cI,RmMA(e1f(cI,x))RE(cI(gZ(x)))RI(x) Rilc(ai(gl(x)))  RfF(cI(N(cL(x))))R4(tG,tH,tL,tC,cTT(tI,x))R_(et(x)))
+NI X1(cL,RmMA(e1f(cL,x))RE(cL(gZ(x)))RL(x) Rilc(al(gl(x)))  Rf(al(gf(x)))RF(cTT(tL,x))                R_(cTT(tL,N(cI(x)))))
+NI X1(cF,RmMA(e1f(cF,x))             RfF(x)Rilc(af(gl(x)))                                            R_(cTT(tF,N(cL(x)))))
+NI X1(cS,RmMA(e1f(cS,x))             RsS(x)RC(x=str0(x);x(sym(xV)))Rc(as(xv))                         R_(et(x)))
 A1*cT[]={[tB]=cB,cG,cH,cI,cL,cF,cC,cS};
 S X1(csti,RmMA(e1f(csti,x))RF(sqzZ(cL(x)))Rf(az(gf(x)))RC(cG(x))Rc(ai(xv))Ruvw(ai(xv))RilEGHIL(x)R_(et(x)))
 S X1(prsI,RmMA(e1f(prsI,x))Rc(prsI(enl(x)))RC(x=str0(x);Q s=xV;P(!*s,x(_R(cn[tl])))L v=pl(&s);x(*s?_R(cn[tl]):az(v)      ))R_(et(x)))
