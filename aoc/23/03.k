@@ -1,10 +1,10 @@
 #!../../k
 x:0:"i/03"
 d:~"0:"'       /is digit?
-D:1-3\(!9)_4   /8 directions
+D:1-!3 3       /3x3 neighbourhood
 n:d x          /numbers mask
 p:~n|"."=x     /parts mask
-m*:+\0>':m:,/n /identify numbers (starting from 1)
+m*:+\0>':m:,/n /number each run of 1s
 u:.(,0)_=m     /for each number: positions of its digits
 v:`I$(,/x)u    /values of numbers
 t:{3|/':0,x,0} /OR with left and right neighbour
