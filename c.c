@@ -8,33 +8,32 @@ S V cFL(abn){F*r=AL(a);O L*p=AL(b);i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
 S V cLF(abn){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
 S V cGB(abn){G*r=AL(a);O W*p=AL(b);i(n+63>>6,W v=*p++;j(64,*r++=!!(v&1<<j)))}
 S V cBG(abn){W*r=AL(a);O G*p=AL(b);i(n+63>>6,W v=0;j(64,v|=(*p++&1ull)<<j)*r++=v)}
+
 S O TY(&cBG)a[][7]={
-// tB, tG, tH, tI, tL, tF, tC
- {  0,cBG,  0,  0,  0,  0,cBG},//tB
+// tB, tG, tH, tI, tL, tF, tC     <- in
+ {  0,cBG,  0,  0,  0,  0,cBG},//tB  out
  {cGB,  0,cGH,cGI,cGL,  0,  0},//tG
- {  0,cHG,  0,cHI,cHL,  0,cHG},//tH
- {  0,cIG,cIH,  0,cIL,  0,cIG},//tI
+ {  0,cHG,  0,cHI,cHL,  0,cHG},//tH   |
+ {  0,cIG,cIH,  0,cIL,  0,cIG},//tI   v
  {  0,  0,  0,cLI,  0,cLF,  0},//tL
  {  0,  0,  0,  0,cFL,  0,  0},//tF
+ {  0,  0,  0,  0,  0,  0,  0},//tC
+ {  0,  0,  0,  0,  0,  0,  0},//tS
 };
-
-SN X1(_cB,Rilc(ai(1& gl(x)))                 R_(en(x)))
-SN X1(_cG,Rilc(ai((G)gl(x)))RC(AT(tG,mut(x)))R_(cG(N(cI(x)))))
-SN X1(_cH,Rilc(ai((H)gl(x)))                 R_(cH(N(cI(x)))))
-SN X1(_cI,Rilc(ai(   gl(x)))RfF(cI(N(cL(x))))R_(et(x)))
-SN X1(_cL,Rilc(al(   gl(x)))Rf(al(gf(x)))    R_(cL(N(cI(x)))))
-SN X1(_cF,Rilc(af(   gl(x)))                 R_(cF(N(cL(x)))))
-SN X1(_cC,Rilc(ac(   gl(x)))RG(AT(tC,mut(x)))R_(cC(N(cG(x)))))
-
-NI A2(cT,UC t=xv,u=yt;U i=t-tB,j=u-tB;Q(xti||x==t)Q(t<8)
- P(t==TT[u],y)
- YmMA(r2f(cT,x,y))
- YE(cT(x,gZ(y)))
- YS(et(y))
- TY(&cBG)f;
- P(i<L(a)&&j<L(*a)&&(f=a[i][j]),A z=an(yn,t);My(f(zV,yV,zn));z)
- P(t==tS,Yc(as(yv))YC(y=str0(y);y(sym(yV)))et(y))
- G(&_cB,_cG,_cH,_cI,_cL,_cF,_cC)[t-tB](y))
+A2(cT,UC t=xv,u=yt;Q(xti||x==t)Q(t<8)P(t==TT[u],y)
+ Y(RmMA(r2f(cT,x,y))
+   RE(cT(x,gZ(y)))
+   RS(et(y))
+   Rilc(L v=gl(y);t<tL?ai(v):t==tC?ac(v):t==tL?al(v):t==tF?af(v):t==tS&&u==tc?as(yv):et0())
+   R_(U i=t-tB,j=u-tB;TY(&cBG)f;
+      P(i<L(a)&&j<L(*a)&&(f=a[i][j]),A z=an(yn,t);My(f(zV,yV,zn));z)
+      P(t==tS,u==tC?(y=str0(y),y(sym(yV))):et(y))
+      SW(t,RG(Y(RC(AT(tG,mut(y)))R_(cG(N(cI(y)))))0)
+           RH(Y(                 R_(cH(N(cI(y)))))0)
+           RI(Y(                RfF(cI(N(cL(y)))) R_(et(y))       )0)
+           RL(Y(                 R_(cL(N(cI(y)))))0)
+           RF(Y(                 R_(cF(N(cL(y)))))0)
+           RC(Y(RG(AT(tC,mut(y)))R_(cC(N(cG(y)))))0))et(y)))et(y))
 
 #define h(T) NI A1(c##T,cT(t##T,x))
  h(B)h(G)h(H)h(I)h(L)h(F)h(S)h(C)
