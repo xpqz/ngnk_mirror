@@ -1,30 +1,18 @@
 #!../../k
 x:0:"i/03"
+d:~"0:"'         /is digit?
+D:1-3\(!9)_4     /8 directions
+t:{3|/':0,x,0}   /OR with left and right neighbour
 
-/x:("467..114.."
-/   "...*......"
-/   "..35..633."
-/   "......#..."
-/   "617*......"
-/   ".....+.58."
-/   "..592....."
-/   "......755."
-/   "...$.*...."
-/   ".664.598..")
-
-s:#'1*:\x /shape
-X:,/x
-
-d:~"0:"'        /is digit?
-n:d x           /numbers
-m:N*+\0>':N:,/n /number identifiers starting from 1
-u:.(,0)_=m      /values of numbers
-v:`I$X u
-p:~n|"."=x      /parts
-t:{3|/':0,x,0}
-h:t't p         /neighbourhoods of parts
-i:(?m*,/h)^0
+/1
+n:d x            /numbers
+p:~n|"."=x       /parts
+m:N*+\0>':N:,/n  /identify numbers (starting from 1)
+u:.(,0)_=m
+v:`I$(,/x)u      /values of numbers
+i:(?m*,/t't p)^0
 +/v i-1
 
-D:1-!3 3
+/2
+s:#'1*:\x        /shape
 +/{*/v[r-1]*2=#r:^[;0]@?m@s/(s-1)&0|D+s\x}'&"*"=,/x

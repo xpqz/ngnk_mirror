@@ -1,6 +1,6 @@
 #!../../k
 x:0:"i/07"
-(p;w;c):``I`$+{x:" "\x^",()";(2#x),,(),3_x}'x /(parent;weight;children)
+(p;w;c):``I`$'+{x:" "\x^",()";(2#x),,(),3_x}'x /(parent;weight;children)
 `0:$t:*p^,/c /part1
 
 /part2
