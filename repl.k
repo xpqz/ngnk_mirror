@@ -57,7 +57,7 @@ list atom
  `M   `m   table&dict     +`a`b!(0 1;"23")   (0#`)!()
       `o   lambda         {1+x*y#z}  {[a;b]+/*/2#,a,b}
       `p   projection     1+   {z}[0;1]   @[;i;;]
-      `q   composition    *|:   {1+x*y}@
+      `q   composition    *|:   1+{x*y}@
       `r   derived verb   +/   2\   {y,x}':
       `u   monadic verb   +:   0::
       `v   dyadic  verb   +   0:
