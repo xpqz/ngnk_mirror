@@ -8,38 +8,17 @@ S V cFL(abn){F*r=AL(a);O L*p=AL(b);i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
 S V cLF(abn){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
 S V cGB(abn){G*r=AL(a);O W*p=AL(b);i(n+63>>6,W v=*p++;j(64,*r++=!!(v&1<<j)))}
 S V cBG(abn){W*r=AL(a);O G*p=AL(b);i(n+63>>6,W v=0;j(64,v|=(*p++&1ull)<<j)*r++=v)}
-
-S O TY(&cBG)a[][7]={
-// tB, tG, tH, tI, tL, tF, tC     <- in
- {  0,cBG,  0,  0,  0,  0,cBG},//tB  out
- {cGB,  0,cGH,cGI,cGL,  0,  0},//tG
- {  0,cHG,  0,cHI,cHL,  0,cHG},//tH   |
- {  0,cIG,cIH,  0,cIL,  0,cIG},//tI   v
- {  0,  0,  0,cLI,  0,cLF,  0},//tL
- {  0,  0,  0,  0,cFL,  0,  0},//tF
- {  0,  0,  0,  0,  0,  0,  0},//tC
- {  0,  0,  0,  0,  0,  0,  0},//tS
-};
-A2(cT,UC t=xv,u=yt;Q(xti||x==t)Q(t<8)P(t==TT[u],y)
- Y(RmMA(r2f(cT,x,y))
-   RE(cT(x,gZ(y)))
-   RS(et(y))
-   Rilc(L v=gl(y);t<tL?ai(v):t==tC?ac(v):t==tL?al(v):t==tF?af(v):t==tS&&u==tc?as(yv):et0())
-   R_(U i=t-tB,j=u-tB;TY(&cBG)f;
-      P(i<L(a)&&j<L(*a)&&(f=a[i][j]),A z=an(yn,t);My(f(zV,yV,zn));z)
-      P(t==tS,u==tC?(y=str0(y),y(sym(yV))):et(y))
-      SW(t,RG(Y(RC(AT(tG,mut(y)))R_(cG(N(cI(y)))))0)
-           RH(Y(                 R_(cH(N(cI(y)))))0)
-           RI(Y(                RfF(cI(N(cL(y)))) R_(et(y))       )0)
-           RL(Y(                 R_(cL(N(cI(y)))))0)
-           RF(Y(                 R_(cF(N(cL(y)))))0)
-           RC(Y(RG(AT(tC,mut(y)))R_(cC(N(cG(y)))))0))et(y)))et(y))
-
-#define h(T) NI A1(c##T,cT(t##T,x))
- h(B)h(G)h(H)h(I)h(L)h(F)h(S)h(C)
-#undef h
-
-S X1(csti,RmMA(e1f(csti,x))RF(sqzZ(cL(x)))Rf(az(gf(x)))RC(cG(x))Rc(ai(xv))Ruvw(ai(xv))RilEGHIL(x)R_(et(x)))
+NI A2(cTT,UC t=xv,u=yt,i=t-tB,j=u-tB;Q(i<8);P(j>7,et(y))
+ S O TY(&cBG)a[][7]={{0,cBG,0,0,0,0,cBG},{cGB,0,cGH,cGI,cGL,0,0},{0,cHG,0,cHI,cHL,0,cHG},{0,cIG,cIH,0,cIL,0,cIG},{0,0,0,cLI,0,cLF,0},{0,0,0,0,cFL,0,0},{},{}};
+ TY(&cBG)f=a[i][j];
+ P(f,A z=an(yn,t);My(f(zV,yV,zn));z)
+ P(t==tS,u==tC?(y=str0(y),y(sym(yV))):et(y))
+ P((1<<t|1<<u)==(1<<tG|1<<tC),AT(t,mut(y)))
+ S O C b[]={tG,tI,tI,tL,tI,tL,tG,tC};cTT(t,N(cTT(b[i],y))))
+NI A2(cT,UC t=xv,u=yt;Q(xti||x==t)Q(tB<=t&&t<=tS)P(t==TT[u],y)
+ Y(RmMA(r2f(cT,x,y))RE(cTT(x,gZ(y)))Rf(cT(x,N(cL(y))))Rilc(L v=gl(y);SW(t,R4(tB,tG,tH,tI,ai(v))RC(ac(v))RL(al(v))RF(af(v))RS(u==tc?as(yv):et0()))0)R_(cTT(x,y)))et(y))
+A1(cB,cT(tB,x))A1(cG,cT(tG,x))A1(cH,cT(tH,x))A1(cI,cT(tI,x))A1(cL,cT(tL,x))A1(cF,cT(tF,x))A1(cC,cT(tC,x))A1(cS,cT(tS,x))
+S X1(csti,RmMA(e1f(csti,x))RF(nop sqzZ(cL(x)))Rf(az(gf(x)))RC(cG(x))Rc(ai(xv))Ruvw(ai(xv))RilEGHIL(x)R_(et(x)))
 S X1(prsI,RmMA(e1f(prsI,x))Rc(prsI(enl(x)))RC(x=str0(x);Q s=xV;P(!*s,x(_R(cn[tl])))L v=pl(&s);x(*s?_R(cn[tl]):az(v)      ))R_(et(x)))
 S X1(prsF,RmMA(e1f(prsF,x))Rc(prsF(enl(x)))RC(x=str0(x);Q s=xV;P(!*s,x(_R(cn[tf])))L v=pf(&s);x(*s?_R(cn[tf]):aV(tf,1,&v)))R_(et(x)))
 S Y2(pad,RmMA(e2f(pad,x,y))RC(K2("{y@(!x)+(x<0)*#y}",x,y))Rc(dlr(x,enl(y)))R_(et(y)))
