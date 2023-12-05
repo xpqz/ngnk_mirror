@@ -39,7 +39,7 @@ $[(~"kw"~`argv 0)&~"--non-interactive"~*x;repl.run[];]
 
 \   help               \\         exit
 \a  license(AGPLv3)    \l file.k  load
-\0  types              \d foo.bar set namespace; restore with  \d .
+\0  types              \d foo     set namespace; restore with  \d .
 \+  verbs              \t:n expr  time(elapsed milliseconds after n runs)
 \:  I/O verbs          \v         variables
 \'  adverbs            \f         functions
@@ -233,5 +233,5 @@ $ cast     string
 @ apply(1) type      @[x;i;[f;]y] amend
 . apply(n) eval      .[x;i;[f;]y] drill
 grammar:  E:E;e|e e:nve|te| t:n|v v:tA|V n:t[E]|(E)|{E}|N
-limits: 8 args, 16 locals, 256 bytecode, 2048 stack
+limits:   8args 16locals 256globals 256bytecode 2048stack
 \
