@@ -28,19 +28,19 @@ S A0(pC,C a[1<<9];U n=0;C c=*++s;                                               
  P(!c,ep0())P(n>=L(a),ez0())s++;aV(tC,n,a))
 S A0(p0x,Q p=s;W(CA9(*p),p++)A x=N(unhC(s,p-s));s=p;x)                                              //parse 0x string
 S A0(ps,Q p=s;C c=*s;I(id0(c),s=pID(s))J(c>>7,W(*++s<-64)s+=*s==':')aCm(p,s))                       //parse symbol
-S A0(pS,I a[256];U n=0;                                                                             //parse symbols
- W(1,P(n>=L(a),ez0())A y=*++s-'"'?ps():N(pC());y=str0(y);a[n++]=sq(yC);y(0);Q p=pw(s);B(*p-'`')s=p)
+S A pS(C c)_(I a[256];U n=0;                                                                        //parse symbols
+ W(1,P(n>=L(a),ez0())A y=*++s-'"'?ps():N(pC());y=str0(y);a[n++]=sq(yC);y(0);Q p=pw(s);B(*p-c)s=p)
  aV(tS,n,a))
 S A0(pP,I a[8];U n=0;                                                                               //parse dot-separated path of identifiers
  W(1,P(n>=L(a),ez0())A y=str0(ps());a[n++]=sq(yV);y(0);B(*s-'.'||!id0(s[1]))++s)
  aV(tS,n,a))
+S A0(pp,P(*s-'[',au)A x=N(pS(';'));P(*s-']'||!xn,ep(x))P(xN>8,ez(x))s++;x)                          //parse parameter list
 S A pt(C*v)_(C c=*s;                                                                                //parse term
- P(c=='`',qte(p1(N(pS()))))
+ P(c=='`',qte(p1(N(pS('`')))))
  P(c=='"',p1(pC()))
  P(c=='[',s++;pb(GAP,']'))
  P(c=='(',s++;P(*s==')',s++;oA)A x=N(pb(MKL,')'));xn-2?x:las(x))
- P(c=='{',C k0=k;k=1;Q s1=s0,t=s0=s++;A y;I(*s-'[',y=au)E(s++;y=fir(flp(N(pb(0,']'))));P(!ytS,ep(y))P(yN>8,s--;ez(y)))A z=pb(GAP,'}');P(!z,s0=s1;y(0))I(y==au,y=aS(k);i(3,yi='x'+i))
-  A x=N(cpl(aCn(t,s-t),z,y));s0=s1;k=k0;x)
+ P(c=='{',C k0=k;k=1;Q s1=s0,t=s0=s++;A y=N(pp()),z=pb(GAP,'}');P(!z,s0=s1;y(0))I(y==au,y=aS(k);i(3,yi='x'+i))A x=N(cpl(aCn(t,s-t),z,y));s0=s1;k=k0;x)
  P(id0(c),Q p=s;A x=pP();I(s-p==1&&c-'y'<2u,k=MAX(k,c-'w'))AO(p-s0,x))
  P(C09(c)&&s[1]==':',I u=s[2]==':';s+=2+u;I i=20+c-'0';P(i>25,ep0())*v=1;Lt(tv-u)|i)
  P(c=='0'&&s[1]=='x',s+=2;p1(p0x()))
