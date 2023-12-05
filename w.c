@@ -10,7 +10,14 @@ A jc(C c,    A x)_(XC(jc(c,  flp(flp(x))))L n=jN(1,x);P(n<0,et(x))A y=aC(n);C*p=
 A jC(Q s,U m,A x)_(XC(jC(s,m,flp(flp(x))))L n=jN(m,x);P(n<0,et(x))A y=aC(n);C*p=yV;i(xn,I(i,MC(p,s,m);p+=m)A z=xa;I(ztc,*p++=zv)E(MC(p,zV,zn);p+=zn))x(y))
 S A1(re0,x?rs0(enl(x)):0) S A o1f(A1 f,A x/*f1*/)_(re0(f==whr?x(aI(0)):f(fir(x)))) S A2(o1,/*01*/ xtu?o1f(v1[xv],y):y(oA))
                           S A o2f(A2 f,A x,A y/*f01*/)_(re0(f(x,y)))               S A3(o2,/*001*/xtv?o2f(v2[xv],y,z):z(oA))
-S AX(em,/*01..1*/A z=oS;I k=0;i(n,A y=a[i];I(ytm,k++;z=cat10(z,yx)))I(k>1,z=unq(z))Ab8;i(n,A y=b[i]=a[i];I(ytm,A u=kv(&y);uq(ie(x,u));b[i]=u(u1(y(fil(ai(yn),fnd(y,zR)))))))AX e8;x=Nz(e8(x,b,n));am(z,x))
+S AX(em,/*01..1*/
+ A z=oS;U k=0;
+ i(n,A y=a[i];I(ytm,k++;z=cat10(z,yx)))
+ I(k>1,z=unq(z))
+ Ab8;i(n,A y=b[i]=a[i];I(ytm,A u=kv(&y);uq(ie(x,u));b[i]=u(u1(y(fil(ai(yn),fnd(y,zR)))))))
+ AX e8;x=Nz(e8(x,b,n));
+ am(z,x))
+
 A e1f(A1 f,A x){X(Rt(f(x))Rm(A y=kv(&x);am(x,Nx(e1f(f,y))))
  RA(N n=xn;P(!n,o1f(f,x))x=mut(x);i(n,P(!(xa=f(xa)),xa=au;x(0)))sqz(x))
  RE(Lij x(0);L n=j-i,i0=i;P(!n,o1f(f,x))A y=aA(n);i(n,P(!(ya=f(ai(i0+i))),mrn(i,yA);0))sqz(y))
