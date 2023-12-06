@@ -6,7 +6,7 @@ S B id1(C c)_(id0(c)|C09(c))                                                    
 S B num(Q s)_(C09(s[*s=='-']))                                                                      //is number start?
 S Q pw(Q s)_(W(*s==32,s++)s)                                                                        //skip whitespace
 S A1(p1,x&&xn==1?fir(x):x)                                                                          //singleton list to atom
-Q pID(Q s)_(W(id1(*s),s+=G(1,1,1,1,1,1,2,3)[(UC)*s>>5])s)                                           //parse identifier
+Q pID(Q s)_(W(id1(*s),s+=0xe555>>((UC)*s>>4&-2)&3)s)                                                //parse identifier
 W pu(Q*p)_(Q s=*p;W v=0;C c=*s;W(C09(c),v=10*v+c-'0';c=*++s)*p=s;v)                                 //parse unsigned long
 L pl(Q*p)_(B m=**p=='-';*p+=m;(1-2*m)*pu(p))                                                        //parse long
 S L plN(Q*p)_(L v=pl(p);!v&&**p=='N'?(*p)++,NL:v)                                                   //parse long (with support for nulls)
