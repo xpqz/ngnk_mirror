@@ -55,7 +55,6 @@
 #define CAz(c) LH('a',(c)|32,'z')
 #define CA9(c) (CAz(c)||C09(c))
 #define S4(i,a,b,c,d)         SW(i,C(0,a)C(1,b)C(2,c)D(d))
-#define S8(i,a,b,c,d,e,f,g,h) SW(i,C(0,a)C(1,b)C(2,c)C(3,d)C(4,e)C(5,f)C(6,g)D(h))
 #define Ab8 A b[8];
 #define Lij L i=*xL,j=xL[1];
 #define FN(x,a...) TY(x NOP(a))
