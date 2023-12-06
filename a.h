@@ -58,6 +58,7 @@
 #define Ab8 A b[8];
 #define Lij L i=*xL,j=xL[1];
 #define FN(x,a...) TY(x NOP(a))
+#define AL(x) __builtin_assume_aligned(x,32)
 
 TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
 TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(O A*,U),AX(A,O A*,U);

@@ -1,5 +1,4 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-#define AL(x) __builtin_assume_aligned(x,32)
 #define h(o,f,T) SN V f(O V*RES a,O V*RES b,V*RES c,U n){O T*x=AL(a),*y=AL(b);T*r=AL(c);i(n,j(32/SZ(T),*r++=*x++o*y++))}
  h(+,aFF,F)h(*,mFF,F)h(/,dFF,F)h(+,aLL,L)h(+,aII,I)h(+,aHH,H)h(+,aGG,G)
 #undef h
@@ -27,10 +26,10 @@ S A addzZ(L v,A y,U f)_(U n=yn,w=MAX(tZ(v)-tG,yw);y=cT(tG+w,y);A z=an(n,yt);G(&a
  P(w<3&&ozZ(v,yV,zV,n,w),z(0);y=cT(tG+w+1,y);addzZ(v,y,f))y(z))
 
 S A mulzZ(L a,A y,U f)_(U n=yn,i=0,w=MAX(tZ(a)-tG,yw);y=cT(tG+w,y);A z=an(n,yt);
- S4(w,{W(i<n,I v=a*yg;B(v-(G)v)zg=v;i++)},
-      {W(i<n,I v=a*yh;B(v-(H)v)zh=v;i++)},
-      {W(i<n,L v=a*yi;B(v-(I)v)zi=v;i++)},
-      {W(i<n,zl=a*yl;i++)})
+ S4(w,W(i<n,I v=a*yg;B(v-(G)v)zg=v;i++),
+      W(i<n,I v=a*yh;B(v-(H)v)zh=v;i++),
+      W(i<n,L v=a*yi;B(v-(I)v)zi=v;i++),
+      W(i<n,zl=a*yl;i++))
  i<n?mulzZ(a,cT(tG+w+1,z(y)),f):y(z))
 
 S A modzZ(L m,A y,U f)_(P(!m,y)
