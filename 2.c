@@ -1,16 +1,8 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define AL(x) __builtin_assume_aligned(x,32)
-
-#define abcn O V*RES a,O V*RES b,V*RES c,U n
-#define xyr(T) O T*x=AL(a),*y=AL(b);T*r=AL(c);
-SN V aFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ + *y++))}
-SN V mFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ * *y++))}
-SN V dFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ / *y++))}
-SN V aLL(abcn){xyr(L)i(n,j( 4,*r++=*x++ + *y++))}
-SN V aII(abcn){xyr(I)i(n,j( 8,*r++=*x++ + *y++))}
-SN V aHH(abcn){xyr(H)i(n,j(16,*r++=*x++ + *y++))}
-SN V aGG(abcn){xyr(G)i(n,j(32,*r++=*x++ + *y++))}
-
+#define h(o,f,T) SN V f(O V*RES a,O V*RES b,V*RES c,U n){O T*x=AL(a),*y=AL(b);T*r=AL(c);i(n,j(32/SZ(T),*r++=*x++o*y++))}
+ h(+,aFF,F)h(*,mFF,F)h(/,dFF,F)h(+,aLL,L)h(+,aII,I)h(+,aHH,H)h(+,aGG,G)
+#undef h
 SN A amdFF(A x,A y,U f)_(U n=xn;P(n-yn,el(y))A z=yr-1?aF(n):y;G(&aFF,0,mFF,dFF)[f-1](xV,yV,zV,n+3>>2);y-z?y(z):z)
 SN B oZZ(O W*x,O W*y,O W*r,U n,U w)_(x=AL(x);y=AL(y);r=AL(r);
  W t[4]={};i(((W)n<<w)+31>>5,j(4,t[j]|=(*r^*x)&(*r^*y);r++;x++;y++))
@@ -18,7 +10,6 @@ SN B oZZ(O W*x,O W*y,O W*r,U n,U w)_(x=AL(x);y=AL(y);r=AL(r);
 S A addZZ(A x,A y,U f)_(U w=MAX(xw,yw);P(xw-w,x=cT(tG+w,xR);x(addZZ(x,y,f)))y=cT(tG+w,y);U n=yn;A z=an(n,yt);
  G(&aGG,aHH,aII,aLL)[w](xV,yV,zV,n+(31>>w)>>5-w);
  P(w<3&&oZZ(xV,yV,zV,n,w),z(0);y=cT(tG+w+1,y);x=cT(tG+w+1,xR);x(addZZ(x,y,f)))y(z))
-
 S A mulZZ(A x,A y,U f)_(U n=yn,i=0,w=MAX(xw,yw);P(xw-w,x=cT(tG+w,xR);x(mulZZ(x,y,f)))y=cT(tG+w,y);A z=an(n,yt);
  S4(w,W(i<n,I v=(I)xg*yg;B(v-(G)v)zg=v;i++),
       W(i<n,I v=(I)xh*yh;B(v-(H)v)zh=v;i++),
@@ -26,12 +17,9 @@ S A mulZZ(A x,A y,U f)_(U n=yn,i=0,w=MAX(xw,yw);P(xw-w,x=cT(tG+w,xR);x(mulZZ(x,y
       W(i<n,zl=xl*yl;i++))
  P(i<n,z(0);x=cT(tG+w+1,xR);x(mulZZ(x,cT(tG+w+1,y),f)))y(z))
 
-#define vbcn L v,V*RES b,V*RES c,U n
-#define vyr(T) O T*y=AL(b);T*r=AL(c);
-SN V alL(vbcn){vyr(L)i(n,j( 4,*r++=v+*y++))}
-SN V aiI(vbcn){vyr(I)i(n,j( 8,*r++=v+*y++))}
-SN V ahH(vbcn){vyr(H)i(n,j(16,*r++=v+*y++))}
-SN V agG(vbcn){vyr(G)i(n,j(32,*r++=v+*y++))}
+#define h(f,T) SN V f(L v,V*RES b,V*RES c,U n){O T*y=AL(b);T*r=AL(c);i(n,j(32/SZ(T),*r++=v+*y++))}
+ h(alL,L)h(aiI,I)h(ahH,H)h(agG,G)
+#undef h
 SN B ozZ(L v,O W*y,O W*r,U n,U w)_(r=AL(r);y=AL(y);i(3-w,v|=v<<(8<<w+i))
  W t[4]={};i(((W)n<<w)+31>>5,j(4,t[j]|=(*r^v)&(*r^*y);r++;y++))
  !!((t[0]|t[1]|t[2]|t[3])&G(0x8080808080808080ll,0x8000800080008000ll,0x8000000080000000ll)[w]))
