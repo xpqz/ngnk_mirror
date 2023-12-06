@@ -26,8 +26,8 @@ A e1f(A1 f,A x){X(Rt(f(x))Rm(A y=kv(&x);am(x,Nx(e1f(f,y))))
                                                i(n,P(!(ya=f(ai(xi))),mrn(i,yA);x(0))),
                                                i(n,P(!(ya=f(az(xl))),mrn(i,yA);x(0))))sqz(x(y)))
  R_(N n=xN;P(!n,o1f(f,x))A y=aA0(n);i(n,A z=f(ii(x,i));B(!z,y=y(0))yq(z))x(y)))}
-S A2(e1,/*01*/Xu(e1f(v1[xv],y))Y(Rt(x1(y))Rm(em(x,&y,1))
- RA(N n=yn;P(!n,o1(x,y))y=mut(y);  i(n,;P(!(ya=x1(ya)),ya=au;y(0)))sqz(y))
+S A2(e1,/*01*/Xu(e1f(v1[xv],y))Y(Rt(x1(y))Rm(A z=kv(&y);am(y,Ny(e1(x,z))))
+ RA(N n=yn;P(!n,o1(x,y))y=mut(y);   i(n,;P(!(ya=x1(ya)),ya=au;y(0)))sqz(y))
  R_(N n=yN;P(!n,o1(x,y))A u=aA0(n); i(n,A z=x1(ii(y,i));B(!z,u=u(0))uq(z))y(u)))0)
 A l2f(A2 f,A x,A y/*f01*/)_(Xt(f(x,y))Xm(A z=N(l2f(f,xy,y));       am(_R(xx),z) )  N n=xN;P(!n,x=fir(xR);x(o2f(f,x,y)))A u=aA0(n);i(n,A w=ii(x,i),v=f(w,yR);mr(w); B(!v,u=u(0))uq(v))y(u))
 A r2f(A2 f,A x,A y/*f01*/)_(Yt(f(x,y))Ym(A z=Ny(r2f(f,x,_R(yy)));y(am(_R(yx),z)))  N n=yN;P(!n,        o2f(f,x,fir(y)))A u=aA0(n);i(n,A v=f(x,ii(y,i));            B(!v,u=u(0))uq(v))y(u))
