@@ -1,16 +1,17 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define AL(x) __builtin_assume_aligned(x,32)
+
 #define abcn O V*RES a,O V*RES b,V*RES c,U n
 #define xyr(T) O T*x=AL(a),*y=AL(b);T*r=AL(c);
 SN V aFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ + *y++))}
 SN V mFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ * *y++))}
 SN V dFF(abcn){xyr(F)i(n,j( 4,*r++=*x++ / *y++))}
-SN A amdFF(A x,A y,U f)_(U n=xn;P(n-yn,el(y))A z=yr-1?aF(n):y;G(&aFF,0,mFF,dFF)[f-1](xV,yV,zV,n+3>>2);y-z?y(z):z)
-
 SN V aLL(abcn){xyr(L)i(n,j( 4,*r++=*x++ + *y++))}
 SN V aII(abcn){xyr(I)i(n,j( 8,*r++=*x++ + *y++))}
 SN V aHH(abcn){xyr(H)i(n,j(16,*r++=*x++ + *y++))}
 SN V aGG(abcn){xyr(G)i(n,j(32,*r++=*x++ + *y++))}
+
+SN A amdFF(A x,A y,U f)_(U n=xn;P(n-yn,el(y))A z=yr-1?aF(n):y;G(&aFF,0,mFF,dFF)[f-1](xV,yV,zV,n+3>>2);y-z?y(z):z)
 SN B oZZ(O W*x,O W*y,O W*r,U n,U w)_(x=AL(x);y=AL(y);r=AL(r);
  W t[4]={};i(((W)n<<w)+31>>5,j(4,t[j]|=(*r^*x)&(*r^*y);r++;x++;y++))
  !!((t[0]|t[1]|t[2]|t[3])&G(0x8080808080808080ll,0x8000800080008000ll,0x8000000080000000ll)[w]))
