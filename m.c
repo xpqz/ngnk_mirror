@@ -5,25 +5,28 @@
 #ifndef MAP_NORESERVE
  #define MAP_NORESERVE 0
 #endif
-S ST{V*p;U n;UC f;}reg[128];S UC nreg,npnd,pnd[L(reg)];
-S V mc(){P(!npnd)i(npnd,I j=pnd[i];munmap(reg[j].p,reg[j].n);Q(reg[j].f);reg[j].p=0)npnd=0;I j=0;i(nreg,I(reg[i].p,MC(reg+j,reg+i,SZ*reg);j++))nreg=j;}
-S A mu(V*p)_(i(nreg,P(reg[i].p==p,pnd[npnd++]=i;0))die("UNMAP"))
+S ST{V*p;U n;B f;}reg[128];S U nreg;//info about mapped regions (p:pointer, n:length in bytes, f:is file?)
+S UC pnd[L(reg)];S U npnd;//pending regions for unmapping (indices in reg[])
+S V mc(){P(!npnd)i(npnd,I j=pnd[i];munmap(reg[j].p,reg[j].n);Q(reg[j].f);reg[j].p=0)npnd=0;I j=0;i(nreg,I(reg[i].p,MC(reg+j,reg+i,SZ*reg);j++))nreg=j;}//clean up pending unmaps
+S A mu(V*p)_(i(nreg,P(reg[i].p==p,pnd[npnd++]=i;0))die("UNMAP"))//request unmapping
 S V*mm(U n,U f)_(V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_ANON,-1,0);P((L)p<pg,(V*)0)I(nreg==L(reg),mc();I(nreg==L(reg),die("MMAP")))reg[nreg++]=(TY(*reg)){p,n,f};p)
 S A mx(U n)_(V*p=mm(n,0);P(!p,die("OOM"))(A)(p+HD))
 A mf(U f,U i,U n)_(V*p=mm(pg+n,1);P(!p,eo0())A x=(A)(p+pg);xn=n;AT(tC,x);P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
 
-S A z[SZ(N)==4?27:31]={[L(z)-1]=1};DBG(S U lck;)
+S A bkt[SZ(N)==4?27:31]={[L(bkt)-1]=1};//buckets; bkt[i] is a linked list of chunks of size 16<<i
+DBG(S U lck;)//lock level (for debugging) - new allocations are banned between the phases of a two-phase free
 S A mb(C b,A x)_(xX=0;xr=0;DBG(AN(-1,AT(0,x));*xL=0);xU=b;x)
-A an(U n,C t)_(Q(!lck);Q(LH(tA,t,tn-1));Q(!TP(t));W m=HD+((W)n*TW[t]+7>>3);C b=59-__builtin_clzll(HD|m-1);P(n>1ull<<L(z)||b>L(z)-2,die("OOM"))
- A x=z[b];I i=b;W(!z[i],i++)I(i<L(z)-1,x=z[i];z[i]=xX)E(x=mb(b,mx(HD<<(i=MAX(b,24)))))I(b<i,xU=b;W(b<i--,z[i]=mb(i,(A)x+(HD<<i))))xr=1;AT(t,AN(n,x)))
-A1(m0,DBG(lck++);Q(x);XP(0)Q(xr>0);P(--xr,0)C b=xU;P(!b,mu(xV-pg))xX=z[b];z[b]=(A)xV;XR(mrn(xn|!xn,xA);x)x)
-DBG(A1(m1,lck--;P(!x||!xU,0)MS(xV,0xab,xZ);AN(-1,AT(0,x));0))
-V mrn(U n,O A*a){i(n,mr(a[i]))}
-V mRn(U n,O A*a){i(n,_R(a[i]))}
+A an(U n,C t)_(Q(!lck);Q(LH(tA,t,tn-1));Q(!TP(t));W m=HD+((W)n*TW[t]+7>>3);C b=59-__builtin_clzll(HD|m-1);P(n>1ull<<L(bkt)||b>L(bkt)-2,die("OOM"))
+ A x=bkt[b];I i=b;W(!bkt[i],i++)I(i<L(bkt)-1,x=bkt[i];bkt[i]=xX)E(x=mb(b,mx(HD<<(i=MAX(b,24)))))I(b<i,xU=b;W(b<i--,bkt[i]=mb(i,(A)x+(HD<<i))))xr=1;AT(t,AN(n,x)))
+A1(m0,DBG(lck++);Q(x);XP(0)Q(xr>0);P(--xr,0)C b=xU;P(!b,mu(xV-pg))xX=bkt[b];bkt[b]=(A)xV;XR(mrn(xn|!xn,xA);x)x)//two-phase free
+DBG(A1(m1,lck--;P(!x||!xU,0)MS(xV,0xab,xZ);AN(-1,AT(0,x));0))                                                  //two-phase free
+A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)//ref
+A1(mr,DBG(m1)(m0(x)))           //unref
+V mRn(U n,O A*a){i(n,_R(a[i]))} //ref   multiple
+V mrn(U n,O A*a){i(n,mr(a[i]))} //unref multiple
 A1(mRa,mRn(xn,xA);x)
-A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)
-A1(mr,DBG(m1)(m0(x)))
 
+//constructors
 A aV(C t,U n,O V*v)_(A x=an(n,t);MC(xV,v,(W)n*TW[t]+7>>3);x)
 A aA0(U n)_(A x=AN(0,aA(n));xx=oC;x)
 A1(aA1,A y=an(1,tA);yx=x;y)
@@ -62,11 +65,13 @@ A AO(UC o,A x)_(Xs(x&~(0xffll<<32)|(W)o<<32)xG[-13]=o;x)
 A AN(U n,A x)_(xn=n;x)
 A1(AZ,AT(tG,x))
 
+//symbols storage
 S C s0[1<<16],*s1=s0+1;
 Q qs(O L*p)_(*p<0?s0-*p:(V*)p)
 I sq(Q s)_(U n=SL(s);P(n<4||(n==4&&!(s[3]&128)),I v=0;MC(&v,s,n);v)Q p=s0+1;W(p<s1,P(!strcmp(p,s),s0-p)p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;s0-s1+n)
 A sym(Q s)_(as(sq(s)))
 
+//globals
 S U gd,gn;S W gk[256];A gv[256];
 S W gkk(A x/*0*/)_(Xs((U)xv)Q(xtS)xn?(W)_v(jS(drp(-1,xR)))<<32|(U)_v(ii(x,xn-1)):0)
 UC gi(A x/*0*/)_(W k=gkk(x);L l=(I)k;I(!(k>>32)&&id0(*qs(&l)),k|=(W)gd<<32)U i=fL(gk,gn,k);P(i<gn,i)P(gn>=L(gv),die("GLOBALS"))gk[gn]=k;gv[gn]=0;gn++)
@@ -76,6 +81,7 @@ A gg(A x/*1*/)_(//get value of global
 A*gp(A x/*1*/)_(UC i=gi(x);x(0);gv+i)//get pointer to global
 A gns(U k)_(I a[L(gk)];U n=0;i(gn,I(gk[i]>>32==k,a[n++]=gk[i]))aV(tS,n,a))//list namespace
 
+//backslash commands (system commands)
 S A bs0(Q s)_(en0())
 S A bsbs(Q s)_(exit(0);0)
 S A bscd(Q s)_(P(!*s,C b[256];getcwd(b,SZ b)?eo0():aCz(b))chdir(s)?eo0():au)
@@ -98,11 +104,12 @@ L k(Q s)_(A x=N(evs(s,0));mc();Xz(gl(x))x(0))
 V kf(Q s,A2 f){d8(A(sym(s),au,av,AT(tx,(A)f)),4);}
 
 A cns,ce[tn],cn[tn];Q*argv,*env;
-V kinit(){S B l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);z[L(z)-1]=1;A b[32],*c=b;i(tS-tA+1,*c++=ce[tA+i]=an(0,tA+i))*c++=ce[tm]=am(oS,oA);_x(ce[tA])=_R(ce[tC]);
+V kinit(){S B l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);bkt[L(bkt)-1]=1;A b[32],*c=b;i(tS-tA+1,*c++=ce[tA+i]=an(0,tA+i))*c++=ce[tm]=am(oS,oA);_x(ce[tA])=_R(ce[tC]);
  cn[tA]=ce[tC];*c++=cn[ti]=cn[tl]=al(NL);i(tL-tE+1,cn[tE+i]=cn[ti])*c++=cn[tF]=cn[tf]=af(NF);cn[tC]=cn[tc]=ac(32);cn[tS]=cn[ts]=as(0);i(tn-to,cn[to+i]=au)
  Q(c-b<=32);cns=aV(tA,c-b,b);}
 V kargs(I n,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=MAX(0,n-2);A x=n?aA(n):oA;i(n,xa=aCz(a[2+i]))gk[gn]='x';gv[gn++]=x;}
 
+//debugging
 SN U ow(Q s,U n)_(write(1,s,n))
 SN V o8(W v){C b[16],*s=b;i(16,C c=v>>4*(15-i)&15;*s++="0W"[9<c]+c)ow(b,16);}
 U os(Q s)_(ow(s,SL(s)))
