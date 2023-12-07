@@ -1,11 +1,10 @@
 #!../../k
 /x(t-x) ⩾ d
 /x^2-tx+d ⩽ 0
-/t:time, d:distance, r:roots, D:determinant, f:number of integer solutions
-f:{[t;d]
- D:(t*t)-4*d
- r:(t-%D;t+%D)%2
- 1+-/(_r 1;-_-r 0)}
+f:{[t;d]            /t:time,d:distance
+ D:(t*t)-4*d        /determinant
+ r:(t-%D;t+%D)%2    /roots
+ 1+-/(_r 1;-_-r 0)} /number of integer solutions
 
 x:(1_*|":"\)'0:"i/06"
 */f..'x      /1
