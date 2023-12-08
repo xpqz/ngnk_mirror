@@ -13,7 +13,7 @@ A1(epr,write(2,b,r-b);r=b;x)
 A1(err,XC(x=str0(x);err1(x,xV))P(x==au,aCn(b,r-b))err1(x,"err"))
 NI A die(Q s)_(I n=SL(s);C v[n+1];MC(v,s,n);v[n]=10;write(1,"'",1);write(2,v,n+1);exit(1);0)
 
-#define h(t,m)\
+#define M(t,m)\
  NI A0(e##t##0,err0(    #m))\
  NI A1(e##t   ,err1(x,  #m))\
  NI AA(e##t##8,err8(a,n,#m))

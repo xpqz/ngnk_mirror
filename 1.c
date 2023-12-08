@@ -8,5 +8,5 @@ X1(not,RmMA(e1f(not,x))RU(x(ai(x==au)))
 X1(nul,RmMA(e1f(nul,x))RU(x(ai(x==au)))RB(whr(len(x)))RF(A y=aG(xn);Mx(i(xn,yg=xf!=xf))y)Rf(x(ai(*xF!=*xF)))R_(eql(cn[xt],x)))
 X1(flr,RmMA(e1f(flr,x))RcC(K1("{`c$x+32*~\"A[\"'x}",x))RsS(cS(flr(str(x))))RilEBGHIL(x)RfF(A y=an(xn,xt+tl-tf);Mx(i(yn,yl=xf<0?(L)xf-(xf<(L)xf):(L)xf))y)R_(et(x)))
 
-#define h(k,f) X1(k,RfF(A y=xr-1?an(xn,xt):x;i(xn+3&~3,yf=f(xf));x-y?x(y):y)RmMA(e1f(k,x))R_(k(N(cF(x)))))
-h(ksin,sin)h(kcos,cos)h(klog,log)h(kexp,exp)h(sqr,__builtin_sqrt)
+#define M(k,f) X1(k,RfF(A y=xr-1?an(xn,xt):x;i(xn+3&~3,yf=f(xf));x-y?x(y):y)RmMA(e1f(k,x))R_(k(N(cF(x)))))
+M(ksin,sin)M(kcos,cos)M(klog,log)M(kexp,exp)M(sqr,__builtin_sqrt)

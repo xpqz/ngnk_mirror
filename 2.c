@@ -1,8 +1,8 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 S O W msk[]={0x8080808080808080ll,0x8000800080008000ll,0x8000000080000000ll};
-#define h(o,f,T) SN V f(O V*RES a,O V*RES b,V*RES c,U n){O T*x=AL(a),*y=AL(b);T*r=AL(c);i(n,j(32/SZ(T),*r++=*x++o*y++))}
- h(+,aFF,F)h(*,mFF,F)h(/,dFF,F)h(+,aLL,L)h(+,aII,I)h(+,aHH,H)h(+,aGG,G)
-#undef h
+#define M(o,f,T) SN V f(O V*RES a,O V*RES b,V*RES c,U n){O T*x=AL(a),*y=AL(b);T*r=AL(c);i(n,j(32/SZ(T),*r++=*x++o*y++))}
+ M(+,aFF,F)M(*,mFF,F)M(/,dFF,F)M(+,aLL,L)M(+,aII,I)M(+,aHH,H)M(+,aGG,G)
+#undef M
 SN A amdFF(A x,A y,U f)_(U n=xn;P(n-yn,el(y))A z=yr-1?aF(n):y;G(&aFF,0,mFF,dFF)[f-1](xV,yV,zV,n+3>>2);y-z?y(z):z)
 SN B oZZ(O W*x,O W*y,O W*r,U n,U w)_(x=AL(x);y=AL(y);r=AL(r);W t[4]={};i(((W)n<<w)+31>>5,j(4,t[j]|=(*r^*x)&(*r^*y);r++;x++;y++))!!((t[0]|t[1]|t[2]|t[3])&msk[w]))
 S A addZZ(A x,A y,U f)_(U w=MAX(xw,yw);P(xw-w,x=cT(tG+w,xR);x(addZZ(x,y,f)))y=cT(tG+w,y);U n=yn;A z=an(n,yt);
@@ -15,9 +15,9 @@ S A mulZZ(A x,A y,U f)_(U n=yn,i=0,w=MAX(xw,yw);P(xw-w,x=cT(tG+w,xR);x(mulZZ(x,y
       W(i<n,zl=xl*yl;i++))
  P(i<n,z(0);x=cT(tG+w+1,xR);x(mulZZ(x,cT(tG+w+1,y),f)))y(z))
 
-#define h(f,T) SN V f(L v,V*RES b,V*RES c,U n){O T*y=AL(b);T*r=AL(c);i(n,j(32/SZ(T),*r++=v+*y++))}
- h(alL,L)h(aiI,I)h(ahH,H)h(agG,G)
-#undef h
+#define M(f,T) SN V f(L v,V*RES b,V*RES c,U n){O T*y=AL(b);T*r=AL(c);i(n,j(32/SZ(T),*r++=v+*y++))}
+ M(alL,L)M(aiI,I)M(ahH,H)M(agG,G)
+#undef M
 SN B ozZ(L v,O W*y,O W*r,U n,U w)_(r=AL(r);y=AL(y);i(3-w,v|=v<<(8<<w+i))W t[4]={};i(((W)n<<w)+31>>5,j(4,t[j]|=(*r^v)&(*r^*y);r++;y++))!!((t[0]|t[1]|t[2]|t[3])&msk[w]))
 S A addzZ(L v,A y,U f)_(U n=yn,w=MAX(tZ(v)-tG,yw);y=cT(tG+w,y);A z=an(n,yt);G(&agG,ahH,aiI,alL)[w](v,yV,zV,n+(31>>w)>>5-w);
  P(w<3&&ozZ(v,yV,zV,n,w),z(0);y=cT(tG+w+1,y);addzZ(v,y,f))y(z))
@@ -103,6 +103,7 @@ A2(ari,C t=xt,u=yt;U v=1<<t|1<<u;
   P(v&1<<ts,v^1<<ts?et(y):ai(f==8?qA(x,y)<0:f==9?qA(x,y)>0:xv==yv)))
  et(y))
 
-#define h(s,i) A2(s,U o=f;f=i;x=ari(x,y);f=o;x)
-h(add,1)h(mul,3)h(dvd,4)h(mod,5)h(mnm,6)h(mxm,7)h(ltn,8)h(gtn,9)h(eql,10)
+#define M(s,i) A2(s,U o=f;f=i;x=ari(x,y);f=o;x)
+ M(add,1)M(mul,3)M(dvd,4)M(mod,5)M(mnm,6)M(mxm,7)M(ltn,8)M(gtn,9)M(eql,10)
+#undef M
 A2(dex,y)A2(sub,add(x,N(neg(y))))X2(exc,RMT(ytm||rnk(x)<0?ed(y):ytt?exc(x,rsz(xN,y)):xN-yN?el(y):am(xR,y))Rs(x=rsz(yN,x);x(exc(x,y)))Rilc(mod(x,y))R_(et(y)))
