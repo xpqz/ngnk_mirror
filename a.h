@@ -105,24 +105,23 @@ enum                    {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
 #define TU(t) ((t)>=to)
 
+//header bytes: U...mmmm XXXXXXXX .tEo.... rrrrnnnn
+#define _U(x) ((UC*)_V(x))[-31] //bucket index
+#define _m(x) ((U *)_V(x))[ -7] //shadow refcount(for debugging)
+#define _X(x) ((A *)_V(x))[ -3] //ptr to next chunk in bucket
+#define _E(x) ((UC*)_V(x))[-14] //adverb(for tr)
+#define _k(x) ((UC*)_V(x))[-13] //arity(for funcs)
+#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:((UC*)_V(x))[-13])//srcoffset(for symbol lists)
+#define _r(x) ((U *)_V(x))[ -2] //refcount
+#define _n(x) ((U *)_V(x))[ -1] //length
+#define _V(x) (V*)(x)           //ptr to data
+
 //tagged value bits (t=type,v=value,o=srcoffset,x=ptr):
 // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
 // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
 // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
 // ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
-
-//header bytes: ....mmmm XXXXXXXX UtEo.... rrrrnnnn
-#define _m(x) ((U*)_V(x))[-7]   //shadow refcount(only for debugging)
-#define _X(x) _A(x)[-3]         //ptr to next chunk in bucket
-#define _U(x) ((UC*)_V(x))[-16] //log2(bucket size in bytes)
-#define _E(x) ((UC*)_V(x))[-14] //adverb(for tr)
-#define _k(x) ((UC*)_V(x))[-13] //arity(for funcs)
-#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:((UC*)_V(x))[-13])//srcoffset(for symbol lists)
-#define _r(x) ((U*)_V(x))[-2]   //refcount
-#define _n(x) ((U*)_V(x))[-1]   //length
 #define _v(x) (I)(x)            //value
-#define _V(x) (V*)(x)           //ptr to data
-
 #define _t0(x) ((x)>>56)        //type(tag)
 #define _t1(x) _C(x)[-15]       //type(hdr)
 #define _t(x) ({A x_=(x);C t=_t0(x_);t?t:_t1(x_);})//type
