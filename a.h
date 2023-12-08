@@ -93,38 +93,38 @@ W pu(Q*);
 F gf(A);
 EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,ce[],cn[],ci[2][5];EX I pg;EX TY(O C[])vc,TS,Tw,TW,TT,TX,Tk;EX Q*argv,*env,HEX;
 
-//                       0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
-//                         () !i ,1 ,i ,i ,i ,i ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
-enum                    {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
-#define T_ TY(O C[]) TS="0""A""I""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
-                     TW={0,64,64, 1, 8,16,32,64,64, 8,32,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64},/*item size in bits         */\
-                     Tw={0, 7, 6, 0, 3, 4, 5, 6, 6, 3, 5, 7, 7, 6, 6, 6, 6, 6, 7, 7, 7, 7, 6, 6, 6, 6},/*log2(size) or 7=reftypes  */\
-                     TT={0,tA,tL,tB,tG,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
-                     TX={0,tG,tG,tG,tG,tH,tI,tL,tF,tG,tI,tG,tG, 0, 0,tF,tG,tI,tG,tG,tG,tG,tG,tG,tG,tG},/*type for arith conformance*/\
-                     Tk="0""L""I""I""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*types for k.h             */
+//                   0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+//                     () !i ,1 ,i ,i ,i ,i ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
+enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
+#define T_ O C TS[]="0""A""I""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
+               TW[]={0,64,64, 1, 8,16,32,64,64, 8,32,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64},/*item size in bits         */\
+               Tw[]={0, 7, 6, 0, 3, 4, 5, 6, 6, 3, 5, 7, 7, 6, 6, 6, 6, 6, 7, 7, 7, 7, 6, 6, 6, 6},/*log2(size) or 7=reftypes  */\
+               TT[]={0,tA,tL,tB,tG,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
+               TX[]={0,tG,tG,tG,tG,tH,tI,tL,tF,tG,tI,tG,tG, 0, 0,tF,tG,tI,tG,tG,tG,tG,tG,tG,tG,tG},/*type for arith conformance*/\
+               Tk[]="0""L""I""I""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*types for k.h             */
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
 #define TU(t) ((t)>=to)
 
-//header bytes: U...mmmm XXXXXXXX .tEk.... rrrrnnnn
-#define _U(x) (*(UC*)(x-32))//bucket index
-#define _m(x) (*(U *)(x-28))//shadow refcount(for debugging)
-#define _X(x) (*(A *)(x-24))//ptr to next chunk in bucket
-#define _E(x) (*(UC*)(x-14))//adverb(for tr)
-#define _k(x) (*(UC*)(x-13))//arity(for funcs) or scroffset(for symbol lists)
-#define _r(x) (*(U *)(x- 8))//refcount
-#define _n(x) (*(U *)(x- 4))//length
-#define _V(x) ((V*)(x))     //ptr to data
-#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:_k(x))//srcoffset(for symbol lists)
+//header bytes: U...mmmm XXXXXXXX ....OEkt rrrrnnnn
+#define _U(x) (*(UC*)((x)-32))//bucket index
+#define _m(x) (*(U *)((x)-28))//shadow refcount(for debugging)
+#define _X(x) (*(A *)((x)-24))//ptr to next chunk in bucket
+#define _O(x) (*(UC*)((x)-12))//scroffset(for symbol lists)
+#define _E(x) (*(UC*)((x)-11))//adverb(for tr)
+#define _k(x) (*(UC*)((x)-10))//arity(for funcs)
+#define _T(x) (*(UC*)((x)- 9))//type(hdr)
+#define _r(x) (*(U *)((x)- 8))//refcount
+#define _n(x) (*(U *)((x)- 4))//length
+#define _V(x) ((V*)(x))       //pointer to data
 
 //tagged value bits (t=type,v=value,o=srcoffset,x=ptr):
 // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
 // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
 // ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
-// ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other
+// ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other(pointer)
 #define _v(x) (I)(x)          //value
 #define _t0(x) ((x)>>56)      //type(tag)
-#define _t1(x) _C(x)[-15]     //type(hdr)
-#define _t(x) ({A x_=(x);C t=_t0(x_);t?t:_t1(x_);})//type
+#define _t(x) ({A x_=(x);UC t=_t0(x_);t?t:_T(x_);})//type
 #define _tU(x) TU(_t(x))      // func?
 #define _tP(x) TP(_t(x))      // packed?
 #define _tR(x) (_w(x)==4)     // ref?
@@ -132,6 +132,7 @@ enum                    {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to
 #define _tZ(x) LH(tE,_t(x),tL)// intlist?
 #define _tt(x) (_t(x)>tm)     // atom?
 #define _tz(x) LH(ti,_t(x),tl)// intatom?
+#define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:_O(x))//srcoffset(for symbols and symbol lists)
 #define _w(x) (Tw[_t(x)]-3)   //log2(type width in bytes)
 #define _W(x) (TW[_t(x)]>>3)  //type width in bytes
 #define _Z(x) ((HD<<_U(x))-HD)//chunk capacity in bytes

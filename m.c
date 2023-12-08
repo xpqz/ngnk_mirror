@@ -48,11 +48,11 @@ A room(U n,A x)_(P(xr==1&&n*xW<=xZ,AN(n,x))A y=an(n,xt);MC(yV,xV,(W)xn*TW[xt]+7>
 L gl_(A x)_(XP(xv)*xL)
 L gl(A x)_(L v=gl_(x);x(0);v)
 F gf(A x)_(F v=*xF;x(0);v)
-A AT(W t,A x)_(Q(t<tn);P(TP(t),x=Lt(t)|x<<8>>8)_t1(x)=t;x)
+A AT(W t,A x)_(Q(t<tn);P(TP(t),x=Lt(t)|x<<8>>8)_T(x)=t;x)
 A AV(W v,A x)_(Q(v<32);x&~31ll|v)
 A AW(C w,A x)_(Q(w<6u);xE=w;x)
 A AK(C k,A x)_(Q(k<9u);xk=k;x)
-A AO(UC o,A x)_(Xs(x&~(0xffll<<32)|(W)o<<32)xG[-13]=o;x)
+A AO(UC o,A x)_(Xs(x&~(0xffll<<32)|(W)o<<32)_O(x)=o;x)
 A AN(U n,A x)_(xn=n;x)
 A1(AZ,AT(tG,x))
 
@@ -107,7 +107,7 @@ W ov_(Q s,W v)_(os(s);o8(v);ow("\n",1);v)
 #define rts(a...) {i(gn,A x=gv[i];I(x,a))A x=cns;a;}
 SN V od(L v){C b[32];ow(b,sl(b,v)-b);}
 SN V osd(Q s,L v){os(s);od(v);}
-SN A1(ox,o8(x);osd(" U",xU);C t=_t1(x);os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);i(MIN(5,xZ/8),os(" ");o8(xl))os("\n");x)
+SN A1(ox,o8(x);osd(" U",xU);C t=_T(x);os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);i(MIN(5,xZ/8),os(" ");o8(xl))os("\n");x)
 A bsm(Q s)_(obs(xm=0)xys(I(!ytP,ym++))rts(I(!xtP,xm++))
 // I n=0;obs(ox(x);n++);osd("nObjs:",n)
 // os("mapped regions:\n");mms(os(f?"[f] ":"[x] ");o8((L)p);os("-");o8((L)q);osd(" N",q-p);os("\n"));os("\n");
