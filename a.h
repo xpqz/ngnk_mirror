@@ -39,7 +39,6 @@
 #define ST struct
 #define RES restrict
 #define SWP(x,y) {TY(x)t_=x;x=y;y=t_;}
-#define NOP
 #define M1(x) #x
 #define M2(x) M1(x)
 #define EX extern
@@ -49,15 +48,13 @@
 #define SL __builtin_strlen
 #define MIN(x,y) ({TY(x) x_=(x),y_=(y);x_<y_?x_:y_;})
 #define MAX(x,y) ({TY(x) x_=(x),y_=(y);x_>y_?x_:y_;})
-#define IN(i,n) ((i)<(W)(n))
 #define LH(x,y,z) ((y)-(x)<=(U)((z)-(x)))//between(low,high)
 #define C09(c) LH('0',c,'9')
 #define CAz(c) LH('a',(c)|32,'z')
 #define CA9(c) (CAz(c)||C09(c))
-#define S4(i,a,b,c,d)         SW(i,C(0,a)C(1,b)C(2,c)D(d))
+#define S4(i,a,b,c,d) SW(i,C(0,a)C(1,b)C(2,c)D(d))
 #define Ab8 A b[8];
 #define Lij L i=*xL,j=xL[1];
-#define FN(x,a...) TY(x NOP(a))
 #define AL(x) __builtin_assume_aligned(x,32)
 
 TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;

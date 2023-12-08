@@ -15,7 +15,7 @@ S C*su(C*s,W v)_(v<(W)1e16?s16(s,v):S16(s_8(s,v/(W)1e16),v%(W)1e16))C*sl(C*s,L v
 #endif
 S W I5[342][2],P5[326][2];S W addcll(W x,W y,W c,W*p)_(W u=x+y+c;*p=u<x||u<y;u) // or __builtin_addcll
 S V shr3(W*x,W*y,I d){i(2,x[i]=y[i]>>d|y[i+1]<<(64-d))x[2]=y[2]>>d;}S V shr2(W*a){*a>>=1;*a|=a[1]<<63;a[1]>>=1;}S V inc2(W*a){a[1]+=!++*a;}
-S V pws5(W NOP(*a)[2],I n,L u,L v,L w){W x[]={u,v,w},y[3],c;i(n,MC(a+i,x+1,16);shr3(y,x,2);c=0;i(3,x[i]=addcll(x[i],y[i],c,&c))I(x[2]>>61,shr3(x,x,1)))}
+S V pws5(TY(I5)a,I n,L u,L v,L w){W x[]={u,v,w},y[3],c;i(n,MC(a+i,x+1,16);shr3(y,x,2);c=0;i(3,x[i]=addcll(x[i],y[i],c,&c))I(x[2]>>61,shr3(x,x,1)))}
 S V initp5(){pws5(I5,L(I5),0xebd5cf2016a52921,0x4ac7ca59a424c507,0x9558b4661b6565f8);pws5(P5,L(P5),0,0,1ll<<61);I5[0][0]=0x0958f94b348498a0;I5[0][1]=0x12ab168cc36cacbf;
  shr2(I5[1]);shr2(I5[1]);shr2(I5[2]);shr2(I5[3]);i(L(I5),inc2(&I5[i][0]))inc2(I5[L(I5)-1]);shr2(P5[0]);}
 S U dm(W*p)_(W x=*p,q=x/10;*p=q;(U)x-10*(U)q)S I l10p2(I x)_(x*78913>>18)S I l10p5(I x)_(x*732923>>20)S I p5b(I x)_(x*1217359>>19)
