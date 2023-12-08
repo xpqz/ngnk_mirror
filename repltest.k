@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!k
 x:,"--non-interactive"
 \l repl.k
 repl.upd:{repl.lines::6;repl.cols::20}
