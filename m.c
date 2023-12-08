@@ -9,18 +9,15 @@ S ST{V*p;U n;B f;}reg[128];S U nreg;S UC pnd[128];S U npnd;
 S V mc(){P(!npnd)i(npnd,I j=pnd[i];munmap(reg[j].p,reg[j].n);Q(reg[j].f);reg[j].p=0)npnd=0;I j=0;i(nreg,I(reg[i].p,MC(reg+j,reg+i,SZ*reg);j++))nreg=j;}
 S A mu(V*p)_(i(nreg,P(reg[i].p==p,pnd[npnd++]=i;0))die("UNMAP"))
 S V*mm(U n,U f)_(V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_ANON,-1,0);P((L)p<pg,(V*)0)I(nreg==L(reg),mc();I(nreg==L(reg),die("MMAP")))reg[nreg++]=(TY(*reg)){p,n,f};p)
-S A mx(U n)_(V*p=mm(n,0);P(!p,die("OOM"))(A)p+HD)
 A mf(U f,U i,U n)_(V*p=mm(pg+n,1);P(!p,eo0())A x=(A)p+pg;xn=n;AT(tC,x);P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
 
-S A bkt[24];DBG(S U lck;)
-S A mb(U i,A x)_(xX=0;xU=i;xr=0;DBG(AN(-1,AT(0,x));*xL=0xdeadbeefdeadbeefll);x)
-SN A mg(U i)_(P(i>=L(bkt),mb(i,mx(HD<<i)))A x=bkt[i];P(x,bkt[i]=xX;xX=0;mb(i,x))x=mb(i,mg(i+1));A y=mb(i,x+((W)HD<<i));yX=bkt[i];bkt[i]=y;x)
-A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+((W)n*TW[t]+7>>3);U i=59-__builtin_clzll(HD|m-1);A x=mg(i);xr=1;AT(t,AN(n,x)))
-
-A1(m0,DBG(lck++);Q(x);XP(0)Q(xr>0);P(--xr,0)U i=xU;P(!i,mu(xV-pg))xX=bkt[i];bkt[i]=x;XR(mrn(xn|!xn,xA);x)x)
+S A b[24];DBG(S U lck;)
+SN A mb(U i)_(P(i>=L(b),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xU=i;x)A x=b[i];P(x,b[i]=xX;xX=0;x)x=mb(i+1);xU=i;A y=x+(HD<<i);yU=i;yX=b[i];b[i]=y;x)
+A1(m0,DBG(lck++;)Q(x)XP(0)Q(xr>0)P(--xr,0)U i=xU;P(!i,mu(xV-pg))xX=b[i];b[i]=x;XR(mrn(xn|!xn,xA);x)x)
 DBG(A1(m1,lck--;P(!x||!xU,0)MS(xV,0xab,xZ);AN(-1,AT(0,x));0))
 A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)A1(mr,DBG(m1)(m0(x)))V mRn(U n,O A*a){i(n,_R(a[i]))}V mrn(U n,O A*a){i(n,mr(a[i]))}A1(mRa,mRn(xn,xA);x)
 
+A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+((W)n*TW[t]+7>>3);U i=59-__builtin_clzll(HD|m-1);A x=mb(i);xr=1;AT(t,AN(n,x)))
 A aV(C t,U n,O V*v)_(A x=an(n,t);MC(xV,v,(W)n*TW[t]+7>>3);x)
 A aA0(U n)_(A x=AN(0,aA(n));xx=oC;x)
 A1(aA1,A y=an(1,tA);yx=x;y)
