@@ -11,7 +11,7 @@ c:{+x@'!#'x} /cartesian product
 e:,/{$[x~"@";*y;x~"$";y 1;x~"%";_*y;x]}\: /expand @:arg[0],$:arg[1],%:lower(arg[0])
 
 r:()
-r,:"@$ _$(@)"e/:c(v;"EKkmNnoRrtUVvWwXxyZz",t,(_t),"t",'U)
+r,:"@$ _$(@)"e/:c(v;"EKkmNnoRrtUVvWwXxyz",t,(_t),"t",'U)
 r,:"@$(a...) _$(@,a)"e/:c(v;"q128")
 r,:"M@(a...) M_(@,a)"e/:v
 r,:"@$(a...) P(%t$,a)"e/:c("XYZ";U)

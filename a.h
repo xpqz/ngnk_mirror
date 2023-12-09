@@ -135,7 +135,6 @@ enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,
 #define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:_O(x))//srcoffset(for symbols and symbol lists)
 #define _w(x) (Tw[_t(x)]-3)   //log2(type width in bytes)
 #define _W(x) (TW[_t(x)]>>3)  //type width in bytes
-#define _Z(x) ((HD<<_U(x))-HD)//chunk capacity in bytes
 #define _q(x,y) (x=apd(x,y))  //append
 #define M_(x,a...) {DBG(A t_=)m0(x);a;DBG(x=0;m1(t_));}//two-phase free()
 
