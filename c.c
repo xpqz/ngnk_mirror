@@ -5,8 +5,8 @@
 #undef M
 S V cFL(abn){F*r=AL(a);O L*p=AL(b);i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
 S V cLF(abn){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
-S V cGB(abn){G*r=AL(a);O W*p=AL(b);i(n+63>>6,W v=*p++;j(64,*r++=!!(v&1<<j)))}
-S V cBG(abn){W*r=AL(a);O G*p=AL(b);i(n+63>>6,W v=0;j(64,v|=(*p++&1ull)<<j)*r++=v)}
+S V cGB(abn){G*r=AL(a);O W*p=AL(b);i(n,*r++=!!(p[i>>6]&1ll<<(i&63)))}
+S V cBG(abn){W*r=AL(a);O G*p=AL(b);MS(r,0,n+63>>6);i(n,r[i>>6]|=(p[i]&1)<<(i&63))}
 NI A2(cTT,UC t=xv,u=yt,i=t-tB,j=u-tB;Q(i<8);P(j>7,et(y))
  S O TY(&cBG)a[][7]={{0,cBG,0,0,0,0,cBG},{cGB,0,cGH,cGI,cGL,0,0},{0,cHG,0,cHI,cHL,0,cHG},{0,cIG,cIH,0,cIL,0,cIG},{0,0,0,cLI,0,cLF,0},{0,0,0,0,cFL,0,0},{},{}};
  TY(&cBG)f=a[i][j];
