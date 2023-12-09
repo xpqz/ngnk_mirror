@@ -51,8 +51,8 @@ X1(kst,R_(x(aCz("???")))
  RC(    xn==1?kT1(x):kss(x))
  RGHILF(xn==1?kT1(x):xn?jc(32,e1f(str,x)):x(aCz(xtF?"0#0n":"!0")))
  RS(    xn==1?kT1(x):xn?raz(ek(x)):x(aCz("0#`")))
- RB(    xn==1?kT1(x):xn?apc(cC(add(ai('0'),cG(x))),'b'):x(aCz("!0")))//todo
-// RB(kst(cG(x)))
+// RB(    xn==1?kT1(x):xn?apc(cC(add(ai('0'),cG(x))),'b'):x(aCz("!0")))//todo
+ RB(kst(cG(x)))
  RE(kst(gZ(x)))//RE(Lij x(0);x=pre('!',str(az(j-i)));i?cat11(apc(str(az(i)),'+'),x):x)
  RM(pre('+',kst(flp(x))))
  Rm(A y=kv(&x);cat11(apc(kl(x),'!'),kr(y)))
