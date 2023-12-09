@@ -69,6 +69,6 @@ S A pe(A x,C*v)_(s=pw(s);C c=*s;                                                
  A z=pe(0,v);P(!z,y(x?x(0):0))P(z==GAP,*v=1;P(!x,y)Yu(ep(x))AO(o,aA3(y,x,z)))
  *v&=y!=av;I(!x,y=pm(y))*v?aA3(aw,x?AO(o,aA3(y,x,GAP)):y,z):AO(o,x?aA3(y,x,z):aA2(pm(y),z)))
 S A pb(A x,C c)_(x=x?aA1(x):oA;                                                                     //parse body (sequence of ;-separated expressions)
- W(1,C v=0;A y=Nx(pe(0,&v));xq(c-']'&&y==GAP?au:y);P(y==GAP&&c==')',ep(x))B(*s-';'&&*s-10)B(c==10&&*s==10)s++)
+ W(1,C v=0;A y=Nx(pe(0,&v));PSH(x,c-']'&&y==GAP?au:y);P(y==GAP&&c==')',ep(x))B(*s-';'&&*s-10)B(c==10&&*s==10)s++)
  P(c==10&&!*s,x)P(*s-c,ep(x))s++;x)
 A pk(Q*p,C c)_(s0=s=*p;A x=pb(GAP,c);*p=s;P(x,xn==2?las(x):x)eQ(s0,SL(s0),s-s0);0)                  //parse either a group of lines (c='\n') or till '\0' (c='\0')

@@ -66,7 +66,7 @@ S U gd,gn;S W gk[256];A gv[256];
 S W gkk(A x/*0*/)_(Xs((U)xv)Q(xtS)xn?(W)_v(jS(drp(-1,xR)))<<32|(U)_v(ii(x,xn-1)):0)
 UC gi(A x/*0*/)_(W k=gkk(x);L l=(I)k;I(!(k>>32)&&id0(*qs(&l)),k|=(W)gd<<32)U i=fL(gk,gn,k);P(i<gn,i)P(gn>=L(gv),die("GLOBALS"))gk[gn]=k;gv[gn]=0;gn++)
 A gg(A x/*1*/)_(//get value of global
- P(xtS&&!xn,x(0);A x=oS,y=oA;i(gn,I(gv[i],L k=gk[i];xq(k-(U)k?jS(aV(tS,2,A((I)(k>>32),k))):as(k));yq(_R(gv[i]))))am(x,y))//special case for 0#`
+ P(xtS&&!xn,x(0);A x=oS,y=oA;i(gn,I(gv[i],L k=gk[i];PSH(x,k-(U)k?jS(aV(tS,2,A((I)(k>>32),k))):as(k));PSH(y,_R(gv[i]))))am(x,y))//special case for 0#`
  W k=gkk(x);x(0);U i=fL(gk,gn,k);i<gn&&gv[i]?_R(gv[i]):ev0())
 A*gp(A x/*1*/)_(UC i=gi(x);x(0);gv+i)//get pointer to global
 A gns(U k)_(I a[L(gk)];U n=0;i(gn,I(gk[i]>>32==k,a[n++]=gk[i]))aV(tS,n,a))//list namespace

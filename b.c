@@ -42,7 +42,7 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
 S A u;S UC b[MB],m[MB],lu[16];S I nb,nl,l[16],cr(A,B);                                              //u:lambda(src;b:bytes;m:map;l:locals;consts..)  lu:last usages
 SN I li(I v)_(U i=fI(l,nl,v);P(i==nl,-1)lu[i]=nb;i)                                                 //index of a local variable (returns -1 if not found)
 S B cm(A x/*0*/){X(Rv(!xv)Ru(1)RS(P(xn-1,0)L v=*xI;Q s=qs(&v);U n=SL(s);n&&s[n-1]==':')R_(0))}      //is x a valid modifier? i.e. :: or primitive monad or symbol ending with ":"
-S V cc(A x/*0*/,I o){U n=un,i=CO;W(i<n&&!mtc_(x,ua),i++)I(i>=n,uq(xR))M(i+bc-CO)}                   //append a "load constant" instruction
+S V cc(A x/*0*/,I o){U n=un,i=CO;W(i<n&&!mtc_(x,ua),i++)I(i>=n,PSH(u,xR))M(i+bc-CO)}                //append a "load constant" instruction
 S I cl(A x,A y/*00*/,B r){Q(cm(xx))I v=_v(xx),o=xo;                                                 //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
  Y(R_(o)
    RS(I(yn==1,I w=*yI,i=li(w);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)l[nl++]=w;lu[i]=nb)M(bs+i)I(r,M(bg+i))OK)P(i>=0,M(bm)M(i)M(v)I(r,M(bg+i))OK))

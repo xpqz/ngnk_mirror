@@ -56,6 +56,7 @@
 #define Ab8 A b[8];
 #define Lij L i=*xL,j=xL[1];
 #define AL(x) __builtin_assume_aligned(x,32)
+#define PSH(x,y) ((x)=psh(x,y))
 
 TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
 TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(O A*,U),AX(A,O A*,U);
@@ -135,7 +136,7 @@ enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,
 #define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:_O(x))//srcoffset(for symbols and symbol lists)
 #define _w(x) (Tw[_t(x)]-3)   //log2(type width in bytes)
 #define _W(x) (TW[_t(x)]>>3)  //type width in bytes
-#define _q(x,y) (x=psh(x,y))  //append
+#define _q(x,y) PSH(x,y)      //append (todo)
 #define M_(x,a...) {DBG(A t_=)m0(x);a;DBG(x=0;m1(t_));}//two-phase free()
 
 #define Lt(t) (W)t<<56

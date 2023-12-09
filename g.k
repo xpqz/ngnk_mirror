@@ -12,7 +12,7 @@ e:,/{$[x~"@";*y;x~"$";y 1;x~"%";_*y;x]}\: /expand @:arg[0],$:arg[1],%:lower(arg[
 
 r:()
 r,:"@$ _$(@)"e/:c(v;"EKkmNnoRrtUVvWwXxyz",t,(_t),"t",'U)
-r,:"@$(a...) _$(@,a)"e/:c(v;"q128")
+r,:"@$(a...) _$(@,a)"e/:c(v;"128")
 r,:"M@(a...) M_(@,a)"e/:v
 r,:"@$(a...) P(%t$,a)"e/:c("XYZ";U)
 r,:"@(a) ({A r_=(a);mr(@);r_;})"e/:v
