@@ -42,15 +42,15 @@ S A1(qfb,P(!xtC,et(x))P(xn-8,el(x))x=rev(x);x(aV(tf,1,xV)))//float from bits
 SN AX(ext,P(n-xK,er8(a,n))V*f=(V*)(x&-1ull>>16);SW(n,R(1,((A1*)f)(a[0]))R(2,((A2*)f)(a[0],a[1]))R(3,((A3*)f)(a[0],a[1],a[2]))R(4,((A4*)f)(a[0],a[1],a[2],a[3]))R_(en8(a,n)))0)
 A2(_1,/*01*/P(!xtt,i1(x,y))U k=xK;P(1<k,k==2&&!xtp?prj(x,A(y,GAP),2):prj(x,&y,1))
  X(Ro(run(x,&y,1))Rr(w1(xE,xx,y))Rx(ext(x,&y,1))Rq(_1(xx,N(_1(xy,y))))Ru(v1[xv](y))Rw(AK(0<xv&&xv<4&&yK==2?1:ytU?yK:1,AW(xv,aV(tr,1,&y))))R_(et(y))
-  Rp(P(xn+k>9,er(y))I m=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==GAP&&!j?j++,y:_R(xA[i+1]))I l=MAX(0,1-j);MC(b+m,&y,8*l);_8(xx,b,m+l))
+  Rp(P(k>7,er(y))I m=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==GAP&&!j?j++,y:_R(xA[i+1]))I l=MAX(0,1-j);MC(b+m,&y,8*l);_8(xx,b,m+l))
   Rs(S O C s[][4]={"k","j","p","t","x","hex","err","argv","env","exit","js","pri","prng","sin","cos","exp","ln","fb"};
    G(&kst,js1,qp,qt,frk,hex,err,qa,qe,qx,qjs,qpri,prng,ksin,kcos,kexp,klog,qfb,ed)[fI((V*)s,L(s),xv)](y)))0)
 A3(_2,/*001*/P(!xtt,i2(x,y,z))A a[]={y,z};U k=xK;P(2<k,yR;prj(x,a,2))
  X(Rv(v2[xv](y,z))Ro(yR;run(x,a,2))Rr(z(w2(xE,xx,yR,z)))Rw(xv?en(x):AK(zK,AT(tq,aA2(yR,z))))Rq(_1(xx,N(_2(xy,y,z))))Rx(A a[]={yR,z};ext(x,a,2))R_(et(z))
-  Rp(P(xn+k>9,er(z))yR;I m=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==GAP&&j<2?a[j++]:_R(xA[i+1]))I l=MAX(0,2-j);MC(b+m,a+j,8*l);_8(xx,b,m+l)))0)
+  Rp(P(k>6,er(z))yR;I m=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==GAP&&j<2?a[j++]:_R(xA[i+1]))I l=MAX(0,2-j);MC(b+m,a+j,8*l);_8(xx,b,m+l)))0)
 AX(_8,/*01..1*/Q(n)P(n==1,x1(*a))P(n==2&&!xtp,A y=*a;y(x2(y,a[1])))P(!xtt,i8(x,a,n))U k=xK;P(n<xK,prj(x,a,n))
  X(Ro(run(x,a,n))Rv(x=v8[xv](a,n);mrn(n-1,a+1);x)Rr(w8(xE,xx,a,n))Rq(_1(xx,N(_8(xy,a,n))))R_(et8(a,n))Rx(ext(x,a,n))
-  Rp(P(xn+xK>9,er8(a,n))I m=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==GAP&&j<n?a[j++]:_R(xA[i+1]))I l=MAX(0,n-j);MC(b+m,a+j,8*l);_8(xx,b,m+l)))0)
+  Rp(P(k+n>8,er8(a,n))I m=xn-1,j=0;Ab8;i(m,b[i]=xA[i+1]==GAP&&j<n?a[j++]:_R(xA[i+1]))I l=MAX(0,n-j);MC(b+m,a+j,8*l);_8(xx,b,m+l)))0)
 A1(jS,cS(jc('.',str(x))))//join symbols with "."
 X1(val,RA(P(!xn,x)P(xn==1,fir(x))P(xn>9,ez(x))x=mut(x);A y=_8(xx,&xy,xn-1);AN(1,x);x(y))RmM(x(_R(xy)))RE(gZ(x))RC(x=str0(x);x(evs(xV,0)))Rc(val(enl(x)))RsS(gg(x))
  Ropq(AT(tA,mut(x)))Rr(cat10(AT(tA,mut(x)),aw+xE))Ruvw(ai(xv))R_(x))
