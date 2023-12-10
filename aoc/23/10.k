@@ -13,7 +13,7 @@ f:{                            /both parts
  (p;d):+e t\(p0;d0)            /path (positions;directions)
  n:-2!1+#p                     /part1
  s:abs[-2!+/*/(+;-)cyc'+p]     /area through the shoelace formula
- (n;s-n-1)}
+ (n;s-n-1)}                    /for part2 - https://en.wikipedia.org/wiki/Pick%27s_theorem
 
 `0:$f@0:"i/10"
 
