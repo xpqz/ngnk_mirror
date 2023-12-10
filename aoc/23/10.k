@@ -5,16 +5,16 @@ cyc:{(*|y)x':y} /cyclic eachprior
 D:(-1 0;0 1;1 0;0 -1) /clockwise 0=north,1=east,2=south,3=west
 L:"|-LJ7FS."!(0 2;1 3;0 1;0 3;2 3;1 2;!0;!0) /which directions do symbols like "L" connect
 
-f:{[a]                           /both parts
- p0:*+&"S"=a                     /initial position
- d0:*&0|/'2 3 0 1=L@a./:p0+/:D   /initial direction
- t:{[a;x;y] x+:D y;(x;*L[a . x]^4!2+y)}[a]. /next
- e:~p0~{x+D y}.                  /stop condition
- (p;d):+e t\(p0;d0)              /path (positions;directions)
- r1:-2!1+#p                      /1
- s:-2!+/*/(+;-)cyc'+p            /area through the shoelace formula
- corr:-4!+/4!2+sgn[s]*cyc[-]d    /corrections for the parts of tiles that are on the path
- r2:abs s-sgn[s]*corr            /2
+f:{                            /both parts
+ p0:*+&"S"=x                   /initial position
+ d0:*&0|/'2 3 0 1=L@x./:p0+/:D /initial direction
+ t:{y+:D z;(y;*L[x. y]^4!2+z)}[x]. /next
+ e:~p0~{x+D y}.                /stop condition
+ (p;d):+e t\(p0;d0)            /path (positions;directions)
+ r1:-2!1+#p                    /1
+ s:-2!+/*/(+;-)cyc'+p          /area through the shoelace formula
+ c:-4!+/4!2+sgn[s]*cyc[-]d     /corrections for the parts of tiles that are on the path
+ r2:abs s-sgn[s]*c             /2
  (r1;r2)}
 
 `0:$f@0:"i/10"
