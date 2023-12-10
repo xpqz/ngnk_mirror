@@ -11,11 +11,9 @@ f:{                            /both parts
  t:{y+:D z;(y;*L[x. y]^4!2+z)}[x]. /next
  e:~p0~{x+D y}.                /stop condition
  (p;d):+e t\(p0;d0)            /path (positions;directions)
- r1:-2!1+#p                    /1
- s:-2!+/*/(+;-)cyc'+p          /area through the shoelace formula
- c:-4!+/4!2+sgn[s]*cyc[-]d     /corrections for the parts of tiles that are on the path
- r2:abs s-sgn[s]*c             /2
- (r1;r2)}
+ n:-2!1+#p                     /part1
+ s:abs[-2!+/*/(+;-)cyc'+p]     /area through the shoelace formula
+ (n;s-n-1)}
 
 `0:$f@0:"i/10"
 
