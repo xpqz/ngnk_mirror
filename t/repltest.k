@@ -1,8 +1,8 @@
-#!k
+#!../k
 x:,"--non-interactive"
-\l repl.k
+\l ../repl.k
 repl.upd:{repl.lines::6;repl.cols::20}
-test:{x:"\n"\x;c:*x;e:("\n"/1_x),"\n"; \$[e~r:repl.fmt@.c;`ok;((`FAIL;c);(`EXPCTD;e);(`ACTUAL;r))];}
+test:{x:"\n"\x;c:*x;e:("\n"/1_x),"\n"; \$[e~r:repl.fmt@.c;;((`FAIL;c);(`EXPCTD;e);(`ACTUAL;r))];}
 test'"\n\n"\*|"\n/\n"\1:`argv 1;
 /
 4 17#"a"

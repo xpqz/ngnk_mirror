@@ -32,8 +32,9 @@ o/w/http:w/http.c;$(CC) $< -o $@
 # k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
 
-t:tu td tg te ta                          #all tests
+t:tu tr td tg te ta                       #all tests
 tu:k o/t;o/t               ;echo tu  done #unit
+tr:k;cd t;./repltest.k     ;echo tr  done #repl
 td:k;cd dy;./a.k           ;echo td  done #dyalog
 tg:k;cd g;./a.k            ;echo tg  done #codegolf
 te:te0 te1 te2                            #projecteuler
