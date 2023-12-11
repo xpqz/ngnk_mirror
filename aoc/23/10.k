@@ -1,4 +1,4 @@
-#!/usr/bin/env k
+#!../../k
 sgn:{(0<x)-0>x}
 abs:{x|-x}
 cyc:{(*|y)x':y} /cyclic eachprior
