@@ -118,10 +118,10 @@ enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,
 #define _n(x) (*(U *)((x)- 4))//length
 #define _V(x) ((V*)(x))       //pointer to data
 
-//tagged value bits (t=type,v=value,o=srcoffset,x=ptr):
+//tagged value bits (t=type,v=value,o=srcoffset,k=arity,x=ptr):
 // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
 // tttttttt................oooooooovvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ts
-// ttttttttkkkkkkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
+// tttttttt....kkkkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx tx
 // ................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000 other(pointer)
 #define _v(x) (I)(x)          //value
 #define _t0(x) ((x)>>56)      //type(tag)
