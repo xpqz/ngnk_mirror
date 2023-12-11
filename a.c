@@ -10,16 +10,15 @@ A ii(A x/*0*/,U i)_(X(RA(_R(xa))RC(ac(xc))RG(ai(xg))RH(ai(xh))RI(ai(xi))RL(al(xl
 A io(A x/*0*/,L i)_(X(RE(i<(W)(xL[1]-*xL)?az(*xL+i):_R(cn[tl]))RT_E(i<(W)xn?ii(x,i):xn?mkn(ii(x,0)):xtA?_R(xx):_R(cn[xt]))Rt(xR)Rm(io(xy,i))RM(iM(x,i)))0)
 A1(fir,x(io(x,0)))A1(las,x(io(x,xN-1)))
 SN U maxfU(O U*a,U n)_(U v=0;i(n,v=MAX(v,a[i]))v)
-SN V iG(V*RES a,U m,O U*RES b,V*RES c,U n){G*p=a;G*r=c;i(n,r[i]=p[b[i]])}
-SN V iH(V*RES a,U m,O U*RES b,V*RES c,U n){H*p=a;H*r=c;i(n,r[i]=p[b[i]])}
-SN V iI(V*RES a,U m,O U*RES b,V*RES c,U n){I*p=a;I*r=c;i(n,r[i]=p[b[i]])}
-SN V iC(V*RES a,U m,O U*RES b,V*RES c,U n){C*p=a;C*r=c;i(n+31&-32,r[i]=b[i]<m?p[b[i]]:32)}
-SN V iS(V*RES a,U m,O U*RES b,V*RES c,U n){I*p=a;I*r=c;i(n+7&-8,r[i]=b[i]<m?p[b[i]]: 0)}
-SN V jG(V*RES a,U m,O U*RES b,V*RES c,U n){G*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
-SN V jH(V*RES a,U m,O U*RES b,V*RES c,U n){H*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
-SN V jI(V*RES a,U m,O U*RES b,V*RES c,U n){I*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:NL)}
-SN V jv(V*RES a,U m,O U*RES b,V*RES c,U n,L v){L*p=a;L*r=c;i(n+3&-4,r[i]=b[i]<m?p[b[i]]:v)}
-SN V jL(V*RES a,U m,O U*RES b,V*RES c,U n){jv(a,m,b,c,n,NL);}
+SN V iG(V*RES a,U m,O U*RES b,V*RES c,U n){G*p=a;G*r=c;i(n,*r++=p[*b++])}
+SN V iH(V*RES a,U m,O U*RES b,V*RES c,U n){H*p=a;H*r=c;i(n,*r++=p[*b++])}
+SN V iI(V*RES a,U m,O U*RES b,V*RES c,U n){I*p=a;I*r=c;i(n,*r++=p[*b++])}
+SN V iC(V*RES a,U m,O U*RES b,V*RES c,U n){C*p=a;C*r=c;i(n+31&-32,*r++=b[i]<m?p[b[i]]:32)}
+SN V iS(V*RES a,U m,O U*RES b,V*RES c,U n){I*p=a;I*r=c;i(n+7&-8,*r++=b[i]<m?p[b[i]]: 0)}
+SN V jG(V*RES a,U m,O U*RES b,V*RES c,U n){G*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
+SN V jH(V*RES a,U m,O U*RES b,V*RES c,U n){H*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
+SN V jI(V*RES a,U m,O U*RES b,V*RES c,U n){I*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
+SN V jv(V*RES a,U m,O U*RES b,V*RES c,U n,L v){L*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:v)} SN V jL(V*RES a,U m,O U*RES b,V*RES c,U n){jv(a,m,b,c,n,NL);}
 SN V jF(V*RES a,U m,O U*RES b,V*RES c,U n){jv(a,m,b,c,n,NFL);}
 A2(i1,/*01*/P(y==GAP||y==au,xR)
  X(Rt(y(xR))RE(x=gZ(xR);x(i1(x,y)))Rm(i1(xy,N(fnd(xx,y))))
