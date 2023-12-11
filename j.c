@@ -7,8 +7,8 @@ S A0(jd,I m=*s=='-';s+=m;C c=*s++;P(!C09(c),0)F v=c-'0';W(C09(*s),v*=10;v+=*s++-
 S I ju(Q s)_(I v=0;i(4,UC c=*s++,d=c-'0';v<<=4;v|=d<10?d:(d=(c|32)-'a')<6?d+10:-1)v)
 S A0(js,UC c;C*p=++s;U n=0;W((c=*p)-'"',P(c<32,s=p;0)p++;I(c=='\\',c=*p++;P(c<32,s=p;0)n++;I(c=='u',L v=ju(p);P(v<0,s=p;0)p+=4;n+=4-(v>127)-(v>2047))))A x=aC(p-s-n);p=s;C*r=xC;
  W((c=*p++)-'"',I(c=='\\',c=*p++;I(c-'u',U j=si(ej,c);P(j>=L(ej),s=p-1;x(0))c=je[j])E(I v=ju(p);p+=4;I(v<128,c=v)J(v<2048,*r++=192|v>>6;c=128|63&v)E(*r++=224|v>>12;*r++=128|63&v>>6;c=128|63&v)))*r++=c)s=p;x)
-S A0(ja,s++;A x=oA;P(jw()==']',s++;x)W(1,PSH(x,Nx(jx()));C c=jw();P(c==']',s++;x)Nx(c==',');s++)0)
-S A0(jo,s++;A x=oS,y=oA;C c=jw();P(c=='}',s++;am(x,y))W(c=='"',A z=js();B(!z)PSH(x,cS(z));B(jw()-':')s++;z=jx();B(!z)PSH(y,z);c=jw();P(c=='}',s++;am(x,y))B(c-',')s++;c=jw())x(y(0)))
+S A0(ja,s++;A x=emp(tA);P(jw()==']',s++;x)W(1,PSH(x,Nx(jx()));C c=jw();P(c==']',s++;x)Nx(c==',');s++)0)
+S A0(jo,s++;A x=emp(tS),y=emp(tA);C c=jw();P(c=='}',s++;am(x,y))W(c=='"',A z=js();B(!z)PSH(x,cS(z));B(jw()-':')s++;z=jx();B(!z)PSH(y,z);c=jw();P(c=='}',s++;am(x,y))B(c-',')s++;c=jw())x(y(0)))
 S A jx(){C c=jw();SW(c,R3('f','n','t',c=c>>3&3;I v=*(I*)(V*)A("alse","null","true")[c]==*(I*)(V*)(s+!c);s+=(4+!c)*v;!v?0:c==1?_R(cn[tf]):au+!!c)
  R('[',ja())R('{',jo())R('"',js())R_(jd()))}
 X1(js0,RC(U n=xn;x=room(n+4,x);MS(xC+n,0,4);s=xV;A y=jx();C c=jw();I(y&&c,y=y(0))I(!y,ep0();eS(x,s-xC))x(y))Rc(js0(enl(x)))R_(et(x)))

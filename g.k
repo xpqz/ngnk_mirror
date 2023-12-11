@@ -21,7 +21,6 @@ r,:"_%(x) _@(x)[i]"e/:t
 r,:"_t@(x) (_t(x)==t@)"e/:"AEBGHILFCSMmlfopqr"
 r,:"_t@(x) (_t0(x)==t@)"e/:"iscuvwx"
 r,:"N@(r) N(r,@(0))"e/:v
-r,:"o@ _R(ce[t@])"e/:"AGCS"
 r,:{"_",x,"(x) ((A*)_V(x))[",($x-"x"),"]"}'"xyz"
 r,:{"_t",x,"(x) (_t",(-1_x),"(x)||_t",(-1#x),"(x))"}'(1<#:')#U
 r,:{"R",($x),"(x,a...) case x:R",($-1+x),"(a)"}'2+!12

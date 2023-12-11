@@ -20,7 +20,7 @@ SN A mb(U i)_(P(i>=L(b),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xU=i;x)A x=b
 
 A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+((W)n*TW[t]+7>>3);U i=59-__builtin_clzll(HD|m-1);A x=mb(i);xr=1;AT(t,AN(n,x)))
 A aV(C t,U n,O V*v)_(A x=an(n,t);MC(xV,v,(W)n*TW[t]+7>>3);x)
-A aA0(U n)_(A x=AN(0,aA(n));xx=oC;x)
+A aA0(U n)_(A x=AN(0,aA(n));xx=emp(tC);x)
 A1(aA1,A y=an(1,tA);yx=x;y)
 A2(aA2,/*11*/a2t(x,y,tA))
 A3(aA3,/*111*/A u=an(3,tA);ux=x;uy=y;uz=z;u)
@@ -41,7 +41,7 @@ A aCz(Q s)_(aCn(s,SL(s)))
 A az(L n)_(n-(I)n?al(n):ai(n))
 A al(L v)_(aV(tl,1,&v))
 A af(F v)_(aV(tf,1,&v))
-A aE(L i,L j)_(Q(i<=j)P(i==j,oG)A x=an(tE,2);*xL=i;xL[1]=j;x)
+A aE(L i,L j)_(Q(i<=j)P(i==j,emp(tG))A x=an(tE,2);*xL=i;xL[1]=j;x)
 A1(mut,XP(x)P(xr==1,x)x=x(aV(xt,xn,xV));XR(mRa(x))x)
 C tZ(L v)_(tL-((v==(G)v)+(v==(H)v)+(v==(I)v)))
 A kv(A*p)_(A x=*p;Q(xn==2);P(xr>1,--xr;*p=_R(xx);_R(xy))*p=xx;AZ(x);x(xy))
@@ -66,7 +66,7 @@ S U gd,gn;S W gk[256];A gv[256];
 S W gkk(A x/*0*/)_(Xs((U)xv)Q(xtS)xn?(W)_v(jS(drp(-1,xR)))<<32|(U)_v(ii(x,xn-1)):0)
 UC gi(A x/*0*/)_(W k=gkk(x);L l=(I)k;I(!(k>>32)&&id0(*qs(&l)),k|=(W)gd<<32)U i=fL(gk,gn,k);P(i<gn,i)P(gn>=L(gv),die("GLOBALS"))gk[gn]=k;gv[gn]=0;gn++)
 A gg(A x/*1*/)_(//get value of global
- P(xtS&&!xn,x(0);A x=oS,y=oA;i(gn,I(gv[i],L k=gk[i];PSH(x,k-(U)k?jS(aV(tS,2,A((I)(k>>32),k))):as(k));PSH(y,_R(gv[i]))))am(x,y))//special case for 0#`
+ P(xtS&&!xn,x(0);A x=emp(tS),y=emp(tA);i(gn,I(gv[i],L k=gk[i];PSH(x,k-(U)k?jS(aV(tS,2,A((I)(k>>32),k))):as(k));PSH(y,_R(gv[i]))))am(x,y))//special case for 0#`
  W k=gkk(x);x(0);U i=fL(gk,gn,k);i<gn&&gv[i]?_R(gv[i]):ev0())
 A*gp(A x/*1*/)_(UC i=gi(x);x(0);gv+i)//get pointer to global
 A gns(U k)_(I a[L(gk)];U n=0;i(gn,I(gk[i]>>32==k,a[n++]=gk[i]))aV(tS,n,a))//list namespace
@@ -92,11 +92,13 @@ V repl(){W(rep())}
 L k(Q s)_(A x=N(evs(s,0));mc();Xz(gl(x))x(0))
 V kf(Q s,A2 f){d8(A(sym(s),au,av,AT(tx,(A)f)),4);}
 
-A cns,ce[tn],cn[tn];Q*argv,*env;
-V kinit(){S B l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);A b[32],*c=b;i(tS-tA+1,*c++=ce[tA+i]=an(0,tA+i))*c++=ce[tm]=am(oS,oA);_x(ce[tA])=_R(ce[tC]);
- cn[tA]=ce[tC];*c++=cn[ti]=cn[tl]=al(NL);i(tL-tE+1,cn[tE+i]=cn[ti])*c++=cn[tF]=cn[tf]=af(NF);cn[tC]=cn[tc]=ac(32);cn[tS]=cn[ts]=as(0);i(tn-to,cn[to+i]=au)
+A cns,cn[tn];S A ce[tn];Q*argv,*env;
+V kinit(){S B l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);A b[32],*c=b;
+ i(tS-tA+1,*c++=ce[tA+i]=an(0,tA+i))*c++=ce[tm]=am(emp(tS),emp(tA));_x(ce[tA])=_R(ce[tC]);ce[tM]=ce[tA];i(tn-ti,Q(!ce[i+ti]);ce[i+ti]=ce[tA])//empties
+ cn[tA]=ce[tC];*c++=cn[ti]=cn[tl]=al(NL);i(tL-tE+1,cn[tE+i]=cn[ti])*c++=cn[tF]=cn[tf]=af(NF);cn[tC]=cn[tc]=ac(32);cn[tS]=cn[ts]=as(0);i(tn-to,cn[to+i]=au)//nulls
  Q(c-b<=32);cns=aV(tA,c-b,b);}
-V kargs(I n,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=MAX(0,n-2);A x=n?aA(n):oA;i(n,xa=aCz(a[2+i]))gk[gn]='x';gv[gn++]=x;}
+V kargs(I n,Q*a){argv=(Q*)a;env=(Q*)a+n+1;n=MAX(0,n-2);A x=n?aA(n):emp(tA);i(n,xa=aCz(a[2+i]))gk[gn]='x';gv[gn++]=x;}
+A emp(U t)_(_R(ce[t]))
 
 SN U ow(Q s,U n)_(write(1,s,n))
 SN V o8(W v){C b[16],*s=b;i(16,C c=v>>4*(15-i)&15;*s++="0W"[9<c]+c)ow(b,16);}

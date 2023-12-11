@@ -538,10 +538,6 @@
 #define Ny(r) N(r,y(0))
 #define Nz(r) N(r,z(0))
 #define Nu(r) N(r,u(0))
-#define oA _R(ce[tA])
-#define oG _R(ce[tG])
-#define oC _R(ce[tC])
-#define oS _R(ce[tS])
 #define _x(x) ((A*)_V(x))[0]
 #define _y(x) ((A*)_V(x))[1]
 #define _z(x) ((A*)_V(x))[2]

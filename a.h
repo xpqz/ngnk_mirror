@@ -75,7 +75,7 @@ A3 _2,aA3,arf,arp,ars,cpl,e2,r2,try;
 A4 ara,a4,d4;
 AX _8,e8,f8,prj,run;
 AA a8,d8,ins,no8;
-TD A TAU(U);TAU aA0,aA,aB,aG,aC,aF,aI,aL,aS,gns;
+TD A TAU(U);TAU aA0,aA,aB,aG,aC,aF,aI,aL,aS,gns,emp;
 TD A TAL(L);TAL al,az,cls,rndF;
 TD A TALA(L,A);TALA drp,rnd,rsz;
 TD A TAQ(Q);TAQ aCz,bsl,bsm,die,sym;
@@ -92,7 +92,7 @@ L cfm(O A*,I),gl_(A),gl(A),iw(A,U,L),now(),pl(Q*),maxfZ(L,A),minfZ(L,A),addfZ(L,
 Q qs(O L*),pID(Q);
 W pu(Q*);
 F gf(A);
-EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,ce[],cn[],ci[2][5];EX I pg;EX TY(O C[])vc,TS,Tw,TW,TT,TX,Tk;EX Q*argv,*env,HEX;
+EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(O C[])vc,TS,Tw,TW,TT,TX,Tk;EX Q*argv,*env,HEX;
 
 //                   0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 //                     () !i ,1 ,i ,i ,i ,i ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
