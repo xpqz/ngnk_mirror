@@ -53,7 +53,7 @@ S A3(cmpp,/*010*/I o=x-LTN,w=zw;U n=zn;A u=aG(n);L v=gl(y),p=iw(z,w,0);*uG=!o?p<
       i4(w,m,uG[j]=zG[j]==zG[j-1];j--,uG[j]=zH[j]==zH[j-1];j--,uG[j]=zI[j]==zI[j-1];j--,uG[j]=zL[j]==zL[j-1];j--),)u)
 A3(arp,/*010*/Q(xtv)Q(xv<11)Q(ytzc)Q(ztZC)
  ZE(z=gZ(zR);z(arp(x,y,z)))
- ZB(z=cB(zR);z(arp(x,y,z)))
+ ZB(z=cG(zR);z(arp(x,y,z)))
  A(&dexp,___p,___p,___p,___p,modp,mnmp,mxmp,cmpp,cmpp,cmpp)[xv](x,y,z))
 
 S C tZx(A x)_(C t=TX[xt];t?t:tZ(gl_(x)))
