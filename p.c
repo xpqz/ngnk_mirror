@@ -42,13 +42,13 @@ S A pt(C*v)_(C c=*s;                                                            
  P(c=='(',s++;P(*s==')',s++;oA)A x=N(pb(MKL,')'));xn-2?x:las(x))
  P(c=='{',C k0=k;k=1;Q s1=s0,t=s0=s++;A y=N(pp()),z=pb(GAP,'}');P(!z,s0=s1;y(0))I(y==au,y=aS(k);i(3,yi='x'+i))A x=N(cpl(aCn(t,s-t),z,y));s0=s1;k=k0;x)
  P(id0(c),Q p=s;A x=pP();I(s-p==1&&c-'y'<2u,k=MAX(k,c-'w'))AO(p-s0,x))
- P(C09(c)&&s[1]==':',I u=s[2]==':';s+=2+u;I i=20+c-'0';P(i>25,ep0())*v=1;Lt(tv-u)|i)
+ P(C09(c)&&s[1]==':',B u=s[2]==':';s+=2+u;U i=20+c-'0';P(i>25,ep0())*v=1;Lt(tv-u)|i)
  P(c=='0'&&s[1]=='x',s+=2;p1(p0x()))
  P(num(s)&&(c-'-'||s==s0||(!id1(s[-1])&&!strchr(")]}\"",s[-1]))),
-  L d=0;Q p=s;c=*p;W(1,p=pw(p);B(!num(p))p+=*p=='-';c=*p;B(!CA9(c))W(CA9(c)||c=='.'||c==':',d|=!!strchr(".nwef",c);c=*++p))p1(d?pF():pZ()))
+  B d=0;Q p=s;c=*p;W(1,p=pw(p);B(!num(p))p+=*p=='-';c=*p;B(!CA9(c))W(CA9(c)||c=='.'||c==':',d|=!!strchr(".nwef",c);c=*++p))p1(d?pF():pZ()))
  P(c>>7,Q p=s;A x=pP();*v=1;AO(p-s0,x))
- U i=si("'/\\",c);P(i<3,c=*++s;I h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,GAP)
- I u=*++s==':';s+=u;*v=1;Lt(tv-u)|i)
+ U i=si("'/\\",c);P(i<3,c=*++s;B h=c==':';s+=h;*v=1;aw+i+3*h)i=si(vc,c);P(i>19,GAP)
+ B u=*++s==':';s+=u;*v=1;Lt(tv-u)|i)
 S X1(pm,                                                                                            //monadify
  Rv(x^au^av)
  RA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x)
