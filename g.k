@@ -7,7 +7,7 @@ t:"AGHILFC" /some types
 T:t,"BESMmilfscopqruvwx" /all types
 U:T,"UPRtTzZ",$`cC`lL`fF`sS`zZ`mM`mt`MT`zf`ZF`zc`ZC`zfc`ZFC`mMA`sSA`SA /types and pseudotypes
 
-c:{+x@'!#'x} /cartesian product
+c:+!: /cartesian product
 e:,/{$[x~"@";*y;x~"$";y 1;x~"%";_*y;x]}\: /expand @:arg[0],$:arg[1],%:lower(arg[0])
 
 r:()
