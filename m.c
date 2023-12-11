@@ -12,11 +12,11 @@ S V*mm(U n,U f)_(V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP
 A mf(U f,U i,U n)_(V*p=mm(pg+n,1);P(!p,eo0())A x=(A)p+pg;xn=n;AT(tC,x);P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
 
 S A b[24];DBG(S U lck;)
+S W cap(A x/*0*/)_((HD<<xU)-HD)//chunk capacity in bytes
 A1(m0,DBG(lck++;)Q(x)XP(0)Q(xr>0)P(--xr,0)U i=xU;P(!i,mu(xV-pg))xX=b[i];b[i]=x;XR(mrn(xn|!xn,xA);x)x)
-DBG(A1(m1,lck--;P(!x||!xU,0)MS(xV,0xab,xZ);AN(-1,AT(0,x));0))
+DBG(A1(m1,lck--;P(!x||!xU,0)MS(xV,0xab,cap(x));AN(-1,AT(0,x));0))
 A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)A1(mr,DBG(m1)(m0(x)))V mRn(U n,O A*a){i(n,_R(a[i]))}V mrn(U n,O A*a){i(n,mr(a[i]))}A1(mRa,mRn(xn,xA);x)
 SN A mb(U i)_(P(i>=L(b),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xU=i;x)A x=b[i];P(x,b[i]=xX;xX=0;x)x=mb(i+1);xU=i;A y=x+(HD<<i);yU=i;AT(0,y);yr=0;yX=b[i];b[i]=y;x)
-SN W cap(A x/*0*/)_((HD<<xU)-HD)//chunk capacity in bytes
 
 A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+((W)n*TW[t]+7>>3);U i=59-__builtin_clzll(HD|m-1);A x=mb(i);xr=1;AT(t,AN(n,x)))
 A aV(C t,U n,O V*v)_(A x=an(n,t);MC(xV,v,(W)n*TW[t]+7>>3);x)
