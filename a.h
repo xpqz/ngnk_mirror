@@ -75,13 +75,13 @@ A3 _2,aA3,arf,arp,ars,cpl,e2,r2,try;
 A4 ara,a4,d4;
 AX _8,e8,f8,prj,run;
 AA a8,d8,ins,no8;
-TD A TAU(U);TAU aA,aB,aG,aC,aF,aI,aL,aS;
+TD A TAU(U);TAU aA0,aA,aB,aG,aC,aF,aI,aL,aS,gns;
 TD A TAL(L);TAL al,az,cls,rndF;
 TD A TALA(L,A);TALA drp,rnd,rsz;
 TD A TAQ(Q);TAQ aCz,bsl,bsm,die,sym;
-A room(U,A),ii(A,U),io(A,L),a2t(A,A,C),aA0(U),aE(L,L),af(F),aCm(Q,Q),aCn(Q,U),apc(A,C),apv(A,O V*),an(U,C),aV(C,U,O V*),cts(A,Q,U),e1f(A1,A),e2f(A2,A,A),err0(Q),evs(Q,B),
+A room(U,A),ii(A,U),io(A,L),a2t(A,A,C),aE(L,L),af(F),aCm(Q,Q),aCn(Q,U),apc(A,C),apv(A,O V*),an(U,C),aV(C,U,O V*),cts(A,Q,U),e1f(A1,A),e2f(A2,A,A),err0(Q),evs(Q,B),
  k1(A*,Q,A),k2(A*,Q,A,A),k8(A*,Q,O A*,U),jc(C,A),jC(Q,U,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(U,U,U),pk(Q*,C),pen(A,A1*),slc(A,U,U),unhC(Q,U),wdn(A,U,U,U),
- AT(W,A),AV(W,A),AW(C,A),AK(C,A),AO(UC,A),AN(U,A),w1(U,A,A),w2(U,A,A,A),w8(U,A,O A*,U),gns(U),*gp(A);
+ AT(W,A),AV(W,A),AW(C,A),AK(C,A),AO(UC,A),AN(U,A),w1(U,A,A),w2(U,A,A,A),w8(U,A,O A*,U),*gp(A);
 V cyc(V*,U,U),eS(A,U),eQ(Q,U,U),exit(I),hexC(Q,U,C*),kargs(I,Q*),kinit(),*memmem(O V*,N,O V*,N),mrn(U,O A*),mRn(U,O A*),repl(),tilV(V*,L,L,U);
 B id0(UC),mtc_(A,A),tru(A);
 C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);
