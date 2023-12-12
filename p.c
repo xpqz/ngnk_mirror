@@ -20,7 +20,7 @@ S A pV(C t,TY(pl)*f)_(L a[1<<9];U n=0;                                          
  W(1,L v=f(&s);P(n>=L(a),ez0())a[n++]=v;Q p=pw(s);B(p==s||!num(p))s=p)aV(t,n,a))
 S A0(pZ,Q p=s;W(*p-'0'<2u,p++)                                                                      //parse ints
  P(*p=='B',Q t=s;s=p+1;cB(aV(tG,p-t,t)))//todo
- P(*p=='b',A x=aG(p-s);i(xn,xg=*s++&1)s++;x)
+ P(*p=='b',Q t=s;s=p+1;cG(cB(aV(tG,p-t,t))))
  sqzZ(N(pV(tL,plN))))
 S A0(pF,pV(tF,pf))                                                                                  //parse floats
 S A0(pC,C a[1<<9];U n=0;C c=*++s;                                                                   //parse "string"
