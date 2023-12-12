@@ -88,8 +88,8 @@ B rep()_(S C b[256];C*s=b,*q;
      P(q,C*p=b;W(q,*q=0;evs(p,1);p=q+1;q=memchr(p,10,s-p))MC(b,p,s-p);s+=b-p;1)
      P(b+SZ b<=s,die("LONGLINE")))1)
 V repl(){W(rep())}
-L k(Q s)_(A x=N(evs(s,0));mc();Xz(gl(x))x(0))
-V kf(Q s,A2 f){d8(A(sym(s),au,av,AT(tx,(A)f)),4);}
+//L k(Q s)_(A x=N(evs(s,0));mc();Xz(gl(x))x(0))
+//V kf(Q s,A2 f){d8(A(sym(s),au,av,AT(tx,(A)f)),4);}
 
 A cns,cn[tn];S A ce[tn];Q*argv,*env;
 V kinit(){S B l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);A b[32],*c=b;
