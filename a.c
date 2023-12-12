@@ -16,20 +16,28 @@ SN V iH(ambcn){O H*p=a;H*r=c;i(n,*r++=p[*b++])}
 SN V iI(ambcn){O I*p=a;I*r=c;i(n,*r++=p[*b++])}
 SN V iC(ambcn){O C*p=a;C*r=c;i(n+31&-32,*r++=b[i]<m?p[b[i]]:32)}
 SN V iS(ambcn){O I*p=a;I*r=c;i(n+7&-8,*r++=b[i]<m?p[b[i]]: 0)}
-SN V jG(ambcn){O G*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
-SN V jH(ambcn){O H*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
-SN V jI(ambcn){O I*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
-SN V jv(ambcn,L v){O L*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:v)}
-SN V jL(ambcn){jv(a,m,b,c,n,NL);}
-SN V jF(ambcn){jv(a,m,b,c,n,NFL);}
+SN V oG(ambcn){O G*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
+SN V oH(ambcn){O H*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
+SN V oI(ambcn){O I*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
+SN V o8(ambcn,L v){O L*p=a;L*r=c;i(n+3&-4,*r++=b[i]<m?p[b[i]]:v)}
+SN V oL(ambcn){o8(a,m,b,c,n,NL);}
+SN V oF(ambcn){o8(a,m,b,c,n,NFL);}
 A2(i1,/*01*/P(y==GAP||y==au,xR)
- X(Rt(y(xR))RE(x=gZ(xR);x(i1(x,y)))Rm(i1(xy,N(fnd(xx,y))))
-  RM(Y(RsS(x=flp(xR);x(i1(x,y)))RA(r2(AP1,x,y))RmM(A z=kv(&y);am(y,Ny(i1(x,z))))R_(B d=ytmt;y=N(l2f(i1,xy,y));(d?am:aM)(_R(xx),y)))0))
- Y(Rilc(io(x,gl(y)))RmM(A z=kv(&y);am(y,Ny(i1(x,z))))RA(r2(AP1,x,y))RE(L i=*yL,j=yL[1];P(0<=i&&i<j&&j<xN,y(0);slc(x,i,j))i1(x,gZ(y)))R3(tG,tH,tC,i1(x,cI(y)))R_(et(y))
-  RB(i1(x,cG(y)))
-  RL(U m=xn;A z=aI(yn);My(i(yn+3&-4,L v=yl;zi=v|-(v!=(I)v)))i1(x,z))
-  RI(U n=yn;XA(A z=aA(n);i(n|!n,za=io(x,yi))y(0);I(!zn,zx=mkn(zx))sqz(z))XB(x=cG(xR);x(i1(x,y)))
-   C t=xt;U k=t-tG<3u&&maxfU(yV,yn)>=xn;A z=an(n,k?tL:t);My(G(&iG,iH,iI,jL,jF,iC,iS,jG,jH,jI)[7*k+t-tG](xV,xn,yV,zV,n))z))0)
+ X(Rt(y(xR))
+   RE(x=gZ(xR);x(i1(x,y)))
+   Rm(i1(xy,N(fnd(xx,y))))
+   RM(Y(RsS(x=flp(xR);x(i1(x,y)))RA(r2(AP1,x,y))RmM(A z=kv(&y);am(y,Ny(i1(x,z))))R_(B d=ytmt;y=N(l2f(i1,xy,y));(d?am:aM)(_R(xx),y)))0)
+   R_(Y(Rilc(io(x,gl(y)))
+        RmM(A z=kv(&y);am(y,Ny(i1(x,z))))
+        RA(r2(AP1,x,y))
+        RE(L i=*yL,j=yL[1];P(0<=i&&i<j&&j<xN,y(0);slc(x,i,j))i1(x,gZ(y)))
+        R4(tB,tG,tH,tC,i1(x,cI(y)))
+        R_(et(y))
+        RL(U m=xn;A z=aI(yn);My(i(yn+3&-4,L v=yl;zi=v|-(v!=(I)v)))i1(x,z))
+        RI(U n=yn;
+         X(RA(A z=aA(n);i(n|!n,za=io(x,yi))y(0);I(!zn,zx=mkn(zx))sqz(z))
+           RB(x=cG(xR);x(i1(x,y)))
+           R_(C t=xt;B k=t-tG<3u&&maxfU(yV,yn)>=xn;A z=an(n,k?tL:t);My(G(&iG,iH,iI,oL,oF,iC,iS,oG,oH,oI)[7*k+t-tG](xV,xn,yV,zV,n))z))0))0))0)
 S A3(i2,/*001*/C b=ytT||y==GAP||y==au;x=Nz(i1(x,yR));P(!b,x(x1(z)))x(l2f(dot,x,aA1(z))))
 S AX(i8,A y=*a;P(n==1,i1(x,y))P(n==2,y(_2(x,y,a[1])))a++;n--;C b=ytT||y==GAP||y==au;x=i1(x,y);P(!x,mrn(n,a);x)P(!b,x(i8(x,a,n)))x(l2f(dot,x,aV(tA,n,a))))
 L iw(A x/*0*/,U w,L i)_(S4(w,_(xg),_(xh),_(xi),_(xl))0)
