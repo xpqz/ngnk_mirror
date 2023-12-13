@@ -20,7 +20,7 @@ SN A mb(U i)_(P(i>=L(b),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xU=i;x)A x=b
 
 A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+(((W)n<<Tw[t])+7>>3);U i=59-CLZ(HD|m-1);A x=mb(i);xr=1;AT(t,AN(n,x)))
 A aV(C t,U n,O V*v)_(A x=an(n,t);MC(xV,v,((W)n<<Tw[t])+7>>3);x)
-A room(U n,A x)_(P(xr==1&&((W)n<<xw)+7>>3<=cap(x),AN(n,x))A y=an(n,xt);MC(yV,xV,((W)xn<<Tw[xt])+7>>3);I(ytR,I(xr==1,AZ(x))E(i(xn,_R(ya))))x(y))
+A aa(U n,A x/*1*/)_(P(xr==1&&((W)n<<xw)+7>>3<=cap(x),AN(n,x))A y=an(n,xt);MC(yV,xV,((W)xn<<Tw[xt])+7>>3);I(ytR,I(xr==1,AZ(x))E(i(xn,_R(ya))))x(y))//reallocate, make room for n items
 A aA0(U n)_(A x=AN(0,aA(n));xx=emp(tC);x)
 A1(aA1,A y=an(1,tA);yx=x;y)
 A2(aA2,/*11*/a2t(x,y,tA))

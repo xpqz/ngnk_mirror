@@ -28,7 +28,7 @@ C*sf(C*s,L d)_(W x=d,m=x<<12>>12;I e=x<<1>>53;I(x>>63,*s++='-')P(e==2047,P(!m,MC
  E(C d=0;W((v/=10)>(w/=10),d=dm(&u);t++)u+=u==w||d>=5)
  s++;I l=su(s,u)-s-1;s[-1]=*s;t+=l;P(t<16u,I k=l<t?l:t;memmove(s,s+1,k);MS(s+l,'0',MAX(0,t-l));s+=t;*s++='.';s+=l-k;I(t>=l,*s++='0')s)
  P(-4<t&&t<0,i(l+1,s[l-t-i]=s[l-i])s[-1]='0';*s++='.';MS(s,'0',-t-1)+l-t)I(l>0,*s++='.';s+=l)*s++='e';I(t<0,t=-t;*s++='-')su(s,t))
-A1(str0,Q(xtC);N n=xn;x=AN(n,room(n+1,x));xC[n]=0;x)
+A1(str0,Q(xtC);N n=xn;x=AN(n,aa(n+1,x));xC[n]=0;x)
 X1(str,Rilf(A y=aC(24);TY(sf)*f=xtf?sf:sl;AN(f(yC,gl(x))-yC,y))Rs(L v=xv;aCz(qs(&v)))Rc(enl(x))RU(kst(x))R_(e1f(str,x)))
 V hexC(Q s,U n,C*r){S Q q="0123456789abcdef";i(n,C c=*s++;*r++=q[(UC)c>>4];*r++=q[c&15])}
 X1(hex,RmMA(e1f(hex,x))RC(A y=aC(2*xn);Mx(hexC(xV,xn,yV))y)R_(et(x)))

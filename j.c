@@ -11,7 +11,7 @@ S A0(ja,s++;A x=emp(tA);P(jw()==']',s++;x)W(1,PSH(x,Nx(jx()));C c=jw();P(c==']',
 S A0(jo,s++;A x=emp(tS),y=emp(tA);C c=jw();P(c=='}',s++;am(x,y))W(c=='"',A z=js();B(!z)PSH(x,cS(z));B(jw()-':')s++;z=jx();B(!z)PSH(y,z);c=jw();P(c=='}',s++;am(x,y))B(c-',')s++;c=jw())x(y(0)))
 S A jx(){C c=jw();SW(c,R3('f','n','t',c=c>>3&3;I v=*(I*)(V*)A("alse","null","true")[c]==*(I*)(V*)(s+!c);s+=(4+!c)*v;!v?0:c==1?_R(cn[tf]):au+!!c)
  R('[',ja())R('{',jo())R('"',js())R_(jd()))}
-X1(js0,RC(U n=xn;x=room(n+4,x);MS(xC+n,0,4);s=xV;A y=jx();C c=jw();I(y&&c,y=y(0))I(!y,ep0();eS(x,s-xC))x(y))Rc(js0(enl(x)))R_(et(x)))
+X1(js0,RC(U n=xn;x=aa(n+4,x);MS(xC+n,0,4);s=xV;A y=jx();C c=jw();I(y&&c,y=y(0))I(!y,ep0();eS(x,s-xC))x(y))Rc(js0(enl(x)))R_(et(x)))
 
 S V JX(A);S U nX(A);S UC t[256];SN V it(){MS(t,5,32);t[127]=5;i(L(je),t[je[i]]=1)}
 S U nC(Q p,U n)_(U m=2+n;i(n,m+=t[(UC)p[i]])m)
