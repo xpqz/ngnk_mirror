@@ -600,6 +600,7 @@
 #define REGHIL(a...) R5(tE,tG,tH,tI,tL,a)
 #define RBGHIL(a...) R5(tB,tG,tH,tI,tL,a)
 #define REBGHIL(a...) R6(tE,tB,tG,tH,tI,tL,a)
+#define REBGHILC(a...) R7(tE,tB,tG,tH,tI,tL,tC,a)
 #define REGHILC(a...) R6(tE,tG,tH,tI,tL,tC,a)
 #define REGHILF(a...) R6(tE,tG,tH,tI,tL,tF,a)
 #define RfF(a...) R2(tf,tF,a)
