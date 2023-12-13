@@ -43,9 +43,6 @@
 #define M2(x) M1(x)
 #define EX extern
 #define Q(x) DBG(I(!(x),die(__FILE__":"M2(__LINE__)": "#x)))//assert
-#define MS __builtin_memset
-#define MC __builtin_memcpy
-#define SL __builtin_strlen
 #define MIN(x,y) ({TY(x) x_=(x),y_=(y);x_<y_?x_:y_;})
 #define MAX(x,y) ({TY(x) x_=(x),y_=(y);x_>y_?x_:y_;})
 #define LH(x,y,z) ((y)-(x)<=(U)((z)-(x)))//between(low,high)
@@ -55,8 +52,11 @@
 #define S4(i,a,b,c,d) SW(i,C(0,a)C(1,b)C(2,c)D(d))
 #define Ab8 A b[8];
 #define Lij L i=*xL,j=xL[1];
-#define AL(x) __builtin_assume_aligned(x,32)
 #define PSH(x,y) ((x)=psh(x,y))
+#define MS    __builtin_memset
+#define MC    __builtin_memcpy
+#define SL    __builtin_strlen
+#define AL(x) __builtin_assume_aligned(x,32)
 
 TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
 TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(O A*,U),AX(A,O A*,U);
@@ -107,16 +107,16 @@ enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,
 #define TU(t) ((t)>=to)
 
 //header bytes: U...mmmm XXXXXXXX ....OEkt rrrrnnnn
-#define _U(x) (*(UC*)((x)-32))//bucket index
-#define _m(x) (*(U *)((x)-28))//shadow refcount(for debugging)
-#define _X(x) (*(A *)((x)-24))//ptr to next chunk in bucket
-#define _O(x) (*(UC*)((x)-12))//scroffset(for symbol lists)
-#define _E(x) (*(UC*)((x)-11))//adverb(for tr)
-#define _k(x) (*(UC*)((x)-10))//arity(for funcs)
-#define _T(x) (*(UC*)((x)- 9))//type(hdr)
-#define _r(x) (*(U *)((x)- 8))//refcount
-#define _n(x) (*(U *)((x)- 4))//length
 #define _V(x) ((V*)(x))       //pointer to data
+#define _n(x) (*(U *)((x)- 4))//length
+#define _r(x) (*(U *)((x)- 8))//refcount
+#define _T(x) (*(UC*)((x)- 9))//type(hdr)
+#define _k(x) (*(UC*)((x)-10))//arity(for funcs)
+#define _E(x) (*(UC*)((x)-11))//adverb(for tr)
+#define _O(x) (*(UC*)((x)-12))//scroffset(for symbol lists)
+#define _X(x) (*(A *)((x)-24))//ptr to next chunk in bucket
+#define _m(x) (*(U *)((x)-28))//shadow refcount(for debugging)
+#define _U(x) (*(UC*)((x)-32))//bucket index
 
 //tagged value bits (t=type,v=value,o=srcoffset,k=arity,x=ptr):
 // tttttttt........................vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv tc,ti,tu,tv,tw
