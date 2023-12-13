@@ -10,12 +10,12 @@ V tilV(V*p,L v,L n,U w){L*a=p,k=G(0x101010101010101ll,0x1000100010001ll,1ll<<32|
 X1(til,RA(K1("{x@'!#'x}",x))Ril(L n=gl(x);n*=n!=-n;aE(MIN(0,n),MAX(0,n)))REBGHIL(K1("{(*a)#'&'x#'1_a:|*\\|x,1}",x))RmM(x(_R(xx)))Ro(val(x))RS(gns(_v(jS(x))))Rs(gns(xv))R_(et(x)))
 X1(whr,Ril(whr(enl(x)))RA(K1("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Rm(A y=kv(&x);x(x1(Nx(whr(y)))))RE(whr(gZ(x)))R_(et(x))
  RB(U m=xn,n=addfB(xV,m);A y=aI(n);I*r=yV;Mx(i(m+7>>3,C v=xg;W(v,U j=__builtin_ctz(v);v&=~(1<<j);*r++=i<<3|j)))Q(r-yI==n);y)
- RGHIL(L m=xn,n=addfZ(0,x);P(n<0||minfZ(0,x)<0,ed(x))C t=tZ(m-!!m);P(t>tI,ez(x))A y=an(n,t);I w=xw;
+ RGHIL(L m=xn,n=addfZ(0,x);P(n<0||minfZ(0,x)<0,ed(x))C t=tZ(m-!!m);P(t>tI,ez(x))A y=an(n,t);I w=xw-3;
   Mx(S4(t-tG,{G*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},
              {H*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},
              {I*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},))y))
 X1(rev,Rm(A y=kv(&x);am(rev(x),rev(y)))RM(A y=kv(&x);aM(x,e1f(rev,y)))Rt(x)RE(rev(gZ(x)))RB(cB(rev(cG(x))))
- R_(P(xn<2,x)x=mut(x);U n=xn;I w=xw;S4(w,i(n>>1,SWP(xg,xG[n-1-i])),i(n>>1,SWP(xh,xH[n-1-i])),i(n>>1,SWP(xi,xI[n-1-i])),i(n>>1,SWP(xl,xL[n-1-i])))x))
+ R_(P(xn<2,x)x=mut(x);U n=xn;I w=xw-3;S4(w,i(n>>1,SWP(xg,xG[n-1-i])),i(n>>1,SWP(xh,xH[n-1-i])),i(n>>1,SWP(xi,xI[n-1-i])),i(n>>1,SWP(xl,xL[n-1-i])))x))
 A1(typ,x(as(TS[xt])))
 A1(len,x(az(xN)))
 U _N(A x/*0*/){X(RE(Lij j-i)RT_E(xn)Rm(_N(xy))RM(_N(_x(xy)))R_(1))}
@@ -27,4 +27,4 @@ X2(crt,Rt(fil(x,y))R_(en(y))
 B tru(A x/*1*/)_(B v=xtU?x!=au:xtt?!!gl_(x):!!xN;x(0);v)
 X1(imx,RGHILC(imn(inv(x)))RF(imx(of1(x)))RE(Lij x(0);az(j-i?j-i-1:NL))R_(fir(N(dsc(x)))))
 X1(imn,RF(imn(of1(x)))RE(Lij x(0);az(NL*(i==j)))R_(fir(N(asc(x))))
- RGHILC(N n=xn;L j=n?0:NL;S4(xw,{G v=*xG;i(n,I(xg<v,v=xg;j=i))},{H v=*xH;i(n,I(xh<v,v=xh;j=i))},{I v=*xI;i(n,I(xi<v,v=xi;j=i))},{L v=*xL;i(n,I(xl<v,v=xl;j=i))})x(az(j))))
+ RGHILC(N n=xn;L j=n?0:NL;S4(xw-3,{G v=*xG;i(n,I(xg<v,v=xg;j=i))},{H v=*xH;i(n,I(xh<v,v=xh;j=i))},{I v=*xI;i(n,I(xi<v,v=xi;j=i))},{L v=*xL;i(n,I(xl<v,v=xl;j=i))})x(az(j))))

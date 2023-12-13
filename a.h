@@ -128,13 +128,13 @@ enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,
 #define _t(x) ({A x_=(x);UC t=_t0(x_);t?t:_T(x_);})//type
 #define _tU(x) TU(_t(x))      // func?
 #define _tP(x) TP(_t(x))      // packed?
-#define _tR(x) (_w(x)==4)     // ref?
+#define _tR(x) (_w(x)==7)     // ref?
 #define _tT(x) (_t(x)<tM)     // list?
 #define _tZ(x) LH(tE,_t(x),tL)// intlist?
 #define _tt(x) (_t(x)>tm)     // atom?
 #define _tz(x) LH(ti,_t(x),tl)// intatom?
 #define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:_O(x))//srcoffset(for symbols and symbol lists)
-#define _w(x) (Tw[_t(x)]-3)   //log2(type width in bytes)
+#define _w(x) Tw[_t(x)]       //log2(type width in bits)
 #define _W(x) (TW[_t(x)]>>3)  //type width in bytes
 #define _q(x,y) PSH(x,y)      //append (todo)
 #define M_(x,a...) {DBG(A t_=)m0(x);a;DBG(x=0;m1(t_));}//two-phase free()

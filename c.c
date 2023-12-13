@@ -25,6 +25,6 @@ X1(sqzZ,/*RG(i(xn,P(xg&-2,x))cB(x))*/RH(i(xn,P(xh-(G)xh,x))sqzZ(cG(x)))RI(i(xn,P
 A1(sqz,P(!xtA,x)U n=xn;A y=xx;C t=yt;P(ytMT||ytU,x)
  I(ytz,P(!n,x(emp(tG)))I l=0;i(n,A y=xa;I(ytl,l=1)E(P(!yti,x)))I(l,t=tL)E(I a=0;i(n,A y=xa;a=MIN(a,MIN(yv,~yv)))t=tZ(a)))E(i(n,P(t-_t(xa),x)))
  Ym(i(n,P(!mtc_(yx,_x(xa)),x))y=aM(_R(yx),e1f(rs0,_R(yy)));i(n,PSH(y,_R(xa)))x(y))
- y=an(n,TT[t]);I v=yw;I(v<3,G(&cGL,cHL,cIL)[v](yV,xV,n))E(i(n,yl=gl_(xa)))x(y))
+ y=an(n,TT[t]);I v=yw-3;I(v<3,G(&cGL,cHL,cIL)[v](yV,xV,n))E(i(n,yl=gl_(xa)))x(y))
 X1(blw,RA(x)Rt(aA1(x))Rm(et(x))R_(U n=xN;A y=aA(n);i(n|!n,ya=ii(x,i))x(0);I(!n,yx=mkn(yx))y))
 A1(gZ,Lij x(0);P(i<0,x=az(i);x(add(x,gZ(aE(0,j-i)))))C t=MAX(tZ(i),tZ(j-1));x=an(j-i,t);tilV(xV,i,j-i,t-tG);x)

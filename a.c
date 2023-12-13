@@ -69,7 +69,7 @@ S A set(A x,L i,A y/*1i1*/)_(Q(xr==1);
  X(RA(A z=xa;xa=z(y);ytt&&!ytU?sqz(x):x)
    RM(A z=kv(&x);z=mut(z);Q(ztA);I(ytT&&yN-zn,x(y(el(z))))I j=i;i(zn,za=set(mut(za),j,ii(y,i));P(!za,za=au;x(y(z(0)))))y(aM(x,z)))
    RB(set(cG(x),i,y))
-   R_(P(knd(x)-knd(y)-tC+tc,set(blw(x),i,y))I(xtZ,N(sup(&x,&y)))C w=xw;!w?xg=yv:w==1?xh=yv:w==2?xi=yv:(xl=gl(y));x))0)
+   R_(P(knd(x)-knd(y)-tC+tc,set(blw(x),i,y))I(xtZ,N(sup(&x,&y)))C w=xw-3;!w?xg=yv:w==1?xh=yv:w==2?xi=yv:(xl=gl(y));x))0)
 AA(a8,/*10..0*/A x=*a,y=a[1];X(
  RE(Ab8;*b=gZ(x);MC(b+1,a+1,n-1<<3);a8(b,n))
  RT_E(P(y==au,mRn(n-2,a+2);Ab8;*b=a[2];b[1]=x;MC(b+2,a+3,n-3<<3);e8(AP1,b,n-1))
