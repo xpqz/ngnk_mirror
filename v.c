@@ -3,7 +3,7 @@ X1(flp,Rt(enl(enl(x)))R_(enl(x))RM(A y=kv(&x);am(x,y))RB(flp(cG(x)))
  Rm(A y=kv(&x);Y(RA(I(yn>1,L n=cfm(yA,yn);P(n<0,x(el(y)))i(yn,A z=ya;I(ztt,y=mut(y);ya=rsz(n,z))))aM(x,y))RT_A(aM(x,e1f(enl,y)))R_(x(en(y))))0)
  RA(U m=xn;L n=cfm(xA,m|!m);P(n==-1,enl(x))P(n<0,el(x))C t=_t(xx);I(t<tM&&t-tE,i(m,A y=xa;B(yt-t,t=0)))E(t=0)A y=aA(n);
   P(!t,i(n|!n,A z=aA(m);j(m,zA[j]=ii(xA[j],i))I(!zn,zx=mkn(zx))ya=sqz(z))x(0);I(!yn,yx=mkn(yx))y)
-  U w=Tw[t]-3;j(n|!n,A z=yA[j]=an(m,t);S4(w,i(m,zg=_G(xa)[j]),i(m,zh=_H(xa)[j]),i(m,zi=_I(xa)[j]),i(m|!m,zl=_L(xa)[j])I(w==4,I(!m,zx=mkn(_R(zx)))yA[j]=sqz(mRa(z)))))
+  U w=Tw[t]-3;j(n|!n,A z=yA[j]=an(m,t);S4(w,i(m,zg=_G(xa)[j]),i(m,zh=_H(xa)[j]),i(m,zi=_I(xa)[j]),i(m|!m,zl=_L(xa)[j])I(TR(t),I(!m,zx=mkn(_R(zx)))yA[j]=sqz(mRa(z)))))
   x(0);I(!n,yx=mkn(yx))y))
 V tilV(V*p,L v,L n,U w){L*a=p,k=G(0x101010101010101ll,0x1000100010001ll,1ll<<32|1,1)[w],d=k<<3-w;v*=k;v+=G(0x706050403020100ll,0x3000200010000ll,1ll<<32,0)[w];
  i((n-1>>3-w)+4&-4,a[i]=v;v+=d)}

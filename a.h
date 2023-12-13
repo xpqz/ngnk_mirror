@@ -96,19 +96,20 @@ L cfm(O A*,I),gl_(A),gl(A),iw(A,U,L),now(),pl(Q*),minfZ(L,A),addfB(O V*,U),addfZ
 Q qs(O L*),pID(Q);
 W pu(Q*);
 F gf(A);
-EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(O C[])vc,TS,Tw,TW,TT,TX,Tk;EX Q*argv,*env,HEX;
+EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(O C[])vc,TS,Tw,TW,TR,TT,TX,Tk;EX Q*argv,*env,HEX;
 
 //                   0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 //                     () !i ,1 ,i ,i ,i ,i ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
 enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
-#define T_ O C TS[]="0""A""I""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols              */\
-               TW[]={0,64,64, 1, 8,16,32,64,64, 8,32,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64},/*item size in bits         */\
-               Tw[]={0, 7, 6, 0, 3, 4, 5, 6, 6, 3, 5, 7, 7, 6, 6, 6, 6, 6, 7, 7, 7, 7, 6, 6, 6, 6},/*log2(size) or 7=reftypes  */\
-               TT[]={0,tA,tL,tB,tG,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*corresponding list type   */\
-               TX[]={0,tG,tG,tG,tG,tH,tI,tL,tF,tG,tI,tG,tG, 0, 0,tF,tG,tI,tG,tG,tG,tG,tG,tG,tG,tG},/*type for arith conformance*/\
-               Tk[]="0""L""I""I""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*types for k.h             */
-#define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)
-#define TU(t) ((t)>=to)
+#define T_ O C TS[]="0""A""I""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols     */\
+               TW[]={0,64,64, 1, 8,16,32,64,64, 8,32,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64},/*item size in bits*/\
+               Tw[]={0, 6, 6, 0, 3, 4, 5, 6, 6, 3, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6},/*log2(size)       */\
+               TT[]={0,tA,tL,tB,tG,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*to list type     */\
+               TX[]={0,tG,tG,tG,tG,tH,tI,tL,tF,tG,tI,tG,tG, 0, 0,tF,tG,tI,tG,tG,tG,tG,tG,tG,tG,tG},/*arith conformance*/\
+               Tk[]="0""L""I""I""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*for the api (k.h)*/
+#define TR(t) ((1<<tA|1<<tM|1<<tm|1<<to|1<<tp|1<<tq|1<<tr)>>(t)&1)//reftypes
+#define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)//packed types
+#define TU(t) ((t)>=to)                                           //function types
 
 //header bytes: U...mmmm XXXXXXXX ....OEkt rrrrnnnn
 #define _V(x) ((V*)(x))       //pointer to data
@@ -132,7 +133,7 @@ enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,
 #define _t(x) ({A x_=(x);UC t=_t0(x_);t?t:_T(x_);})//type
 #define _tU(x) TU(_t(x))      // func?
 #define _tP(x) TP(_t(x))      // packed?
-#define _tR(x) (_w(x)==7)     // ref?
+#define _tR(x) TR(_t(x))      // ref?
 #define _tT(x) (_t(x)<tM)     // list?
 #define _tZ(x) LH(tE,_t(x),tL)// intlist?
 #define _tt(x) (_t(x)>tm)     // atom?
