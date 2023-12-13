@@ -9,7 +9,7 @@ V tilV(V*p,L v,L n,U w){L*a=p,k=G(0x101010101010101ll,0x1000100010001ll,1ll<<32|
  i((n-1>>3-w)+4&-4,a[i]=v;v+=d)}
 X1(til,RA(K1("{x@'!#'x}",x))Ril(L n=gl(x);n*=n!=-n;aE(MIN(0,n),MAX(0,n)))REBGHIL(K1("{(*a)#'&'x#'1_a:|*\\|x,1}",x))RmM(x(_R(xx)))Ro(val(x))RS(gns(_v(jS(x))))Rs(gns(xv))R_(et(x)))
 X1(whr,Ril(whr(enl(x)))RA(K1("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))Rm(A y=kv(&x);x(x1(Nx(whr(y)))))RE(whr(gZ(x)))R_(et(x))
- RB(U m=xn,n=addfB(xV,m);A y=aI(n);I*r=yV;Mx(i(m+7>>3,C v=xg;W(v,U j=__builtin_ctz(v);v&=~(1<<j);*r++=i<<3|j)))Q(r-yI==n);y)
+ RB(U m=xn,n=addfB(xV,m);A y=aI(n);I*r=yV;Mx(i(m+7>>3,C v=xg;W(v,U j=CTZ(v);v&=~(1<<j);*r++=i<<3|j)))Q(r-yI==n);y)
  RGHIL(L m=xn,n=addfZ(0,x);P(n<0||minfZ(0,x)<0,ed(x))C t=tZ(m-!!m);P(t>tI,ez(x))A y=an(n,t);I w=xw-3;
   Mx(S4(t-tG,{G*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},
              {H*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},

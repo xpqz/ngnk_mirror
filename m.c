@@ -18,7 +18,7 @@ DBG(A1(m1,lck--;P(!x||!xU,0)MS(xV,0xab,cap(x));AN(-1,AT(0,x));0))
 A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)A1(mr,DBG(m1)(m0(x)))V mRn(U n,O A*a){i(n,_R(a[i]))}V mrn(U n,O A*a){i(n,mr(a[i]))}A1(mRa,mRn(xn,xA);x)
 SN A mb(U i)_(P(i>=L(b),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xU=i;x)A x=b[i];P(x,b[i]=xX;xX=0;x)x=mb(i+1);xU=i;A y=x+(HD<<i);yU=i;AT(0,y);yr=0;yX=b[i];b[i]=y;x)
 
-A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+((W)n*TW[t]+7>>3);U i=59-__builtin_clzll(HD|m-1);A x=mb(i);xr=1;AT(t,AN(n,x)))
+A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+((W)n*TW[t]+7>>3);U i=59-CLZ(HD|m-1);A x=mb(i);xr=1;AT(t,AN(n,x)))
 A aV(C t,U n,O V*v)_(A x=an(n,t);MC(xV,v,(W)n*TW[t]+7>>3);x)
 A aA0(U n)_(A x=AN(0,aA(n));xx=emp(tC);x)
 A1(aA1,A y=an(1,tA);yx=x;y)

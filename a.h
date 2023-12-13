@@ -53,10 +53,14 @@
 #define Ab8 A b[8];
 #define Lij L i=*xL,j=xL[1];
 #define PSH(x,y) ((x)=psh(x,y))
-#define MS    __builtin_memset
-#define MC    __builtin_memcpy
-#define SL    __builtin_strlen
 #define AL(x) __builtin_assume_aligned(x,32)
+#define CLZ   __builtin_clzll
+#define CTZ   __builtin_ctzll
+#define MC    __builtin_memcpy
+#define MS    __builtin_memset
+#define POP   __builtin_popcountll
+#define SL    __builtin_strlen
+#define SQ    __builtin_sqrt
 
 TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
 TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(O A*,U),AX(A,O A*,U);
