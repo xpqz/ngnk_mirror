@@ -1,6 +1,6 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define i4(w,n,a,b,c,d) S4(w,i(n,a),i(n,b),i(n,c),i(n,d))
-NI A1(inv,x=mut(x);L*p=xL;i(xn*xW+31>>5<<2,*p++^=-1)x)
+NI A1(inv,x=mut(x);L*p=xL;i(((W)xn<<xw)+255>>8<<2,*p++^=-1)x)
 
 S A3(___f,/*010*/U i=!y;I(i,y=io(z,0))U n=zn;W(i<n,y=y(x2(y,ii(z,i++)));B(!y))y)
 S A3(dexf,/*010*/A u=las(zR);I(y,y(0))u)
@@ -41,7 +41,7 @@ S A3(adms,/*010*/L w=y?gl(y):x==MUL;U n=zn;I b=1;L v=w;C t=tG+zw-3;A u=an(n,t);
  I(x==ADD,i4(zw-3,n,ug=v+=zg;B(v-(G)v,b=0),uh=v+=zh;B(v-(H)v,b=0),ui=v+=zi;B(v-(I)v,b=0),ul=v+=zl))
  E(       i4(zw-3,n,ug=v*=zg;B(v-(G)v,b=0),uh=v*=zh;B(v-(H)v,b=0),ui=v*=zi;B(v-(I)v,b=0),ul=v*=zl))P(b,u)z=cT(t+1,u(zR));z(adms(x,az(w),z)))
 S A3(subs,/*010*/y=neg(y?y:mul(ai(2),ii(z,0)));neg(adms(ADD,y,z)))
-S A3(mxms,/*010*/P((!y||ytz)&&ztZ,L v=y?gl(y):-WL,l=-1ll<<8*zW-1,h=~l;U n=zn;I(v<=l||h<=v,P(v>=0,rsz(n,az(v)))v=v<0?l:h)
+S A3(mxms,/*010*/P((!y||ytz)&&ztZ,L v=y?gl(y):-WL,l=-1ll<<(1<<zw)-1,h=~l;U n=zn;I(v<=l||h<=v,P(v>=0,rsz(n,az(v)))v=v<0?l:h)
                                   A u=an(n,zt);i4(zw-3,n,ug=v=MAX(v,zg),uh=v=MAX(v,zh),ui=v=MAX(v,zi),ul=v=MAX(v,zl))u)___s(x,y,z))
 S A3(mnms,/*010*/P((!y||ytz)&&ztZ,z=inv(zR);z(inv(mxms(MXM,y?az(~gl(y)):0,z))))___s(x,y,z))
 S A eqlsL(L v,A x/*0*/)_(A y=aG(xn);i4(xw-3,xn,yg=v=v==xg,yg=v=v==xh,yg=v=v==xi,yg=v=v==xl)y)
