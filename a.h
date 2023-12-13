@@ -96,7 +96,7 @@ L cfm(O A*,I),gl_(A),gl(A),iw(A,U,L),now(),pl(Q*),minfZ(L,A),addfB(O V*,U),addfZ
 Q qs(O L*),pID(Q);
 W pu(Q*);
 F gf(A);
-EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(O C[])vc,TS,Tw,TR,TT,TX,Tk;EX Q*argv,*env,HEX;
+EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(O C[])vc,TS,Tw,TR,TT,TX,Tk;EX Q*argv,*env;
 
 //                   0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 //                     () !i ,1 ,i ,i ,i ,i ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
