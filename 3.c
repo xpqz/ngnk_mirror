@@ -4,7 +4,7 @@ NI A1(inv,x=mut(x);L*p=xL;i(((W)xn<<xw)+255>>8<<2,*p++^=-1)x)
 
 S A3(___f,/*010*/U i=!y;I(i,y=io(z,0))U n=zn;W(i<n,y=y(x2(y,ii(z,i++)));B(!y))y)
 S A3(dexf,/*010*/A u=las(zR);I(y,y(0))u)
-  L addfB(O V*a,U n)_(O W*p=a;U r=0;i(n>>6,r+=POP(*p++))n&=63;n?r+POP(*p&~(-1ll<<n)):r)
+  L addfB(O V*a,U n)_(O W*p=a;U r=0;i(n>>6,r+=PC(*p++))n&=63;n?r+PC(*p&~(-1ll<<n)):r)
 S L addfG(O V*a,U n)_(O G*p=a;L r=0;i(n,r+=*p++)r)
 S L addfH(O V*a,U n)_(O H*p=a;L r=0;i(n,r+=*p++)r)
 S L addfI(O V*a,U n)_(O I*p=a;L r=0;i(n,r+=*p++)r)

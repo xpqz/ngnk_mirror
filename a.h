@@ -58,7 +58,7 @@
 #define CTZ   __builtin_ctzll
 #define MC    __builtin_memcpy
 #define MS    __builtin_memset
-#define POP   __builtin_popcountll
+#define PC    __builtin_popcountll
 #define SL    __builtin_strlen
 #define SQ    __builtin_sqrt
 
