@@ -21,28 +21,15 @@ S X1(prsI,RmMA(e1f(prsI,x))Rc(prsI(enl(x)))RC(x=str0(x);Q s=xV;P(!*s,x(_R(cn[tl]
 S X1(prsF,RmMA(e1f(prsF,x))Rc(prsF(enl(x)))RC(x=str0(x);Q s=xV;P(!*s,x(_R(cn[tf])))L v=pf(&s);x(*s?_R(cn[tf]):aV(tf,1,&v)))R_(et(x)))
 S Y2(pad,RmMA(e2f(pad,x,y))RC(K2("{y@(!x)+(x<0)*#y}",x,y))Rc(dlr(x,enl(y)))R_(et(y)))
 X2(dlr,Rs(I v=xv;P(v-(C)v,ed(y))G(&csti,cF,cC,cS,prsI,prsF,ed)[si("ifcsIF",v|'s'*!v)](y))Ril(pad(x,y))R_(et(y)))
-X1(sqzZ,/*RG(i(xn,P(xg&-2,x))cB(x))*/RH(i(xn,P(xh-(G)xh,x))sqzZ(cG(x)))RI(i(xn,P(xi-(H)xi,x))sqzZ(cH(x)))RL(i(xn,P(xl-(I)xl,x))sqzZ(cI(x)))R_(x))
-
-A1(sqz,
- P(!xtA,x)
- A y=xx;C t=yt;U n=xn;
- Y(
-  RMT(x)
-  RU(x)
-  Rm(i(n,P(t-_t(xa),x))i(n,P(!mtc_(yx,_x(xa)),x))y=aM(_R(yx),e1f(rs0,_R(yy)));i(n,PSH(y,_R(xa)))x(y))
- )
- I(ytz,
-  P(!n,x(emp(tG)))
-  B l=0;i(n,A y=xa;I(ytl,l=1)E(P(!yti,x)))
-  I(l,t=tL)E(I a=0;i(n,I b=_v(xa);a|=b^b>>31)t=tZ(a))
- )
- E(i(n,P(t-_t(xa),x)))
-
- y=an(n,TT[t]);
- U w=yw-3;
- I(w<3,G(&cGL,cHL,cIL)[w](yV,xV,n))
- E(i(n,yl=gl_(xa)))
- x(y))
-
+X1(sqzZ,R_(x)/*RG(i(xn,P(xg&-2,x))cB(x))*/
+ RH(i(xn,P(xh-(G)xh,x))sqzZ(cG(x)))
+ RI(i(xn,P(xi-(H)xi,x))sqzZ(cH(x)))
+ RL(i(xn,P(xl-(I)xl,x))sqzZ(cI(x))))
+S V cLT(abn){L*r=AL(a);O A*p=AL(b);i(n,*r++=gl_(*p++))}
+S A sqzZT(A x,C t)_(U n=xn,w=Tw[t]-3;A y=an(n,t);G(&cGL,cHL,cIL,cLT)[w](yV,xV,n);x(y))
+A1(sqz,P(!xtA,x)U n=xn;A y=xx;C t=yt;
+ Y(Ril(B l=0;i(n,A y=xa;I(ytl,l=1)E(P(!yti,x)))P(l,sqzZT(x,tL))I a=0;i(n,I b=_v(xa);a|=b^b>>31)sqzZT(x,tZ(a)))
+   Rm(i(n,P(_t(xa)-tm||!mtc_(yx,_x(xa)),x))y=aM(_R(yx),e1f(rs0,_R(yy)));i(n,PSH(y,_R(xa)))x(y))
+   RMT(x)RU(x)R_(i(n,P(t-_t(xa),x))sqzZT(x,TT[t])))0)
 X1(blw,RA(x)Rt(aA1(x))Rm(et(x))R_(U n=xN;A y=aA(n);i(n|!n,ya=ii(x,i))x(0);I(!n,yx=mkn(yx))y))
 A1(gZ,Lij x(0);P(i<0,x=az(i);x(add(x,gZ(aE(0,j-i)))))C t=MAX(tZ(i),tZ(j-1));x=an(j-i,t);tilV(xV,i,j-i,t-tG);x)
