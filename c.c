@@ -26,14 +26,18 @@ X1(sqzZ,/*RG(i(xn,P(xg&-2,x))cB(x))*/RH(i(xn,P(xh-(G)xh,x))sqzZ(cG(x)))RI(i(xn,P
 A1(sqz,
  P(!xtA,x)
  A y=xx;C t=yt;U n=xn;
- P(ytMT||ytU,x)
+ Y(
+  RMT(x)
+  RU(x)
+  Rm(i(n,P(t-_t(xa),x))i(n,P(!mtc_(yx,_x(xa)),x))y=aM(_R(yx),e1f(rs0,_R(yy)));i(n,PSH(y,_R(xa)))x(y))
+ )
  I(ytz,
   P(!n,x(emp(tG)))
   B l=0;i(n,A y=xa;I(ytl,l=1)E(P(!yti,x)))
   I(l,t=tL)E(I a=0;i(n,I b=_v(xa);a|=b^b>>31)t=tZ(a))
  )
  E(i(n,P(t-_t(xa),x)))
- Ym(i(n,P(!mtc_(yx,_x(xa)),x))y=aM(_R(yx),e1f(rs0,_R(yy)));i(n,PSH(y,_R(xa)))x(y))
+
  y=an(n,TT[t]);
  U w=yw-3;
  I(w<3,G(&cGL,cHL,cIL)[w](yV,xV,n))
