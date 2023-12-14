@@ -7,7 +7,8 @@ S V cFL(abn){F*r=AL(a);O L*p=AL(b);i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
 S V cLF(abn){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
 S V cGB(abn){G*r=AL(a);O G*p=AL(b);i(n,*r++=p[i>>3]>>(i&7)&1)}
 S V cBG(abn){G*r=AL(a);O G*p=AL(b);MS(r,0,n+63>>6<<3);i(n,r[i>>3]|=(*p++&1)<<(i&7))}
-NI A2(cTT,UC t=xv,u=yt,i=t-tB,j=u-tB;Q(i<8);P(j>7,et(y))
+S V cLA(abn){L*r=AL(a);O A*p=AL(b);i(n,*r++=gl_(*p++))}
+S A2(cTT,UC t=xv,u=yt,i=t-tB,j=u-tB;Q(i<8);P(j>7,et(y))
  S O TY(&cBG)a[][8]={{0,cBG,0,0,0,0,cBG},{cGB,0,cGH,cGI,cGL,0,0},{0,cHG,0,cHI,cHL,0,cHG},{0,cIG,cIH,0,cIL,0,cIG},{0,0,0,cLI,0,cLF,0},{0,0,0,0,cFL,0,0},{},{}};
  TY(&cBG)f=a[i][j];P(f,A z=an(yn,t);My(f(zV,yV,zn));z)
  P(t==tS,u==tC?(y=str0(y),y(sym(yV))):et(y))
@@ -25,10 +26,12 @@ X1(sqzZ,R_(x)/*RG(i(xn,P(xg&-2,x))cB(x))*/
  RH(i(xn,P(xh-(G)xh,x))sqzZ(cG(x)))
  RI(i(xn,P(xi-(H)xi,x))sqzZ(cH(x)))
  RL(i(xn,P(xl-(I)xl,x))sqzZ(cI(x))))
-S V cLT(abn){L*r=AL(a);O A*p=AL(b);i(n,*r++=gl_(*p++))}
-S A sqzZT(A x,C t)_(U n=xn,w=Tw[t]-3;A y=an(n,t);G(&cGL,cHL,cIL,cLT)[w](yV,xV,n);x(y))
+S A sqzZT(A x,C t)_(U n=xn,w=Tw[t]-3;A y=an(n,t);G(&cGL,cHL,cIL,cLA)[w](yV,xV,n);x(y))
 A1(sqz,P(!xtA,x)U n=xn;A y=xx;C t=yt;
- Y(Ril(B l=0;i(n,A y=xa;I(ytl,l=1)E(P(!yti,x)))P(l,sqzZT(x,tL))I a=0;i(n,I b=_v(xa);a|=b^b>>31)sqzZT(x,tZ(a)))
+ Y(Ril(B l=0;i(n,A y=xa;I(ytl,l=1)E(P(!yti,x)))P(l,sqzZT(x,tL))
+       A z=aI(n);cIL(zV,xV,n);x=x(z);
+       I a=0;i(n,I v=xi;a|=v^v>>31)t=tZ(a);P(t==tI,x)
+       A y=an(n,t);G(&cGI,cHI)[t-tG](yV,xV,n);x(y))
    Rm(i(n,P(_t(xa)-tm||!mtc_(yx,_x(xa)),x))y=aM(_R(yx),e1f(rs0,_R(yy)));i(n,PSH(y,_R(xa)))x(y))
    RMT(x)RU(x)R_(i(n,P(t-_t(xa),x))sqzZT(x,TT[t])))0)
 X1(blw,RA(x)Rt(aA1(x))Rm(et(x))R_(U n=xN;A y=aA(n);i(n|!n,ya=ii(x,i))x(0);I(!n,yx=mkn(yx))y))
