@@ -6,11 +6,11 @@ S C*S16(C*s,W v)_(S_8(S_8(s,v/(U)1e8),v%(U)1e8))        S C*s16(C*s,W v)_(v<(U)1
 S C*su(C*s,W v)_(v<(W)1e16?s16(s,v):S16(s_8(s,v/(W)1e16),v%(W)1e16))C*sl(C*s,L v)_(I(v<0,P(v==NL,MC(s,"0N",2)+2)v=-v;*s++='-')su(s,v))
 // github.com/ulfjack/ryu (apache2|boost license)
 #if defined(__SIZEOF_INT128__)
- S W msh(W m,O W*a,I i)_(__uint128_t g=m;((g**a>>64)+g*a[1])>>(i-64))S W msha(W m,O W*a,I i,W*v,W*w,I sh)_(*v=msh(m+2,a,i);*w=msh(m-1-sh,a,i);msh(m,a,i))
+ S W msh(W m,CO W*a,I i)_(__uint128_t g=m;((g**a>>64)+g*a[1])>>(i-64))S W msha(W m,CO W*a,I i,W*v,W*w,I sh)_(*v=msh(m+2,a,i);*w=msh(m-1-sh,a,i);msh(m,a,i))
 #else
  S W shr(W l,W h,U d)_(h<<(64-d)|l>>d)
  S W mult(W a,W b,W*rh)_(U al=a,ah=a>>32,bl=b,bh=b>>32;W c=(W)al*bl,u=(U)(c>>32)+(W)ah*bl,v=(U)u+(W)al*bh;*rh=(U)(u>>32)+(U)(v>>32)+(W)ah*bh;v<<32|(U)c)
- S W msha(W m,O W*a,I i,W*v,W*w,I sh)_(m>>=1;W t,l=mult(m,*a,&t),h,m0=t+mult(m,a[1],&h);h+=m0<t;W l2=l+*a,m2=m0+a[1]+(l2<l),h2=h+(m2<m0);*v=shr(m2,h2,i-65);
+ S W msha(W m,CO W*a,I i,W*v,W*w,I sh)_(m>>=1;W t,l=mult(m,*a,&t),h,m0=t+mult(m,a[1],&h);h+=m0<t;W l2=l+*a,m2=m0+a[1]+(l2<l),h2=h+(m2<m0);*v=shr(m2,h2,i-65);
   I(sh==1,W l3=l-*a,m3=m0-a[1]-(l3>l),h3=h-(m3>m0);*w=shr(m3,h3,i-65))E(W l3=l+l,m3=m0+m0+(l3<l),h3=h+h+(m3<m0),l4=l3-*a,m4=m3-a[1]-(l4>l3),h4=h3-(m4>m3);*w=shr(m4,h4,i-64))shr(m0,h,i-65))
 #endif
 S W I5[342][2],P5[326][2];S W addcll(W x,W y,W c,W*p)_(W u=x+y+c;*p=u<x||u<y;u) // or __builtin_addcll

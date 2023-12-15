@@ -60,7 +60,7 @@ A2(psh,/*11*/Q(xtMT);U n=xN;P(!n,enl(x(y)))
  XM(P(!ytm||!mtc_(xx,yx),psh(Ny(blw(x)),y))x=mut(x);A z=xy=mut(xy);i(zn|!zn,PSH(za,ii(yy,i)))I(!zn,zx=mkn(zx))y(x))
  P(!xtA&&(!ytt||xt-TT[yt]),psh(Ny(blw(x)),y))
  L v=xtA?(L)y:gl(y);apv(x,&v))
-A apv(A x/*1*/,O V*v  )_(Q(xtT);     U n=xn;x=aa(n+1,x);U w=xw-3;MC(xV+((W)n<<w),v,1<<w);x)
+A apv(A x/*1*/,CO V*v )_(Q(xtT);     U n=xn;x=aa(n+1,x);U w=xw-3;MC(xV+((W)n<<w),v,1<<w);x)
 A apc(A x/*1*/,C c    )_(Q(xtC||xtG);U n=xn;x=aa(n+1,x);xC[n]=c;x)
 A cts(A x/*1*/,Q s,U m)_(Q(xtC);     U n=xn;x=aa(n+m,x);MC(xV+n,s,m);x)
 S A insL(A x,L i,L j,A y/*1ij0*/)_(

@@ -3,11 +3,11 @@
 #define C16(x,a...) case x:case x+1:case x+2:case x+3:case x+4:case x+5:case x+6:case x+7:case x+8:case x+9:case x+10:case x+11:case x+12:case x+13:case x+14:case x+15:{a;break;}
 #define C32(x,a...) C16(x,C16(x+16,a))
 #define U(x,a...) I(!(x),a;goto l)
-#define CO 4 //offset of constants in a function object
+#define OFF 4 //offset of constants in a function object
 #define n1 -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 #define p1  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 enum {bu,  bv=32,bs=64,bg=80,bd=96,ba=112,bp,bm,bM,bx,bX,by,bY,bG,bS,bl,bL,bz,bj,bo,bP,bV,bc};      //opcodes
-S O C di[]={                      [ba]= 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 0, 0, 2, 0},      //extra bytes after opcode
+S CO C di[]={                     [ba]= 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 0, 0, 2, 0},      //extra bytes after opcode
 ds[]={[bv]=n1,n1,n1,   p1,   p1,  [ba]= 1, 1,-1,-1,-1,-1,-1,-1, 1,-1, 1, 0,-1, 0, 1,-1, 0, 1},      //stack size delta
 ks[]={                            [ba]=-1,-1, 0, 0, 0, 0, 0, 0, 0, 0,-1, 1, 0, 0, 0, 0, 0, 0};      //stack size delta (coefficient for the next byte)
 AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]);A l[nl+*b++],*s=l+L(l);MS(l,0,SZ l);MC(l,a,8*n);//virtual machine
@@ -30,8 +30,8 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
   C(bz,UC n=*b++;b+=n*!tru(*s++))                                                                   //branch    |bz,n  |.. x -> ..             |if x is falsy, PC+:n
   C(bo,*--s=xR)                                                                                     //recur     |bo    |.. -> .. o             |o is the current lambda
   C(bP,mr(*s++))                                                                                    //pop       |bP    |.. x -> ..             |
-  C(bV,UC i=*b++;U(*s=v2[*b++](xA[i+CO],*s)))                                                       //const dyad|bV,i,d|.. x -> .. r           |r:dyads[d][consts[i];x]
-  D(*--s=_R(xA[c-bc+CO]))))                                                                         //const     |bc+i  |.. -> .. consts[i]     |
+  C(bV,UC i=*b++;U(*s=v2[*b++](xA[i+OFF],*s)))                                                      //const dyad|bV,i,d|.. x -> .. r           |r:dyads[d][consts[i];x]
+  D(*--s=_R(xA[c-bc+OFF]))))                                                                        //const     |bc+i  |.. -> .. consts[i]     |
  l:d--;A u=*s;MS(l+nl,0,s-l-nl+1<<3);i(L(l),A x=l[i];I(x,mr(x)))I(!u,eS(xx,(UC)_C(xz)[(C*)b-1-_C(xy)]))u)
 
 #define Nr(a...) {I r_=cr(a);P(r_-OK,r_);}                                                          //compile rvalue; return on error
@@ -42,7 +42,7 @@ AX(run,Q(xto)S I d;P(++d>2048,es8(a,n))P(n-xk,er8(a,n))UC*b=_V(xy),c,nl=_n(xA[3]
 S A u;S UC b[MB],m[MB],lu[16];S I nb,nl,l[16],cr(A,B);                                              //u:lambda(src;b:bytes;m:map;l:locals;consts..)  lu:last usages
 SN I li(I v)_(U i=fI(l,nl,v);P(i==nl,-1)lu[i]=nb;i)                                                 //index of a local variable (returns -1 if not found)
 S B cm(A x/*0*/){X(Rv(!xv)Ru(1)RS(P(xn-1,0)L v=*xI;Q s=qs(&v);U n=SL(s);n&&s[n-1]==':')R_(0))}      //is x a valid modifier? i.e. :: or primitive monad or symbol ending with ":"
-S V cc(A x/*0*/,I o){U n=un,i=CO;W(i<n&&!mtc_(x,ua),i++)I(i>=n,PSH(u,xR))M(i+bc-CO)}                //append a "load constant" instruction
+S V cc(A x/*0*/,I o){U n=un,i=OFF;W(i<n&&!mtc_(x,ua),i++)I(i>=n,PSH(u,xR))M(i+bc-OFF)}              //append a "load constant" instruction
 S I cl(A x,A y/*00*/,B r){Q(cm(xx))I v=_v(xx),o=xo;                                                 //compile lvalue (x:assignmentNode,y:tree,r:wantResult)
  Y(R_(o)
    RS(I(yn==1,I w=*yI,i=li(w);P(xx==av&&nl,I(i<0,i=nl;P(i>15,o)l[nl++]=w;lu[i]=nb)M(bs+i)I(r,M(bg+i))OK)P(i>=0,M(bm)M(i)M(v)I(r,M(bg+i))OK))
@@ -73,7 +73,7 @@ S A3(c3,/*000*/P(ADD<=x&&x<=MUL&&ytzZ&&ztzZ&&(ytt||ztt||yn==zn)&&MAX(xN,yN)<101,
 S A1(cf,P(!xtA||!xn,x)P(xx==MKL,i(xn,A y=xa;YSA(x))qte(N(drp(1,x))))P(xn==2?c2(xx,xy):xn==3?c3(xx,xy,xz):0,qte(N(val(x))))A y=rsz(xn,au);i(xn,ya=cf(xa);xa=au;P(!ya,die("CF")))AO(xo,x(y)))
 S I mxs(I i,I s)_(I r=s;W(1,UC c=MIN(bc,b[i++]);r=MAX(r,s);P(!c,r)s+=ds[c]+ks[c]*b[i];i+=di[c]+(c==bj)*b[i];I(c==bz,r=MAX(r,mxs(i+b[i-1],s))))r)//max stack
 S B shy(A x/*0*/)_(!xtA?0:xn&&xx==GAP?shy(xA[xn-1]):xn==3&&cm(xx)&&_tSA(xy))                        //is last expr an assignment?
-A3(cpl,/*111*/nb=1;MS(lu,-1,SZ lu);I k=0;I(z,k=zn;MC(l,zV,CO*k);z(0))nl=k;u=aA(CO);y=Nx(cf(y));ux=x;uy=uz=uA[3]=au;B s=shy(y);I r=cr(y,!s);y(0);P(r-OK,ec0();eS(ux,r);u(0))
- I o=0;I(s,cc(au,o))P(un>255||nb>MB-2||nl>L(l)-2,ez0();eS(ux,0);u(0))M(bu)P(nb>MB-2||un>255-bc+CO,eS(ux,0);u(0);ez0())
+A3(cpl,/*111*/nb=1;MS(lu,-1,SZ lu);I k=0;I(z,k=zn;MC(l,zV,OFF*k);z(0))nl=k;u=aA(OFF);y=Nx(cf(y));ux=x;uy=uz=uA[3]=au;B s=shy(y);I r=cr(y,!s);y(0);P(r-OK,ec0();eS(ux,r);u(0))
+ I o=0;I(s,cc(au,o))P(un>255||nb>MB-2||nl>L(l)-2,ez0();eS(ux,0);u(0))M(bu)P(nb>MB-2||un>255-bc+OFF,eS(ux,0);u(0);ez0())
  i(nl,I j=lu[i];I(j>=0&&b[j]==bg,b[j]=bd))*b=mxs(1,0);*m=-1;uy=aCn(b,nb);uz=aCn(m,nb);uA[3]=aV(tS,nl,l);AK(k,AT(to,u)))
 #undef M

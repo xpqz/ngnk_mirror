@@ -21,7 +21,7 @@ S F rf()_(W v=1023ll<<52|(r()&-1ull>>12);-1+*(F*)&v)//random float 0..1
 
 S A sh(U n)_(A x=an(n,tZ(n));S4(xw-3,i(n,I j=ri(i+1);xg=xG[j];xG[j]=i),i(n,I j=ri(i+1);xh=xH[j];xH[j]=i),i(n,I j=ri(i+1);xi=xI[j];xI[j]=i),ez(x))x)//shuffle
 S A rt(U n,C t)_(A x=an(n,t);i(((W)n<<Tw[t])+255>>8,r4();MC(xV+(i<<5),b,32))x)//roll n full-range (including negative) items of type t (int of a specific width or char)
-S O W msk[]={0xffffffffffffffffll,0x5555555555555555ll,0x1111111111111111ll,0x0101010101010101ll,0x0001000100010001ll,0x0000000100000001ll,0x0000000000000001ll};
+S CO W msk[]={0xffffffffffffffffll,0x5555555555555555ll,0x1111111111111111ll,0x0101010101010101ll,0x0001000100010001ll,0x0000000100000001ll,0x0000000000000001ll};
 S A ro(U n,W m)_(P(!(m&m-1),P(!m,rt(n,tL))C t=tZ(m-1);A x=rt(n,t);L v=(m-1)*msk[Tw[t]];L*p=xL;i((n<<Tw[t])+255>>8,j(4,*p++&=v))x)
  C t=tZ(m-1);A x=an(n,t);S4(t-tG,i(n,xg=ri(m)),i(n,xh=ri(m)),i(n,xi=ri(m)),i(n,xl=r())I(m,i(n,xl%=m)))x)//roll
 //S A de0(N n,W m)_(A x=aL(n);i(n,xl=r()%(m-n+i+1);j(i,B(xl==xL[j],xl=m-n+i)))i(n,I j=ri(i+1);SWP(xl,xL[j]))ct(tZ(m),x))

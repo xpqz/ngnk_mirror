@@ -1,15 +1,15 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-#define abn V*RES a,O V*RES b,U n
-#define M(x,y,z) S V c##x##y(abn){x*r=AL(a);O y*p=AL(b);i(n+((1<<z)-1)>>z,j(1<<z,*r++=*p++))}
+#define abn V*RES a,CO V*RES b,U n
+#define M(x,y,z) S V c##x##y(abn){x*r=AL(a);CO y*p=AL(b);i(n+((1<<z)-1)>>z,j(1<<z,*r++=*p++))}
  M(H,G,4)M(G,H,4)M(H,I,3)M(I,H,3)M(G,I,3)M(I,G,3)M(H,L,2)M(L,I,2)M(I,L,2)M(G,L,2)//cHG cGH cHI cIH cGI cIG cHL cLI cIL cGL
 #undef M
-S V cFL(abn){F*r=AL(a);O L*p=AL(b);i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
-S V cLF(abn){L*r=AL(a);O F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
-S V cGB(abn){G*r=AL(a);O G*p=AL(b);i(n,*r++=p[i>>3]>>(i&7)&1)}
-S V cBG(abn){G*r=AL(a);O G*p=AL(b);MS(r,0,n+63>>6<<3);i(n,r[i>>3]|=(*p++&1)<<(i&7))}
-S V cLA(abn){L*r=AL(a);O A*p=AL(b);i(n,*r++=gl_(*p++))}
+S V cFL(abn){F*r=AL(a);CO L*p=AL(b);i(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
+S V cLF(abn){L*r=AL(a);CO F*p=AL(b);i(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
+S V cGB(abn){G*r=AL(a);CO G*p=AL(b);i(n,*r++=p[i>>3]>>(i&7)&1)}
+S V cBG(abn){G*r=AL(a);CO G*p=AL(b);MS(r,0,n+63>>6<<3);i(n,r[i>>3]|=(*p++&1)<<(i&7))}
+S V cLA(abn){L*r=AL(a);CO A*p=AL(b);i(n,*r++=gl_(*p++))}
 S A2(cT,UC t=xv,u=yt,i=t-tB,j=u-tB;Q(i<8);P(j>7,et(y))
- S O TY(&cBG)a[][8]={{0,cBG,0,0,0,0,cBG},{cGB,0,cGH,cGI,cGL,0,0},{0,cHG,0,cHI,cHL,0,cHG},{0,cIG,cIH,0,cIL,0,cIG},{0,0,0,cLI,0,cLF,0},{0,0,0,0,cFL,0,0},{},{}};
+ S CO TY(&cBG)a[][8]={{0,cBG,0,0,0,0,cBG},{cGB,0,cGH,cGI,cGL,0,0},{0,cHG,0,cHI,cHL,0,cHG},{0,cIG,cIH,0,cIL,0,cIG},{0,0,0,cLI,0,cLF,0},{0,0,0,0,cFL,0,0},{},{}};
  TY(&cBG)f=a[i][j];P(f,A z=an(yn,t);My(f(zV,yV,zn));z)
  P(t==tS,u==tC?(y=str0(y),y(sym(yV))):et(y))
  P((1<<t|1<<u)==(1<<tG|1<<tC),AT(t,mut(y)))

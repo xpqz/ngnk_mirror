@@ -41,12 +41,12 @@ S A ns(A x,L m,A y/*0m1*/)_(A z=aA0(m+1);i(m,PSH(z,yR);y=x1(y);B(!y))y?PSH(z,y):
 S A nf(A x,L m,A y/*0m1*/)_(i(m,y=N(x1(y)))y)
 S A3(ws,/*001*/A u=enl(zR);W(1,A w=y1(zR);B(!w,u=u(0))B(!tru(w))z=x1(z);P(!z,u(0))PSH(u,zR))z(u))
 S A3(wf,/*001*/A u=0;W(1,A w=y1(zR);B(!w,z=z(0))B(!tru(w))z=x1(z);P(!z,0))z)
-S A nS(A x,L m,O A*a,U n/*0m1n*/)_(P(n==1,ns(x,m,*a))P(m<0,mrn(n,a);ed0())P(m<n,mrn(n-m-1,a+m+1);sqz(aV(tA,m+1,a)))
+S A nS(A x,L m,CO A*a,U n/*0m1n*/)_(P(n==1,ns(x,m,*a))P(m<0,mrn(n,a);ed0())P(m<n,mrn(n-m-1,a+m+1);sqz(aV(tA,m+1,a)))
  A z=aA(m+n),*b=zA;zn=n;MC(zA,a,8*n);i(m+1-n,mRn(n,b);b[n]=Nz(x8(b,n));zn++;b++)sqz(z))
-S A wS(A x,A y,O A*a,U n/*001n*/)_(P(n==1,ws(x,y,*a))Ab8;MC(b,a,8*n);mRn(n,b);A z=sqz(aV(tA,n,b));
+S A wS(A x,A y,CO A*a,U n/*001n*/)_(P(n==1,ws(x,y,*a))Ab8;MC(b,a,8*n);mRn(n,b);A z=sqz(aV(tA,n,b));
  W(1,A u=y1(ii(z,zn-1));B(!u,z=z(0))B(!tru(u))mRn(n-1,b+1);u=x8(b,n);B(!u,*b=au;z=z(0))memmove(b,b+1,8*n-8);b[n-1]=u;PSH(z,uR))mrn(n,b);z)
-S A nF(A x,L m,O A*a,U n/*0m1n*/)_(P(n==1,nf(x,m,*a))las(N(nS(x,m,a,n))))
-S A wF(A x,A y,O A*a,U n/*001n*/)_(P(n==1,wf(x,y,*a))las(N(wS(x,y,a,n))))
+S A nF(A x,L m,CO A*a,U n/*0m1n*/)_(P(n==1,nf(x,m,*a))las(N(nS(x,m,a,n))))
+S A wF(A x,A y,CO A*a,U n/*001n*/)_(P(n==1,wf(x,y,*a))las(N(wS(x,y,a,n))))
 S A3(ls2,/*010*/Y(Ril(ns(x,gl(y),zR))RU(y(ws(x,y,zR)))R_(et(y)))0)
 S A3(lf2,/*010*/Y(Ril(nf(x,gl(y),zR))RU(y(wf(x,y,zR)))R_(et(y)))0)
 S AX(ls8,/*01..1*/A y=*a;P(n==2,A z=a[1];z(ls2(x,y,z)))Y(Ril(nS(x,gl(y),a+1,n-1))RU(y(wS(x,y,a+1,n-1))))et8(a,n))
@@ -54,7 +54,7 @@ S AX(lf8,/*01..1*/A y=*a;P(n==2,A z=a[1];z(lf2(x,y,z)))Y(Ril(nF(x,gl(y),a+1,n-1)
 X1(raz,RA(U n=0;i(xn,n+=_N(xa))A y=xx;y=ytT&&!ytA?AN(0,an(n,ytE?tG:yt)):aA0(n);i(xn,y=Nx(cat10(y,xa)))x(y))Rm(raz(val(x)))R_(x))
 S A2(f1,/*01*/Yt(y)P(xtv&&xv<11&&ytZFC,y(arf(x,0,y)))P(x==CAT,raz(y))P(!yN,y(ie(x,y)))A z=ii(y,0);i(yN-1,z=z(x2(z,ii(y,i+1)));B(!z))y(z))
 S A3(f2,/*010*/Zt(y(x2(y,zR)))P(xtv&&xv<11&&ytzfc&&ztZFC,arf(x,y,z))P(x==CAT,raz(N(cat10(enl(y),z))))P(xto||xtp,i(zN,y=N(x8(A(y,ii(z,i)),2)))y)i(zN,y=y(x2(y,ii(z,i)));B(!y))y)
-L cfm(O A*a/*0*/,I n)_(L m=-1;i(n,A x=a[i];I(!xtt,U v=xN;P(m>=0&&m-v,-2)m=v))m)
+L cfm(CO A*a/*0*/,I n)_(L m=-1;i(n,A x=a[i];I(!xtt,U v=xN;P(m>=0&&m-v,-2)m=v))m)
 AX(f8,/*01..1*/P(n==1,f1(x,*a))P(n==2,A y=*a,z=a[1];z(f2(x,y,z)))n--;A y=*a++,z=*a;L m=cfm(a,n);P(m==-1,y?x8(a-1,n+1):z)P(m<0,I(y,y(0))el8(a,n))P(!m&&!y,x=ie(x,z);mrn(n,a);x)
  L i=!y;I(i,y=ii(z,0))Ab8;W(i<m,*b=y;j(n,b[j+1]=ii(a[j],i))y=x8(b,n+1);B(!y)i++)mrn(n-1,a+1);z(y))
 S A3(s2,/*010*/Zt(y(x2(y,zR)))Zm(A u=N(s2(x,y,zy));am(_R(zx),u))P(!zN,y(zR))P(xtv&&xv<11&&ytzc&&ztZC,ars(x,y,z))A u=aA0(zN);i(zN,y=y(x2(y,ii(z,i)));P(!y,u(0))PSH(u,yR))y(u))
@@ -82,7 +82,7 @@ A w2(U i,A x,A y,A z/*010*/){SW(i,
  R(3,(xK==1?ste:p2)(x,y,z))
  R(4,y(r2(x,y,zR)))
  R_(y(l2(x,y,zR))))}
-A w8(U i,A x,O A*a,U n/*0,1..1*/){A y=*a;P(n==1,w1(i,x,y))P(n==2,A z=a[1];z(w2(i,x,y,z)))SW(i,
+A w8(U i,A x,CO A*a,U n/*0,1..1*/){A y=*a;P(n==1,w1(i,x,y))P(n==2,A z=a[1];z(w2(i,x,y,z)))SW(i,
  R(0,X(REBGHIL(cas(x,a,n))R_(e8(x,a,n)))0)
  R(1,xK<2||n-xK==1?lf8(x,a,n):f8(x,a,n))
  R(2,xK<2||n-xK==1?ls8(x,a,n):s8(x,a,n))

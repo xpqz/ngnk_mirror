@@ -5,7 +5,7 @@
 #define  DBG(a...)//a
 #define    _(a...) {return({a;});}
 #define  A(x,a...) (TY(x)[]){x,a}
-#define  G(x,a...) ({S O TY(x)arr[]={x,a};arr;})
+#define  G(x,a...) ({S CO TY(x)arr[]={x,a};arr;})
 #define  W(x,a...) while(x){a;}
 #define  B(x,a...) I(x,a;break)
 #define  P(x,a...) I(x,_(a))
@@ -26,11 +26,11 @@
 #define  R(x,a...) case x:_(a)
 #define   R_(a...) default:_(a)
 #define IJ(i,n,a...) for(TY(n)n_=(n),i=0;i<n_;i++){a;}
+#define L(x) (SZ(x)/SZ((x)[0]))
 #define R1 R
-#define O const
+#define CO const
 #define S static
 #define SZ sizeof
-#define L(x) (SZ(x)/SZ((x)[0]))
 #define HD 32ll//header
 #define NI __attribute__((noinline))
 #define SN S NI
@@ -62,16 +62,16 @@
 #define SL    __builtin_strlen
 #define SQ    __builtin_sqrt
 
-TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD O C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
-TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(O A*,U),AX(A,O A*,U);
+TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD CO C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
+TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(CO A*,U),AX(A,CO A*,U);
 
-#define A0(f,b...) A f(               )_(b)
-#define A1(f,b...) A f(A x            )_(b)/*1*/
-#define A2(f,b...) A f(A x,A y        )_(b)/*01*/
-#define A3(f,b...) A f(A x,A y,A z    )_(b)
-#define A4(f,b...) A f(A x,A y,A z,A u)_(b)
-#define AX(f,b...) A f(A x,O A*a,U n  )_(b)/*0,1..1,n*/
-#define AA(f,b...) A f(    O A*a,U n  )_(b)
+#define A0(f,b...) A f(                )_(b)
+#define A1(f,b...) A f(A x             )_(b)/*1*/
+#define A2(f,b...) A f(A x,A y         )_(b)/*01*/
+#define A3(f,b...) A f(A x,A y,A z     )_(b)
+#define A4(f,b...) A f(A x,A y,A z,A u )_(b)
+#define AX(f,b...) A f(A x,CO A*a,U n  )_(b)/*0,1..1,n*/
+#define AA(f,b...) A f(    CO A*a,U n  )_(b)
 A1 _R,aA1,asc,AZ,blw,cB,cG,cC,cF,cH,cI,cL,cS,dsc,enl,epr,err,fir,flp,flr,frk,gZ,gg,grp,hex,imx,imn,inv,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,
  neg,not,nul,of0,of1,opn,out,prng,qkmp,qpri,qte,raz,rev,rs0,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,u2c,unh,unq,val,whr;
 A2 _1,aA2,aM,add,am,psh,ari,bin,ct,cat,cat10,cat11,dlr,dex,dot,dvd,eql,exc,crt,fil,fnd,gtn,hsh,ie,i1,ltn,mod,mnm,mtc,mul,mxm,que,sub,und,v0c,v1c,v2c;
@@ -83,29 +83,29 @@ TD A TAU(U);TAU aA0,aA,aB,aG,aC,aF,aI,aL,aS,gns,emp;
 TD A TAL(L);TAL al,az,cls,rndF;
 TD A TALA(L,A);TALA drp,rnd,rsz;
 TD A TAQ(Q);TAQ aCz,bsl,bsm,die,sym;
-A aa(U,A),ii(A,U),io(A,L),a2t(A,A,C),aE(L,L),af(F),aCm(Q,Q),aCn(Q,U),apc(A,C),apv(A,O V*),an(U,C),aV(C,U,O V*),cts(A,Q,U),e1f(A1,A),e2f(A2,A,A),err0(Q),evs(Q,B),
- k1(A*,Q,A),k2(A*,Q,A,A),k8(A*,Q,O A*,U),jc(C,A),jC(Q,U,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(U,U,U),pk(Q*,C),pen(A,A1*),slc(A,U,U),unhC(Q,U),wdn(A,U,U,U),
- AT(W,A),AW(C,A),AK(C,A),AO(UC,A),AN(U,A),w1(U,A,A),w2(U,A,A,A),w8(U,A,O A*,U),*gp(A);
-V cyc(V*,U,U),eS(A,U),eQ(Q,U,U),exit(I),hexC(Q,U,C*),kargs(I,Q*),kinit(),*memmem(O V*,N,O V*,N),mrn(U,O A*),mRn(U,O A*),repl(),tilV(V*,L,L,U);
+A aa(U,A),ii(A,U),io(A,L),a2t(A,A,C),aE(L,L),af(F),aCm(Q,Q),aCn(Q,U),apc(A,C),apv(A,CO V*),an(U,C),aV(C,U,CO V*),cts(A,Q,U),e1f(A1,A),e2f(A2,A,A),err0(Q),evs(Q,B),
+ k1(A*,Q,A),k2(A*,Q,A,A),k8(A*,Q,CO A*,U),jc(C,A),jC(Q,U,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(U,U,U),pk(Q*,C),pen(A,A1*),slc(A,U,U),unhC(Q,U),wdn(A,U,U,U),
+ AT(W,A),AW(C,A),AK(C,A),AO(UC,A),AN(U,A),w1(U,A,A),w2(U,A,A,A),w8(U,A,CO A*,U),*gp(A);
+V cyc(V*,U,U),eS(A,U),eQ(Q,U,U),exit(I),hexC(Q,U,C*),kargs(I,Q*),kinit(),*memmem(CO V*,N,CO V*,N),mrn(U,CO A*),mRn(U,CO A*),repl(),tilV(V*,L,L,U);
 B id0(UC),mtc_(A,A),tru(A);
 C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);
 UC gi(A);
 I qA(A,A),qf(F,F),rnk(A),sq(Q);
-U _K(A),si(Q,C),_N(A),js_eval(C*,U,C*,U),fG(O G*,U,G),fI(O I*,U,I),fL(O L*,U,L);
-L cfm(O A*,I),gl_(A),gl(A),iw(A,U,L),now(),pl(Q*),minfZ(L,A),addfB(O V*,U),addfZ(L,A),pf(Q*);
-Q qs(O L*),pID(Q);
+U _K(A),si(Q,C),_N(A),js_eval(C*,U,C*,U),fG(CO G*,U,G),fI(CO I*,U,I),fL(CO L*,U,L);
+L cfm(CO A*,I),gl_(A),gl(A),iw(A,U,L),now(),pl(Q*),minfZ(L,A),addfB(CO V*,U),addfZ(L,A),pf(Q*);
+Q qs(CO L*),pID(Q);
 W pu(Q*);
 F gf(A);
-EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(O C[])vc,TS,Tw,TR,TT,TX,Tk;EX Q*argv,*env;
+EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(CO C[])vc,TS,Tw,TR,TT,TX,Tk;EX Q*argv,*env;
 
 //                   0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 //                     () !i ,1 ,i ,i ,i ,i ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
 enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,tq,tr,tu,tv,tw,tx,tn};
-#define T_ O C TS[]="0""A""I""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols     */\
-               Tw[]={0, 6, 6, 0, 3, 4, 5, 6, 6, 3, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6},/*log2(size)       */\
-               TT[]={0,tA,tL,tB,tG,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*to list type     */\
-               TX[]={0,tG,tG,tG,tG,tH,tI,tL,tF,tG,tI,tG,tG, 0, 0,tF,tG,tI,tG,tG,tG,tG,tG,tG,tG,tG},/*arith conformance*/\
-               Tk[]="0""L""I""I""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*for the api (k.h)*/
+#define T_ CO C TS[]="0""A""I""I""I""I""I""I""F""C""S""M""m""i""i""f""c""s""o""p""q""r""u""v""w""x",/*type symbols     */\
+                Tw[]={0, 6, 6, 0, 3, 4, 5, 6, 6, 3, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6},/*log2(size)       */\
+                TT[]={0,tA,tL,tB,tG,tH,tI,tL,tF,tC,tS,tM,tM,tI,tL,tF,tC,tS,tA,tA,tA,tA,tA,tA,tA,tA},/*to list type     */\
+                TX[]={0,tG,tG,tG,tG,tH,tI,tL,tF,tG,tI,tG,tG, 0, 0,tF,tG,tI,tG,tG,tG,tG,tG,tG,tG,tG},/*arith conformance*/\
+                Tk[]="0""L""I""I""I""I""I""I""F""C""S""T""D""i""i""f""c""s""?""?""?""?""?""?""?""?";/*for the api (k.h)*/
 #define TR(t) ((1<<tA|1<<tM|1<<tm|1<<to|1<<tp|1<<tq|1<<tr)>>(t)&1)//reftypes
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)//packed types
 #define TU(t) ((t)>=to)                                           //function types
@@ -150,7 +150,7 @@ enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,
 #define V_ A1*v1[]={sam,flp,neg,fir,sqr,til,whr,rev,asc,dsc,grp,not,enl,nul,len,flr,str,unq,typ,val,u0c,u1c,u2c,las,imn,imx,out};\
            A2*v2[]={dex,add,sub,mul,dvd,exc,mnm,mxm,ltn,gtn,eql,mtc,cat,crt,hsh,und,dlr,que, _1,dot,v0c,v1c,v2c,dex,dex,dex,dex};\
            AA*v8[]={no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,no8,ins, a8, d8,no8,no8,no8,no8,no8,no8,no8};\
-          O C vc[]={':','+','-','*','%','!','&','|','<','>','=','~',',','^','#','_','$','?','@','.','0','1','2','3','4','5','6',0};
+         CO C vc[]={':','+','-','*','%','!','&','|','<','>','=','~',',','^','#','_','$','?','@','.','0','1','2','3','4','5','6',0};
 enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,FLR,STR,UNQ,TYP,VAL,U0C,U1C,U2C,LAS,IMN,IMX,OUT,
               av=Lt(tv),ADD,SUB,MUL,DVD,EXC,MNM,MXM,LTN,GTN,EQL,MTC,CAT,CRT,RSH,UND,DLR,QUE,AP1,DOT,V0C,V1C,V2C,V3C,V4C,MKL,GAP,
               aw=Lt(tw)};

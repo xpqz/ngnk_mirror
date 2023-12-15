@@ -2,15 +2,15 @@
 I rnk(A x/*0*/){X(RA(I v=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)RmM(rnk(xy))RT_A(1)R_(0))}//-1 for mixed rank
 S U urnk(A x/*0*/){X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))}//assuming unirank
 
-  U fG(O G*a,U n,G v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
-S U fH(O H*a,U n,H v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
-  U fI(O I*a,U n,I v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
-  U fL(O L*a,U n,L v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
+  U fG(CO G*a,U n,G v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
+S U fH(CO H*a,U n,H v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
+  U fI(CO I*a,U n,I v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
+  U fL(CO L*a,U n,L v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
 
-S L fGL(O V*a,U n,L v)_(P(v!=(G)v,NL)U i=fG(a,n,v);i<n?i:NL)
-S L fHL(O V*a,U n,L v)_(P(v!=(H)v,NL)U i=fH(a,n,v);i<n?i:NL)
-S L fIL(O V*a,U n,L v)_(P(v!=(I)v,NL)U i=fI(a,n,v);i<n?i:NL)
-S L fLL(O V*a,U n,L v)_(             U i=fL(a,n,v);i<n?i:NL)
+S L fGL(CO V*a,U n,L v)_(P(v!=(G)v,NL)U i=fG(a,n,v);i<n?i:NL)
+S L fHL(CO V*a,U n,L v)_(P(v!=(H)v,NL)U i=fH(a,n,v);i<n?i:NL)
+S L fIL(CO V*a,U n,L v)_(P(v!=(I)v,NL)U i=fI(a,n,v);i<n?i:NL)
+S L fLL(CO V*a,U n,L v)_(             U i=fL(a,n,v);i<n?i:NL)
 
 S A1(fN,A y=_R(cn[tl]);x(xtt?y:rsz(xN,y)))
 
@@ -45,7 +45,7 @@ X2(fnd,
    Yt(az(f(a,m,gl(y))))
    U n=yn;A z=aL(n);My(S4(yw-3,i(n,zl=f(a,m,yg)),i(n,zl=f(a,m,yh)),i(n,zl=f(a,m,yi)),i(n,zl=f(a,m,yl))))z)
   fN(y)))
-X2(que,Rs(S O C s[][4]={"j","k","hex"};G(&js0,val,unh,ed)[fI((V*)s,L(s),xv)](y))Ril(rnd(gl_(x),y))R_(fnd(x,y)))
+X2(que,Rs(S CO C s[][4]={"j","k","hex"};G(&js0,val,unh,ed)[fI((V*)s,L(s),xv)](y))Ril(rnd(gl_(x),y))R_(fnd(x,y)))
 
 S A2 binF;
 S Y2(binZ,

@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S O C je[]="\"\\/\b\f\n\r\t",ej[]="\"\\/bfnrt";S C*s;
+S CO C je[]="\"\\/\b\f\n\r\t",ej[]="\"\\/bfnrt";S C*s;
 
 S A0 jx;S C jw()_(W(*s&&*s<=32u,s++)*s)
 S A0(jd,I m=*s=='-';s+=m;C c=*s++;P(!C09(c),0)F v=c-'0';W(C09(*s),v*=10;v+=*s++-'0')I(*s=='.',s++;F t=1;W(C09(*s),t/=10;v+=t*(*s++-'0')))

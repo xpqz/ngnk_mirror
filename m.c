@@ -15,11 +15,11 @@ S A b[24];DBG(S U lck;)
 S W cap(A x/*0*/)_((HD<<xU)-HD)//chunk capacity in bytes
 A1(m0,DBG(lck++;)Q(x)XP(0)Q(xr>0)P(--xr,0)U i=xU;P(!i,mu(xV-pg))xX=b[i];b[i]=x;XR(mrn(xn|!xn,xA);x)x)
 DBG(A1(m1,lck--;P(!x||!xU,0)MS(xV,0xab,cap(x));AN(-1,AT(0,x));0))
-A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)A1(mr,DBG(m1)(m0(x)))V mRn(U n,O A*a){i(n,_R(a[i]))}V mrn(U n,O A*a){i(n,mr(a[i]))}A1(mRa,mRn(xn,xA);x)
+A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)A1(mr,DBG(m1)(m0(x)))V mRn(U n,CO A*a){i(n,_R(a[i]))}V mrn(U n,CO A*a){i(n,mr(a[i]))}A1(mRa,mRn(xn,xA);x)
 SN A mb(U i)_(P(i>=L(b),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xU=i;x)A x=b[i];P(x,b[i]=xX;xX=0;x)x=mb(i+1);xU=i;A y=x+(HD<<i);yU=i;AT(0,y);yr=0;yX=b[i];b[i]=y;x)
 
 A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+(((W)n<<Tw[t])+7>>3);U i=59-CLZ(HD|m-1);A x=mb(i);xr=1;AT(t,AN(n,x)))
-A aV(C t,U n,O V*v)_(A x=an(n,t);MC(xV,v,((W)n<<Tw[t])+7>>3);x)
+A aV(C t,U n,CO V*v)_(A x=an(n,t);MC(xV,v,((W)n<<Tw[t])+7>>3);x)
 A aa(U n,A x/*1*/)_(P(xr==1&&((W)n<<xw)+7>>3<=cap(x),AN(n,x))A y=an(n,xt);MC(yV,xV,((W)xn<<Tw[xt])+7>>3);I(ytR,I(xr==1,AZ(x))E(i(xn,_R(ya))))x(y))//reallocate, make room for n items
 A aA0(U n)_(A x=AN(0,aA(n));xx=emp(tC);x)
 A1(aA1,A y=an(1,tA);yx=x;y)
@@ -57,7 +57,7 @@ A AN(U n,A x)_(xn=n;x)
 A1(AZ,AT(tG,x))
 
 S C s0[1<<16],*s1=s0+1;
-Q qs(O L*p)_(*p<0?s0-*p:(V*)p)
+Q qs(CO L*p)_(*p<0?s0-*p:(V*)p)
 I sq(Q s)_(U n=SL(s);P(n<4||(n==4&&!(s[3]&128)),I v=0;MC(&v,s,n);v)Q p=s0+1;W(p<s1,P(!strcmp(p,s),s0-p)p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;s0-s1+n)
 A sym(Q s)_(as(sq(s)))
 
