@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-S C b[4096],*r=b;S I d;
+Z C b[4096],*r=b;Z I d;
 NI A err0(Q s)_(r=b;d=0;N n=MIN(SL(s),32);r=b;*r++='\'';MC(r,s,n);r+=n;*r++=10;0)
 SN A err1(A x,Q s)_(x(0);err0(s))
 SN A err8(CO A*a,U n,Q s)_(mrn(n,a);err0(s))

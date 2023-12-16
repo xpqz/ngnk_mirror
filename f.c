@@ -1,21 +1,21 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 I rnk(A x/*0*/){X(RA(I v=rnk(xx);P(v<0,v)i(xn,P(v-rnk(xa),-1))v+1)RmM(rnk(xy))RT_A(1)R_(0))}//-1 for mixed rank
-S U urnk(A x/*0*/){X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))}//assuming unirank
+Z U urnk(A x/*0*/){X(RA(urnk(xx)+1)RmM(urnk(xy))RT_A(1)R_(0))}//assuming unirank
 
   U fG(CO G*a,U n,G v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
-S U fH(CO H*a,U n,H v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
+Z U fH(CO H*a,U n,H v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
   U fI(CO I*a,U n,I v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
   U fL(CO L*a,U n,L v)_(U i=0;W(i<n&&a[i]!=v,i++)i)
 
-S L fGL(CO V*a,U n,L v)_(P(v!=(G)v,NL)U i=fG(a,n,v);i<n?i:NL)
-S L fHL(CO V*a,U n,L v)_(P(v!=(H)v,NL)U i=fH(a,n,v);i<n?i:NL)
-S L fIL(CO V*a,U n,L v)_(P(v!=(I)v,NL)U i=fI(a,n,v);i<n?i:NL)
-S L fLL(CO V*a,U n,L v)_(             U i=fL(a,n,v);i<n?i:NL)
+Z L fGL(CO V*a,U n,L v)_(P(v!=(G)v,NL)U i=fG(a,n,v);i<n?i:NL)
+Z L fHL(CO V*a,U n,L v)_(P(v!=(H)v,NL)U i=fH(a,n,v);i<n?i:NL)
+Z L fIL(CO V*a,U n,L v)_(P(v!=(I)v,NL)U i=fI(a,n,v);i<n?i:NL)
+Z L fLL(CO V*a,U n,L v)_(             U i=fL(a,n,v);i<n?i:NL)
 
-S A1(fN,A y=_R(cn[tl]);x(xtt?y:rsz(xN,y)))
+Z A1(fN,A y=_R(cn[tl]);x(xtt?y:rsz(xN,y)))
 
-S L t[256];
-S X1(fndGx,
+Z L t[256];
+Z X1(fndGx,
  R_(fN(x))
  RmMA(e1f(fndGx,x))
  Rilc(L v=gl(x);az(v==(C)v?t[(UC)v]:NL))
@@ -45,10 +45,10 @@ X2(fnd,
    Yt(az(f(a,m,gl(y))))
    U n=yn;A z=aL(n);My(S4(yw-3,i(n,zl=f(a,m,yg)),i(n,zl=f(a,m,yh)),i(n,zl=f(a,m,yi)),i(n,zl=f(a,m,yl))))z)
   fN(y)))
-X2(que,Rs(S CO C s[][4]={"j","k","hex"};G(&js0,val,unh,ed)[fI((V*)s,L(s),xv)](y))Ril(rnd(gl_(x),y))R_(fnd(x,y)))
+X2(que,Rs(Z CO C s[][4]={"j","k","hex"};G(&js0,val,unh,ed)[fI((V*)s,L(s),xv)](y))Ril(rnd(gl_(x),y))R_(fnd(x,y)))
 
-S A2 binF;
-S Y2(binZ,
+Z A2 binF;
+Z Y2(binZ,
  R_(et(y))
  RF(x=cF(xR);x(binF(x,y)))
  Rt(YU(ed(y))fir(N(binZ(x,enl(y)))))
@@ -61,5 +61,5 @@ S Y2(binZ,
   i(yn,L v;S4(wy,v=yg,v=yh,v=yi,v=yl)*k=-1;k[1]=xn;S4(wx,,W(*k+1<k[1],I i=*k+k[1]>>1;k[v<xh]=i),W(*k+1<k[1],I i=*k+k[1]>>1;k[v<xi]=i),W(*k+1<k[1],I i=*k+k[1]>>1;k[v<xl]=i))
        S4(wz,zg=*k,zh=*k,zi=*k,zl=*k))y(z)))
 
-S Y2(binF,RF(x=of1(xR);x(binZ(x,of1(y))))REBGHILC(binF(x,N(cF(y))))Rt(YU(ed(y))fir(N(binF(x,enl(y)))))RmMA(r2f(binF,x,y))R_(ed(y)))
+Z Y2(binF,RF(x=of1(xR);x(binZ(x,of1(y))))REBGHILC(binF(x,N(cF(y))))Rt(YU(ed(y))fir(N(binF(x,enl(y)))))RmMA(r2f(binF,x,y))R_(ed(y)))
 X2(bin,REBGHILC(binZ(x,y))RF(binF(x,y))Rm(_1(xx,N(bin(xy,y))))R_(et(y)))

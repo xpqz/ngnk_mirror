@@ -5,7 +5,7 @@
 #define  DBG(a...)//a
 #define    _(a...) {return({a;});}
 #define  A(x,a...) (TY(x)[]){x,a}
-#define  G(x,a...) ({S CO TY(x)arr[]={x,a};arr;})
+#define  G(x,a...) ({Z CO TY(x)arr[]={x,a};arr;})
 #define  W(x,a...) while(x){a;}
 #define  B(x,a...) I(x,a;break)
 #define  P(x,a...) I(x,_(a))
@@ -29,11 +29,11 @@
 #define L(x) (SZ(x)/SZ((x)[0]))
 #define R1 R
 #define CO const
-#define S static
+#define Z static
 #define SZ sizeof
 #define HD 32ll//header
 #define NI __attribute__((noinline))
-#define SN S NI
+#define SN Z NI
 #define TD typedef
 #define TY __typeof__
 #define ST struct
@@ -160,9 +160,9 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define WF (*(F*)A(WFL))
 #define NL (1ll<<63)
 #define WL (~NL)
-#define K(s,a...) ({S A f;k8(&f,s,A(a),L(A(a)));})
-#define K1(s,x)   ({S A f;k1(&f,s,x);})
-#define K2(s,x,y) ({S A f;k2(&f,s,x,y);})
+#define K(s,a...) ({Z A f;k8(&f,s,A(a),L(A(a)));})
+#define K1(s,x)   ({Z A f;k1(&f,s,x);})
+#define K2(s,x,y) ({Z A f;k2(&f,s,x,y);})
 
 #define ERR M(c,compile)M(d,domain)M(i,index)M(l,length)M(n,nyi)M(o,io)M(p,parse)M(r,rank)M(s,stack)M(t,type)M(v,value)M(z,limit)
 #define M(t,m) A0 e##t##0;A1 e##t;AA e##t##8;

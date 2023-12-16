@@ -26,9 +26,9 @@ I pg=4096;//pagesize
  I pipe(I v[2])_(-1)
  C*getcwd(C*s,N n)_((V*)0)
  I js_in(V*,N);V js_out(CO V*,N),js_log(CO V*),*js_alloc(N),js_time(I*,long*),js_exit(I);
- S ST{C*a,p[16];N n;}s[8]={{.a=""},{.a=""},//s:storage,
+ Z ST{C*a,p[16];N n;}s[8]={{.a=""},{.a=""},//s:storage,
   #include"o/w/fs.h"
- };S ST{C i;N o;}d[8]={{.i=1},{.i=1},{.i=1}};S CO I ns=L(s),nd=L(d);//d:fd table
+ };Z ST{C i;N o;}d[8]={{.i=1},{.i=1},{.i=1}};Z CO I ns=L(s),nd=L(d);//d:fd table
  #define FI P((U)f>=nd||!d[f].i,EBADF)I i=d[f].i;//validate fd "f" and get inode "i"
  I open(Q p,I v,...)_(I m=SL(p);P(m>=SZ s[0].p,ENAMETOOLONG)I i=0;W(i<ns&&strcmp(s[i].p,p),i++)
   I(i>=ns,P(O_CREAT&~v,ENOENT)i=0;W(i<ns&&s[i].a,i++)P(i>=ns,ENOSPC)s[i].a="";s[i].n=0;MC(s[i].p,p,m))
