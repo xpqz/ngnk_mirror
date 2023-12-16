@@ -1,5 +1,5 @@
 A object in k            A() stack-allocated C array
-B bool                   B()
+B bool                   B() if .. break
 C char                   C() case
 D                        D() default
 E                        E() else

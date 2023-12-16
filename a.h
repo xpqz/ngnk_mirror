@@ -69,8 +69,8 @@ TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(CO A*,U),A
 #define A2(f,b...) A f(A x,A y         )_(b)/*01*/
 #define A3(f,b...) A f(A x,A y,A z     )_(b)
 #define A4(f,b...) A f(A x,A y,A z,A u )_(b)
-#define AX(f,b...) A f(A x,CO A*a,U n  )_(b)/*0,1..1,n*/
-#define AA(f,b...) A f(    CO A*a,U n  )_(b)
+#define AX(f,b...) A f(A x,CO A*a,U n  )_(DBG(Q(n<=8));b)/*0,1..1,n*/
+#define AA(f,b...) A f(    CO A*a,U n  )_(DBG(Q(n<=8));b)
 A1 _R,aA1,asc,AZ,blw,cB,cG,cC,cF,cH,cI,cL,cS,dsc,enl,epr,err,fir,flp,flr,frk,gZ,gg,grp,hex,imx,imn,inv,jS,js0,js1,kcos,kexp,klog,ksin,kst,las,len,m0,m1,mkn,mRa,mr,mut,
  neg,not,nul,of0,of1,opn,out,prng,qkmp,qpri,qte,raz,rev,rs0,spl,sqr,sqz,sqzZ,str,str0,til,typ,u0c,u1c,u2c,unh,unq,val,whr;
 A2 _1,aA2,aM,add,am,psh,ari,bin,ct,cat,cat10,cat11,dlr,dex,dot,dvd,eql,exc,crt,fil,fnd,gtn,hsh,ie,i1,ltn,mod,mnm,mtc,mul,mxm,que,sub,und,v0c,v1c,v2c;
@@ -133,8 +133,8 @@ enum                {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp,
 #define _tP(x) TP(_t(x))      // packed?
 #define _tR(x) TR(_t(x))      // ref?
 #define _tT(x) (_t(x)<tM)     // list?
-#define _tZ(x) LH(tE,_t(x),tL)// intlist?
 #define _tt(x) (_t(x)>tm)     // atom?
+#define _tZ(x) LH(tE,_t(x),tL)// intlist?
 #define _tz(x) LH(ti,_t(x),tl)// intatom?
 #define _o(x) (_ts(x)?(UC)((x)>>32):_tP(x)?0u:_O(x))//srcoffset(for symbols and symbol lists)
 #define _w(x) Tw[_t(x)]       //log2(type width in bits)
