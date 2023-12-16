@@ -13,7 +13,7 @@ Z L plN(S*p)_(L v=pl(p);!v&&**p=='N'?(*p)++,NL:v)                               
 Z L pfu(S*p)_(L v=pu(p);S s=*p;C c=*s;P(c=='w',(*p)++;WFL)P(c=='n',(*p)++;v^NFL)I e=0;              //parse float unsigned
  I(c=='.',c=*++s;W(C09(c),I(v<(1ull<<63)/10,v=10*v+c-'0';e--)c=*++s))
  I(c=='e',s++;e+=pl(&s);P(e<-308,0)P(e>308,WFL))
- Z F t[309];I(!*t,*t=1;i(308,t[i+1]=10*t[i]))
+ Z F t[309];I(!*t,*t=1;F(308,t[i+1]=10*t[i]))
  *p=s;*(L*)A(e<0?v/t[-e]:v*t[e]))
 L pf(S*p)_(B m=**p=='-';(*p)+=m;L v=(L)m<<63|pfu(p);(*p)+=**p=='f';v)                               //parse float
 Z A pV(C t,TY(pl)*f)_(L a[1<<9];U n=0;                                                              //parse ints or floats
@@ -40,7 +40,7 @@ Z A pt(C*v)_(C c=*s;                                                            
  P(c=='"',p1(pC()))
  P(c=='[',s++;pb(GAP,']'))
  P(c=='(',s++;P(*s==')',s++;emp(tA))A x=N(pb(MKL,')'));xn-2?x:las(x))
- P(c=='{',C k0=k;k=1;S s1=s0,t=s0=s++;A y=N(pp()),z=pb(GAP,'}');P(!z,s0=s1;y(0))I(y==au,y=aS(k);i(3,yi='x'+i))A x=N(cpl(aCn(t,s-t),z,y));s0=s1;k=k0;x)
+ P(c=='{',C k0=k;k=1;S s1=s0,t=s0=s++;A y=N(pp()),z=pb(GAP,'}');P(!z,s0=s1;y(0))I(y==au,y=aS(k);F(3,yi='x'+i))A x=N(cpl(aCn(t,s-t),z,y));s0=s1;k=k0;x)
  P(id0(c),S p=s;A x=pP();I(s-p==1&&c-'y'<2u,k=MAX(k,c-'w'))AO(p-s0,x))
  P(C09(c)&&s[1]==':',B u=s[2]==':';s+=2+u;U i=20+c-'0';P(i>25,ep0())*v=1;Lt(tv-u)|i)
  P(c=='0'&&s[1]=='x',s+=2;p1(p0x()))

@@ -3,8 +3,8 @@ B bool                   B()
 C char                   C() case
 D                        D() default
 E                        E() else
-F double                 F()
-G char (byte)            G() static const C array
+F double                 F() for
+G byte (alias for char)  G() static const C array
 H short                  H()
 I int                    I() if
 J                        J() else if
@@ -23,4 +23,4 @@ V void                   V()
 W unsigned long long     W() while
 X                        X() switch(xt){..}
 Y                        Y() switch(yt){..}
-Z static                 Z() cant be used
+Z static                 Z() -

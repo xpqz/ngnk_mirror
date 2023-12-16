@@ -8,7 +8,7 @@ Z V VK(C t,V*a,K x){I(xtZ,x=ct(t,x))MC(a,xV,(W)xn<<Tw[t]>>3);I(xtR,I(xr==1,AN(0,
 //            constructors                                                     accessors
 //    atom                     list                                    atom                 list
 K Kc(C v)_(ac(v))    K KC(C*a ,N n)_(aV(tC,n,a))                   C cK(K x)_(xv)  V CK(C*a,K x){VK(tC,a,x);}
-K Ks(C*s)_(sym(s))   K KS(C**a,N n)_(A x=aS(n);i(n,xi=sym(a[i]))x)
+K Ks(C*s)_(sym(s))   K KS(C**a,N n)_(A x=aS(n);F(n,xi=sym(a[i]))x)
 K Ki(I v)_(az(v))    K KI(I*a ,N n)_(aV(tI,n,a))                   I iK(K x)_(xv)  V IK(I*a,K x){VK(tI,a,x);}
 K Kf(F v)_(af(v))    K KF(F*a ,N n)_(aV(tF,n,a))                   F fK(K x)_(*xF) V FK(F*a,K x){VK(tF,a,x);}
                      K KL(K*a ,N n)_(a?aV(tA,n,a):aA(n))                           V LK(K*a,K x){VK(tA,a,x);}
