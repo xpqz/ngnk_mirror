@@ -5,6 +5,7 @@
 #define  DBG(a...)//a
 #define    _(a...) {return({a;});}
 #define  A(x,a...) (TY(x)[]){x,a}
+#define   A8(a...) (CO A[8]){a}
 #define  G(x,a...) ({Z CO TY(x)arr[]={x,a};arr;})
 #define  W(x,a...) while(x){a;}
 #define  B(x,a...) I(x,a;break)

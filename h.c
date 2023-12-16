@@ -71,7 +71,7 @@ Z A insL(A x,L i,L j,A y/*1ij0*/)_(
 A3(ins3,/*100*/
  Xmt(et(x))
  Zmt(z=enl(zR);z(ins3(x,y,z)))
- XM(P(!ztM,et(x))P(!mtc_(xx,zx),ed(x))y=prj(QUE,A((A)GAP,yR,GAP),3);A u=Nx(y(e2(y,xy,_R(zy))));x(aM(_R(xx),u)))
+ XM(P(!ztM,et(x))P(!mtc_(xx,zx),ed(x))y=prj(QUE,A8((A)GAP,yR,GAP),3);A u=Nx(y(e2(y,xy,_R(zy))));x(aM(_R(xx),u)))
  P(xtZ&&ztZ&&xt-zt,zR;N(sup(&x,&z));z(ins3(x,y,z)))
  P(xt-zt,z=blw(zR);z(ins3(blw(x),y,z)))
  Y(Ril(L i=gl_(y);insL(x,i,i,z))REGHIL(P(yn-2,el(x))insL(x,gl_(ii(y,0)),gl_(ii(y,1)),z))R_(et(x)))0)
