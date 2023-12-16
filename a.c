@@ -9,19 +9,19 @@ Z A iM(A x,L i)_(Q(xtM);A y=xy,z=aA(yn);Q(ytA);Fj(zn|!zn,zA[j]=io(yA[j],i))am(_R
 A ii(A x/*0*/,U i)_(X(RA(_R(xa))RC(ac(xc))RG(ai(xg))RH(ai(xh))RI(ai(xi))RL(al(xl))RF(af(xf))RS(as(xi))Rm(ii(xy,i))RM(iM(x,i))RE(az(*xL+i))RB(ai(xG[i>>3]>>(i&7)&1))R_(xR))0)
 A io(A x/*0*/,L i)_(X(RE(i<(W)(xL[1]-*xL)?az(*xL+i):_R(cn[tl]))RT_E(i<(W)xn?ii(x,i):xn?mkn(ii(x,0)):xtA?_R(xx):_R(cn[xt]))Rt(xR)Rm(io(xy,i))RM(iM(x,i)))0)
 A1(fir,x(io(x,0)))A1(las,x(io(x,xN-1)))
-SN U maxfU(CO U*a,U n)_(U v=0;F(n,v=MAX(v,a[i]))v)
+ZN U maxfU(CO U*a,U n)_(U v=0;F(n,v=MAX(v,a[i]))v)
 #define ambcn CO V*RES a,U m,CO U*RES b,V*RES c,U n
-SN V iG(ambcn){CO G*p=a;G*r=c;F(n,*r++=p[*b++])}
-SN V iH(ambcn){CO H*p=a;H*r=c;F(n,*r++=p[*b++])}
-SN V iI(ambcn){CO I*p=a;I*r=c;F(n,*r++=p[*b++])}
-SN V iC(ambcn){CO C*p=a;C*r=c;F(n+31&-32,*r++=b[i]<m?p[b[i]]:32)}
-SN V iS(ambcn){CO I*p=a;I*r=c;F(n+7&-8,*r++=b[i]<m?p[b[i]]: 0)}
-SN V oG(ambcn){CO G*p=a;L*r=c;F(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
-SN V oH(ambcn){CO H*p=a;L*r=c;F(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
-SN V oI(ambcn){CO I*p=a;L*r=c;F(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
-SN V o8(ambcn,L v){CO L*p=a;L*r=c;F(n+3&-4,*r++=b[i]<m?p[b[i]]:v)}
-SN V oL(ambcn){o8(a,m,b,c,n,NL);}
-SN V oF(ambcn){o8(a,m,b,c,n,NFL);}
+ZN V iG(ambcn){CO G*p=a;G*r=c;F(n,*r++=p[*b++])}
+ZN V iH(ambcn){CO H*p=a;H*r=c;F(n,*r++=p[*b++])}
+ZN V iI(ambcn){CO I*p=a;I*r=c;F(n,*r++=p[*b++])}
+ZN V iC(ambcn){CO C*p=a;C*r=c;F(n+31&-32,*r++=b[i]<m?p[b[i]]:32)}
+ZN V iS(ambcn){CO I*p=a;I*r=c;F(n+7&-8,*r++=b[i]<m?p[b[i]]: 0)}
+ZN V oG(ambcn){CO G*p=a;L*r=c;F(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
+ZN V oH(ambcn){CO H*p=a;L*r=c;F(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
+ZN V oI(ambcn){CO I*p=a;L*r=c;F(n+3&-4,*r++=b[i]<m?p[b[i]]:NL)}
+ZN V o8(ambcn,L v){CO L*p=a;L*r=c;F(n+3&-4,*r++=b[i]<m?p[b[i]]:v)}
+ZN V oL(ambcn){o8(a,m,b,c,n,NL);}
+ZN V oF(ambcn){o8(a,m,b,c,n,NFL);}
 A2(i1,/*01*/P(y==GAP||y==au,xR)
  X(Rt(y(xR))
    RE(x=gZ(xR);x(i1(x,y)))
@@ -48,8 +48,8 @@ Z X1(qjs,RC(C b[4096];U n=js_eval(xC,xn,b,SZ b);x(0);aCn(b,n))RA(e1f(qjs,x))R_(e
 Z X1(qp,RC(x=str0(x);S s=xC;x(pk(&s,0)))R_(et(x)))
 Z A1(qt,x(al(now())))
 Z A1(qfb,P(!xtC,et(x))P(xn-8,el(x))x=rev(x);x(aV(tf,1,xV)))//float from bits
-SN AX(ext,P(n-xK,er8(a,n))V*f=(V*)(x&-1ull>>16);S(n,R(1,((A1*)f)(a[0]))R(2,((A2*)f)(a[0],a[1]))R(3,((A3*)f)(a[0],a[1],a[2]))R(4,((A4*)f)(a[0],a[1],a[2],a[3]))R_(en8(a,n)))0)
-SN A sym1(I v,A x)_(Z CO C s[][4]={"k","j","p","t","x","hex","err","argv","env","exit","js","pri","prng","sin","cos","exp","ln","fb"};
+ZN AX(ext,P(n-xK,er8(a,n))V*f=(V*)(x&-1ull>>16);S(n,R(1,((A1*)f)(a[0]))R(2,((A2*)f)(a[0],a[1]))R(3,((A3*)f)(a[0],a[1],a[2]))R(4,((A4*)f)(a[0],a[1],a[2],a[3]))R_(en8(a,n)))0)
+ZN A sym1(I v,A x)_(Z CO C s[][4]={"k","j","p","t","x","hex","err","argv","env","exit","js","pri","prng","sin","cos","exp","ln","fb"};
  G(&kst,js1,qp,qt,frk,hex,err,qa,qe,qx,qjs,qpri,prng,ksin,kcos,kexp,klog,qfb,ed)[fI((V*)s,L(s),v)](x))
 A2(_1,/*01*/P(!xtt,i1(x,y))U k=xK;P(1<k,k==2&&!xtp?prj(x,A(y,GAP),2):prj(x,&y,1))
  X(Ro(run(x,&y,1))Rp(P(k>7,er(y))I m=xn-1,j=0;Ab8;F(m,b[i]=xA[i+1]==GAP&&!j?j++,y:_R(xA[i+1]))I l=MAX(0,1-j);MC(b+m,&y,8*l);_8(xx,b,m+l))
@@ -90,7 +90,7 @@ AA(d8,/*10..0*/A x=*a;
  X(RsS(A*p=gp(x);I(!*p,*p=au)Ab8;*b=*p;MC(b+1,a+1,n-1<<3);*p=au;*p=_R(N(d8_(b,n))))
    RU(n==3?try(x,a[1],a[2]):er(x))
    R_(d8_(a,n)))0)
-SN A ki(A*p,S s)_(*p=evs(s,0);I(!*p,die(s))PSH(cns,*p))
+ZN A ki(A*p,S s)_(*p=evs(s,0);I(!*p,die(s))PSH(cns,*p))
 A k1(A*p,S s,A x)_(I(!*p,ki(p,s))_1(*p,x))
 A k2(A*p,S s,A x,A y)_(I(!*p,ki(p,s))_2(*p,x,y))
 A k8(A*p,S s,CO A*a,U n)_(I(!*p,ki(p,s))n?_8(*p,a,n):*p)

@@ -26,7 +26,7 @@ Z A fr(A x/*1*/,N i,N n)_(Xz(frs(gl(x),i,n))I f=N(o(x,O_RDONLY));P(f<3,frs(f,i,n
 Z A fws(I f,S s,N n)_(W(n>0,L k=write(f,s,n);P(k<0,eo0())P(!k,au)s+=k;n-=k)au)                                                                               // write stream
 Z A fwm(I f,S s,N n)_(ftruncate(f,n);V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_SHARED,f,0);MC(p,s,n);munmap(p,n);au)                                             // write through mmap
 Z X2(fw,Ril(I f=gl_(x);My(x=(f<3||!S_ISREG(fm(f))?fws:fwm)(f,yV,yn))x)R_(I f=N(o(xR,O_RDWR|O_CREAT|O_TRUNC));A z=v1c(ai(f),y);f>2&&close(f);z))              // write
-SN A dle()_(C*e=dlerror();I(e,os(e);os("\n"))eo0())
+ZN A dle()_(C*e=dlerror();I(e,os(e);os("\n"))eo0())
 A1(opn,Xz(x)ai(N(o(x,O_RDWR|O_CREAT))))                                                                                     // <s
 A cls(L n)_(close(n);au)                                                                                                    // >i
 A1(u0c,spl(N(u1c(x))))                                                                                                      // 0:x

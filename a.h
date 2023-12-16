@@ -32,7 +32,7 @@
 #define SZ sizeof
 #define HD 32ll//header
 #define NI __attribute__((noinline))
-#define SN Z NI
+#define ZN Z NI
 #define TD typedef
 #define TY __typeof__
 #define ST struct

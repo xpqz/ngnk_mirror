@@ -13,7 +13,7 @@ Z A jx(){C c=jw();S(c,R3('f','n','t',c=c>>3&3;I v=*(I*)(V*)A("alse","null","true
  R('[',ja())R('{',jo())R('"',js())R_(jd()))}
 X1(js0,RC(U n=xn;x=aa(n+4,x);MS(xC+n,0,4);s=xV;A y=jx();C c=jw();I(y&&c,y=y(0))I(!y,ep0();eS(x,s-xC))x(y))Rc(js0(enl(x)))R_(et(x)))
 
-Z V JX(A);Z U nX(A);Z UC t[256];SN V it(){MS(t,5,32);t[127]=5;F(L(je),t[je[i]]=1)}
+Z V JX(A);Z U nX(A);Z UC t[256];ZN V it(){MS(t,5,32);t[127]=5;F(L(je),t[je[i]]=1)}
 Z U nC(S p,U n)_(U m=2+n;F(n,m+=t[(UC)p[i]])m)
 Z V JC(S p,U n){*s++='"';UC c;F(n,S(t[c=*p++],C(0,*s++=c)C(1,*s++='\\';*s++=ej[si(je,c)])D(MC(s,"\\u00",4);s+=4;hexC(p-1,2,s);s+=2)))*s++='"';}
 Z U nl(L v)_(P(v==NL,4)U n=v<0?(v=-v),2:1;W m=10;W(m<=v&&n<19,n++;m*=10)n)

@@ -1,8 +1,8 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 Z C b[4096],*r=b;Z I d;
 NI A err0(S s)_(r=b;d=0;N n=MIN(SL(s),32);r=b;*r++='\'';MC(r,s,n);r+=n;*r++=10;0)
-SN A err1(A x,S s)_(x(0);err0(s))
-SN A err8(CO A*a,U n,S s)_(mrn(n,a);err0(s))
+ZN A err1(A x,S s)_(x(0);err0(s))
+ZN A err8(CO A*a,U n,S s)_(mrn(n,a);err0(s))
 NI V eQ(S s,U n,U i){I(++d>=5,I(d==5,MC(r," ..\n",4);r+=4)return)
  S p=s+i,q=p,t=p;U h=64;W(p>s&&p>t-h&&p[-1]&&p[-1]-10,p--)W(q<s+n&&q<=t+h&&*q&&*q-10,q++)
  *r++=32;MC(r,p,q-p);I(p<=t-h,*r=r[1]='.')I(q>t+h,r[q-p-2]=r[q-p-1]='.')r+=q-p;*r++=10;
