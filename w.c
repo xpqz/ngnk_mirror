@@ -68,21 +68,21 @@ Z A stn(A x,L n,A y/*0n0*/)_(P(n<0||n-(I)n,ed0())P(!ytT,et0())YE(y=gZ(yR);y(stn(
 Z A3(ste,/*010*/Yz(stn(x,gl(y),z))et(y))
 Z A win(L n,A x)_(x(stn(au,n,x)))
 Z AX(cas,/*01..1*/Q(xtZ)K2("{(++y)[x]@'!#x}",x,aV(tA,n,a)))
-A w1(U i,A x,A y/*01*/){SW(i,
+A w1(U i,A x,A y/*01*/){S(i,
  R(0,X(Rt(e1(x,y))R_(bin(x,y)))0)
  R(1,X(RfF(dec(x,y))RilEBGHIL(dec(x,y))Rc(jc(xv,y))RC(jC(xV,xn,y))R_((xK<2?cf:f1)(x,y)))0)
  R(2,X(RfF(en(y))   RilEBGHIL(enc(x,y))Rc(sc(xv,y))RC(sC(xV,xn,y))R_((xK<2?cs:s1)(x,y)))0)
  R(3,X(Ril(win(gl_(x),y))R_(p1(x,y)))0)
  R(4,er(y))
  R_(e1(x,y)))}
-A w2(U i,A x,A y,A z/*010*/){SW(i,
+A w2(U i,A x,A y,A z/*010*/){S(i,
  R(0,X(REBGHIL(cas(x,A(y,zR),2))R_(y(e2(x,y,zR))))0)
  R(1,(xK<2?lf2:f2)(x,y,z))
  R(2,(xK<2?ls2:s2)(x,y,z))
  R(3,(xK==1?ste:p2)(x,y,z))
  R(4,y(r2(x,y,zR)))
  R_(y(l2(x,y,zR))))}
-A w8(U i,A x,CO A*a,U n/*0,1..1*/){A y=*a;P(n==1,w1(i,x,y))P(n==2,A z=a[1];z(w2(i,x,y,z)))SW(i,
+A w8(U i,A x,CO A*a,U n/*0,1..1*/){A y=*a;P(n==1,w1(i,x,y))P(n==2,A z=a[1];z(w2(i,x,y,z)))S(i,
  R(0,X(REBGHIL(cas(x,a,n))R_(e8(x,a,n)))0)
  R(1,xK<2||n-xK==1?lf8(x,a,n):f8(x,a,n))
  R(2,xK<2||n-xK==1?ls8(x,a,n):s8(x,a,n))

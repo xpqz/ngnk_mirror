@@ -8,19 +8,19 @@ G char (byte)            G() static const C array
 H short                  H()
 I int                    I() if
 J                        J() else if
-K [alias for A]          K() evaluate k-string
+K alias for A            K() evaluate k-string
 L long long              L() length of a C array
 M local macro            M() local macro
 N size_t                 N() error pass-through
-O                        O() [cant be used]
+O                        O() cant be used
 P                        P() if .. return ..
 Q                        Q() assert
 R                        R() case .. return ..
-S string (const char*)   S() [cant be used]
+S string (const char*)   S() switch
 T                        T()
 U unsigned int           U() unless
 V void                   V()
 W unsigned long long     W() while
 X                        X() switch(xt){..}
 Y                        Y() switch(yt){..}
-Z static                 Z()
+Z static                 Z() cant be used

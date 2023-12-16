@@ -9,13 +9,13 @@ Z A0(js,UC c;C*p=++s;U n=0;W((c=*p)-'"',P(c<32,s=p;0)p++;I(c=='\\',c=*p++;P(c<32
  W((c=*p++)-'"',I(c=='\\',c=*p++;I(c-'u',U j=si(ej,c);P(j>=L(ej),s=p-1;x(0))c=je[j])E(I v=ju(p);p+=4;I(v<128,c=v)J(v<2048,*r++=192|v>>6;c=128|63&v)E(*r++=224|v>>12;*r++=128|63&v>>6;c=128|63&v)))*r++=c)s=p;x)
 Z A0(ja,s++;A x=emp(tA);P(jw()==']',s++;x)W(1,PSH(x,Nx(jx()));C c=jw();P(c==']',s++;x)Nx(c==',');s++)0)
 Z A0(jo,s++;A x=emp(tS),y=emp(tA);C c=jw();P(c=='}',s++;am(x,y))W(c=='"',A z=js();B(!z)PSH(x,cS(z));B(jw()-':')s++;z=jx();B(!z)PSH(y,z);c=jw();P(c=='}',s++;am(x,y))B(c-',')s++;c=jw())x(y(0)))
-Z A jx(){C c=jw();SW(c,R3('f','n','t',c=c>>3&3;I v=*(I*)(V*)A("alse","null","true")[c]==*(I*)(V*)(s+!c);s+=(4+!c)*v;!v?0:c==1?_R(cn[tf]):au+!!c)
+Z A jx(){C c=jw();S(c,R3('f','n','t',c=c>>3&3;I v=*(I*)(V*)A("alse","null","true")[c]==*(I*)(V*)(s+!c);s+=(4+!c)*v;!v?0:c==1?_R(cn[tf]):au+!!c)
  R('[',ja())R('{',jo())R('"',js())R_(jd()))}
 X1(js0,RC(U n=xn;x=aa(n+4,x);MS(xC+n,0,4);s=xV;A y=jx();C c=jw();I(y&&c,y=y(0))I(!y,ep0();eS(x,s-xC))x(y))Rc(js0(enl(x)))R_(et(x)))
 
 Z V JX(A);Z U nX(A);Z UC t[256];SN V it(){MS(t,5,32);t[127]=5;i(L(je),t[je[i]]=1)}
 Z U nC(S p,U n)_(U m=2+n;i(n,m+=t[(UC)p[i]])m)
-Z V JC(S p,U n){*s++='"';UC c;i(n,SW(t[c=*p++],C(0,*s++=c)C(1,*s++='\\';*s++=ej[si(je,c)])D(MC(s,"\\u00",4);s+=4;hexC(p-1,2,s);s+=2)))*s++='"';}
+Z V JC(S p,U n){*s++='"';UC c;i(n,S(t[c=*p++],C(0,*s++=c)C(1,*s++='\\';*s++=ej[si(je,c)])D(MC(s,"\\u00",4);s+=4;hexC(p-1,2,s);s+=2)))*s++='"';}
 Z U nl(L v)_(P(v==NL,4)U n=v<0?(v=-v),2:1;W m=10;W(m<=v&&n<19,n++;m*=10)n)
 Z V Jl(L v){s=v-NL?sl(s,v):MC(s,"null",4)+4;}
 Z U nx(A x/*0*/){X(Ri(nl(xv))Rl(nl(*xL))Rc(C c=xv;nC(&c,1))Rf(F v=*xF;P(v==(L)v,nl(v))P(v!=v,4)C b[32];sf(b,*(L*)&v)-b)Rm(nx(xx)+nx(xy)-1-!_N(xx))Ru(4+!!xv)RC(nC(xC,xn))

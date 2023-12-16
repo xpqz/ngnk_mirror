@@ -12,14 +12,14 @@
 #define  I(x,a...) if(x){a;}
 #define    J(a...) else I(a)
 #define    E(a...) else{a;}
-#define SW(x,a...) switch(x){a}
+#define  S(x,a...) switch(x){a}
 #define  C(x,a...) case x:{a;}break;
 #define C2(x,a...) case x:C(a)
 #define    D(a...) default:{a;}break;
 #define    i(a...) IJ(i,a)
 #define    j(a...) IJ(j,a)
-#define    X(a...) SW(xt,a)
-#define    Y(a...) SW(yt,a)
+#define    X(a...) S(xt,a)
+#define    Y(a...) S(yt,a)
 #define X1(f,a...) A1(f,X(a)0)
 #define X2(f,a...) A2(f,X(a)0)
 #define Y2(f,a...) A2(f,Y(a)0)
@@ -49,7 +49,7 @@
 #define C09(c) LH('0',c,'9')
 #define CAz(c) LH('a',(c)|32,'z')
 #define CA9(c) (CAz(c)||C09(c))
-#define S4(i,a,b,c,d) SW(i,C(0,a)C(1,b)C(2,c)D(d))
+#define S4(i,a,b,c,d) S(i,C(0,a)C(1,b)C(2,c)D(d))
 #define Ab8 A b[8];
 #define Lij L i=*xL,j=xL[1];
 #define PSH(x,y) ((x)=psh(x,y))
