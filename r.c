@@ -24,8 +24,8 @@ Z A rt(U n,C t)_(A x=an(n,t);i(((W)n<<Tw[t])+255>>8,r4();MC(xV+(i<<5),b,32))x)//
 Z CO W msk[]={0xffffffffffffffffll,0x5555555555555555ll,0x1111111111111111ll,0x0101010101010101ll,0x0001000100010001ll,0x0000000100000001ll,0x0000000000000001ll};
 Z A ro(U n,W m)_(P(!(m&m-1),P(!m,rt(n,tL))C t=tZ(m-1);A x=rt(n,t);L v=(m-1)*msk[Tw[t]];L*p=xL;i((n<<Tw[t])+255>>8,j(4,*p++&=v))x)
  C t=tZ(m-1);A x=an(n,t);S4(t-tG,i(n,xg=ri(m)),i(n,xh=ri(m)),i(n,xi=ri(m)),i(n,xl=r())I(m,i(n,xl%=m)))x)//roll
-//Z A de0(N n,W m)_(A x=aL(n);i(n,xl=r()%(m-n+i+1);j(i,B(xl==xL[j],xl=m-n+i)))i(n,I j=ri(i+1);SWP(xl,xL[j]))ct(tZ(m),x))
-Z A de1(U n,W m)_(A x=aL(n),y=aC(m+7>>3);MS(yV,0,yn);My(i(n,W t=r()%(m-n+i+1);I(yC[t>>3]&1<<(t&7),t=m-n+i)yC[t>>3]|=1<<(t&7);xl=t))i(n,I j=r()%(i+1);SWP(xl,xL[j]))ct(tZ(m),x))
+//Z A de0(N n,W m)_(A x=aL(n);i(n,xl=r()%(m-n+i+1);j(i,B(xl==xL[j],xl=m-n+i)))i(n,I j=ri(i+1);SW(xl,xL[j]))ct(tZ(m),x))
+Z A de1(U n,W m)_(A x=aL(n),y=aC(m+7>>3);MS(yV,0,yn);My(i(n,W t=r()%(m-n+i+1);I(yC[t>>3]&1<<(t&7),t=m-n+i)yC[t>>3]|=1<<(t&7);xl=t))i(n,I j=r()%(i+1);SW(xl,xL[j]))ct(tZ(m),x))
 Z A de2(U n,W m)_(A x=aL(n);L*a=xL,j=-1,q=m-n+1;F v=exp(log(rf())/n);
  W(n>1&&13*n<m,L s;
   W(1,F X;
@@ -35,7 +35,7 @@ Z A de2(U n,W m)_(A x=aL(n);L*a=xL,j=-1,q=m-n+1;F v=exp(log(rf())/n);
    B(m/(m-X)>=y1*exp(log(y2)/(n-1)),v=exp(log(rf())/(n-1)))
    v=exp(log(rf())/n))
   *a++=j+=s+1;m-=s+1;n--;q-=s)
- F t=m-n;W(n>1,L s=0;F v=rf(),q=t/m;W(q>v,s++;q*=--t/--m)*a++=j+=s+1;m--;n--)*a=j+m*rf()+1;i(xn,I j=ri(i+1);SWP(xl,xL[j]))x)
+ F t=m-n;W(n>1,L s=0;F v=rf(),q=t/m;W(q>v,s++;q*=--t/--m)*a++=j+=s+1;m--;n--)*a=j+m*rf()+1;i(xn,I j=ri(i+1);SW(xl,xL[j]))x)
 Z A de(U n,W m)_(n>m?el0():n==m?sh(n):m<10000000?de1(n,m):de2(n,m))//deal
 Z A rd(L n,L m)_(m<0?(n<0?ed0():rt(n,tZ(m))):n==NL?sh(m):n-(I)n?ez0():n<0?de(-n,m):ro(n,m))//roll or deal
 A rndF(L n)_(P(n<0,ed0())A x=aF(n);i(n,xf=rf())x)//random floats 0..1

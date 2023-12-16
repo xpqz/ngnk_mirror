@@ -25,7 +25,7 @@ I qA(A x,A y/*00*/)_(I v=TS[xt]-TS[yt];P(v,v)
    RT(i(MIN(xn,yn),A z=ii(x,i),u=ii(y,i);I d=qA(z,u);mr(z(u));P(d,d))ql(xn,yn))
    Ropqr(x=str(xR);y=str(yR);I r=qA(x,y);x(y(0));r)
    R_(ql(x,y)))0)
-Z I*ascZ(CO UC*v,UC*g,I*a,I*b,I n,I w)_(U c[257];tilV(a,0,n,2);j(w,MS(c,0,SZ c);i(n,g[i]=v[w*a[i]+j])i(n,c[g[i]+1]++)I(c[1+*g]-n,i(255,c[i+1]+=c[i])i(n,b[c[g[i]]++]=a[i])SWP(b,a)))a)
+Z I*ascZ(CO UC*v,UC*g,I*a,I*b,I n,I w)_(U c[257];tilV(a,0,n,2);j(w,MS(c,0,SZ c);i(n,g[i]=v[w*a[i]+j])i(n,c[g[i]+1]++)I(c[1+*g]-n,i(255,c[i+1]+=c[i])i(n,b[c[g[i]]++]=a[i])SW(b,a)))a)
 Z A grdm(A x/*1*/,A1 f)_(A y=kv(&x);x(x1(Nx(f(y)))))
 
 Z V mrg(A x/*0*/,I*p,I*q,I*b,I*d,I k){I*r=p-q+b;W(1,I(qA(xA[*p],xA[*b])<k,*r++=*p++;P(p==q))E(*r++=*b++;B(b==d)))MC(r,p,q-p<<2);}//merge(k=1),mergeR(k=0)

@@ -15,7 +15,7 @@ X1(whr,Ril(whr(enl(x)))RA(K1("{$[`A~@x;(,&#'*'x),,'/x@\\:!0|/#'x:o'x;,&x]}",x))R
              {H*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},
              {I*r=yV;S4(w,i(m,j(xg,*r++=i)),i(m,j(xh,*r++=i)),i(m,j(xi,*r++=i)),i(m,j(xl,*r++=i)))},))y))
 X1(rev,Rm(A y=kv(&x);am(rev(x),rev(y)))RM(A y=kv(&x);aM(x,e1f(rev,y)))Rt(x)RE(rev(gZ(x)))RB(cB(rev(cG(x))))
- R_(P(xn<2,x)x=mut(x);U n=xn;I w=xw-3;S4(w,i(n>>1,SWP(xg,xG[n-1-i])),i(n>>1,SWP(xh,xH[n-1-i])),i(n>>1,SWP(xi,xI[n-1-i])),i(n>>1,SWP(xl,xL[n-1-i])))x))
+ R_(P(xn<2,x)x=mut(x);U n=xn;I w=xw-3;S4(w,i(n>>1,SW(xg,xG[n-1-i])),i(n>>1,SW(xh,xH[n-1-i])),i(n>>1,SW(xi,xI[n-1-i])),i(n>>1,SW(xl,xL[n-1-i])))x))
 A1(typ,x(as(TS[xt])))
 A1(len,x(az(xN)))
 U _N(A x/*0*/){X(RE(Lij j-i)RT_E(xn)Rm(_N(xy))RM(_N(_x(xy)))R_(1))}

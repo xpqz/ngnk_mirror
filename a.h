@@ -37,7 +37,7 @@
 #define TY __typeof__
 #define ST struct
 #define RES restrict
-#define SWP(x,y) {TY(x)t_=x;x=y;y=t_;}
+#define SW(x,y) {TY(x)t_=x;x=y;y=t_;}
 #define M1(x) #x
 #define M2(x) M1(x)
 #define EX extern
