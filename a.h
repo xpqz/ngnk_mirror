@@ -15,8 +15,8 @@
 #define  S(x,a...) switch(x){a}
 #define  C(x,a...) case x:{a;}break;
 #define    D(a...) default:{a;}break;
-#define    F(a...) IJ(i,a)
-#define    j(a...) IJ(j,a)
+#define    F(a...) F_(i,a)
+#define   Fj(a...) F_(j,a)
 #define    X(a...) S(xt,a)
 #define    Y(a...) S(yt,a)
 #define X1(f,a...) A1(f,X(a)0)
@@ -24,7 +24,7 @@
 #define Y2(f,a...) A2(f,Y(a)0)
 #define  R(x,a...) case x:_(a)
 #define   R_(a...) default:_(a)
-#define IJ(i,n,a...) for(TY(n)n_=(n),i=0;i<n_;i++){a;}
+#define F_(i,n,a...) for(TY(n)n_=(n),i=0;i<n_;i++){a;}
 #define L(x) (SZ(x)/SZ((x)[0]))
 #define R1 R
 #define CO const

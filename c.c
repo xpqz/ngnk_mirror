@@ -1,10 +1,10 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #define abn V*RES a,CO V*RES b,U n
-#define M(x,y,z) Z V c##x##y(abn){x*r=AL(a);CO y*p=AL(b);F(n+((1<<z)-1)>>z,j(1<<z,*r++=*p++))}
+#define M(x,y,z) Z V c##x##y(abn){x*r=AL(a);CO y*p=AL(b);F(n+((1<<z)-1)>>z,Fj(1<<z,*r++=*p++))}
  M(H,G,4)M(G,H,4)M(H,I,3)M(I,H,3)M(G,I,3)M(I,G,3)M(H,L,2)M(L,I,2)M(I,L,2)M(G,L,2)//cHG cGH cHI cIH cGI cIG cHL cLI cIL cGL
 #undef M
-Z V cFL(abn){F*r=AL(a);CO L*p=AL(b);F(n+3>>2,j(4,*r++=*p==NL?NF:*p;p++))}
-Z V cLF(abn){L*r=AL(a);CO F*p=AL(b);F(n+3>>2,j(4,*r++=*p!=*p?NL:*p;p++))}
+Z V cFL(abn){F*r=AL(a);CO L*p=AL(b);F(n+3>>2,Fj(4,*r++=*p==NL?NF:*p;p++))}
+Z V cLF(abn){L*r=AL(a);CO F*p=AL(b);F(n+3>>2,Fj(4,*r++=*p!=*p?NL:*p;p++))}
 Z V cGB(abn){G*r=AL(a);CO G*p=AL(b);F(n,*r++=p[i>>3]>>(i&7)&1)}
 Z V cBG(abn){G*r=AL(a);CO G*p=AL(b);MS(r,0,n+63>>6<<3);F(n,r[i>>3]|=(*p++&1)<<(i&7))}
 Z V cLA(abn){L*r=AL(a);CO A*p=AL(b);F(n,*r++=gl_(*p++))}
