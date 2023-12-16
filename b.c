@@ -1,4 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#define C2(x,a...) case x:C(a)
 #define C6(u,v,w,x,y,z,a...) case u:case v:case w:case x:case y:case z:{a;break;}
 #define C16(x,a...) case x:case x+1:case x+2:case x+3:case x+4:case x+5:case x+6:case x+7:case x+8:case x+9:case x+10:case x+11:case x+12:case x+13:case x+14:case x+15:{a;break;}
 #define C32(x,a...) C16(x,C16(x+16,a))

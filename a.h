@@ -14,7 +14,6 @@
 #define    E(a...) else{a;}
 #define  S(x,a...) switch(x){a}
 #define  C(x,a...) case x:{a;}break;
-#define C2(x,a...) case x:C(a)
 #define    D(a...) default:{a;}break;
 #define    i(a...) IJ(i,a)
 #define    j(a...) IJ(j,a)

@@ -1,5 +1,5 @@
 A object in k            A() stack-allocated C array
-B bool                   B() if .. break
+B bool                   B()
 C char                   C() case
 D                        D() default
 E                        E() else
@@ -12,13 +12,13 @@ K alias for A            K() evaluate k-string
 L long long              L() length of a C array
 M local macro            M() local macro
 N size_t                 N() error pass-through
-O                        O() cant be used
+O                        O()
 P                        P() if .. return ..
 Q                        Q() assert
 R                        R() case .. return ..
 S string (const char*)   S() switch
 T                        T()
-U unsigned int           U() unless
+U unsigned int           U()
 V void                   V()
 W unsigned long long     W() while
 X                        X() switch(xt){..}
