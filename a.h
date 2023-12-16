@@ -62,7 +62,7 @@
 #define SL    __builtin_strlen
 #define SQ    __builtin_sqrt
 
-TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD CO C*Q;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
+TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD CO C*S;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
 TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(CO A*,U),AX(A,CO A*,U);
 
 #define A0(f,b...) A f(                )_(b)
@@ -82,21 +82,21 @@ AA a8,d8,ins,no8;
 TD A TAU(U);TAU aA0,aA,aB,aG,aC,aF,aI,aL,aS,gns,emp;
 TD A TAL(L);TAL al,az,cls,rndF;
 TD A TALA(L,A);TALA drp,rnd,rsz;
-TD A TAQ(Q);TAQ aCz,bsl,bsm,die,sym;
-A aa(U,A),ii(A,U),io(A,L),a2t(A,A,C),aE(L,L),af(F),aCm(Q,Q),aCn(Q,U),apc(A,C),apv(A,CO V*),an(U,C),aV(C,U,CO V*),cts(A,Q,U),e1f(A1,A),e2f(A2,A,A),err0(Q),evs(Q,B),
- k1(A*,Q,A),k2(A*,Q,A,A),k8(A*,Q,CO A*,U),jc(C,A),jC(Q,U,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(U,U,U),pk(Q*,C),pen(A,A1*),slc(A,U,U),unhC(Q,U),wdn(A,U,U,U),
+TD A TAQ(S);TAQ aCz,bsl,bsm,die,sym;
+A aa(U,A),ii(A,U),io(A,L),a2t(A,A,C),aE(L,L),af(F),aCm(S,S),aCn(S,U),apc(A,C),apv(A,CO V*),an(U,C),aV(C,U,CO V*),cts(A,S,U),e1f(A1,A),e2f(A2,A,A),err0(S),evs(S,B),
+ k1(A*,S,A),k2(A*,S,A,A),k8(A*,S,CO A*,U),jc(C,A),jC(S,U,A),kv(A*),r2f(A2,A,A),l2f(A2,A,A),mf(U,U,U),pk(S*,C),pen(A,A1*),slc(A,U,U),unhC(S,U),wdn(A,U,U,U),
  AT(W,A),AW(C,A),AK(C,A),AO(UC,A),AN(U,A),w1(U,A,A),w2(U,A,A,A),w8(U,A,CO A*,U),*gp(A);
-V cyc(V*,U,U),eS(A,U),eQ(Q,U,U),exit(I),hexC(Q,U,C*),kargs(I,Q*),kinit(),*memmem(CO V*,N,CO V*,N),mrn(U,CO A*),mRn(U,CO A*),repl(),tilV(V*,L,L,U);
+V cyc(V*,U,U),eS(A,U),eQ(S,U,U),exit(I),hexC(S,U,C*),kargs(I,S*),kinit(),*memmem(CO V*,N,CO V*,N),mrn(U,CO A*),mRn(U,CO A*),repl(),tilV(V*,L,L,U);
 B id0(UC),mtc_(A,A),tru(A);
-C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(Q,I);
+C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(S,I);
 UC gi(A);
-I qA(A,A),qf(F,F),rnk(A),sq(Q);
-U _K(A),si(Q,C),_N(A),js_eval(C*,U,C*,U),fG(CO G*,U,G),fI(CO I*,U,I),fL(CO L*,U,L);
-L cfm(CO A*,I),gl_(A),gl(A),iw(A,U,L),now(),pl(Q*),minfZ(L,A),addfB(CO V*,U),addfZ(L,A),pf(Q*);
-Q qs(CO L*),pID(Q);
-W pu(Q*);
+I qA(A,A),qf(F,F),rnk(A),sq(S);
+U _K(A),si(S,C),_N(A),js_eval(C*,U,C*,U),fG(CO G*,U,G),fI(CO I*,U,I),fL(CO L*,U,L);
+L cfm(CO A*,I),gl_(A),gl(A),iw(A,U,L),now(),pl(S*),minfZ(L,A),addfB(CO V*,U),addfZ(L,A),pf(S*);
+S qs(CO L*),pID(S);
+W pu(S*);
 F gf(A);
-EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(CO C[])vc,TS,Tw,TR,TT,TX,Tk;EX Q*argv,*env;
+EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(CO C[])vc,TS,Tw,TR,TT,TX,Tk;EX S*argv,*env;
 
 //                   0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 //                     () !i ,1 ,i ,i ,i ,i ,f "" ,` +m X!  5  6 .6 "c" ` {} 1+ ++ +/ +:  +  / 2:
@@ -173,4 +173,4 @@ enum         {au=Lt(tu),FLP,NEG,FIR,SQR,TIL,WHR,REV,ASC,DSC,GRP,NOT,ENL,NUL,LEN,
 #define ov(x) ov_(#x":",(L)(x))
 #define oo os("["__FILE__":"M2(__LINE__)"]");
 #define nop {asm volatile("fnop");}
-U os(Q);W ov_(Q,W);
+U os(S);W ov_(S,W);

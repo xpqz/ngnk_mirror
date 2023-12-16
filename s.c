@@ -1,5 +1,5 @@
 #include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
-Z Q q="0001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849"
+Z S q="0001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849"
       "5051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899";
 Z C*S_8(C*s,U v)_(i(4,MC(s+6-2*i,q+v%100*2,2);v/=100)s+8) Z C*s_8(C*s,U v)_(C b[8],*p=b+6;W(1,MC(p,q+v%100*2,2);v/=100;B(!v)p-=2)p+=*p=='0';I n=b+8-p;MC(s,p,n)+n)
 Z C*S16(C*s,W v)_(S_8(S_8(s,v/(U)1e8),v%(U)1e8))          Z C*s16(C*s,W v)_(v<(U)1e8?s_8(s,v):S_8(s_8(s,v/(U)1e8),v%(U)1e8))
@@ -30,10 +30,10 @@ C*sf(C*s,L d)_(W x=d,m=x<<12>>12;I e=x<<1>>53;I(x>>63,*s++='-')P(e==2047,P(!m,MC
  P(-4<t&&t<0,i(l+1,s[l-t-i]=s[l-i])s[-1]='0';*s++='.';MS(s,'0',-t-1)+l-t)I(l>0,*s++='.';s+=l)*s++='e';I(t<0,t=-t;*s++='-')su(s,t))
 A1(str0,Q(xtC);N n=xn;x=AN(n,aa(n+1,x));xC[n]=0;x)
 X1(str,Rilf(A y=aC(24);TY(sf)*f=xtf?sf:sl;AN(f(yC,gl(x))-yC,y))Rs(L v=xv;aCz(qs(&v)))Rc(enl(x))RU(kst(x))R_(e1f(str,x)))
-V hexC(Q s,U n,C*r){Z Q q="0123456789abcdef";i(n,C c=*s++;*r++=q[(UC)c>>4];*r++=q[c&15])}
+V hexC(S s,U n,C*r){Z S q="0123456789abcdef";i(n,C c=*s++;*r++=q[(UC)c>>4];*r++=q[c&15])}
 X1(hex,RmMA(e1f(hex,x))RC(A y=aC(2*xn);Mx(hexC(xV,xn,yV))y)R_(et(x)))
 SN V unh0(C*q){MS(q,-1,256);i(10,q['0'+i]=i)i(6,q['A'+i]=q['a'+i]=10+i)}
-A unhC(Q s,U n)_(P(n&1,el0())Z C q[256];I(!*q,unh0(q))C v=0;i(n,v|=q[s[i]])P(v<0,ed0())A x=aC(n>>1);i(xn,xc=q[*s]<<4|q[s[1]];s+=2)x)
+A unhC(S s,U n)_(P(n&1,el0())Z C q[256];I(!*q,unh0(q))C v=0;i(n,v|=q[s[i]])P(v<0,ed0())A x=aC(n>>1);i(xn,xc=q[*s]<<4|q[s[1]];s+=2)x)
 X1(unh,RmMA(e1f(unh,x))RC(x(unhC(xV,xn)))R_(et(x)))
 
 Z A pre(C c,A x)_(cat(ac(c),x))
@@ -41,7 +41,7 @@ Z A1(par,apc(pre('(',x),')'))
 Z A1(ek,e1f(kst,x))
 Z A1(kss,Z C e[128]={'0',[9]='t','n',[13]='r',[34]='"',[92]='\\'};U n=xn+2;i(xn,C c=xc;P(c>126u||(c<32&&!e[c]),cat11(aCz("0x"),hex(x)))n+=!!e[c])
  A y=aC(n);C*s=yC;*s++='"';i(xn,C c=xc;I(e[c],*s++='\\';c=e[c])*s++=c)*s='"';x(y))
-Z A kp(A x,Q p,Q q,Q s)_(C t=TS[xt];(strchr(p,t)?xn==1:strchr(q,t)?xn<2:!!strchr(s,t))?par(kst(x)):kst(x))
+Z A kp(A x,S p,S q,S s)_(C t=TS[xt];(strchr(p,t)?xn==1:strchr(q,t)?xn<2:!!strchr(s,t))?par(kst(x)):kst(x))
 A1(kl,kp(x,"AC","IFS","Mmqruvw"))
 A1(kr,kp(x,"","","qruvw"))
 A1(kw,kp(x,"AC","IFS","Mmpqw"))

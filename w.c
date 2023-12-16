@@ -7,7 +7,7 @@ Z A sc(C c    ,A x)_(XC(x(scC(c,  xV,xn)))et(x))A1(spl,sc(10,x))
 Z A sC(C*s,L m,A x)_(XC(x(sCC(s,m,xV,xn)))et(x))
 Z L jN(U m,A x/*0*/)_(P(!xtA,-1)L n=(xn-!!xn)*m;i(xn,A y=xa;P(!ytcC,-1)n+=yN)n)//total length or -1
 A jc(C c,    A x)_(XC(jc(c,  flp(flp(x))))L n=jN(1,x);P(n<0,et(x))A y=aC(n);C*p=yV;i(xn,I(i,*p++=c        )A z=xa;I(ztc,*p++=zv)E(MC(p,zV,zn);p+=zn))x(y))
-A jC(Q s,U m,A x)_(XC(jC(s,m,flp(flp(x))))L n=jN(m,x);P(n<0,et(x))A y=aC(n);C*p=yV;i(xn,I(i,MC(p,s,m);p+=m)A z=xa;I(ztc,*p++=zv)E(MC(p,zV,zn);p+=zn))x(y))
+A jC(S s,U m,A x)_(XC(jC(s,m,flp(flp(x))))L n=jN(m,x);P(n<0,et(x))A y=aC(n);C*p=yV;i(xn,I(i,MC(p,s,m);p+=m)A z=xa;I(ztc,*p++=zv)E(MC(p,zV,zn);p+=zn))x(y))
 Z A1(re0,x?rs0(enl(x)):0) Z A o1f(A1 f,A x/*f1*/)_(re0(f==whr?x(aI(0)):f(fir(x)))) Z A2(o1,/*01*/ xtu?o1f(v1[xv],y):y(emp(tA)))
                           Z A o2f(A2 f,A x,A y/*f01*/)_(re0(f(x,y)))               Z A3(o2,/*001*/xtv?o2f(v2[xv],y,z):z(emp(tA)))
 Z AX(em,/*01..1*/A z=0;U k=0;i(n,A y=a[i];I(ytm,k++;y=yx;I(z,P(TS[yt]-TS[zt],ed8(a,n));z=cat10(z,y))E(z=yR)))z=unq(z);

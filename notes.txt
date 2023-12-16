@@ -14,13 +14,13 @@ M local macro            M() local macro
 N size_t                 N() error pass-through
 O                        O() [cant be used]
 P                        P() if .. return ..
-Q string (const char*)   Q() assert
+Q                        Q() assert
 R                        R() case .. return ..
-S static                 S() [cant be used]
+S string (const char*)   S() [cant be used]
 T                        T()
 U unsigned int           U() unless
 V void                   V()
 W unsigned long long     W() while
 X                        X() switch(xt){..}
 Y                        Y() switch(yt){..}
-Z                        Z()
+Z static                 Z()

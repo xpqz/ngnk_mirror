@@ -62,7 +62,7 @@ A2(psh,/*11*/Q(xtMT);U n=xN;P(!n,enl(x(y)))
  L v=xtA?(L)y:gl(y);apv(x,&v))
 A apv(A x/*1*/,CO V*v )_(Q(xtT);     U n=xn;x=aa(n+1,x);U w=xw-3;MC(xV+((W)n<<w),v,1<<w);x)
 A apc(A x/*1*/,C c    )_(Q(xtC||xtG);U n=xn;x=aa(n+1,x);xC[n]=c;x)
-A cts(A x/*1*/,Q s,U m)_(Q(xtC);     U n=xn;x=aa(n+m,x);MC(xV+n,s,m);x)
+A cts(A x/*1*/,S s,U m)_(Q(xtC);     U n=xn;x=aa(n+m,x);MC(xV+n,s,m);x)
 Z A insL(A x,L i,L j,A y/*1ij0*/)_(
  P(i>=(W)(j+1)||j>=(W)(xN+1),ei(x))
  A z=an(xn-j+i+yn,xt);U w=xw-3;MC(zV,xV,(W)i<<w);MC(zV+(i<<w),yV,(W)yn<<w);MC(zV+(i+yn<<w),xV+((W)j<<w),(W)(xn-j)<<w);
