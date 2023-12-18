@@ -80,7 +80,7 @@ Z A4(mmma,/*1000*/yR;uR;B d=utT;I(!d,u=enl(u))Ny(sup(&x,&u));x=mut(x);I(!ytL,y=c
        E(      I(ytL,F4(xw-3,n,xG[yl]=MAX(xG[yl],uG[d*i]),xH[yl]=MAX(xH[yl],uH[d*i]),xI[yl]=MAX(xI[yl],uI[d*i]),xL[yl]=MAX(xL[yl],uL[d*i])))
                E(    F4(xw-3,n,xG[yi]=MAX(xG[yi],uG[d*i]),xH[yi]=MAX(xH[yi],uH[d*i]),xI[yi]=MAX(xI[yi],uI[d*i]),xL[yi]=MAX(xL[yi],uL[d*i]))))))x)
 Z A4(suba,/*1000*/u=neg(uR);u(adma(x,y,ADD,u)))
-Z B ina(A x/*0*/,U n)_(S4(xw-3,P(n-(G)n,1)F(xn,P(xg>=n,0)),P(n-(H)n,1)F(xn,P(xh>=n,0)),P(n-(I)n,1)F(xn,P(xi>=n,0)),F(xn,P(xl>=(W)n,0)))1)
+Z B ina(A x/*0*/,U n)_(S4(xw-3,F(xn,P(xg>=n,0)),F(xn,P(xh>=n,0)),F(xn,P(xi>=n,0)),F(xn,P(xl>=(W)n,0)))1)
 A4(ara,/*1000*/Q(xtZC)Q(ytZC)Q(ztv)Q(0xcf&1<<zv)Q(utzZ||utcC)
  XE(ara(gZ(x),y,z,u))
  XB(ara(cG(x),y,z,u))
