@@ -12,11 +12,11 @@ Z V*mm(U n,U f)_(V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP
 A mf(U f,U i,U n)_(V*p=mm(pg+n,1);P(!p,eo0())A x=(A)p+pg;xn=n;AT(tC,x);P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
 
 Z A b[24];DBG(Z U lck;)
-Z W cap(A x/*0*/)_((HD<<xU)-HD)//chunk capacity in bytes
-A1(m0,DBG(lck++;)Q(x)XP(0)Q(xr>0)P(--xr,0)U i=xU;P(!i,mu(xV-pg))xX=b[i];b[i]=x;XR(mrn(xn|!xn,xA);x)x)
-DBG(A1(m1,lck--;P(!x||!xU,0)MS(xV,0xab,cap(x));AN(-1,AT(0,x));0))
+Z W cap(A x/*0*/)_((HD<<xb)-HD)//chunk capacity in bytes
+A1(m0,DBG(lck++;)Q(x)XP(0)Q(xr>0)P(--xr,0)U i=xb;P(!i,mu(xV-pg))xX=b[i];b[i]=x;XR(mrn(xn|!xn,xA);x)x)
+DBG(A1(m1,lck--;P(!x||!xb,0)MS(xV,0xab,cap(x));AN(-1,AT(0,x));0))
 A1(_R,Q(x);XP(x)Q(xr>=0);xr++;x)A1(mr,DBG(m1)(m0(x)))V mRn(U n,CO A*a){F(n,_R(a[i]))}V mrn(U n,CO A*a){F(n,mr(a[i]))}A1(mRa,mRn(xn,xA);x)
-ZN A mb(U i)_(P(i>=L(b),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xU=i;x)A x=b[i];P(x,b[i]=xX;xX=0;x)x=mb(i+1);xU=i;A y=x+(HD<<i);yU=i;AT(0,y);yr=0;yX=b[i];b[i]=y;x)
+ZN A mb(U i)_(P(i>=L(b),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xb=i;x)A x=b[i];P(x,b[i]=xX;xX=0;x)x=mb(i+1);xb=i;A y=x+(HD<<i);yb=i;AT(0,y);yr=0;yX=b[i];b[i]=y;x)
 
 A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+(((W)n<<Tw[t])+7>>3);U i=59-CLZ(HD|m-1);A x=mb(i);xr=1;AT(t,AN(n,x)))
 A aV(C t,U n,CO V*v)_(A x=an(n,t);MC(xV,v,((W)n<<Tw[t])+7>>3);x)
@@ -109,7 +109,7 @@ W ov_(S s,W v)_(os(s);o8(v);ow("\n",1);v)
 #define rts(a...) {F(gn,A x=gv[i];I(x,a))A x=cns;a;}
 ZN V od(L v){C b[32];ow(b,sl(b,v)-b);}
 ZN V osd(S s,L v){os(s);od(v);}
-ZN A1(ox,o8(x);osd(" U",xU);C t=_T(x);os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);F(MIN(5,cap(x)/8),os(" ");o8(xl))os("\n");x)
+ZN A1(ox,o8(x);osd(" U",xb);C t=_T(x);os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);F(MIN(5,cap(x)/8),os(" ");o8(xl))os("\n");x)
 A bsm(S s)_(obs(xm=0)xys(I(!ytP,ym++))rts(I(!xtP,xm++))
 // I n=0;obs(ox(x);n++);osd("nObjs:",n)
 // os("mapped regions:\n");mms(os(f?"[f] ":"[x] ");o8((L)p);os("-");o8((L)q);osd(" N",q-p);os("\n"));os("\n");
