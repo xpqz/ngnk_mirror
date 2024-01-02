@@ -1,4 +1,4 @@
-#include<math.h> // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include<math.h> // ngn/k, (c) 2019-2024 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 #include"a.h"
 X1(neg,RE(neg(gZ(x)))Rilc(az(-gl(x)))Rf(af(-gf(x)))RC(neg(cG(x)))RmMA(e1f(neg,x))RB(neg(cG(x)))R_(et(x))
  RGHILF(U n=xn;I(xw-3<3&&minfZ(0,x)==-1<<(8<<xw-3)-1,x=ct(tH+xw-3,x))A y=xr>1?an(n,xt):x,z=x-y?x:au;n=((n<<xw-3)+31&~31)>>xw-3;

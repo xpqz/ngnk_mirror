@@ -1,4 +1,4 @@
-#include"a.h" // ngn/k, (c) 2019-2023 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
+#include"a.h" // ngn/k, (c) 2019-2024 ngn, GNU AGPLv3 - https://codeberg.org/ngn/k/raw/branch/master/LICENSE
 Z S s0,s;Z U k;Z A pb(A,C);                                                                         //parser state (s:current pointer, s0:start of source, k:implicit arg counter)
 U si(S s,C v)_(strchrnul(s,v)-(C*)s)                                                                //find char (string index)
 B id0(UC c)_(CAz(c)|(c|1)==0xd1)                                                                    //is identifier start char?

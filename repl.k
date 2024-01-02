@@ -1,6 +1,6 @@
 #!k
 \d repl
-banner:"ngn/k, (c) 2019-2023 ngn, GNU AGPLv3. type \\ for more info\n"
+banner:"ngn/k, (c) 2019-2024 ngn, GNU AGPLv3. type \\ for more info\n"
 prompt:," " /use 0x0720 for emacs integration
 (opn;sem;cls):"(;)"
 /(opn;sem;cls):("( ";" ; ";" )") /uncomment this line for extra spacing
