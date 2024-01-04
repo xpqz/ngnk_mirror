@@ -34,6 +34,7 @@ community:
     various utils                      https://arlyle.codeberg.page/k/
     kpl, apl-like extensions for k     https://codeberg.org/CptJimKirk/kpl
     bindings for a regex library       https://github.com/x86y/onikuruma
+    videos of solving aoc in ngn/k     https://www.twitch.tv/fcopy
 
 source:
 0.c main()                       k.h  embedding api
