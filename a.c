@@ -78,7 +78,7 @@ AA(a8,/*10..0*/A x=*a,y=a[1];
     I(ytZC&&n==4,A z=a[2],u=a[3];P(xtZ&&ztv&&utzZ&&(0xcf&1<<zv),ara(x,y,z,u))P(xtC&&z==av&&utcC,cC(N(ara(x,y,z,u)))))Yt(et(x))mRn(n-1,a+1);f8(AP1,a,n))
    Rm(A z=Nx(fnd(xx,yR));ZT(z(0);mRn(n-1,a+1);f8(AP1,a,n))x=mut(x);I(ztl,z=mut(z);F(zN,I(zl==NL,zl=xN;PSH(xx,ztt?yR:ii(y,i));PSH(xy,ie(a[2],xy)))))
     Ab8;*b=xy;b[1]=z;MC(b+2,a+2,48);xy=au;xy=Nx(z(a8(b,n)));x)
-   RM(Ab8;YsS(*b=flp(x);MC(b+1,a+1,56);flp(N(a8(b,n))))F(n,A x=a[i];b[i]=xtM?flp(xR):xR;Q(b[i]))flp(N(x(e8(AP1,b,n)))))
+   RM(Ab8;MC(b,a,64);YsS(*b=flp(x);flp(N(a8(b,n))))*b=blw(x);sqz(N(a8(b,n))))
    RU(mRn(n-1,a+1);x(x8(a+1,n-1)))
    R_(et(x)))0)
 Z A3(a3,/*100*/a8(A8(x,y,z),3))
