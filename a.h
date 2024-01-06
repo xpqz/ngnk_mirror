@@ -61,6 +61,9 @@
 #define PC    __builtin_popcountll
 #define SL    __builtin_strlen
 #define SQ    __builtin_sqrt
+#define xr1   (xr==1)
+#define yr1   (yr==1)
+#define zr1   (zr==1)
 
 TD void V;TD bool B;TD char G,C;TD char unsigned UC;TD CO C*S;TD short H;TD unsigned short UH;TD int I;TD unsigned int U;TD long long L;TD double F;TD size_t N;
 TD unsigned long long W,A,A0(),A1(A),A2(A,A),A3(A,A,A),A4(A,A,A,A),AA(CO A*,U),AX(A,CO A*,U);
