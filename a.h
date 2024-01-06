@@ -134,7 +134,7 @@ enum                 {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp
 #define _t0(x) ((x)>>56)      //type(tag)
 #define _t(x) ({A x_=(x);UC t=_t0(x_);t?t:_T(x_);})//type
 #define _tU(x) TU(_t(x))      // func?
-#define _tP(x) TP(_t(x))      // packed?
+#define _tP(x) _t0(x)         // packed?
 #define _tR(x) TR(_t(x))      // ref?
 #define _tT(x) (_t(x)<tM)     // list?
 #define _tt(x) (_t(x)>tm)     // atom?

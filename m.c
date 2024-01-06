@@ -9,20 +9,20 @@ Z ST{V*p;W n;B f;}reg[128];Z U nreg;Z UC pnd[128];Z U npnd;
 Z V mc(){P(!npnd)F(npnd,U j=pnd[i];munmap(reg[j].p,reg[j].n);reg[j].p=0)npnd=0;U j=0;F(nreg,I(reg[i].p,MC(reg+j,reg+i,SZ*reg);j++))nreg=j;}
 Z A mu(V*p)_(F(nreg,P(reg[i].p==p,pnd[npnd++]=i;0))die("UNMAP"))
 Z V*mm(W n,U f)_(V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_ANON,-1,0);P((L)p==(C)p,(V*)0)I(nreg==L(reg),mc();I(nreg==L(reg),die("MMAP")))reg[nreg++]=(TY(*reg)){p,n,f};p)
-A mf(U f,U i,U n)_(V*p=mm(pg+n,1);P(!p,eo0())A x=(A)p+pg;xn=n;_T(x)=tC;P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
+A mf(U f,U i,U n)_(V*p=mm(pg+n,1);P(!p,eo0())A x=(A)p+pg;xn=n;xT=tC;P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
 
 Z A bkt[24];DBG(Z U lck;)
 Z W cap(A x/*0*/)_((HD<<xb)-HD)
-ZN A mb(U i)_(P(i>=L(bkt),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xb=i;x)A x=bkt[i];P(x,bkt[i]=xX;xX=0;x)x=mb(i+1);xb=i;A y=x+(HD<<i);yb=i;_T(y)=0;yr=0;yX=bkt[i];bkt[i]=y;x)
-A1(m0,DBG(lck++;)Q(x)XP(0)Q(xr<1000000u)P(--xr,0)U i=xb;P(!i,mu(xV-pg))P(i>=L(bkt),mu(xV-HD))xX=bkt[i];bkt[i]=x;XR(mrn(xn|!xn,xA);x)x)
-DBG(A1(m1,lck--;P(!x||!xb,0)MS(xV,0xab,cap(x));xn=-1;_T(x)=0;0))
-A1(_R,Q(x);XP(x)Q(xr<1000000u);xr++;x)
+Z A mb(U i)_(P(i>=L(bkt),V*p=mm(HD<<i,0);P(!p,die("OOM"))HD+(A)p)A x=bkt[i];P(x,bkt[i]=xX;DBG(xX=0);x)x=mb(i+1);A y=x+(HD<<i);MS(yV-HD,0,HD);yb=i;yX=bkt[i];bkt[i]=y;x)
+A1(m0,DBG(lck++;)Q(x)XP(0)P(--xr,0)U i=xb;P(!i,mu(xV-pg))P(i>=L(bkt),mu(xV-HD))xX=bkt[i];bkt[i]=x;XR(mrn(xn|!xn,xA);x)x)
+DBG(A1(m1,lck--;P(!x||!xb,0)MS(xV,0xab,cap(x));xn=-1;xT=0;0))
+A1(_R,Q(x);XP(x)xr++;x)
 A1(mr,DBG(m1)(m0(x)))
 V mRn(U n,CO A*a){F(n,_R(a[i]))}
 V mrn(U n,CO A*a){F(n,mr(a[i]))}
 A1(mRa,mRn(xn,xA);x)
 
-A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))A x=mb(59-CLZ(HD|HD-1+(((W)n<<Tw[t])+7>>3)));xr=1;_T(x)=t;xn=n;x)
+A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))U i=59-CLZ(HD|HD-1+(((W)n<<Tw[t])+7>>3));A x=mb(i);xb=i;xr=1;xT=t;xn=n;x)
 A aV(C t,U n,CO V*v)_(A x=an(n,t);MC(xV,v,((W)n<<Tw[t])+7>>3);x)
 A aa(U n,A x/*1*/)_(P(xr1&&((W)n<<xw)+7>>3<=cap(x),AN(n,x))A y=an(n,xt);MC(yV,xV,((W)xn<<Tw[xt])+7>>3);I(ytR,I(xr1,AZ(x))E(mRn(xn,xA)))x(y))//realloc
 A aA0(U n)_(A x=AN(0,aA(n));xx=emp(tC);x)
@@ -53,12 +53,12 @@ A kv(A*p)_(A x=*p;Q(xn==2);P(!xr1,--xr;*p=_R(xx);_R(xy))*p=xx;AZ(x);x(xy))
 L gl_(A x)_(XP(xv)*xL)
 L gl(A x)_(L v=gl_(x);x(0);v)
 F gf(A x)_(F v=*xF;x(0);v)
-A AT(W t,A x)_(Q(t<tn);P(TP(t),Lt(t)|-1ull<<56&x)_T(x)=t;x)
+A AT(W t,A x)_(Q(t<tn);P(TP(t),Lt(t)|-1ull<<56&x)xT=t;x)
 A AW(C w,A x)_(Q(w<6u);xE=w;x)
 A AK(C k,A x)_(Q(k<9u);xk=k;x)
 A AO(UC o,A x)_(Xs(x&~(0xffll<<32)|(W)o<<32)_O(x)=o;x)
 A AN(U n,A x)_(xn=n;x)
-A1(AZ,_T(x)=tG;x)
+A1(AZ,xT=tG;x)
 
 Z C s0[1<<16],*s1=s0+1;
 S qs(CO L*p)_(*p<0?s0-*p:(V*)p)
@@ -107,16 +107,19 @@ U os(S s)_(ow(s,SL(s)))
 W ov_(S s,W v)_(os(s);o8(v);ow("\n",1);v)
 ZN V od(L v){C b[32];ow(b,sl(b,v)-b);}
 ZN V osd(S s,L v){os(s);od(v);}
-ZN A1(ox,o8(x);osd(" b",xb);C t=_T(x);os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);F(MIN(5,cap(x)/8),os(" ");o8(xl))os("\n");x)
+ZN A1(ox,o8(x);osd(" b",xb);C t=xT;os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);F(MIN(5,cap(x)/8),os(" ");o8(xl))os("\n");x)
 #define RGS(a...) F(nreg,B f=reg[i].f;V*p=reg[i].p,*q=f?p:p+reg[i].n;a)
 #define OBS(a...) RGS(A x=(A)(p+HD*!f+pg*f),y=(A)q;W(x<y,a;x+=HD<<xb))
 #define XYS(a...) OBS(I(xtR&&xr,F(xn|!xn,A y=xa;a)))
 #define RTS(a...) {A x=cns;a;F(gn,I(x=gv[i],a))}
-A bsm(S s)_(OBS(xm=0)XYS(I(!ytP,ym++))RTS(I(!xtP,xm++))
-// I n=0;OBS(ox(x);n++);osd("nObjs:",n)
-// os("mapped regions:\n");RGS(os(f?"[f] ":"[x] ");o8((L)p);os("-");o8((L)q);osd(" N",q-p);os("\n"));os("\n");
+A bsm(S s)_(
+ OBS(xm=0)
+ XYS(I(!ytP,ym++))
+ RTS(I(!xtP,xm++))
  OBS(I(xr&&xt-1>(U)tn,os("!type:");ox(x)))
  OBS(I(xr-xm,os("!refc:");ox(x)))
  XYS(I(!yt,os("!dngl:");ox(x);ox(y)))
  OBS(I(xtA&&!xn&&!xx,os("!prot:");ox(x)))
+// I n=0;OBS(ox(x);n++);osd("nObjs:",n)
+// os("mapped regions:\n");RGS(os(f?"[f] ":"[x] ");o8((L)p);os("-");o8((L)q);osd(" N",q-p);os("\n"));os("\n");
  au)
