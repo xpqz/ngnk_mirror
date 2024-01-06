@@ -27,9 +27,11 @@ o/w/x/%.k:w/x/%.k;$M;ln -f $< $@
 o/w/index.html:w/index.html k w/inl.k w/*.js;$M;cd w && ./inl.k index.html *.js >../$@ && cd -
 o/w/http:w/http.c;$(CC) $< -o $@
 
+# #nyi
 # O_32=@opts -m32
 # o/32/%.o:%.c *.h;$M;$(CC) $(O_32) -o $@ -c $<
-# k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm
+# k32:$(patsubst %.c,o/32/%.o,$(wildcard *.c));$(CC) $(O_32) -o $@ $^ -lgcc -lm -ldl
+
 o/t:t/t.c;$(CC) $< -o $@ -Wall -Wno-unused-result -Werror
 
 t:tu tr td tg te ta                       #all tests
