@@ -9,24 +9,28 @@ Z ST{V*p;W n;B f;}reg[128];Z U nreg;Z UC pnd[128];Z U npnd;
 Z V mc(){P(!npnd)F(npnd,U j=pnd[i];Q(reg[j].f);munmap(reg[j].p,reg[j].n);reg[j].p=0)npnd=0;U j=0;F(nreg,I(reg[i].p,MC(reg+j,reg+i,SZ*reg);j++))nreg=j;}
 Z A mu(V*p)_(F(nreg,P(reg[i].p==p,pnd[npnd++]=i;0))die("UNMAP"))
 Z V*mm(W n,U f)_(V*p=mmap(0,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_ANON,-1,0);P((L)p<pg,(V*)0)I(nreg==L(reg),mc();I(nreg==L(reg),die("MMAP")))reg[nreg++]=(TY(*reg)){p,n,f};p)
-A mf(U f,U i,U n)_(V*p=mm(pg+n,1);P(!p,eo0())A x=(A)p+pg;xn=n;AT(tC,x);P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
+A mf(U f,U i,U n)_(V*p=mm(pg+n,1);P(!p,eo0())A x=(A)p+pg;xn=n;_T(x)=tC;P(mmap(p+pg,n,PROT_READ|PROT_WRITE,MAP_NORESERVE|MAP_PRIVATE|MAP_FIXED,f,i)!=p+pg,mu(p);eo0())xR)
 
 Z A bkt[24];DBG(Z U lck;)
 Z W cap(A x/*0*/)_((HD<<xb)-HD)
-A1(m0,DBG(lck++;)Q(x)XP(0)Q(xr>0)P(--xr,0)U i=xb;P(!i,mu(xV-pg))xX=bkt[i];bkt[i]=x;XR(mrn(xn|!xn,xA);x)x)
-DBG(A1(m1,lck--;P(!x||!xb,0)MS(xV,0xab,cap(x));AN(-1,AT(0,x));0))
-A1(_R,Q(x);XP(x)Q(xr<1000000u);xr++;x)A1(mr,DBG(m1)(m0(x)))V mRn(U n,CO A*a){F(n,_R(a[i]))}V mrn(U n,CO A*a){F(n,mr(a[i]))}A1(mRa,mRn(xn,xA);x)
-ZN A mb(U i)_(P(i>=L(bkt),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xb=i;x)A x=bkt[i];P(x,bkt[i]=xX;xX=0;x)x=mb(i+1);xb=i;A y=x+(HD<<i);yb=i;AT(0,y);yr=0;yX=bkt[i];bkt[i]=y;x)
+ZN A mb(U i)_(P(i>=L(bkt),V*p=mm(HD<<i,0);P(!p,die("OOM"))A x=(A)p+HD;xb=i;x)A x=bkt[i];P(x,bkt[i]=xX;xX=0;x)x=mb(i+1);xb=i;A y=x+(HD<<i);yb=i;_T(y)=0;yr=0;yX=bkt[i];bkt[i]=y;x)
+A1(m0,DBG(lck++;)Q(x)XP(0)Q(xr<1000000u)P(--xr,0)U i=xb;P(!i,mu(xV-pg))xX=bkt[i];bkt[i]=x;XR(mrn(xn|!xn,xA);x)x)
+DBG(A1(m1,lck--;P(!x||!xb,0)MS(xV,0xab,cap(x));xn=-1;_T(x)=0;0))
+A1(_R,Q(x);XP(x)Q(xr<1000000u);xr++;x)
+A1(mr,DBG(m1)(m0(x)))
+V mRn(U n,CO A*a){F(n,_R(a[i]))}
+V mrn(U n,CO A*a){F(n,mr(a[i]))}
+A1(mRa,mRn(xn,xA);x)
 
-A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))W m=HD+(((W)n<<Tw[t])+7>>3);U i=59-CLZ(HD|m-1);A x=mb(i);xr=1;AT(t,AN(n,x)))
+A an(U n,C t)_(Q(!lck)Q(tA<=t)Q(t<tn)Q(!TP(t))A x=mb(59-CLZ(HD|HD-1+(((W)n<<Tw[t])+7>>3)));xr=1;_T(x)=t;xn=n;x)
 A aV(C t,U n,CO V*v)_(A x=an(n,t);MC(xV,v,((W)n<<Tw[t])+7>>3);x)
-A aa(U n,A x/*1*/)_(P(xr1&&((W)n<<xw)+7>>3<=cap(x),AN(n,x))A y=an(n,xt);MC(yV,xV,((W)xn<<Tw[xt])+7>>3);I(ytR,I(xr1,AZ(x))E(F(xn,_R(ya))))x(y))//realloc
+A aa(U n,A x/*1*/)_(P(xr1&&((W)n<<xw)+7>>3<=cap(x),AN(n,x))A y=an(n,xt);MC(yV,xV,((W)xn<<Tw[xt])+7>>3);I(ytR,I(xr1,AZ(x))E(mRn(xn,xA)))x(y))//realloc
 A aA0(U n)_(A x=AN(0,aA(n));xx=emp(tC);x)
+Z A a2t(A x,A y,C t/*11t*/)_(A z=an(2,t);zx=x;zy=y;z)
 A1(aA1,A y=an(1,tA);yx=x;y)
 A2(aA2,/*11*/a2t(x,y,tA))
 A3(aA3,/*111*/A u=an(3,tA);ux=x;uy=y;uz=z;u)
-NI A a2t(A x,A y,C t/*11t*/)_(A z=an(2,t);zx=x;zy=y;z)
-A2(aM,/*11*/Q(xtMT)Q(ytA)Q(xN==yN)a2t(x,y,tM))
+A2(aM,/*11*/Q(xtMT)Q(ytA )Q(xN==yN)a2t(x,y,tM))
 A2(am,/*11*/Q(xtMT)Q(ytMT)Q(xN==yN)a2t(x,y,tm))
 A aA(U n)_(an(n,tA))
 A aB(U n)_(an(n,tB))
@@ -54,7 +58,7 @@ A AW(C w,A x)_(Q(w<6u);xE=w;x)
 A AK(C k,A x)_(Q(k<9u);xk=k;x)
 A AO(UC o,A x)_(Xs(x&~(0xffll<<32)|(W)o<<32)_O(x)=o;x)
 A AN(U n,A x)_(xn=n;x)
-A1(AZ,AT(tG,x))
+A1(AZ,_T(x)=tG;x)
 
 Z C s0[1<<16],*s1=s0+1;
 S qs(CO L*p)_(*p<0?s0-*p:(V*)p)
@@ -88,8 +92,6 @@ B rep()_(Z C b[256];C*s=b,*q;
      P(q,C*p=b;W(q,*q=0;evs(p,1);p=q+1;q=memchr(p,10,s-p))MC(b,p,s-p);s+=b-p;1)
      P(b+SZ b<=s,die("LONGLINE")))1)
 V repl(){W(rep())}
-//L k(S s)_(A x=N(evs(s,0));mc();Xz(gl(x))x(0))
-//V kf(S s,A2 f){d8(A(sym(s),au,av,AT(tx,(A)f)),4);}
 
 A cns,cn[tn];Z A ce[tn];S*argv,*env;
 V kinit(){Z B l;P(l)l=1;pg=sysconf(_SC_PAGESIZE);A b[32],*c=b;
@@ -103,18 +105,18 @@ ZN U ow(S s,U n)_(write(1,s,n))
 ZN V o8(W v){C b[16],*s=b;F(16,C c=v>>4*(15-i)&15;*s++="0W"[9<c]+c)ow(b,16);}
 U os(S s)_(ow(s,SL(s)))
 W ov_(S s,W v)_(os(s);o8(v);ow("\n",1);v)
-#define mms(a...) F(nreg,I f=reg[i].f;V*p=reg[i].p,*q=f?p:p+reg[i].n;a)
-#define obs(a...) mms(A x=(A)(p+HD*!f+pg*f),y=(A)q;W(x<y,a;x+=cap(x)+HD))
-#define xys(a...) obs(I(xtR&&xr,F(xn|!xn,A y=xa;a)))
-#define rts(a...) {F(gn,A x=gv[i];I(x,a))A x=cns;a;}
 ZN V od(L v){C b[32];ow(b,sl(b,v)-b);}
 ZN V osd(S s,L v){os(s);od(v);}
-ZN A1(ox,o8(x);osd(" U",xb);C t=_T(x);os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);F(MIN(5,cap(x)/8),os(" ");o8(xl))os("\n");x)
-A bsm(S s)_(obs(xm=0)xys(I(!ytP,ym++))rts(I(!xtP,xm++))
-// I n=0;obs(ox(x);n++);osd("nObjs:",n)
-// os("mapped regions:\n");mms(os(f?"[f] ":"[x] ");o8((L)p);os("-");o8((L)q);osd(" N",q-p);os("\n"));os("\n");
- obs(I(xr&&xt-1>(U)tn,os("!type:");ox(x)))
- obs(I(xr-xm,os("!refc:");ox(x)))
- xys(I(!yt,os("!dngl:");ox(x);ox(y)))
- obs(I(xtA&&!xn&&!xx,os("!prot:");ox(x)))
+ZN A1(ox,o8(x);osd(" b",xb);C t=_T(x);os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);F(MIN(5,cap(x)/8),os(" ");o8(xl))os("\n");x)
+#define RGS(a...) F(nreg,B f=reg[i].f;V*p=reg[i].p,*q=f?p:p+reg[i].n;a)
+#define OBS(a...) RGS(A x=(A)(p+HD*!f+pg*f),y=(A)q;W(x<y,a;x+=HD<<xb))
+#define XYS(a...) OBS(I(xtR&&xr,F(xn|!xn,A y=xa;a)))
+#define RTS(a...) {A x=cns;a;F(gn,I(x=gv[i],a))}
+A bsm(S s)_(OBS(xm=0)XYS(I(!ytP,ym++))RTS(I(!xtP,xm++))
+// I n=0;OBS(ox(x);n++);osd("nObjs:",n)
+// os("mapped regions:\n");RGS(os(f?"[f] ":"[x] ");o8((L)p);os("-");o8((L)q);osd(" N",q-p);os("\n"));os("\n");
+ OBS(I(xr&&xt-1>(U)tn,os("!type:");ox(x)))
+ OBS(I(xr-xm,os("!refc:");ox(x)))
+ XYS(I(!yt,os("!dngl:");ox(x);ox(y)))
+ OBS(I(xtA&&!xn&&!xx,os("!prot:");ox(x)))
  au)
