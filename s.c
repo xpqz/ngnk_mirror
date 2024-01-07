@@ -62,7 +62,7 @@ X1(kst,R_(x(aCz("???")))
  Ro(x(_R(xx)))
  Rp(x=val(x);A y=xx,z=xy;
     P(xn==3&&((ytv&&y-av)||ytr)&&xy-GAP&&xz==GAP,z=kl(zR);y=kst(fir(x));CA9(zC[zn-1])&&(CA9(*yC)||*yC==':'||*yC=='-')?cts(cat11(apc(y,'['),z),";]",2):cat11(z,y))
-    x=ek(x);N m=_n(xx);x=apc(jc(';',x),']');Q(xr1);xC[m]='[';x)
+    x=ek(x);N m=_n(xx);x=apc(jc(';',x),']');Q(MINE(x));xC[m]='[';x)
  Rq(raz(ek(val(x))))
  Rr(x=val(x);A y=_R(xy);cat11(kw(fir(x)),str(y)))
  Ru(apc(kst(au^av^x),':'))
