@@ -107,19 +107,20 @@ U os(S s)_(ow(s,SL(s)))
 W ov_(S s,W v)_(os(s);o8(v);ow("\n",1);v)
 ZN V od(L v){C b[32];ow(b,sl(b,v)-b);}
 ZN V osd(S s,L v){os(s);od(v);}
-ZN A1(ox,o8(x);osd(" b",xb);C t=xT;os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd("=",xm);osd(" n",xn);F(MIN(5,cap(x)/8),os(" ");o8(xl))os("\n");x)
+ZN A1(ox,o8(x);osd(" b",xb);C t=xT;os(" t");I(LH(1,t,tn),ow(&TS[t],1))E(od(t))osd(" r",xr);osd(" n",xn);F(MIN(5,cap(x)/8),os(" ");o8(xl))os("\n");x)
 #define RGS(a...) F(nreg,B f=reg[i].f;V*p=reg[i].p,*q=f?p:p+reg[i].n;a)
 #define OBS(a...) RGS(A x=(A)(p+HD*!f+pg*f),y=(A)q;W(x<y,a;x+=HD<<xb))
 #define XYS(a...) OBS(I(xtR,F(xn|!xn,A y=xa;a)))
 #define RTS(a...) {A x=cns;a;F(gn,I(x=gv[i],a))}
 A bsm(S s)_(
- OBS(xm=0)
- XYS(I(!ytP,ym++))
- RTS(I(!xtP,xm++))
- OBS(I(xr-xm,os("!refc:");ox(x)))
+ XYS(I(!ytP,yr--))
+  RTS(I(!xtP,xr--))
+   OBS(I(xr,os("!refc:");ox(x)))
+  RTS(I(!xtP,xr++))
+ XYS(I(!ytP,yr++))
  OBS(I(xT>=tn,os("!type:");ox(x)))
- XYS(I(!yt,os("!dngl:");ox(x);ox(y)))
  OBS(I(xtA&&!xn&&!xx,os("!prot:");ox(x)))
+ XYS(I(!yt,os("!dngl:");ox(x);ox(y)))
 // I n=0;OBS(ox(x);n++);osd("nObjs:",n)
 // os("mapped regions:\n");RGS(os(f?"[f] ":"[x] ");o8((L)p);os("-");o8((L)q);osd(" N",q-p);os("\n"));os("\n");
  au)

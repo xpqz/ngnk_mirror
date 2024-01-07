@@ -112,7 +112,7 @@ enum                 {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp
 #define TP(t) ((1<<ti|1<<tc|1<<ts|1<<tu|1<<tv|1<<tw|1<<tx)>>(t)&1)//packed types
 #define TU(t) ((t)>=to)                                           //function types
 
-//header bytes: b...mmmm XXXXXXXX ....OEkt rrrrnnnn
+//header bytes: b....... XXXXXXXX ....OEkt rrrrnnnn
 #define _V(x) ((V*)(x))       //pointer to data
 #define _n(x) (*(U *)((x)- 4))//length
 #define _r(x) (*(U *)((x)- 8))//refcount
@@ -121,7 +121,6 @@ enum                 {tA=1,tE,tB,tG,tH,tI,tL,tF,tC,tS,tM,tm,ti,tl,tf,tc,ts,to,tp
 #define _E(x) (*(UC*)((x)-11))//adverb(for tr)
 #define _O(x) (*(UC*)((x)-12))//scroffset(for symbol lists)
 #define _X(x) (*(A *)((x)-24))//ptr to next chunk in bucket
-#define _m(x) (*(U *)((x)-28))//shadow refcount(for debugging)
 #define _b(x) (*(UC*)((x)-32))//bucket index
 
 //tagged value bits (t=type,v=value,o=srcoffset,k=arity,x=ptr):
