@@ -5,10 +5,10 @@
 #ifndef MAP_NORESERVE
  #define MAP_NORESERVE 0
 #endif
-#ifdef i386
- #define AP(p) ((A)(U)(p)) //type A from pointer
-#else
+#ifdef __LP64__
  #define AP(p) ((A)(p))
+#else
+ #define AP(p) ((A)(U)(p)) //A from pointer
 #endif
 Z ST{V*p;W n;B f;}reg[128];Z U nreg;Z UC pnd[128];Z U npnd;
 Z V mc(){P(!npnd)F(npnd,U j=pnd[i];munmap(reg[j].p,reg[j].n);reg[j].p=0)npnd=0;U j=0;F(nreg,I(reg[i].p,MC(reg+j,reg+i,SZ*reg);j++))nreg=j;}
