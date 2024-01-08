@@ -60,13 +60,13 @@ A AN(U n,A x)_(xn=n;x)
 A1(AZ,xT=tG;x)
 
 Z C s0[1<<16],*s1=s0+1;
-S qs(CO L*p)_(*p<0?s0-*p:(V*)p)
-I sq(S s)_(U n=SL(s);P(n<4||(n==4&&!(s[3]&128)),I v=0;MC(&v,s,n);v)S p=s0+1;W(p<s1,P(!strcmp(p,s),s0-p)p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;s0-s1+n)
-A sym(S s)_(as(sq(s)))
+S su(CO L*p)_(*p<0?s0-*p:(V*)p)
+U us(S s)_(U n=SL(s);P(n<4||(n==4&&!(s[3]&128)),I v=0;MC(&v,s,n);v)S p=s0+1;W(p<s1,P(!strcmp(p,s),s0-p)p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;s0-s1+n)
+A sym(S s)_(as(us(s)))
 
 Z U gd,gn;Z W gk[256];A gv[256];
 Z W gkk(A x/*0*/)_(Xs((U)xv)Q(xtS)xn?(W)_v(jS(drp(-1,xR)))<<32|(U)_v(ii(x,xn-1)):0)
-UC gi(A x/*0*/)_(W k=gkk(x);L l=(I)k;I(!(k>>32)&&id0(*qs(&l)),k|=(W)gd<<32)U i=fL(gk,gn,k);P(i<gn,i)P(gn>=L(gv),die("GLOBALS"))gk[gn]=k;gv[gn]=0;gn++)
+UC gi(A x/*0*/)_(W k=gkk(x);L l=(I)k;I(!(k>>32)&&id0(*su(&l)),k|=(W)gd<<32)U i=fL(gk,gn,k);P(i<gn,i)P(gn>=L(gv),die("GLOBALS"))gk[gn]=k;gv[gn]=0;gn++)
 A gg(A x/*1*/)_(//get value of global
  P(xtS&&!xn,x(0);A x=emp(tS),y=emp(tA);F(gn,I(gv[i],L k=gk[i];PSH(x,k-(U)k?jS(aV(tS,2,A((I)(k>>32),k))):as(k));PSH(y,_R(gv[i]))))am(x,y))//special case for 0#`
  W k=gkk(x);x(0);U i=fL(gk,gn,k);i<gn&&gv[i]?_R(gv[i]):ev0())
@@ -76,7 +76,7 @@ A gns(U k)_(I a[L(gk)];U n=0;F(gn,I(gk[i]>>32==k,a[n++]=gk[i]))aV(tS,n,a))//list
 Z A bs0(S s)_(en0())
 Z A bsbs(S s)_(exit(0);0)
 Z A bscd(S s)_(P(!*s,C b[256];getcwd(b,SZ b)?eo0():aCz(b))chdir(s)?eo0():au)
-Z A bsd(S s)_(P(!*s,as(gd))s+=*s=='.';gd=sq(s);au)
+Z A bsd(S s)_(P(!*s,as(gd))s+=*s=='.';gd=us(s);au)
   A bsl(S s)_(I f=open(s,0,0);A x=u1c(ai(f));close(f);N(x);P(!xn,x(au))C*p=xC,*e=p+xn-1;P(*e-10,x(err0("eoleof")))*e=0;I(*p=='#'&&p[1]=='!',p=strchrnul(p,10);p+=!!*p)x(evs(p,1)))
 Z A bsf(S s)_(K1("{`0:($!h),'\":\",'`k'. h:(&x=^`o`p`q`r`u`v`w`x?@'h)#h:``repl_.:0#`}",ai(!s)))
 Z A bst(S s)_(L n=s[-1]=='t'&&*s==':'?++s,pl(&s):1;S p=s;A x=N(pk(&p,10));x=N(cpl(aCm(s,p),x,0));L t=now();F(n,mr(Nx(run(x,0,0))))x(az((now()-t+500)/1000)))

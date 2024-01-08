@@ -92,10 +92,10 @@ V cyc(V*,U,U),eS(A,U),eQ(S,U,U),exit(I),hexC(S,U,C*),kargs(I,S*),kinit(),*memmem
 B id0(UC),mtc_(A,A),tru(A);
 C*sf(C*,L),*sl(C*,L),sup(A*,A*),tZ(L),*strchrnul(S,I);
 UC gi(A);
-I qA(A,A),qf(F,F),rnk(A),sq(S);
-U _K(A),si(S,C),_N(A),js_eval(C*,U,C*,U),fG(CO G*,U,G),fI(CO I*,U,I),fL(CO L*,U,L);
+I qA(A,A),qf(F,F),rnk(A);
+U _K(A),si(S,C),_N(A),js_eval(C*,U,C*,U),fG(CO G*,U,G),fI(CO I*,U,I),fL(CO L*,U,L),us(S);
 L cfm(CO A*,I),gl_(A),gl(A),iw(A,U,L),now(),pl(S*),minfZ(L,A),addfB(CO V*,U),addfZ(L,A),pf(S*);
-S qs(CO L*),pID(S);
+S su(CO L*),pID(S);
 W pu(S*);
 F gf(A);
 EX A1*v1[];EX A2*v2[];EX AA*v8[];EX A gv[256],cns,cn[],ci[2][5];EX I pg;EX TY(CO C[])vc,TS,Tw,TR,TT,TX,Tk;EX S*argv,*env;

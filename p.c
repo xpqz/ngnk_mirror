@@ -29,10 +29,10 @@ Z A0(pC,C a[1<<9];U n=0;C c=*++s;                                               
 Z A0(p0x,S p=s;W(CA9(*p),p++)A x=N(unhC(s,p-s));s=p;x)                                              //parse 0x string
 Z A0(ps,S p=s;C c=*s;I(id0(c),s=pID(s))J(c>>7,W(*++s<-64)s+=*s==':')aCm(p,s))                       //parse symbol
 Z A pS(C c)_(I a[256];U n=0;                                                                        //parse symbols
- W(1,P(n>=L(a),ez0())A y=*++s-'"'?ps():N(pC());y=str0(y);a[n++]=sq(yC);y(0);S p=pw(s);B(*p-c)s=p)
+ W(1,P(n>=L(a),ez0())A y=*++s-'"'?ps():N(pC());y=str0(y);a[n++]=us(yC);y(0);S p=pw(s);B(*p-c)s=p)
  aV(tS,n,a))
 Z A0(pP,I a[8];U n=0;                                                                               //parse dot-separated path of identifiers
- W(1,P(n>=L(a),ez0())A y=str0(ps());a[n++]=sq(yV);y(0);B(*s-'.'||!id0(s[1]))++s)
+ W(1,P(n>=L(a),ez0())A y=str0(ps());a[n++]=us(yV);y(0);B(*s-'.'||!id0(s[1]))++s)
  aV(tS,n,a))
 Z A0(pp,P(*s-'[',au)A x=N(pS(';'));P(*s-']'||!xn,ep(x))P(xN>8,ez(x))s++;x)                          //parse parameter list
 Z A pt(C*v)_(C c=*s;                                                                                //parse term
@@ -52,7 +52,7 @@ Z A pt(C*v)_(C c=*s;                                                            
 Z X1(pm,                                                                                            //monadify
  Rv(x^au^av)
  RA(I(xx==aw,x=mut(x);xA[xn-1]=pm(xA[xn-1]))x)
- Rs(L v=xv;S s=qs(&v);U n;P(*s>>7&&s[(n=SL(s))-1]-':',C b[8];MC(b,s,n);b[n]=':';b[n+1]=0;sym(b))x)
+ Rs(L v=xv;S s=su(&v);U n;P(*s>>7&&s[(n=SL(s))-1]-':',C b[8];MC(b,s,n);b[n]=':';b[n+1]=0;sym(b))x)
  RS(xn==1?enl(pm(fir(x))):x)
  R_(x))
 Z A pT(C*v)_(A x=N(pt(v));                                                                          //parse term and the adverbs or square brackets after it (v:verb?)

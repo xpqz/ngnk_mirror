@@ -3,7 +3,7 @@ Z S q="0001020304050607080910111213141516171819202122232425262728293031323334353
       "5051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899";
 Z C*S_8(C*s,U v)_(F(4,MC(s+6-2*i,q+v%100*2,2);v/=100)s+8) Z C*s_8(C*s,U v)_(C b[8],*p=b+6;W(1,MC(p,q+v%100*2,2);v/=100;B(!v)p-=2)p+=*p=='0';I n=b+8-p;MC(s,p,n)+n)
 Z C*S16(C*s,W v)_(S_8(S_8(s,v/(U)1e8),v%(U)1e8))          Z C*s16(C*s,W v)_(v<(U)1e8?s_8(s,v):S_8(s_8(s,v/(U)1e8),v%(U)1e8))
-Z C*su(C*s,W v)_(v<(W)1e16?s16(s,v):S16(s_8(s,v/(W)1e16),v%(W)1e16))C*sl(C*s,L v)_(I(v<0,P(v==NL,MC(s,"0N",2)+2)v=-v;*s++='-')su(s,v))
+Z C*sW(C*s,W v)_(v<(W)1e16?s16(s,v):S16(s_8(s,v/(W)1e16),v%(W)1e16))C*sl(C*s,L v)_(I(v<0,P(v==NL,MC(s,"0N",2)+2)v=-v;*s++='-')sW(s,v))
 // github.com/ulfjack/ryu (apache2|boost license)
 #if defined(__SIZEOF_INT128__)
  Z W msh(W m,CO W*a,I i)_(__uint128_t g=m;((g**a>>64)+g*a[1])>>(i-64))Z W msha(W m,CO W*a,I i,W*v,W*w,I sh)_(*v=msh(m+2,a,i);*w=msh(m-1-sh,a,i);msh(m,a,i))
@@ -26,10 +26,10 @@ C*sf(C*s,L d)_(W x=d,m=x<<12>>12;I e=x<<1>>53;I(x>>63,*s++='-')P(e==2047,P(!m,MC
  E( t=e+l10p5(-e)-(e<3);u=msha(m,P5[       -t],t-e-p5b(-t)+124,&v,&w,h);I(t<e+2,u0=1;ev?w0=h:--v)J(t<e+63,u0=mp2(m,t-e)))
  I(w0||u0,C d=0;W((v/=10)>w/10,w0&=!dm(&w);u0&=!d;d=dm(&u);t++)I(w0,W(!dm(&w),u0&=!d;d=dm(&u);t++))I(u0&&d==5&&!(u&1),d=4)u+=d>=5||(u==w&&!(ev||w0)))
  E(C d=0;W((v/=10)>(w/=10),d=dm(&u);t++)u+=u==w||d>=5)
- s++;I l=su(s,u)-s-1;s[-1]=*s;t+=l;P(t<16u,I k=l<t?l:t;memmove(s,s+1,k);MS(s+l,'0',MAX(0,t-l));s+=t;*s++='.';s+=l-k;I(t>=l,*s++='0')s)
- P(-4<t&&t<0,F(l+1,s[l-t-i]=s[l-i])s[-1]='0';*s++='.';MS(s,'0',-t-1)+l-t)I(l>0,*s++='.';s+=l)*s++='e';I(t<0,t=-t;*s++='-')su(s,t))
+ s++;I l=sW(s,u)-s-1;s[-1]=*s;t+=l;P(t<16u,I k=l<t?l:t;memmove(s,s+1,k);MS(s+l,'0',MAX(0,t-l));s+=t;*s++='.';s+=l-k;I(t>=l,*s++='0')s)
+ P(-4<t&&t<0,F(l+1,s[l-t-i]=s[l-i])s[-1]='0';*s++='.';MS(s,'0',-t-1)+l-t)I(l>0,*s++='.';s+=l)*s++='e';I(t<0,t=-t;*s++='-')sW(s,t))
 A1(str0,Q(xtC);N n=xn;x=AN(n,aa(n+1,x));xC[n]=0;x)
-X1(str,Rilf(A y=aC(24);TY(sf)*f=xtf?sf:sl;AN(f(yC,gl(x))-yC,y))Rs(L v=xv;aCz(qs(&v)))Rc(enl(x))RU(kst(x))R_(e1f(str,x)))
+X1(str,Rilf(A y=aC(24);TY(sf)*f=xtf?sf:sl;AN(f(yC,gl(x))-yC,y))Rs(L v=xv;aCz(su(&v)))Rc(enl(x))RU(kst(x))R_(e1f(str,x)))
 V hexC(S s,U n,C*r){Z S q="0123456789abcdef";F(n,C c=*s++;*r++=q[(UC)c>>4];*r++=q[c&15])}
 X1(hex,RmMA(e1f(hex,x))RC(A y=aC(2*xn);Mx(hexC(xV,xn,yV))y)R_(et(x)))
 ZN V unh0(C*q){MS(q,-1,256);F(10,q['0'+i]=i)F(6,q['A'+i]=q['a'+i]=10+i)}

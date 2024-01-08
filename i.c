@@ -16,7 +16,7 @@ Z U addr(S*p)_(S s=*p;P(!*s,0x0100007f)UC v[4];F(4,I(i,P(*s-'.',ed0())s++)v[i]=p
 Z I skt(U h,UH p)_(I f=socket(AF_INET,SOCK_STREAM,0);P(f<0,eo0())I v=setsockopt(f,IPPROTO_TCP,TCP_NODELAY,(I[]){1},4);P(v<0,eo0())
 ST sockaddr_in a;a.sin_family=AF_INET;a.sin_addr.s_addr=h;a.sin_port=(UH)(p<<8|p>>8);P(connect(f,(ST sockaddr*)&a,SZ a)<0,eo0())f)
 Z I osf(S s,L fl)_(P(!strchr(s,':'),I f=open(s,fl,0666);P(f<3/*fbsd*/,eo0())f)U h=addr(&s);P(*s-':',ed0())s++;W p=pu(&s);P(*s,ed0())skt(h,p))
-Z I o(A x/*1*/,I fl)_(Xz(gl(x))Xs(L v=xv;P(!v,1)S s=qs(&v);osf(s,fl))XC(x=str0(x);I v;Mx(v=osf(xV,fl));v)et(x))
+Z I o(A x/*1*/,I fl)_(Xz(gl(x))Xs(L v=xv;P(!v,1)S s=su(&v);osf(s,fl))XC(x=str0(x);I v;Mx(v=osf(xV,fl));v)et(x))
 Z I fm(I f)_(ST stat s;fstat(f,&s)<0?0:s.st_mode)                                                                                                            // get file mode
 Z A frd(I f,N i,N n)_(P(i||n+1,en0())DIR*a=fdopendir(f);P(!a,ei0())A x=emp(tC);ST dirent*e;W((e=readdir(a)),S s=e->d_name;x=apc(cts(x,s,SL(s)),10))closedir(a);x) // read dir
 Z A frS(I f,N n)_(C b[1024];A x=emp(tC);W(n,I k=read(f,b,MIN(SZ b,n));P(k<0,eo(x))n-=k;x=cts(x,b,k);P(k-SZ b,x))x)                                                // read stream (only length)
@@ -35,7 +35,7 @@ A1(u2c,en(x))                                                                   
 Y2(v0c,RA(v0c(x,N(jc(10,y))))RC(v1c(x,apc(y,10)))R_(et(y)))                                                                 // x 0:y
 Y2(v1c,RC(fw(x,y))R_(et(y)))                                                                                                // x 1:y
 A2(v2c,P(!xts||!ytA,et(y))P(yn-2,el(y))P(!_ts(yx)||!_ti(yy),et(y))L v=xv,w=_v(yx);I k=_v(yy);y(0);P(!k||k>8u,ed0())         // x 2:y
- V*l=dlopen(qs(&v),RTLD_LAZY);P(!l,dle())V*f=dlsym(l,qs(&w));P(!f,dle())ax(f,k))
+ V*l=dlopen(su(&v),RTLD_LAZY);P(!l,dle())V*f=dlsym(l,su(&w));P(!f,dle())ax(f,k))
 
 Z A rda(I f)_(A x=aC(256-HD);L m=0,k;W((k=read(f,xV+m,xn-m))>0,m+=k;I(m+1000000>xn&&2*m>xn,A y=aC(2*xn+HD);MC(yV,xV,m);x=x(y)))close(f);AN(m,x))
 Z I lC(A x)_(XA(F(xn,P(_t(xa)-tC,0))1)0)//list of strings?
