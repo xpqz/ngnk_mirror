@@ -60,13 +60,13 @@ A AN(U n,A x)_(xn=n;x)
 A1(AZ,xT=tG;x)
 
 Z C s0[1<<16],*s1=s0+1;
-S su(CO L*p)_(*p<0?s0-*p:(V*)p)
-U us(S s)_(U n=SL(s);P(n<4||(n==4&&!(s[3]&128)),I v=0;MC(&v,s,n);v)S p=s0+1;W(p<s1,P(!strcmp(p,s),s0-p)p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;s0-s1+n)
+S su(U u)_(P(u&1<<31,s0-(I)u)Z W r;r=u;(V*)&r)
+U us(S s)_(U n=SL(s);P(n<4||(n==4&&!(s[3]&128)),U v=0;MC(&v,s,n);v)S p=s0+1;W(p<s1,P(!strcmp(p,s),s0-p)p+=SL(p)+1)n++;P(s1+n>s0+SZ s0,die("SYMS"))MC(s1,s,n);s1+=n;s0-s1+n)
 A sym(S s)_(as(us(s)))
 
 Z U gd,gn;Z W gk[256];A gv[256];
 Z W gkk(A x/*0*/)_(Xs((U)xv)Q(xtS)xn?(W)_v(jS(drp(-1,xR)))<<32|(U)_v(ii(x,xn-1)):0)
-UC gi(A x/*0*/)_(W k=gkk(x);L l=(I)k;I(!(k>>32)&&id0(*su(&l)),k|=(W)gd<<32)U i=fL(gk,gn,k);P(i<gn,i)P(gn>=L(gv),die("GLOBALS"))gk[gn]=k;gv[gn]=0;gn++)
+UC gi(A x/*0*/)_(W k=gkk(x);I(!(k>>32)&&id0(*su(k)),k|=(W)gd<<32)U i=fL(gk,gn,k);P(i<gn,i)P(gn>=L(gv),die("GLOBALS"))gk[gn]=k;gv[gn]=0;gn++)
 A gg(A x/*1*/)_(//get value of global
  P(xtS&&!xn,x(0);A x=emp(tS),y=emp(tA);F(gn,I(gv[i],L k=gk[i];PSH(x,k-(U)k?jS(aV(tS,2,A((I)(k>>32),k))):as(k));PSH(y,_R(gv[i]))))am(x,y))//special case for 0#`
  W k=gkk(x);x(0);U i=fL(gk,gn,k);i<gn&&gv[i]?_R(gv[i]):ev0())
