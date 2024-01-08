@@ -5,7 +5,7 @@
 #ifndef MAP_NORESERVE
  #define MAP_NORESERVE 0
 #endif
-#if __i386__
+#ifdef i386
  #define AP(p) ((A)(U)(p)) //type A from pointer
 #else
  #define AP(p) ((A)(p))
