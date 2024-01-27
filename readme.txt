@@ -17,7 +17,6 @@ community:
     emacs mode                         https://github.com/gitonthescene/ngnk-mode
   fun:
     code golf                          https://code.golf/rankings/holes/all/k/bytes
-    code golf                          https://week.golf/
     code golf                          https://codegolf.stackexchange.com/search?tab=newest&q=ngn
     aoc solutions by multiple people   https://k.miraheze.org/wiki/Advent_of_Code
     analysis of ngn/k AoC solutions    https://github.com/kidd/arraylangs-index
