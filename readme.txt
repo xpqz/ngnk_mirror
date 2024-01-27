@@ -1,3 +1,8 @@
+this k implementation is no longer supported
+for others, see https://k.miraheze.org/wiki/Running_K
+
+
+
 ngn/k is a simple fast vector programming language
 try:     https://ngn.codeberg.page/k
 build:   make CC=clang-17   # or CC=gcc-10 or other
