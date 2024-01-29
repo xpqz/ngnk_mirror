@@ -23,7 +23,7 @@ Z W addcll(W x,W y,W c,W*p)_(W u=x+y+c;*p=u<x||u<y;u) // or __builtin_addcll
 Z V shr3(W*x,W*y,U d){F(2,x[i]=y[i]>>d|y[i+1]<<(64-d))x[2]=y[2]>>d;}
 Z V shr2(W*a){*a>>=1;*a|=a[1]<<63;a[1]>>=1;}
 Z V inc2(W*a){a[1]+=!++*a;}
-Z V pws5(TY(I5)a,U n,L u,L v,L w){W x[]={u,v,w},y[3],c;F(n,MC(a+i,x+1,16);shr3(y,x,2);c=0;F(3,x[i]=addcll(x[i],y[i],c,&c))I(x[2]>>61,shr3(x,x,1)))}
+Z V pws5(TY(*I5)*a,U n,L u,L v,L w){W x[]={u,v,w},y[3],c;F(n,MC(a+i,x+1,16);shr3(y,x,2);c=0;F(3,x[i]=addcll(x[i],y[i],c,&c))I(x[2]>>61,shr3(x,x,1)))}
 Z V initp5(){
  pws5(I5,L(I5),0xebd5cf2016a52921,0x4ac7ca59a424c507,0x9558b4661b6565f8);
  pws5(P5,L(P5),0,0,1ll<<61);
