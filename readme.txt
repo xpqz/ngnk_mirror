@@ -14,7 +14,7 @@ community:
   learn:
     book     (work in progress)        https://xpqz.github.io/kbook/
     tutorial (work in progress)        https://github.com/gitonthescene/ngnk-libs/tree/master/tutorial
-    tutorial (work in progress)        https://github.com/razetime/ngn-k-tutorial
+    tutorial                           https://github.com/razetime/ngn-k-tutorial
     embedding example                  https://codeberg.org/suhr/kes
     searchable database of snippets    https://github.com/secwang/ngnkcart
   edit:
