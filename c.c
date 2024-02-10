@@ -8,7 +8,7 @@ Z V cLF(abn){L*r=AL(a);CO F*p=AL(b);F(n+3>>2,Fj(4,*r++=*p!=*p?NL:*p;p++))}
 Z V cGB(abn){G*r=AL(a);CO G*p=AL(b);F(n,*r++=p[i>>3]>>(i&7)&1)}
 Z V cBG(abn){G*r=AL(a);CO G*p=AL(b);MS(r,0,n+63>>6<<3);F(n,r[i>>3]|=(*p++&1)<<(i&7))}
 Z V cLA(abn){L*r=AL(a);CO A*p=AL(b);F(n,*r++=gl_(*p++))}
-Z A2(cT,UC t=xv,u=yt,i=t-tB,j=u-tB;Q(i<8);P(j>7,et(y))
+Z A2(cT,UC t=xv,u=yt,i=t-tB,j=u-tB;Q(i<8);P(j>6,et(y))
  Z CO TY(&cBG)a[][8]={{0,cBG,0,0,0,0,cBG},{cGB,0,cGH,cGI,cGL,0,0},{0,cHG,0,cHI,cHL,0,cHG},{0,cIG,cIH,0,cIL,0,cIG},{0,0,0,cLI,0,cLF,0},{0,0,0,0,cFL,0,0},{},{}};
  TY(&cBG)f=a[i][j];P(f,A z=an(yn,t);My(f(zV,yV,zn));z)
  P(t==tS,u==tC?(y=str0(y),y(sym(yV))):et(y))
