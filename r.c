@@ -17,6 +17,7 @@ Z V h(U x,U y){F(M,s[x][i]^=s[y][i])}
 Z V r4(){nb=M;W t[M];F(M,b[i]=s[0][i]+s[3][i])F(M,t[i]=s[1][i]<<17)h(2,0);h(3,1);h(1,2);h(0,3);F(M,s[2][i]^=t[i])F(M,s[3][i]=(s[3][i]<<45|s[3][i]>>19))}//next 4*64 bits
 Z W r()_(I(nb<4,r4())b[--nb])//random 64 bits
 Z U ri(W m)_((U)r()*m>>32)//random int mod m
+Z W rw(W m)_(m>>32?r()%m:ri(m))
 Z F rf()_(W v=1023ll<<52|(r()&-1ull>>12);-1+*(F*)&v)//random float 0..1
 
 Z A sh(U n)_(A x=an(n,tZ(n));S4(xw-3,F(n,I j=ri(i+1);xg=xG[j];xG[j]=i),F(n,I j=ri(i+1);xh=xH[j];xH[j]=i),F(n,I j=ri(i+1);xi=xI[j];xI[j]=i),ez(x))x)//shuffle
@@ -24,19 +25,12 @@ Z A rt(U n,C t)_(A x=an(n,t);F(((W)n<<Tw[t])+255>>8,r4();MC(xV+(i<<5),b,32))x)//
 Z CO W msk[]={0xffffffffffffffffll,0x5555555555555555ll,0x1111111111111111ll,0x0101010101010101ll,0x0001000100010001ll,0x0000000100000001ll,0x0000000000000001ll};
 Z A ro(U n,W m)_(P(!(m&m-1),P(!m,rt(n,tL))C t=tZ(m-1);A x=rt(n,t);L v=(m-1)*msk[Tw[t]];L*p=xL;F((n<<Tw[t])+255>>8,Fj(4,*p++&=v))x)
  C t=tZ(m-1);A x=an(n,t);S4(t-tG,F(n,xg=ri(m)),F(n,xh=ri(m)),F(n,xi=ri(m)),F(n,xl=r())I(m,F(n,xl%=m)))x)//roll
-//Z A de0(N n,W m)_(A x=aL(n);F(n,xl=r()%(m-n+i+1);Fj(i,B(xl==xL[j],xl=m-n+i)))F(n,I j=ri(i+1);SW(xl,xL[j]))ct(tZ(m),x))
-Z A de1(U n,W m)_(A x=aL(n),y=aC(m+7>>3);MS(yV,0,yn);My(F(n,W t=r()%(m-n+i+1);I(yC[t>>3]&1<<(t&7),t=m-n+i)yC[t>>3]|=1<<(t&7);xl=t))F(n,I j=r()%(i+1);SW(xl,xL[j]))ct(tZ(m),x))
-Z A de2(U n,W m)_(A x=aL(n);L*a=xL,j=-1,q=m-n+1;F v=exp(log(rf())/n);
- W(n>1&&13*n<m,L s;
-  W(1,F X;
-   W(1,s=X=m*(1-v);B(s<q)v=exp(log(rf())/n))
-   F y1=exp(log(rf()*m/q)/(n-1));v=y1*(1-X/m)*((F)q/(q-s));B(v<=1)
-   F y2=1,b=m-MAX(n,s+1),l=n>s+1?m-s:q;L t=m-1;W(t>=l,y2*=t--/b--)
-   B(m/(m-X)>=y1*exp(log(y2)/(n-1)),v=exp(log(rf())/(n-1)))
-   v=exp(log(rf())/n))
-  *a++=j+=s+1;m-=s+1;n--;q-=s)
- F t=m-n;W(n>1,L s=0;F v=rf(),q=t/m;W(q>v,s++;q*=--t/--m)*a++=j+=s+1;m--;n--)*a=j+m*rf()+1;F(xn,I j=ri(i+1);SW(xl,xL[j]))x)
-Z A de(U n,W m)_(n>m?el0():n==m?sh(n):m<10000000?de1(n,m):de2(n,m))//deal
+Z A ded(U n,U m)_(A x=aI(m);I*a=xI;F(m,a[i]=i)F(n,U j=ri(m-i)+i;SW(a[i],a[j]))rsz(n,x))//sparse deal
+Z A des(U n,W m)_(A x=aL(n);L*a=xL;F(n,a[i]=i)W t=1;W(t<n*4,t*=2)A y=aL(t);L*h=yL;L*v=h+1;F(t,h[i]=0)//dense
+ W b=t-2;My(F(n,W j=rw(m-i)+i;
+  I(j<(W)n,SW(a[i],a[j]))
+  E(W p=2*j;I s=j;W(1,I hp=h[p&=b];B(!hp,h[p]=j)B((W)hp==j,s=v[p])p+=2)v[p]=a[i];a[i]=s)))x)//linear probe
+Z A de(U n,W m)_(n>m?el0():n==m?sh(n):ct(tZ(m),!(m>>31)&&n+64>m>>4?ded(n,m):des(n,m)))//deal
 Z A rd(L n,L m)_(m<0?(n<0?ed0():rt(n,tZ(m))):n==NL?sh(m):n-(I)n?ez0():n<0?de(-n,m):ro(n,m))//roll or deal
 A rndF(L n)_(P(n<0,ed0())A x=aF(n);F(n,xf=rf())x)//random floats 0..1
 A rnd(L n,A x)_(X(Ril(rd(n,gl(x)))Rc(P((32|xv)=='a',cC(add(x,Nx(rd(n,26)))))rt(n,tC))Rf(x(mul(x,Nx(rndF(n)))))RMT(x(x1(Nx(rd(n,xN)))))R_(et(x)))0)
