@@ -25,8 +25,8 @@ Z A rt(U n,C t)_(A x=an(n,t);F(((W)n<<Tw[t])+255>>8,r4();MC(xV+(i<<5),b,32))x)//
 Z CO W msk[]={0xffffffffffffffffll,0x5555555555555555ll,0x1111111111111111ll,0x0101010101010101ll,0x0001000100010001ll,0x0000000100000001ll,0x0000000000000001ll};
 Z A ro(U n,W m)_(P(!(m&m-1),P(!m,rt(n,tL))C t=tZ(m-1);A x=rt(n,t);L v=(m-1)*msk[Tw[t]];L*p=xL;F((n<<Tw[t])+255>>8,Fj(4,*p++&=v))x)
  C t=tZ(m-1);A x=an(n,t);S4(t-tG,F(n,xg=ri(m)),F(n,xh=ri(m)),F(n,xi=ri(m)),F(n,xl=r())I(m,F(n,xl%=m)))x)//roll
-Z A ded(U n,U m)_(A x=aI(m);I*a=xI;F(m,a[i]=i)F(n,U j=ri(m-i)+i;SW(a[i],a[j]))rsz(n,x))//sparse deal
-Z A des(U n,W m)_(A x=aL(n);L*a=xL;F(n,a[i]=i)W t=1;W(t<n*4,t*=2)A y=aL(t);L*h=yL;L*v=h+1;F(t,h[i]=0)//dense
+Z A ded(U n,U m)_(A x=aI(m);I*a=xI;F(m,a[i]=i)F(n,U j=ri(m-i)+i;SW(a[i],a[j]))rsz(n,x))//dense deal
+Z A des(U n,W m)_(A x=aL(n);L*a=xL;F(n,a[i]=i)W t=1;W(t<n*4,t*=2)A y=aL(t);L*h=yL;L*v=h+1;F(t,h[i]=0)//sparse
  W b=t-2;My(F(n,W j=rw(m-i)+i;
   I(j<(W)n,SW(a[i],a[j]))
   E(W p=2*j;I s=j;W(1,I hp=h[p&=b];B(!hp,h[p]=j)B((W)hp==j,s=v[p])p+=2)v[p]=a[i];a[i]=s)))x)//linear probe
