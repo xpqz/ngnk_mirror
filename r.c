@@ -24,13 +24,12 @@ Z A rt(U n,C t)_(A x=an(n,t);F(((W)n<<Tw[t])+255>>8,r4();MC(xV+(i<<5),b,32))x)//
 Z CO W msk[]={0xffffffffffffffffll,0x5555555555555555ll,0x1111111111111111ll,0x0101010101010101ll,0x0001000100010001ll,0x0000000100000001ll,0x0000000000000001ll};
 Z A ro(U n,W m)_(P(!(m&m-1),P(!m,rt(n,tL))C t=tZ(m-1);A x=rt(n,t);L v=(m-1)*msk[Tw[t]];L*p=xL;F((n<<Tw[t])+255>>8,Fj(4,*p++&=v))x)
  C t=tZ(m-1);A x=an(n,t);S4(t-tG,F(n,xg=ri(m)),F(n,xh=ri(m)),F(n,xi=ri(m)),F(n,xl=r())I(m,F(n,xl%=m)))x)//roll
-Z A ded(U n,U m)_(A x=an(m,tZ(m));tilV(xV,0,m,xw-3);S4(xw-3,F(n,U j=ri(m-i)+i;SW(xG[i],xG[j])),F(n,U j=ri(m-i)+i;SW(xH[i],xH[j])),F(n,U j=ri(m-i)+i;SW(xI[i],xI[j])),ez(x))rsz(n,x))//dense deal
+Z A ded(U n,U m)_(A x=an(m,tZ(m));tilV(xV,0,m,xw-3);S4(xw-3,F(n,U j=ri(m-i)+i;SW(xG[i],xG[j])),F(n,U j=ri(m-i)+i;SW(xH[i],xH[j])),F(n,U j=ri(m-i)+i;SW(xI[i],xI[j])),)rsz(n,x))//dense deal
 Z A des(U n,W m)_(A x=aL(n);L*a=xL;F(n,a[i]=i)W t=1ll<<(66-CLZ(n));A y=aL(t);L*h=yL;L*v=h+1;MS(h,0,t<<3);//sparse
  W b=t-2;My(F(n,W j=rw(m-i)+i;
   I(j<(W)n,SW(a[i],a[j]))
   E(W p=2*j;I s=j;W(1,I hp=h[p&=b];B(!hp,h[p]=j)B((W)hp==j,s=v[p])p+=2)v[p]=a[i];a[i]=s)))ct(tZ(m),x))//linear probe
-Z A sh(U n)_(ded(n,n))//shuffle
-Z A de(U n,W m)_(n>m?el0():n==m?sh(n):!(m>>31)&&n+64>m>>4?ded(n,m):des(n,m))//deal
-Z A rd(L n,L m)_(m<0?(n<0?ed0():rt(n,tZ(m))):n==NL?sh(m):n-(I)n?ez0():n<0?de(-n,m):ro(n,m))//roll or deal
+Z A de(U n,W m)_(n>m?el0():!(m>>31)&&n+64>m>>4?ded(n,m):des(n,m))//deal
+Z A rd(L n,L m)_(m<0?(n<0?ed0():rt(n,tZ(m))):n==NL?rd(-m,m):n-(I)n?ez0():n<0?de(-n,m):ro(n,m))//roll or deal
 A rndF(L n)_(P(n<0,ed0())A x=aF(n);F(n,xf=rf())x)//random floats 0..1
 A rnd(L n,A x)_(X(Ril(rd(n,gl(x)))Rc(P((32|xv)=='a',cC(add(x,Nx(rd(n,26)))))rt(n,tC))Rf(x(mul(x,Nx(rndF(n)))))RMT(x(x1(Nx(rd(n,xN)))))R_(et(x)))0)
