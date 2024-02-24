@@ -35,7 +35,7 @@ community:
     collection of libraries            https://github.com/gitonthescene/ngnk-libs
     unparser                           https://github.com/chrispsn/ngn-k-unparser
     codemirror lezer parser            https://github.com/SirBogman/codemirror-lang-k
-    various utils                      https://arlyle.codeberg.page/k/
+    various utils                      http://arlyle.sdf.org/k/
     kpl, apl-like extensions for k     https://codeberg.org/CptJimKirk/kpl
     bindings for a regex library       https://github.com/x86y/onikuruma
     videos of solving aoc in ngn/k     https://www.twitch.tv/fcopy
